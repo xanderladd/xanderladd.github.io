@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/jekyll/update/welcome-to-jekyll/</loc>
+<loc>http://localhost:4000/jekyll/update/blogger/</loc>
 <lastmod>2020-09-28T14:16:13-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/jekyll/update/grad1/</loc>
+<lastmod>2020-09-28T14:16:13-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/jekyll/update/Am-I-a-Blogger/</loc>
+<lastmod>2021-08-28T22:36:13-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/about/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/about/</loc>

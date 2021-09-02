@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Am I a Blogger?"
+date:   2020-09-28 14:16:13 -0700
+categories: jekyll update
+---
+
+# What's not on a Grad School App
+
+As somone who has applied two consecutive years to graduate schools, I've put a lot of thought about what I can and can't communicate on my personal statement. At first, two great pieces of advice as far as writing a personal statement appear to conflict with eachother -- 1. tell a story and 2. don't write up your resume. In reality, there is a golden spot that manages to tell a cohesive story without bullet pointing your resume and instead capturing some of the magic that made me want to puruse a graduate degree and a career in research. For me, here are some of the bigger picture _feelings_ about this. I say feelings, because at the end of the day, that's whats missing from a resume. It's the feeling, emotion, ugliness and beauty that all gets chemically washed out and dumped into a CV.
+
+- Owning a Research Project
+ - There is really something to be said about a project that has your fingerprints all over it. On one hand it's awesome, because the more it becomes you the more comfortable you feel navigating it. There is a very close analogy between a house and a research project, too big and alone and you get lost, but too small and you get cramped. The code, experiments, and data make up the furniture and decorations in your house, and we all know how quickly a small mess can turn into a big mess if things aren't handled well. However, there is a famous tradeoff between making things pretty and making things quickly (cite). Clean solutions are beautiful, but a major turning point in my research / programming career was accepting that messy solutions (like try/except in python) can actually create a cleaner overall codebase. This is why owning a research project means owning it for all its imperfections, for example all the things you wrote knowing there might've been a better implementation. It also means owning it for all the great features your project has too, like when somone asks you to make a change or run a new experiment and you launch the thing five minutes after they ask because you knew just what lines to change. Finally, there are two other interesting feelings here. One is going back over old code and jumping in, sometimes it can be scary and we have this tendency to set and forget, but as an engineer it's challenging but critical to go into the belly of the beast (that you created!) and set things straight. The second is writing new code. Once you've written thousands of lines of code, sometimes we have a tendency to rest on our laurels and not push our tools any further. And to that I respond, push it til it breaks.
+
+ - Sisyphus
+    - This is the best one, the golden egg of research to me and one of the main reasons I love what I do.
+

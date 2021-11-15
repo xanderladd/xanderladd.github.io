@@ -13,5 +13,50 @@ As somone who has applied two consecutive years to graduate schools, I've put a 
  - There is really something to be said about a project that has your fingerprints all over it. On one hand it's awesome, because the more it becomes you the more comfortable you feel navigating it. There is a very close analogy between a house and a research project, too big and alone and you get lost, but too small and you get cramped. The code, experiments, and data make up the furniture and decorations in your house, and we all know how quickly a small mess can turn into a big mess if things aren't handled well. However, there is a famous tradeoff between making things pretty and making things quickly (cite). Clean solutions are beautiful, but a major turning point in my research / programming career was accepting that messy solutions (like try/except in python) can actually create a cleaner overall codebase. This is why owning a research project means owning it for all its imperfections, for example all the things you wrote knowing there might've been a better implementation. It also means owning it for all the great features your project has too, like when somone asks you to make a change or run a new experiment and you launch the thing five minutes after they ask because you knew just what lines to change. Finally, there are two other interesting feelings here. One is going back over old code and jumping in, sometimes it can be scary and we have this tendency to set and forget, but as an engineer it's challenging but critical to go into the belly of the beast (that you created!) and set things straight. The second is writing new code. Once you've written thousands of lines of code, sometimes we have a tendency to rest on our laurels and not push our tools any further. And to that I respond, push it til it breaks.
 
  - Sisyphus
-    - This is the best one, the golden egg of research to me and one of the main reasons I love what I do.
+    - This is a tough one. It's the feeling that Sisyphus felt as during his eternety condemned to pushing a boulder up a hill every day, only to find at the bottom of the hill again in the morning the next day. Basically, every single day feels like a series of impossible tasks and one by one you tackle each task, only to find you've barely made any real progress. This is a bit confusing because I am not just aimlessly pushing a boulder up a hill, I am supposed to have conviction and direction. I think that there is a third ingredient missing, conviction, directions and planning. If we plan out specific goals to achieve and give a window to accomplish them, it's actually surpising how much we get done, and is a much more glass half full approach then turning around and just wishing you got something done.
 
+
+
+## 9/9/2021
+
+Why do I want to go graduate school
+1. Want to go in depth into learning about the brain because there is so much mystery. At the very root, you have this giant question about how conscious experience can arise from sensory perception and a bunch of brain matter. It's easy to imagine there is an efficient computational mechanism behind this happening. Going into graduate study that inspects signals inside and coming out of this machine is like trying to throw a net over this giant mountain of complexity. In such small spaces (human head) there is such a computationally complex structure. I am also interested in this same principle as applied ot a computer. Regardless of what can and cannot be compared between the two nuclei of complexity, pitting them against eachother in computational neuroscience sounds daringly fun. To me, there is something simple and magical about taking two sciences that still hide a depth of mystery and using one on the other in a cycle. Even still, I am mostly indifferent to the possibility of some revolutionary discovery that I might ascertain about the brain which would change the world. While I think these kinds of big ideas can be great driving forces behind excellent reseach, I think there are some natural limitaitons to understanding that prevent us from feeling completely fufilled in our understanding of the brain. However, the magical part is staring into this void of complexity for the fun of it. There are plenty of different things to do in life and who can say which are wrong and which are right, but when ???
+
+
+
+Elevator Pitch
+
+By trade I am a ML researcher at LLNL. I spend most of my time coding HPC stuff and discussing ML models for (1) active multifidelity learning and (2) time series / signal processing. At heart, I am a cognitive neuroscientist. I love studying the functionality of the brain. I am fascinated by how such a noisy, distributed, and error prone network can a) self organize and b) learn how to make representations of visual scences and abstract concepts (two very different tasks) and c) quickly generalize between tasks. Right now I am building a computational toolkit and I am sure of the computational modeling approach, but I am still working out what level of neuroscience I fit into.
+
+NSF GRFP App: Spiking neural network to reproduce network dynamics + brain on a chip collab possibility 
+
+Carmichael --> Cooper --> LBNL --> LLNL
+
+
+Questions for Dr. Tarr:
+- Lead: how do I find an adivsor? Most people already seem to just have a professor even if they are undergrads.
+
+- Cogsci and computational modeling is interdisciplinary -- which branch of NSF ..
+. or how do I find which branch?
+   - Life sciences AI
+   - Life sciences Neuro, LS biophyiscs, LS computration
+   - Artificial Intelligence
+   - Cognitive Neuroscience
+
+- I have this background in simulation NEURON/CoreNeuron, LfPY etc. where does simulation fit in ...  I don't see many professors who focus directly on this
+
+
+Bonus
+- What is it like working with Steven Pinker
+
+Notes:
+- high risk reserach problem ?
+- becoming a greeble expert as a places/faces type fMRI study
+- greeble making process is interesting
+- Alpha Net: Adaptation with Composition in Classifier Space
+   - one shot learning DL efficiency
+- Learning Intermediate Features of Object Affordances with a Convolutional Neural Network
+   - CNN for affordance recognitions
+
+Labs:
+- WEHBE Lab, Coax Lab, Kass Lab, Ventura Lab, Behrman on attention

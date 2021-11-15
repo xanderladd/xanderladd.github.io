@@ -1,7 +1,7 @@
 var store = [{
-        "title": "Am I a Blogger?",
-        "excerpt":"I am in the process of making my own personal website and as I am stapling posters to the walls and setting up furniture, I can’t help but think about how important the task at hand is. At the same time, I can’t help but think about equally unimportant it...","categories": ["jekyll","update"],
+        "title": "Review 1",
+        "excerpt":"Review 1 : In Silico by Dr. Fairhall Citation: Fairhall, Adrienne L. “In silico: where next?.” Eneuro 8.2 (2021). Intro This writing starts out by laying out the context of 2013, a very important year for funding large neuroscience research initiatives, the U.S. BRAIN projects and the European Human Brain...","categories": ["reviews"],
         "tags": [],
-        "url": "/jekyll/update/blogger/",
+        "url": "/reviews/review1/",
         "teaser": "/assets/images/trees.jpeg"
       }]

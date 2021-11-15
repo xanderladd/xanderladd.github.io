@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/jekyll/update/blogger/</loc>
-<lastmod>2020-09-28T14:16:13-07:00</lastmod>
+<loc>http://localhost:4000/reviews/review1/</loc>
+<lastmod>2021-11-14T13:16:13-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/private_posts/2020-09-28-blogger/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/private_posts/2021-08-28-Am-I-a-Blogger/</loc>
@@ -30,5 +33,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/research/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/reviews/</loc>
 </url>
 </urlset>

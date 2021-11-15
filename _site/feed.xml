@@ -1,16 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-02T17:22:40-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Am I a Blogger?</title><link href="http://localhost:4000/jekyll/update/blogger/" rel="alternate" type="text/html" title="Am I a Blogger?" /><published>2020-09-28T14:16:13-07:00</published><updated>2020-09-28T14:16:13-07:00</updated><id>http://localhost:4000/jekyll/update/blogger</id><content type="html" xml:base="http://localhost:4000/jekyll/update/blogger/">&lt;p&gt;I am in the process of making my own personal website and as I am stapling posters to the walls and setting up furniture, I can’t help but think about how important the task at hand is. At the same time, I can’t help but think about equally unimportant it is. Clearly, I am a person who thinks a lot. Don’t confuse thinking a lot with being intelligent, proficient etc., most of the times, one clear line of reasoning is the winner. But I can’t help feeling two diverging narratives.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-14T22:36:47-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 1</title><link href="http://localhost:4000/reviews/review1/" rel="alternate" type="text/html" title="Review 1" /><published>2021-11-14T13:16:13-08:00</published><updated>2021-11-14T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review1</id><content type="html" xml:base="http://localhost:4000/reviews/review1/">&lt;ul&gt;
+  &lt;li&gt;Review 1 : &lt;a href=&quot;https://www.eneuro.org/content/8/2/ENEURO.0131-21.2021&quot;&gt;In Silico&lt;/a&gt; by &lt;a href=&quot;https://fairhalllab.com/&quot; title=&quot;Title&quot;&gt;Dr. Fairhall&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Citation: Fairhall, Adrienne L. “In silico: where next?.” &lt;em&gt;Eneuro&lt;/em&gt; 8.2 (2021).&lt;/li&gt;
+      &lt;li&gt;Intro
+        &lt;ul&gt;
+          &lt;li&gt;This writing starts out by laying out the context of 2013, a very important year for funding large neuroscience research initiatives, the U.S. BRAIN projects and the European Human Brain Project (HBP).&lt;/li&gt;
+          &lt;li&gt;Furthers discussion into brain atlases from Allen institute and recent developments in imaging and recording techniques.&lt;/li&gt;
+          &lt;li&gt;Mentioned a paper I found interested on neural networks as simulation tools : &lt;a href=&quot;https://pubmed.ncbi.nlm.nih.gov/28668365/&quot;&gt;Barak 2007&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Key Question: “On this backdrop, what are valuable targets for future
+large-scale spending?”
+        &lt;ul&gt;
+          &lt;li&gt;To me, this seems to be the transition from historical background to the discussion of what next.&lt;/li&gt;
+          &lt;li&gt;And here Dr. Fairhall points out a key issue facing large scale collaboration in brain science: What big experiments and datasets will lead to transformative research?&lt;/li&gt;
+          &lt;li&gt;The answer being, there’s not really some resounding agreement.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Possible answers
+        &lt;ul&gt;
+          &lt;li&gt;Dr. Abbot suggests the approach of a deatiled cellular model of a mouse brain, however, as HBP has experienced, there is a challenge here with integrating biophysical modeling with levels of connectivity (gap junction, neuromodulation, etc.)&lt;/li&gt;
+          &lt;li&gt;An alternative approach is discussed as a brain activity map that bridges existing theories about different regions of the brain in modeling one activity in order to align existsing theories.
+            &lt;ul&gt;
+              &lt;li&gt;The challenge here seems to be design. How does one actually assemble all these odds and ends.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;I thought this quote was interesting:
+            &lt;blockquote&gt;
+              &lt;p&gt;In Silico (Fairhall 2021)&lt;/p&gt;
+              &lt;blockquote&gt;
+                &lt;p&gt;“IARPA’s MICrONS program is […] a collaborative effort to reconstruct the connectome of a section of visual cortex whose activity has been characterized in vivo. By establishing the functional relevance of specific neurons, this project addresses some of the criticisms made of both the Blue Brain (Yong, 2019) and connectomics approaches.”&lt;/p&gt;
+              &lt;/blockquote&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
 
-&lt;p&gt;The first narrative is the cup half empty guy. When I think about the internet and doing anyhting on the internet, I think of the pareto distribution. Basically, I think that there are some sites that make up 85% of the traffic on the internet. For this group, think Amazon, Ebay, Facebook, Instagram. Then, I think there are another 10% of sites that are intermittently trafficked, but feel a little like a ghost town. For this group think club penguin, you might go on it ironically to relive the old days, but you aren’t checking it everyday to see how your puffles are doing (don’t get it? OK boomer). Finally, I’d put personal websites, resturant websites, and myspace in the last group – no one goes there unless they’ve fallen down a click hole, or they are really hungry and it’s past 8pm. And in the case of myspace, no one goes there ever I think. So that’s where this &lt;em&gt;post&lt;/em&gt; lands. The likely demographic to land here is probably my friends, potential hiring people, and co-wokers, but besides that the world will keep on spinning with or without my un-proofread &lt;em&gt;posts&lt;/em&gt;.&lt;/p&gt;
+        &lt;p&gt;I thought it was interesting for a few reasons. First, I wonder what the actual criticms are in the cited paper, I hear about criticsms all the time but yet I don’t quite know what they are. Second, I wonder how this project manages to address such criticsms. An easy guess is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;function relevance&lt;/code&gt; suggests this project is doing more to link modeling with functionality … but this is still vague in my mind,&lt;/p&gt;
 
-&lt;p&gt;Everything isn’t doom and gloom though, the reason I am here typing away is the second narrative. I started by putting portfolio stuff together on here, but now that I’ve painted some of the walls, I am sitting down and having a soda. In my moment of respite, I feel one significant reason to actually post thoughts that are in my head on this website. It’s simply that I wanted to remember how I felt about doing this. And not just posting this &lt;em&gt;post&lt;/em&gt;, but I wanted to remember how it felt to do a lot of things. I wanted to remember how it felt to publish my first paper, how it felt to graduate during a pandemic, and also stuff I thought about books I’ve read. In general there are things I felt like writing about in order to &lt;strong&gt;share them with myself&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;The truth is that I’ve consumed a lot of information in my life. But I am genuinely scared by how many things I’ve forgotten, how many times I’ve learned the same lessons over and over, and how little I actually know about myself. The great thing about writing is that you &lt;strong&gt;have&lt;/strong&gt; to form an opinon. You have no choice, you either have no opinion or you have no writing. The inception for writing this stuff comes from all the times I’ve discussed a book I’ve read but completely forgotten the content or my opinion of it. Other inspiration for doing this comes from version controlling my code. I can never remember what I have and haven’t changed, but a repository where the history is tracked is really satisfying. I know that for every monkey patch I leave in my code, there’s a commit where I add the comment # TODO: Remove Monkey Patch.&lt;/p&gt;
-
-&lt;p&gt;Ok, so the lines of reason have converged and now you (I) know my thoughts on &lt;em&gt;posting&lt;/em&gt;. However,one closing remark. Several times while writing this, I cringed at writing the word &lt;em&gt;blog&lt;/em&gt;. I have always felt like a blogger was someone who just their two cents in on everything as if their opinion deserved a pedestal (sure, call me a hater). I know this isn’t true, bloggers help moderate culture, they help our uphold our cultural agreement on avant garde art, tasty food, good music, and quality little furniture, to name a few. But addmitedly, except for normally toting the populist opinion, I am too much of an overthinker to be a blogger. So it is decided by me, for an audience of  &amp;lt; 50, that, no I’m not a blogger. Someday someone might call this a blog, and I’ll cringe again. But for now I’m leaping from thought to musing and then crawling towards a ponderance before running back to mute observation as the world remains too complex to draw the line a blogger draws. I am just hands on a keyboard.&lt;/p&gt;
-
-&lt;p&gt;I don’t actually expect to even type that many things on here, but starting is better than never starting.&lt;/p&gt;
-
-&lt;p&gt;club penguin picture,
-inception picture
-myspace
-little furniture blog&lt;/p&gt;</content><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><category term="jekyll" /><category term="update" /><summary type="html">I am in the process of making my own personal website and as I am stapling posters to the walls and setting up furniture, I can’t help but think about how important the task at hand is. At the same time, I can’t help but think about equally unimportant it is. Clearly, I am a person who thinks a lot. Don’t confuse thinking a lot with being intelligent, proficient etc., most of the times, one clear line of reasoning is the winner. But I can’t help feeling two diverging narratives.</summary></entry></feed>
+        &lt;ul&gt;
+          &lt;li&gt;Finally, mention of a collaborative study where different groups measure populations of 1000 neurons.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Now that the author has introduced the problem and several approaches. it’s time to conclude and leave the reader feeling warm and fuzzy that we will solve all the problems in neuroscience. Kidding of course.
+        &lt;ul&gt;
+          &lt;li&gt;Author notes that projects that produce a “product” such as Allen datasest are less risky than projects that aim to tackle large problems.&lt;/li&gt;
+          &lt;li&gt;Suggests diversifying research investment across labs.&lt;/li&gt;
+          &lt;li&gt;Then model of brain observatories gathering data on a large scale and then smaller labs performing analysis on these dataset.
+            &lt;ul&gt;
+              &lt;li&gt;The nice part about this is that the datasets will be well vetted by various research groups.&lt;/li&gt;
+              &lt;li&gt;And computational neuroscientists can save some money on having to run large scale experiments – they get nice data.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;We know a lot but we know nothing.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The last line here really hits home. There is a massive body of research on neuroscience, yet unifying theories (across levels of complexity) are few and far between.&lt;/li&gt;
+      &lt;li&gt;Overall, this is a great paper to introduce some of the key questions facing large collaborative neuroscience and was a really nice read for my first review. I can imagine I’ll be reading more papers with a lot of narrative gating, but this was not that. It was straight the point and clear. Sure some parts were not elaborated on, but the citations are there and I can follow the trail. I believe this is a balance one has to strike in order to deliver a clear message and something I hope to take with me in my own writing.&lt;/li&gt;
+      &lt;li&gt;Good stuff :) thanks.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Review 1 : In Silico by Dr. Fairhall Citation: Fairhall, Adrienne L. “In silico: where next?.” Eneuro 8.2 (2021). Intro This writing starts out by laying out the context of 2013, a very important year for funding large neuroscience research initiatives, the U.S. BRAIN projects and the European Human Brain Project (HBP). Furthers discussion into brain atlases from Allen institute and recent developments in imaging and recording techniques. Mentioned a paper I found interested on neural networks as simulation tools : Barak 2007 Key Question: “On this backdrop, what are valuable targets for future large-scale spending?” To me, this seems to be the transition from historical background to the discussion of what next. And here Dr. Fairhall points out a key issue facing large scale collaboration in brain science: What big experiments and datasets will lead to transformative research? The answer being, there’s not really some resounding agreement. Possible answers Dr. Abbot suggests the approach of a deatiled cellular model of a mouse brain, however, as HBP has experienced, there is a challenge here with integrating biophysical modeling with levels of connectivity (gap junction, neuromodulation, etc.) An alternative approach is discussed as a brain activity map that bridges existing theories about different regions of the brain in modeling one activity in order to align existsing theories. The challenge here seems to be design. How does one actually assemble all these odds and ends. I thought this quote was interesting: In Silico (Fairhall 2021) “IARPA’s MICrONS program is […] a collaborative effort to reconstruct the connectome of a section of visual cortex whose activity has been characterized in vivo. By establishing the functional relevance of specific neurons, this project addresses some of the criticisms made of both the Blue Brain (Yong, 2019) and connectomics approaches.”</summary></entry></feed>

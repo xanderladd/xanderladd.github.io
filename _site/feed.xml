@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-21T16:12:19-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 1</title><link href="http://localhost:4000/reviews/review1/" rel="alternate" type="text/html" title="Review 1" /><published>2021-11-14T13:16:13-08:00</published><updated>2021-11-14T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review1</id><content type="html" xml:base="http://localhost:4000/reviews/review1/">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-21T21:30:21-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 1</title><link href="http://localhost:4000/reviews/review1/" rel="alternate" type="text/html" title="Review 1" /><published>2021-11-14T13:16:13-08:00</published><updated>2021-11-14T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review1</id><content type="html" xml:base="http://localhost:4000/reviews/review1/">&lt;ul&gt;
   &lt;li&gt;Review 1 : &lt;a href=&quot;https://www.eneuro.org/content/8/2/ENEURO.0131-21.2021&quot;&gt;In Silico&lt;/a&gt; by &lt;a href=&quot;https://fairhalllab.com/&quot; title=&quot;Title&quot;&gt;Dr. Fairhall&lt;/a&gt;
     &lt;ul&gt;
       &lt;li&gt;Citation: Fairhall, Adrienne L. “In silico: where next?.” &lt;em&gt;Eneuro&lt;/em&gt; 8.2 (2021).&lt;/li&gt;
@@ -59,65 +59,165 @@ large-scale spending?”
       &lt;li&gt;Good stuff :) thanks.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Review 1 : In Silico by Dr. Fairhall Citation: Fairhall, Adrienne L. “In silico: where next?.” Eneuro 8.2 (2021). Intro This writing starts out by laying out the context of 2013, a very important year for funding large neuroscience research initiatives, the U.S. BRAIN projects and the European Human Brain Project (HBP). Furthers discussion into brain atlases from Allen institute and recent developments in imaging and recording techniques. Mentioned a paper I found interested on neural networks as simulation tools : Barak 2007 Key Question: “On this backdrop, what are valuable targets for future large-scale spending?” To me, this seems to be the transition from historical background to the discussion of what next. And here Dr. Fairhall points out a key issue facing large scale collaboration in brain science: What big experiments and datasets will lead to transformative research? The answer being, there’s not really some resounding agreement. Possible answers Dr. Abbot suggests the approach of a deatiled cellular model of a mouse brain, however, as HBP has experienced, there is a challenge here with integrating biophysical modeling with levels of connectivity (gap junction, neuromodulation, etc.) An alternative approach is discussed as a brain activity map that bridges existing theories about different regions of the brain in modeling one activity in order to align existsing theories. The challenge here seems to be design. How does one actually assemble all these odds and ends. I thought this quote was interesting: In Silico (Fairhall 2021) “IARPA’s MICrONS program is […] a collaborative effort to reconstruct the connectome of a section of visual cortex whose activity has been characterized in vivo. By establishing the functional relevance of specific neurons, this project addresses some of the criticisms made of both the Blue Brain (Yong, 2019) and connectomics approaches.”</summary></entry><entry><title type="html">Review 1</title><link href="http://localhost:4000/reviews/review2/" rel="alternate" type="text/html" title="Review 1" /><published>2021-11-14T13:16:13-08:00</published><updated>2021-11-14T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review2</id><content type="html" xml:base="http://localhost:4000/reviews/review2/">&lt;ul&gt;
-  &lt;li&gt;Review 1 : &lt;a href=&quot;https://www.eneuro.org/content/8/2/ENEURO.0131-21.2021&quot;&gt;In Silico&lt;/a&gt; by &lt;a href=&quot;https://fairhalllab.com/&quot; title=&quot;Title&quot;&gt;Dr. Fairhall&lt;/a&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Review 1 : In Silico by Dr. Fairhall Citation: Fairhall, Adrienne L. “In silico: where next?.” Eneuro 8.2 (2021). Intro This writing starts out by laying out the context of 2013, a very important year for funding large neuroscience research initiatives, the U.S. BRAIN projects and the European Human Brain Project (HBP). Furthers discussion into brain atlases from Allen institute and recent developments in imaging and recording techniques. Mentioned a paper I found interested on neural networks as simulation tools : Barak 2007 Key Question: “On this backdrop, what are valuable targets for future large-scale spending?” To me, this seems to be the transition from historical background to the discussion of what next. And here Dr. Fairhall points out a key issue facing large scale collaboration in brain science: What big experiments and datasets will lead to transformative research? The answer being, there’s not really some resounding agreement. Possible answers Dr. Abbot suggests the approach of a deatiled cellular model of a mouse brain, however, as HBP has experienced, there is a challenge here with integrating biophysical modeling with levels of connectivity (gap junction, neuromodulation, etc.) An alternative approach is discussed as a brain activity map that bridges existing theories about different regions of the brain in modeling one activity in order to align existsing theories. The challenge here seems to be design. How does one actually assemble all these odds and ends. I thought this quote was interesting: In Silico (Fairhall 2021) “IARPA’s MICrONS program is […] a collaborative effort to reconstruct the connectome of a section of visual cortex whose activity has been characterized in vivo. By establishing the functional relevance of specific neurons, this project addresses some of the criticisms made of both the Blue Brain (Yong, 2019) and connectomics approaches.”</summary></entry><entry><title type="html">Review 2</title><link href="http://localhost:4000/reviews/review2/" rel="alternate" type="text/html" title="Review 2" /><published>2021-11-14T13:16:13-08:00</published><updated>2021-11-14T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review2</id><content type="html" xml:base="http://localhost:4000/reviews/review2/">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.biorxiv.org/content/10.1101/2021.02.26.433027v1.abstract&quot;&gt;Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights
+&lt;/a&gt; by &lt;a href=&quot;https://www.google.com/search?q=Ramin+Khajeh&amp;amp;oq=Ramin+Khajeh&amp;amp;aqs=chrome..69i57.82j0j7&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8&quot;&gt;Ramin Khajeh&lt;/a&gt;, &lt;a href=&quot;https://scholar.google.com/citations?user=rcb8W94AAAAJ&amp;amp;hl=ca&quot;&gt;Francesco Fumarola&lt;/a&gt;, &lt;a href=&quot;https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd&quot;&gt;Larry F. Abbott&lt;/a&gt;&lt;/p&gt;
+
     &lt;ul&gt;
-      &lt;li&gt;Citation: Fairhall, Adrienne L. “In silico: where next?.” &lt;em&gt;Eneuro&lt;/em&gt; 8.2 (2021).&lt;/li&gt;
+      &lt;li&gt;Citation: Khajeh, Ramin, Francesco Fumarola, and L. F. Abbott. “Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights.” bioRxiv (2021).&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;DISCLAIMER&lt;/strong&gt; I am very interested in this part of computational neuroscience, but I’m a bit of a beginner to this topic. Some of the stuff here goes over my head, esp. the tractability of the gamma distribution in setting synaptic weights. If I got anything horribly wrong or you have any feedback please email me at zladd@berkeley.edu. Later I plan to add a feedback section using disqus at the botttom of each blog.&lt;/li&gt;
       &lt;li&gt;Intro
         &lt;ul&gt;
-          &lt;li&gt;This writing starts out by laying out the context of 2013, a very important year for funding large neuroscience research initiatives, the U.S. BRAIN projects and the European Human Brain Project (HBP).&lt;/li&gt;
-          &lt;li&gt;Furthers discussion into brain atlases from Allen institute and recent developments in imaging and recording techniques.&lt;/li&gt;
-          &lt;li&gt;Mentioned a paper I found interested on neural networks as simulation tools : &lt;a href=&quot;https://pubmed.ncbi.nlm.nih.gov/28668365/&quot;&gt;Barak 2007&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Key Question: “On this backdrop, what are valuable targets for future
-large-scale spending?”
-        &lt;ul&gt;
-          &lt;li&gt;To me, this seems to be the transition from historical background to the discussion of what next.&lt;/li&gt;
-          &lt;li&gt;And here Dr. Fairhall points out a key issue facing large scale collaboration in brain science: What big experiments and datasets will lead to transformative research?&lt;/li&gt;
-          &lt;li&gt;The answer being, there’s not really some resounding agreement.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Possible answers
-        &lt;ul&gt;
-          &lt;li&gt;Dr. Abbot suggests the approach of a deatiled cellular model of a mouse brain, however, as HBP has experienced, there is a challenge here with integrating biophysical modeling with levels of connectivity (gap junction, neuromodulation, etc.)&lt;/li&gt;
-          &lt;li&gt;An alternative approach is discussed as a brain activity map that bridges existing theories about different regions of the brain in modeling one activity in order to align existsing theories.
+          &lt;li&gt;Neurons recieve a lot of excitatory input so there must be inhbitory balance. Some mechanism are cited as responsible for this:
             &lt;ul&gt;
-              &lt;li&gt;The challenge here seems to be design. How does one actually assemble all these odds and ends.&lt;/li&gt;
+              &lt;li&gt;Recurrent excitation&lt;/li&gt;
+              &lt;li&gt;Recurrent inhibition&lt;/li&gt;
+              &lt;li&gt;Feedfoward excitation&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
-          &lt;li&gt;I thought this quote was interesting:
+          &lt;li&gt;No evidence that feedforward excitaiton is particularly strong in these models.
+            &lt;ul&gt;
+              &lt;li&gt;This is definitely new to me.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;States that
+            &lt;ul&gt;
+              &lt;li&gt;synaptic weight distributions have variance around $\frac{1}{\sqrt{k}}$ where $K$ is node in-degree.&lt;/li&gt;
+              &lt;li&gt;order of inhibitory input is around $\sqrt(K)$&lt;/li&gt;
+              &lt;li&gt;and it’s generally cancelled by an excitatory input of equal magnitude, but they want to avoid this.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Suggests that without feedforward exc. input, there will be low firing rate but moves this evidence in argument for a sparser network, not a dense netowrk with low firing rate neurons.&lt;/li&gt;
+          &lt;li&gt;Getting rid of feedforward exc. means that synaptic distirbutions lose variance, so they suggest remedying this by making synaptic strength vary with a mean of $\frac{1}{\sqrt{K}}$ but then vary with order $\frac{1}{\sqrt{K}}$ this means total variance is now $\frac{\sqrt{K}}{\sqrt{K}}$ again (prev. it was $\frac{1}{\sqrt{k}}$)&lt;/li&gt;
+          &lt;li&gt;One part of this that I don’t understand is a formal mathematical definition for a &lt;em&gt;synaptic weight distribution&lt;/em&gt;. I think that for a more experienced reader, they will know what this means. My understanding is that this distribution will be a vector like $\bf{x} \in \mathbb{R^{K}}$ and this vector with the excitory input would follow something like $\bf{x_{1:\sqrt{K}}} \sim \mathcal{N}(\frac{1}{\sqrt{K}},1)$ (standard model –&amp;gt; variance == 1?) and the inihbitory component would be $\bf{x_{1:\sqrt{K}}} \sim \mathcal{N}(-\frac{1}{\sqrt{K}},1)$.
+            &lt;ul&gt;
+              &lt;li&gt;there are a few things I here I would want to ask:
+                &lt;ol&gt;
+                  &lt;li&gt;We have only accounted for $ 2 \times \sqrt{K}$ of the $K$ weights. Are the rest of the synaptic weights just 0?
+                    &lt;ul&gt;
+                      &lt;li&gt;honestly, I’m missing something here. I think all weights are accounted for, I just don’t know how.&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;Do these weights have unit variance?&lt;/li&gt;
+                &lt;/ol&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The model
+        &lt;ul&gt;
+          &lt;li&gt;This part starts to clear up the questions above&lt;/li&gt;
+          &lt;li&gt;They state that
             &lt;blockquote&gt;
-              &lt;p&gt;In Silico (Fairhall 2021)&lt;/p&gt;
+              &lt;p&gt;Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights. (Khajeh 2021)&lt;/p&gt;
               &lt;blockquote&gt;
-                &lt;p&gt;“IARPA’s MICrONS program is […] a collaborative effort to reconstruct the connectome of a section of visual cortex whose activity has been characterized in vivo. By establishing the functional relevance of specific neurons, this project addresses some of the criticisms made of both the Blue Brain (Yong, 2019) and connectomics approaches.”&lt;/p&gt;
+                &lt;p&gt;Networks have currents $x_i$ for $i = 1 … N$ and firing rates $\phi(x_i)$ that obey
+   \begin{equation}
+   \Gamma_x \frac{dx_i}{dt} = -x_i - \sum\limits_j^N J_{ij}\phi(x_j) + I_0
+   \end{equation} where $\phi$ is a nonlinear function and $J_{ij} \geq 0$&lt;/p&gt;
+              &lt;/blockquote&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+          &lt;li&gt;I am not sure what $J_{ij}$ represents now. *note: it get’s explained a few sentences later. – they are i.i.d. weights.&lt;/li&gt;
+          &lt;li&gt;Besides that, this function does a good job of clearly defining synaptic integration.&lt;/li&gt;
+          &lt;li&gt;Considers tangenet vs. exponential nonlinear activation functions for $\phi$.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Simulation results
+        &lt;ul&gt;
+          &lt;li&gt;When excitatory input is set to $I_0 \sim \sqrt{K}$ the network has either sparse and high firing rate reponses (high variance), or dense and low firing rate responses (low variance).
+            &lt;ul&gt;
+              &lt;li&gt;this lines up nicely with what was introduced in the beginning and has a very clear inuitive interpretation. Nice!&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Then they dig in to some detailed numerical explanations for this effect.&lt;/li&gt;
+          &lt;li&gt;Figure 1 is very clear :thumbsup:
+            &lt;ul&gt;
+              &lt;li&gt;I was surprised to see that in panel G, the feedfoward input only had a small impact on the fraction of active neurons.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Sparse E/I balance lead to non-gaussian 0-skewed distribution of synaptic weights&lt;/li&gt;
+          &lt;li&gt;The authors state that these results represent a robust distribution of synaptic weights desipte not having any excitatory input.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Analysis of Sparse Balance Networks
+        &lt;ul&gt;
+          &lt;li&gt;here the authors explore high variance, low exc. input, sparse networks further using heavside non-linear response function.
+            &lt;ul&gt;
+              &lt;li&gt;had to look this one up, but it’s basically a piecewise activaiton function where the gradient is the &lt;a href=&quot;https://en.wikipedia.org/wiki/Dirac_delta_function&quot;&gt;dirac delta function&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;weights drawn from $\text{gamma}(k, \theta)$&lt;/li&gt;
+          &lt;li&gt;Figure 3A would benefit from text titles on the figure, not just in the caption (at least for a reader like me lol I suck at reading figs).&lt;/li&gt;
+          &lt;li&gt;What I got out of Fig. 3 is that heavside function lead to lower fraction of active neurons compared to tanh and exp. activation functions and thus a sparser netowrk. But that it also had a non-gaussian distribution of weights under the sparse condition.&lt;/li&gt;
+          &lt;li&gt;Interesting point about having a larger $K$ or shape parameter for gamma, one might expect that the gamma function approximate gaussian function. But this is not the case with $\eta \sim \text{gamma}(\alpha, \theta)$.&lt;/li&gt;
+          &lt;li&gt;I wonder if I understood that right?&lt;/li&gt;
+          &lt;li&gt;If feedforward bias is small  –&amp;gt; large synaptic variance required for robust fluctuation.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Sparse Activity Arises from Network Dynamics
+        &lt;ul&gt;
+          &lt;li&gt;They use population averaged autocorrelation function to find out how much the weight distribution is affected by the previous weight distribution at some lag.&lt;/li&gt;
+          &lt;li&gt;Autocorrelation decays faster for larger K (fig. 4).
+            &lt;blockquote&gt;
+              &lt;p&gt;Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights. (Khajeh 2021)&lt;/p&gt;
+              &lt;blockquote&gt;
+                &lt;p&gt;it is the dynamics of the recurrent synaptic inputs, not their size, that leads to sparse activity at large K&lt;/p&gt;
               &lt;/blockquote&gt;
             &lt;/blockquote&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
-
-        &lt;p&gt;I thought it was interesting for a few reasons. First, I wonder what the actual criticms are in the cited paper, I hear about criticsms all the time but yet I don’t quite know what they are. Second, I wonder how this project manages to address such criticsms. An easy guess is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;function relevance&lt;/code&gt; suggests this project is doing more to link modeling with functionality … but this is still vague in my mind,&lt;/p&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;Finally, mention of a collaborative study where different groups measure populations of 1000 neurons.&lt;/li&gt;
-        &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;Now that the author has introduced the problem and several approaches. it’s time to conclude and leave the reader feeling warm and fuzzy that we will solve all the problems in neuroscience. Kidding of course.
+      &lt;li&gt;Mean Field Analysis
         &lt;ul&gt;
-          &lt;li&gt;Author notes that projects that produce a “product” such as Allen datasest are less risky than projects that aim to tackle large problems.&lt;/li&gt;
-          &lt;li&gt;Suggests diversifying research investment across labs.&lt;/li&gt;
-          &lt;li&gt;Then model of brain observatories gathering data on a large scale and then smaller labs performing analysis on these dataset.
+          &lt;li&gt;Introduces a variable $m$ which is the mean-field approximation for $\bar{\phi}$&lt;/li&gt;
+          &lt;li&gt;Based on fuctions 7 and 11 (I think) they define closed form equation for $m$ in terms of gamma dist. shape parameter $\alpha$ as 
+  \begin{equation}
+  \alpha = \frac{mJ_0^2\sqrt(m)}{g^2}
+  \end{equation}
             &lt;ul&gt;
-              &lt;li&gt;The nice part about this is that the datasets will be well vetted by various research groups.&lt;/li&gt;
-              &lt;li&gt;And computational neuroscientists can save some money on having to run large scale experiments – they get nice data.&lt;/li&gt;
+              &lt;li&gt;$g^2$ comes from gamma dist. scale parameter.&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
-          &lt;li&gt;We know a lot but we know nothing.&lt;/li&gt;
+          &lt;li&gt;considers several cases of computing autocorrelation of $\eta$ based on different sizes of $K$ and decorrealtion rate $\beta$.
+            &lt;ul&gt;
+              &lt;li&gt;When $K$ is small, then $eta$ follows gamma distribution $\text{gamma}(\alpha, \theta)$ and then they can solve closed form mean field calcuation using integral.&lt;/li&gt;
+              &lt;li&gt;even at $K ~ 10^3$ this holds.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Then there’s a more complicated closed form calculation for $var(\eta)$ that I’m gonna skip over for now.
+            &lt;ul&gt;
+              &lt;li&gt;involves decomposing the variance into quenched and time dependent.&lt;/li&gt;
+              &lt;li&gt;not very familiar with this decomposition. Maybe if I look into mean field decomp. more I will see.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Fig. 5 just shows that this recover of gamma distribution parameters charcterizes weights and input parameter well. Again, clear and nice figure :thumbsup:&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;The last line here really hits home. There is a massive body of research on neuroscience, yet unifying theories (across levels of complexity) are few and far between.&lt;/li&gt;
-      &lt;li&gt;Overall, this is a great paper to introduce some of the key questions facing large collaborative neuroscience and was a really nice read for my first review. I can imagine I’ll be reading more papers with a lot of narrative gating, but this was not that. It was straight the point and clear. Sure some parts were not elaborated on, but the citations are there and I can follow the trail. I believe this is a balance one has to strike in order to deliver a clear message and something I hope to take with me in my own writing.&lt;/li&gt;
-      &lt;li&gt;Good stuff :) thanks.&lt;/li&gt;
+      &lt;li&gt;Sparse balance in E-I network
+        &lt;ul&gt;
+          &lt;li&gt;shows that &lt;em&gt;network properties&lt;/em&gt; shown for I network model also apply for E/I model, such as sparsity (frac. of neurons active) and firing rates.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Discussion
+        &lt;ul&gt;
+          &lt;li&gt;Shows interesting network properties demonstrated in this anaylsis as a result of making feedforward excitation smaller.&lt;/li&gt;
+          &lt;li&gt;Broadens out implications to real world instances where E/I ratio is similarly composed.&lt;/li&gt;
+          &lt;li&gt;Interesting to point out this phenomenon in relating autocorrelation and network sparse responses seems to be a general effect.&lt;/li&gt;
+          &lt;li&gt;Definitely incresed my interested in mean field theory.&lt;/li&gt;
+          &lt;li&gt;Here is what I think is really the most fascinating takeway:
+  &lt;strong&gt;“The large degree of variability in the synapses could route stimulus information along particular  paths across network neurons”&lt;/strong&gt;&lt;/li&gt;
+          &lt;li&gt;A reasonable claim that it is not just feedforward input that influences selective network responses but also recurrent synaptic input.
+            &lt;ul&gt;
+              &lt;li&gt;The number of recurrent connections in the brain would support this idea. If there is so many recurrent networks, they must be doing something.&lt;/li&gt;
+              &lt;li&gt;Ideas here build on some early work by M. Jordan cited in The Computational Brain by Terrence Sejnowski on using recurrent networks to identify shapes and the expressive power of &lt;em&gt;non-feedforward&lt;/em&gt; connections.&lt;/li&gt;
+              &lt;li&gt;Granted, I haven’t actually read this 1998 work, just read the watered down example in Dr. Sejnowski’s book.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Review 1 : In Silico by Dr. Fairhall Citation: Fairhall, Adrienne L. “In silico: where next?.” Eneuro 8.2 (2021). Intro This writing starts out by laying out the context of 2013, a very important year for funding large neuroscience research initiatives, the U.S. BRAIN projects and the European Human Brain Project (HBP). Furthers discussion into brain atlases from Allen institute and recent developments in imaging and recording techniques. Mentioned a paper I found interested on neural networks as simulation tools : Barak 2007 Key Question: “On this backdrop, what are valuable targets for future large-scale spending?” To me, this seems to be the transition from historical background to the discussion of what next. And here Dr. Fairhall points out a key issue facing large scale collaboration in brain science: What big experiments and datasets will lead to transformative research? The answer being, there’s not really some resounding agreement. Possible answers Dr. Abbot suggests the approach of a deatiled cellular model of a mouse brain, however, as HBP has experienced, there is a challenge here with integrating biophysical modeling with levels of connectivity (gap junction, neuromodulation, etc.) An alternative approach is discussed as a brain activity map that bridges existing theories about different regions of the brain in modeling one activity in order to align existsing theories. The challenge here seems to be design. How does one actually assemble all these odds and ends. I thought this quote was interesting: In Silico (Fairhall 2021) “IARPA’s MICrONS program is […] a collaborative effort to reconstruct the connectome of a section of visual cortex whose activity has been characterized in vivo. By establishing the functional relevance of specific neurons, this project addresses some of the criticisms made of both the Blue Brain (Yong, 2019) and connectomics approaches.”</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights by Ramin Khajeh, Francesco Fumarola, Larry F. Abbott</summary></entry></feed>

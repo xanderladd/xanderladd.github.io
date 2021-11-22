@@ -1,6 +1,6 @@
 ---
-layout: default
-title:  "Review 1"
+layout: base
+title:  "Review 2"
 date:   2021-11-14 14:16:13 -0700
 author: xander
 categories: reviews
@@ -8,40 +8,89 @@ categories: reviews
 
 
 
--  Review 1 : [In Silico](https://www.eneuro.org/content/8/2/ENEURO.0131-21.2021) by [Dr. Fairhall](https://fairhalllab.com/ "Title")
-    - Citation: Fairhall, Adrienne L. "In silico: where next?." _Eneuro_ 8.2 (2021).
+- [Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights
+](https://www.biorxiv.org/content/10.1101/2021.02.26.433027v1.abstract) by [Ramin Khajeh](https://www.google.com/search?q=Ramin+Khajeh&oq=Ramin+Khajeh&aqs=chrome..69i57.82j0j7&sourceid=chrome&ie=UTF-8), [Francesco Fumarola](https://scholar.google.com/citations?user=rcb8W94AAAAJ&hl=ca), [Larry F. Abbott](https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd)
+
+
+    - Citation: Khajeh, Ramin, Francesco Fumarola, and L. F. Abbott. "Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights." bioRxiv (2021).
+     - **DISCLAIMER** I am very interested in this part of computational neuroscience, but I'm a bit of a beginner to this topic. Some of the stuff here goes over my head, esp. the tractability of the gamma distribution in setting synaptic weights. If I got anything horribly wrong or you have any feedback please email me at zladd@berkeley.edu. Later I plan to add a feedback section using disqus at the botttom of each blog. 
     - Intro
-        - This writing starts out by laying out the context of 2013, a very important year for funding large neuroscience research initiatives, the U.S. BRAIN projects and the European Human Brain Project (HBP).
-        - Furthers discussion into brain atlases from Allen institute and recent developments in imaging and recording techniques.
-        - Mentioned a paper I found interested on neural networks as simulation tools : [Barak 2007](https://pubmed.ncbi.nlm.nih.gov/28668365/)
-    - Key Question: "On this backdrop, what are valuable targets for future
-large-scale spending?"
-        - To me, this seems to be the transition from historical background to the discussion of what next.
-        - And here Dr. Fairhall points out a key issue facing large scale collaboration in brain science: What big experiments and datasets will lead to transformative research? 
-        - The answer being, there's not really some resounding agreement.
-    - Possible answers
-        - Dr. Abbot suggests the approach of a deatiled cellular model of a mouse brain, however, as HBP has experienced, there is a challenge here with integrating biophysical modeling with levels of connectivity (gap junction, neuromodulation, etc.)
-        - An alternative approach is discussed as a brain activity map that bridges existing theories about different regions of the brain in modeling one activity in order to align existsing theories.
-            - The challenge here seems to be design. How does one actually assemble all these odds and ends.
-        - I thought this quote was interesting:
-         > In Silico (Fairhall 2021) 
-         >> "IARPA’s MICrONS program is [...] a collaborative effort to reconstruct the connectome of a section of visual cortex whose activity has been characterized in vivo. By establishing the functional relevance of specific neurons, this project addresses some of the criticisms made of both the Blue Brain (Yong, 2019) and connectomics approaches."
-
-         I thought it was interesting for a few reasons. First, I wonder what the actual criticms are in the cited paper, I hear about criticsms all the time but yet I don't quite know what they are. Second, I wonder how this project manages to address such criticsms. An easy guess is `function relevance` suggests this project is doing more to link modeling with functionality ... but this is still vague in my mind,
-
-         - Finally, mention of a collaborative study where different groups measure populations of 1000 neurons.
-
-    - Now that the author has introduced the problem and several approaches. it's time to conclude and leave the reader feeling warm and fuzzy that we will solve all the problems in neuroscience. Kidding of course.
-        - Author notes that projects that produce a "product" such as Allen datasest are less risky than projects that aim to tackle large problems.
-        - Suggests diversifying research investment across labs.
-        - Then model of brain observatories gathering data on a large scale and then smaller labs performing analysis on these dataset.
-            - The nice part about this is that the datasets will be well vetted by various research groups.
-            - And computational neuroscientists can save some money on having to run large scale experiments -- they get nice data.
-        - We know a lot but we know nothing.
-    - The last line here really hits home. There is a massive body of research on neuroscience, yet unifying theories (across levels of complexity) are few and far between. 
-    - Overall, this is a great paper to introduce some of the key questions facing large collaborative neuroscience and was a really nice read for my first review. I can imagine I'll be reading more papers with a lot of narrative gating, but this was not that. It was straight the point and clear. Sure some parts were not elaborated on, but the citations are there and I can follow the trail. I believe this is a balance one has to strike in order to deliver a clear message and something I hope to take with me in my own writing.
-    - Good stuff :) thanks.
-
-
-
+       - Neurons recieve a lot of excitatory input so there must be inhbitory balance. Some mechanism are cited as responsible for this:
+            - Recurrent excitation
+            - Recurrent inhibition
+            - Feedfoward excitation
+        - No evidence that feedforward excitaiton is particularly strong in these models.
+            - This is definitely new to me.
+        - States that 
+            - synaptic weight distributions have variance around $\frac{1}{\sqrt{k}}$ where $K$ is node in-degree.
+            - order of inhibitory input is around $\sqrt(K)$ 
+            - and it's generally cancelled by an excitatory input of equal magnitude, but they want to avoid this.
+        - Suggests that without feedforward exc. input, there will be low firing rate but moves this evidence in argument for a sparser network, not a dense netowrk with low firing rate neurons.
+        - Getting rid of feedforward exc. means that synaptic distirbutions lose variance, so they suggest remedying this by making synaptic strength vary with a mean of $\frac{1}{\sqrt{K}}$ but then vary with order $\frac{1}{\sqrt{K}}$ this means total variance is now $\frac{\sqrt{K}}{\sqrt{K}}$ again (prev. it was $\frac{1}{\sqrt{k}}$)
+        - One part of this that I don't understand is a formal mathematical definition for a _synaptic weight distribution_. I think that for a more experienced reader, they will know what this means. My understanding is that this distribution will be a vector like $\bf{x} \in \mathbb{R^{K}}$ and this vector with the excitory input would follow something like $\bf{x_{1:\sqrt{K}}} \sim \mathcal{N}(\frac{1}{\sqrt{K}},1)$ (standard model --> variance == 1?) and the inihbitory component would be $\bf{x_{1:\sqrt{K}}} \sim \mathcal{N}(-\frac{1}{\sqrt{K}},1)$. 
+            - there are a few things I here I would want to ask:
+                1. We have only accounted for $ 2 \times \sqrt{K}$ of the $K$ weights. Are the rest of the synaptic weights just 0?
+                - honestly, I'm missing something here. I think all weights are accounted for, I just don't know how.
+                2. Do these weights have unit variance?
+    - The model
+        - This part starts to clear up the questions above
+        - They state that 
+         > Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights. (Khajeh 2021) 
+         >> Networks have currents $x_i$ for $i = 1 ... N$ and firing rates $\phi(x_i)$ that obey
+         \begin{equation}
+         \Gamma_x \frac{dx_i}{dt} = -x_i - \sum\limits_j^N J_{ij}\phi(x_j) + I_0
+         \end{equation} where $\phi$ is a nonlinear function and $J_{ij} \geq 0$
+        - I am not sure what $J_{ij}$ represents now. *note: it get's explained a few sentences later. -- they are i.i.d. weights.
+        - Besides that, this function does a good job of clearly defining synaptic integration.
+        - Considers tangenet vs. exponential nonlinear activation functions for $\phi$.
+    - Simulation results
+        - When excitatory input is set to $I_0 \sim \sqrt{K}$ the network has either sparse and high firing rate reponses (high variance), or dense and low firing rate responses (low variance).
+            - this lines up nicely with what was introduced in the beginning and has a very clear inuitive interpretation. Nice!
+        - Then they dig in to some detailed numerical explanations for this effect.
+        - Figure 1 is very clear :thumbsup:
+            - I was surprised to see that in panel G, the feedfoward input only had a small impact on the fraction of active neurons.
+        - Sparse E/I balance lead to non-gaussian 0-skewed distribution of synaptic weights
+        - The authors state that these results represent a robust distribution of synaptic weights desipte not having any excitatory input.
+    - Analysis of Sparse Balance Networks
+        - here the authors explore high variance, low exc. input, sparse networks further using heavside non-linear response function.
+            - had to look this one up, but it's basically a piecewise activaiton function where the gradient is the [dirac delta function](https://en.wikipedia.org/wiki/Dirac_delta_function)
+        - weights drawn from $\text{gamma}(k, \theta)$
+        - Figure 3A would benefit from text titles on the figure, not just in the caption (at least for a reader like me lol I suck at reading figs).
+        - What I got out of Fig. 3 is that heavside function lead to lower fraction of active neurons compared to tanh and exp. activation functions and thus a sparser netowrk. But that it also had a non-gaussian distribution of weights under the sparse condition.
+        - Interesting point about having a larger $K$ or shape parameter for gamma, one might expect that the gamma function approximate gaussian function. But this is not the case with $\eta \sim \text{gamma}(\alpha, \theta)$.
+        - I wonder if I understood that right?
+        - If feedforward bias is small  --> large synaptic variance required for robust fluctuation.
+    - Sparse Activity Arises from Network Dynamics 
+        - They use population averaged autocorrelation function to find out how much the weight distribution is affected by the previous weight distribution at some lag.
+        - Autocorrelation decays faster for larger K (fig. 4).
+        > Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights. (Khajeh 2021) 
+         >>  it is the dynamics of the recurrent synaptic inputs, not their size, that leads to sparse activity at large K
+    - Mean Field Analysis
+        - Introduces a variable $m$ which is the mean-field approximation for $\bar{\phi}$
+        - Based on fuctions 7 and 11 (I think) they define closed form equation for $m$ in terms of gamma dist. shape parameter $\alpha$ as 
+        \begin{equation}
+            \alpha = \frac{mJ_0^2\sqrt(m)}{g^2}
+        \end{equation}
+            - $g^2$ comes from gamma dist. scale parameter.
+        - considers several cases of computing autocorrelation of $\eta$ based on different sizes of $K$ and decorrealtion rate $\beta$.
+            - When $K$ is small, then $eta$ follows gamma distribution $\text{gamma}(\alpha, \theta)$ and then they can solve closed form mean field calcuation using integral.
+            - even at $K ~ 10^3$ this holds.
+        - Then there's a more complicated closed form calculation for $var(\eta)$ that I'm gonna skip over for now.
+            - involves decomposing the variance into quenched and time dependent.
+            - not very familiar with this decomposition. Maybe if I look into mean field decomp. more I will see.
+        - Fig. 5 just shows that this recover of gamma distribution parameters charcterizes weights and input parameter well. Again, clear and nice figure :thumbsup:
+    - Sparse balance in E-I network
+        - shows that _network properties_ shown for I network model also apply for E/I model, such as sparsity (frac. of neurons active) and firing rates.
+    - Discussion
+        - Shows interesting network properties demonstrated in this anaylsis as a result of making feedforward excitation smaller.
+        - Broadens out implications to real world instances where E/I ratio is similarly composed.
+        - Interesting to point out this phenomenon in relating autocorrelation and network sparse responses seems to be a general effect.
+        - Definitely incresed my interested in mean field theory.
+        - Here is what I think is really the most fascinating takeway:
+        **"The large degree of variability in the synapses could route stimulus information along particular  paths across network neurons"**
+        - A reasonable claim that it is not just feedforward input that influences selective network responses but also recurrent synaptic input.
+            - The number of recurrent connections in the brain would support this idea. If there is so many recurrent networks, they must be doing something.
+            - Ideas here build on some early work by M. Jordan cited in The Computational Brain by Terrence Sejnowski on using recurrent networks to identify shapes and the expressive power of _non-feedforward_ connections.
+            - Granted, I haven't actually read this 1998 work, just read the watered down example in Dr. Sejnowski's book.
+        
 

@@ -13,4 +13,4 @@ layout: base
 
 
 ## Benchmarking and Scaling of an Accurate Method for Fitting Multicompartment Models to Data
-  
+  <object data="../assets/images/benchmarking_draft.pdf" width="1000" height="1000" type='application/pdf'></object>

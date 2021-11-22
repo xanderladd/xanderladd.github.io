@@ -230,6 +230,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-titles-from-headings
+  - jemoji
 
 # mimic GitHub Pages with --safe
 whitelist:

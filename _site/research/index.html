@@ -92,7 +92,7 @@
 
   </head>
 
-  <body class="layout--base wide">
+  <body class="layout--collection wide">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -273,148 +273,37 @@
     
     <p>Here, I share a litte bit about what I’ve done for research at</p>
 
-<!-- ## Carmichael Neurology Lab
+<!-- TODO:
+1. add disqus
+2. Link carmichael Neuro lab
+3. Do more than just link papers, give a blurb, link the data
+   - do things !!
+ 
 
-## Cooper Lab
+ -->
 
-## Bender Lab / LBNL -->
+<h2 id="ben-shalom-lab--bender-lab--lbnl">Ben-Shalom Lab / Bender Lab / LBNL</h2>
+<ul>
+  <li>Publication link: <a href="https://www.sciencedirect.com/science/article/abs/pii/S0165027021003356">NeuroGPU</a></li>
+  <li><a href="./SfN2021">SfN 2021: Benchmarking and Scaling of an Accurate Method for Fitting Multicompartment Models to Data</a></li>
+  <li>Preprint: <a href="./benchmarking">Benchmarking and Scaling of an Accurate Method for Fitting Multicompartment Models to Data</a></li>
+</ul>
 
 <h2 id="lawrence-livermore-national-lab-llnl">Lawrence Livermore National Lab (LLNL)</h2>
-<h3 id="multitask-learning-for-cancer-mtl4c">Multitask Learning For Cancer (MTL4C)</h3>
 <ul>
-  <li>See the code on github <a href="https://github.com/LLNL/MTLRecSys/">HERE</a></li>
-  <li>See the technical report <a href="https://www.osti.gov/biblio/1704073-multitask-recommender-systems-cancer-drug-response">HERE</a></li>
-  <li>“The aim of this report is to draw from adaptations and state of the art developments in both algorithms for recommender systems and multitask learning to model the interaction between cancer cell lines and cancer drugs.”</li>
-  <li>Here is my adaptation of NCF</li>
-  <li>Instead of using embeddings of row and column vectors $y_i^T$ and $y_j$ to represent feature data, our method uses Dragon7 drug features and Lincs cell line feature matrices for $U$ and $V$ to predict $Y$. In order to perform general matrix factorization, latent drug features $P$ and latent cell features $Q$ are learned as biased rank-d linear combinations of $U$ and $V$.
-   \begin{equation}
- min_{P,Q}\; ||Y - P^TQ||_F \ \text{where} \ P = \boldsymbol{w}_vV + \boldsymbol{b}_v \ , \ Q = \boldsymbol{w}_uU + \boldsymbol{b}_u, \ \boldsymbol{w}_v, \boldsymbol{w}_u \in \mathbb{R}^d
-   \end{equation}</li>
-  <li>We adapted the method from classification to regression. The NCF paper presents likelihood function: 
-   \begin{equation}
- p(Y,Y^- \mid U,V, \Theta) = \prod\limits_{(i,j) \in Y}\hat y_{i,j} \prod\limits_{(i,j) \in Y^-}(1 -\hat y_{i,j})
-   \end{equation}
-   Where $Y$ is a positive rating $Y^- $ is a negative rating. Taking the log and simplifying gives us the objective function used in NCF:
-   \begin{equation}
- -\sum\limits_{(i,j) \in Y, Y^-} y_{i,j} \log(\hat y_{i,j}) +  (1-\hat y_{i,j}) \log(1- y_{i,j}) 
-   \end{equation}
-   In our method we are reconstructing a non binary ratings matrix $Y$ using a regression model. The likelihood function becomes: 
-   \begin{equation}
- p(Y \mid U,V, \Theta) = \prod\limits_{(y_{i,j}) \in Y}p(y_{ij} \mid \boldsymbol{u}_i, \boldsymbol{v}_j, \Theta)
-   \end{equation}<br />
-   as the likelihood function, which is equal to minimizing the objective function</li>
-</ul>
-
-<p>\begin{equation}
-         \min_{U,V}\sum\limits_{y_{i,j} \neq 0 \in Y}(y_{i,j} - \boldsymbol{u}_i^T \boldsymbol{v}_j)^2 + \lambda_U ||\boldsymbol{u}_i||_{F} + \lambda_V ||\boldsymbol{v}_j||_{F}.
-   \end{equation}</p>
-
-<ul>
-  <li>
-    <p>Though the objective function has been adapted from classification to regression, we are still using the same process of neural collaborative filtering, which replaces the term $ U^TV = Y $ from Eq. 5 with $\sigma(\boldsymbol{h}^T \begin{bmatrix}\phi^{GMF} \\ \phi^{MLP}\end{bmatrix})$ where the large parenthesis denote concatenation, $\boldsymbol{h}^T$ are regularizing weights, $\phi^{GMF}$ is the function described in Eq. 1, and $\phi^{MLP} =  a_L  (W_L^T(a_{L-1}(…a_{1}(W_{1} \begin{pmatrix}U^T \\ V \end{pmatrix}  + \boldsymbol{b}_1)…) + \boldsymbol{b}_{L-1}) + \boldsymbol{b}_L)$.
-   The only difference is the final $\sigma$ is not sigmoid but linear activation. The $a$ values denote activation layers.</p>
-  </li>
-  <li>
-    <p>Here is a flow chart for the adapted algorithm. Note the pooled layers for multitask.
-<img src="/mergedMFNCF_simplifiedv2.png" alt="drawing" width="400" />
-<img src="/mergedMLPNCF_simplifiedv2.png" alt="drawing" width="400" align="right" /></p>
-  </li>
+  <li><a href="./MTL4C">Multitask Learning for Cancer Drug Discovery</a></li>
+  <li>Publication link: <a href="https://dl.acm.org/doi/abs/10.1145/3447555.3466588">End-to-End Framework for Imputation and State Discovery in Longitudinal Energy Data</a></li>
 </ul>
 
 
 
-
-
-<!-- 
 <div class="entries-list">
   
-    
 
 
 
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/reviews/review1/" rel="permalink">Review 1
-</a>
-      
-    </h2>
-    
 
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          3 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">
-  Review 1 : In Silico by Dr. Fairhall
-    
-      Citation: Fairhall, Adrienne L. “In silico: where next?.” Eneuro 8.2 (2021).
-      Intro
-        
-        ...</p>
-  </article>
 </div>
-
-  
-</div> -->
-
-<!-- 
-
-<title>Research - Alexander Ladd</title>
-<meta name="viewport" content="width=device-width">
-
-<link rel="stylesheet" href="/css/all.css"> -->
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-51807848-1', 'simple.gy');
-  ga('send', 'pageview');
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [['$','$'], ['\\(','\\)']],
-      processEscapes: true},
-      jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
-      extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
-      TeX: {
-      extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
-      equationNumbers: {
-      autoNumber: "AMS",
-      tags: 'ams'
-      },
-      tex: {packages: {'[+]': ['boldsymbol'], '[+]': ['bm']}}
-
-    }
-  });
-</script>
-
-
-
 
   </div>
 </div>

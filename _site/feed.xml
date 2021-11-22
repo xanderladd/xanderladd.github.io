@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-14T22:36:47-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 1</title><link href="http://localhost:4000/reviews/review1/" rel="alternate" type="text/html" title="Review 1" /><published>2021-11-14T13:16:13-08:00</published><updated>2021-11-14T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review1</id><content type="html" xml:base="http://localhost:4000/reviews/review1/">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-21T16:12:19-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 1</title><link href="http://localhost:4000/reviews/review1/" rel="alternate" type="text/html" title="Review 1" /><published>2021-11-14T13:16:13-08:00</published><updated>2021-11-14T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review1</id><content type="html" xml:base="http://localhost:4000/reviews/review1/">&lt;ul&gt;
+  &lt;li&gt;Review 1 : &lt;a href=&quot;https://www.eneuro.org/content/8/2/ENEURO.0131-21.2021&quot;&gt;In Silico&lt;/a&gt; by &lt;a href=&quot;https://fairhalllab.com/&quot; title=&quot;Title&quot;&gt;Dr. Fairhall&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Citation: Fairhall, Adrienne L. “In silico: where next?.” &lt;em&gt;Eneuro&lt;/em&gt; 8.2 (2021).&lt;/li&gt;
+      &lt;li&gt;Intro
+        &lt;ul&gt;
+          &lt;li&gt;This writing starts out by laying out the context of 2013, a very important year for funding large neuroscience research initiatives, the U.S. BRAIN projects and the European Human Brain Project (HBP).&lt;/li&gt;
+          &lt;li&gt;Furthers discussion into brain atlases from Allen institute and recent developments in imaging and recording techniques.&lt;/li&gt;
+          &lt;li&gt;Mentioned a paper I found interested on neural networks as simulation tools : &lt;a href=&quot;https://pubmed.ncbi.nlm.nih.gov/28668365/&quot;&gt;Barak 2007&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Key Question: “On this backdrop, what are valuable targets for future
+large-scale spending?”
+        &lt;ul&gt;
+          &lt;li&gt;To me, this seems to be the transition from historical background to the discussion of what next.&lt;/li&gt;
+          &lt;li&gt;And here Dr. Fairhall points out a key issue facing large scale collaboration in brain science: What big experiments and datasets will lead to transformative research?&lt;/li&gt;
+          &lt;li&gt;The answer being, there’s not really some resounding agreement.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Possible answers
+        &lt;ul&gt;
+          &lt;li&gt;Dr. Abbot suggests the approach of a deatiled cellular model of a mouse brain, however, as HBP has experienced, there is a challenge here with integrating biophysical modeling with levels of connectivity (gap junction, neuromodulation, etc.)&lt;/li&gt;
+          &lt;li&gt;An alternative approach is discussed as a brain activity map that bridges existing theories about different regions of the brain in modeling one activity in order to align existsing theories.
+            &lt;ul&gt;
+              &lt;li&gt;The challenge here seems to be design. How does one actually assemble all these odds and ends.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;I thought this quote was interesting:
+            &lt;blockquote&gt;
+              &lt;p&gt;In Silico (Fairhall 2021)&lt;/p&gt;
+              &lt;blockquote&gt;
+                &lt;p&gt;“IARPA’s MICrONS program is […] a collaborative effort to reconstruct the connectome of a section of visual cortex whose activity has been characterized in vivo. By establishing the functional relevance of specific neurons, this project addresses some of the criticisms made of both the Blue Brain (Yong, 2019) and connectomics approaches.”&lt;/p&gt;
+              &lt;/blockquote&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;p&gt;I thought it was interesting for a few reasons. First, I wonder what the actual criticms are in the cited paper, I hear about criticsms all the time but yet I don’t quite know what they are. Second, I wonder how this project manages to address such criticsms. An easy guess is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;function relevance&lt;/code&gt; suggests this project is doing more to link modeling with functionality … but this is still vague in my mind,&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;Finally, mention of a collaborative study where different groups measure populations of 1000 neurons.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Now that the author has introduced the problem and several approaches. it’s time to conclude and leave the reader feeling warm and fuzzy that we will solve all the problems in neuroscience. Kidding of course.
+        &lt;ul&gt;
+          &lt;li&gt;Author notes that projects that produce a “product” such as Allen datasest are less risky than projects that aim to tackle large problems.&lt;/li&gt;
+          &lt;li&gt;Suggests diversifying research investment across labs.&lt;/li&gt;
+          &lt;li&gt;Then model of brain observatories gathering data on a large scale and then smaller labs performing analysis on these dataset.
+            &lt;ul&gt;
+              &lt;li&gt;The nice part about this is that the datasets will be well vetted by various research groups.&lt;/li&gt;
+              &lt;li&gt;And computational neuroscientists can save some money on having to run large scale experiments – they get nice data.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;We know a lot but we know nothing.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The last line here really hits home. There is a massive body of research on neuroscience, yet unifying theories (across levels of complexity) are few and far between.&lt;/li&gt;
+      &lt;li&gt;Overall, this is a great paper to introduce some of the key questions facing large collaborative neuroscience and was a really nice read for my first review. I can imagine I’ll be reading more papers with a lot of narrative gating, but this was not that. It was straight the point and clear. Sure some parts were not elaborated on, but the citations are there and I can follow the trail. I believe this is a balance one has to strike in order to deliver a clear message and something I hope to take with me in my own writing.&lt;/li&gt;
+      &lt;li&gt;Good stuff :) thanks.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Review 1 : In Silico by Dr. Fairhall Citation: Fairhall, Adrienne L. “In silico: where next?.” Eneuro 8.2 (2021). Intro This writing starts out by laying out the context of 2013, a very important year for funding large neuroscience research initiatives, the U.S. BRAIN projects and the European Human Brain Project (HBP). Furthers discussion into brain atlases from Allen institute and recent developments in imaging and recording techniques. Mentioned a paper I found interested on neural networks as simulation tools : Barak 2007 Key Question: “On this backdrop, what are valuable targets for future large-scale spending?” To me, this seems to be the transition from historical background to the discussion of what next. And here Dr. Fairhall points out a key issue facing large scale collaboration in brain science: What big experiments and datasets will lead to transformative research? The answer being, there’s not really some resounding agreement. Possible answers Dr. Abbot suggests the approach of a deatiled cellular model of a mouse brain, however, as HBP has experienced, there is a challenge here with integrating biophysical modeling with levels of connectivity (gap junction, neuromodulation, etc.) An alternative approach is discussed as a brain activity map that bridges existing theories about different regions of the brain in modeling one activity in order to align existsing theories. The challenge here seems to be design. How does one actually assemble all these odds and ends. I thought this quote was interesting: In Silico (Fairhall 2021) “IARPA’s MICrONS program is […] a collaborative effort to reconstruct the connectome of a section of visual cortex whose activity has been characterized in vivo. By establishing the functional relevance of specific neurons, this project addresses some of the criticisms made of both the Blue Brain (Yong, 2019) and connectomics approaches.”</summary></entry><entry><title type="html">Review 1</title><link href="http://localhost:4000/reviews/review2/" rel="alternate" type="text/html" title="Review 1" /><published>2021-11-14T13:16:13-08:00</published><updated>2021-11-14T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review2</id><content type="html" xml:base="http://localhost:4000/reviews/review2/">&lt;ul&gt;
   &lt;li&gt;Review 1 : &lt;a href=&quot;https://www.eneuro.org/content/8/2/ENEURO.0131-21.2021&quot;&gt;In Silico&lt;/a&gt; by &lt;a href=&quot;https://fairhalllab.com/&quot; title=&quot;Title&quot;&gt;Dr. Fairhall&lt;/a&gt;
     &lt;ul&gt;
       &lt;li&gt;Citation: Fairhall, Adrienne L. “In silico: where next?.” &lt;em&gt;Eneuro&lt;/em&gt; 8.2 (2021).&lt;/li&gt;

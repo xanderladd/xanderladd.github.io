@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Bio - Alexander Ladd</title>
+<!-- begin _includes/seo.html --><title>Alexander Ladd</title>
 <meta name="description" content="An amazing website.">
 
 
@@ -20,8 +20,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Alexander Ladd">
-<meta property="og:title" content="Bio">
-<meta property="og:url" content="http://localhost:4000/">
+<meta property="og:title" content="Alexander Ladd">
+<meta property="og:url" content="http://localhost:4000/research/MTL4C">
 
 
   <meta property="og:description" content="An amazing website.">
@@ -41,7 +41,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/">
+<link rel="canonical" href="http://localhost:4000/research/MTL4C">
 
 
 
@@ -92,7 +92,7 @@
 
   </head>
 
-  <body class="layout--home wide">
+  <body class="layout--base wide">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -118,13 +118,17 @@
           Alexander Ladd
           
         </a>
-        <ul class="visible-links"><li class="masthead__menu-item">
+        <ul class="visible-links">
+<li class="masthead__menu-item">
               <a href="/about">about</a>
-            </li><li class="masthead__menu-item">
+            </li>
+<li class="masthead__menu-item">
               <a href="/projects">projects</a>
-            </li><li class="masthead__menu-item">
+            </li>
+<li class="masthead__menu-item">
               <a href="/research">research</a>
-            </li></ul>
+            </li>
+</ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -202,7 +206,7 @@
       
         <li>
           <a href="mailto:zladd@berkeley.edu" rel="me" class="u-email">
-            <meta itemprop="email" content="zladd@berkeley.edu" />
+            <meta itemprop="email" content="zladd@berkeley.edu">
             <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
           </a>
         </li>
@@ -269,19 +273,58 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">Bio</h1>
+      <h1 id="page-title" class="page__title"></h1>
     
-    <p>I am a machine learning researcher at Lawrence Livermore National Lab. In 2020, I received my BA in Cognitive Science and Data Science from University of California, Berkeley and was a research assistant at Dr. Kevin Bender’s lab (UCSF).</p>
+    <p><a href="../research"><img class="emoji" title=":leftwards_arrow_with_hook:" alt=":leftwards_arrow_with_hook:" src="https://github.githubassets.com/images/icons/emoji/unicode/21a9.png" height="20" width="20">  <strong>Back to research</strong></a></p>
 
-<h2 id="research-interests">Research Interests</h2>
-<p>I am interested in computational neuroscience, particularly as it relates to understand the circuit and network level dynamics that allow for the efficent coding of internal representations. I am fascinated by how such a noisy, distributed, and error prone network can a) self organize and b) learn how to make representations of visual scences and abstract concepts (two very different tasks) and c) quickly generalize between tasks. These kinds of questions, fused with my interest in problem solving have led me down the paths of active learning, bayesian stats, and software engineering, but never away from my main focus: Neuroscience.</p>
+<h2 id="multitask-learning-for-cancer-mtl4c">Multitask Learning For Cancer (MTL4C)</h2>
+<ul>
+  <li>See the code on github <a href="https://github.com/LLNL/MTLRecSys/">HERE</a>
+</li>
+  <li>See the technical report <a href="https://www.osti.gov/biblio/1704073-multitask-recommender-systems-cancer-drug-response">HERE</a>
+</li>
+  <li>“The aim of this report is to draw from adaptations and state of the art developments in both algorithms for recommender systems and multitask learning to model the interaction between cancer cell lines and cancer drugs.”</li>
+  <li>Here is my adaptation of NCF</li>
+  <li>Instead of using embeddings of row and column vectors $y_i^T$ and $y_j$ to represent feature data, our method uses Dragon7 drug features and Lincs cell line feature matrices for $U$ and $V$ to predict $Y$. In order to perform general matrix factorization, latent drug features $P$ and latent cell features $Q$ are learned as biased rank-d linear combinations of $U$ and $V$.
+   \begin{equation}
+ min_{P,Q}\; ||Y - P^TQ||_F \ \text{where} \ P = \boldsymbol{w}_vV + \boldsymbol{b}_v \ , \ Q = \boldsymbol{w}_uU + \boldsymbol{b}_u, \ \boldsymbol{w}_v, \boldsymbol{w}_u \in \mathbb{R}^d
+   \end{equation}</li>
+  <li>We adapted the method from classification to regression. The NCF paper presents likelihood function: 
+   \begin{equation}
+ p(Y,Y^- \mid U,V, \Theta) = \prod\limits_{(i,j) \in Y}\hat y_{i,j} \prod\limits_{(i,j) \in Y^-}(1 -\hat y_{i,j})
+   \end{equation}
+   Where $Y$ is a positive rating $Y^- $ is a negative rating. Taking the log and simplifying gives us the objective function used in NCF:
+   \begin{equation}
+ -\sum\limits_{(i,j) \in Y, Y^-} y_{i,j} \log(\hat y_{i,j}) +  (1-\hat y_{i,j}) \log(1- y_{i,j}) 
+   \end{equation}
+   In our method we are reconstructing a non binary ratings matrix $Y$ using a regression model. The likelihood function becomes: 
+   \begin{equation}
+ p(Y \mid U,V, \Theta) = \prod\limits_{(y_{i,j}) \in Y}p(y_{ij} \mid \boldsymbol{u}_i, \boldsymbol{v}_j, \Theta)
+   \end{equation}<br>
+   as the likelihood function, which is equal to minimizing the objective function</li>
+</ul>
+
+<p>\begin{equation}
+         \min_{U,V}\sum\limits_{y_{i,j} \neq 0 \in Y}(y_{i,j} - \boldsymbol{u}_i^T \boldsymbol{v}_j)^2 + \lambda_U ||\boldsymbol{u}_i||_{F} + \lambda_V ||\boldsymbol{v}_j||_{F}.
+   \end{equation}</p>
+
+<ul>
+  <li>
+    <p>Though the objective function has been adapted from classification to regression, we are still using the same process of neural collaborative filtering, which replaces the term $ U^TV = Y $ from Eq. 5 with $\sigma(\boldsymbol{h}^T \begin{bmatrix}\phi^{GMF} \\ \phi^{MLP}\end{bmatrix})$ where the large parenthesis denote concatenation, $\boldsymbol{h}^T$ are regularizing weights, $\phi^{GMF}$ is the function described in Eq. 1, and $\phi^{MLP} =  a_L  (W_L^T(a_{L-1}(…a_{1}(W_{1} \begin{pmatrix}U^T \\ V \end{pmatrix}  + \boldsymbol{b}_1)…) + \boldsymbol{b}_{L-1}) + \boldsymbol{b}_L)$.
+   The only difference is the final $\sigma$ is not sigmoid but linear activation. The $a$ values denote activation layers.</p>
+  </li>
+  <li>
+    <p>Here is a flow chart for the adapted algorithm. Note the pooled layers for multitask.
+<img src="/mergedMFNCF_simplifiedv2.png" alt="drawing" width="400">
+<img src="/mergedMLPNCF_simplifiedv2.png" alt="drawing" width="400" align="right"></p>
+  </li>
+</ul>
 
 
-<h3 class="archive__subtitle">Recent posts</h3>
 
 
 
-
+<!-- 
 <div class="entries-list">
   
     
@@ -374,7 +417,44 @@
 </div>
 
   
-</div>
+</div> -->
+
+<!-- 
+
+<title> - Alexander Ladd</title>
+<meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" href="/css/all.css"> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51807848-1', 'simple.gy');
+  ga('send', 'pageview');
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true},
+      jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
+      extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
+      TeX: {
+      extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
+      equationNumbers: {
+      autoNumber: "AMS",
+      tags: 'ams'
+      },
+      tex: {packages: {'[+]': ['boldsymbol'], '[+]': ['bm']}}
+
+    }
+  });
+</script>
 
 
 
@@ -418,7 +498,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2021 Alexander Ladd. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">© 2021 Alexander Ladd. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

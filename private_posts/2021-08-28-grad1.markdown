@@ -24,6 +24,11 @@ Why do I want to go graduate school
 
 
 
+
+
+
+
+
 Elevator Pitch
 
 By trade I am a ML researcher at LLNL. I spend most of my time coding HPC stuff and discussing ML models for (1) active multifidelity learning and (2) time series / signal processing. At heart, I am a cognitive neuroscientist. I love studying the functionality of the brain. I am fascinated by how such a noisy, distributed, and error prone network can a) self organize and b) learn how to make representations of visual scences and abstract concepts (two very different tasks) and c) quickly generalize between tasks. Right now I am building a computational toolkit and I am sure of the computational modeling approach, but I am still working out what level of neuroscience I fit into.
@@ -38,13 +43,13 @@ Questions for Dr. Tarr:
 
 - Cogsci and computational modeling is interdisciplinary -- which branch of NSF ..
 . or how do I find which branch?
-   - Life sciences AI
+   - Life sciences AI (choice!)
    - Life sciences Neuro, LS biophyiscs, LS computration
    - Artificial Intelligence
    - Cognitive Neuroscience
 
-- I have this background in simulation NEURON/CoreNeuron, LfPY etc. where does simulation fit in ...  I don't see many professors who focus directly on this
-
+- Grad school pressure -- now or later?
+   - small space I fit in but how much should I comprimise
 
 Bonus
 - What is it like working with Steven Pinker

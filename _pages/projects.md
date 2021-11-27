@@ -16,8 +16,10 @@ Everyone likes a good side project. But the real challenge with a side project i
 ## Berkeley Division of Data Science Website
 
 ## Computer Vision Tracking for Baseball
+- [Link](./Baseball)
 
 ## Population Simulation
+ - [Link](./PopSim) 
 
 ## Future Project Ideas
    - One day I want to assemble my own GPU. I love lightning fast computing and I hope this would help me gain a deeper appreciation for the hardware that powers the amazing things computers can do.

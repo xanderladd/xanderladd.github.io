@@ -10,4 +10,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review2/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 3",
+        "excerpt":"From synapse to network: models of information storage and retrieval in neural circuits by Johnatan (Yonatan) Aljadeff et al. Citation: Aljadeff, Johnatan, et al. “From synapse to network: models of information storage and retrieval in neural circuits.” Current opinion in neurobiology 70 (2021): 24-33. Intro Stimuli dependent patterns in neural...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review3/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

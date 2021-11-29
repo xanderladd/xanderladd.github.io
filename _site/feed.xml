@@ -1,4 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-26T16:03:36-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 1</title><link href="http://localhost:4000/reviews/review1/" rel="alternate" type="text/html" title="Review 1" /><published>2021-11-14T13:16:13-08:00</published><updated>2021-11-14T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review1</id><content type="html" xml:base="http://localhost:4000/reviews/review1/">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-28T23:56:08-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 3</title><link href="http://localhost:4000/reviews/review3/" rel="alternate" type="text/html" title="Review 3" /><published>2021-11-18T13:16:13-08:00</published><updated>2021-11-18T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review3</id><content type="html" xml:base="http://localhost:4000/reviews/review3/">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.sciencedirect.com/science/article/abs/pii/S0959438821000593&quot;&gt;From synapse to network: models of information storage and retrieval in neural circuits
+&lt;/a&gt; by &lt;a href=&quot;https://aljadeff.ucsd.edu/&quot;&gt;Johnatan (Yonatan) Aljadeff&lt;/a&gt; et al.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Citation: Aljadeff, Johnatan, et al. “From synapse to network: models of information storage and retrieval in neural circuits.” Current opinion in neurobiology 70 (2021): 24-33.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Intro
+        &lt;ul&gt;
+          &lt;li&gt;Stimuli dependent patterns in neural circuity lead to research in mechanisms for synaptic updates and and how such modifications change network dynamics.&lt;/li&gt;
+          &lt;li&gt;Introduces two theoretical approachs to modeling dynamics of delay periods in updates – biophysical connecitivity matrix and supervised learning approaches.&lt;/li&gt;
+          &lt;li&gt;This paper is gonna look at the former.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Synaptic Plasticity rules
+        &lt;ul&gt;
+          &lt;li&gt;Some STDP curves seem useful &lt;em&gt;in vitro&lt;/em&gt; butthe calcium dynamics &lt;em&gt;in vivo&lt;/em&gt; seem to alter these rules.&lt;/li&gt;
+          &lt;li&gt;In inferring directly from &lt;em&gt;in vivo&lt;/em&gt; theres a limitation in measuring both pre and post synaptic acitivty.
+            &lt;ul&gt;
+              &lt;li&gt;I’m curious how this limitaiton works. Is it a resolution thing, or is the issue that it’s hard to dissociate between pre and post synaptic updates?&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Lim et al. study seems to be leading as far as infering in vitro pre synaptic rules.&lt;/li&gt;
+          &lt;li&gt;So far ML models are being developed but only shown success on synthetic data.&lt;/li&gt;
+          &lt;li&gt;plasticity can be induced by pairing presynaptic spikes with postsynaptic plateu potentials over longer timecales.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Network dynamics
+        &lt;ul&gt;
+          &lt;li&gt;What type of network dynamics emerger from networks with these learning rules? Two types of scenarios, one where learning and retireval happen in seperate phases and another where the happen concurrently.&lt;/li&gt;
+          &lt;li&gt;Netowrks with learning seperate from retrieval
+            &lt;ul&gt;
+              &lt;li&gt;These networks demonstrate (converge?) to attractor states&lt;/li&gt;
+              &lt;li&gt;A lot of recurrent activity represents higher chatoic acitivity and less like to converge to solid representations but this is similar to the affect of delayed reponses tasks, where dynamics are confined to a stable subspace but are chaotic within that constraint.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Q about figure 2: what do the colorful triangles mean here? I see the caption and that they are activited based on some corresponding output. But I wonder in the larger context here. Are these considered attractor states by definition? Or are there some caveats. Is there are strict defnition that can define these sets, or they just seem to be active corresponding to some external input, given some plasticity rule?&lt;/li&gt;
+          &lt;li&gt;AH, question is answered here – seems theres a paper on this and that they can be dubbed “hebbian assemblies” – cool.
+            &lt;ul&gt;
+              &lt;li&gt;Gotta love when all I have to do to have a question answered is keep reading. :blush:&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Networks with dynamic connectivity
+        &lt;ul&gt;
+          &lt;li&gt;needs additional stabilization betsides hebbian synaptic plasticity.&lt;/li&gt;
+          &lt;li&gt;Here’s where E/I balance and recurrent connections come in.&lt;/li&gt;
+          &lt;li&gt;Figure 3 panel I is really cool, there really seems to be some kind of normal pattern behind the overlap when different ensembles are activated. (I think I am understandign this figure correctly)&lt;/li&gt;
+          &lt;li&gt;One thing I wonder about the figure is what happens when several stimuli are presented in a sequence. What happens to fraction of overlap in network state then? How often do these small activated ensembles overlap?&lt;/li&gt;
+          &lt;li&gt;Also I liked the column showing the subspaces.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Storage Capcacity
+        &lt;ul&gt;
+          &lt;li&gt;Ah, seems to go nicely with the previous questiona about encoding multiple stimuli in the network.&lt;/li&gt;
+          &lt;li&gt;Do biological netowrks reach optimal storage capcity as given by information encoding optimality gurantees on state space of connectivity matrix?&lt;/li&gt;
+          &lt;li&gt;Answer to this question depends on the constraints of state space for optimality gurantee – general unsuprivied = open question, hebbian unsupervied = networks seem to use this capcity.&lt;/li&gt;
+          &lt;li&gt;Likely we are more in the second case given other factors that encode info (like E/I ratio)&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Note&lt;/strong&gt; Garder bound seems important for this, I should learn about it.&lt;/li&gt;
+          &lt;li&gt;Wow, seems that optimizing for information storage can recreate non trivial aspects of synaptic connectivity. Several studies cited here, could be interesting further reading since these properties seem new to me (except E/I balance).&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Discussion
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;Note&lt;/strong&gt; Ref 33 seems really interesting as challenge to persistent activity hypothesis.&lt;/li&gt;
+          &lt;li&gt;Temporal statistics here seem to be a real sticking point, hebbian networks can be persistent or sequential (what is squential btw) based on the statistics of the input during learning.
+            &lt;ul&gt;
+              &lt;li&gt;This isn’t what I thought the autor meant by temporal statisics. I thought they would be a post hoc test, not a pre (or input related) thing. Here is a gap in my knowledge. &lt;strong&gt;Note&lt;/strong&gt; ref 49 might be an intersting follow up.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Approach outlined here: biophysical synaptic updates can be contasted with supervised learning apporaches for different pros and cons.
+            &lt;ul&gt;
+              &lt;li&gt;Con for supervised learning is that some plasticity rules do satisfy locality constraints and are not biologicallly possible.&lt;/li&gt;
+              &lt;li&gt;integration of unsupervised and reward based into this approach will be good future work.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Can progress in experimental (reponse tasks) or computational (advancing biologically plausbile update rules in models) directions.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">From synapse to network: models of information storage and retrieval in neural circuits by Johnatan (Yonatan) Aljadeff et al.</summary></entry><entry><title type="html">Review 1</title><link href="http://localhost:4000/reviews/review1/" rel="alternate" type="text/html" title="Review 1" /><published>2021-11-14T13:16:13-08:00</published><updated>2021-11-14T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review1</id><content type="html" xml:base="http://localhost:4000/reviews/review1/">&lt;ul&gt;
   &lt;li&gt;Review 1 : &lt;a href=&quot;https://www.eneuro.org/content/8/2/ENEURO.0131-21.2021&quot;&gt;In Silico&lt;/a&gt; by &lt;a href=&quot;https://fairhalllab.com/&quot; title=&quot;Title&quot;&gt;Dr. Fairhall&lt;/a&gt;
     &lt;ul&gt;
       &lt;li&gt;Citation: Fairhall, Adrienne L. “In silico: where next?.” &lt;em&gt;Eneuro&lt;/em&gt; 8.2 (2021).&lt;/li&gt;

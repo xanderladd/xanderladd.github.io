@@ -1,0 +1,56 @@
+---
+layout: base
+title:  "Review 3"
+date:   2021-11-18 14:16:13 -0700
+author: xander
+categories: reviews
+---
+
+
+
+- [From synapse to network: models of information storage and retrieval in neural circuits
+](https://www.sciencedirect.com/science/article/abs/pii/S0959438821000593) by [Johnatan (Yonatan) Aljadeff](https://aljadeff.ucsd.edu/) et al.
+
+
+    - Citation: Aljadeff, Johnatan, et al. "From synapse to network: models of information storage and retrieval in neural circuits." Current opinion in neurobiology 70 (2021): 24-33.
+
+    - Intro
+       - Stimuli dependent patterns in neural circuity lead to research in mechanisms for synaptic updates and and how such modifications change network dynamics.
+       - Introduces two theoretical approachs to modeling dynamics of delay periods in updates -- biophysical connecitivity matrix and supervised learning approaches.
+       - This paper is gonna look at the former.
+    - Synaptic Plasticity rules
+        - Some STDP curves seem useful _in vitro_ butthe calcium dynamics _in vivo_ seem to alter these rules.
+        - In inferring directly from _in vivo_ theres a limitation in measuring both pre and post synaptic acitivty.
+            - I'm curious how this limitaiton works. Is it a resolution thing, or is the issue that it's hard to dissociate between pre and post synaptic updates?
+        - Lim et al. study seems to be leading as far as infering in vitro pre synaptic rules.
+        - So far ML models are being developed but only shown success on synthetic data.
+        - plasticity can be induced by pairing presynaptic spikes with postsynaptic plateu potentials over longer timecales.
+    - Network dynamics
+        - What type of network dynamics emerger from networks with these learning rules? Two types of scenarios, one where learning and retireval happen in seperate phases and another where the happen concurrently.
+        - Netowrks with learning seperate from retrieval
+            - These networks demonstrate (converge?) to attractor states
+            - A lot of recurrent activity represents higher chatoic acitivity and less like to converge to solid representations but this is similar to the affect of delayed reponses tasks, where dynamics are confined to a stable subspace but are chaotic within that constraint.
+        - Q about figure 2: what do the colorful triangles mean here? I see the caption and that they are activited based on some corresponding output. But I wonder in the larger context here. Are these considered attractor states by definition? Or are there some caveats. Is there are strict defnition that can define these sets, or they just seem to be active corresponding to some external input, given some plasticity rule?
+        - AH, question is answered here -- seems theres a paper on this and that they can be dubbed "hebbian assemblies" -- cool.
+            - Gotta love when all I have to do to have a question answered is keep reading. :blush:
+    - Networks with dynamic connectivity
+        - needs additional stabilization betsides hebbian synaptic plasticity.
+        - Here's where E/I balance and recurrent connections come in.
+        - Figure 3 panel I is really cool, there really seems to be some kind of normal pattern behind the overlap when different ensembles are activated. (I think I am understandign this figure correctly)
+        - One thing I wonder about the figure is what happens when several stimuli are presented in a sequence. What happens to fraction of overlap in network state then? How often do these small activated ensembles overlap?
+        - Also I liked the column showing the subspaces.
+    - Storage Capcacity 
+        - Ah, seems to go nicely with the previous questiona about encoding multiple stimuli in the network.
+        - Do biological netowrks reach optimal storage capcity as given by information encoding optimality gurantees on state space of connectivity matrix?
+        - Answer to this question depends on the constraints of state space for optimality gurantee -- general unsuprivied = open question, hebbian unsupervied = networks seem to use this capcity.
+        - Likely we are more in the second case given other factors that encode info (like E/I ratio)
+        - **Note** Garder bound seems important for this, I should learn about it.
+        - Wow, seems that optimizing for information storage can recreate non trivial aspects of synaptic connectivity. Several studies cited here, could be interesting further reading since these properties seem new to me (except E/I balance).
+    - Discussion
+        - **Note** Ref 33 seems really interesting as challenge to persistent activity hypothesis.
+        - Temporal statistics here seem to be a real sticking point, hebbian networks can be persistent or sequential (what is squential btw) based on the statistics of the input during learning. 
+            - This isn't what I thought the autor meant by temporal statisics. I thought they would be a post hoc test, not a pre (or input related) thing. Here is a gap in my knowledge. **Note** ref 49 might be an intersting follow up.
+        - Approach outlined here: biophysical synaptic updates can be contasted with supervised learning apporaches for different pros and cons.
+            - Con for supervised learning is that some plasticity rules do satisfy locality constraints and are not biologicallly possible.
+            - integration of unsupervised and reward based into this approach will be good future work.
+        - Can progress in experimental (reponse tasks) or computational (advancing biologically plausbile update rules in models) directions. 

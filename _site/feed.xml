@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-28T23:56:08-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 3</title><link href="http://localhost:4000/reviews/review3/" rel="alternate" type="text/html" title="Review 3" /><published>2021-11-18T13:16:13-08:00</published><updated>2021-11-18T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review3</id><content type="html" xml:base="http://localhost:4000/reviews/review3/">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-05T23:23:35-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 3</title><link href="http://localhost:4000/reviews/review3/" rel="alternate" type="text/html" title="Review 3" /><published>2021-11-18T13:16:13-08:00</published><updated>2021-11-18T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review3</id><content type="html" xml:base="http://localhost:4000/reviews/review3/">&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://www.sciencedirect.com/science/article/abs/pii/S0959438821000593&quot;&gt;From synapse to network: models of information storage and retrieval in neural circuits
 &lt;/a&gt; by &lt;a href=&quot;https://aljadeff.ucsd.edu/&quot;&gt;Johnatan (Yonatan) Aljadeff&lt;/a&gt; et al.&lt;/p&gt;
@@ -82,7 +82,91 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">From synapse to network: models of information storage and retrieval in neural circuits by Johnatan (Yonatan) Aljadeff et al.</summary></entry><entry><title type="html">Review 1</title><link href="http://localhost:4000/reviews/review1/" rel="alternate" type="text/html" title="Review 1" /><published>2021-11-14T13:16:13-08:00</published><updated>2021-11-14T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review1</id><content type="html" xml:base="http://localhost:4000/reviews/review1/">&lt;ul&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">From synapse to network: models of information storage and retrieval in neural circuits by Johnatan (Yonatan) Aljadeff et al.</summary></entry><entry><title type="html">Review 4</title><link href="http://localhost:4000/reviews/review4/" rel="alternate" type="text/html" title="Review 4" /><published>2021-11-18T13:16:13-08:00</published><updated>2021-11-18T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review4</id><content type="html" xml:base="http://localhost:4000/reviews/review4/">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.talyarkoni.org/blog/2018/08/18/if-we-already-understood-the-brain-would-we-even-know-it/&quot;&gt;If we already understood the brain, would we even know it?&lt;/a&gt; by &lt;a href=&quot;https://talyarkoni.org/&quot;&gt;Tal Yarkoni&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Citation: Yarkoni, Tal. “If We Already Understood the Brain, Would We Even Know It?” Tal Yarkoni Blog, 29 Aug. 2019, https://www.talyarkoni.org/blog/2018/08/18/if-we-already-understood-the-brain-would-we-even-know-it/.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;First, I like this article already. If I had a dollar for everytime I hear a neuroscientist bemoan “we know nothing about the brain”…&lt;/li&gt;
+      &lt;li&gt;The assesment that we know ~ .1 % of the things there are to know about neuroscience is an interesting one for sure. Also that in 200 years or so we can shut down neuroscience.
+        &lt;ul&gt;
+          &lt;li&gt;This is a reason I am so happy I reviewed a blog instead of a paper today. Finally, we can speculate for arugments sake. Makes reading way more interesting then having to use axioms, posulates and citations for every claim made.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The dissonance in the relationship between our personal understanding of the field and the cumulative knowledge in the field is really a bit concerning. I think this is pointing out that the emperor has no clothes.
+        &lt;ul&gt;
+          &lt;li&gt;In order to build the skills to be an excellent experimental scientist one must spend a lot of time working hands on in a lab.&lt;/li&gt;
+          &lt;li&gt;On the other hand, to understand the field they must spend so much time reading.&lt;/li&gt;
+          &lt;li&gt;There’s a tension here that like Tal says, causes us to ask the same question in different ways quite often.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Oooh, it is a tough question to wonder “why does such and such network to activate?”
+        &lt;ul&gt;
+          &lt;li&gt;We can sometimes answer things like &lt;em&gt;when&lt;/em&gt;, &lt;em&gt;where&lt;/em&gt;, &lt;em&gt;what&lt;/em&gt; etc. but why is difficult.&lt;/li&gt;
+          &lt;li&gt;This is on the DMN example.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;As I understand the general intelligence part of this blog the message is this: g_f, or general intelligence, is an effect with a slew of correlated causes (mechanisms involving attention, abstraciton etc.) and to try and pick out &lt;em&gt;the&lt;/em&gt; cause of intellgence is a losing propostion. general intelligence emerges among many influencing factors.&lt;/li&gt;
+      &lt;li&gt;This seems like a microcosm of the problem. We are looking for short answers to long quetions. If we want to “fully understand” how a mechanism or circuit works, it’ll invovle synthesizing complicated information at scales from mico to macro.
+        &lt;ul&gt;
+          &lt;li&gt;This reminds me of integrative biology class tests where I had to detail 5 or 10 steps in a response on autonomous nervous system. The nice part about this is we often looked at one level of complexity. We’d never be asked about the morphological changes to the neurons in the circuit becaue that’s just way too much information to have synthesized – it’s a big jump.&lt;/li&gt;
+          &lt;li&gt;In this sense, the full answers to how circuitry in the brain work aren’t obligated to be nice and digestable – but our explanations are.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;I like that Dan is always asking for a &lt;em&gt;core principle&lt;/em&gt; and D’Ann is always just denying the simplicity of one &lt;em&gt;core principle&lt;/em&gt; existing.&lt;/li&gt;
+      &lt;li&gt;And we leave off the article basically on the same note.
+        &lt;ul&gt;
+          &lt;li&gt;Sure we might be able to learn more and more detailed and expressive computational models and these models may even be able to account for all the variance we can hope for … but at this point we’d probably still be asking “what’s the underlying principle?”.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;I think this dilemma relates back to the Searle’s chinese room argument (Searle 2009), it’s like sure you can make make a latent space model that’s very expressive of the mechanism but this is all input/output … you haven’t truly learned the language.&lt;/li&gt;
+      &lt;li&gt;I like to think that Tal would agree with me here: The computation &lt;em&gt;is&lt;/em&gt; the language. The implementation level story is all there is.&lt;/li&gt;
+      &lt;li&gt;As we understand the computational story of the brain … it’s incredibly messy and convoluted.
+        &lt;ul&gt;
+          &lt;li&gt;What I mean is that latent models and manifolds are tricky to parameterize and design in a way where they can a) be accurate in predicting states and b) be human-understandable.
+            &lt;blockquote&gt;
+              &lt;p&gt;Neil deGrasse Tyson. Aug 21, 2017&lt;/p&gt;
+              &lt;blockquote&gt;
+                &lt;p&gt;“The universe is under no obligation to make sense to you.”&lt;/p&gt;
+              &lt;/blockquote&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Anyways, this blog seems to stand opposite of the aisle of a particular view in Jeff Hawkins’ &lt;a href=&quot;https://www.amazon.com/Intelligence-Understanding-Creation-Intelligent-Machines/dp/0805078533/ref=asc_df_0805078533/?tag=hyprod-20&amp;amp;linkCode=df0&amp;amp;hvadid=312128454859&amp;amp;hvpos=&amp;amp;hvnetw=g&amp;amp;hvrand=2933067035242335183&amp;amp;hvpone=&amp;amp;hvptwo=&amp;amp;hvqmt=&amp;amp;hvdev=c&amp;amp;hvdvcmdl=&amp;amp;hvlocint=&amp;amp;hvlocphy=9031201&amp;amp;hvtargid=pla-432166617256&amp;amp;psc=1&quot;&gt;On Intelligence&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;The view is this:
+            &lt;blockquote&gt;
+              &lt;p&gt;Paraphrased from Hawkins, J., &amp;amp; Blakeslee, S. (2004). On intelligence.&lt;/p&gt;
+              &lt;blockquote&gt;
+                &lt;p&gt;Imagine that aliens look at Earth and see a bunch of roads and they catalog every detail of each road and which one leads where etc. but they don’t really understand what the roads &lt;em&gt;mean&lt;/em&gt;. That is until they understand that humans couldn’t teleport places and need roads to move from one place to another in cars. Once this detail falls into place, the functionality begins to make a lot of sense.&lt;/p&gt;
+              &lt;/blockquote&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Obviously this is in defense that there are some intuitve explanations that can be delivered through human understable theory.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;As is often the case, I don’t think we’ll ever be able to ring a bell and declare one of these viewpoints the winner. In fact, I think that though they may stand on opposite sides of the aisle – to declare that they are at odds is even a stretch.&lt;/li&gt;
+      &lt;li&gt;I think a more appropriate understanding between the “there is a simple theory and once we know it, things will make more sense” and the “there’s no magic at the bottom that’ll simplify things for our tiny brains” is that these are just two different flavors of possible answers that can be served to the multitude of questions about the brain.&lt;/li&gt;
+      &lt;li&gt;And one final note. I really appreciate the Tal’s perspective in this blog because it’s a lot harder to take than Jeff’s in the quote. There are just some questions that can’t be answered. For example, the question &lt;em&gt;why&lt;/em&gt; are some people taller than others is just ill posed. There are a variety of reasons, not one causal explanation we can point to everytime.&lt;/li&gt;
+      &lt;li&gt;We’ll probably never stop asking well-posed and ill-posed questions about neuroscience. Or maybe we can just abandon our posts and leave it to philosophers. Either way, time to make peace with that now.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;strong&gt;We can choose to grimace as we stare into the void, or we can have a good laugh.&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Citations
+        &lt;ul&gt;
+          &lt;li&gt;Hawkins, J., &amp;amp; Blakeslee, S. (2004). On intelligence. New York: Times Books.&lt;/li&gt;
+          &lt;li&gt;Searle, John. “Chinese room argument.” Scholarpedia 4.8 (2009): 3100.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">If we already understood the brain, would we even know it? by Tal Yarkoni.</summary></entry><entry><title type="html">Review 1</title><link href="http://localhost:4000/reviews/review1/" rel="alternate" type="text/html" title="Review 1" /><published>2021-11-14T13:16:13-08:00</published><updated>2021-11-14T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review1</id><content type="html" xml:base="http://localhost:4000/reviews/review1/">&lt;ul&gt;
   &lt;li&gt;Review 1 : &lt;a href=&quot;https://www.eneuro.org/content/8/2/ENEURO.0131-21.2021&quot;&gt;In Silico&lt;/a&gt; by &lt;a href=&quot;https://fairhalllab.com/&quot; title=&quot;Title&quot;&gt;Dr. Fairhall&lt;/a&gt;
     &lt;ul&gt;
       &lt;li&gt;Citation: Fairhall, Adrienne L. “In silico: where next?.” &lt;em&gt;Eneuro&lt;/em&gt; 8.2 (2021).&lt;/li&gt;

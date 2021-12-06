@@ -1,0 +1,57 @@
+---
+layout: base
+title:  "Review 4"
+date:   2021-11-18 14:16:13 -0700
+author: xander
+categories: reviews
+---
+
+
+
+- [If we already understood the brain, would we even know it?](https://www.talyarkoni.org/blog/2018/08/18/if-we-already-understood-the-brain-would-we-even-know-it/) by [Tal Yarkoni](https://talyarkoni.org/).
+
+
+    - Citation: Yarkoni, Tal. “If We Already Understood the Brain, Would We Even Know It?” Tal Yarkoni Blog, 29 Aug. 2019, https://www.talyarkoni.org/blog/2018/08/18/if-we-already-understood-the-brain-would-we-even-know-it/. 
+
+    - First, I like this article already. If I had a dollar for everytime I hear a neuroscientist bemoan "we know nothing about the brain"...
+    - The assesment that we know ~ .1 % of the things there are to know about neuroscience is an interesting one for sure. Also that in 200 years or so we can shut down neuroscience.
+        - This is a reason I am so happy I reviewed a blog instead of a paper today. Finally, we can speculate for arugments sake. Makes reading way more interesting then having to use axioms, posulates and citations for every claim made.
+    - The dissonance in the relationship between our personal understanding of the field and the cumulative knowledge in the field is really a bit concerning. I think this is pointing out that the emperor has no clothes.  
+        - In order to build the skills to be an excellent experimental scientist one must spend a lot of time working hands on in a lab.
+        - On the other hand, to understand the field they must spend so much time reading.
+        - There's a tension here that like Tal says, causes us to ask the same question in different ways quite often.
+    - Oooh, it is a tough question to wonder "why does such and such network to activate?"
+        - We can sometimes answer things like _when_, _where_, _what_ etc. but why is difficult.
+        - This is on the DMN example.
+    - As I understand the general intelligence part of this blog the message is this: g_f, or general intelligence, is an effect with a slew of correlated causes (mechanisms involving attention, abstraciton etc.) and to try and pick out _the_ cause of intellgence is a losing propostion. general intelligence emerges among many influencing factors.
+    - This seems like a microcosm of the problem. We are looking for short answers to long quetions. If we want to "fully understand" how a mechanism or circuit works, it'll invovle synthesizing complicated information at scales from mico to macro.
+        - This reminds me of integrative biology class tests where I had to detail 5 or 10 steps in a response on autonomous nervous system. The nice part about this is we often looked at one level of complexity. We'd never be asked about the morphological changes to the neurons in the circuit becaue that's just way too much information to have synthesized -- it's a big jump.
+        - In this sense, the full answers to how circuitry in the brain work aren't obligated to be nice and digestable -- but our explanations are.
+    - I like that Dan is always asking for a _core principle_ and D'Ann is always just denying the simplicity of one _core principle_ existing.
+    - And we leave off the article basically on the same note.
+        - Sure we might be able to learn more and more detailed and expressive computational models and these models may even be able to account for all the variance we can hope for ... but at this point we'd probably still be asking "what's the underlying principle?".
+    - I think this dilemma relates back to the Searle's chinese room argument (Searle 2009), it's like sure you can make make a latent space model that's very expressive of the mechanism but this is all input/output ... you haven't truly learned the language.
+    - I like to think that Tal would agree with me here: The computation _is_ the language. The implementation level story is all there is.
+    -  As we understand the computational story of the brain ... it's incredibly messy and convoluted.
+        - What I mean is that latent models and manifolds are tricky to parameterize and design in a way where they can a) be accurate in predicting states and b) be human-understandable.
+    > Neil deGrasse Tyson. Aug 21, 2017
+    >> "The universe is under no obligation to make sense to you." 
+    - Anyways, this blog seems to stand opposite of the aisle of a particular view in Jeff Hawkins' [On Intelligence](https://www.amazon.com/Intelligence-Understanding-Creation-Intelligent-Machines/dp/0805078533/ref=asc_df_0805078533/?tag=hyprod-20&linkCode=df0&hvadid=312128454859&hvpos=&hvnetw=g&hvrand=2933067035242335183&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031201&hvtargid=pla-432166617256&psc=1) 
+        - The view is this: 
+        > Paraphrased from Hawkins, J., & Blakeslee, S. (2004). On intelligence. 
+        >> Imagine that aliens look at Earth and see a bunch of roads and they catalog every detail of each road and which one leads where etc. but they don't really understand what the roads _mean_. That is until they understand that humans couldn't teleport places and need roads to move from one place to another in cars. Once this detail falls into place, the functionality begins to make a lot of sense.
+        - Obviously this is in defense that there are some intuitve explanations that can be delivered through human understable theory. 
+    - As is often the case, I don't think we'll ever be able to ring a bell and declare one of these viewpoints the winner. In fact, I think that though they may stand on opposite sides of the aisle -- to declare that they are at odds is even a stretch.
+    - I think a more appropriate understanding between the "there is a simple theory and once we know it, things will make more sense" and the "there's no magic at the bottom that'll simplify things for our tiny brains" is that these are just two different flavors of possible answers that can be served to the multitude of questions about the brain.
+    - And one final note. I really appreciate the Tal's perspective in this blog because it's a lot harder to take than Jeff's in the quote. There are just some questions that can't be answered. For example, the question _why_ are some people taller than others is just ill posed. There are a variety of reasons, not one causal explanation we can point to everytime. 
+    - We'll probably never stop asking well-posed and ill-posed questions about neuroscience. Or maybe we can just abandon our posts and leave it to philosophers. Either way, time to make peace with that now. 
+    
+    **We can choose to grimace as we stare into the void, or we can have a good laugh.**
+    
+
+
+
+    - Citations
+        - Hawkins, J., & Blakeslee, S. (2004). On intelligence. New York: Times Books.
+        - Searle, John. "Chinese room argument." Scholarpedia 4.8 (2009): 3100.
+       

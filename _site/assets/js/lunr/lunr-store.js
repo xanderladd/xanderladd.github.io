@@ -16,4 +16,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review3/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 4",
+        "excerpt":"If we already understood the brain, would we even know it? by Tal Yarkoni. Citation: Yarkoni, Tal. “If We Already Understood the Brain, Would We Even Know It?” Tal Yarkoni Blog, 29 Aug. 2019, https://www.talyarkoni.org/blog/2018/08/18/if-we-already-understood-the-brain-would-we-even-know-it/. First, I like this article already. If I had a dollar for everytime I hear...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review4/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

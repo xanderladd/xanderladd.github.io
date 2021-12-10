@@ -22,4 +22,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review4/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Not Even Wrong",
+        "excerpt":"Wow, I just found out what it means to be “Not even wrong”. The phase, coined by Wolfgang Pauli has just given me a huge slice of humble pie. Basically not even wrong is used to describe a totally failed conjecture. If something is meaningless, it’s definitely not right, but...","categories": ["posts"],
+        "tags": [],
+        "url": "/posts/Not_Even_Wrong/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

@@ -4,6 +4,7 @@ title:  "Not Even Wrong"
 date:   2021-12-6 14:16:13 -0700
 author: xander
 categories: posts
+permalink: /posts/Not_Even_Wrong/
 ---
 
 

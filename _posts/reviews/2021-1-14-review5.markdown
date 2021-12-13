@@ -33,9 +33,7 @@ categories: reviews
     - The authors discuss tractability of solving $k$ NMLE equations for every potential action. This is slow.
     - Then they introduce the meta learning algorithm.
         - I kind of lost the thread here.
-        - $2N$ tasks corresponding to postitive and negative likelihood.
-        - In my mind, I thought of this as: For each data point construct an example where you picked that actiona and it helped  / didn't help.
-        - Now you have these results cached and instead of sampling at every potentially acquired point, you consult this "look up" table.
+        - train another model to predict outcome $2N$ actions corresponding to postitive and negative likelihood.
     - Final thoughts.
         - The core algorithm is really simple which is awesome but I am not entirely sure about the meta learning part. Here's my interpreation:
             - You sample $n$ points from the replay buffer and try train another model to predict what the NML will be, given that the point is classified as helpful and unhelpful. 

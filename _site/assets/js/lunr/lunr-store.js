@@ -28,4 +28,10 @@ var store = [{
         "tags": [],
         "url": "/posts/Not_Even_Wrong/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 5",
+        "excerpt":"Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood. Citation: Abhishek Gupta, Kevin Li, and Sergey Levine “Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood” BAIR Blog, Oct 22, 2021 A limiting factor in RL...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review5/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

@@ -9,38 +9,38 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Review 4 - Alexander Ladd</title>
-<meta name="description" content="If we already understood the brain, would we even know it? by Tal Yarkoni.">
+<!-- begin _includes/seo.html --><title>Review 5 - Alexander Ladd</title>
+<meta name="description" content="Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Alexander Ladd">
-<meta property="og:title" content="Review 4">
-<meta property="og:url" content="http://localhost:4000/reviews/review4/">
+<meta property="og:title" content="Review 5">
+<meta property="og:url" content="http://localhost:4000/reviews/review5/">
 
 
-  <meta property="og:description" content="If we already understood the brain, would we even know it? by Tal Yarkoni.">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2021-11-18T13:16:13-08:00">
+  <meta property="og:description" content="Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood.">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2021-12-12T13:16:13-08:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/reviews/review4/">
+
+<link rel="canonical" href="http://localhost:4000/reviews/review5/">
 
 
 
@@ -230,88 +230,56 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">Review 4</h1>
+      <h1 id="page-title" class="page__title">Review 5</h1>
     
     <ul>
   <li>
-    <p><a href="https://www.talyarkoni.org/blog/2018/08/18/if-we-already-understood-the-brain-would-we-even-know-it/">If we already understood the brain, would we even know it?</a> by <a href="https://talyarkoni.org/">Tal Yarkoni</a>.</p>
+    <p><a href="https://bair.berkeley.edu/blog/2021/10/22/mural/">Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood</a>.</p>
 
     <ul>
       <li>
-        <p>Citation: Yarkoni, Tal. “If We Already Understood the Brain, Would We Even Know It?” Tal Yarkoni Blog, 29 Aug. 2019, https://www.talyarkoni.org/blog/2018/08/18/if-we-already-understood-the-brain-would-we-even-know-it/.</p>
+        <p>Citation: Abhishek Gupta, Kevin Li, and Sergey Levine “Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood” BAIR Blog, Oct 22, 2021</p>
       </li>
-      <li>First, I like this article already. If I had a dollar for everytime I hear a neuroscientist bemoan “we know nothing about the brain”…</li>
-      <li>The assesment that we know ~ .1 % of the things there are to know about neuroscience is an interesting one for sure. Also that in 200 years or so we can shut down neuroscience.
+      <li>A limiting factor in RL is having reward functions that accurately represent the intended goal of the actions. There’s a gap between what the reward function specifies and what we actually want it to specify.</li>
+      <li>Also, there’s a trade off with having reward functions that are specific to an environment and having reward function that can generalize well.</li>
+      <li>The authors introduce a basic reward function as classifying an action as successful or unsuccessful.
         <ul>
-          <li>This is a reason I am so happy I reviewed a blog instead of a paper today. Finally, we can speculate for arugments sake. Makes reading way more interesting then having to use axioms, posulates and citations for every claim made.</li>
+          <li>works well in limited settings where a lot of exploration is not required.</li>
+          <li>downside is that neural network based classifiers, even with some kind of regularization can converge upon sub optimal policies.</li>
         </ul>
       </li>
-      <li>The dissonance in the relationship between our personal understanding of the field and the cumulative knowledge in the field is really a bit concerning. I think this is pointing out that the emperor has no clothes.
+      <li>They describe this downside as “overconfidence”.</li>
+      <li>Conditional Normalized maximum likelihood (CNML) to add uncertainty in the model.
         <ul>
-          <li>In order to build the skills to be an excellent experimental scientist one must spend a lot of time working hands on in a lab.</li>
-          <li>On the other hand, to understand the field they must spend so much time reading.</li>
-          <li>There’s a tension here that like Tal says, causes us to ask the same question in different ways quite often.</li>
+          <li>Given query point $x$ and data $\mathcal{D}[x_0, y_0, … , x_N, y_N]$ CNML solves \begin{equation}
+  \theta_i = argmax_{\theta}\mathbb{E}_{D \cup (x_q, \mathcal{C}_i)} \mathcal{L}(f(x_q), y)
+  \end{equation}
+  Where there are $\mathcal{C}_i \in [ \mathcal{C}_0, \mathcal{C}_k ]$, so $k$ possible classes outcome. $x_q$ is the current point. This policy makes a prediction for each class (because do the above calculation for $i \in k$), so they suggest normalizing.</li>
         </ul>
-      </li>
-      <li>Oooh, it is a tough question to wonder “why does such and such network to activate?”
-        <ul>
-          <li>We can sometimes answer things like <em>when</em>, <em>where</em>, <em>what</em> etc. but why is difficult.</li>
-          <li>This is on the DMN example.</li>
-        </ul>
-      </li>
-      <li>As I understand the general intelligence part of this blog the message is this: g_f, or general intelligence, is an effect with a slew of correlated causes (mechanisms involving attention, abstraciton etc.) and to try and pick out <em>the</em> cause of intellgence is a losing propostion. general intelligence emerges among many influencing factors.</li>
-      <li>This seems like a microcosm of the problem. We are looking for short answers to long quetions. If we want to “fully understand” how a mechanism or circuit works, it’ll invovle synthesizing complicated information at scales from mico to macro.
-        <ul>
-          <li>This reminds me of integrative biology class tests where I had to detail 5 or 10 steps in a response on autonomous nervous system. The nice part about this is we often looked at one level of complexity. We’d never be asked about the morphological changes to the neurons in the circuit becaue that’s just way too much information to have synthesized – it’s a big jump.</li>
-          <li>In this sense, the full answers to how circuitry in the brain work aren’t obligated to be nice and digestable – but our explanations are.</li>
-        </ul>
-      </li>
-      <li>I like that Dan is always asking for a <em>core principle</em> and D’Ann is always just denying the simplicity of one <em>core principle</em> existing.</li>
-      <li>And we leave off the article basically on the same note.
-        <ul>
-          <li>Sure we might be able to learn more and more detailed and expressive computational models and these models may even be able to account for all the variance we can hope for … but at this point we’d probably still be asking “what’s the underlying principle?”.</li>
-        </ul>
-      </li>
-      <li>I think this dilemma relates back to the Searle’s chinese room argument (Searle 2009), it’s like sure you can make make a latent space model that’s very expressive of the mechanism but this is all input/output … you haven’t truly learned the language.</li>
-      <li>I like to think that Tal would agree with me here: The computation <em>is</em> the language. The implementation level story is all there is.</li>
-      <li>As we understand the computational story of the brain … it’s incredibly messy and convoluted.
-        <ul>
-          <li>What I mean is that latent models and manifolds are tricky to parameterize and design in a way where they can a) be accurate in predicting states and b) be human-understandable.
-            <blockquote>
-              <p>Neil deGrasse Tyson. Aug 21, 2017</p>
-              <blockquote>
-                <p>“The universe is under no obligation to make sense to you.”</p>
-              </blockquote>
-            </blockquote>
-          </li>
-        </ul>
-      </li>
-      <li>Anyways, this blog seems to stand opposite of the aisle of a particular view in Jeff Hawkins’ <a href="https://www.amazon.com/Intelligence-Understanding-Creation-Intelligent-Machines/dp/0805078533/ref=asc_df_0805078533/?tag=hyprod-20&amp;linkCode=df0&amp;hvadid=312128454859&amp;hvpos=&amp;hvnetw=g&amp;hvrand=2933067035242335183&amp;hvpone=&amp;hvptwo=&amp;hvqmt=&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=9031201&amp;hvtargid=pla-432166617256&amp;psc=1">On Intelligence</a>
-        <ul>
-          <li>The view is this:
-            <blockquote>
-              <p>Paraphrased from Hawkins, J., &amp; Blakeslee, S. (2004). On intelligence.</p>
-              <blockquote>
-                <p>Imagine that aliens look at Earth and see a bunch of roads and they catalog every detail of each road and which one leads where etc. but they don’t really understand what the roads <em>mean</em>. That is until they understand that humans couldn’t teleport places and need roads to move from one place to another in cars. Once this detail falls into place, the functionality begins to make a lot of sense.</p>
-              </blockquote>
-            </blockquote>
-          </li>
-          <li>Obviously this is in defense that there are some intuitve explanations that can be delivered through human understable theory.</li>
-        </ul>
-      </li>
-      <li>As is often the case, I don’t think we’ll ever be able to ring a bell and declare one of these viewpoints the winner. In fact, I think that though they may stand on opposite sides of the aisle – to declare that they are at odds is even a stretch.</li>
-      <li>I think a more appropriate understanding between the “there is a simple theory and once we know it, things will make more sense” and the “there’s no magic at the bottom that’ll simplify things for our tiny brains” is that these are just two different flavors of possible answers that can be served to the multitude of questions about the brain.</li>
-      <li>And one final note. I really appreciate the Tal’s perspective in this blog because it’s a lot harder to take than Jeff’s in the quote. There are just some questions that can’t be answered. For example, the question <em>why</em> are some people taller than others is just ill posed. There are a variety of reasons, not one causal explanation we can point to everytime.</li>
-      <li>We’ll probably never stop asking well-posed and ill-posed questions about neuroscience. Or maybe we can just abandon our posts and leave it to philosophers. Either way, time to make peace with that now.</li>
-    </ul>
 
-    <p><strong>We can choose to grimace as we stare into the void, or we can have a good laugh.</strong></p>
-
-    <ul>
-      <li>Citations
+        <p>\(p_{CNML}(\mathcal{C}_i \mid x) = \frac { f_{\theta_i}(x)} {\sum\limits_{j=1}^{k}f_{\theta_j}(x)}\)</p>
         <ul>
-          <li>Hawkins, J., &amp; Blakeslee, S. (2004). On intelligence. New York: Times Books.</li>
-          <li>Searle, John. “Chinese room argument.” Scholarpedia 4.8 (2009): 3100.</li>
+          <li>This reward policy is better equipped to handle exploring in uncertain situations.</li>
+        </ul>
+      </li>
+      <li>The authors then discuss generalization to continuous valued states.</li>
+      <li>The authors discuss tractability of solving $k$ NMLE equations for every potential action. This is slow.</li>
+      <li>Then they introduce the meta learning algorithm.
+        <ul>
+          <li>I kind of lost the thread here.</li>
+          <li>$2N$ tasks corresponding to postitive and negative likelihood.</li>
+          <li>In my mind, I thought of this as: For each data point construct an example where you picked that actiona and it helped  / didn’t help.</li>
+          <li>Now you have these results cached and instead of sampling at every potentially acquired point, you consult this “look up” table.</li>
+        </ul>
+      </li>
+      <li>Final thoughts.
+        <ul>
+          <li>The core algorithm is really simple which is awesome but I am not entirely sure about the meta learning part. Here’s my interpreation:
+            <ul>
+              <li>You sample $n$ points from the replay buffer and try train another model to predict what the NML will be, given that the point is classified as helpful and unhelpful.</li>
+              <li>For the maze problem, this should start bulding a NML surrogate model that has a good spatial understanding of how different helpful and unhelpful point layouts shape the map.</li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -584,7 +552,7 @@
 
 <!-- 
 
-<title>Review 4 - Alexander Ladd</title>
+<title>Review 5 - Alexander Ladd</title>
 <meta name="viewport" content="width=device-width">
 
 <link rel="stylesheet" href="/css/all.css"> -->

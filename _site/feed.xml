@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-09T22:10:01-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Not Even Wrong</title><link href="http://localhost:4000/posts/Not_Even_Wrong/" rel="alternate" type="text/html" title="Not Even Wrong" /><published>2021-12-06T13:16:13-08:00</published><updated>2021-12-06T13:16:13-08:00</updated><id>http://localhost:4000/posts/Not_Even_Wrong</id><content type="html" xml:base="http://localhost:4000/posts/Not_Even_Wrong/">&lt;p&gt;Wow, I just found out what it means to be “Not even wrong”. The phase, coined by &lt;a href=&quot;https://en.wikipedia.org/wiki/Wolfgang_Pauli&quot;&gt;Wolfgang Pauli&lt;/a&gt; has just given me a huge slice of humble pie. Basically not even wrong is used to describe a totally failed conjecture. If something is meaningless, it’s definitely not right, but it’s not wrong either since you have to be coherent and pointed to be wrong. This has changed the way I think about wrong and right in science. Sometimes, as all scientists do, I use big words when I’m not exactly sure what I’m talking about to make it seem like I do. And the truth is, there’s no cookie and no medal for being hard to understand. From now on, if I’m unsure but I stil want to conjecture, I am going to do it with as basic of an explnation as possible. This way, if I’m misguided I’ll get caught fast instead of getting by on jibberish. This is the route to actually being right about a lot of things one day. Well, I hope that day comes, for now I’d rather be wrong than not even wrong.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-12T22:25:05-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 5</title><link href="http://localhost:4000/reviews/review5/" rel="alternate" type="text/html" title="Review 5" /><published>2021-12-12T13:16:13-08:00</published><updated>2021-12-12T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review5</id><content type="html" xml:base="http://localhost:4000/reviews/review5/">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://bair.berkeley.edu/blog/2021/10/22/mural/&quot;&gt;Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Citation: Abhishek Gupta, Kevin Li, and Sergey Levine “Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood” BAIR Blog, Oct 22, 2021&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;A limiting factor in RL is having reward functions that accurately represent the intended goal of the actions. There’s a gap between what the reward function specifies and what we actually want it to specify.&lt;/li&gt;
+      &lt;li&gt;Also, there’s a trade off with having reward functions that are specific to an environment and having reward function that can generalize well.&lt;/li&gt;
+      &lt;li&gt;The authors introduce a basic reward function as classifying an action as successful or unsuccessful.
+        &lt;ul&gt;
+          &lt;li&gt;works well in limited settings where a lot of exploration is not required.&lt;/li&gt;
+          &lt;li&gt;downside is that neural network based classifiers, even with some kind of regularization can converge upon sub optimal policies.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;They describe this downside as “overconfidence”.&lt;/li&gt;
+      &lt;li&gt;Conditional Normalized maximum likelihood (CNML) to add uncertainty in the model.
+        &lt;ul&gt;
+          &lt;li&gt;Given query point $x$ and data $\mathcal{D}[x_0, y_0, … , x_N, y_N]$ CNML solves \begin{equation}
+  \theta_i = argmax_{\theta}\mathbb{E}_{D \cup (x_q, \mathcal{C}_i)} \mathcal{L}(f(x_q), y)
+  \end{equation}
+  Where there are $\mathcal{C}_i \in [ \mathcal{C}_0, \mathcal{C}_k ]$, so $k$ possible classes outcome. $x_q$ is the current point. This policy makes a prediction for each class (because do the above calculation for $i \in k$), so they suggest normalizing.&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;p&gt;\(p_{CNML}(\mathcal{C}_i \mid x) = \frac { f_{\theta_i}(x)} {\sum\limits_{j=1}^{k}f_{\theta_j}(x)}\)&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;This reward policy is better equipped to handle exploring in uncertain situations.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The authors then discuss generalization to continuous valued states.&lt;/li&gt;
+      &lt;li&gt;The authors discuss tractability of solving $k$ NMLE equations for every potential action. This is slow.&lt;/li&gt;
+      &lt;li&gt;Then they introduce the meta learning algorithm.
+        &lt;ul&gt;
+          &lt;li&gt;I kind of lost the thread here.&lt;/li&gt;
+          &lt;li&gt;$2N$ tasks corresponding to postitive and negative likelihood.&lt;/li&gt;
+          &lt;li&gt;In my mind, I thought of this as: For each data point construct an example where you picked that actiona and it helped  / didn’t help.&lt;/li&gt;
+          &lt;li&gt;Now you have these results cached and instead of sampling at every potentially acquired point, you consult this “look up” table.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Final thoughts.
+        &lt;ul&gt;
+          &lt;li&gt;The core algorithm is really simple which is awesome but I am not entirely sure about the meta learning part. Here’s my interpreation:
+            &lt;ul&gt;
+              &lt;li&gt;You sample $n$ points from the replay buffer and try train another model to predict what the NML will be, given that the point is classified as helpful and unhelpful.&lt;/li&gt;
+              &lt;li&gt;For the maze problem, this should start bulding a NML surrogate model that has a good spatial understanding of how different helpful and unhelpful point layouts shape the map.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood.</summary></entry><entry><title type="html">Not Even Wrong</title><link href="http://localhost:4000/posts/Not_Even_Wrong/" rel="alternate" type="text/html" title="Not Even Wrong" /><published>2021-12-06T13:16:13-08:00</published><updated>2021-12-06T13:16:13-08:00</updated><id>http://localhost:4000/posts/Not_Even_Wrong</id><content type="html" xml:base="http://localhost:4000/posts/Not_Even_Wrong/">&lt;p&gt;Wow, I just found out what it means to be “Not even wrong”. The phase, coined by &lt;a href=&quot;https://en.wikipedia.org/wiki/Wolfgang_Pauli&quot;&gt;Wolfgang Pauli&lt;/a&gt; has just given me a huge slice of humble pie. Basically not even wrong is used to describe a totally failed conjecture. If something is meaningless, it’s definitely not right, but it’s not wrong either since you have to be coherent and pointed to be wrong. This has changed the way I think about wrong and right in science. Sometimes, as all scientists do, I use big words when I’m not exactly sure what I’m talking about to make it seem like I do. And the truth is, there’s no cookie and no medal for being hard to understand. From now on, if I’m unsure but I stil want to conjecture, I am going to do it with as basic of an explnation as possible. This way, if I’m misguided I’ll get caught fast instead of getting by on jibberish. This is the route to actually being right about a lot of things one day. Well, I hope that day comes, for now I’d rather be wrong than not even wrong.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/doing_it_wrong.jpeg&quot; alt=&quot;you're doing it wrong!&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/p&gt;</content><author><name>xander</name></author><category term="posts" /><summary type="html">Wow, I just found out what it means to be “Not even wrong”. The phase, coined by Wolfgang Pauli has just given me a huge slice of humble pie. Basically not even wrong is used to describe a totally failed conjecture. If something is meaningless, it’s definitely not right, but it’s not wrong either since you have to be coherent and pointed to be wrong. This has changed the way I think about wrong and right in science. Sometimes, as all scientists do, I use big words when I’m not exactly sure what I’m talking about to make it seem like I do. And the truth is, there’s no cookie and no medal for being hard to understand. From now on, if I’m unsure but I stil want to conjecture, I am going to do it with as basic of an explnation as possible. This way, if I’m misguided I’ll get caught fast instead of getting by on jibberish. This is the route to actually being right about a lot of things one day. Well, I hope that day comes, for now I’d rather be wrong than not even wrong.</summary></entry><entry><title type="html">Review 3</title><link href="http://localhost:4000/reviews/review3/" rel="alternate" type="text/html" title="Review 3" /><published>2021-11-18T13:16:13-08:00</published><updated>2021-11-18T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review3</id><content type="html" xml:base="http://localhost:4000/reviews/review3/">&lt;ul&gt;
   &lt;li&gt;

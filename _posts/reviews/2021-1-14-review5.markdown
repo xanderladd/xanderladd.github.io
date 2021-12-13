@@ -1,0 +1,42 @@
+---
+layout: base
+title:  "Review 5"
+date:   2021-12-12 14:16:13 -0700
+author: xander
+categories: reviews
+---
+
+
+
+- [Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood](https://bair.berkeley.edu/blog/2021/10/22/mural/).
+
+
+    - Citation: Abhishek Gupta, Kevin Li, and Sergey Levine "Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood" BAIR Blog, Oct 22, 2021
+
+    - A limiting factor in RL is having reward functions that accurately represent the intended goal of the actions. There's a gap between what the reward function specifies and what we actually want it to specify.
+    - Also, there's a trade off with having reward functions that are specific to an environment and having reward function that can generalize well.
+    - The authors introduce a basic reward function as classifying an action as successful or unsuccessful.
+        -  works well in limited settings where a lot of exploration is not required.
+        - downside is that neural network based classifiers, even with some kind of regularization can converge upon sub optimal policies.
+    - They describe this downside as "overconfidence".
+    - Conditional Normalized maximum likelihood (CNML) to add uncertainty in the model.
+        - Given query point $x$ and data $\mathcal{D}[x_0, y_0, ... , x_N, y_N]$ CNML solves \begin{equation}
+        \theta_i = argmax_{\theta}\mathbb{E}_{D \cup (x_q, \mathcal{C}_i)} \mathcal{L}(f(x_q), y)
+        \end{equation}
+        Where there are $\mathcal{C}_i \in [ \mathcal{C}_0, \mathcal{C}_k ]$, so $k$ possible classes outcome. $x_q$ is the current point. This policy makes a prediction for each class (because do the above calculation for $i \in k$), so they suggest normalizing. 
+
+        $$
+            p_{CNML}(\mathcal{C}_i \mid x) = \frac { f_{\theta_i}(x)} {\sum\limits_{j=1}^{k}f_{\theta_j}(x)}
+        $$
+        - This reward policy is better equipped to handle exploring in uncertain situations.
+    - The authors then discuss generalization to continuous valued states.
+    - The authors discuss tractability of solving $k$ NMLE equations for every potential action. This is slow.
+    - Then they introduce the meta learning algorithm.
+        - I kind of lost the thread here.
+        - $2N$ tasks corresponding to postitive and negative likelihood.
+        - In my mind, I thought of this as: For each data point construct an example where you picked that actiona and it helped  / didn't help.
+        - Now you have these results cached and instead of sampling at every potentially acquired point, you consult this "look up" table.
+    - Final thoughts.
+        - The core algorithm is really simple which is awesome but I am not entirely sure about the meta learning part. Here's my interpreation:
+            - You sample $n$ points from the replay buffer and try train another model to predict what the NML will be, given that the point is classified as helpful and unhelpful. 
+            - For the maze problem, this should start bulding a NML surrogate model that has a good spatial understanding of how different helpful and unhelpful point layouts shape the map.

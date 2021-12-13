@@ -11,7 +11,7 @@ categories: reviews
 - [Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood](https://bair.berkeley.edu/blog/2021/10/22/mural/).
 
 
-    - Citation: Abhishek Gupta, Kevin Li, and Sergey Levine "Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood" BAIR Blog, Oct 22, 2021
+    - Citation: [Abhishek Gupta](https://abhishekunique.github.io/), [Kevin Li](https://www.linkedin.com/in/kevintli/), and [Sergey Levine](http://people.eecs.berkeley.edu/~svlevine/) "Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood" BAIR Blog, Oct 22, 2021
 
     - A limiting factor in RL is having reward functions that accurately represent the intended goal of the actions. There's a gap between what the reward function specifies and what we actually want it to specify.
     - Also, there's a trade off with having reward functions that are specific to an environment and having reward function that can generalize well.

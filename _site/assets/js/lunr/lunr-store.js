@@ -34,4 +34,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review5/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 6: Spiking Neural Nets",
+        "excerpt":"Spiking Neural Networks by Anil Ananthaswamy. Citation: Anil Ananthaswamy, “Spiking Neural Networks” Simons Institute, Dec 13, 2021 I believe it is immensly understated how critical understanding the dynamics of spiking neural networks (SNN) is to advancing energy efficient machine intellgience. This quote from this article sums it up perfectly: computational...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review6/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

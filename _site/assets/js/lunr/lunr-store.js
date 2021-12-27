@@ -40,4 +40,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review6/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 7: Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors",
+        "excerpt":"Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors by Dr. Austin Graves Dr. Richard Huganir. Citation: Graves, Austin R., et al. “Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors.” Elife 10 (2021): e66809. First, I like how this article is structured. It...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review7/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

@@ -1,0 +1,56 @@
+---
+layout: base
+title:  "Review 7: Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors"
+date:   2021-12-26 14:16:13 -0700
+author: xander
+categories: reviews
+---
+
+
+
+[Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors](https://elifesciences.org/articles/66809) by [Dr. Austin Graves](http://neuroscience.bs.jhmi.edu/huganir/Member/AustinGraves.html) [Dr. Richard Huganir](https://www.hopkinsmedicine.org/profiles/details/richard-huganir).
+
+
+- Citation: Graves, Austin R., et al. "Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors." Elife 10 (2021): e66809.
+
+- First, I like how this article is structured. It has introduction, then just goes right into results. This is well tailored to the reader because unless you are in some very theoretical field and the method is _somehow_ more important than the result, we want to read the results.
+- By the way, I had no idea what a SEP tag is or even what knockin means! I also didn't know what GluA1 does.
+    - **knockin**: mouse genetic lines that have an altered gene sequence.
+    - **SEP**:  super ecliptic pHluorin (SEP), flouresces at neutral Ph only meaning it will be expressed on the cell membrane, but not inside the cell. fluorescent tag for AMPAR (AMPA receptors)
+    - **GluA1**: Glutamate receptor protein that forms AMPAR
+
+- The begininning the results section focuses on how their SEP-GluA1 knockin mouse line is functionally the same as the wildtype (WT) mouse line. 
+    - The authors do this thoroughly using several experiments.
+        1. Northern and Western blot flourescence protocols to determine mRNA protein expression of GluA1, GluA2, and GluA3 in knockin line and WT line. This is done using slice of mouse hippocampal tissue. (Fig 1)
+            - They noticed that in their knockin mice, GluA1 postsynaptic density is lowered due to the knockin line mutation of the mRNA. Then knockin line mice have higher GluA3 to compensate.
+            - However, this doesn't seem to have any functional effects on synpatic plasticity -- as the authors go on to show.
+        2. Single voltage clamp records of hippocampal slices (Fig 2), which show that the synaptic behavior of SEP-GluA1 knockin mice is unaffected by the tag.
+            - They show this by showing that the EPSC (excitatory post synpatic currents) are unaffected by SEP tagging.
+            - They show this under LTP induction too in the next step.
+        3. Compounds like TTX and BIC have homogenous effects on relative surface AMPA recepots of both WT and SEP-GluA1 knockin mice.
+        4. Behavioral experiments, where SEP-GluA1 mice had the same behavior on locomotor task, anxiety task, spatial novelty prefence task.
+            - I know the difference is not significant but in the anxiety task it does look like SEP-GluA1 mice _do_ spend more time in the open arms. 
+        - Overall, this battery of evidence is convincing that we can consider SEP-GluA1 mice as representative of WT mice.
+- Now to discuss the good part. What happens to these synapses at large scale.
+- First, this is good to know:
+> Graves et al., 2021
+>> We found a significant correlation between SEP-GluA1 fluorescence intensity and uEPSC amplitude (Figure 5c), indicating that SEP fluorescent intensity can be used as a proxy for synaptic strength.
+
+- Glutamate uncaging led to increased uEPSC amplitude and SEP fluorescence in stimulated spines.
+    - glutamate uncaging is light induced photstimulation of neurons.
+    - authors show that as expected, this induced stimulation of neurons likely results in more AMPAR receptors on the cell membrane as a marker of increased synaptic strength.
+    - Shown clearly in Figure 5D-F. These are important figures. They show that LTP in high frequency pairings is marked by an incresed SEP flourescence. 
+- Even _in vitro_ there's a strong correlation between SEP fluorescence and EPSC amplitude.
+- Paper presents an unsupervised algorithm for synapse detection.
+- Sensory stimulation task
+    - The detection algorithm recognizes **hundreds of thousands of synapses**.
+    - The experimenter stimulates one mouse whisker but not the other.
+    - The C2 barrel corresponding to stimulated whisker displays a higher SEP-GluA1 intensity from the whisker stimulation induced LTP.
+    - The figure showing this (Fig 8c.) shows this result clearly and it is statisically significant.
+    - Not only that, we get the time scale this happened on as well. (3hrs)
+        - well likely the effect just observed in post stim imaging actually.
+- This sensory stimulation task is awesome for a few reasons.
+    1. They have a ton of data since they detect so many synapses. This means when something is significant it has an N > 100,00, which is very convincing.
+    2. I _think_ this is the first experiment demonstrating one of the actual mechaisms of LTP _in vivo_ and that's pretty cool.
+    3. This is just showing a sensory stimulation task. I wonder what else this methodology can show!
+

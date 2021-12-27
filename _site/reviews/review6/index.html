@@ -253,15 +253,15 @@
 
     <ul>
       <li>
-        <p><strong>Backprop and non-differentiablity of SNNs:</strong> the first challenge is that spiking neurons are often using non-continous and discrete functions like the <a href="https://en.wikipedia.org/wiki/Heaviside_step_function"><em>step function</em></a> which prevent researchers from perforiming backprop.</p>
+        <p><strong>Backprop and non-differentiablity of SNNs:</strong> the first challenge is that spiking neurons are often using non-continous and discrete functions like the <a href="https://en.wikipedia.org/wiki/Heaviside_step_function"><em>step function</em></a> which prevent researchers from perforiming backprop. See <a href="https://homepages.cwi.nl/~sbohte/research.html">Dr. Sander Bohte’s</a> approach to this problem.</p>
       </li>
       <li><strong>Memory storage and backprop through time:</strong> assuming we can compute gradients (or approximate ones), we now need to deal with the fact the human neural nets show spiking latency at several different temporal scales. This is a problem becuase encoding neuron states at the scale of miliseconds for an hour of activity is incredibly memory ineffcient. Especially considering neurons exhibit <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3154835/">“lifetime sparseness”</a>(Quiroga and Kreiman 2016), which means that in the brain, they don’t really fire that often. As a result, we end up encoding a lot of useless information about a neuron’s membrane potential.</li>
-      <li><strong>Single cell activation functions:</strong> This issue isn’t directly cited here, but I’d like to use it to group a few issues together. The issue that I think it’s most related to in the text is: <em>Homogeneous vs. heterogenous cell types</em>. This is the idea that having neurons that vary in comparison to eachother and have different firing rules and thresholds allows the information to encode more information and actually results in improved prediction in temporally structured tasks, such as <a href="https://zenkelab.org/resources/spiking-heidelberg-datasets-shd/">SNN Audio MNIST</a>. I’d like to add some more considerations here beyond homogeneity and heterogeneity. There are two other factors not mentioned here that result in heterogeneity. First, I think synapse types are important. Many researchers work on excitation and inhibition (E/I) balance in the brain has led to better understanding how attractor states might occur in the brain (see my <a href="https://xanderladd.github.io/reviews/review3/">previous review</a>). Second, I don’t have many references for this on-hand, but any experienced EEG practicioner will tell you how much background activity and local field potentials impact single neuron firing rates. I think these ideas have been experimented with by SNN researchers, but aren’t quite as impactful as the cited results by Goodman lab on heterogenous neuron types resulting in a 15-20% increase in accuracy on audio MNIST.</li>
+      <li><strong>Single cell activation functions:</strong> This issue isn’t directly cited here, but I’d like to use it to group a few issues together. The issue that I think it’s most related to in the text is: <em>Homogeneous vs. heterogenous cell types</em>. This is the idea that having neurons that vary in comparison to eachother and have different firing rules and thresholds allows the information to encode more information and actually results in improved prediction in temporally structured tasks, such as <a href="https://zenkelab.org/resources/spiking-heidelberg-datasets-shd/">SNN Audio MNIST from Zenke Lab</a>. I’d like to add some more considerations here beyond homogeneity and heterogeneity. There are two other factors not mentioned here that result in heterogeneity. First, I think synapse types are important. Many researchers work on excitation and inhibition (E/I) balance in the brain has led to better understanding how attractor states might occur in the brain (see my <a href="https://xanderladd.github.io/reviews/review3/">previous review</a>). Second, I don’t have many references for this on-hand, but any experienced EEG practicioner will tell you how much background activity and local field potentials impact single neuron firing rates. I think these ideas have been experimented with by SNN researchers, but aren’t quite as impactful as the cited results by <a href="https://neural-reckoning.org/dan_goodman.html">Goodman lab</a> on heterogenous neuron types resulting in a 15-20% increase in accuracy on audio MNIST.</li>
     </ul>
 
-    <p>Anil also presents an array of ingenious research solutions to these problems such as EventProp (Pehle) and Surrogate Gradients (Neftci, Mostafa, and Zenke). These are covered pretty well in the original article. However, looking at this from a broader perspective, these approaches don’t seem like they’ve lead to anything that performs so well on MNIST or any other SOTA ML result that researchers enamored with transformers are going to jump ship anytime soon. Looking at this article within the broader context of consolidation with ML/AI, written about by <a href="https://twitter.com/karpathy/status/1468370605229547522">Andrej Karpathy</a>, it seems most ML and AI researchers are focused on ANN based deep learning and are unlikely to migrate over just because of surrogate gradients. I don’t think this is a bad thing for either focus – in fact it’s a good thing <em>for both</em>. No matter how open minded we frame ourselves, most researchers are biased towards their own research direction. We have to keep reinforcing a narrative that studying <em>X</em> is more interesting than stuyding <em>Y</em> for reason <em>J</em>,<em>K</em> and <em>L</em>. This means that SNN researchers are either going to have to show that SNNs can be <strong>significantly</strong> more energy efficent, or better yet <strong>convincingly</strong> more accurate. Likely, the case for SNNs is as a worthwile tradeoff between accuracy and energy efficiency.</p>
+    <p>Anil also presents an array of ingenious research solutions to these problems such as EventProp (<a href="https://scholar.google.com/citations?user=FzRMI38AAAAJ&amp;hl=en">Dr. Pehle 2021</a>) and Surrogate Gradients (Neftci, Mostafa, and Zenke). These are covered pretty well in the original article. However, looking at this from a broader perspective, these approaches don’t seem like they’ve lead to anything that performs so well on MNIST or any other SOTA ML result that researchers enamored with transformers are going to jump ship anytime soon. Looking at this article within the broader context of consolidation with ML/AI, written about by <a href="https://twitter.com/karpathy/status/1468370605229547522">Andrej Karpathy</a>, it seems most ML and AI researchers are focused on ANN based deep learning and are unlikely to migrate over just because of surrogate gradients. I don’t think this is a bad thing for either focus – in fact it’s a good thing <em>for both</em>. No matter how open minded we frame ourselves, most researchers are biased towards their own research direction. We have to keep reinforcing a narrative that studying <em>X</em> is more interesting than stuyding <em>Y</em> for reason <em>J</em>,<em>K</em> and <em>L</em>. This means that SNN researchers are either going to have to show that SNNs can be <strong>significantly</strong> more energy efficent, or better yet <strong>convincingly</strong> more accurate. Likely, the case for SNNs is as a worthwile tradeoff between accuracy and energy efficiency.</p>
 
-    <p>As a enthusiast of biologically inspired networks, I find myself rooting for the future promise of SNNs. However, at the end of the day, for a field of machine intelligence that is extremely based on comparison and benchmarks, the world is not so simple. Mean absolute error (MAE) is important, but not all encompassing. <a href="https://profiles.uts.edu.au/Tara.Hamilton">Tara Hamilton’s</a> presentation at <a href="http://snufa.net/2021/">SNUFA 2021</a> really helped me realize that there are plently of insteresting use cases for SNNs, for example cochlea implants or heart rate monitoring. However, when it comes to self-driving cars, convolutional neural networks (CNNs) remain an obvious choice. This dynamic is actually a really amazing thing. However, as a researcher, I have to go back to the original quote, that SNNs are the language of the brain. For someone who is interested in reverse engineering the brain, I think it’s hard not consider SNNs an engaging model problem. My own experience with SNNs is very beginner, but it’s posts like this one by Anil that set the stage for an exciting future in the field.</p>
+    <p>As a enthusiast of biologically inspired networks, I find myself rooting for the future promise of SNNs. However, at the end of the day, for a field of machine intelligence that is extremely based on comparison and benchmarks, the world is not so simple. Mean absolute error (MAE) is important, but not all encompassing. <a href="https://profiles.uts.edu.au/Tara.Hamilton">Dr. Tara Hamilton’s</a> presentation at <a href="http://snufa.net/2021/">SNUFA 2021</a> really helped me realize that there are plently of insteresting use cases for SNNs, for example cochlea implants or heart rate monitoring. However, when it comes to self-driving cars, convolutional neural networks (CNNs) remain an obvious choice. This dynamic is actually a really amazing thing. However, as a researcher, I have to go back to the original quote, that SNNs are the language of the brain. For someone who is interested in reverse engineering the brain, I think it’s hard not consider SNNs an engaging model problem. My own experience with SNNs is very beginner, but it’s posts like this one by Anil that set the stage for an exciting future in the field.</p>
   </li>
 </ul>
 
@@ -271,6 +271,47 @@
 
 <!-- 
 <div class="entries-list">
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review7/" rel="permalink">Review 7: Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors by Dr. Austin Graves Dr. Richard Huganir.
+
+</p>
+  </article>
+</div>
+
   
     
 

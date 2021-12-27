@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-19T14:32:30-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 6: Spiking Neural Nets</title><link href="http://localhost:4000/reviews/review6/" rel="alternate" type="text/html" title="Review 6: Spiking Neural Nets" /><published>2021-12-19T13:16:13-08:00</published><updated>2021-12-19T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review6</id><content type="html" xml:base="http://localhost:4000/reviews/review6/">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-26T16:49:04-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 7: Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors</title><link href="http://localhost:4000/reviews/review7/" rel="alternate" type="text/html" title="Review 7: Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors" /><published>2021-12-26T13:16:13-08:00</published><updated>2021-12-26T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review7</id><content type="html" xml:base="http://localhost:4000/reviews/review7/">&lt;p&gt;&lt;a href=&quot;https://elifesciences.org/articles/66809&quot;&gt;Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors&lt;/a&gt; by &lt;a href=&quot;http://neuroscience.bs.jhmi.edu/huganir/Member/AustinGraves.html&quot;&gt;Dr. Austin Graves&lt;/a&gt; &lt;a href=&quot;https://www.hopkinsmedicine.org/profiles/details/richard-huganir&quot;&gt;Dr. Richard Huganir&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Citation: Graves, Austin R., et al. “Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors.” Elife 10 (2021): e66809.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;First, I like how this article is structured. It has introduction, then just goes right into results. This is well tailored to the reader because unless you are in some very theoretical field and the method is &lt;em&gt;somehow&lt;/em&gt; more important than the result, we want to read the results.&lt;/li&gt;
+  &lt;li&gt;By the way, I had no idea what a SEP tag is or even what knockin means! I also didn’t know what GluA1 does.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;knockin&lt;/strong&gt;: mouse genetic lines that have an altered gene sequence.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;SEP&lt;/strong&gt;:  super ecliptic pHluorin (SEP), flouresces at neutral Ph only meaning it will be expressed on the cell membrane, but not inside the cell. fluorescent tag for AMPAR (AMPA receptors)&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;GluA1&lt;/strong&gt;: Glutamate receptor protein that forms AMPAR&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The begininning the results section focuses on how their SEP-GluA1 knockin mouse line is functionally the same as the wildtype (WT) mouse line.
+    &lt;ul&gt;
+      &lt;li&gt;The authors do this thoroughly using several experiments.
+        &lt;ol&gt;
+          &lt;li&gt;Northern and Western blot flourescence protocols to determine mRNA protein expression of GluA1, GluA2, and GluA3 in knockin line and WT line. This is done using slice of mouse hippocampal tissue. (Fig 1)
+            &lt;ul&gt;
+              &lt;li&gt;They noticed that in their knockin mice, GluA1 postsynaptic density is lowered due to the knockin line mutation of the mRNA. Then knockin line mice have higher GluA3 to compensate.&lt;/li&gt;
+              &lt;li&gt;However, this doesn’t seem to have any functional effects on synpatic plasticity – as the authors go on to show.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Single voltage clamp records of hippocampal slices (Fig 2), which show that the synaptic behavior of SEP-GluA1 knockin mice is unaffected by the tag.
+            &lt;ul&gt;
+              &lt;li&gt;They show this by showing that the EPSC (excitatory post synpatic currents) are unaffected by SEP tagging.&lt;/li&gt;
+              &lt;li&gt;They show this under LTP induction too in the next step.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Compounds like TTX and BIC have homogenous effects on relative surface AMPA recepots of both WT and SEP-GluA1 knockin mice.&lt;/li&gt;
+          &lt;li&gt;Behavioral experiments, where SEP-GluA1 mice had the same behavior on locomotor task, anxiety task, spatial novelty prefence task.
+            &lt;ul&gt;
+              &lt;li&gt;I know the difference is not significant but in the anxiety task it does look like SEP-GluA1 mice &lt;em&gt;do&lt;/em&gt; spend more time in the open arms. 
+        - Overall, this battery of evidence is convincing that we can consider SEP-GluA1 mice as representative of WT mice.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Now to discuss the good part. What happens to these synapses at large scale.&lt;/li&gt;
+  &lt;li&gt;First, this is good to know:
+    &lt;blockquote&gt;
+      &lt;p&gt;Graves et al., 2021&lt;/p&gt;
+      &lt;blockquote&gt;
+        &lt;p&gt;We found a significant correlation between SEP-GluA1 fluorescence intensity and uEPSC amplitude (Figure 5c), indicating that SEP fluorescent intensity can be used as a proxy for synaptic strength.&lt;/p&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Glutamate uncaging led to increased uEPSC amplitude and SEP fluorescence in stimulated spines.
+    &lt;ul&gt;
+      &lt;li&gt;glutamate uncaging is light induced photstimulation of neurons.&lt;/li&gt;
+      &lt;li&gt;authors show that as expected, this induced stimulation of neurons likely results in more AMPAR receptors on the cell membrane as a marker of increased synaptic strength.&lt;/li&gt;
+      &lt;li&gt;Shown clearly in Figure 5D-F. These are important figures. They show that LTP in high frequency pairings is marked by an incresed SEP flourescence.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Even &lt;em&gt;in vitro&lt;/em&gt; there’s a strong correlation between SEP fluorescence and EPSC amplitude.&lt;/li&gt;
+  &lt;li&gt;Paper presents an unsupervised algorithm for synapse detection.&lt;/li&gt;
+  &lt;li&gt;Sensory stimulation task
+    &lt;ul&gt;
+      &lt;li&gt;The detection algorithm recognizes &lt;strong&gt;hundreds of thousands of synapses&lt;/strong&gt;.&lt;/li&gt;
+      &lt;li&gt;The experimenter stimulates one mouse whisker but not the other.&lt;/li&gt;
+      &lt;li&gt;The C2 barrel corresponding to stimulated whisker displays a higher SEP-GluA1 intensity from the whisker stimulation induced LTP.&lt;/li&gt;
+      &lt;li&gt;The figure showing this (Fig 8c.) shows this result clearly and it is statisically significant.&lt;/li&gt;
+      &lt;li&gt;Not only that, we get the time scale this happened on as well. (3hrs)
+        &lt;ul&gt;
+          &lt;li&gt;well likely the effect just observed in post stim imaging actually.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;This sensory stimulation task is awesome for a few reasons.
+    &lt;ol&gt;
+      &lt;li&gt;They have a ton of data since they detect so many synapses. This means when something is significant it has an N &amp;gt; 100,00, which is very convincing.&lt;/li&gt;
+      &lt;li&gt;I &lt;em&gt;think&lt;/em&gt; this is the first experiment demonstrating one of the actual mechaisms of LTP &lt;em&gt;in vivo&lt;/em&gt; and that’s pretty cool.&lt;/li&gt;
+      &lt;li&gt;This is just showing a sensory stimulation task. I wonder what else this methodology can show!&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors by Dr. Austin Graves Dr. Richard Huganir.</summary></entry><entry><title type="html">Review 6: Spiking Neural Nets</title><link href="http://localhost:4000/reviews/review6/" rel="alternate" type="text/html" title="Review 6: Spiking Neural Nets" /><published>2021-12-19T13:16:13-08:00</published><updated>2021-12-19T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review6</id><content type="html" xml:base="http://localhost:4000/reviews/review6/">&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://simons.berkeley.edu/news/spiking-neural-networks&quot;&gt;Spiking Neural Networks&lt;/a&gt; by &lt;a href=&quot;http://anilananthaswamy.com/&quot;&gt;Anil Ananthaswamy&lt;/a&gt;.&lt;/p&gt;
 
@@ -19,15 +98,15 @@
 
     &lt;ul&gt;
       &lt;li&gt;
-        &lt;p&gt;&lt;strong&gt;Backprop and non-differentiablity of SNNs:&lt;/strong&gt; the first challenge is that spiking neurons are often using non-continous and discrete functions like the &lt;a href=&quot;https://en.wikipedia.org/wiki/Heaviside_step_function&quot;&gt;&lt;em&gt;step function&lt;/em&gt;&lt;/a&gt; which prevent researchers from perforiming backprop.&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;Backprop and non-differentiablity of SNNs:&lt;/strong&gt; the first challenge is that spiking neurons are often using non-continous and discrete functions like the &lt;a href=&quot;https://en.wikipedia.org/wiki/Heaviside_step_function&quot;&gt;&lt;em&gt;step function&lt;/em&gt;&lt;/a&gt; which prevent researchers from perforiming backprop. See &lt;a href=&quot;https://homepages.cwi.nl/~sbohte/research.html&quot;&gt;Dr. Sander Bohte’s&lt;/a&gt; approach to this problem.&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;&lt;strong&gt;Memory storage and backprop through time:&lt;/strong&gt; assuming we can compute gradients (or approximate ones), we now need to deal with the fact the human neural nets show spiking latency at several different temporal scales. This is a problem becuase encoding neuron states at the scale of miliseconds for an hour of activity is incredibly memory ineffcient. Especially considering neurons exhibit &lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3154835/&quot;&gt;“lifetime sparseness”&lt;/a&gt;(Quiroga and Kreiman 2016), which means that in the brain, they don’t really fire that often. As a result, we end up encoding a lot of useless information about a neuron’s membrane potential.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Single cell activation functions:&lt;/strong&gt; This issue isn’t directly cited here, but I’d like to use it to group a few issues together. The issue that I think it’s most related to in the text is: &lt;em&gt;Homogeneous vs. heterogenous cell types&lt;/em&gt;. This is the idea that having neurons that vary in comparison to eachother and have different firing rules and thresholds allows the information to encode more information and actually results in improved prediction in temporally structured tasks, such as &lt;a href=&quot;https://zenkelab.org/resources/spiking-heidelberg-datasets-shd/&quot;&gt;SNN Audio MNIST&lt;/a&gt;. I’d like to add some more considerations here beyond homogeneity and heterogeneity. There are two other factors not mentioned here that result in heterogeneity. First, I think synapse types are important. Many researchers work on excitation and inhibition (E/I) balance in the brain has led to better understanding how attractor states might occur in the brain (see my &lt;a href=&quot;https://xanderladd.github.io/reviews/review3/&quot;&gt;previous review&lt;/a&gt;). Second, I don’t have many references for this on-hand, but any experienced EEG practicioner will tell you how much background activity and local field potentials impact single neuron firing rates. I think these ideas have been experimented with by SNN researchers, but aren’t quite as impactful as the cited results by Goodman lab on heterogenous neuron types resulting in a 15-20% increase in accuracy on audio MNIST.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Single cell activation functions:&lt;/strong&gt; This issue isn’t directly cited here, but I’d like to use it to group a few issues together. The issue that I think it’s most related to in the text is: &lt;em&gt;Homogeneous vs. heterogenous cell types&lt;/em&gt;. This is the idea that having neurons that vary in comparison to eachother and have different firing rules and thresholds allows the information to encode more information and actually results in improved prediction in temporally structured tasks, such as &lt;a href=&quot;https://zenkelab.org/resources/spiking-heidelberg-datasets-shd/&quot;&gt;SNN Audio MNIST from Zenke Lab&lt;/a&gt;. I’d like to add some more considerations here beyond homogeneity and heterogeneity. There are two other factors not mentioned here that result in heterogeneity. First, I think synapse types are important. Many researchers work on excitation and inhibition (E/I) balance in the brain has led to better understanding how attractor states might occur in the brain (see my &lt;a href=&quot;https://xanderladd.github.io/reviews/review3/&quot;&gt;previous review&lt;/a&gt;). Second, I don’t have many references for this on-hand, but any experienced EEG practicioner will tell you how much background activity and local field potentials impact single neuron firing rates. I think these ideas have been experimented with by SNN researchers, but aren’t quite as impactful as the cited results by &lt;a href=&quot;https://neural-reckoning.org/dan_goodman.html&quot;&gt;Goodman lab&lt;/a&gt; on heterogenous neuron types resulting in a 15-20% increase in accuracy on audio MNIST.&lt;/li&gt;
     &lt;/ul&gt;
 
-    &lt;p&gt;Anil also presents an array of ingenious research solutions to these problems such as EventProp (Pehle) and Surrogate Gradients (Neftci, Mostafa, and Zenke). These are covered pretty well in the original article. However, looking at this from a broader perspective, these approaches don’t seem like they’ve lead to anything that performs so well on MNIST or any other SOTA ML result that researchers enamored with transformers are going to jump ship anytime soon. Looking at this article within the broader context of consolidation with ML/AI, written about by &lt;a href=&quot;https://twitter.com/karpathy/status/1468370605229547522&quot;&gt;Andrej Karpathy&lt;/a&gt;, it seems most ML and AI researchers are focused on ANN based deep learning and are unlikely to migrate over just because of surrogate gradients. I don’t think this is a bad thing for either focus – in fact it’s a good thing &lt;em&gt;for both&lt;/em&gt;. No matter how open minded we frame ourselves, most researchers are biased towards their own research direction. We have to keep reinforcing a narrative that studying &lt;em&gt;X&lt;/em&gt; is more interesting than stuyding &lt;em&gt;Y&lt;/em&gt; for reason &lt;em&gt;J&lt;/em&gt;,&lt;em&gt;K&lt;/em&gt; and &lt;em&gt;L&lt;/em&gt;. This means that SNN researchers are either going to have to show that SNNs can be &lt;strong&gt;significantly&lt;/strong&gt; more energy efficent, or better yet &lt;strong&gt;convincingly&lt;/strong&gt; more accurate. Likely, the case for SNNs is as a worthwile tradeoff between accuracy and energy efficiency.&lt;/p&gt;
+    &lt;p&gt;Anil also presents an array of ingenious research solutions to these problems such as EventProp (&lt;a href=&quot;https://scholar.google.com/citations?user=FzRMI38AAAAJ&amp;amp;hl=en&quot;&gt;Dr. Pehle 2021&lt;/a&gt;) and Surrogate Gradients (Neftci, Mostafa, and Zenke). These are covered pretty well in the original article. However, looking at this from a broader perspective, these approaches don’t seem like they’ve lead to anything that performs so well on MNIST or any other SOTA ML result that researchers enamored with transformers are going to jump ship anytime soon. Looking at this article within the broader context of consolidation with ML/AI, written about by &lt;a href=&quot;https://twitter.com/karpathy/status/1468370605229547522&quot;&gt;Andrej Karpathy&lt;/a&gt;, it seems most ML and AI researchers are focused on ANN based deep learning and are unlikely to migrate over just because of surrogate gradients. I don’t think this is a bad thing for either focus – in fact it’s a good thing &lt;em&gt;for both&lt;/em&gt;. No matter how open minded we frame ourselves, most researchers are biased towards their own research direction. We have to keep reinforcing a narrative that studying &lt;em&gt;X&lt;/em&gt; is more interesting than stuyding &lt;em&gt;Y&lt;/em&gt; for reason &lt;em&gt;J&lt;/em&gt;,&lt;em&gt;K&lt;/em&gt; and &lt;em&gt;L&lt;/em&gt;. This means that SNN researchers are either going to have to show that SNNs can be &lt;strong&gt;significantly&lt;/strong&gt; more energy efficent, or better yet &lt;strong&gt;convincingly&lt;/strong&gt; more accurate. Likely, the case for SNNs is as a worthwile tradeoff between accuracy and energy efficiency.&lt;/p&gt;
 
-    &lt;p&gt;As a enthusiast of biologically inspired networks, I find myself rooting for the future promise of SNNs. However, at the end of the day, for a field of machine intelligence that is extremely based on comparison and benchmarks, the world is not so simple. Mean absolute error (MAE) is important, but not all encompassing. &lt;a href=&quot;https://profiles.uts.edu.au/Tara.Hamilton&quot;&gt;Tara Hamilton’s&lt;/a&gt; presentation at &lt;a href=&quot;http://snufa.net/2021/&quot;&gt;SNUFA 2021&lt;/a&gt; really helped me realize that there are plently of insteresting use cases for SNNs, for example cochlea implants or heart rate monitoring. However, when it comes to self-driving cars, convolutional neural networks (CNNs) remain an obvious choice. This dynamic is actually a really amazing thing. However, as a researcher, I have to go back to the original quote, that SNNs are the language of the brain. For someone who is interested in reverse engineering the brain, I think it’s hard not consider SNNs an engaging model problem. My own experience with SNNs is very beginner, but it’s posts like this one by Anil that set the stage for an exciting future in the field.&lt;/p&gt;
+    &lt;p&gt;As a enthusiast of biologically inspired networks, I find myself rooting for the future promise of SNNs. However, at the end of the day, for a field of machine intelligence that is extremely based on comparison and benchmarks, the world is not so simple. Mean absolute error (MAE) is important, but not all encompassing. &lt;a href=&quot;https://profiles.uts.edu.au/Tara.Hamilton&quot;&gt;Dr. Tara Hamilton’s&lt;/a&gt; presentation at &lt;a href=&quot;http://snufa.net/2021/&quot;&gt;SNUFA 2021&lt;/a&gt; really helped me realize that there are plently of insteresting use cases for SNNs, for example cochlea implants or heart rate monitoring. However, when it comes to self-driving cars, convolutional neural networks (CNNs) remain an obvious choice. This dynamic is actually a really amazing thing. However, as a researcher, I have to go back to the original quote, that SNNs are the language of the brain. For someone who is interested in reverse engineering the brain, I think it’s hard not consider SNNs an engaging model problem. My own experience with SNNs is very beginner, but it’s posts like this one by Anil that set the stage for an exciting future in the field.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Spiking Neural Networks by Anil Ananthaswamy.</summary></entry><entry><title type="html">Review 5</title><link href="http://localhost:4000/reviews/review5/" rel="alternate" type="text/html" title="Review 5" /><published>2021-12-12T13:16:13-08:00</published><updated>2021-12-12T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review5</id><content type="html" xml:base="http://localhost:4000/reviews/review5/">&lt;ul&gt;
   &lt;li&gt;

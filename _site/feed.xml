@@ -1,4 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-26T16:49:04-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 7: Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors</title><link href="http://localhost:4000/reviews/review7/" rel="alternate" type="text/html" title="Review 7: Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors" /><published>2021-12-26T13:16:13-08:00</published><updated>2021-12-26T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review7</id><content type="html" xml:base="http://localhost:4000/reviews/review7/">&lt;p&gt;&lt;a href=&quot;https://elifesciences.org/articles/66809&quot;&gt;Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors&lt;/a&gt; by &lt;a href=&quot;http://neuroscience.bs.jhmi.edu/huganir/Member/AustinGraves.html&quot;&gt;Dr. Austin Graves&lt;/a&gt; &lt;a href=&quot;https://www.hopkinsmedicine.org/profiles/details/richard-huganir&quot;&gt;Dr. Richard Huganir&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-03T00:16:07-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 8: The Future of Artificial Intelligence is Self-Organizing and Self-Assembling</title><link href="http://localhost:4000/reviews/review8/" rel="alternate" type="text/html" title="Review 8: The Future of Artificial Intelligence is Self-Organizing and Self-Assembling" /><published>2022-01-02T13:16:13-08:00</published><updated>2022-01-02T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review8</id><content type="html" xml:base="http://localhost:4000/reviews/review8/">&lt;p&gt;&lt;a href=&quot;https://sebastianrisi.com/self_assembling_ai/9&quot;&gt;The Future of Artificial Intelligence is Self-Organizing and Self-Assembling&lt;/a&gt; by &lt;a href=&quot;https://sebastianrisi.com&quot;&gt;Prof. Sebastian Risi&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Citation: Risi, Sebastian. “The Future of Artificial Intelligence is Self-Organizing and Self-Assembling”. sebastianrisi. com (2021): n. pag. Web.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Today I am reading an interesting blog post by Professor Risi, at the &lt;a href=&quot;https://www.itu.dk/&quot;&gt;IT University of Copenhagen&lt;/a&gt;, about self organizing systems and how they can potentially solve some of the problems in developing generalizable AI.&lt;/li&gt;
+  &lt;li&gt;The blog post starts by detailing the incredible scale at which systems self-organize. I can’t help but recall an interesting tweet by &lt;a href=&quot;https://twitter.com/plinz?lang=en&quot;&gt;Joscha Bach&lt;/a&gt; that says something to the effect of “it’s computation all the way down”. My interpretation of this saying is that at every level of these complex systems, there are smaller and smaller constituents responsible for performing preceding simpler and simpler computations. In this way, a single ant can be responsible for finding a piece of food and then remembering the path to bring the food back home. However, the delegation of tasks to these ants allows a complex colony of ants to survive and ants are notoriously good at surviving. The problem with computation all the way down, is that the computation solves a simpler problem, but that doesn’t mean the computation itself is simple. This is why I think Prof. Risi brings up a good point in the first paragraph – if we want the benefit of robustness – we’ll need to find efficient training methods.&lt;/li&gt;
+  &lt;li&gt;The difference being drawn out between self-assembly and emergence is fascinating. Here’s why I think so. As an engineer (software engineer for the most part), I’ve started to realize how disastrous “over-engineering” is. The more code I have to write in order to extend some system for a simple problem is often a design flaw I made in the past. Amazingly, emergent systems like ants or swarms of insects don’t have this problem since their genetic code sets them up so well to carry out their &lt;em&gt;local&lt;/em&gt; and &lt;em&gt;global&lt;/em&gt; purposes. Historically, we are pretty damn good engineers, but when it comes to endowing our designs with this kind of adaptability, we often come up short. Our work is constantly being replaced, rebuilt, refactored, repurposed.
+    &lt;ul&gt;
+      &lt;li&gt;These words are inherent to human creations. Nature never refactors. It may replace or repurpose at times, but in the slowest timescale imaginable. Humans are always rushing to get these things done. To get a new version released, to improve state of the art, to hastily revitalize old infrastructure.&lt;/li&gt;
+      &lt;li&gt;One caveat to this point is that humans don’t build systems capable of robust adaptation: art. Great artists build things that seem to be constant sources of beauty (or functionality depending on what you expect out of art). For example, the Mona Lisa has been captivating for hundreds of years. Tchaikovsky’s music doesn’t need any refactoring or &lt;em&gt;remixing&lt;/em&gt;. On the other hand, it’s hard to argue that these things have some emergent behavior.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I wonder how true it is that neural nets can’t generalize very well. I agree with Prof. Risi’s claim, but I think GPT-3 is an interesting counter-example. Sure it’s a giant net, but it can handily craft human-level responses to questions outside of its training data.&lt;/li&gt;
+  &lt;li&gt;I will continue reading but these references are hard to ignore!
+    &lt;blockquote&gt;
+      &lt;p&gt;Vichniac, 1984; Wolfram, 1984; Langton, 1986 qtd. in Risi 2021&lt;/p&gt;
+      &lt;blockquote&gt;
+        &lt;p&gt;Cellular Automata can aid in the understanding of biological pattern formations, modeling of lattice-based physical systems in percolation and nucleation, and synthesis of artificial life.&lt;/p&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://xanderladd.github.io/research/benchmarking&quot;&gt;My research&lt;/a&gt; involves evolutionary alorithms. So Neural Cellular Automata (NCAs) seem really interesting to me.
+    &lt;ul&gt;
+      &lt;li&gt;However, the fact that reassembling the Nordic flag causes non-optimal solutions gives a good idea that conquering challenging optimization landscapes can be a real tough problem.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://openreview.net/forum?id=7fFO4cMBx_9&quot;&gt;Variational Neural Cellular Automata&lt;/a&gt; reminds me I need to learn how VAEs work a bit better!&lt;/li&gt;
+  &lt;li&gt;Their &lt;a href=&quot;https://sebastianrisi.com/wp-content/uploads/minecraft_short.mp4&quot;&gt;3D Minecraft NCA tree house morphogenesis video&lt;/a&gt; is really cool. I am amazing by the detail of the reconstruction of their algo. Though I’ve never played minecraft.&lt;/li&gt;
+  &lt;li&gt;The really interesting part behind their demonstration of locomotive structures is that the interactions are developed at a local level. This kind of interaction structure is the same kind the brain uses.
+    &lt;ul&gt;
+      &lt;li&gt;For the most part.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The above is confirmed by Prof. Risi here:
+    &lt;blockquote&gt;
+      &lt;p&gt;Risi 2021&lt;/p&gt;
+      &lt;blockquote&gt;
+        &lt;p&gt;For example, instead of optimizing the weight parameters of neural networks directly, only meta-learning synapse-specific Hebbian learning rules allows a network to continuously self-organize its weights during the lifetime of the agent (Najarro &amp;amp; Risi, 2020). We found that starting from completely random weights, evolved Hebbian rules enable an agent to navigate a dynamic 2D-pixel environment; likewise, the approach also allows a simulated 3D quadruped to learn how to walk while adapting to some morphological damage not seen during training and in the absence of any explicit reward or error signal in less than 100 timesteps.&lt;/p&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Also, the “not seen during training example” &lt;a href=&quot;https://sebastianrisi.com/wp-content/uploads/ant_hebbian2.mp4&quot;&gt;here&lt;/a&gt; is pretty funny as it just flops around.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The author describes several methods of parameter sharing:
+    &lt;ol&gt;
+      &lt;li&gt;Iteratively merging learning rules
+        &lt;ul&gt;
+          &lt;li&gt;based on the “genomic bottleneck” (&lt;a href=&quot;https://www.nature.com/articles/s41467-019-11786-6&quot;&gt;Zador 2019&lt;/a&gt;), they drastically reduce parameters by combining rules. (what is k-means being used on?)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Learning learning rules through self-organization
+        &lt;ul&gt;
+          &lt;li&gt;OK, so this reference to Krisch and Schmidhuber is a must-read. &lt;a href=&quot;https://arxiv.org/abs/2012.14905&quot;&gt;https://arxiv.org/abs/2012.14905&lt;/a&gt;. Basically, small recurrent networks somehow self-organize and learn a global algorithm. Really want to find out more here.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Learning to be robust to unseen and permutated sensory inputs
+        &lt;ul&gt;
+          &lt;li&gt;Idea here is to add a global controller or attention mechanism to moderate local interactions. This can provide some robustness against variation.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Now time to discuss training. Prof. Risi says this is hard because:
+    &lt;ol&gt;
+      &lt;li&gt;There is no entity that is essentially fully in charge of the self-organizing system, no engineer at the helm.&lt;/li&gt;
+      &lt;li&gt;These systems are chaotic, it’s hard to analytically guide them to stable states. The solutions are non-deterministic and often degenerate to local minima.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;So what can we do?
+    &lt;ul&gt;
+      &lt;li&gt;Quality Diversity (Pugh et al. 2016)[https://www.frontiersin.org/articles/10.3389/frobt.2016.00040/full] aims to generate a diverse set of solutions instead of only one satisfying solution.&lt;/li&gt;
+      &lt;li&gt;Deep learning + Compositional Pattern Producing Networks (CPPNs; Stanley 2007) &lt;a href=&quot;https://arxiv.org/abs/1908.06663&quot;&gt;Reinke et al. 2020,&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;I got lost here. I don’t know what CPNNs do and unfortunately, I already added enough to my reading list for today.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Overall I thought this blog post did a great job of explaining several distinct pros and cons to distributed learning systems. It seems like these methods are becoming an &lt;em&gt;emerging trend&lt;/em&gt; (nod nod wink wink) in machine learning. I think even Geoff Hinton’s work on GLOM (&lt;a href=&quot;https://arxiv.org/pdf/2102.12627.pdf&quot;&gt;Hinton 2020&lt;/a&gt;) has some resemblance to distributed systems. Ultimately, neural networks have done an excellent job of stacking computational units together, but the opportunity for robustness in diverse and locally structured systems is exciting. It’s awesome to see so many examples tying deep learning networks into this concept of self-organizing systems. Outside of evolutionary algorithms, I don’t know much about this stuff but I’ll be following along!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">The Future of Artificial Intelligence is Self-Organizing and Self-Assembling by Prof. Sebastian Risi</summary></entry><entry><title type="html">Review 7: Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors</title><link href="http://localhost:4000/reviews/review7/" rel="alternate" type="text/html" title="Review 7: Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors" /><published>2021-12-26T13:16:13-08:00</published><updated>2021-12-26T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review7</id><content type="html" xml:base="http://localhost:4000/reviews/review7/">&lt;p&gt;&lt;a href=&quot;https://elifesciences.org/articles/66809&quot;&gt;Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors&lt;/a&gt; by &lt;a href=&quot;http://neuroscience.bs.jhmi.edu/huganir/Member/AustinGraves.html&quot;&gt;Dr. Austin Graves&lt;/a&gt; &lt;a href=&quot;https://www.hopkinsmedicine.org/profiles/details/richard-huganir&quot;&gt;Dr. Richard Huganir&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -328,68 +411,7 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">If we already understood the brain, would we even know it? by Tal Yarkoni.</summary></entry><entry><title type="html">Review 1</title><link href="http://localhost:4000/reviews/review1/" rel="alternate" type="text/html" title="Review 1" /><published>2021-11-14T13:16:13-08:00</published><updated>2021-11-14T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review1</id><content type="html" xml:base="http://localhost:4000/reviews/review1/">&lt;ul&gt;
-  &lt;li&gt;Review 1 : &lt;a href=&quot;https://www.eneuro.org/content/8/2/ENEURO.0131-21.2021&quot;&gt;In Silico&lt;/a&gt; by &lt;a href=&quot;https://fairhalllab.com/&quot; title=&quot;Title&quot;&gt;Dr. Fairhall&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Citation: Fairhall, Adrienne L. “In silico: where next?.” &lt;em&gt;Eneuro&lt;/em&gt; 8.2 (2021).&lt;/li&gt;
-      &lt;li&gt;Intro
-        &lt;ul&gt;
-          &lt;li&gt;This writing starts out by laying out the context of 2013, a very important year for funding large neuroscience research initiatives, the U.S. BRAIN projects and the European Human Brain Project (HBP).&lt;/li&gt;
-          &lt;li&gt;Furthers discussion into brain atlases from Allen institute and recent developments in imaging and recording techniques.&lt;/li&gt;
-          &lt;li&gt;Mentioned a paper I found interested on neural networks as simulation tools : &lt;a href=&quot;https://pubmed.ncbi.nlm.nih.gov/28668365/&quot;&gt;Barak 2007&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Key Question: “On this backdrop, what are valuable targets for future
-large-scale spending?”
-        &lt;ul&gt;
-          &lt;li&gt;To me, this seems to be the transition from historical background to the discussion of what next.&lt;/li&gt;
-          &lt;li&gt;And here Dr. Fairhall points out a key issue facing large scale collaboration in brain science: What big experiments and datasets will lead to transformative research?&lt;/li&gt;
-          &lt;li&gt;The answer being, there’s not really some resounding agreement.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Possible answers
-        &lt;ul&gt;
-          &lt;li&gt;Dr. Abbot suggests the approach of a deatiled cellular model of a mouse brain, however, as HBP has experienced, there is a challenge here with integrating biophysical modeling with levels of connectivity (gap junction, neuromodulation, etc.)&lt;/li&gt;
-          &lt;li&gt;An alternative approach is discussed as a brain activity map that bridges existing theories about different regions of the brain in modeling one activity in order to align existsing theories.
-            &lt;ul&gt;
-              &lt;li&gt;The challenge here seems to be design. How does one actually assemble all these odds and ends.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;I thought this quote was interesting:
-            &lt;blockquote&gt;
-              &lt;p&gt;In Silico (Fairhall 2021)&lt;/p&gt;
-              &lt;blockquote&gt;
-                &lt;p&gt;“IARPA’s MICrONS program is […] a collaborative effort to reconstruct the connectome of a section of visual cortex whose activity has been characterized in vivo. By establishing the functional relevance of specific neurons, this project addresses some of the criticisms made of both the Blue Brain (Yong, 2019) and connectomics approaches.”&lt;/p&gt;
-              &lt;/blockquote&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-
-        &lt;p&gt;I thought it was interesting for a few reasons. First, I wonder what the actual criticms are in the cited paper, I hear about criticsms all the time but yet I don’t quite know what they are. Second, I wonder how this project manages to address such criticsms. An easy guess is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;function relevance&lt;/code&gt; suggests this project is doing more to link modeling with functionality … but this is still vague in my mind,&lt;/p&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;Finally, mention of a collaborative study where different groups measure populations of 1000 neurons.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Now that the author has introduced the problem and several approaches. it’s time to conclude and leave the reader feeling warm and fuzzy that we will solve all the problems in neuroscience. Kidding of course.
-        &lt;ul&gt;
-          &lt;li&gt;Author notes that projects that produce a “product” such as Allen datasest are less risky than projects that aim to tackle large problems.&lt;/li&gt;
-          &lt;li&gt;Suggests diversifying research investment across labs.&lt;/li&gt;
-          &lt;li&gt;Then model of brain observatories gathering data on a large scale and then smaller labs performing analysis on these dataset.
-            &lt;ul&gt;
-              &lt;li&gt;The nice part about this is that the datasets will be well vetted by various research groups.&lt;/li&gt;
-              &lt;li&gt;And computational neuroscientists can save some money on having to run large scale experiments – they get nice data.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;We know a lot but we know nothing.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;The last line here really hits home. There is a massive body of research on neuroscience, yet unifying theories (across levels of complexity) are few and far between.&lt;/li&gt;
-      &lt;li&gt;Overall, this is a great paper to introduce some of the key questions facing large collaborative neuroscience and was a really nice read for my first review. I can imagine I’ll be reading more papers with a lot of narrative gating, but this was not that. It was straight the point and clear. Sure some parts were not elaborated on, but the citations are there and I can follow the trail. I believe this is a balance one has to strike in order to deliver a clear message and something I hope to take with me in my own writing.&lt;/li&gt;
-      &lt;li&gt;Good stuff :) thanks.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Review 1 : In Silico by Dr. Fairhall Citation: Fairhall, Adrienne L. “In silico: where next?.” Eneuro 8.2 (2021). Intro This writing starts out by laying out the context of 2013, a very important year for funding large neuroscience research initiatives, the U.S. BRAIN projects and the European Human Brain Project (HBP). Furthers discussion into brain atlases from Allen institute and recent developments in imaging and recording techniques. Mentioned a paper I found interested on neural networks as simulation tools : Barak 2007 Key Question: “On this backdrop, what are valuable targets for future large-scale spending?” To me, this seems to be the transition from historical background to the discussion of what next. And here Dr. Fairhall points out a key issue facing large scale collaboration in brain science: What big experiments and datasets will lead to transformative research? The answer being, there’s not really some resounding agreement. Possible answers Dr. Abbot suggests the approach of a deatiled cellular model of a mouse brain, however, as HBP has experienced, there is a challenge here with integrating biophysical modeling with levels of connectivity (gap junction, neuromodulation, etc.) An alternative approach is discussed as a brain activity map that bridges existing theories about different regions of the brain in modeling one activity in order to align existsing theories. The challenge here seems to be design. How does one actually assemble all these odds and ends. I thought this quote was interesting: In Silico (Fairhall 2021) “IARPA’s MICrONS program is […] a collaborative effort to reconstruct the connectome of a section of visual cortex whose activity has been characterized in vivo. By establishing the functional relevance of specific neurons, this project addresses some of the criticisms made of both the Blue Brain (Yong, 2019) and connectomics approaches.”</summary></entry><entry><title type="html">Review 2</title><link href="http://localhost:4000/reviews/review2/" rel="alternate" type="text/html" title="Review 2" /><published>2021-11-14T13:16:13-08:00</published><updated>2021-11-14T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review2</id><content type="html" xml:base="http://localhost:4000/reviews/review2/">&lt;ul&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">If we already understood the brain, would we even know it? by Tal Yarkoni.</summary></entry><entry><title type="html">Review 2</title><link href="http://localhost:4000/reviews/review2/" rel="alternate" type="text/html" title="Review 2" /><published>2021-11-14T13:16:13-08:00</published><updated>2021-11-14T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review2</id><content type="html" xml:base="http://localhost:4000/reviews/review2/">&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://www.biorxiv.org/content/10.1101/2021.02.26.433027v1.abstract&quot;&gt;Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights
 &lt;/a&gt; by &lt;a href=&quot;https://www.google.com/search?q=Ramin+Khajeh&amp;amp;oq=Ramin+Khajeh&amp;amp;aqs=chrome..69i57.82j0j7&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8&quot;&gt;Ramin Khajeh&lt;/a&gt;, &lt;a href=&quot;https://scholar.google.com/citations?user=rcb8W94AAAAJ&amp;amp;hl=ca&quot;&gt;Francesco Fumarola&lt;/a&gt;, &lt;a href=&quot;https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd&quot;&gt;Larry F. Abbott&lt;/a&gt;&lt;/p&gt;
@@ -550,4 +572,65 @@ large-scale spending?”
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights by Ramin Khajeh, Francesco Fumarola, Larry F. Abbott</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights by Ramin Khajeh, Francesco Fumarola, Larry F. Abbott</summary></entry><entry><title type="html">Review 1</title><link href="http://localhost:4000/reviews/review1/" rel="alternate" type="text/html" title="Review 1" /><published>2021-11-14T13:16:13-08:00</published><updated>2021-11-14T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review1</id><content type="html" xml:base="http://localhost:4000/reviews/review1/">&lt;ul&gt;
+  &lt;li&gt;Review 1 : &lt;a href=&quot;https://www.eneuro.org/content/8/2/ENEURO.0131-21.2021&quot;&gt;In Silico&lt;/a&gt; by &lt;a href=&quot;https://fairhalllab.com/&quot; title=&quot;Title&quot;&gt;Dr. Fairhall&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Citation: Fairhall, Adrienne L. “In silico: where next?.” &lt;em&gt;Eneuro&lt;/em&gt; 8.2 (2021).&lt;/li&gt;
+      &lt;li&gt;Intro
+        &lt;ul&gt;
+          &lt;li&gt;This writing starts out by laying out the context of 2013, a very important year for funding large neuroscience research initiatives, the U.S. BRAIN projects and the European Human Brain Project (HBP).&lt;/li&gt;
+          &lt;li&gt;Furthers discussion into brain atlases from Allen institute and recent developments in imaging and recording techniques.&lt;/li&gt;
+          &lt;li&gt;Mentioned a paper I found interested on neural networks as simulation tools : &lt;a href=&quot;https://pubmed.ncbi.nlm.nih.gov/28668365/&quot;&gt;Barak 2007&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Key Question: “On this backdrop, what are valuable targets for future
+large-scale spending?”
+        &lt;ul&gt;
+          &lt;li&gt;To me, this seems to be the transition from historical background to the discussion of what next.&lt;/li&gt;
+          &lt;li&gt;And here Dr. Fairhall points out a key issue facing large scale collaboration in brain science: What big experiments and datasets will lead to transformative research?&lt;/li&gt;
+          &lt;li&gt;The answer being, there’s not really some resounding agreement.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Possible answers
+        &lt;ul&gt;
+          &lt;li&gt;Dr. Abbot suggests the approach of a deatiled cellular model of a mouse brain, however, as HBP has experienced, there is a challenge here with integrating biophysical modeling with levels of connectivity (gap junction, neuromodulation, etc.)&lt;/li&gt;
+          &lt;li&gt;An alternative approach is discussed as a brain activity map that bridges existing theories about different regions of the brain in modeling one activity in order to align existsing theories.
+            &lt;ul&gt;
+              &lt;li&gt;The challenge here seems to be design. How does one actually assemble all these odds and ends.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;I thought this quote was interesting:
+            &lt;blockquote&gt;
+              &lt;p&gt;In Silico (Fairhall 2021)&lt;/p&gt;
+              &lt;blockquote&gt;
+                &lt;p&gt;“IARPA’s MICrONS program is […] a collaborative effort to reconstruct the connectome of a section of visual cortex whose activity has been characterized in vivo. By establishing the functional relevance of specific neurons, this project addresses some of the criticisms made of both the Blue Brain (Yong, 2019) and connectomics approaches.”&lt;/p&gt;
+              &lt;/blockquote&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;p&gt;I thought it was interesting for a few reasons. First, I wonder what the actual criticms are in the cited paper, I hear about criticsms all the time but yet I don’t quite know what they are. Second, I wonder how this project manages to address such criticsms. An easy guess is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;function relevance&lt;/code&gt; suggests this project is doing more to link modeling with functionality … but this is still vague in my mind,&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;Finally, mention of a collaborative study where different groups measure populations of 1000 neurons.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Now that the author has introduced the problem and several approaches. it’s time to conclude and leave the reader feeling warm and fuzzy that we will solve all the problems in neuroscience. Kidding of course.
+        &lt;ul&gt;
+          &lt;li&gt;Author notes that projects that produce a “product” such as Allen datasest are less risky than projects that aim to tackle large problems.&lt;/li&gt;
+          &lt;li&gt;Suggests diversifying research investment across labs.&lt;/li&gt;
+          &lt;li&gt;Then model of brain observatories gathering data on a large scale and then smaller labs performing analysis on these dataset.
+            &lt;ul&gt;
+              &lt;li&gt;The nice part about this is that the datasets will be well vetted by various research groups.&lt;/li&gt;
+              &lt;li&gt;And computational neuroscientists can save some money on having to run large scale experiments – they get nice data.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;We know a lot but we know nothing.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The last line here really hits home. There is a massive body of research on neuroscience, yet unifying theories (across levels of complexity) are few and far between.&lt;/li&gt;
+      &lt;li&gt;Overall, this is a great paper to introduce some of the key questions facing large collaborative neuroscience and was a really nice read for my first review. I can imagine I’ll be reading more papers with a lot of narrative gating, but this was not that. It was straight the point and clear. Sure some parts were not elaborated on, but the citations are there and I can follow the trail. I believe this is a balance one has to strike in order to deliver a clear message and something I hope to take with me in my own writing.&lt;/li&gt;
+      &lt;li&gt;Good stuff :) thanks.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Review 1 : In Silico by Dr. Fairhall Citation: Fairhall, Adrienne L. “In silico: where next?.” Eneuro 8.2 (2021). Intro This writing starts out by laying out the context of 2013, a very important year for funding large neuroscience research initiatives, the U.S. BRAIN projects and the European Human Brain Project (HBP). Furthers discussion into brain atlases from Allen institute and recent developments in imaging and recording techniques. Mentioned a paper I found interested on neural networks as simulation tools : Barak 2007 Key Question: “On this backdrop, what are valuable targets for future large-scale spending?” To me, this seems to be the transition from historical background to the discussion of what next. And here Dr. Fairhall points out a key issue facing large scale collaboration in brain science: What big experiments and datasets will lead to transformative research? The answer being, there’s not really some resounding agreement. Possible answers Dr. Abbot suggests the approach of a deatiled cellular model of a mouse brain, however, as HBP has experienced, there is a challenge here with integrating biophysical modeling with levels of connectivity (gap junction, neuromodulation, etc.) An alternative approach is discussed as a brain activity map that bridges existing theories about different regions of the brain in modeling one activity in order to align existsing theories. The challenge here seems to be design. How does one actually assemble all these odds and ends. I thought this quote was interesting: In Silico (Fairhall 2021) “IARPA’s MICrONS program is […] a collaborative effort to reconstruct the connectome of a section of visual cortex whose activity has been characterized in vivo. By establishing the functional relevance of specific neurons, this project addresses some of the criticisms made of both the Blue Brain (Yong, 2019) and connectomics approaches.”</summary></entry></feed>

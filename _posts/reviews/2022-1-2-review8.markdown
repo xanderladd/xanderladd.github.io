@@ -1,0 +1,51 @@
+---
+layout: base
+title:  "Review 8: The Future of Artificial Intelligence is Self-Organizing and Self-Assembling"
+date:   2022-1-2 14:16:13 -0700
+author: xander
+categories: reviews
+---
+
+
+
+[The Future of Artificial Intelligence is Self-Organizing and Self-Assembling](https://sebastianrisi.com/self_assembling_ai/9) by [Prof. Sebastian Risi](https://sebastianrisi.com)
+
+- Citation: Risi, Sebastian. “The Future of Artificial Intelligence is Self-Organizing and Self-Assembling”. sebastianrisi. com (2021): n. pag. Web.
+
+- Today I am reading an interesting blog post by Professor Risi, at the [IT University of Copenhagen](https://www.itu.dk/), about self organizing systems and how they can potentially solve some of the problems in developing generalizable AI.
+- The blog post starts by detailing the incredible scale at which systems self-organize. I can't help but recall an interesting tweet by [Joscha Bach](https://twitter.com/plinz?lang=en) that says something to the effect of "it's computation all the way down". My interpretation of this saying is that at every level of these complex systems, there are smaller and smaller constituents responsible for performing preceding simpler and simpler computations. In this way, a single ant can be responsible for finding a piece of food and then remembering the path to bring the food back home. However, the delegation of tasks to these ants allows a complex colony of ants to survive and ants are notoriously good at surviving. The problem with computation all the way down, is that the computation solves a simpler problem, but that doesn't mean the computation itself is simple. This is why I think Prof. Risi brings up a good point in the first paragraph -- if we want the benefit of robustness -- we'll need to find efficient training methods.
+- The difference being drawn out between self-assembly and emergence is fascinating. Here's why I think so. As an engineer (software engineer for the most part), I've started to realize how disastrous "over-engineering" is. The more code I have to write in order to extend some system for a simple problem is often a design flaw I made in the past. Amazingly, emergent systems like ants or swarms of insects don't have this problem since their genetic code sets them up so well to carry out their _local_ and _global_ purposes. Historically, we are pretty damn good engineers, but when it comes to endowing our designs with this kind of adaptability, we often come up short. Our work is constantly being replaced, rebuilt, refactored, repurposed.
+    - These words are inherent to human creations. Nature never refactors. It may replace or repurpose at times, but in the slowest timescale imaginable. Humans are always rushing to get these things done. To get a new version released, to improve state of the art, to hastily revitalize old infrastructure.
+    - One caveat to this point is that humans don't build systems capable of robust adaptation: art. Great artists build things that seem to be constant sources of beauty (or functionality depending on what you expect out of art). For example, the Mona Lisa has been captivating for hundreds of years. Tchaikovsky's music doesn't need any refactoring or _remixing_. On the other hand, it's hard to argue that these things have some emergent behavior. 
+- I wonder how true it is that neural nets can't generalize very well. I agree with Prof. Risi's claim, but I think GPT-3 is an interesting counter-example. Sure it's a giant net, but it can handily craft human-level responses to questions outside of its training data.
+- I will continue reading but these references are hard to ignore!
+    > Vichniac, 1984; Wolfram, 1984; Langton, 1986 qtd. in Risi 2021
+    >>  Cellular Automata can aid in the understanding of biological pattern formations, modeling of lattice-based physical systems in percolation and nucleation, and synthesis of artificial life.
+
+- [My research](https://xanderladd.github.io/research/benchmarking) involves evolutionary alorithms. So Neural Cellular Automata (NCAs) seem really interesting to me.
+    - However, the fact that reassembling the Nordic flag causes non-optimal solutions gives a good idea that conquering challenging optimization landscapes can be a real tough problem.
+- [Variational Neural Cellular Automata](https://openreview.net/forum?id=7fFO4cMBx_9) reminds me I need to learn how VAEs work a bit better!
+- Their [3D Minecraft NCA tree house morphogenesis video](https://sebastianrisi.com/wp-content/uploads/minecraft_short.mp4) is really cool. I am amazing by the detail of the reconstruction of their algo. Though I've never played minecraft.
+- The really interesting part behind their demonstration of locomotive structures is that the interactions are developed at a local level. This kind of interaction structure is the same kind the brain uses.
+    - For the most part.
+- The above is confirmed by Prof. Risi here:
+    > Risi 2021
+    >> For example, instead of optimizing the weight parameters of neural networks directly, only meta-learning synapse-specific Hebbian learning rules allows a network to continuously self-organize its weights during the lifetime of the agent (Najarro & Risi, 2020). We found that starting from completely random weights, evolved Hebbian rules enable an agent to navigate a dynamic 2D-pixel environment; likewise, the approach also allows a simulated 3D quadruped to learn how to walk while adapting to some morphological damage not seen during training and in the absence of any explicit reward or error signal in less than 100 timesteps. 
+
+    - Also, the "not seen during training example" [here](https://sebastianrisi.com/wp-content/uploads/ant_hebbian2.mp4) is pretty funny as it just flops around.
+
+- The author describes several methods of parameter sharing:
+    1. Iteratively merging learning rules
+        - based on the "genomic bottleneck" ([Zador 2019](https://www.nature.com/articles/s41467-019-11786-6)), they drastically reduce parameters by combining rules. (what is k-means being used on?)
+    2. Learning learning rules through self-organization
+        - OK, so this reference to Krisch and Schmidhuber is a must-read. [https://arxiv.org/abs/2012.14905](https://arxiv.org/abs/2012.14905). Basically, small recurrent networks somehow self-organize and learn a global algorithm. Really want to find out more here.
+    3. Learning to be robust to unseen and permutated sensory inputs
+        - Idea here is to add a global controller or attention mechanism to moderate local interactions. This can provide some robustness against variation.
+- Now time to discuss training. Prof. Risi says this is hard because:
+    1. There is no entity that is essentially fully in charge of the self-organizing system, no engineer at the helm.
+    2. These systems are chaotic, it's hard to analytically guide them to stable states. The solutions are non-deterministic and often degenerate to local minima.
+- So what can we do?
+    - Quality Diversity (Pugh et al. 2016)[https://www.frontiersin.org/articles/10.3389/frobt.2016.00040/full] aims to generate a diverse set of solutions instead of only one satisfying solution.
+    - Deep learning + Compositional Pattern Producing Networks (CPPNs; Stanley 2007) [Reinke et al. 2020,](https://arxiv.org/abs/1908.06663)
+        - I got lost here. I don't know what CPNNs do and unfortunately, I already added enough to my reading list for today.
+    - Overall I thought this blog post did a great job of explaining several distinct pros and cons to distributed learning systems. It seems like these methods are becoming an _emerging trend_ (nod nod wink wink) in machine learning. I think even Geoff Hinton's work on GLOM ([Hinton 2020](https://arxiv.org/pdf/2102.12627.pdf)) has some resemblance to distributed systems. Ultimately, neural networks have done an excellent job of stacking computational units together, but the opportunity for robustness in diverse and locally structured systems is exciting. It's awesome to see so many examples tying deep learning networks into this concept of self-organizing systems. Outside of evolutionary algorithms, I don't know much about this stuff but I'll be following along!

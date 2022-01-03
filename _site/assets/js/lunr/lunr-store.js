@@ -46,4 +46,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review7/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 8: The Future of Artificial Intelligence is Self-Organizing and Self-Assembling",
+        "excerpt":"The Future of Artificial Intelligence is Self-Organizing and Self-Assembling by Prof. Sebastian Risi Citation: Risi, Sebastian. “The Future of Artificial Intelligence is Self-Organizing and Self-Assembling”. sebastianrisi. com (2021): n. pag. Web. Today I am reading an interesting blog post by Professor Risi, at the IT University of Copenhagen, about self...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review8/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

@@ -1,4 +1,166 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-03T00:16:07-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 8: The Future of Artificial Intelligence is Self-Organizing and Self-Assembling</title><link href="http://localhost:4000/reviews/review8/" rel="alternate" type="text/html" title="Review 8: The Future of Artificial Intelligence is Self-Organizing and Self-Assembling" /><published>2022-01-02T13:16:13-08:00</published><updated>2022-01-02T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review8</id><content type="html" xml:base="http://localhost:4000/reviews/review8/">&lt;p&gt;&lt;a href=&quot;https://sebastianrisi.com/self_assembling_ai/9&quot;&gt;The Future of Artificial Intelligence is Self-Organizing and Self-Assembling&lt;/a&gt; by &lt;a href=&quot;https://sebastianrisi.com&quot;&gt;Prof. Sebastian Risi&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-09T12:52:49-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 9: The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning</title><link href="http://localhost:4000/reviews/review9/" rel="alternate" type="text/html" title="Review 9: The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning" /><published>2022-01-09T04:16:13-08:00</published><updated>2022-01-09T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review9</id><content type="html" xml:base="http://localhost:4000/reviews/review9/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2109.02869.pdf&quot;&gt;The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning&lt;/a&gt; by &lt;a href=&quot;https://otoro.net/ml/&quot;&gt;Dr. Ha&lt;/a&gt; and &lt;a href=&quot;https://www.linkedin.com/in/yujin-tang-98b3ab5a/?originalSubdomain=jp&quot;&gt;Yujin Tang&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Citation: Tang, Yujin, and David Ha. “The sensory neuron as a transformer: Permutation-invariant neural networks for reinforcement learning.” Advances in Neural Information Processing Systems 34 (2021).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Today, I am reading a paper in NeurIPS by Dr. David Ha and Dr. Yujin Tang.&lt;/li&gt;
+  &lt;li&gt;These reviews are not really reviews but more like casual reading notes. I am writing what pops into my head as I read.&lt;/li&gt;
+  &lt;li&gt;The first thing that stands out to me just from reading the introduction is that shuffling around sensory input is generally fatal for most network problems. I doubt most image recognition modules would work at all if one just shuffled around 4x4 pixel blocks in an image.
+    &lt;ul&gt;
+      &lt;li&gt;I can think of a few problems that begin to crop up here.&lt;/li&gt;
+      &lt;li&gt;Firstly, if we think about swapping the pixels in a picture of a cat one by one, how many swaps do we need to make until it is just not a picture of a cat.
+        &lt;ul&gt;
+          &lt;li&gt;This issue is rectified in the paper because they are trying to complete a task or play a game, which means the objective is still definitively the same regardless of input shuffling.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Secondly, how does one parameterize image shuffling? Say we decide to shuffle around $64 x 64$ squares in an image. If we know the image is $256 x 256$ then it makes sense to define $16$ networks. But we’ve cheated and used some a priori knowledge about the image permutations.
+        &lt;ul&gt;
+          &lt;li&gt;$\frac{256 \times 256}{64 \times 64} = 16$&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;But now I start getting ahead of myself, I’ll keep reading and perhaps these issues aren’t relevant. Onward!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;One more thing in the introduction is really surprising/exciting about this. All these references to cellular automata (CA) and emergent behavior makes me really excited to see how these local networks are going to start forming a coherent policy.&lt;/li&gt;
+  &lt;li&gt;Self-organizing network agents, while being a mouthful, does seem like a natural progression. I’m having trouble explaining why. I wanted to write something about NNs working better on local computation, but they do seem to do global computation pretty well too. I’m not sure this is the right distinction to make (whether NNs are better as local agents or singular global agents). Also there’s so much more research for the latter.&lt;/li&gt;
+  &lt;li&gt;Meta-learning policies
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;fast weights&lt;/strong&gt;: adapt weights to input.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;associative weights&lt;/strong&gt;: allow RNN weights to be attracted to recent hidden states.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;hypernetworks&lt;/strong&gt;: one network generates the weights for another.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Hebbian learning&lt;/strong&gt;: See more &lt;a href=&quot;https://arxiv.org/abs/2002.10585&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Attention
+    &lt;ul&gt;
+      &lt;li&gt;similar to previous adaptive weight mechanisms in that it modifies weights based on inputs.&lt;/li&gt;
+      &lt;li&gt;Authors cite several examples of attention learning inductive biases.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Method
+    &lt;ul&gt;
+      &lt;li&gt;A legit permutation invariant (PI) agent doesn’t need to be trained on permutations to recognize them.&lt;/li&gt;
+      &lt;li&gt;PI formulation: need a function $f(x): \mathcal{R}^N \longrightarrow \mathcal{R}^M$ s.t. $ f(x[x]) f(x)$ where $s$ is some permutation of the indices ${1 … n}$&lt;/li&gt;
+      &lt;li&gt;Self-attention as PE.
+        &lt;ul&gt;
+          &lt;li&gt;Simplest self attention: $\sigma(QK^T)V$ where $Q,K \in \mathcal{R^{n\times d_{q}}}$ and $V \in \mathcal{R^{n\times d_{v}}}$. Q,V and K are query, value and key matrices respectively.&lt;/li&gt;
+          &lt;li&gt;Normally these (Q,K,V) are functions of the input.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;contribution
+        &lt;ul&gt;
+          &lt;li&gt;authors propose to add an extra layer (called AttentionNeuron) in front of agent’s policy network $\pi$ that accepts observation $o_t$ and previous action $a_{t-1}$ as inputs.&lt;/li&gt;
+          &lt;li&gt;The $i$th neuron only has access to $o_t[i]$.&lt;/li&gt;
+          &lt;li&gt;each sensory neuron computes messages $f_k(o_t[i], a_{t-1})$ and $f_v(o_t[i])$.&lt;/li&gt;
+          &lt;li&gt;These messages are aggregrated in &lt;em&gt;global latent code&lt;/em&gt; $m_t$.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;So I think it’s interesting that based off the figure, they don’t model this AttentionNeuron layer as distinct part of each neuron but rather a layer that recives input from each neuron and aggregates input into $m_t$.
+        &lt;ul&gt;
+          &lt;li&gt;Computationally, it doesn’t matter if the transformation is affixed to the last layer of each neuron or if it stands alone. But I thought it was illustative of how the Query, Key and Value matrices are formed.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Key matrix depends on $f_k(o_t, a_{t-1})$ and value matrix depends on $f_v(o_t)$&lt;/li&gt;
+      &lt;li&gt;They also have projection matrices $W_k, W_v, W_q$ (which is what gives us PE).&lt;/li&gt;
+      &lt;li&gt;Experiments and observation space are
+        &lt;ul&gt;
+          &lt;li&gt;Cartpole $\mathcal R^5$&lt;/li&gt;
+          &lt;li&gt;Ant $\mathcal R^28$&lt;/li&gt;
+          &lt;li&gt;Car Racing $\mathcal R^{96x96x4}$&lt;/li&gt;
+          &lt;li&gt;Atari Pong $\mathcal R^{84x84x4}$
+            &lt;ul&gt;
+              &lt;li&gt;Car Racing and Atari Pong have dimension $4$ because they are stacked grayscale RGB values.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;They never use more than 196 activation neurons.&lt;/li&gt;
+      &lt;li&gt;Also activation neurons do seem to be a function of observation space.&lt;/li&gt;
+      &lt;li&gt;Action space ranges from 1 action, to 8 possible actions.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Brief discussion of design choices.
+    &lt;ul&gt;
+      &lt;li&gt;I wonder what the motivation is for making $QW_q$ learnable instead of input dependent.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;They didn’t use a projection matrix for the Value matrix ($V$)&lt;/li&gt;
+  &lt;li&gt;The don’t use RNNs for high dimensional input, just feed forward neural network (FFN).&lt;/li&gt;
+  &lt;li&gt;Results
+    &lt;ul&gt;
+      &lt;li&gt;CartPoleSwingUpHarder
+        &lt;ul&gt;
+          &lt;li&gt;They compare against a two layer FFN trained with CMA-ES&lt;/li&gt;
+          &lt;li&gt;The benchmark agent is able to balance the pole faster under normal circumstances because their method requires a few burn in steps.&lt;/li&gt;
+          &lt;li&gt;But what is really notable here is that various peterbutations of shuffling the input or concatenating a noisy vector to the input don’t affect performance. No retraining required!
+            &lt;ul&gt;
+              &lt;li&gt;Might’ve liked to see a comparison against retrained benchmark.&lt;/li&gt;
+              &lt;li&gt;Yes I know it’s comparing apples to oranges and it probably wouldn’t make sense to put in a paper … but I’m curious.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;PyBullet Ant
+        &lt;ul&gt;
+          &lt;li&gt;Uses pre-trained models and behavior cloning for the benchmark.&lt;/li&gt;
+          &lt;li&gt;From table 4 the most notable insights I picked up:
+            &lt;ul&gt;
+              &lt;li&gt;BC works better with larger subsequent layers.&lt;/li&gt;
+              &lt;li&gt;ES shuffled works well on their agent as is. Slightly underperforms non-shuffled input version (FFN teacher). Shuffled FFN gets a really bad score.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Atari Pong
+        &lt;ul&gt;
+          &lt;li&gt;** shuffled atari pong :)&lt;/li&gt;
+          &lt;li&gt;I like the idea of maintaining a spatial representation of the 2D grid in $m_t$ because it is more interpretable.&lt;/li&gt;
+          &lt;li&gt;I see that this agent can take a subset of the screen and the authors suggest that would be interesting to conduct some kind of ablation experiment on. While I agree, I am also interested in what would happen if you blacked out part of the screen, thus forcing the agent to hallucinate what is happening in those shuffled blocks.&lt;/li&gt;
+          &lt;li&gt;The occluded agent rarely won when it couldn’t see certain blocks, but when the blocks are added back it does well.&lt;/li&gt;
+          &lt;li&gt;This is the generalization advantage.&lt;/li&gt;
+          &lt;li&gt;Figure 6 is a great example of why keeping 2d spatial embeddings is a nice design. The separability of embedding states based on state space is cool to look at.
+            &lt;ul&gt;
+              &lt;li&gt;Sometimes when I read these papers, I wonder how they coded some things in. This is one I am particularly interested on.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Car racing
+        &lt;ul&gt;
+          &lt;li&gt;As I guessed in the beginning, attention-based mechanisms are crippled by shuffling inputs.
+            &lt;ul&gt;
+              &lt;li&gt;This is shown in AttentionAgent failure to do anything but an original task.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;I have no idea how netRand + AttentionAgent are combined and I don’t understand them pretty well.&lt;/li&gt;
+          &lt;li&gt;That said, it’s clear that is the only way to compete with the presented method given new unseen and shuffled racing maps.&lt;/li&gt;
+          &lt;li&gt;Ah I spoke too soon… it’s explained below the figure.&lt;/li&gt;
+          &lt;li&gt;I see they just add AttentionAgent layer at the end but unfortunately, I don’t understand enough about these methods to say anything else.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Discussion + Conclusion
+    &lt;ul&gt;
+      &lt;li&gt;Further uses included dynamic input-output mappings in robots or cross-wired systems.
+        &lt;ul&gt;
+          &lt;li&gt;This isn’t an entirely broad application – it’s a bit specific to systems that receive shuffled inputs.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;However, I think the most important impact of this paper is that it “provides a lens for understanding a transformer as a self-organizing network” in what I felt was a natural way.
+        &lt;ul&gt;
+          &lt;li&gt;When I read the title, I imagined the authors would need to make more substantial leaps in connecting transformers with a sensory neuron, but now that I’ve read the paper it feels ok.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;One thing I wonder when reading this paper is: what is the best way to aggregate signals from the individual agents? This paper looked at aggrregation through neural network layers, but I thought the reshape in the 2D spatial embedddings was an interesting twist.
+    &lt;ul&gt;
+      &lt;li&gt;Generally, this paper adds some interesting ingredients to a mixture of local -&amp;gt; global computation using distributed agents.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning by Dr. Ha and Yujin Tang</summary></entry><entry><title type="html">Review 8: The Future of Artificial Intelligence is Self-Organizing and Self-Assembling</title><link href="http://localhost:4000/reviews/review8/" rel="alternate" type="text/html" title="Review 8: The Future of Artificial Intelligence is Self-Organizing and Self-Assembling" /><published>2022-01-02T13:16:13-08:00</published><updated>2022-01-02T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review8</id><content type="html" xml:base="http://localhost:4000/reviews/review8/">&lt;p&gt;&lt;a href=&quot;https://sebastianrisi.com/self_assembling_ai/9&quot;&gt;The Future of Artificial Intelligence is Self-Organizing and Self-Assembling&lt;/a&gt; by &lt;a href=&quot;https://sebastianrisi.com&quot;&gt;Prof. Sebastian Risi&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;

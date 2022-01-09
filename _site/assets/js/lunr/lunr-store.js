@@ -52,4 +52,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review8/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 9: The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning",
+        "excerpt":"The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning by Dr. Ha and Yujin Tang Citation: Tang, Yujin, and David Ha. “The sensory neuron as a transformer: Permutation-invariant neural networks for reinforcement learning.” Advances in Neural Information Processing Systems 34 (2021). Today, I am reading a paper...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review9/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

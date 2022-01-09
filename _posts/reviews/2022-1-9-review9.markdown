@@ -93,3 +93,4 @@ categories: reviews
         - When I read the title, I imagined the authors would need to make more substantial leaps in connecting transformers with a sensory neuron, but now that I've read the paper it feels ok.
 - One thing I wonder when reading this paper is: what is the best way to aggregate signals from the individual agents? This paper looked at aggrregation through neural network layers, but I thought the reshape in the 2D spatial embedddings was an interesting twist.
     - Generally, this paper adds some interesting ingredients to a mixture of local -> global computation using distributed agents.
+- Another thing I really like about this paper is that it isn't crazy hard to understand. So many ML papers are steeped in lots of formula and notation and this paper truly tried to clearly communicate the message.

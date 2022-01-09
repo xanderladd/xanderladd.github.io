@@ -41,9 +41,9 @@ categories: reviews
         - authors propose to add an extra layer (called AttentionNeuron) in front of agent's policy network $\pi$ that accepts observation $o_t$ and previous action $a_{t-1}$ as inputs.
         - The $i$th neuron only has access to $o_t[i]$.
         - each sensory neuron computes messages $f_k(o_t[i], a_{t-1})$ and $f_v(o_t[i])$.
-        - These messages are aggregrated in _global latent code_ $m_t$.
-    - So I think it's interesting that based off the figure, they don't model this AttentionNeuron layer as distinct part of each neuron but rather a layer that recives input from each neuron and aggregates input into $m_t$.
-        - Computationally, it doesn't matter if the transformation is affixed to the last layer of each neuron or if it stands alone. But I thought it was illustative of how the Query, Key and Value matrices are formed.
+        - These messages are aggregated in _global latent code_ $m_t$.
+    - So I think it's interesting that based off the figure, they don't model this AttentionNeuron layer as a distinct part of each neuron but rather a layer that receives input from each neuron and aggregates input into $m_t$.
+        - Computationally, it doesn't matter if the transformation is affixed to the last layer of each neuron or if it stands alone. But I thought it was illustrative of how the Query, Key and Value matrices are formed.
     - Key matrix depends on $f_k(o_t, a_{t-1})$ and value matrix depends on $f_v(o_t)$
     - They also have projection matrices $W_k, W_v, W_q$ (which is what gives us PE). 
     - Experiments and observation space are
@@ -91,6 +91,6 @@ categories: reviews
         - This isn't an entirely broad application -- it's a bit specific to systems that receive shuffled inputs. 
     - However, I think the most important impact of this paper is that it "provides a lens for understanding a transformer as a self-organizing network" in what I felt was a natural way.
         - When I read the title, I imagined the authors would need to make more substantial leaps in connecting transformers with a sensory neuron, but now that I've read the paper it feels ok.
-- One thing I wonder when reading this paper is: what is the best way to aggregate signals from the individual agents? This paper looked at aggrregation through neural network layers, but I thought the reshape in the 2D spatial embedddings was an interesting twist.
+- One thing I wonder when reading this paper is: what is the best way to aggregate signals from the individual agents? This paper looked at aggregationthrough neural network layers, but I thought the reshape in the 2D spatial embeddingswas an interesting twist.
     - Generally, this paper adds some interesting ingredients to a mixture of local -> global computation using distributed agents.
 - Another thing I really like about this paper is that it isn't crazy hard to understand. So many ML papers are steeped in lots of formula and notation and this paper truly tried to clearly communicate the message.

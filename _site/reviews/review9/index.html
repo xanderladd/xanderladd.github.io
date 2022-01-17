@@ -287,12 +287,12 @@
           <li>authors propose to add an extra layer (called AttentionNeuron) in front of agent’s policy network $\pi$ that accepts observation $o_t$ and previous action $a_{t-1}$ as inputs.</li>
           <li>The $i$th neuron only has access to $o_t[i]$.</li>
           <li>each sensory neuron computes messages $f_k(o_t[i], a_{t-1})$ and $f_v(o_t[i])$.</li>
-          <li>These messages are aggregrated in <em>global latent code</em> $m_t$.</li>
+          <li>These messages are aggregated in <em>global latent code</em> $m_t$.</li>
         </ul>
       </li>
-      <li>So I think it’s interesting that based off the figure, they don’t model this AttentionNeuron layer as distinct part of each neuron but rather a layer that recives input from each neuron and aggregates input into $m_t$.
+      <li>So I think it’s interesting that based off the figure, they don’t model this AttentionNeuron layer as a distinct part of each neuron but rather a layer that receives input from each neuron and aggregates input into $m_t$.
         <ul>
-          <li>Computationally, it doesn’t matter if the transformation is affixed to the last layer of each neuron or if it stands alone. But I thought it was illustative of how the Query, Key and Value matrices are formed.</li>
+          <li>Computationally, it doesn’t matter if the transformation is affixed to the last layer of each neuron or if it stands alone. But I thought it was illustrative of how the Query, Key and Value matrices are formed.</li>
         </ul>
       </li>
       <li>Key matrix depends on $f_k(o_t, a_{t-1})$ and value matrix depends on $f_v(o_t)$</li>
@@ -389,11 +389,12 @@
       </li>
     </ul>
   </li>
-  <li>One thing I wonder when reading this paper is: what is the best way to aggregate signals from the individual agents? This paper looked at aggrregation through neural network layers, but I thought the reshape in the 2D spatial embedddings was an interesting twist.
+  <li>One thing I wonder when reading this paper is: what is the best way to aggregate signals from the individual agents? This paper looked at aggregationthrough neural network layers, but I thought the reshape in the 2D spatial embeddingswas an interesting twist.
     <ul>
       <li>Generally, this paper adds some interesting ingredients to a mixture of local -&gt; global computation using distributed agents.</li>
     </ul>
   </li>
+  <li>Another thing I really like about this paper is that it isn’t crazy hard to understand. So many ML papers are steeped in lots of formula and notation and this paper truly tried to clearly communicate the message.</li>
 </ul>
 
 
@@ -402,6 +403,47 @@
 
 <!-- 
 <div class="entries-list">
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review10/" rel="permalink">Review 10: Beyond advertising: New infrastructures for publishing integrated research objects
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Beyond advertising: New infrastructures for publishing integrated research objects by Elizabeth DuPre et al.
+
+</p>
+  </article>
+</div>
+
   
     
 
@@ -820,6 +862,45 @@
       Intro
         
         ...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/whos_in_charge/" rel="permalink">Who’s In Charge
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Well I am very busy so I’ll keep this short and sweet but I was listening to Alan Watts and ever since I’ve turned it off this one thought has stuck with me....</p>
   </article>
 </div>
 

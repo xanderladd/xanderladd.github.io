@@ -1,4 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-09T12:52:49-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 9: The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning</title><link href="http://localhost:4000/reviews/review9/" rel="alternate" type="text/html" title="Review 9: The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning" /><published>2022-01-09T04:16:13-08:00</published><updated>2022-01-09T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review9</id><content type="html" xml:base="http://localhost:4000/reviews/review9/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2109.02869.pdf&quot;&gt;The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning&lt;/a&gt; by &lt;a href=&quot;https://otoro.net/ml/&quot;&gt;Dr. Ha&lt;/a&gt; and &lt;a href=&quot;https://www.linkedin.com/in/yujin-tang-98b3ab5a/?originalSubdomain=jp&quot;&gt;Yujin Tang&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-16T23:38:55-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 10: Beyond advertising: New infrastructures for publishing integrated research objects</title><link href="http://localhost:4000/reviews/review10/" rel="alternate" type="text/html" title="Review 10: Beyond advertising: New infrastructures for publishing integrated research objects" /><published>2022-01-16T04:16:13-08:00</published><updated>2022-01-16T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review10</id><content type="html" xml:base="http://localhost:4000/reviews/review10/">&lt;p&gt;&lt;a href=&quot;https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009651&quot;&gt;Beyond advertising: New infrastructures for publishing integrated research objects&lt;/a&gt; by &lt;a href=&quot;https://elizabeth-dupre.com/#/cv&quot;&gt;Elizabeth DuPre&lt;/a&gt; et al.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Citation: DuPre, Elizabeth, et al. “Beyond advertising: New infrastructures for publishing integrated research objects.” PLOS Computational Biology 18.1 (2022): e1009651.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Introduction
+    &lt;ul&gt;
+      &lt;li&gt;Discuss current practices in reviewing and publishing a paper, including new forms of curation like openreview and arxivsantiy. Also includes new practices like website hosting and Twitter paper advertising.&lt;/li&gt;
+      &lt;li&gt;Presents problem: Researchers have moved online but have not fully embraced web first workflows.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Hybrid Objects
+    &lt;ul&gt;
+      &lt;li&gt;Hybrid objects are described as an amalgamation of writing, code, computation, data, and documentation.&lt;/li&gt;
+      &lt;li&gt;The authors point out the major problem with hybrid objects, at least in regards to the data, which is a lack of data standards in most data publishing platforms.
+        &lt;ul&gt;
+          &lt;li&gt;And who can blame these data hosting platforms? If they want people to use them, they need looser data standards than their competitors. On the other hand, enforcing and complying to data standards is &lt;em&gt;huge&lt;/em&gt; problem because there are so many different possible formats to have data in (.json, .csv, .dat, .hdf5, .yaml, and the worst: .txt)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;However, following the most prevalent compliant standard for publishing data sets should aid prospects of publication.
+        &lt;ul&gt;
+          &lt;li&gt;yes this is quite literally conformist.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;When it comes to data standards having an ecosystem is a very bad thing&lt;/strong&gt;&lt;/li&gt;
+          &lt;li&gt;I think the best way to implement data standards is inheritance. You can make instantiations of some broader standard.&lt;/li&gt;
+          &lt;li&gt;Though, this problem is a rabbit hole.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Interactive and integrated research objects
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Claerbout Challenge&lt;/strong&gt; is the problem of sharing your whole code/data and env. It always comes with caveats like dependencies that take forever to install.
+        &lt;ul&gt;
+          &lt;li&gt;“Code provided for reproducibility” is often not as reproducible as we’d like it to be.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Sharing integrated research objects like notebooks is nice approach for this.&lt;/li&gt;
+      &lt;li&gt;But then comes the challenge of hosting such objects. So if you make a notebook, where do you put it so that people can engage. (I think github is fine).&lt;/li&gt;
+      &lt;li&gt;But this eLife pilot executable research article looks awesome!
+        &lt;ul&gt;
+          &lt;li&gt;did not know that existed.
+            &lt;blockquote&gt;
+              &lt;p&gt;DuPre 2022&lt;/p&gt;
+              &lt;blockquote&gt;
+                &lt;p&gt;We argue that sustainable development demands open standards with multistakeholder governance and leadership to ensure that resulting specifications are not driven by a single stakeholder.&lt;/p&gt;
+              &lt;/blockquote&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;This is word soup, but I totally agree with the sentiment. Open standards need to be equitable for all researchers. Python notebooks are great if you use python, but if you only know matlab or R, these formats could cause you a great deal of trouble.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Combining RMarkdown and Jupyter Notebooks seems like an excellent way to present research.
+    &lt;ul&gt;
+      &lt;li&gt;Though I might sub out RMarkdown for plain old markdown, or even better Jupyter Notebooks native mathjax (basically latex).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Dupre 2022&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;By investing in infrastructure for integrated research objects that heavily rely on open, modular components, we can make strong contributions in individual research domains while still ensuring that these investments can be easily retooled and extended.&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This is a very good sentiment to have for these platforms. Building such components to be equitable across large and small research groups is a difficult challenge as the authors have pointed out. But yes, &lt;a href=&quot;https://www.neurolibre.org/&quot;&gt;NeuroLibre&lt;/a&gt; and &lt;a href=&quot;https://pangeo.io/&quot;&gt;Pangeo&lt;/a&gt; are steps in the right direction.&lt;/li&gt;
+  &lt;li&gt;My only real opinion here is that it doesn’t seem to help a paper if it has these integrated objects. I don’t see many reviewers taking this stuff into account, but there should be an incentive for both authors and reviewers to do so. I think this would create more of a community around these tools and then things can build from there. The problem right now is that it is too attractive to publish and then never touch your code again.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Beyond advertising: New infrastructures for publishing integrated research objects by Elizabeth DuPre et al.</summary></entry><entry><title type="html">Review 9: The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning</title><link href="http://localhost:4000/reviews/review9/" rel="alternate" type="text/html" title="Review 9: The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning" /><published>2022-01-09T04:16:13-08:00</published><updated>2022-01-09T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review9</id><content type="html" xml:base="http://localhost:4000/reviews/review9/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2109.02869.pdf&quot;&gt;The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning&lt;/a&gt; by &lt;a href=&quot;https://otoro.net/ml/&quot;&gt;Dr. Ha&lt;/a&gt; and &lt;a href=&quot;https://www.linkedin.com/in/yujin-tang-98b3ab5a/?originalSubdomain=jp&quot;&gt;Yujin Tang&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -53,12 +124,12 @@
           &lt;li&gt;authors propose to add an extra layer (called AttentionNeuron) in front of agent’s policy network $\pi$ that accepts observation $o_t$ and previous action $a_{t-1}$ as inputs.&lt;/li&gt;
           &lt;li&gt;The $i$th neuron only has access to $o_t[i]$.&lt;/li&gt;
           &lt;li&gt;each sensory neuron computes messages $f_k(o_t[i], a_{t-1})$ and $f_v(o_t[i])$.&lt;/li&gt;
-          &lt;li&gt;These messages are aggregrated in &lt;em&gt;global latent code&lt;/em&gt; $m_t$.&lt;/li&gt;
+          &lt;li&gt;These messages are aggregated in &lt;em&gt;global latent code&lt;/em&gt; $m_t$.&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;So I think it’s interesting that based off the figure, they don’t model this AttentionNeuron layer as distinct part of each neuron but rather a layer that recives input from each neuron and aggregates input into $m_t$.
+      &lt;li&gt;So I think it’s interesting that based off the figure, they don’t model this AttentionNeuron layer as a distinct part of each neuron but rather a layer that receives input from each neuron and aggregates input into $m_t$.
         &lt;ul&gt;
-          &lt;li&gt;Computationally, it doesn’t matter if the transformation is affixed to the last layer of each neuron or if it stands alone. But I thought it was illustative of how the Query, Key and Value matrices are formed.&lt;/li&gt;
+          &lt;li&gt;Computationally, it doesn’t matter if the transformation is affixed to the last layer of each neuron or if it stands alone. But I thought it was illustrative of how the Query, Key and Value matrices are formed.&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;Key matrix depends on $f_k(o_t, a_{t-1})$ and value matrix depends on $f_v(o_t)$&lt;/li&gt;
@@ -155,11 +226,12 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;One thing I wonder when reading this paper is: what is the best way to aggregate signals from the individual agents? This paper looked at aggrregation through neural network layers, but I thought the reshape in the 2D spatial embedddings was an interesting twist.
+  &lt;li&gt;One thing I wonder when reading this paper is: what is the best way to aggregate signals from the individual agents? This paper looked at aggregationthrough neural network layers, but I thought the reshape in the 2D spatial embeddingswas an interesting twist.
     &lt;ul&gt;
       &lt;li&gt;Generally, this paper adds some interesting ingredients to a mixture of local -&amp;gt; global computation using distributed agents.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;Another thing I really like about this paper is that it isn’t crazy hard to understand. So many ML papers are steeped in lots of formula and notation and this paper truly tried to clearly communicate the message.&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning by Dr. Ha and Yujin Tang</summary></entry><entry><title type="html">Review 8: The Future of Artificial Intelligence is Self-Organizing and Self-Assembling</title><link href="http://localhost:4000/reviews/review8/" rel="alternate" type="text/html" title="Review 8: The Future of Artificial Intelligence is Self-Organizing and Self-Assembling" /><published>2022-01-02T13:16:13-08:00</published><updated>2022-01-02T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review8</id><content type="html" xml:base="http://localhost:4000/reviews/review8/">&lt;p&gt;&lt;a href=&quot;https://sebastianrisi.com/self_assembling_ai/9&quot;&gt;The Future of Artificial Intelligence is Self-Organizing and Self-Assembling&lt;/a&gt; by &lt;a href=&quot;https://sebastianrisi.com&quot;&gt;Prof. Sebastian Risi&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
@@ -734,65 +806,4 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights by Ramin Khajeh, Francesco Fumarola, Larry F. Abbott</summary></entry><entry><title type="html">Review 1</title><link href="http://localhost:4000/reviews/review1/" rel="alternate" type="text/html" title="Review 1" /><published>2021-11-14T13:16:13-08:00</published><updated>2021-11-14T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review1</id><content type="html" xml:base="http://localhost:4000/reviews/review1/">&lt;ul&gt;
-  &lt;li&gt;Review 1 : &lt;a href=&quot;https://www.eneuro.org/content/8/2/ENEURO.0131-21.2021&quot;&gt;In Silico&lt;/a&gt; by &lt;a href=&quot;https://fairhalllab.com/&quot; title=&quot;Title&quot;&gt;Dr. Fairhall&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Citation: Fairhall, Adrienne L. “In silico: where next?.” &lt;em&gt;Eneuro&lt;/em&gt; 8.2 (2021).&lt;/li&gt;
-      &lt;li&gt;Intro
-        &lt;ul&gt;
-          &lt;li&gt;This writing starts out by laying out the context of 2013, a very important year for funding large neuroscience research initiatives, the U.S. BRAIN projects and the European Human Brain Project (HBP).&lt;/li&gt;
-          &lt;li&gt;Furthers discussion into brain atlases from Allen institute and recent developments in imaging and recording techniques.&lt;/li&gt;
-          &lt;li&gt;Mentioned a paper I found interested on neural networks as simulation tools : &lt;a href=&quot;https://pubmed.ncbi.nlm.nih.gov/28668365/&quot;&gt;Barak 2007&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Key Question: “On this backdrop, what are valuable targets for future
-large-scale spending?”
-        &lt;ul&gt;
-          &lt;li&gt;To me, this seems to be the transition from historical background to the discussion of what next.&lt;/li&gt;
-          &lt;li&gt;And here Dr. Fairhall points out a key issue facing large scale collaboration in brain science: What big experiments and datasets will lead to transformative research?&lt;/li&gt;
-          &lt;li&gt;The answer being, there’s not really some resounding agreement.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Possible answers
-        &lt;ul&gt;
-          &lt;li&gt;Dr. Abbot suggests the approach of a deatiled cellular model of a mouse brain, however, as HBP has experienced, there is a challenge here with integrating biophysical modeling with levels of connectivity (gap junction, neuromodulation, etc.)&lt;/li&gt;
-          &lt;li&gt;An alternative approach is discussed as a brain activity map that bridges existing theories about different regions of the brain in modeling one activity in order to align existsing theories.
-            &lt;ul&gt;
-              &lt;li&gt;The challenge here seems to be design. How does one actually assemble all these odds and ends.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;I thought this quote was interesting:
-            &lt;blockquote&gt;
-              &lt;p&gt;In Silico (Fairhall 2021)&lt;/p&gt;
-              &lt;blockquote&gt;
-                &lt;p&gt;“IARPA’s MICrONS program is […] a collaborative effort to reconstruct the connectome of a section of visual cortex whose activity has been characterized in vivo. By establishing the functional relevance of specific neurons, this project addresses some of the criticisms made of both the Blue Brain (Yong, 2019) and connectomics approaches.”&lt;/p&gt;
-              &lt;/blockquote&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-
-        &lt;p&gt;I thought it was interesting for a few reasons. First, I wonder what the actual criticms are in the cited paper, I hear about criticsms all the time but yet I don’t quite know what they are. Second, I wonder how this project manages to address such criticsms. An easy guess is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;function relevance&lt;/code&gt; suggests this project is doing more to link modeling with functionality … but this is still vague in my mind,&lt;/p&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;Finally, mention of a collaborative study where different groups measure populations of 1000 neurons.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Now that the author has introduced the problem and several approaches. it’s time to conclude and leave the reader feeling warm and fuzzy that we will solve all the problems in neuroscience. Kidding of course.
-        &lt;ul&gt;
-          &lt;li&gt;Author notes that projects that produce a “product” such as Allen datasest are less risky than projects that aim to tackle large problems.&lt;/li&gt;
-          &lt;li&gt;Suggests diversifying research investment across labs.&lt;/li&gt;
-          &lt;li&gt;Then model of brain observatories gathering data on a large scale and then smaller labs performing analysis on these dataset.
-            &lt;ul&gt;
-              &lt;li&gt;The nice part about this is that the datasets will be well vetted by various research groups.&lt;/li&gt;
-              &lt;li&gt;And computational neuroscientists can save some money on having to run large scale experiments – they get nice data.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;We know a lot but we know nothing.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;The last line here really hits home. There is a massive body of research on neuroscience, yet unifying theories (across levels of complexity) are few and far between.&lt;/li&gt;
-      &lt;li&gt;Overall, this is a great paper to introduce some of the key questions facing large collaborative neuroscience and was a really nice read for my first review. I can imagine I’ll be reading more papers with a lot of narrative gating, but this was not that. It was straight the point and clear. Sure some parts were not elaborated on, but the citations are there and I can follow the trail. I believe this is a balance one has to strike in order to deliver a clear message and something I hope to take with me in my own writing.&lt;/li&gt;
-      &lt;li&gt;Good stuff :) thanks.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Review 1 : In Silico by Dr. Fairhall Citation: Fairhall, Adrienne L. “In silico: where next?.” Eneuro 8.2 (2021). Intro This writing starts out by laying out the context of 2013, a very important year for funding large neuroscience research initiatives, the U.S. BRAIN projects and the European Human Brain Project (HBP). Furthers discussion into brain atlases from Allen institute and recent developments in imaging and recording techniques. Mentioned a paper I found interested on neural networks as simulation tools : Barak 2007 Key Question: “On this backdrop, what are valuable targets for future large-scale spending?” To me, this seems to be the transition from historical background to the discussion of what next. And here Dr. Fairhall points out a key issue facing large scale collaboration in brain science: What big experiments and datasets will lead to transformative research? The answer being, there’s not really some resounding agreement. Possible answers Dr. Abbot suggests the approach of a deatiled cellular model of a mouse brain, however, as HBP has experienced, there is a challenge here with integrating biophysical modeling with levels of connectivity (gap junction, neuromodulation, etc.) An alternative approach is discussed as a brain activity map that bridges existing theories about different regions of the brain in modeling one activity in order to align existsing theories. The challenge here seems to be design. How does one actually assemble all these odds and ends. I thought this quote was interesting: In Silico (Fairhall 2021) “IARPA’s MICrONS program is […] a collaborative effort to reconstruct the connectome of a section of visual cortex whose activity has been characterized in vivo. By establishing the functional relevance of specific neurons, this project addresses some of the criticisms made of both the Blue Brain (Yong, 2019) and connectomics approaches.”</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights by Ramin Khajeh, Francesco Fumarola, Larry F. Abbott</summary></entry></feed>

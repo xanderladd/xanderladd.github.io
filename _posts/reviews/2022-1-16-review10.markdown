@@ -1,0 +1,45 @@
+---
+layout: base
+title:  "Review 10: Beyond advertising: New infrastructures for publishing integrated research objects"
+date:   2022-1-16 5:16:13 -0700
+author: xander
+categories: reviews
+---
+
+
+
+[Beyond advertising: New infrastructures for publishing integrated research objects](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009651) by [Elizabeth DuPre](https://elizabeth-dupre.com/#/cv) et al.
+
+- Citation: DuPre, Elizabeth, et al. "Beyond advertising: New infrastructures for publishing integrated research objects." PLOS Computational Biology 18.1 (2022): e1009651.
+
+- Introduction 
+    - Discuss current practices in reviewing and publishing a paper, including new forms of curation like openreview and arxivsantiy. Also includes new practices like website hosting and Twitter paper advertising.
+    - Presents problem: Researchers have moved online but have not fully embraced web first workflows.
+- Hybrid Objects
+    - Hybrid objects are described as an amalgamation of writing, code, computation, data, and documentation. 
+    - The authors point out the major problem with hybrid objects, at least in regards to the data, which is a lack of data standards in most data publishing platforms.
+        - And who can blame these data hosting platforms? If they want people to use them, they need looser data standards than their competitors. On the other hand, enforcing and complying to data standards is _huge_ problem because there are so many different possible formats to have data in (.json, .csv, .dat, .hdf5, .yaml, and the worst: .txt)
+    - However, following the most prevalent compliant standard for publishing data sets should aid prospects of publication.
+        - yes this is quite literally conformist. 
+        - **When it comes to data standards having an ecosystem is a very bad thing**
+        - I think the best way to implement data standards is inheritance. You can make instantiations of some broader standard.
+        - Though, this problem is a rabbit hole.
+- Interactive and integrated research objects
+    - **Claerbout Challenge** is the problem of sharing your whole code/data and env. It always comes with caveats like dependencies that take forever to install.
+        - "Code provided for reproducibility" is often not as reproducible as we'd like it to be.
+    - Sharing integrated research objects like notebooks is nice approach for this.
+    - But then comes the challenge of hosting such objects. So if you make a notebook, where do you put it so that people can engage. (I think github is fine).
+    - But this eLife pilot executable research article looks awesome!
+        - did not know that existed.
+    > DuPre 2022
+    >> We argue that sustainable development demands open standards with multistakeholder governance and leadership to ensure that resulting specifications are not driven by a single stakeholder.
+    
+    - This is word soup, but I totally agree with the sentiment. Open standards need to be equitable for all researchers. Python notebooks are great if you use python, but if you only know matlab or R, these formats could cause you a great deal of trouble.
+- Combining RMarkdown and Jupyter Notebooks seems like an excellent way to present research.
+    - Though I might sub out RMarkdown for plain old markdown, or even better Jupyter Notebooks native mathjax (basically latex).
+
+ > Dupre 2022
+ >> By investing in infrastructure for integrated research objects that heavily rely on open, modular components, we can make strong contributions in individual research domains while still ensuring that these investments can be easily retooled and extended.
+
+ - This is a very good sentiment to have for these platforms. Building such components to be equitable across large and small research groups is a difficult challenge as the authors have pointed out. But yes, [NeuroLibre](https://www.neurolibre.org/) and [Pangeo](https://pangeo.io/) are steps in the right direction. 
+ - My only real opinion here is that it doesn't seem to help a paper if it has these integrated objects. I don't see many reviewers taking this stuff into account, but there should be an incentive for both authors and reviewers to do so. I think this would create more of a community around these tools and then things can build from there. The problem right now is that it is too attractive to publish and then never touch your code again.

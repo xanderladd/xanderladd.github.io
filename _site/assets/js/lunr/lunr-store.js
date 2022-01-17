@@ -1,4 +1,10 @@
 var store = [{
+        "title": "Who's In Charge",
+        "excerpt":"Well I am very busy so I’ll keep this short and sweet but I was listening to Alan Watts and ever since I’ve turned it off this one thought has stuck with me. When we look at the whole world and all it’s complex systems of flowing water, blossoming plants,...","categories": ["posts"],
+        "tags": [],
+        "url": "/posts/whos_in_charge/",
+        "teaser": "/assets/images/trees.jpeg"
+      },{
         "title": "Review 1",
         "excerpt":"Review 1 : In Silico by Dr. Fairhall Citation: Fairhall, Adrienne L. “In silico: where next?.” Eneuro 8.2 (2021). Intro This writing starts out by laying out the context of 2013, a very important year for funding large neuroscience research initiatives, the U.S. BRAIN projects and the European Human Brain...","categories": ["reviews"],
         "tags": [],
@@ -57,5 +63,11 @@ var store = [{
         "excerpt":"The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning by Dr. Ha and Yujin Tang Citation: Tang, Yujin, and David Ha. “The sensory neuron as a transformer: Permutation-invariant neural networks for reinforcement learning.” Advances in Neural Information Processing Systems 34 (2021). Today, I am reading a paper...","categories": ["reviews"],
         "tags": [],
         "url": "/reviews/review9/",
+        "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 10: Beyond advertising: New infrastructures for publishing integrated research objects",
+        "excerpt":"Beyond advertising: New infrastructures for publishing integrated research objects by Elizabeth DuPre et al. Citation: DuPre, Elizabeth, et al. “Beyond advertising: New infrastructures for publishing integrated research objects.” PLOS Computational Biology 18.1 (2022): e1009651. Introduction Discuss current practices in reviewing and publishing a paper, including new forms of curation like...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review10/",
         "teaser": "/assets/images/trees.jpeg"
       }]

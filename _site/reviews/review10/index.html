@@ -9,38 +9,38 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Review 2 - Alexander Ladd</title>
-<meta name="description" content="Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights  by Ramin Khajeh, Francesco Fumarola, Larry F. Abbott">
+<!-- begin _includes/seo.html --><title>Review 10: Beyond advertising: New infrastructures for publishing integrated research objects - Alexander Ladd</title>
+<meta name="description" content="Beyond advertising: New infrastructures for publishing integrated research objects by Elizabeth DuPre et al.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Alexander Ladd">
-<meta property="og:title" content="Review 2">
-<meta property="og:url" content="http://localhost:4000/reviews/review2/">
+<meta property="og:title" content="Review 10: Beyond advertising: New infrastructures for publishing integrated research objects">
+<meta property="og:url" content="http://localhost:4000/reviews/review10/">
 
 
-  <meta property="og:description" content="Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights  by Ramin Khajeh, Francesco Fumarola, Larry F. Abbott">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2021-11-14T13:16:13-08:00">
+  <meta property="og:description" content="Beyond advertising: New infrastructures for publishing integrated research objects by Elizabeth DuPre et al.">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2022-01-16T04:16:13-08:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/reviews/review2/">
+
+<link rel="canonical" href="http://localhost:4000/reviews/review10/">
 
 
 
@@ -117,17 +117,13 @@
           Alexander Ladd
           
         </a>
-        <ul class="visible-links">
-<li class="masthead__menu-item">
+        <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/about">about</a>
-            </li>
-<li class="masthead__menu-item">
+            </li><li class="masthead__menu-item">
               <a href="/projects">projects</a>
-            </li>
-<li class="masthead__menu-item">
+            </li><li class="masthead__menu-item">
               <a href="/research">research</a>
-            </li>
-</ul>
+            </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -234,173 +230,79 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">Review 2</h1>
+      <h1 id="page-title" class="page__title">Review 10: Beyond advertising: New infrastructures for publishing integrated research objects</h1>
     
-    <ul>
-  <li>
-    <p><a href="https://www.biorxiv.org/content/10.1101/2021.02.26.433027v1.abstract">Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights
-</a> by <a href="https://www.google.com/search?q=Ramin+Khajeh&amp;oq=Ramin+Khajeh&amp;aqs=chrome..69i57.82j0j7&amp;sourceid=chrome&amp;ie=UTF-8">Ramin Khajeh</a>, <a href="https://scholar.google.com/citations?user=rcb8W94AAAAJ&amp;hl=ca">Francesco Fumarola</a>, <a href="https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd">Larry F. Abbott</a></p>
+    <p><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009651">Beyond advertising: New infrastructures for publishing integrated research objects</a> by <a href="https://elizabeth-dupre.com/#/cv">Elizabeth DuPre</a> et al.</p>
 
+<ul>
+  <li>
+    <p>Citation: DuPre, Elizabeth, et al. “Beyond advertising: New infrastructures for publishing integrated research objects.” PLOS Computational Biology 18.1 (2022): e1009651.</p>
+  </li>
+  <li>Introduction
     <ul>
-      <li>Citation: Khajeh, Ramin, Francesco Fumarola, and L. F. Abbott. “Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights.” bioRxiv (2021).</li>
-      <li>
-<strong>DISCLAIMER</strong> I am very interested in this part of computational neuroscience, but I’m a bit of a beginner to this topic. Some of the stuff here goes over my head, esp. the tractability of the gamma distribution in setting synaptic weights. If I got anything horribly wrong or you have any feedback please email me at zladd@berkeley.edu. Later I plan to add a feedback section using disqus at the botttom of each blog.</li>
-      <li>Intro
+      <li>Discuss current practices in reviewing and publishing a paper, including new forms of curation like openreview and arxivsantiy. Also includes new practices like website hosting and Twitter paper advertising.</li>
+      <li>Presents problem: Researchers have moved online but have not fully embraced web first workflows.</li>
+    </ul>
+  </li>
+  <li>Hybrid Objects
+    <ul>
+      <li>Hybrid objects are described as an amalgamation of writing, code, computation, data, and documentation.</li>
+      <li>The authors point out the major problem with hybrid objects, at least in regards to the data, which is a lack of data standards in most data publishing platforms.
         <ul>
-          <li>Neurons recieve a lot of excitatory input so there must be inhbitory balance. Some mechanism are cited as responsible for this:
-            <ul>
-              <li>Recurrent excitation</li>
-              <li>Recurrent inhibition</li>
-              <li>Feedfoward excitation</li>
-            </ul>
-          </li>
-          <li>No evidence that feedforward excitaiton is particularly strong in these models.
-            <ul>
-              <li>This is definitely new to me.</li>
-            </ul>
-          </li>
-          <li>States that
-            <ul>
-              <li>synaptic weight distributions have variance around $\frac{1}{\sqrt{k}}$ where $K$ is node in-degree.</li>
-              <li>order of inhibitory input is around $\sqrt(K)$</li>
-              <li>and it’s generally cancelled by an excitatory input of equal magnitude, but they want to avoid this.</li>
-            </ul>
-          </li>
-          <li>Suggests that without feedforward exc. input, there will be low firing rate but moves this evidence in argument for a sparser network, not a dense netowrk with low firing rate neurons.</li>
-          <li>Getting rid of feedforward exc. means that synaptic distirbutions lose variance, so they suggest remedying this by making synaptic strength vary with a mean of $\frac{1}{\sqrt{K}}$ but then vary with order $\frac{1}{\sqrt{K}}$ this means total variance is now $\frac{\sqrt{K}}{\sqrt{K}}$ again (prev. it was $\frac{1}{\sqrt{k}}$)</li>
-          <li>One part of this that I don’t understand is a formal mathematical definition for a <em>synaptic weight distribution</em>. I think that for a more experienced reader, they will know what this means. My understanding is that this distribution will be a vector like $\bf{x} \in \mathbb{R^{K}}$ and this vector with the excitory input would follow something like $\bf{x_{1:\sqrt{K}}} \sim \mathcal{N}(\frac{1}{\sqrt{K}},1)$ (standard model –&gt; variance == 1?) and the inihbitory component would be $\bf{x_{1:\sqrt{K}}} \sim \mathcal{N}(-\frac{1}{\sqrt{K}},1)$.
-            <ul>
-              <li>there are a few things I here I would want to ask:
-                <ol>
-                  <li>We have only accounted for $ 2 \times \sqrt{K}$ of the $K$ weights. Are the rest of the synaptic weights just 0?
-                    <ul>
-                      <li>honestly, I’m missing something here. I think all weights are accounted for, I just don’t know how.</li>
-                    </ul>
-                  </li>
-                  <li>Do these weights have unit variance?</li>
-                </ol>
-              </li>
-            </ul>
-          </li>
+          <li>And who can blame these data hosting platforms? If they want people to use them, they need looser data standards than their competitors. On the other hand, enforcing and complying to data standards is <em>huge</em> problem because there are so many different possible formats to have data in (.json, .csv, .dat, .hdf5, .yaml, and the worst: .txt)</li>
         </ul>
       </li>
-      <li>The model
+      <li>However, following the most prevalent compliant standard for publishing data sets should aid prospects of publication.
         <ul>
-          <li>This part starts to clear up the questions above</li>
-          <li>They state that
-            <blockquote>
-              <p>Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights. (Khajeh 2021)</p>
-              <blockquote>
-                <p>Networks have currents $x_i$ for $i = 1 … N$ and firing rates $\phi(x_i)$ that obey
-   \begin{equation}
-   \Gamma_x \frac{dx_i}{dt} = -x_i - \sum\limits_j^N J_{ij}\phi(x_j) + I_0
-   \end{equation} where $\phi$ is a nonlinear function and $J_{ij} \geq 0$</p>
-              </blockquote>
-            </blockquote>
-          </li>
-          <li>I am not sure what $J_{ij}$ represents now. *note: it get’s explained a few sentences later. – they are i.i.d. weights.</li>
-          <li>Besides that, this function does a good job of clearly defining synaptic integration.</li>
-          <li>Considers tangenet vs. exponential nonlinear activation functions for $\phi$.</li>
-        </ul>
-      </li>
-      <li>Simulation results
-        <ul>
-          <li>When excitatory input is set to $I_0 \sim \sqrt{K}$ the network has either sparse and high firing rate reponses (high variance), or dense and low firing rate responses (low variance).
-            <ul>
-              <li>this lines up nicely with what was introduced in the beginning and has a very clear inuitive interpretation. Nice!</li>
-            </ul>
-          </li>
-          <li>Then they dig in to some detailed numerical explanations for this effect.</li>
-          <li>Figure 1 is very clear <img class="emoji" title=":thumbsup:" alt=":thumbsup:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20">
-            <ul>
-              <li>I was surprised to see that in panel G, the feedfoward input only had a small impact on the fraction of active neurons.</li>
-            </ul>
-          </li>
-          <li>Sparse E/I balance lead to non-gaussian 0-skewed distribution of synaptic weights</li>
-          <li>The authors state that these results represent a robust distribution of synaptic weights desipte not having any excitatory input.</li>
-        </ul>
-      </li>
-      <li>Analysis of Sparse Balance Networks
-        <ul>
-          <li>here the authors explore high variance, low exc. input, sparse networks further using heavside non-linear response function.
-            <ul>
-              <li>had to look this one up, but it’s basically a piecewise activaiton function where the gradient is the <a href="https://en.wikipedia.org/wiki/Dirac_delta_function">dirac delta function</a>
-</li>
-            </ul>
-          </li>
-          <li>weights drawn from $\text{gamma}(k, \theta)$</li>
-          <li>Figure 3A would benefit from text titles on the figure, not just in the caption (at least for a reader like me lol I suck at reading figs).</li>
-          <li>What I got out of Fig. 3 is that heavside function lead to lower fraction of active neurons compared to tanh and exp. activation functions and thus a sparser netowrk. But that it also had a non-gaussian distribution of weights under the sparse condition.</li>
-          <li>Interesting point about having a larger $K$ or shape parameter for gamma, one might expect that the gamma function approximate gaussian function. But this is not the case with $\eta \sim \text{gamma}(\alpha, \theta)$.</li>
-          <li>I wonder if I understood that right?</li>
-          <li>If feedforward bias is small  –&gt; large synaptic variance required for robust fluctuation.</li>
-        </ul>
-      </li>
-      <li>Sparse Activity Arises from Network Dynamics
-        <ul>
-          <li>They use population averaged autocorrelation function to find out how much the weight distribution is affected by the previous weight distribution at some lag.</li>
-          <li>Autocorrelation decays faster for larger K (fig. 4).
-            <blockquote>
-              <p>Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights. (Khajeh 2021)</p>
-              <blockquote>
-                <p>it is the dynamics of the recurrent synaptic inputs, not their size, that leads to sparse activity at large K</p>
-              </blockquote>
-            </blockquote>
-          </li>
-        </ul>
-      </li>
-      <li>Mean Field Analysis
-        <ul>
-          <li>Introduces a variable $m$ which is the mean-field approximation for $\bar{\phi}$</li>
-          <li>Based on fuctions 7 and 11 (I think) they define closed form equation for $m$ in terms of gamma dist. shape parameter $\alpha$ as 
-  \begin{equation}
-  \alpha = \frac{mJ_0^2\sqrt(m)}{g^2}
-  \end{equation}
-            <ul>
-              <li>$g^2$ comes from gamma dist. scale parameter.</li>
-            </ul>
-          </li>
-          <li>considers several cases of computing autocorrelation of $\eta$ based on different sizes of $K$ and decorrealtion rate $\beta$.
-            <ul>
-              <li>When $K$ is small, then $eta$ follows gamma distribution $\text{gamma}(\alpha, \theta)$ and then they can solve closed form mean field calcuation using integral.</li>
-              <li>even at $K ~ 10^3$ this holds.</li>
-            </ul>
-          </li>
-          <li>Then there’s a more complicated closed form calculation for $var(\eta)$ that I’m gonna skip over for now.
-            <ul>
-              <li>involves decomposing the variance into quenched and time dependent.</li>
-              <li>not very familiar with this decomposition. Maybe if I look into mean field decomp. more I will see.</li>
-            </ul>
-          </li>
-          <li>Fig. 5 just shows that this recover of gamma distribution parameters charcterizes weights and input parameter well. Again, clear and nice figure <img class="emoji" title=":thumbsup:" alt=":thumbsup:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20">
-</li>
-        </ul>
-      </li>
-      <li>Sparse balance in E-I network
-        <ul>
-          <li>shows that <em>network properties</em> shown for I network model also apply for E/I model, such as sparsity (frac. of neurons active) and firing rates.</li>
-        </ul>
-      </li>
-      <li>Discussion
-        <ul>
-          <li>Shows interesting network properties demonstrated in this anaylsis as a result of making feedforward excitation smaller.</li>
-          <li>Broadens out implications to real world instances where E/I ratio is similarly composed.</li>
-          <li>Interesting to point out this phenomenon in relating autocorrelation and network sparse responses seems to be a general effect.</li>
-          <li>Definitely incresed my interested in mean field theory.</li>
-          <li>Here is what I think is really the most fascinating takeway:
-  <strong>“The large degree of variability in the synapses could route stimulus information along particular  paths across network neurons”</strong>
-</li>
-          <li>A reasonable claim that it is not just feedforward input that influences selective network responses but also recurrent synaptic input.
-            <ul>
-              <li>The number of recurrent connections in the brain would support this idea. If there is so many recurrent networks, they must be doing something.</li>
-              <li>Ideas here build on some early work by M. Jordan cited in The Computational Brain by Terrence Sejnowski on using recurrent networks to identify shapes and the expressive power of <em>non-feedforward</em> connections.</li>
-              <li>Granted, I haven’t actually read this 1998 work, just read the watered down example in Dr. Sejnowski’s book.</li>
-            </ul>
-          </li>
+          <li>yes this is quite literally conformist.</li>
+          <li><strong>When it comes to data standards having an ecosystem is a very bad thing</strong></li>
+          <li>I think the best way to implement data standards is inheritance. You can make instantiations of some broader standard.</li>
+          <li>Though, this problem is a rabbit hole.</li>
         </ul>
       </li>
     </ul>
   </li>
+  <li>Interactive and integrated research objects
+    <ul>
+      <li><strong>Claerbout Challenge</strong> is the problem of sharing your whole code/data and env. It always comes with caveats like dependencies that take forever to install.
+        <ul>
+          <li>“Code provided for reproducibility” is often not as reproducible as we’d like it to be.</li>
+        </ul>
+      </li>
+      <li>Sharing integrated research objects like notebooks is nice approach for this.</li>
+      <li>But then comes the challenge of hosting such objects. So if you make a notebook, where do you put it so that people can engage. (I think github is fine).</li>
+      <li>But this eLife pilot executable research article looks awesome!
+        <ul>
+          <li>did not know that existed.
+            <blockquote>
+              <p>DuPre 2022</p>
+              <blockquote>
+                <p>We argue that sustainable development demands open standards with multistakeholder governance and leadership to ensure that resulting specifications are not driven by a single stakeholder.</p>
+              </blockquote>
+            </blockquote>
+          </li>
+        </ul>
+      </li>
+      <li>This is word soup, but I totally agree with the sentiment. Open standards need to be equitable for all researchers. Python notebooks are great if you use python, but if you only know matlab or R, these formats could cause you a great deal of trouble.</li>
+    </ul>
+  </li>
+  <li>Combining RMarkdown and Jupyter Notebooks seems like an excellent way to present research.
+    <ul>
+      <li>Though I might sub out RMarkdown for plain old markdown, or even better Jupyter Notebooks native mathjax (basically latex).</li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <p>Dupre 2022</p>
+  <blockquote>
+    <p>By investing in infrastructure for integrated research objects that heavily rely on open, modular components, we can make strong contributions in individual research domains while still ensuring that these investments can be easily retooled and extended.</p>
+  </blockquote>
+</blockquote>
+
+<ul>
+  <li>This is a very good sentiment to have for these platforms. Building such components to be equitable across large and small research groups is a difficult challenge as the authors have pointed out. But yes, <a href="https://www.neurolibre.org/">NeuroLibre</a> and <a href="https://pangeo.io/">Pangeo</a> are steps in the right direction.</li>
+  <li>My only real opinion here is that it doesn’t seem to help a paper if it has these integrated objects. I don’t see many reviewers taking this stuff into account, but there should be an incentive for both authors and reviewers to do so. I think this would create more of a community around these tools and then things can build from there. The problem right now is that it is too attractive to publish and then never touch your code again.</li>
 </ul>
 
 
@@ -478,7 +380,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          7 minute read
+          6 minute read
         
       </span>
     
@@ -644,7 +546,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          2 minute read
+          1 minute read
         
       </span>
     
@@ -769,7 +671,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          4 minute read
+          3 minute read
         
       </span>
     
@@ -915,11 +817,12 @@
 
 <!-- 
 
-<title>Review 2 - Alexander Ladd</title>
+<title>Review 10: Beyond advertising: New infrastructures for publishing integrated research objects - Alexander Ladd</title>
 <meta name="viewport" content="width=device-width">
 
 <link rel="stylesheet" href="/css/all.css"> -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -992,7 +895,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">© 2022 Alexander Ladd. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2022 Alexander Ladd. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

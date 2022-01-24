@@ -70,4 +70,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review10/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 11: The Bandwagon",
+        "excerpt":"The Bandwagon by Claude E. Shannon Citation: Shannon, Claude E. “The bandwagon.” IRE transactions on Information Theory 2.1 (1956): 3. In the intersection of probability, statistics, and engineering, information theory has become applied ubiquitously throughout a wide range of research. In the 1940s, Claude Shannon conducted some of the most...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review11/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

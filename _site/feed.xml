@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-16T23:38:55-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 10: Beyond advertising: New infrastructures for publishing integrated research objects</title><link href="http://localhost:4000/reviews/review10/" rel="alternate" type="text/html" title="Review 10: Beyond advertising: New infrastructures for publishing integrated research objects" /><published>2022-01-16T04:16:13-08:00</published><updated>2022-01-16T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review10</id><content type="html" xml:base="http://localhost:4000/reviews/review10/">&lt;p&gt;&lt;a href=&quot;https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009651&quot;&gt;Beyond advertising: New infrastructures for publishing integrated research objects&lt;/a&gt; by &lt;a href=&quot;https://elizabeth-dupre.com/#/cv&quot;&gt;Elizabeth DuPre&lt;/a&gt; et al.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-23T20:11:50-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 10: Beyond advertising: New infrastructures for publishing integrated research objects</title><link href="http://localhost:4000/reviews/review10/" rel="alternate" type="text/html" title="Review 10: Beyond advertising: New infrastructures for publishing integrated research objects" /><published>2022-01-16T04:16:13-08:00</published><updated>2022-01-16T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review10</id><content type="html" xml:base="http://localhost:4000/reviews/review10/">&lt;p&gt;&lt;a href=&quot;https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009651&quot;&gt;Beyond advertising: New infrastructures for publishing integrated research objects&lt;/a&gt; by &lt;a href=&quot;https://elizabeth-dupre.com/#/cv&quot;&gt;Elizabeth DuPre&lt;/a&gt; et al.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -69,7 +69,36 @@
 &lt;ul&gt;
   &lt;li&gt;This is a very good sentiment to have for these platforms. Building such components to be equitable across large and small research groups is a difficult challenge as the authors have pointed out. But yes, &lt;a href=&quot;https://www.neurolibre.org/&quot;&gt;NeuroLibre&lt;/a&gt; and &lt;a href=&quot;https://pangeo.io/&quot;&gt;Pangeo&lt;/a&gt; are steps in the right direction.&lt;/li&gt;
   &lt;li&gt;My only real opinion here is that it doesn’t seem to help a paper if it has these integrated objects. I don’t see many reviewers taking this stuff into account, but there should be an incentive for both authors and reviewers to do so. I think this would create more of a community around these tools and then things can build from there. The problem right now is that it is too attractive to publish and then never touch your code again.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Beyond advertising: New infrastructures for publishing integrated research objects by Elizabeth DuPre et al.</summary></entry><entry><title type="html">Review 9: The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning</title><link href="http://localhost:4000/reviews/review9/" rel="alternate" type="text/html" title="Review 9: The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning" /><published>2022-01-09T04:16:13-08:00</published><updated>2022-01-09T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review9</id><content type="html" xml:base="http://localhost:4000/reviews/review9/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2109.02869.pdf&quot;&gt;The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning&lt;/a&gt; by &lt;a href=&quot;https://otoro.net/ml/&quot;&gt;Dr. Ha&lt;/a&gt; and &lt;a href=&quot;https://www.linkedin.com/in/yujin-tang-98b3ab5a/?originalSubdomain=jp&quot;&gt;Yujin Tang&lt;/a&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Beyond advertising: New infrastructures for publishing integrated research objects by Elizabeth DuPre et al.</summary></entry><entry><title type="html">Review 11: The Bandwagon</title><link href="http://localhost:4000/reviews/review11/" rel="alternate" type="text/html" title="Review 11: The Bandwagon" /><published>2022-01-16T04:16:13-08:00</published><updated>2022-01-16T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review11</id><content type="html" xml:base="http://localhost:4000/reviews/review11/">&lt;p&gt;&lt;a href=&quot;https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10567741&quot;&gt;The Bandwagon&lt;/a&gt; by &lt;a href=&quot;https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1056774&quot;&gt;Claude E. Shannon&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Citation: Shannon, Claude E. “The bandwagon.” IRE transactions on Information Theory 2.1 (1956): 3.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In the intersection of probability, statistics, and engineering, information theory has become applied ubiquitously throughout a wide range of research. In the 1940s, Claude Shannon conducted some of the most fundamental contributions to this field and has had the fascinating perspective of experiencing the adoption of these computational methods by computer scientists, physicists, and various engineers. Here he makes some disclaimers about the impact of information theory.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;This perspective is perpendicular to the linear thinking that creators have around their algorithms nowadays that goes like this:
+    &lt;ol&gt;
+      &lt;li&gt;Design algorithm.&lt;/li&gt;
+      &lt;li&gt;Show that it is better than methods $X$, $Y$, and $Z$.
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;Advertise&lt;/strong&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Have lots of other researchers and industries use it.
+        &lt;ul&gt;
+          &lt;li&gt;&lt;em&gt;clone&lt;/em&gt; and &lt;em&gt;star&lt;/em&gt; on github. Community develops around tool or algo.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Make some $, but also get influence and accolades, which also translate to $ /  other generally desired things.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I’m not saying that this is always the case or that it’s even a bad thing; Simply that there is a regression towards this trend. All we need to do is look at thing like &lt;a href=&quot;https://www.image-net.org/&quot;&gt;ImageNet&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/AlexNet&quot;&gt;AlexNet&lt;/a&gt;, &lt;a href=&quot;https://openai.com/blog/gpt-3-apps/&quot;&gt;GPT3&lt;/a&gt;, &lt;a href=&quot;https://pytorch.org/&quot;&gt;PyTorch&lt;/a&gt;, &lt;a href=&quot;https://www.tensorflow.org/&quot;&gt;Tensorflow&lt;/a&gt; and now &lt;a href=&quot;https://jax.readthedocs.io/en/latest/&quot;&gt;Jax&lt;/a&gt;. All of these things are awesome! There has been so much growth and development of useful things are these technologies. Taking this example further, cryptocurrency, WEB3, and NFTs all also enjoy this kind of advertising by its contributors.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Conversely, Claude Shannon makes a case &lt;em&gt;against&lt;/em&gt; widespread adoption in this article. He hits back at the idea that the volume of papers published doesn’t represent the progress in the field. In lieu, he advocates for well thought out and carefully experimented research. This kind of suggestion, along with the description as careful experimentation as tedious and slow is surprisingly honest. Simply using the tool from information theory and applying the word “mutual information” or “entropy” doesn’t give the experimental community very much. Shannon is arguing that researchers do not use his methods as a black box to put in A and get some claim about B. The same sentiment is echoed by &lt;a href=&quot;http://bayes.cs.ucla.edu/jp_home.html&quot;&gt;Judea Pearl&lt;/a&gt; on causality. Concepts in this realm of computational explainability are particularly tedious because of the following metaphor. Code in python can be bound to C and C++ and in the same way, probability, math, and English can be smashed together to make a claim or statement. However, the simplicity of the answer often depends on the question. Certain principles of math or probability aren’t enough to characterize all kinds of wild questions a researcher can ask. I think this is the big warning that Shannon has here. Something along the lines of: “I made some hammers, but don’t go using them to dig a hole or write a good book”. The hammer analogy obfuscates the fact that the methods of information theory are &lt;em&gt;not&lt;/em&gt; a black box. They can be tinkered with in various ways and with the right parameterization and use case, they uncover causal relationships that we doing have any other tools to understand intuitively. And speaking of intuitive understanding of information theory… if you are interested, maybe check out &lt;a href=&quot;https://twitter.com/TivadarDanka/status/1475456688547250176&quot;&gt;this twitter thread&lt;/a&gt; that helps me.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">The Bandwagon by Claude E. Shannon</summary></entry><entry><title type="html">Review 9: The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning</title><link href="http://localhost:4000/reviews/review9/" rel="alternate" type="text/html" title="Review 9: The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning" /><published>2022-01-09T04:16:13-08:00</published><updated>2022-01-09T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review9</id><content type="html" xml:base="http://localhost:4000/reviews/review9/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2109.02869.pdf&quot;&gt;The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning&lt;/a&gt; by &lt;a href=&quot;https://otoro.net/ml/&quot;&gt;Dr. Ha&lt;/a&gt; and &lt;a href=&quot;https://www.linkedin.com/in/yujin-tang-98b3ab5a/?originalSubdomain=jp&quot;&gt;Yujin Tang&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -477,91 +506,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood.</summary></entry><entry><title type="html">Not Even Wrong</title><link href="http://localhost:4000/posts/Not_Even_Wrong/" rel="alternate" type="text/html" title="Not Even Wrong" /><published>2021-12-06T13:16:13-08:00</published><updated>2021-12-06T13:16:13-08:00</updated><id>http://localhost:4000/posts/Not_Even_Wrong</id><content type="html" xml:base="http://localhost:4000/posts/Not_Even_Wrong/">&lt;p&gt;Wow, I just found out what it means to be “Not even wrong”. The phase, coined by &lt;a href=&quot;https://en.wikipedia.org/wiki/Wolfgang_Pauli&quot;&gt;Wolfgang Pauli&lt;/a&gt; has just given me a huge slice of humble pie. Basically not even wrong is used to describe a totally failed conjecture. If something is meaningless, it’s definitely not right, but it’s not wrong either since you have to be coherent and pointed to be wrong. This has changed the way I think about wrong and right in science. Sometimes, as all scientists do, I use big words when I’m not exactly sure what I’m talking about to make it seem like I do. And the truth is, there’s no cookie and no medal for being hard to understand. From now on, if I’m unsure but I stil want to conjecture, I am going to do it with as basic of an explnation as possible. This way, if I’m misguided I’ll get caught fast instead of getting by on jibberish. This is the route to actually being right about a lot of things one day. Well, I hope that day comes, for now I’d rather be wrong than not even wrong.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/doing_it_wrong.jpeg&quot; alt=&quot;you're doing it wrong!&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/p&gt;</content><author><name>xander</name></author><category term="posts" /><summary type="html">Wow, I just found out what it means to be “Not even wrong”. The phase, coined by Wolfgang Pauli has just given me a huge slice of humble pie. Basically not even wrong is used to describe a totally failed conjecture. If something is meaningless, it’s definitely not right, but it’s not wrong either since you have to be coherent and pointed to be wrong. This has changed the way I think about wrong and right in science. Sometimes, as all scientists do, I use big words when I’m not exactly sure what I’m talking about to make it seem like I do. And the truth is, there’s no cookie and no medal for being hard to understand. From now on, if I’m unsure but I stil want to conjecture, I am going to do it with as basic of an explnation as possible. This way, if I’m misguided I’ll get caught fast instead of getting by on jibberish. This is the route to actually being right about a lot of things one day. Well, I hope that day comes, for now I’d rather be wrong than not even wrong.</summary></entry><entry><title type="html">Review 3</title><link href="http://localhost:4000/reviews/review3/" rel="alternate" type="text/html" title="Review 3" /><published>2021-11-18T13:16:13-08:00</published><updated>2021-11-18T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review3</id><content type="html" xml:base="http://localhost:4000/reviews/review3/">&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.sciencedirect.com/science/article/abs/pii/S0959438821000593&quot;&gt;From synapse to network: models of information storage and retrieval in neural circuits
-&lt;/a&gt; by &lt;a href=&quot;https://aljadeff.ucsd.edu/&quot;&gt;Johnatan (Yonatan) Aljadeff&lt;/a&gt; et al.&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;Citation: Aljadeff, Johnatan, et al. “From synapse to network: models of information storage and retrieval in neural circuits.” Current opinion in neurobiology 70 (2021): 24-33.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Intro
-        &lt;ul&gt;
-          &lt;li&gt;Stimuli dependent patterns in neural circuity lead to research in mechanisms for synaptic updates and and how such modifications change network dynamics.&lt;/li&gt;
-          &lt;li&gt;Introduces two theoretical approachs to modeling dynamics of delay periods in updates – biophysical connecitivity matrix and supervised learning approaches.&lt;/li&gt;
-          &lt;li&gt;This paper is gonna look at the former.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Synaptic Plasticity rules
-        &lt;ul&gt;
-          &lt;li&gt;Some STDP curves seem useful &lt;em&gt;in vitro&lt;/em&gt; butthe calcium dynamics &lt;em&gt;in vivo&lt;/em&gt; seem to alter these rules.&lt;/li&gt;
-          &lt;li&gt;In inferring directly from &lt;em&gt;in vivo&lt;/em&gt; theres a limitation in measuring both pre and post synaptic acitivty.
-            &lt;ul&gt;
-              &lt;li&gt;I’m curious how this limitaiton works. Is it a resolution thing, or is the issue that it’s hard to dissociate between pre and post synaptic updates?&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Lim et al. study seems to be leading as far as infering in vitro pre synaptic rules.&lt;/li&gt;
-          &lt;li&gt;So far ML models are being developed but only shown success on synthetic data.&lt;/li&gt;
-          &lt;li&gt;plasticity can be induced by pairing presynaptic spikes with postsynaptic plateu potentials over longer timecales.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Network dynamics
-        &lt;ul&gt;
-          &lt;li&gt;What type of network dynamics emerger from networks with these learning rules? Two types of scenarios, one where learning and retireval happen in seperate phases and another where the happen concurrently.&lt;/li&gt;
-          &lt;li&gt;Netowrks with learning seperate from retrieval
-            &lt;ul&gt;
-              &lt;li&gt;These networks demonstrate (converge?) to attractor states&lt;/li&gt;
-              &lt;li&gt;A lot of recurrent activity represents higher chatoic acitivity and less like to converge to solid representations but this is similar to the affect of delayed reponses tasks, where dynamics are confined to a stable subspace but are chaotic within that constraint.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Q about figure 2: what do the colorful triangles mean here? I see the caption and that they are activited based on some corresponding output. But I wonder in the larger context here. Are these considered attractor states by definition? Or are there some caveats. Is there are strict defnition that can define these sets, or they just seem to be active corresponding to some external input, given some plasticity rule?&lt;/li&gt;
-          &lt;li&gt;AH, question is answered here – seems theres a paper on this and that they can be dubbed “hebbian assemblies” – cool.
-            &lt;ul&gt;
-              &lt;li&gt;Gotta love when all I have to do to have a question answered is keep reading. :blush:&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Networks with dynamic connectivity
-        &lt;ul&gt;
-          &lt;li&gt;needs additional stabilization betsides hebbian synaptic plasticity.&lt;/li&gt;
-          &lt;li&gt;Here’s where E/I balance and recurrent connections come in.&lt;/li&gt;
-          &lt;li&gt;Figure 3 panel I is really cool, there really seems to be some kind of normal pattern behind the overlap when different ensembles are activated. (I think I am understandign this figure correctly)&lt;/li&gt;
-          &lt;li&gt;One thing I wonder about the figure is what happens when several stimuli are presented in a sequence. What happens to fraction of overlap in network state then? How often do these small activated ensembles overlap?&lt;/li&gt;
-          &lt;li&gt;Also I liked the column showing the subspaces.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Storage Capcacity
-        &lt;ul&gt;
-          &lt;li&gt;Ah, seems to go nicely with the previous questiona about encoding multiple stimuli in the network.&lt;/li&gt;
-          &lt;li&gt;Do biological netowrks reach optimal storage capcity as given by information encoding optimality gurantees on state space of connectivity matrix?&lt;/li&gt;
-          &lt;li&gt;Answer to this question depends on the constraints of state space for optimality gurantee – general unsuprivied = open question, hebbian unsupervied = networks seem to use this capcity.&lt;/li&gt;
-          &lt;li&gt;Likely we are more in the second case given other factors that encode info (like E/I ratio)&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;Note&lt;/strong&gt; Garder bound seems important for this, I should learn about it.&lt;/li&gt;
-          &lt;li&gt;Wow, seems that optimizing for information storage can recreate non trivial aspects of synaptic connectivity. Several studies cited here, could be interesting further reading since these properties seem new to me (except E/I balance).&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Discussion
-        &lt;ul&gt;
-          &lt;li&gt;&lt;strong&gt;Note&lt;/strong&gt; Ref 33 seems really interesting as challenge to persistent activity hypothesis.&lt;/li&gt;
-          &lt;li&gt;Temporal statistics here seem to be a real sticking point, hebbian networks can be persistent or sequential (what is squential btw) based on the statistics of the input during learning.
-            &lt;ul&gt;
-              &lt;li&gt;This isn’t what I thought the autor meant by temporal statisics. I thought they would be a post hoc test, not a pre (or input related) thing. Here is a gap in my knowledge. &lt;strong&gt;Note&lt;/strong&gt; ref 49 might be an intersting follow up.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Approach outlined here: biophysical synaptic updates can be contasted with supervised learning apporaches for different pros and cons.
-            &lt;ul&gt;
-              &lt;li&gt;Con for supervised learning is that some plasticity rules do satisfy locality constraints and are not biologicallly possible.&lt;/li&gt;
-              &lt;li&gt;integration of unsupervised and reward based into this approach will be good future work.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Can progress in experimental (reponse tasks) or computational (advancing biologically plausbile update rules in models) directions.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">From synapse to network: models of information storage and retrieval in neural circuits by Johnatan (Yonatan) Aljadeff et al.</summary></entry><entry><title type="html">Review 4</title><link href="http://localhost:4000/reviews/review4/" rel="alternate" type="text/html" title="Review 4" /><published>2021-11-18T13:16:13-08:00</published><updated>2021-11-18T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review4</id><content type="html" xml:base="http://localhost:4000/reviews/review4/">&lt;ul&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/doing_it_wrong.jpeg&quot; alt=&quot;you're doing it wrong!&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/p&gt;</content><author><name>xander</name></author><category term="posts" /><summary type="html">Wow, I just found out what it means to be “Not even wrong”. The phase, coined by Wolfgang Pauli has just given me a huge slice of humble pie. Basically not even wrong is used to describe a totally failed conjecture. If something is meaningless, it’s definitely not right, but it’s not wrong either since you have to be coherent and pointed to be wrong. This has changed the way I think about wrong and right in science. Sometimes, as all scientists do, I use big words when I’m not exactly sure what I’m talking about to make it seem like I do. And the truth is, there’s no cookie and no medal for being hard to understand. From now on, if I’m unsure but I stil want to conjecture, I am going to do it with as basic of an explnation as possible. This way, if I’m misguided I’ll get caught fast instead of getting by on jibberish. This is the route to actually being right about a lot of things one day. Well, I hope that day comes, for now I’d rather be wrong than not even wrong.</summary></entry><entry><title type="html">Review 4</title><link href="http://localhost:4000/reviews/review4/" rel="alternate" type="text/html" title="Review 4" /><published>2021-11-18T13:16:13-08:00</published><updated>2021-11-18T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review4</id><content type="html" xml:base="http://localhost:4000/reviews/review4/">&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://www.talyarkoni.org/blog/2018/08/18/if-we-already-understood-the-brain-would-we-even-know-it/&quot;&gt;If we already understood the brain, would we even know it?&lt;/a&gt; by &lt;a href=&quot;https://talyarkoni.org/&quot;&gt;Tal Yarkoni&lt;/a&gt;.&lt;/p&gt;
 
@@ -645,165 +590,88 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">If we already understood the brain, would we even know it? by Tal Yarkoni.</summary></entry><entry><title type="html">Review 2</title><link href="http://localhost:4000/reviews/review2/" rel="alternate" type="text/html" title="Review 2" /><published>2021-11-14T13:16:13-08:00</published><updated>2021-11-14T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review2</id><content type="html" xml:base="http://localhost:4000/reviews/review2/">&lt;ul&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">If we already understood the brain, would we even know it? by Tal Yarkoni.</summary></entry><entry><title type="html">Review 3</title><link href="http://localhost:4000/reviews/review3/" rel="alternate" type="text/html" title="Review 3" /><published>2021-11-18T13:16:13-08:00</published><updated>2021-11-18T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review3</id><content type="html" xml:base="http://localhost:4000/reviews/review3/">&lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.biorxiv.org/content/10.1101/2021.02.26.433027v1.abstract&quot;&gt;Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights
-&lt;/a&gt; by &lt;a href=&quot;https://www.google.com/search?q=Ramin+Khajeh&amp;amp;oq=Ramin+Khajeh&amp;amp;aqs=chrome..69i57.82j0j7&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8&quot;&gt;Ramin Khajeh&lt;/a&gt;, &lt;a href=&quot;https://scholar.google.com/citations?user=rcb8W94AAAAJ&amp;amp;hl=ca&quot;&gt;Francesco Fumarola&lt;/a&gt;, &lt;a href=&quot;https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd&quot;&gt;Larry F. Abbott&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.sciencedirect.com/science/article/abs/pii/S0959438821000593&quot;&gt;From synapse to network: models of information storage and retrieval in neural circuits
+&lt;/a&gt; by &lt;a href=&quot;https://aljadeff.ucsd.edu/&quot;&gt;Johnatan (Yonatan) Aljadeff&lt;/a&gt; et al.&lt;/p&gt;
 
     &lt;ul&gt;
-      &lt;li&gt;Citation: Khajeh, Ramin, Francesco Fumarola, and L. F. Abbott. “Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights.” bioRxiv (2021).&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;DISCLAIMER&lt;/strong&gt; I am very interested in this part of computational neuroscience, but I’m a bit of a beginner to this topic. Some of the stuff here goes over my head, esp. the tractability of the gamma distribution in setting synaptic weights. If I got anything horribly wrong or you have any feedback please email me at zladd@berkeley.edu. Later I plan to add a feedback section using disqus at the botttom of each blog.&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Citation: Aljadeff, Johnatan, et al. “From synapse to network: models of information storage and retrieval in neural circuits.” Current opinion in neurobiology 70 (2021): 24-33.&lt;/p&gt;
+      &lt;/li&gt;
       &lt;li&gt;Intro
         &lt;ul&gt;
-          &lt;li&gt;Neurons recieve a lot of excitatory input so there must be inhbitory balance. Some mechanism are cited as responsible for this:
+          &lt;li&gt;Stimuli dependent patterns in neural circuity lead to research in mechanisms for synaptic updates and and how such modifications change network dynamics.&lt;/li&gt;
+          &lt;li&gt;Introduces two theoretical approachs to modeling dynamics of delay periods in updates – biophysical connecitivity matrix and supervised learning approaches.&lt;/li&gt;
+          &lt;li&gt;This paper is gonna look at the former.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Synaptic Plasticity rules
+        &lt;ul&gt;
+          &lt;li&gt;Some STDP curves seem useful &lt;em&gt;in vitro&lt;/em&gt; butthe calcium dynamics &lt;em&gt;in vivo&lt;/em&gt; seem to alter these rules.&lt;/li&gt;
+          &lt;li&gt;In inferring directly from &lt;em&gt;in vivo&lt;/em&gt; theres a limitation in measuring both pre and post synaptic acitivty.
             &lt;ul&gt;
-              &lt;li&gt;Recurrent excitation&lt;/li&gt;
-              &lt;li&gt;Recurrent inhibition&lt;/li&gt;
-              &lt;li&gt;Feedfoward excitation&lt;/li&gt;
+              &lt;li&gt;I’m curious how this limitaiton works. Is it a resolution thing, or is the issue that it’s hard to dissociate between pre and post synaptic updates?&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
-          &lt;li&gt;No evidence that feedforward excitaiton is particularly strong in these models.
+          &lt;li&gt;Lim et al. study seems to be leading as far as infering in vitro pre synaptic rules.&lt;/li&gt;
+          &lt;li&gt;So far ML models are being developed but only shown success on synthetic data.&lt;/li&gt;
+          &lt;li&gt;plasticity can be induced by pairing presynaptic spikes with postsynaptic plateu potentials over longer timecales.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Network dynamics
+        &lt;ul&gt;
+          &lt;li&gt;What type of network dynamics emerger from networks with these learning rules? Two types of scenarios, one where learning and retireval happen in seperate phases and another where the happen concurrently.&lt;/li&gt;
+          &lt;li&gt;Netowrks with learning seperate from retrieval
             &lt;ul&gt;
-              &lt;li&gt;This is definitely new to me.&lt;/li&gt;
+              &lt;li&gt;These networks demonstrate (converge?) to attractor states&lt;/li&gt;
+              &lt;li&gt;A lot of recurrent activity represents higher chatoic acitivity and less like to converge to solid representations but this is similar to the affect of delayed reponses tasks, where dynamics are confined to a stable subspace but are chaotic within that constraint.&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
-          &lt;li&gt;States that
+          &lt;li&gt;Q about figure 2: what do the colorful triangles mean here? I see the caption and that they are activited based on some corresponding output. But I wonder in the larger context here. Are these considered attractor states by definition? Or are there some caveats. Is there are strict defnition that can define these sets, or they just seem to be active corresponding to some external input, given some plasticity rule?&lt;/li&gt;
+          &lt;li&gt;AH, question is answered here – seems theres a paper on this and that they can be dubbed “hebbian assemblies” – cool.
             &lt;ul&gt;
-              &lt;li&gt;synaptic weight distributions have variance around $\frac{1}{\sqrt{k}}$ where $K$ is node in-degree.&lt;/li&gt;
-              &lt;li&gt;order of inhibitory input is around $\sqrt(K)$&lt;/li&gt;
-              &lt;li&gt;and it’s generally cancelled by an excitatory input of equal magnitude, but they want to avoid this.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Suggests that without feedforward exc. input, there will be low firing rate but moves this evidence in argument for a sparser network, not a dense netowrk with low firing rate neurons.&lt;/li&gt;
-          &lt;li&gt;Getting rid of feedforward exc. means that synaptic distirbutions lose variance, so they suggest remedying this by making synaptic strength vary with a mean of $\frac{1}{\sqrt{K}}$ but then vary with order $\frac{1}{\sqrt{K}}$ this means total variance is now $\frac{\sqrt{K}}{\sqrt{K}}$ again (prev. it was $\frac{1}{\sqrt{k}}$)&lt;/li&gt;
-          &lt;li&gt;One part of this that I don’t understand is a formal mathematical definition for a &lt;em&gt;synaptic weight distribution&lt;/em&gt;. I think that for a more experienced reader, they will know what this means. My understanding is that this distribution will be a vector like $\bf{x} \in \mathbb{R^{K}}$ and this vector with the excitory input would follow something like $\bf{x_{1:\sqrt{K}}} \sim \mathcal{N}(\frac{1}{\sqrt{K}},1)$ (standard model –&amp;gt; variance == 1?) and the inihbitory component would be $\bf{x_{1:\sqrt{K}}} \sim \mathcal{N}(-\frac{1}{\sqrt{K}},1)$.
-            &lt;ul&gt;
-              &lt;li&gt;there are a few things I here I would want to ask:
-                &lt;ol&gt;
-                  &lt;li&gt;We have only accounted for $ 2 \times \sqrt{K}$ of the $K$ weights. Are the rest of the synaptic weights just 0?
-                    &lt;ul&gt;
-                      &lt;li&gt;honestly, I’m missing something here. I think all weights are accounted for, I just don’t know how.&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                  &lt;li&gt;Do these weights have unit variance?&lt;/li&gt;
-                &lt;/ol&gt;
-              &lt;/li&gt;
+              &lt;li&gt;Gotta love when all I have to do to have a question answered is keep reading. :blush:&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;The model
+      &lt;li&gt;Networks with dynamic connectivity
         &lt;ul&gt;
-          &lt;li&gt;This part starts to clear up the questions above&lt;/li&gt;
-          &lt;li&gt;They state that
-            &lt;blockquote&gt;
-              &lt;p&gt;Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights. (Khajeh 2021)&lt;/p&gt;
-              &lt;blockquote&gt;
-                &lt;p&gt;Networks have currents $x_i$ for $i = 1 … N$ and firing rates $\phi(x_i)$ that obey
-   \begin{equation}
-   \Gamma_x \frac{dx_i}{dt} = -x_i - \sum\limits_j^N J_{ij}\phi(x_j) + I_0
-   \end{equation} where $\phi$ is a nonlinear function and $J_{ij} \geq 0$&lt;/p&gt;
-              &lt;/blockquote&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-          &lt;li&gt;I am not sure what $J_{ij}$ represents now. *note: it get’s explained a few sentences later. – they are i.i.d. weights.&lt;/li&gt;
-          &lt;li&gt;Besides that, this function does a good job of clearly defining synaptic integration.&lt;/li&gt;
-          &lt;li&gt;Considers tangenet vs. exponential nonlinear activation functions for $\phi$.&lt;/li&gt;
+          &lt;li&gt;needs additional stabilization betsides hebbian synaptic plasticity.&lt;/li&gt;
+          &lt;li&gt;Here’s where E/I balance and recurrent connections come in.&lt;/li&gt;
+          &lt;li&gt;Figure 3 panel I is really cool, there really seems to be some kind of normal pattern behind the overlap when different ensembles are activated. (I think I am understandign this figure correctly)&lt;/li&gt;
+          &lt;li&gt;One thing I wonder about the figure is what happens when several stimuli are presented in a sequence. What happens to fraction of overlap in network state then? How often do these small activated ensembles overlap?&lt;/li&gt;
+          &lt;li&gt;Also I liked the column showing the subspaces.&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;Simulation results
+      &lt;li&gt;Storage Capcacity
         &lt;ul&gt;
-          &lt;li&gt;When excitatory input is set to $I_0 \sim \sqrt{K}$ the network has either sparse and high firing rate reponses (high variance), or dense and low firing rate responses (low variance).
-            &lt;ul&gt;
-              &lt;li&gt;this lines up nicely with what was introduced in the beginning and has a very clear inuitive interpretation. Nice!&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Then they dig in to some detailed numerical explanations for this effect.&lt;/li&gt;
-          &lt;li&gt;Figure 1 is very clear :thumbsup:
-            &lt;ul&gt;
-              &lt;li&gt;I was surprised to see that in panel G, the feedfoward input only had a small impact on the fraction of active neurons.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Sparse E/I balance lead to non-gaussian 0-skewed distribution of synaptic weights&lt;/li&gt;
-          &lt;li&gt;The authors state that these results represent a robust distribution of synaptic weights desipte not having any excitatory input.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Analysis of Sparse Balance Networks
-        &lt;ul&gt;
-          &lt;li&gt;here the authors explore high variance, low exc. input, sparse networks further using heavside non-linear response function.
-            &lt;ul&gt;
-              &lt;li&gt;had to look this one up, but it’s basically a piecewise activaiton function where the gradient is the &lt;a href=&quot;https://en.wikipedia.org/wiki/Dirac_delta_function&quot;&gt;dirac delta function&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;weights drawn from $\text{gamma}(k, \theta)$&lt;/li&gt;
-          &lt;li&gt;Figure 3A would benefit from text titles on the figure, not just in the caption (at least for a reader like me lol I suck at reading figs).&lt;/li&gt;
-          &lt;li&gt;What I got out of Fig. 3 is that heavside function lead to lower fraction of active neurons compared to tanh and exp. activation functions and thus a sparser netowrk. But that it also had a non-gaussian distribution of weights under the sparse condition.&lt;/li&gt;
-          &lt;li&gt;Interesting point about having a larger $K$ or shape parameter for gamma, one might expect that the gamma function approximate gaussian function. But this is not the case with $\eta \sim \text{gamma}(\alpha, \theta)$.&lt;/li&gt;
-          &lt;li&gt;I wonder if I understood that right?&lt;/li&gt;
-          &lt;li&gt;If feedforward bias is small  –&amp;gt; large synaptic variance required for robust fluctuation.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Sparse Activity Arises from Network Dynamics
-        &lt;ul&gt;
-          &lt;li&gt;They use population averaged autocorrelation function to find out how much the weight distribution is affected by the previous weight distribution at some lag.&lt;/li&gt;
-          &lt;li&gt;Autocorrelation decays faster for larger K (fig. 4).
-            &lt;blockquote&gt;
-              &lt;p&gt;Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights. (Khajeh 2021)&lt;/p&gt;
-              &lt;blockquote&gt;
-                &lt;p&gt;it is the dynamics of the recurrent synaptic inputs, not their size, that leads to sparse activity at large K&lt;/p&gt;
-              &lt;/blockquote&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Mean Field Analysis
-        &lt;ul&gt;
-          &lt;li&gt;Introduces a variable $m$ which is the mean-field approximation for $\bar{\phi}$&lt;/li&gt;
-          &lt;li&gt;Based on fuctions 7 and 11 (I think) they define closed form equation for $m$ in terms of gamma dist. shape parameter $\alpha$ as 
-  \begin{equation}
-  \alpha = \frac{mJ_0^2\sqrt(m)}{g^2}
-  \end{equation}
-            &lt;ul&gt;
-              &lt;li&gt;$g^2$ comes from gamma dist. scale parameter.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;considers several cases of computing autocorrelation of $\eta$ based on different sizes of $K$ and decorrealtion rate $\beta$.
-            &lt;ul&gt;
-              &lt;li&gt;When $K$ is small, then $eta$ follows gamma distribution $\text{gamma}(\alpha, \theta)$ and then they can solve closed form mean field calcuation using integral.&lt;/li&gt;
-              &lt;li&gt;even at $K ~ 10^3$ this holds.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Then there’s a more complicated closed form calculation for $var(\eta)$ that I’m gonna skip over for now.
-            &lt;ul&gt;
-              &lt;li&gt;involves decomposing the variance into quenched and time dependent.&lt;/li&gt;
-              &lt;li&gt;not very familiar with this decomposition. Maybe if I look into mean field decomp. more I will see.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Fig. 5 just shows that this recover of gamma distribution parameters charcterizes weights and input parameter well. Again, clear and nice figure :thumbsup:&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Sparse balance in E-I network
-        &lt;ul&gt;
-          &lt;li&gt;shows that &lt;em&gt;network properties&lt;/em&gt; shown for I network model also apply for E/I model, such as sparsity (frac. of neurons active) and firing rates.&lt;/li&gt;
+          &lt;li&gt;Ah, seems to go nicely with the previous questiona about encoding multiple stimuli in the network.&lt;/li&gt;
+          &lt;li&gt;Do biological netowrks reach optimal storage capcity as given by information encoding optimality gurantees on state space of connectivity matrix?&lt;/li&gt;
+          &lt;li&gt;Answer to this question depends on the constraints of state space for optimality gurantee – general unsuprivied = open question, hebbian unsupervied = networks seem to use this capcity.&lt;/li&gt;
+          &lt;li&gt;Likely we are more in the second case given other factors that encode info (like E/I ratio)&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Note&lt;/strong&gt; Garder bound seems important for this, I should learn about it.&lt;/li&gt;
+          &lt;li&gt;Wow, seems that optimizing for information storage can recreate non trivial aspects of synaptic connectivity. Several studies cited here, could be interesting further reading since these properties seem new to me (except E/I balance).&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;Discussion
         &lt;ul&gt;
-          &lt;li&gt;Shows interesting network properties demonstrated in this anaylsis as a result of making feedforward excitation smaller.&lt;/li&gt;
-          &lt;li&gt;Broadens out implications to real world instances where E/I ratio is similarly composed.&lt;/li&gt;
-          &lt;li&gt;Interesting to point out this phenomenon in relating autocorrelation and network sparse responses seems to be a general effect.&lt;/li&gt;
-          &lt;li&gt;Definitely incresed my interested in mean field theory.&lt;/li&gt;
-          &lt;li&gt;Here is what I think is really the most fascinating takeway:
-  &lt;strong&gt;“The large degree of variability in the synapses could route stimulus information along particular  paths across network neurons”&lt;/strong&gt;&lt;/li&gt;
-          &lt;li&gt;A reasonable claim that it is not just feedforward input that influences selective network responses but also recurrent synaptic input.
+          &lt;li&gt;&lt;strong&gt;Note&lt;/strong&gt; Ref 33 seems really interesting as challenge to persistent activity hypothesis.&lt;/li&gt;
+          &lt;li&gt;Temporal statistics here seem to be a real sticking point, hebbian networks can be persistent or sequential (what is squential btw) based on the statistics of the input during learning.
             &lt;ul&gt;
-              &lt;li&gt;The number of recurrent connections in the brain would support this idea. If there is so many recurrent networks, they must be doing something.&lt;/li&gt;
-              &lt;li&gt;Ideas here build on some early work by M. Jordan cited in The Computational Brain by Terrence Sejnowski on using recurrent networks to identify shapes and the expressive power of &lt;em&gt;non-feedforward&lt;/em&gt; connections.&lt;/li&gt;
-              &lt;li&gt;Granted, I haven’t actually read this 1998 work, just read the watered down example in Dr. Sejnowski’s book.&lt;/li&gt;
+              &lt;li&gt;This isn’t what I thought the autor meant by temporal statisics. I thought they would be a post hoc test, not a pre (or input related) thing. Here is a gap in my knowledge. &lt;strong&gt;Note&lt;/strong&gt; ref 49 might be an intersting follow up.&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
+          &lt;li&gt;Approach outlined here: biophysical synaptic updates can be contasted with supervised learning apporaches for different pros and cons.
+            &lt;ul&gt;
+              &lt;li&gt;Con for supervised learning is that some plasticity rules do satisfy locality constraints and are not biologicallly possible.&lt;/li&gt;
+              &lt;li&gt;integration of unsupervised and reward based into this approach will be good future work.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Can progress in experimental (reponse tasks) or computational (advancing biologically plausbile update rules in models) directions.&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights by Ramin Khajeh, Francesco Fumarola, Larry F. Abbott</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">From synapse to network: models of information storage and retrieval in neural circuits by Johnatan (Yonatan) Aljadeff et al.</summary></entry></feed>

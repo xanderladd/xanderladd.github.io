@@ -1,0 +1,40 @@
+---
+layout: base
+title:  "Review 12: Just Ask for Generalization"
+date:   2022-1-29 5:16:13 -0700
+author: xander
+categories: reviews
+---
+
+
+
+[Just Ask for Generalization](https://evjang.com/2021/10/23/generalization.html) by [Eric Jang](https://evjang.com/)
+
+
+
+> Jang 2021
+>> Generalizing to what you want may be easier than optimizing directly for what you want. We might even ask for "consciousness".
+
+- I read this hook and I was immediately into reading the blog. Saying something like "generalizing for consciousness" is engaging. Although it's a grand claim from the looks of it, it's a great way to start by saying _something_. I think scientists are so careful about the claims they make, that their hooks become boring even in blogs. This is what blogs are for, let it fly! I'm in.
+- The name "grokking" in the double descent phenomenon is weird. The authors could have chosen such a cooler name. 
+    - This is the idea that if you keep training after training loss has converged you can still get better generalization in test data.
+- Recently, we've seen neural networks and ML have a simple narrative. Lots of data, lots of computing, and lots of parameters (high capacity model) can do some great things. 
+    - The blog shows DALL-E which is really an excellent example of generalization in ML.
+- Interesting transition into the failure of RL to generalize the same way.
+- Setting up Markov Decision Processes (MDP). 
+    - Distribution of actions in states: $p(a \mid s)$, reward: $p(r_t, s_t)$ and transition probabilities $p(s_{t+1} \mid s_t, a_t)$.
+    - Goal to maximize $R(\Theta)$ (reward) where theta is a policy over $t_i=1 \longrightarrow t$.
+- In RL we don't know the optimal policy, so we use the experience of the model.
+- The various ways of doing this involve learning updates with gradients of the expected reward. Can learn by sampling policy parameters (CMA-ES), or by gradient guided actions (PPO).
+- There are lots of sources of variance with RL, like the starting position of the agent, non-determinism in the state action transitions. Using an online learning policy incurs more of this variance and researchers need to have a large minibatch to get stable training outcomes.
+- "Offline RL is not as data absorbent as supervised learning"
+- Decision Transformer as an example of generalization in predicting all possible policy trajectories (not just the good ones)
+- There is a lot that can be learned from simply differentiating good from bad policies and D-REX aims to leverage a perturbation kind of approach towards this.
+- The move to begin making conclusions starts with this really cool "just ask for generalization" table.
+    - Provides the "generalized" version of each RL optimization problem.
+    - There are a few, but "watch try learn" is the most interesting to me. The idea of learning a function that learns _how learning policies are learned_ seems inefficient at first look but is actually very useful.
+- To sum some of this up: the generalized approaches change the single trajectory from initial states to one optimal policy to initial states to multiple trajectories.
+- Now blog circles back to that initial flashy point on consciousness.
+    - Author recommends reading the recipe for consciouesness with a few strong drinks but I'm hung over so a beer will have to do.
+    - (roughly) the idea is that by modeling how other agents imitate eachother using optimal / suboptimal policies will require agents to introspect into other agents and this will create a more convincing form of conscious agent.
+    - Can a policy recognize itself? I think this is a fascinating question and another step into a unqiue type of machine intelligence that must construct a detailed intermediate of representations of the world through the state space/policy optimization approach.

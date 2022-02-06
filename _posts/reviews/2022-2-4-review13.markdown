@@ -1,0 +1,55 @@
+---
+layout: base
+title:  "Review 13: Computation Through Neural Population Dynamics Part 1"
+date:   2022-2-4 5:16:13 -0700
+author: xander
+categories: reviews
+---
+
+
+
+[Computation Through Neural Population Dynamics](https://www.annualreviews.org/doi/pdf/10.1146/annurev-neuro-092619-094115) by [Saurabh Vyas](https://smvyas.github.io/)
+
+Citation: Vyas, Saurabh, et al. "Computation through neural population dynamics." Annual Review of Neuroscience 43 (2020): 249-275.
+
+- Gonna make this a two-part review since this one is a little longer.
+- The dynamic systems approach to population neuron activity is  interesting. I just recently learned about the field called dynamical systems, which is exciting. I had always thought "dynamical system" was an adjective (and it is), but I never imagined they have their own field of mathematical research. 
+    - formal def. of dynamical system: $\frac{dx}{dt} = f(x(t), u(t)) $.
+    - $x$ is the neural population response at time $t$ and $u$ is the external input.
+    - pendulum as a brief example of a dynamical system.
+- Move from introduction to the brain as a dynamical system to discussing neuronal population firing trajectory. 
+    - Here they bring up dimensionality reduction as an efficient method for simplifying the case when you have thousands of neuron trajectories and of course this is a valid approach. However, the statement that "we only lose $x$ amount of variance with PCA, so PCA is good" is one I take with a grain of salt. Most data can have most of its variance accounted for by 10 PCs. I don't think accounted variance means dim. reduction on neural trajectories is a great idea. On the other hand, it's not likely we're gonna start looking at all trajectories and find intuitive understanding, so I'll stop complaining.
+- **Computation through Dynamics (CTD)** : dynamics of how neural circuit + input evolve through state space.
+    - underlying all the things we do!
+- CTD mathematical intro
+    - Deep Learning
+        - Data modeling: use the internal state to find $f$
+        - Task modeling: input / output pairs from a task and we wish to identify $f$ that could have possibly led to these pairs.
+            - Task modeling seems so much harder!
+        - RNNs as the neural network / DL approach to solving the $f$ responsible for dynamical systems.
+            - glad they used the pendulum example to explain this.
+    - High Dim. Systems
+        - Linear dynamical system (LDS) : $\frac{dx}{dt} = L(x(t),u(t)) = Ax(t) + Bu(t)$
+        - Linear dynamics around fixed points: attractor, repeller, oscillator.
+        - Stable orbits / unstable orbits.
+        - LDS around fixed point with input: $\frac{d\delta (s)}{dt} = A(x^\*,u^\*)\delta x(t) + B(x^\*,u^\*)\delta u(t) $
+            - $\delta x(t) = x(t) - x^\*$ and same for $\delta u(t)$. This just means they have an initial point denoted by $\*$ term.
+    - Linear Subspaces and Manifolds
+        - 2D manifold looks like a pringle.
+        - Most of this was reviewed, but I did not understand the purpose of figure 6 showing potent space and null space.
+- Dynamical Systems in Motor Control
+    - What principles guide the generation of the observed time-varying patterns of motor cortical activity?
+    - Delay reaching task as an example of a common experimental paradigm for motor preparation.
+        - CTD views preparatory activity as an initial condition. Not a necessary condition though; Other initial states can have the same motor movement, but being closer to the right one is advantageous for several reasons that they explain.
+            - Competing hypothesis presented.
+        - RNN model to try to produce motor activity given preparatory activity.
+        - Null spaces as preparation preclude some activity because it is orthogonal to that initial condition.
+    - Dynamical motifs during movement
+        - **Condition invariant signal**: signal that follows timing/onset of cue. Large component of population response. 
+            - Roughly, releases the preporatory state from an attractor like state to a rotating state.
+            - The paper with citation (Sussile 2015) that is a "sufficiency test for the rorations motif" seems really interesting. Simple low dim RNN oscillation produced complex inputs/outputs for prep state --> muscle activity.
+        - Really interesting point that maybe these oscillating states are invetible outcomes of basic neuronal firing properties. 
+            - I don't think asking "when are these oscillating states informative?" is as clear as asking "how informative are these oscillation states?".
+        - Two similar states --> same movement == tangling. Then the reverse process is untangling.
+        - Low degree of trajectory divergence in supplementary motor area (SMA).
+        - Summart lost me a (d) - (f). Feels like I missed those later points somewhere in the reading.

@@ -82,4 +82,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review12/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 13: Computation Through Neural Population Dynamics Part 1",
+        "excerpt":"Computation Through Neural Population Dynamics by Saurabh Vyas Citation: Vyas, Saurabh, et al. “Computation through neural population dynamics.” Annual Review of Neuroscience 43 (2020): 249-275. Gonna make this a two-part review since this one is a little longer. The dynamic systems approach to population neuron activity is interesting. I just...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review13/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

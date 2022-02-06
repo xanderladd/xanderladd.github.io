@@ -1,4 +1,98 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-30T17:20:01-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 12: Just Ask for Generalization</title><link href="http://localhost:4000/reviews/review12/" rel="alternate" type="text/html" title="Review 12: Just Ask for Generalization" /><published>2022-01-29T04:16:13-08:00</published><updated>2022-01-29T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review12</id><content type="html" xml:base="http://localhost:4000/reviews/review12/">&lt;p&gt;&lt;a href=&quot;https://evjang.com/2021/10/23/generalization.html&quot;&gt;Just Ask for Generalization&lt;/a&gt; by &lt;a href=&quot;https://evjang.com/&quot;&gt;Eric Jang&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-06T13:19:10-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 13: Computation Through Neural Population Dynamics Part 1</title><link href="http://localhost:4000/reviews/review13/" rel="alternate" type="text/html" title="Review 13: Computation Through Neural Population Dynamics Part 1" /><published>2022-02-04T04:16:13-08:00</published><updated>2022-02-04T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review13</id><content type="html" xml:base="http://localhost:4000/reviews/review13/">&lt;p&gt;&lt;a href=&quot;https://www.annualreviews.org/doi/pdf/10.1146/annurev-neuro-092619-094115&quot;&gt;Computation Through Neural Population Dynamics&lt;/a&gt; by &lt;a href=&quot;https://smvyas.github.io/&quot;&gt;Saurabh Vyas&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Citation: Vyas, Saurabh, et al. “Computation through neural population dynamics.” Annual Review of Neuroscience 43 (2020): 249-275.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Gonna make this a two-part review since this one is a little longer.&lt;/li&gt;
+  &lt;li&gt;The dynamic systems approach to population neuron activity is  interesting. I just recently learned about the field called dynamical systems, which is exciting. I had always thought “dynamical system” was an adjective (and it is), but I never imagined they have their own field of mathematical research.
+    &lt;ul&gt;
+      &lt;li&gt;formal def. of dynamical system: $\frac{dx}{dt} = f(x(t), u(t)) $.&lt;/li&gt;
+      &lt;li&gt;$x$ is the neural population response at time $t$ and $u$ is the external input.&lt;/li&gt;
+      &lt;li&gt;pendulum as a brief example of a dynamical system.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Move from introduction to the brain as a dynamical system to discussing neuronal population firing trajectory.
+    &lt;ul&gt;
+      &lt;li&gt;Here they bring up dimensionality reduction as an efficient method for simplifying the case when you have thousands of neuron trajectories and of course this is a valid approach. However, the statement that “we only lose $x$ amount of variance with PCA, so PCA is good” is one I take with a grain of salt. Most data can have most of its variance accounted for by 10 PCs. I don’t think accounted variance means dim. reduction on neural trajectories is a great idea. On the other hand, it’s not likely we’re gonna start looking at all trajectories and find intuitive understanding, so I’ll stop complaining.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Computation through Dynamics (CTD)&lt;/strong&gt; : dynamics of how neural circuit + input evolve through state space.
+    &lt;ul&gt;
+      &lt;li&gt;underlying all the things we do!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;CTD mathematical intro
+    &lt;ul&gt;
+      &lt;li&gt;Deep Learning
+        &lt;ul&gt;
+          &lt;li&gt;Data modeling: use the internal state to find $f$&lt;/li&gt;
+          &lt;li&gt;Task modeling: input / output pairs from a task and we wish to identify $f$ that could have possibly led to these pairs.
+            &lt;ul&gt;
+              &lt;li&gt;Task modeling seems so much harder!&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;RNNs as the neural network / DL approach to solving the $f$ responsible for dynamical systems.
+            &lt;ul&gt;
+              &lt;li&gt;glad they used the pendulum example to explain this.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;High Dim. Systems
+        &lt;ul&gt;
+          &lt;li&gt;Linear dynamical system (LDS) : $\frac{dx}{dt} = L(x(t),u(t)) = Ax(t) + Bu(t)$&lt;/li&gt;
+          &lt;li&gt;Linear dynamics around fixed points: attractor, repeller, oscillator.&lt;/li&gt;
+          &lt;li&gt;Stable orbits / unstable orbits.&lt;/li&gt;
+          &lt;li&gt;LDS around fixed point with input: $\frac{d\delta (s)}{dt} = A(x^*,u^*)\delta x(t) + B(x^*,u^*)\delta u(t) $
+            &lt;ul&gt;
+              &lt;li&gt;$\delta x(t) = x(t) - x^*$ and same for $\delta u(t)$. This just means they have an initial point denoted by $*$ term.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Linear Subspaces and Manifolds
+        &lt;ul&gt;
+          &lt;li&gt;2D manifold looks like a pringle.&lt;/li&gt;
+          &lt;li&gt;Most of this was reviewed, but I did not understand the purpose of figure 6 showing potent space and null space.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Dynamical Systems in Motor Control
+    &lt;ul&gt;
+      &lt;li&gt;What principles guide the generation of the observed time-varying patterns of motor cortical activity?&lt;/li&gt;
+      &lt;li&gt;Delay reaching task as an example of a common experimental paradigm for motor preparation.
+        &lt;ul&gt;
+          &lt;li&gt;CTD views preparatory activity as an initial condition. Not a necessary condition though; Other initial states can have the same motor movement, but being closer to the right one is advantageous for several reasons that they explain.
+            &lt;ul&gt;
+              &lt;li&gt;Competing hypothesis presented.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;RNN model to try to produce motor activity given preparatory activity.&lt;/li&gt;
+          &lt;li&gt;Null spaces as preparation preclude some activity because it is orthogonal to that initial condition.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Dynamical motifs during movement
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;Condition invariant signal&lt;/strong&gt;: signal that follows timing/onset of cue. Large component of population response.
+            &lt;ul&gt;
+              &lt;li&gt;Roughly, releases the preporatory state from an attractor like state to a rotating state.&lt;/li&gt;
+              &lt;li&gt;The paper with citation (Sussile 2015) that is a “sufficiency test for the rorations motif” seems really interesting. Simple low dim RNN oscillation produced complex inputs/outputs for prep state –&amp;gt; muscle activity.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Really interesting point that maybe these oscillating states are invetible outcomes of basic neuronal firing properties.
+            &lt;ul&gt;
+              &lt;li&gt;I don’t think asking “when are these oscillating states informative?” is as clear as asking “how informative are these oscillation states?”.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Two similar states –&amp;gt; same movement == tangling. Then the reverse process is untangling.&lt;/li&gt;
+          &lt;li&gt;Low degree of trajectory divergence in supplementary motor area (SMA).&lt;/li&gt;
+          &lt;li&gt;Summart lost me a (d) - (f). Feels like I missed those later points somewhere in the reading.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Computation Through Neural Population Dynamics by Saurabh Vyas</summary></entry><entry><title type="html">Review 12: Just Ask for Generalization</title><link href="http://localhost:4000/reviews/review12/" rel="alternate" type="text/html" title="Review 12: Just Ask for Generalization" /><published>2022-01-29T04:16:13-08:00</published><updated>2022-01-29T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review12</id><content type="html" xml:base="http://localhost:4000/reviews/review12/">&lt;p&gt;&lt;a href=&quot;https://evjang.com/2021/10/23/generalization.html&quot;&gt;Just Ask for Generalization&lt;/a&gt; by &lt;a href=&quot;https://evjang.com/&quot;&gt;Eric Jang&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Jang 2021&lt;/p&gt;
@@ -554,88 +648,4 @@
   &lt;/li&gt;
 &lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood.</summary></entry><entry><title type="html">Not Even Wrong</title><link href="http://localhost:4000/posts/Not_Even_Wrong/" rel="alternate" type="text/html" title="Not Even Wrong" /><published>2021-12-06T13:16:13-08:00</published><updated>2021-12-06T13:16:13-08:00</updated><id>http://localhost:4000/posts/Not_Even_Wrong</id><content type="html" xml:base="http://localhost:4000/posts/Not_Even_Wrong/">&lt;p&gt;Wow, I just found out what it means to be “Not even wrong”. The phase, coined by &lt;a href=&quot;https://en.wikipedia.org/wiki/Wolfgang_Pauli&quot;&gt;Wolfgang Pauli&lt;/a&gt; has just given me a huge slice of humble pie. Basically not even wrong is used to describe a totally failed conjecture. If something is meaningless, it’s definitely not right, but it’s not wrong either since you have to be coherent and pointed to be wrong. This has changed the way I think about wrong and right in science. Sometimes, as all scientists do, I use big words when I’m not exactly sure what I’m talking about to make it seem like I do. And the truth is, there’s no cookie and no medal for being hard to understand. From now on, if I’m unsure but I stil want to conjecture, I am going to do it with as basic of an explnation as possible. This way, if I’m misguided I’ll get caught fast instead of getting by on jibberish. This is the route to actually being right about a lot of things one day. Well, I hope that day comes, for now I’d rather be wrong than not even wrong.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/doing_it_wrong.jpeg&quot; alt=&quot;you're doing it wrong!&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/p&gt;</content><author><name>xander</name></author><category term="posts" /><summary type="html">Wow, I just found out what it means to be “Not even wrong”. The phase, coined by Wolfgang Pauli has just given me a huge slice of humble pie. Basically not even wrong is used to describe a totally failed conjecture. If something is meaningless, it’s definitely not right, but it’s not wrong either since you have to be coherent and pointed to be wrong. This has changed the way I think about wrong and right in science. Sometimes, as all scientists do, I use big words when I’m not exactly sure what I’m talking about to make it seem like I do. And the truth is, there’s no cookie and no medal for being hard to understand. From now on, if I’m unsure but I stil want to conjecture, I am going to do it with as basic of an explnation as possible. This way, if I’m misguided I’ll get caught fast instead of getting by on jibberish. This is the route to actually being right about a lot of things one day. Well, I hope that day comes, for now I’d rather be wrong than not even wrong.</summary></entry><entry><title type="html">Review 4</title><link href="http://localhost:4000/reviews/review4/" rel="alternate" type="text/html" title="Review 4" /><published>2021-11-18T13:16:13-08:00</published><updated>2021-11-18T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review4</id><content type="html" xml:base="http://localhost:4000/reviews/review4/">&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.talyarkoni.org/blog/2018/08/18/if-we-already-understood-the-brain-would-we-even-know-it/&quot;&gt;If we already understood the brain, would we even know it?&lt;/a&gt; by &lt;a href=&quot;https://talyarkoni.org/&quot;&gt;Tal Yarkoni&lt;/a&gt;.&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;Citation: Yarkoni, Tal. “If We Already Understood the Brain, Would We Even Know It?” Tal Yarkoni Blog, 29 Aug. 2019, https://www.talyarkoni.org/blog/2018/08/18/if-we-already-understood-the-brain-would-we-even-know-it/.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;First, I like this article already. If I had a dollar for everytime I hear a neuroscientist bemoan “we know nothing about the brain”…&lt;/li&gt;
-      &lt;li&gt;The assesment that we know ~ .1 % of the things there are to know about neuroscience is an interesting one for sure. Also that in 200 years or so we can shut down neuroscience.
-        &lt;ul&gt;
-          &lt;li&gt;This is a reason I am so happy I reviewed a blog instead of a paper today. Finally, we can speculate for arugments sake. Makes reading way more interesting then having to use axioms, posulates and citations for every claim made.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;The dissonance in the relationship between our personal understanding of the field and the cumulative knowledge in the field is really a bit concerning. I think this is pointing out that the emperor has no clothes.
-        &lt;ul&gt;
-          &lt;li&gt;In order to build the skills to be an excellent experimental scientist one must spend a lot of time working hands on in a lab.&lt;/li&gt;
-          &lt;li&gt;On the other hand, to understand the field they must spend so much time reading.&lt;/li&gt;
-          &lt;li&gt;There’s a tension here that like Tal says, causes us to ask the same question in different ways quite often.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Oooh, it is a tough question to wonder “why does such and such network to activate?”
-        &lt;ul&gt;
-          &lt;li&gt;We can sometimes answer things like &lt;em&gt;when&lt;/em&gt;, &lt;em&gt;where&lt;/em&gt;, &lt;em&gt;what&lt;/em&gt; etc. but why is difficult.&lt;/li&gt;
-          &lt;li&gt;This is on the DMN example.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;As I understand the general intelligence part of this blog the message is this: g_f, or general intelligence, is an effect with a slew of correlated causes (mechanisms involving attention, abstraciton etc.) and to try and pick out &lt;em&gt;the&lt;/em&gt; cause of intellgence is a losing propostion. general intelligence emerges among many influencing factors.&lt;/li&gt;
-      &lt;li&gt;This seems like a microcosm of the problem. We are looking for short answers to long quetions. If we want to “fully understand” how a mechanism or circuit works, it’ll invovle synthesizing complicated information at scales from mico to macro.
-        &lt;ul&gt;
-          &lt;li&gt;This reminds me of integrative biology class tests where I had to detail 5 or 10 steps in a response on autonomous nervous system. The nice part about this is we often looked at one level of complexity. We’d never be asked about the morphological changes to the neurons in the circuit becaue that’s just way too much information to have synthesized – it’s a big jump.&lt;/li&gt;
-          &lt;li&gt;In this sense, the full answers to how circuitry in the brain work aren’t obligated to be nice and digestable – but our explanations are.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;I like that Dan is always asking for a &lt;em&gt;core principle&lt;/em&gt; and D’Ann is always just denying the simplicity of one &lt;em&gt;core principle&lt;/em&gt; existing.&lt;/li&gt;
-      &lt;li&gt;And we leave off the article basically on the same note.
-        &lt;ul&gt;
-          &lt;li&gt;Sure we might be able to learn more and more detailed and expressive computational models and these models may even be able to account for all the variance we can hope for … but at this point we’d probably still be asking “what’s the underlying principle?”.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;I think this dilemma relates back to the Searle’s chinese room argument (Searle 2009), it’s like sure you can make make a latent space model that’s very expressive of the mechanism but this is all input/output … you haven’t truly learned the language.&lt;/li&gt;
-      &lt;li&gt;I like to think that Tal would agree with me here: The computation &lt;em&gt;is&lt;/em&gt; the language. The implementation level story is all there is.&lt;/li&gt;
-      &lt;li&gt;As we understand the computational story of the brain … it’s incredibly messy and convoluted.
-        &lt;ul&gt;
-          &lt;li&gt;What I mean is that latent models and manifolds are tricky to parameterize and design in a way where they can a) be accurate in predicting states and b) be human-understandable.
-            &lt;blockquote&gt;
-              &lt;p&gt;Neil deGrasse Tyson. Aug 21, 2017&lt;/p&gt;
-              &lt;blockquote&gt;
-                &lt;p&gt;“The universe is under no obligation to make sense to you.”&lt;/p&gt;
-              &lt;/blockquote&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Anyways, this blog seems to stand opposite of the aisle of a particular view in Jeff Hawkins’ &lt;a href=&quot;https://www.amazon.com/Intelligence-Understanding-Creation-Intelligent-Machines/dp/0805078533/ref=asc_df_0805078533/?tag=hyprod-20&amp;amp;linkCode=df0&amp;amp;hvadid=312128454859&amp;amp;hvpos=&amp;amp;hvnetw=g&amp;amp;hvrand=2933067035242335183&amp;amp;hvpone=&amp;amp;hvptwo=&amp;amp;hvqmt=&amp;amp;hvdev=c&amp;amp;hvdvcmdl=&amp;amp;hvlocint=&amp;amp;hvlocphy=9031201&amp;amp;hvtargid=pla-432166617256&amp;amp;psc=1&quot;&gt;On Intelligence&lt;/a&gt;
-        &lt;ul&gt;
-          &lt;li&gt;The view is this:
-            &lt;blockquote&gt;
-              &lt;p&gt;Paraphrased from Hawkins, J., &amp;amp; Blakeslee, S. (2004). On intelligence.&lt;/p&gt;
-              &lt;blockquote&gt;
-                &lt;p&gt;Imagine that aliens look at Earth and see a bunch of roads and they catalog every detail of each road and which one leads where etc. but they don’t really understand what the roads &lt;em&gt;mean&lt;/em&gt;. That is until they understand that humans couldn’t teleport places and need roads to move from one place to another in cars. Once this detail falls into place, the functionality begins to make a lot of sense.&lt;/p&gt;
-              &lt;/blockquote&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Obviously this is in defense that there are some intuitve explanations that can be delivered through human understable theory.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;As is often the case, I don’t think we’ll ever be able to ring a bell and declare one of these viewpoints the winner. In fact, I think that though they may stand on opposite sides of the aisle – to declare that they are at odds is even a stretch.&lt;/li&gt;
-      &lt;li&gt;I think a more appropriate understanding between the “there is a simple theory and once we know it, things will make more sense” and the “there’s no magic at the bottom that’ll simplify things for our tiny brains” is that these are just two different flavors of possible answers that can be served to the multitude of questions about the brain.&lt;/li&gt;
-      &lt;li&gt;And one final note. I really appreciate the Tal’s perspective in this blog because it’s a lot harder to take than Jeff’s in the quote. There are just some questions that can’t be answered. For example, the question &lt;em&gt;why&lt;/em&gt; are some people taller than others is just ill posed. There are a variety of reasons, not one causal explanation we can point to everytime.&lt;/li&gt;
-      &lt;li&gt;We’ll probably never stop asking well-posed and ill-posed questions about neuroscience. Or maybe we can just abandon our posts and leave it to philosophers. Either way, time to make peace with that now.&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;&lt;strong&gt;We can choose to grimace as we stare into the void, or we can have a good laugh.&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;Citations
-        &lt;ul&gt;
-          &lt;li&gt;Hawkins, J., &amp;amp; Blakeslee, S. (2004). On intelligence. New York: Times Books.&lt;/li&gt;
-          &lt;li&gt;Searle, John. “Chinese room argument.” Scholarpedia 4.8 (2009): 3100.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">If we already understood the brain, would we even know it? by Tal Yarkoni.</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/assets/images/doing_it_wrong.jpeg&quot; alt=&quot;you're doing it wrong!&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/p&gt;</content><author><name>xander</name></author><category term="posts" /><summary type="html">Wow, I just found out what it means to be “Not even wrong”. The phase, coined by Wolfgang Pauli has just given me a huge slice of humble pie. Basically not even wrong is used to describe a totally failed conjecture. If something is meaningless, it’s definitely not right, but it’s not wrong either since you have to be coherent and pointed to be wrong. This has changed the way I think about wrong and right in science. Sometimes, as all scientists do, I use big words when I’m not exactly sure what I’m talking about to make it seem like I do. And the truth is, there’s no cookie and no medal for being hard to understand. From now on, if I’m unsure but I stil want to conjecture, I am going to do it with as basic of an explnation as possible. This way, if I’m misguided I’ll get caught fast instead of getting by on jibberish. This is the route to actually being right about a lot of things one day. Well, I hope that day comes, for now I’d rather be wrong than not even wrong.</summary></entry></feed>

@@ -46,9 +46,9 @@ Citation: Vyas, Saurabh, et al. "Computation through neural population dynamics.
         - Null spaces as preparation preclude some activity because it is orthogonal to that initial condition.
     - Dynamical motifs during movement
         - **Condition invariant signal**: signal that follows timing/onset of cue. Large component of population response. 
-            - Roughly, releases the preporatory state from an attractor like state to a rotating state.
-            - The paper with citation (Sussile 2015) that is a "sufficiency test for the rorations motif" seems really interesting. Simple low dim RNN oscillation produced complex inputs/outputs for prep state --> muscle activity.
-        - Really interesting point that maybe these oscillating states are invetible outcomes of basic neuronal firing properties. 
+            - Roughly, releases the preparatory state from an attractor-like state to a rotating state.
+            - The paper with citation (Sussile 2015) that is a "sufficiency test for the rotations motif" seems really interesting. Simple low dim RNN oscillation produced complex inputs/outputs for prep state --> muscle activity.
+        - A really interesting point is that maybe these oscillating states are inevitable outcomes of basic neuronal firing properties. 
             - I don't think asking "when are these oscillating states informative?" is as clear as asking "how informative are these oscillation states?".
         - Two similar states --> same movement == tangling. Then the reverse process is untangling.
         - Low degree of trajectory divergence in supplementary motor area (SMA).

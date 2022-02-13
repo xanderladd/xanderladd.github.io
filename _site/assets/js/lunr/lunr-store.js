@@ -88,4 +88,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review13/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 14: Computation Through Neural Population Dynamics Part 2",
+        "excerpt":"Computation Through Neural Population Dynamics by Saurabh Vyas Citation: Vyas, Saurabh, et al. “Computation through neural population dynamics.” Annual Review of Neuroscience 43 (2020): 249-275. see part 1 if you haven’t. Picking up where I left off: Population Dynamics Underlying Motor Adaptation. To shift focus from motor pattern generation to...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review14/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

@@ -1,0 +1,46 @@
+---
+layout: base
+title:  "Review 14: Computation Through Neural Population Dynamics Part 2"
+date:   2022-2-13 5:16:13 -0700
+author: xander
+categories: reviews
+---
+
+
+
+[Computation Through Neural Population Dynamics](https://www.annualreviews.org/doi/pdf/10.1146/annurev-neuro-092619-094115) by [Saurabh Vyas](https://smvyas.github.io/)
+
+Citation: Vyas, Saurabh, et al. "Computation through neural population dynamics." Annual Review of Neuroscience 43 (2020): 249-275.
+
+- see [part 1](https://xanderladd.github.io/reviews/review13/) if you haven't.
+- Picking up where I left off: Population Dynamics Underlying Motor Adaptation.
+    - To shift focus from motor pattern generation to adaption they use a task where cursor movement is offset by a 45 degree counter-clockwise angle and the subject must learn to adapt to the offset of the cursor to get the cursor to the target.
+    - **washout**: once this adaptation is made, reversing the cursor movement offset causes errors in the opposite direction.
+    - Electrical microstimulation during these trials did not affect performance in the trials but afterward. For ML people: stimulation introduces uncertainty so the system reduces its learning rate to temper this uncertainty.
+    - Planning, but not execution allowed humans to learn different curl force field (CF) adaptations, like the one described above, as contextual input. Learning does not require dramatic changes to pattern gen. circuitry, but there is a shift between orthogonal subspaces 
+- Implications of Manifold Structure on Learning
+    - Hard to casually attribute movements to patterns of neurons, but BCI direct input to movement is helpful.
+    - Linear manifold created by BCI movements in unperturbed trials and then add perturbations that require movement outside of this linear manifold. This results in inside/outside intrinsic manifold.
+    - Rearranging of prelearned associations to adapt to outside intrinsic manifold.
+    - Redefine manifold based on inside/outside prelearned repertoire.
+    - RNN modeling approaches show that significant changes to RNN weights are required for out of manifold dynamics.
+- Dynamical Systems in Cognition
+    - Motor Timing
+        - State-dependent networks and ramping neurons as time modulation systems.
+        - Ready set go tasks show speed modulation in dorsomedial frontal cortex.
+    - Decision Making and Working Memory
+        - " Context dependence was not a result of traditional gating but rather of dynamics quenching activity along certain directions in state space, achieved via a contextually dependent state space shift." - Vyas et al. 2020
+    - RNN trajectory tunnels force states into stable trajectories.
+    - Key insights are that: a) Delayed association in biological circuits can be performed using transient dynamics and b) different regions of state space can subserve different functional roles.
+    - the recombination of actions to accomplish a certain task is an important research direction.
+- Challenges and Opportunities
+- Remaining questions:
+    - Where do inputs come from and how do they affect local circuit dynamics?
+    - What is I/O for a specific brain region?
+    - How do brain regions affect each other?
+- Optogenetic stimulation as a powerful approach for testing CTD model framework.
+-  Three steps:
+    1. Continued development of CTD framework.
+    2. Further research into methodological approaches towards causal predictions.
+    3. Providing concrete strategies for updating models.
+- The first and last steps are very startup-esque. Build and rebuild kind of thing. The second point is a serious epistemological problem.

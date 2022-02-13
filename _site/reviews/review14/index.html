@@ -9,38 +9,38 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Review 7: Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors - Alexander Ladd</title>
-<meta name="description" content="Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors by Dr. Austin Graves Dr. Richard Huganir.">
+<!-- begin _includes/seo.html --><title>Review 14: Computation Through Neural Population Dynamics Part 2 - Alexander Ladd</title>
+<meta name="description" content="Computation Through Neural Population Dynamics by Saurabh Vyas">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Alexander Ladd">
-<meta property="og:title" content="Review 7: Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors">
-<meta property="og:url" content="http://localhost:4000/reviews/review7/">
+<meta property="og:title" content="Review 14: Computation Through Neural Population Dynamics Part 2">
+<meta property="og:url" content="http://localhost:4000/reviews/review14/">
 
 
-  <meta property="og:description" content="Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors by Dr. Austin Graves Dr. Richard Huganir.">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2021-12-26T13:16:13-08:00">
+  <meta property="og:description" content="Computation Through Neural Population Dynamics by Saurabh Vyas">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2022-02-13T04:16:13-08:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/reviews/review7/">
+
+<link rel="canonical" href="http://localhost:4000/reviews/review14/">
 
 
 
@@ -230,87 +230,66 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">Review 7: Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors</h1>
+      <h1 id="page-title" class="page__title">Review 14: Computation Through Neural Population Dynamics Part 2</h1>
     
-    <p><a href="https://elifesciences.org/articles/66809">Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors</a> by <a href="http://neuroscience.bs.jhmi.edu/huganir/Member/AustinGraves.html">Dr. Austin Graves</a> <a href="https://www.hopkinsmedicine.org/profiles/details/richard-huganir">Dr. Richard Huganir</a>.</p>
+    <p><a href="https://www.annualreviews.org/doi/pdf/10.1146/annurev-neuro-092619-094115">Computation Through Neural Population Dynamics</a> by <a href="https://smvyas.github.io/">Saurabh Vyas</a></p>
+
+<p>Citation: Vyas, Saurabh, et al. “Computation through neural population dynamics.” Annual Review of Neuroscience 43 (2020): 249-275.</p>
 
 <ul>
-  <li>
-    <p>Citation: Graves, Austin R., et al. “Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors.” Elife 10 (2021): e66809.</p>
-  </li>
-  <li>First, I like how this article is structured. It has introduction, then just goes right into results. This is well tailored to the reader because unless you are in some very theoretical field and the method is <em>somehow</em> more important than the result, we want to read the results.</li>
-  <li>By the way, I had no idea what a SEP tag is or even what knockin means! I also didn’t know what GluA1 does.
+  <li>see <a href="https://xanderladd.github.io/reviews/review13/">part 1</a> if you haven’t.</li>
+  <li>Picking up where I left off: Population Dynamics Underlying Motor Adaptation.
     <ul>
-      <li><strong>knockin</strong>: mouse genetic lines that have an altered gene sequence.</li>
-      <li><strong>SEP</strong>:  super ecliptic pHluorin (SEP), flouresces at neutral Ph only meaning it will be expressed on the cell membrane, but not inside the cell. fluorescent tag for AMPAR (AMPA receptors)</li>
-      <li><strong>GluA1</strong>: Glutamate receptor protein that forms AMPAR</li>
+      <li>To shift focus from motor pattern generation to adaption they use a task where cursor movement is offset by a 45 degree counter-clockwise angle and the subject must learn to adapt to the offset of the cursor to get the cursor to the target.</li>
+      <li><strong>washout</strong>: once this adaptation is made, reversing the cursor movement offset causes errors in the opposite direction.</li>
+      <li>Electrical microstimulation during these trials did not affect performance in the trials but afterward. For ML people: stimulation introduces uncertainty so the system reduces its learning rate to temper this uncertainty.</li>
+      <li>Planning, but not execution allowed humans to learn different curl force field (CF) adaptations, like the one described above, as contextual input. Learning does not require dramatic changes to pattern gen. circuitry, but there is a shift between orthogonal subspaces</li>
     </ul>
   </li>
-  <li>The begininning the results section focuses on how their SEP-GluA1 knockin mouse line is functionally the same as the wildtype (WT) mouse line.
+  <li>Implications of Manifold Structure on Learning
     <ul>
-      <li>The authors do this thoroughly using several experiments.
-        <ol>
-          <li>Northern and Western blot flourescence protocols to determine mRNA protein expression of GluA1, GluA2, and GluA3 in knockin line and WT line. This is done using slice of mouse hippocampal tissue. (Fig 1)
-            <ul>
-              <li>They noticed that in their knockin mice, GluA1 postsynaptic density is lowered due to the knockin line mutation of the mRNA. Then knockin line mice have higher GluA3 to compensate.</li>
-              <li>However, this doesn’t seem to have any functional effects on synpatic plasticity – as the authors go on to show.</li>
-            </ul>
-          </li>
-          <li>Single voltage clamp records of hippocampal slices (Fig 2), which show that the synaptic behavior of SEP-GluA1 knockin mice is unaffected by the tag.
-            <ul>
-              <li>They show this by showing that the EPSC (excitatory post synpatic currents) are unaffected by SEP tagging.</li>
-              <li>They show this under LTP induction too in the next step.</li>
-            </ul>
-          </li>
-          <li>Compounds like TTX and BIC have homogenous effects on relative surface AMPA recepots of both WT and SEP-GluA1 knockin mice.</li>
-          <li>Behavioral experiments, where SEP-GluA1 mice had the same behavior on locomotor task, anxiety task, spatial novelty prefence task.
-            <ul>
-              <li>I know the difference is not significant but in the anxiety task it does look like SEP-GluA1 mice <em>do</em> spend more time in the open arms. 
-        - Overall, this battery of evidence is convincing that we can consider SEP-GluA1 mice as representative of WT mice.</li>
-            </ul>
-          </li>
-        </ol>
-      </li>
+      <li>Hard to casually attribute movements to patterns of neurons, but BCI direct input to movement is helpful.</li>
+      <li>Linear manifold created by BCI movements in unperturbed trials and then add perturbations that require movement outside of this linear manifold. This results in inside/outside intrinsic manifold.</li>
+      <li>Rearranging of prelearned associations to adapt to outside intrinsic manifold.</li>
+      <li>Redefine manifold based on inside/outside prelearned repertoire.</li>
+      <li>RNN modeling approaches show that significant changes to RNN weights are required for out of manifold dynamics.</li>
     </ul>
   </li>
-  <li>Now to discuss the good part. What happens to these synapses at large scale.</li>
-  <li>First, this is good to know:
-    <blockquote>
-      <p>Graves et al., 2021</p>
-      <blockquote>
-        <p>We found a significant correlation between SEP-GluA1 fluorescence intensity and uEPSC amplitude (Figure 5c), indicating that SEP fluorescent intensity can be used as a proxy for synaptic strength.</p>
-      </blockquote>
-    </blockquote>
-  </li>
-  <li>Glutamate uncaging led to increased uEPSC amplitude and SEP fluorescence in stimulated spines.
+  <li>Dynamical Systems in Cognition
     <ul>
-      <li>glutamate uncaging is light induced photstimulation of neurons.</li>
-      <li>authors show that as expected, this induced stimulation of neurons likely results in more AMPAR receptors on the cell membrane as a marker of increased synaptic strength.</li>
-      <li>Shown clearly in Figure 5D-F. These are important figures. They show that LTP in high frequency pairings is marked by an incresed SEP flourescence.</li>
-    </ul>
-  </li>
-  <li>Even <em>in vitro</em> there’s a strong correlation between SEP fluorescence and EPSC amplitude.</li>
-  <li>Paper presents an unsupervised algorithm for synapse detection.</li>
-  <li>Sensory stimulation task
-    <ul>
-      <li>The detection algorithm recognizes <strong>hundreds of thousands of synapses</strong>.</li>
-      <li>The experimenter stimulates one mouse whisker but not the other.</li>
-      <li>The C2 barrel corresponding to stimulated whisker displays a higher SEP-GluA1 intensity from the whisker stimulation induced LTP.</li>
-      <li>The figure showing this (Fig 8c.) shows this result clearly and it is statisically significant.</li>
-      <li>Not only that, we get the time scale this happened on as well. (3hrs)
+      <li>Motor Timing
         <ul>
-          <li>well likely the effect just observed in post stim imaging actually.</li>
+          <li>State-dependent networks and ramping neurons as time modulation systems.</li>
+          <li>Ready set go tasks show speed modulation in dorsomedial frontal cortex.</li>
         </ul>
       </li>
+      <li>Decision Making and Working Memory
+        <ul>
+          <li>” Context dependence was not a result of traditional gating but rather of dynamics quenching activity along certain directions in state space, achieved via a contextually dependent state space shift.” - Vyas et al. 2020</li>
+        </ul>
+      </li>
+      <li>RNN trajectory tunnels force states into stable trajectories.</li>
+      <li>Key insights are that: a) Delayed association in biological circuits can be performed using transient dynamics and b) different regions of state space can subserve different functional roles.</li>
+      <li>the recombination of actions to accomplish a certain task is an important research direction.</li>
     </ul>
   </li>
-  <li>This sensory stimulation task is awesome for a few reasons.
+  <li>Challenges and Opportunities</li>
+  <li>Remaining questions:
+    <ul>
+      <li>Where do inputs come from and how do they affect local circuit dynamics?</li>
+      <li>What is I/O for a specific brain region?</li>
+      <li>How do brain regions affect each other?</li>
+    </ul>
+  </li>
+  <li>Optogenetic stimulation as a powerful approach for testing CTD model framework.</li>
+  <li>Three steps:
     <ol>
-      <li>They have a ton of data since they detect so many synapses. This means when something is significant it has an N &gt; 100,00, which is very convincing.</li>
-      <li>I <em>think</em> this is the first experiment demonstrating one of the actual mechaisms of LTP <em>in vivo</em> and that’s pretty cool.</li>
-      <li>This is just showing a sensory stimulation task. I wonder what else this methodology can show!</li>
+      <li>Continued development of CTD framework.</li>
+      <li>Further research into methodological approaches towards causal predictions.</li>
+      <li>Providing concrete strategies for updating models.</li>
     </ol>
   </li>
+  <li>The first and last steps are very startup-esque. Build and rebuild kind of thing. The second point is a serious epistemological problem.</li>
 </ul>
 
 
@@ -429,7 +408,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 minute read
+          2 minute read
         
       </span>
     
@@ -552,7 +531,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          7 minute read
+          6 minute read
         
       </span>
     
@@ -989,7 +968,7 @@
 
 <!-- 
 
-<title>Review 7: Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors - Alexander Ladd</title>
+<title>Review 14: Computation Through Neural Population Dynamics Part 2 - Alexander Ladd</title>
 <meta name="viewport" content="width=device-width">
 
 <link rel="stylesheet" href="/css/all.css"> -->

@@ -1,4 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-06T13:19:10-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 13: Computation Through Neural Population Dynamics Part 1</title><link href="http://localhost:4000/reviews/review13/" rel="alternate" type="text/html" title="Review 13: Computation Through Neural Population Dynamics Part 1" /><published>2022-02-04T04:16:13-08:00</published><updated>2022-02-04T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review13</id><content type="html" xml:base="http://localhost:4000/reviews/review13/">&lt;p&gt;&lt;a href=&quot;https://www.annualreviews.org/doi/pdf/10.1146/annurev-neuro-092619-094115&quot;&gt;Computation Through Neural Population Dynamics&lt;/a&gt; by &lt;a href=&quot;https://smvyas.github.io/&quot;&gt;Saurabh Vyas&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-13T11:31:00-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 14: Computation Through Neural Population Dynamics Part 2</title><link href="http://localhost:4000/reviews/review14/" rel="alternate" type="text/html" title="Review 14: Computation Through Neural Population Dynamics Part 2" /><published>2022-02-13T04:16:13-08:00</published><updated>2022-02-13T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review14</id><content type="html" xml:base="http://localhost:4000/reviews/review14/">&lt;p&gt;&lt;a href=&quot;https://www.annualreviews.org/doi/pdf/10.1146/annurev-neuro-092619-094115&quot;&gt;Computation Through Neural Population Dynamics&lt;/a&gt; by &lt;a href=&quot;https://smvyas.github.io/&quot;&gt;Saurabh Vyas&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Citation: Vyas, Saurabh, et al. “Computation through neural population dynamics.” Annual Review of Neuroscience 43 (2020): 249-275.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;see &lt;a href=&quot;https://xanderladd.github.io/reviews/review13/&quot;&gt;part 1&lt;/a&gt; if you haven’t.&lt;/li&gt;
+  &lt;li&gt;Picking up where I left off: Population Dynamics Underlying Motor Adaptation.
+    &lt;ul&gt;
+      &lt;li&gt;To shift focus from motor pattern generation to adaption they use a task where cursor movement is offset by a 45 degree counter-clockwise angle and the subject must learn to adapt to the offset of the cursor to get the cursor to the target.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;washout&lt;/strong&gt;: once this adaptation is made, reversing the cursor movement offset causes errors in the opposite direction.&lt;/li&gt;
+      &lt;li&gt;Electrical microstimulation during these trials did not affect performance in the trials but afterward. For ML people: stimulation introduces uncertainty so the system reduces its learning rate to temper this uncertainty.&lt;/li&gt;
+      &lt;li&gt;Planning, but not execution allowed humans to learn different curl force field (CF) adaptations, like the one described above, as contextual input. Learning does not require dramatic changes to pattern gen. circuitry, but there is a shift between orthogonal subspaces&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Implications of Manifold Structure on Learning
+    &lt;ul&gt;
+      &lt;li&gt;Hard to casually attribute movements to patterns of neurons, but BCI direct input to movement is helpful.&lt;/li&gt;
+      &lt;li&gt;Linear manifold created by BCI movements in unperturbed trials and then add perturbations that require movement outside of this linear manifold. This results in inside/outside intrinsic manifold.&lt;/li&gt;
+      &lt;li&gt;Rearranging of prelearned associations to adapt to outside intrinsic manifold.&lt;/li&gt;
+      &lt;li&gt;Redefine manifold based on inside/outside prelearned repertoire.&lt;/li&gt;
+      &lt;li&gt;RNN modeling approaches show that significant changes to RNN weights are required for out of manifold dynamics.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Dynamical Systems in Cognition
+    &lt;ul&gt;
+      &lt;li&gt;Motor Timing
+        &lt;ul&gt;
+          &lt;li&gt;State-dependent networks and ramping neurons as time modulation systems.&lt;/li&gt;
+          &lt;li&gt;Ready set go tasks show speed modulation in dorsomedial frontal cortex.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Decision Making and Working Memory
+        &lt;ul&gt;
+          &lt;li&gt;” Context dependence was not a result of traditional gating but rather of dynamics quenching activity along certain directions in state space, achieved via a contextually dependent state space shift.” - Vyas et al. 2020&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;RNN trajectory tunnels force states into stable trajectories.&lt;/li&gt;
+      &lt;li&gt;Key insights are that: a) Delayed association in biological circuits can be performed using transient dynamics and b) different regions of state space can subserve different functional roles.&lt;/li&gt;
+      &lt;li&gt;the recombination of actions to accomplish a certain task is an important research direction.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Challenges and Opportunities&lt;/li&gt;
+  &lt;li&gt;Remaining questions:
+    &lt;ul&gt;
+      &lt;li&gt;Where do inputs come from and how do they affect local circuit dynamics?&lt;/li&gt;
+      &lt;li&gt;What is I/O for a specific brain region?&lt;/li&gt;
+      &lt;li&gt;How do brain regions affect each other?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Optogenetic stimulation as a powerful approach for testing CTD model framework.&lt;/li&gt;
+  &lt;li&gt;Three steps:
+    &lt;ol&gt;
+      &lt;li&gt;Continued development of CTD framework.&lt;/li&gt;
+      &lt;li&gt;Further research into methodological approaches towards causal predictions.&lt;/li&gt;
+      &lt;li&gt;Providing concrete strategies for updating models.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The first and last steps are very startup-esque. Build and rebuild kind of thing. The second point is a serious epistemological problem.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Computation Through Neural Population Dynamics by Saurabh Vyas</summary></entry><entry><title type="html">Review 13: Computation Through Neural Population Dynamics Part 1</title><link href="http://localhost:4000/reviews/review13/" rel="alternate" type="text/html" title="Review 13: Computation Through Neural Population Dynamics Part 1" /><published>2022-02-04T04:16:13-08:00</published><updated>2022-02-04T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review13</id><content type="html" xml:base="http://localhost:4000/reviews/review13/">&lt;p&gt;&lt;a href=&quot;https://www.annualreviews.org/doi/pdf/10.1146/annurev-neuro-092619-094115&quot;&gt;Computation Through Neural Population Dynamics&lt;/a&gt; by &lt;a href=&quot;https://smvyas.github.io/&quot;&gt;Saurabh Vyas&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Citation: Vyas, Saurabh, et al. “Computation through neural population dynamics.” Annual Review of Neuroscience 43 (2020): 249-275.&lt;/p&gt;
 
@@ -76,11 +134,11 @@
         &lt;ul&gt;
           &lt;li&gt;&lt;strong&gt;Condition invariant signal&lt;/strong&gt;: signal that follows timing/onset of cue. Large component of population response.
             &lt;ul&gt;
-              &lt;li&gt;Roughly, releases the preporatory state from an attractor like state to a rotating state.&lt;/li&gt;
-              &lt;li&gt;The paper with citation (Sussile 2015) that is a “sufficiency test for the rorations motif” seems really interesting. Simple low dim RNN oscillation produced complex inputs/outputs for prep state –&amp;gt; muscle activity.&lt;/li&gt;
+              &lt;li&gt;Roughly, releases the preparatory state from an attractor-like state to a rotating state.&lt;/li&gt;
+              &lt;li&gt;The paper with citation (Sussile 2015) that is a “sufficiency test for the rotations motif” seems really interesting. Simple low dim RNN oscillation produced complex inputs/outputs for prep state –&amp;gt; muscle activity.&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
-          &lt;li&gt;Really interesting point that maybe these oscillating states are invetible outcomes of basic neuronal firing properties.
+          &lt;li&gt;A really interesting point is that maybe these oscillating states are inevitable outcomes of basic neuronal firing properties.
             &lt;ul&gt;
               &lt;li&gt;I don’t think asking “when are these oscillating states informative?” is as clear as asking “how informative are these oscillation states?”.&lt;/li&gt;
             &lt;/ul&gt;
@@ -646,6 +704,4 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood.</summary></entry><entry><title type="html">Not Even Wrong</title><link href="http://localhost:4000/posts/Not_Even_Wrong/" rel="alternate" type="text/html" title="Not Even Wrong" /><published>2021-12-06T13:16:13-08:00</published><updated>2021-12-06T13:16:13-08:00</updated><id>http://localhost:4000/posts/Not_Even_Wrong</id><content type="html" xml:base="http://localhost:4000/posts/Not_Even_Wrong/">&lt;p&gt;Wow, I just found out what it means to be “Not even wrong”. The phase, coined by &lt;a href=&quot;https://en.wikipedia.org/wiki/Wolfgang_Pauli&quot;&gt;Wolfgang Pauli&lt;/a&gt; has just given me a huge slice of humble pie. Basically not even wrong is used to describe a totally failed conjecture. If something is meaningless, it’s definitely not right, but it’s not wrong either since you have to be coherent and pointed to be wrong. This has changed the way I think about wrong and right in science. Sometimes, as all scientists do, I use big words when I’m not exactly sure what I’m talking about to make it seem like I do. And the truth is, there’s no cookie and no medal for being hard to understand. From now on, if I’m unsure but I stil want to conjecture, I am going to do it with as basic of an explnation as possible. This way, if I’m misguided I’ll get caught fast instead of getting by on jibberish. This is the route to actually being right about a lot of things one day. Well, I hope that day comes, for now I’d rather be wrong than not even wrong.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/doing_it_wrong.jpeg&quot; alt=&quot;you're doing it wrong!&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/p&gt;</content><author><name>xander</name></author><category term="posts" /><summary type="html">Wow, I just found out what it means to be “Not even wrong”. The phase, coined by Wolfgang Pauli has just given me a huge slice of humble pie. Basically not even wrong is used to describe a totally failed conjecture. If something is meaningless, it’s definitely not right, but it’s not wrong either since you have to be coherent and pointed to be wrong. This has changed the way I think about wrong and right in science. Sometimes, as all scientists do, I use big words when I’m not exactly sure what I’m talking about to make it seem like I do. And the truth is, there’s no cookie and no medal for being hard to understand. From now on, if I’m unsure but I stil want to conjecture, I am going to do it with as basic of an explnation as possible. This way, if I’m misguided I’ll get caught fast instead of getting by on jibberish. This is the route to actually being right about a lot of things one day. Well, I hope that day comes, for now I’d rather be wrong than not even wrong.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood.</summary></entry></feed>

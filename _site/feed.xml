@@ -1,4 +1,79 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-13T11:31:00-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 14: Computation Through Neural Population Dynamics Part 2</title><link href="http://localhost:4000/reviews/review14/" rel="alternate" type="text/html" title="Review 14: Computation Through Neural Population Dynamics Part 2" /><published>2022-02-13T04:16:13-08:00</published><updated>2022-02-13T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review14</id><content type="html" xml:base="http://localhost:4000/reviews/review14/">&lt;p&gt;&lt;a href=&quot;https://www.annualreviews.org/doi/pdf/10.1146/annurev-neuro-092619-094115&quot;&gt;Computation Through Neural Population Dynamics&lt;/a&gt; by &lt;a href=&quot;https://smvyas.github.io/&quot;&gt;Saurabh Vyas&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-20T00:14:50-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 15: Predictive Coding, Variational Autoencoders, and Biological Connections</title><link href="http://localhost:4000/reviews/review15/" rel="alternate" type="text/html" title="Review 15: Predictive Coding, Variational Autoencoders, and Biological Connections" /><published>2022-02-18T04:16:13-08:00</published><updated>2022-02-18T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review15</id><content type="html" xml:base="http://localhost:4000/reviews/review15/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2011.07464.pdf&quot;&gt;Predictive Coding, Variational Autoencoders,
+and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.github.io/&quot;&gt;Joseph Marino&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Marino, Joseph. “Predictive coding, variational autoencoders, and biological connections.” Neural Computation 34.1 (2021): 1-44.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Predictive encoding from the perspective of theoretical neuroscience and machine learning.&lt;/li&gt;
+  &lt;li&gt;Informal defintion for predictive encoding: Neural circuits as probabilistic models of other neurons.
+    &lt;ul&gt;
+      &lt;li&gt;Inception of this idea in cirucits for sensory processing, like the retina and visual pathways.&lt;/li&gt;
+      &lt;li&gt;Feedbackward connections that apply prediction error signal.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.nature.com/articles/nn0199_79&quot;&gt;Rao, Ballard 1999&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;For neuroscience, cybernetics, hemholtz machine, and predictive encoding are inspiration for Friston 2005 and 2008 work on free energy and active inference.&lt;/li&gt;
+  &lt;li&gt;For machine learning, this earlier work in variational inference and encoder decoder models, culminates in the variatonal autoencoder.&lt;/li&gt;
+  &lt;li&gt;Lots of overlap conceptually, but much of the research between the two fields is divided.&lt;/li&gt;
+  &lt;li&gt;The next section is titled connecting predictive coding and VAEs. I take it that these two conncepts form the bridge between the fields.
+    &lt;ul&gt;
+      &lt;li&gt;Just from the intro I like that this paper points two very similar concepts in two different fields and then describes the relationship between the two. I feel that there the’s potential for a lot of discovery in understanding the union and interesection between these two concepts.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Paper posits two possible correspondances between ML and neuro.
+    &lt;ul&gt;
+      &lt;li&gt;Dendrites of pyramidal neurons and neuronal networks.&lt;/li&gt;
+      &lt;li&gt;Lateral inhibition and normalizing flows.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Background info
+    &lt;ul&gt;
+      &lt;li&gt;MLE
+        &lt;ul&gt;
+          &lt;li&gt;How can we find some distribution $p_{data}$ using r.v. samples $\bf{x} \sim \hat{p}_{data}(\bf{x})$?&lt;/li&gt;
+          &lt;li&gt;Maximizing &lt;strong&gt;log likelihood&lt;/strong&gt; of samples under that distribution. 
+  \(\theta^* \longleftarrow argmax_{\theta} \mathbb{E}_{x \sim p_{data}(\bf{x})} [log(p_{theta}(\bf{x}))]\)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Probablistic models
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;autoregressive models&lt;/strong&gt;: $ p_{\theta(\bf{x})} = \prod_{j=1}^{m} p(\bf{x}_{j} \mid x_{&amp;lt; j} $&lt;/li&gt;
+          &lt;li&gt;Can factor out $\bf{x}$ in above as a series of distributions, from $t=1 … T$&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Latent variable models (LVMs)&lt;/strong&gt;  with $z$ have the joint distribtion: \(p_{\theta}(\bf{x}, \bf{z}) = p_{theta}(\bf{x} \mid z)p_{theta}(\bf{z})\)&lt;/li&gt;
+          &lt;li&gt;$\bf{z}$ is being used here to describe $\bf{x}$, incurs computational cost.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;flow based LVMs&lt;/strong&gt; \(p_{\theta}(\bf{x}) = p_{\theta}(x) \| det(\frac{\partial{\bf{x}}}{\partial{\bf{z}}}) \|^{-1}\)
+            &lt;ul&gt;
+              &lt;li&gt;Distilling this down to the idea that there if some function $f_{\theta}$ that can transfrom $f_{\theta}(\bf{x}) = \bf{z}, \ f_{\theta}^{-1}(\bf{z}) = \bf{x}$&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Can combine the above techniques for &lt;strong&gt;hierachical LVMs&lt;/strong&gt;, &lt;strong&gt;sequential LVMS&lt;/strong&gt; etc.
+            &lt;ul&gt;
+              &lt;li&gt;An interesting example is stacking latent variables $ \bf{z}^{1:L} = [ \bf{z}_{1} … \bf{z}_{L} ] $ and \(p_{\theta}(\bf{x},\bf{z}^{1:L}) = p_{\theta}(\bf{x}, \bf{z}^{1:L}) \prod_{\ell=1}^{L} p(\bf{z}^{\ell} \mid z^{\ell+1:L})\)&lt;/li&gt;
+              &lt;li&gt;I am confused by the conditional probability $ p(\bf{Z^{\ell}} \mid z^{\ell+1:L})$ and the directionality of the hierarchy. Why wouldn’t it go backwards:  $ p(\bf{Z^{\ell}} \mid z^{1:\ell+1})$&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Fitting these models
+            &lt;ul&gt;
+              &lt;li&gt;Log density of unit normal distribution becomes mean squared error.&lt;/li&gt;
+              &lt;li&gt;A simple univariate autoregressive model can be formulated as $ p_{\theta}(x_j \mid x_{&amp;lt; j}) = \mathcal{N}(x_j; \mu_{\theta}(x_{&amp;lt; j}), \sigma^2_{\theta}(x_{&amp;lt; j})) $ .
+                &lt;ul&gt;
+                  &lt;li&gt;I think there’s a minor notation error here that the $x_{&amp;lt; j}$ should be boldface since it is still a vector.&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;Training using the gradient of log likelikehood: $\nabla_{\theta}\mathbb{E}_{\bf{x} \sim p_{data}}[log p_{\theta}(\bf{x})]$&lt;/li&gt;
+              &lt;li&gt;Deep autoregressive and variational models can be broken apart by their latent variable impact on objective with some interesting results.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Variational Inference
+        &lt;ul&gt;
+          &lt;li&gt;TODO: Left off here section 2.3&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino</summary></entry><entry><title type="html">Review 14: Computation Through Neural Population Dynamics Part 2</title><link href="http://localhost:4000/reviews/review14/" rel="alternate" type="text/html" title="Review 14: Computation Through Neural Population Dynamics Part 2" /><published>2022-02-13T04:16:13-08:00</published><updated>2022-02-13T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review14</id><content type="html" xml:base="http://localhost:4000/reviews/review14/">&lt;p&gt;&lt;a href=&quot;https://www.annualreviews.org/doi/pdf/10.1146/annurev-neuro-092619-094115&quot;&gt;Computation Through Neural Population Dynamics&lt;/a&gt; by &lt;a href=&quot;https://smvyas.github.io/&quot;&gt;Saurabh Vyas&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Citation: Vyas, Saurabh, et al. “Computation through neural population dynamics.” Annual Review of Neuroscience 43 (2020): 249-275.&lt;/p&gt;
 
@@ -654,54 +729,4 @@
 
     &lt;p&gt;As a enthusiast of biologically inspired networks, I find myself rooting for the future promise of SNNs. However, at the end of the day, for a field of machine intelligence that is extremely based on comparison and benchmarks, the world is not so simple. Mean absolute error (MAE) is important, but not all encompassing. &lt;a href=&quot;https://profiles.uts.edu.au/Tara.Hamilton&quot;&gt;Dr. Tara Hamilton’s&lt;/a&gt; presentation at &lt;a href=&quot;http://snufa.net/2021/&quot;&gt;SNUFA 2021&lt;/a&gt; really helped me realize that there are plently of insteresting use cases for SNNs, for example cochlea implants or heart rate monitoring. However, when it comes to self-driving cars, convolutional neural networks (CNNs) remain an obvious choice. This dynamic is actually a really amazing thing. However, as a researcher, I have to go back to the original quote, that SNNs are the language of the brain. For someone who is interested in reverse engineering the brain, I think it’s hard not consider SNNs an engaging model problem. My own experience with SNNs is very beginner, but it’s posts like this one by Anil that set the stage for an exciting future in the field.&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Spiking Neural Networks by Anil Ananthaswamy.</summary></entry><entry><title type="html">Review 5</title><link href="http://localhost:4000/reviews/review5/" rel="alternate" type="text/html" title="Review 5" /><published>2021-12-12T13:16:13-08:00</published><updated>2021-12-12T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review5</id><content type="html" xml:base="http://localhost:4000/reviews/review5/">&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://bair.berkeley.edu/blog/2021/10/22/mural/&quot;&gt;Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood&lt;/a&gt;.&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;Citation: &lt;a href=&quot;https://abhishekunique.github.io/&quot;&gt;Abhishek Gupta&lt;/a&gt;, &lt;a href=&quot;https://www.linkedin.com/in/kevintli/&quot;&gt;Kevin Li&lt;/a&gt;, and &lt;a href=&quot;http://people.eecs.berkeley.edu/~svlevine/&quot;&gt;Sergey Levine&lt;/a&gt; “Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood” BAIR Blog, Oct 22, 2021&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;A limiting factor in RL is having reward functions that accurately represent the intended goal of the actions. There’s a gap between what the reward function specifies and what we actually want it to specify.&lt;/li&gt;
-      &lt;li&gt;Also, there’s a trade off with having reward functions that are specific to an environment and having reward function that can generalize well.&lt;/li&gt;
-      &lt;li&gt;The authors introduce a basic reward function as classifying an action as successful or unsuccessful.
-        &lt;ul&gt;
-          &lt;li&gt;works well in limited settings where a lot of exploration is not required.&lt;/li&gt;
-          &lt;li&gt;downside is that neural network based classifiers, even with some kind of regularization can converge upon sub optimal policies.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;They describe this downside as “overconfidence”.&lt;/li&gt;
-      &lt;li&gt;Conditional Normalized maximum likelihood (CNML) to add uncertainty in the model.
-        &lt;ul&gt;
-          &lt;li&gt;Given query point $x$ and data $\mathcal{D}[x_0, y_0, … , x_N, y_N]$ CNML solves \begin{equation}
-  \theta_i = argmax_{\theta}\mathbb{E}_{D \cup (x_q, \mathcal{C}_i)} \mathcal{L}(f(x_q), y)
-  \end{equation}
-  Where there are $\mathcal{C}_i \in [ \mathcal{C}_0, \mathcal{C}_k ]$, so $k$ possible classes outcome. $x_q$ is the current point. This policy makes a prediction for each class (because do the above calculation for $i \in k$), so they suggest normalizing.&lt;/li&gt;
-        &lt;/ul&gt;
-
-        &lt;p&gt;\(p_{CNML}(\mathcal{C}_i \mid x) = \frac { f_{\theta_i}(x)} {\sum\limits_{j=1}^{k}f_{\theta_j}(x)}\)&lt;/p&gt;
-        &lt;ul&gt;
-          &lt;li&gt;This reward policy is better equipped to handle exploring in uncertain situations.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;The authors then discuss generalization to continuous valued states.&lt;/li&gt;
-      &lt;li&gt;The authors discuss tractability of solving $k$ NMLE equations for every potential action. This is slow.&lt;/li&gt;
-      &lt;li&gt;Then they introduce the meta learning algorithm.
-        &lt;ul&gt;
-          &lt;li&gt;I kind of lost the thread here.&lt;/li&gt;
-          &lt;li&gt;train another model to predict outcome $2N$ actions corresponding to postitive and negative likelihood.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Final thoughts.
-        &lt;ul&gt;
-          &lt;li&gt;The core algorithm is really simple which is awesome but I am not entirely sure about the meta learning part. Here’s my interpreation:
-            &lt;ul&gt;
-              &lt;li&gt;You sample $n$ points from the replay buffer and try train another model to predict what the NML will be, given that the point is classified as helpful and unhelpful.&lt;/li&gt;
-              &lt;li&gt;For the maze problem, this should start bulding a NML surrogate model that has a good spatial understanding of how different helpful and unhelpful point layouts shape the map.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Spiking Neural Networks by Anil Ananthaswamy.</summary></entry></feed>

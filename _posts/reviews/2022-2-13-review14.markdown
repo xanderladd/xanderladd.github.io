@@ -6,8 +6,6 @@ author: xander
 categories: reviews
 ---
 
-
-
 [Computation Through Neural Population Dynamics](https://www.annualreviews.org/doi/pdf/10.1146/annurev-neuro-092619-094115) by [Saurabh Vyas](https://smvyas.github.io/)
 
 Citation: Vyas, Saurabh, et al. "Computation through neural population dynamics." Annual Review of Neuroscience 43 (2020): 249-275.
@@ -44,3 +42,4 @@ Citation: Vyas, Saurabh, et al. "Computation through neural population dynamics.
     2. Further research into methodological approaches towards causal predictions.
     3. Providing concrete strategies for updating models.
 - The first and last steps are very startup-esque. Build and rebuild kind of thing. The second point is a serious epistemological problem.
+

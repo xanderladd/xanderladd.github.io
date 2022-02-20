@@ -94,4 +94,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review14/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 15: Predictive Coding, Variational Autoencoders, and Biological Connections",
+        "excerpt":"Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino Marino, Joseph. “Predictive coding, variational autoencoders, and biological connections.” Neural Computation 34.1 (2021): 1-44. Predictive encoding from the perspective of theoretical neuroscience and machine learning. Informal defintion for predictive encoding: Neural circuits as probabilistic models of other neurons. Inception of...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review15/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

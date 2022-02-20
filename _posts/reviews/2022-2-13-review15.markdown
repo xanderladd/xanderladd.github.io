@@ -1,0 +1,50 @@
+---
+layout: base
+title:  "Review 15: Predictive Coding, Variational Autoencoders, and Biological Connections"
+date:   2022-2-18 5:16:13 -0700
+author: xander
+categories: reviews
+---
+
+
+[Predictive Coding, Variational Autoencoders,
+and Biological Connections](https://arxiv.org/pdf/2011.07464.pdf) by [Joseph Marino](https://joelouismarino.github.io/)
+
+Marino, Joseph. "Predictive coding, variational autoencoders, and biological connections." Neural Computation 34.1 (2021): 1-44.
+
+- Predictive encoding from the perspective of theoretical neuroscience and machine learning.
+- Informal defintion for predictive encoding: Neural circuits as probabilistic models of other neurons.
+    - Inception of this idea in cirucits for sensory processing, like the retina and visual pathways.
+    - Feedbackward connections that apply prediction error signal.
+    - [Rao, Ballard 1999](https://www.nature.com/articles/nn0199_79)
+- For neuroscience, cybernetics, hemholtz machine, and predictive encoding are inspiration for Friston 2005 and 2008 work on free energy and active inference. 
+- For machine learning, this earlier work in variational inference and encoder decoder models, culminates in the variatonal autoencoder.
+- Lots of overlap conceptually, but much of the research between the two fields is divided.
+- The next section is titled connecting predictive coding and VAEs. I take it that these two conncepts form the bridge between the fields.
+    - Just from the intro I like that this paper points two very similar concepts in two different fields and then describes the relationship between the two. I feel that there the's potential for a lot of discovery in understanding the union and interesection between these two concepts.
+- Paper posits two possible correspondances between ML and neuro.
+    - Dendrites of pyramidal neurons and neuronal networks.
+    - Lateral inhibition and normalizing flows.
+- Background info
+    - MLE
+        - How can we find some distribution $p_{data}$ using r.v. samples $\bf{x} \sim \hat{p}_{data}(\bf{x})$?
+        - Maximizing **log likelihood** of samples under that distribution. 
+        $$ \theta^* \longleftarrow argmax_{\theta} \mathbb{E}_{x \sim p_{data}(\bf{x})} [log(p_{theta}(\bf{x}))]$$
+    - Probablistic models
+        - **autoregressive models**: $ p_{\theta(\bf{x})} = \prod_{j=1}^{m} p(\bf{x}\_{j} \mid x_{< j} $
+        - Can factor out $\bf{x}$ in above as a series of distributions, from $t=1 ... T$
+        - **Latent variable models (LVMs)**  with $z$ have the joint distribtion: $$p_{\theta}(\bf{x}, \bf{z}) = p_{theta}(\bf{x} \mid z)p_{theta}(\bf{z})  $$
+        - $\bf{z}$ is being used here to describe $\bf{x}$, incurs computational cost.
+        - **flow based LVMs** $$p_{\theta}(\bf{x}) = p_{\theta}(x) \| det(\frac{\partial{\bf{x}}}{\partial{\bf{z}}}) \|^{-1} $$
+            - Distilling this down to the idea that there if some function $f_{\theta}$ that can transfrom $f_{\theta}(\bf{x}) = \bf{z}, \ f_{\theta}^{-1}(\bf{z}) = \bf{x}$
+        - Can combine the above techniques for **hierachical LVMs**, **sequential LVMS** etc.
+            - An interesting example is stacking latent variables $ \bf{z}^{1:L} = \[ \bf{z}\_{1} ... \bf{z}\_{L} \] $ and $$ p_{\theta}(\bf{x},\bf{z}^{1:L}) = p_{\theta}(\bf{x}, \bf{z}^{1:L}) \prod_{\ell=1}^{L} p(\bf{z}^{\ell} \mid z^{\ell+1:L}) $$
+            - I am confused by the conditional probability $ p(\bf{Z^{\ell}} \mid z^{\ell+1:L})$ and the directionality of the hierarchy. Why wouldn't it go backwards:  $ p(\bf{Z^{\ell}} \mid z^{1:\ell+1})$
+        - Fitting these models
+            - Log density of unit normal distribution becomes mean squared error.
+            - A simple univariate autoregressive model can be formulated as $ p_{\theta}(x_j \mid x_{< j}) = \mathcal{N}(x_j; \mu_{\theta}(x_{< j}), \sigma^2\_{\theta}(x_{< j})) $ .
+                - I think there's a minor notation error here that the $x_{< j}$ should be boldface since it is still a vector.
+            - Training using the gradient of log likelikehood: $\nabla_{\theta}\mathbb{E}\_{\bf{x} \sim p_{data}}[log p_{\theta}(\bf{x})]$
+            - Deep autoregressive and variational models can be broken apart by their latent variable impact on objective with some interesting results.
+    - Variational Inference
+        - TODO: Left off here section 2.3

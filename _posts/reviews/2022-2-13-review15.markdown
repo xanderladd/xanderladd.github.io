@@ -17,12 +17,12 @@ Marino, Joseph. "Predictive coding, variational autoencoders, and biological con
     - Inception of this idea in cirucits for sensory processing, like the retina and visual pathways.
     - Feedbackward connections that apply prediction error signal.
     - [Rao, Ballard 1999](https://www.nature.com/articles/nn0199_79)
-- For neuroscience, cybernetics, hemholtz machine, and predictive encoding are inspiration for Friston 2005 and 2008 work on free energy and active inference. 
-- For machine learning, this earlier work in variational inference and encoder decoder models, culminates in the variatonal autoencoder.
+- For neuroscience, cybernetics, hemholtz machine, and predictive encoding are the inspiration for Friston 2005 and 2008 work on free energy and active inference. 
+- For machine learning, this earlier work in variational inference and encoder-decoder models, culminates in the variational autoencoder.
 - Lots of overlap conceptually, but much of the research between the two fields is divided.
-- The next section is titled connecting predictive coding and VAEs. I take it that these two conncepts form the bridge between the fields.
-    - Just from the intro I like that this paper points two very similar concepts in two different fields and then describes the relationship between the two. I feel that there the's potential for a lot of discovery in understanding the union and interesection between these two concepts.
-- Paper posits two possible correspondances between ML and neuro.
+- The next section is titled connecting predictive coding and VAEs. I take it that these two concepts form the bridge between the fields.
+    - Just from the intro I like that this paper points two very similar concepts in two different fields and then describes the relationship between the two. I feel that there the's potential for a lot of discovery in understanding the union and intersection between these two concepts.
+- Paper posits two possible correspondences between ML and neuro.
     - Dendrites of pyramidal neurons and neuronal networks.
     - Lateral inhibition and normalizing flows.
 - Background info
@@ -30,7 +30,7 @@ Marino, Joseph. "Predictive coding, variational autoencoders, and biological con
         - How can we find some distribution $p_{data}$ using r.v. samples $\bf{x} \sim \hat{p}_{data}(\bf{x})$?
         - Maximizing **log likelihood** of samples under that distribution. 
         $$ \theta^* \longleftarrow argmax_{\theta} \mathbb{E}_{x \sim p_{data}(\bf{x})} [log(p_{theta}(\bf{x}))]$$
-    - Probablistic models
+    - Probabilistic models
         - **autoregressive models**: $ p_{\theta(\bf{x})} = \prod_{j=1}^{m} p(\bf{x}\_{j} \mid x_{< j} $
         - Can factor out $\bf{x}$ in above as a series of distributions, from $t=1 ... T$
         - **Latent variable models (LVMs)**  with $z$ have the joint distribtion: $$p_{\theta}(\bf{x}, \bf{z}) = p_{theta}(\bf{x} \mid z)p_{theta}(\bf{z})  $$
@@ -45,6 +45,6 @@ Marino, Joseph. "Predictive coding, variational autoencoders, and biological con
             - A simple univariate autoregressive model can be formulated as $ p_{\theta}(x_j \mid x_{< j}) = \mathcal{N}(x_j; \mu_{\theta}(x_{< j}), \sigma^2\_{\theta}(x_{< j})) $ .
                 - I think there's a minor notation error here that the $x_{< j}$ should be boldface since it is still a vector.
             - Training using the gradient of log likelikehood: $\nabla_{\theta}\mathbb{E}\_{\bf{x} \sim p_{data}}[log p_{\theta}(\bf{x})]$
-            - Deep autoregressive and variational models can be broken apart by their latent variable impact on objective with some interesting results.
+            - Deep autoregressive and variational models can be broken apart by their latent variable impact on the objective with some interesting results.
     - Variational Inference
         - TODO: Left off here section 2.3

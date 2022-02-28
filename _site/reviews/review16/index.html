@@ -9,38 +9,38 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Review 2 - Alexander Ladd</title>
-<meta name="description" content="Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights  by Ramin Khajeh, Francesco Fumarola, Larry F. Abbott">
+<!-- begin _includes/seo.html --><title>Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections - Alexander Ladd</title>
+<meta name="description" content="Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Alexander Ladd">
-<meta property="og:title" content="Review 2">
-<meta property="og:url" content="http://localhost:4000/reviews/review2/">
+<meta property="og:title" content="Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections">
+<meta property="og:url" content="http://localhost:4000/reviews/review16/">
 
 
-  <meta property="og:description" content="Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights  by Ramin Khajeh, Francesco Fumarola, Larry F. Abbott">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2021-11-14T13:16:13-08:00">
+  <meta property="og:description" content="Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2022-02-26T04:16:13-08:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/reviews/review2/">
+
+<link rel="canonical" href="http://localhost:4000/reviews/review16/">
 
 
 
@@ -117,17 +117,13 @@
           Alexander Ladd
           
         </a>
-        <ul class="visible-links">
-<li class="masthead__menu-item">
+        <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/about">about</a>
-            </li>
-<li class="masthead__menu-item">
+            </li><li class="masthead__menu-item">
               <a href="/projects">projects</a>
-            </li>
-<li class="masthead__menu-item">
+            </li><li class="masthead__menu-item">
               <a href="/research">research</a>
-            </li>
-</ul>
+            </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -234,169 +230,76 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">Review 2</h1>
+      <h1 id="page-title" class="page__title">Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections</h1>
     
-    <ul>
-  <li>
-    <p><a href="https://www.biorxiv.org/content/10.1101/2021.02.26.433027v1.abstract">Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights
-</a> by <a href="https://www.google.com/search?q=Ramin+Khajeh&amp;oq=Ramin+Khajeh&amp;aqs=chrome..69i57.82j0j7&amp;sourceid=chrome&amp;ie=UTF-8">Ramin Khajeh</a>, <a href="https://scholar.google.com/citations?user=rcb8W94AAAAJ&amp;hl=ca">Francesco Fumarola</a>, <a href="https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd">Larry F. Abbott</a></p>
+    <p><a href="https://arxiv.org/pdf/2011.07464.pdf">Predictive Coding, Variational Autoencoders,
+and Biological Connections</a> by <a href="https://joelouismarino.github.io/">Joseph Marino</a></p>
 
+<p>Marino, Joseph. “Predictive coding, variational autoencoders, and biological connections.” Neural Computation 34.1 (2021): 1-44.</p>
+
+<ul>
+  <li>Predictive encoding from the perspective of theoretical neuroscience and machine learning.</li>
+  <li>2.3 Variational Inference
     <ul>
-      <li>Citation: Khajeh, Ramin, Francesco Fumarola, and L. F. Abbott. “Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights.” bioRxiv (2021).</li>
-      <li>
-<strong>DISCLAIMER</strong> I am very interested in this part of computational neuroscience, but I’m a bit of a beginner to this topic. Some of the stuff here goes over my head, esp. the tractability of the gamma distribution in setting synaptic weights. If I got anything horribly wrong or you have any feedback please email me at zladd@berkeley.edu. Later I plan to add a feedback section using disqus at the botttom of each blog.</li>
-      <li>Intro
+      <li>Previously paper introduces $p_{\theta}(x,\mathbf{z})p_{\theta}(x)$ as latent variable models.</li>
+      <li>To get $p_{\theta}(x) = \int p_{\theta}(x,\mathbf{z})d\mathbf{z}$ is often an intractable integral.</li>
+      <li>Variational inference using evidence lower bound optimization (ELBO) $ \mathcal{L}(\mathbf{x}; q, \theta) \leq log p_{\theta}(\mathbf{x})$.</li>
+      <li>ELBO objective:
+  \(log p_{\theta}(\mathbf{x} = \mathcal{L}(\mathbf{x}; z, \theta) + KL(q(\mathbf{z} \mid \mathbf{x}) || p_{\theta}(\mathbf{z} \mid \mathbf{x})  )\)</li>
+      <li>Apporaches to optimizing:
         <ul>
-          <li>Neurons recieve a lot of excitatory input so there must be inhbitory balance. Some mechanism are cited as responsible for this:
+          <li>Alternating minimization (EM) between first and second term of ELBO.</li>
+          <li>Computatiional graphn and differentiaion.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Predictive Coding
+    <ul>
+      <li>Spatiotemporal
+        <ul>
+          <li>Gaussian autoregessive model over sequences $x_1 … x_t$:
+  \(p(x_t \mid x_{1:T}) = \mathcal{N}(x_t; \mu_{x_{\leq t}}, diag(\sigma_{x_{\leq t}^2}))\)
             <ul>
-              <li>Recurrent excitation</li>
-              <li>Recurrent inhibition</li>
-              <li>Feedfoward excitation</li>
+              <li>introduce $y_t \sim \mathcal(0,I) $ as prediction error: $ x_t =  \mu_{x_{\leq t}} + \sigma_{x_{\leq t}^2} \cdot y_t$</li>
+              <li>whitenting transformation shows how this is actually prediction eror: $ y_t = \frac{x_t - \mu_{x_{\leq t}}}{\sigma_{\theta}(x_{\leq t})} $</li>
             </ul>
           </li>
-          <li>No evidence that feedforward excitaiton is particularly strong in these models.
+          <li>Prediticiton error can be measured over spatial dimensions using  autoregressive transform.
             <ul>
-              <li>This is definitely new to me.</li>
+              <li>spatial whitening formula $\mathbf{y} = \Sigma_{\theta}^{-1/2}(x - \mathbf{\mu_{\theta}}) $</li>
             </ul>
           </li>
-          <li>States that
+          <li>Example of predictive coding: fly optic nerve performs autocorrelation of spatiotemporal signals for dyanmic range.</li>
+          <li>Normalization through inhibitory neurons.</li>
+          <li>Photorecptor inhibition to filter unpredicted motion. Ie; object was still in the background but now it is moving.</li>
+          <li>Lateral inihibhition for spatiotemporal normalization.</li>
+        </ul>
+      </li>
+      <li>Hierarchical
+        <ul>
+          <li>Six layers of neocortex (I - VI)  organized into columns that communicate through interneurons and long range connections vis pyramidal neurons.</li>
+          <li>Neocortical microcircuit w/ forward / backwards, excitatory / inihbitory projections.</li>
+          <li>Theory: backward projections contain predictions and foward projections have error signal.</li>
+          <li>Mathematical formulation of thalamus as an active blackboard that aims to minimize prediction error by Rao &amp; Ballard (1999).
             <ul>
-              <li>synaptic weight distributions have variance around $\frac{1}{\sqrt{k}}$ where $K$ is node in-degree.</li>
-              <li>order of inhibitory input is around $\sqrt(K)$</li>
-              <li>and it’s generally cancelled by an excitatory input of equal magnitude, but they want to avoid this.</li>
-            </ul>
-          </li>
-          <li>Suggests that without feedforward exc. input, there will be low firing rate but moves this evidence in argument for a sparser network, not a dense netowrk with low firing rate neurons.</li>
-          <li>Getting rid of feedforward exc. means that synaptic distirbutions lose variance, so they suggest remedying this by making synaptic strength vary with a mean of $\frac{1}{\sqrt{K}}$ but then vary with order $\frac{1}{\sqrt{K}}$ this means total variance is now $\frac{\sqrt{K}}{\sqrt{K}}$ again (prev. it was $\frac{1}{\sqrt{k}}$)</li>
-          <li>One part of this that I don’t understand is a formal mathematical definition for a <em>synaptic weight distribution</em>. I think that for a more experienced reader, they will know what this means. My understanding is that this distribution will be a vector like $\bf{x} \in \mathbb{R^{K}}$ and this vector with the excitory input would follow something like $\bf{x_{1:\sqrt{K}}} \sim \mathcal{N}(\frac{1}{\sqrt{K}},1)$ (standard model –&gt; variance == 1?) and the inihbitory component would be $\bf{x_{1:\sqrt{K}}} \sim \mathcal{N}(-\frac{1}{\sqrt{K}},1)$.
-            <ul>
-              <li>there are a few things I here I would want to ask:
-                <ol>
-                  <li>We have only accounted for $ 2 \times \sqrt{K}$ of the $K$ weights. Are the rest of the synaptic weights just 0?
-                    <ul>
-                      <li>honestly, I’m missing something here. I think all weights are accounted for, I just don’t know how.</li>
-                    </ul>
-                  </li>
-                  <li>Do these weights have unit variance?</li>
-                </ol>
+              <li>$p_{\theta}(x \ mid z) = \mathcal{N}(x; f(Wz), diag(\sigma^2_{x}))$</li>
+              <li>$p_{\theta}(z) = \mathcal{N}(x; \mu_{z}, diag(\sigma^2_{z}))$
+                <ul>
+                  <li>f = elementwise function, w = weight matrix, $\sigma_{x}^2$ and $\sigma_{z}^2$ are the respective variances for $x$ and $z$.</li>
+                </ul>
               </li>
+              <li>MAP estimate of z is $z^*$ which maximizes $p_{\theta}(z \mid x)$.</li>
+              <li>Formulate that as an optimization problem: \(z^* = argmax_{z} ( log(p_{\theta}(x \mid z)) + log p_{\theta}(z) )\)</li>
+              <li>Each term in the above is convex squared error term so the whole thing can be solved analytically with \(\nabla_{z}\ell(z, \theta) = W^T (\frac{x - W_z }{\sigma_x}) (\frac{x - \mu_z }{\sigma_z})\)
+                <ul>
+                  <li>We can also use the above gradient to solve for $W$ w/ $\nabla_{W}$</li>
+                </ul>
+              </li>
+              <li>Under this construction of $\theta(W,z)$ we get learning rules that aim to be biologically plausible by optimizing against physical occurrances, like firing rate or membrane potential. Extending this, the latent variable model (LVM) can be the particular output of a specific cortical column.</li>
             </ul>
           </li>
-        </ul>
-      </li>
-      <li>The model
-        <ul>
-          <li>This part starts to clear up the questions above</li>
-          <li>They state that
-            <blockquote>
-              <p>Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights. (Khajeh 2021)</p>
-              <blockquote>
-                <p>Networks have currents $x_i$ for $i = 1 … N$ and firing rates $\phi(x_i)$ that obey
-   \begin{equation}
-   \Gamma_x \frac{dx_i}{dt} = -x_i - \sum\limits_j^N J_{ij}\phi(x_j) + I_0
-   \end{equation} where $\phi$ is a nonlinear function and $J_{ij} \geq 0$</p>
-              </blockquote>
-            </blockquote>
-          </li>
-          <li>I am not sure what $J_{ij}$ represents now. *note: it get’s explained a few sentences later. – they are i.i.d. weights.</li>
-          <li>Besides that, this function does a good job of clearly defining synaptic integration.</li>
-          <li>Considers tangenet vs. exponential nonlinear activation functions for $\phi$.</li>
-        </ul>
-      </li>
-      <li>Simulation results
-        <ul>
-          <li>When excitatory input is set to $I_0 \sim \sqrt{K}$ the network has either sparse and high firing rate reponses (high variance), or dense and low firing rate responses (low variance).
-            <ul>
-              <li>this lines up nicely with what was introduced in the beginning and has a very clear inuitive interpretation. Nice!</li>
-            </ul>
-          </li>
-          <li>Then they dig in to some detailed numerical explanations for this effect.</li>
-          <li>Figure 1 is very clear <img class="emoji" title=":thumbsup:" alt=":thumbsup:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20">
-            <ul>
-              <li>I was surprised to see that in panel G, the feedfoward input only had a small impact on the fraction of active neurons.</li>
-            </ul>
-          </li>
-          <li>Sparse E/I balance lead to non-gaussian 0-skewed distribution of synaptic weights</li>
-          <li>The authors state that these results represent a robust distribution of synaptic weights desipte not having any excitatory input.</li>
-        </ul>
-      </li>
-      <li>Analysis of Sparse Balance Networks
-        <ul>
-          <li>here the authors explore high variance, low exc. input, sparse networks further using heavside non-linear response function.
-            <ul>
-              <li>had to look this one up, but it’s basically a piecewise activaiton function where the gradient is the <a href="https://en.wikipedia.org/wiki/Dirac_delta_function">dirac delta function</a>
-</li>
-            </ul>
-          </li>
-          <li>weights drawn from $\text{gamma}(k, \theta)$</li>
-          <li>Figure 3A would benefit from text titles on the figure, not just in the caption (at least for a reader like me lol I suck at reading figs).</li>
-          <li>What I got out of Fig. 3 is that heavside function lead to lower fraction of active neurons compared to tanh and exp. activation functions and thus a sparser netowrk. But that it also had a non-gaussian distribution of weights under the sparse condition.</li>
-          <li>Interesting point about having a larger $K$ or shape parameter for gamma, one might expect that the gamma function approximate gaussian function. But this is not the case with $\eta \sim \text{gamma}(\alpha, \theta)$.</li>
-          <li>I wonder if I understood that right?</li>
-          <li>If feedforward bias is small  –&gt; large synaptic variance required for robust fluctuation.</li>
-        </ul>
-      </li>
-      <li>Sparse Activity Arises from Network Dynamics
-        <ul>
-          <li>They use population averaged autocorrelation function to find out how much the weight distribution is affected by the previous weight distribution at some lag.</li>
-          <li>Autocorrelation decays faster for larger K (fig. 4).
-            <blockquote>
-              <p>Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights. (Khajeh 2021)</p>
-              <blockquote>
-                <p>it is the dynamics of the recurrent synaptic inputs, not their size, that leads to sparse activity at large K</p>
-              </blockquote>
-            </blockquote>
-          </li>
-        </ul>
-      </li>
-      <li>Mean Field Analysis
-        <ul>
-          <li>Introduces a variable $m$ which is the mean-field approximation for $\bar{\phi}$</li>
-          <li>Based on fuctions 7 and 11 (I think) they define closed form equation for $m$ in terms of gamma dist. shape parameter $\alpha$ as 
-  \begin{equation}
-  \alpha = \frac{mJ_0^2\sqrt(m)}{g^2}
-  \end{equation}
-            <ul>
-              <li>$g^2$ comes from gamma dist. scale parameter.</li>
-            </ul>
-          </li>
-          <li>considers several cases of computing autocorrelation of $\eta$ based on different sizes of $K$ and decorrealtion rate $\beta$.
-            <ul>
-              <li>When $K$ is small, then $eta$ follows gamma distribution $\text{gamma}(\alpha, \theta)$ and then they can solve closed form mean field calcuation using integral.</li>
-              <li>even at $K ~ 10^3$ this holds.</li>
-            </ul>
-          </li>
-          <li>Then there’s a more complicated closed form calculation for $var(\eta)$ that I’m gonna skip over for now.
-            <ul>
-              <li>involves decomposing the variance into quenched and time dependent.</li>
-              <li>not very familiar with this decomposition. Maybe if I look into mean field decomp. more I will see.</li>
-            </ul>
-          </li>
-          <li>Fig. 5 just shows that this recover of gamma distribution parameters charcterizes weights and input parameter well. Again, clear and nice figure <img class="emoji" title=":thumbsup:" alt=":thumbsup:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20">
-</li>
-        </ul>
-      </li>
-      <li>Sparse balance in E-I network
-        <ul>
-          <li>shows that <em>network properties</em> shown for I network model also apply for E/I model, such as sparsity (frac. of neurons active) and firing rates.</li>
-        </ul>
-      </li>
-      <li>Discussion
-        <ul>
-          <li>Shows interesting network properties demonstrated in this anaylsis as a result of making feedforward excitation smaller.</li>
-          <li>Broadens out implications to real world instances where E/I ratio is similarly composed.</li>
-          <li>Interesting to point out this phenomenon in relating autocorrelation and network sparse responses seems to be a general effect.</li>
-          <li>Definitely incresed my interested in mean field theory.</li>
-          <li>Here is what I think is really the most fascinating takeway:
-  <strong>“The large degree of variability in the synapses could route stimulus information along particular  paths across network neurons”</strong>
-</li>
-          <li>A reasonable claim that it is not just feedforward input that influences selective network responses but also recurrent synaptic input.
-            <ul>
-              <li>The number of recurrent connections in the brain would support this idea. If there is so many recurrent networks, they must be doing something.</li>
-              <li>Ideas here build on some early work by M. Jordan cited in The Computational Brain by Terrence Sejnowski on using recurrent networks to identify shapes and the expressive power of <em>non-feedforward</em> connections.</li>
-              <li>Granted, I haven’t actually read this 1998 work, just read the watered down example in Dr. Sejnowski’s book.</li>
-            </ul>
-          </li>
+          <li>Various forms of evidence for this model in different sensory areas of mice, but ultimately, predictive coding is an incomplete theory because most of these models are oversimplified circuit models.</li>
         </ul>
       </li>
     </ul>
@@ -603,7 +506,7 @@ and Biological Connections by Joseph Marino
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 minute read
+          2 minute read
         
       </span>
     
@@ -726,7 +629,7 @@ and Biological Connections by Joseph Marino
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          7 minute read
+          6 minute read
         
       </span>
     
@@ -892,7 +795,7 @@ and Biological Connections by Joseph Marino
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          2 minute read
+          1 minute read
         
       </span>
     
@@ -1017,7 +920,7 @@ and Biological Connections by Joseph Marino
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          4 minute read
+          3 minute read
         
       </span>
     
@@ -1163,11 +1066,12 @@ and Biological Connections by Joseph Marino
 
 <!-- 
 
-<title>Review 2 - Alexander Ladd</title>
+<title>Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections - Alexander Ladd</title>
 <meta name="viewport" content="width=device-width">
 
 <link rel="stylesheet" href="/css/all.css"> -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -1240,7 +1144,7 @@ and Biological Connections by Joseph Marino
   </ul>
 </div>
 
-<div class="page__footer-copyright">© 2022 Alexander Ladd. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2022 Alexander Ladd. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

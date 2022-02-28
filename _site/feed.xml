@@ -1,4 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-20T00:14:50-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 15: Predictive Coding, Variational Autoencoders, and Biological Connections</title><link href="http://localhost:4000/reviews/review15/" rel="alternate" type="text/html" title="Review 15: Predictive Coding, Variational Autoencoders, and Biological Connections" /><published>2022-02-18T04:16:13-08:00</published><updated>2022-02-18T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review15</id><content type="html" xml:base="http://localhost:4000/reviews/review15/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2011.07464.pdf&quot;&gt;Predictive Coding, Variational Autoencoders,
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-27T19:28:11-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections</title><link href="http://localhost:4000/reviews/review16/" rel="alternate" type="text/html" title="Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections" /><published>2022-02-26T04:16:13-08:00</published><updated>2022-02-26T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review16</id><content type="html" xml:base="http://localhost:4000/reviews/review16/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2011.07464.pdf&quot;&gt;Predictive Coding, Variational Autoencoders,
+and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.github.io/&quot;&gt;Joseph Marino&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Marino, Joseph. “Predictive coding, variational autoencoders, and biological connections.” Neural Computation 34.1 (2021): 1-44.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Predictive encoding from the perspective of theoretical neuroscience and machine learning.&lt;/li&gt;
+  &lt;li&gt;2.3 Variational Inference
+    &lt;ul&gt;
+      &lt;li&gt;Previously paper introduces $p_{\theta}(x,\mathbf{z})p_{\theta}(x)$ as latent variable models.&lt;/li&gt;
+      &lt;li&gt;To get $p_{\theta}(x) = \int p_{\theta}(x,\mathbf{z})d\mathbf{z}$ is often an intractable integral.&lt;/li&gt;
+      &lt;li&gt;Variational inference using evidence lower bound optimization (ELBO) $ \mathcal{L}(\mathbf{x}; q, \theta) \leq log p_{\theta}(\mathbf{x})$.&lt;/li&gt;
+      &lt;li&gt;ELBO objective:
+  \(log p_{\theta}(\mathbf{x} = \mathcal{L}(\mathbf{x}; z, \theta) + KL(q(\mathbf{z} \mid \mathbf{x}) || p_{\theta}(\mathbf{z} \mid \mathbf{x})  )\)&lt;/li&gt;
+      &lt;li&gt;Apporaches to optimizing:
+        &lt;ul&gt;
+          &lt;li&gt;Alternating minimization (EM) between first and second term of ELBO.&lt;/li&gt;
+          &lt;li&gt;Computatiional graphn and differentiaion.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Predictive Coding
+    &lt;ul&gt;
+      &lt;li&gt;Spatiotemporal
+        &lt;ul&gt;
+          &lt;li&gt;Gaussian autoregessive model over sequences $x_1 … x_t$:
+  \(p(x_t \mid x_{1:T}) = \mathcal{N}(x_t; \mu_{x_{\leq t}}, diag(\sigma_{x_{\leq t}^2}))\)
+            &lt;ul&gt;
+              &lt;li&gt;introduce $y_t \sim \mathcal(0,I) $ as prediction error: $ x_t =  \mu_{x_{\leq t}} + \sigma_{x_{\leq t}^2} \cdot y_t$&lt;/li&gt;
+              &lt;li&gt;whitenting transformation shows how this is actually prediction eror: $ y_t = \frac{x_t - \mu_{x_{\leq t}}}{\sigma_{\theta}(x_{\leq t})} $&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Prediticiton error can be measured over spatial dimensions using  autoregressive transform.
+            &lt;ul&gt;
+              &lt;li&gt;spatial whitening formula $\mathbf{y} = \Sigma_{\theta}^{-1/2}(x - \mathbf{\mu_{\theta}}) $&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Example of predictive coding: fly optic nerve performs autocorrelation of spatiotemporal signals for dyanmic range.&lt;/li&gt;
+          &lt;li&gt;Normalization through inhibitory neurons.&lt;/li&gt;
+          &lt;li&gt;Photorecptor inhibition to filter unpredicted motion. Ie; object was still in the background but now it is moving.&lt;/li&gt;
+          &lt;li&gt;Lateral inihibhition for spatiotemporal normalization.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Hierarchical
+        &lt;ul&gt;
+          &lt;li&gt;Six layers of neocortex (I - VI)  organized into columns that communicate through interneurons and long range connections vis pyramidal neurons.&lt;/li&gt;
+          &lt;li&gt;Neocortical microcircuit w/ forward / backwards, excitatory / inihbitory projections.&lt;/li&gt;
+          &lt;li&gt;Theory: backward projections contain predictions and foward projections have error signal.&lt;/li&gt;
+          &lt;li&gt;Mathematical formulation of thalamus as an active blackboard that aims to minimize prediction error by Rao &amp;amp; Ballard (1999).
+            &lt;ul&gt;
+              &lt;li&gt;$p_{\theta}(x \ mid z) = \mathcal{N}(x; f(Wz), diag(\sigma^2_{x}))$&lt;/li&gt;
+              &lt;li&gt;$p_{\theta}(z) = \mathcal{N}(x; \mu_{z}, diag(\sigma^2_{z}))$
+                &lt;ul&gt;
+                  &lt;li&gt;f = elementwise function, w = weight matrix, $\sigma_{x}^2$ and $\sigma_{z}^2$ are the respective variances for $x$ and $z$.&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;MAP estimate of z is $z^*$ which maximizes $p_{\theta}(z \mid x)$.&lt;/li&gt;
+              &lt;li&gt;Formulate that as an optimization problem: \(z^* = argmax_{z} ( log(p_{\theta}(x \mid z)) + log p_{\theta}(z) )\)&lt;/li&gt;
+              &lt;li&gt;Each term in the above is convex squared error term so the whole thing can be solved analytically with \(\nabla_{z}\ell(z, \theta) = W^T (\frac{x - W_z }{\sigma_x}) (\frac{x - \mu_z }{\sigma_z})\)
+                &lt;ul&gt;
+                  &lt;li&gt;We can also use the above gradient to solve for $W$ w/ $\nabla_{W}$&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;Under this construction of $\theta(W,z)$ we get learning rules that aim to be biologically plausible by optimizing against physical occurrances, like firing rate or membrane potential. Extending this, the latent variable model (LVM) can be the particular output of a specific cortical column.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Various forms of evidence for this model in different sensory areas of mice, but ultimately, predictive coding is an incomplete theory because most of these models are oversimplified circuit models.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino</summary></entry><entry><title type="html">Review 15: Predictive Coding, Variational Autoencoders, and Biological Connections</title><link href="http://localhost:4000/reviews/review15/" rel="alternate" type="text/html" title="Review 15: Predictive Coding, Variational Autoencoders, and Biological Connections" /><published>2022-02-18T04:16:13-08:00</published><updated>2022-02-18T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review15</id><content type="html" xml:base="http://localhost:4000/reviews/review15/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2011.07464.pdf&quot;&gt;Predictive Coding, Variational Autoencoders,
 and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.github.io/&quot;&gt;Joseph Marino&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Marino, Joseph. “Predictive coding, variational autoencoders, and biological connections.” Neural Computation 34.1 (2021): 1-44.&lt;/p&gt;
@@ -12,15 +84,15 @@ and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.
       &lt;li&gt;&lt;a href=&quot;https://www.nature.com/articles/nn0199_79&quot;&gt;Rao, Ballard 1999&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;For neuroscience, cybernetics, hemholtz machine, and predictive encoding are inspiration for Friston 2005 and 2008 work on free energy and active inference.&lt;/li&gt;
-  &lt;li&gt;For machine learning, this earlier work in variational inference and encoder decoder models, culminates in the variatonal autoencoder.&lt;/li&gt;
+  &lt;li&gt;For neuroscience, cybernetics, hemholtz machine, and predictive encoding are the inspiration for Friston 2005 and 2008 work on free energy and active inference.&lt;/li&gt;
+  &lt;li&gt;For machine learning, this earlier work in variational inference and encoder-decoder models, culminates in the variational autoencoder.&lt;/li&gt;
   &lt;li&gt;Lots of overlap conceptually, but much of the research between the two fields is divided.&lt;/li&gt;
-  &lt;li&gt;The next section is titled connecting predictive coding and VAEs. I take it that these two conncepts form the bridge between the fields.
+  &lt;li&gt;The next section is titled connecting predictive coding and VAEs. I take it that these two concepts form the bridge between the fields.
     &lt;ul&gt;
-      &lt;li&gt;Just from the intro I like that this paper points two very similar concepts in two different fields and then describes the relationship between the two. I feel that there the’s potential for a lot of discovery in understanding the union and interesection between these two concepts.&lt;/li&gt;
+      &lt;li&gt;Just from the intro I like that this paper points two very similar concepts in two different fields and then describes the relationship between the two. I feel that there the’s potential for a lot of discovery in understanding the union and intersection between these two concepts.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Paper posits two possible correspondances between ML and neuro.
+  &lt;li&gt;Paper posits two possible correspondences between ML and neuro.
     &lt;ul&gt;
       &lt;li&gt;Dendrites of pyramidal neurons and neuronal networks.&lt;/li&gt;
       &lt;li&gt;Lateral inhibition and normalizing flows.&lt;/li&gt;
@@ -35,7 +107,7 @@ and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.
   \(\theta^* \longleftarrow argmax_{\theta} \mathbb{E}_{x \sim p_{data}(\bf{x})} [log(p_{theta}(\bf{x}))]\)&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;Probablistic models
+      &lt;li&gt;Probabilistic models
         &lt;ul&gt;
           &lt;li&gt;&lt;strong&gt;autoregressive models&lt;/strong&gt;: $ p_{\theta(\bf{x})} = \prod_{j=1}^{m} p(\bf{x}_{j} \mid x_{&amp;lt; j} $&lt;/li&gt;
           &lt;li&gt;Can factor out $\bf{x}$ in above as a series of distributions, from $t=1 … T$&lt;/li&gt;
@@ -61,7 +133,7 @@ and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.
                 &lt;/ul&gt;
               &lt;/li&gt;
               &lt;li&gt;Training using the gradient of log likelikehood: $\nabla_{\theta}\mathbb{E}_{\bf{x} \sim p_{data}}[log p_{\theta}(\bf{x})]$&lt;/li&gt;
-              &lt;li&gt;Deep autoregressive and variational models can be broken apart by their latent variable impact on objective with some interesting results.&lt;/li&gt;
+              &lt;li&gt;Deep autoregressive and variational models can be broken apart by their latent variable impact on the objective with some interesting results.&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
@@ -698,35 +770,4 @@ and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.
       &lt;li&gt;This is just showing a sensory stimulation task. I wonder what else this methodology can show!&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors by Dr. Austin Graves Dr. Richard Huganir.</summary></entry><entry><title type="html">Review 6: Spiking Neural Nets</title><link href="http://localhost:4000/reviews/review6/" rel="alternate" type="text/html" title="Review 6: Spiking Neural Nets" /><published>2021-12-19T13:16:13-08:00</published><updated>2021-12-19T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review6</id><content type="html" xml:base="http://localhost:4000/reviews/review6/">&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://simons.berkeley.edu/news/spiking-neural-networks&quot;&gt;Spiking Neural Networks&lt;/a&gt; by &lt;a href=&quot;http://anilananthaswamy.com/&quot;&gt;Anil Ananthaswamy&lt;/a&gt;.&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;Citation: &lt;a href=&quot;http://anilananthaswamy.com/&quot;&gt;Anil Ananthaswamy&lt;/a&gt;, “Spiking Neural Networks” Simons Institute, Dec 13, 2021&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;I believe it is immensly understated how critical understanding the dynamics of spiking neural networks (SNN) is to advancing &lt;em&gt;energy efficient&lt;/em&gt; machine intellgience. This quote from this article sums it up perfectly:&lt;/p&gt;
-
-    &lt;blockquote&gt;
-      &lt;p&gt;computational neuroscientist Friedemann Zenke qtd. in Ananthaswamy 2021&lt;/p&gt;
-      &lt;blockquote&gt;
-        &lt;p&gt;My main motivation to think about spiking neural networks is because it’s the language the brain speaks.&lt;/p&gt;
-      &lt;/blockquote&gt;
-    &lt;/blockquote&gt;
-
-    &lt;p&gt;Because SNNs are not researched as much as other types of artificial neural nets (ANNs), I really enjoyed the historical perspective Anil presents here. This writing shows how deep ANNs like AlexNet put deep learning on a central stage and how SNNs have stayed backstage due to a variety of tractability issues. A review of such issues is as such:&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;strong&gt;Backprop and non-differentiablity of SNNs:&lt;/strong&gt; the first challenge is that spiking neurons are often using non-continous and discrete functions like the &lt;a href=&quot;https://en.wikipedia.org/wiki/Heaviside_step_function&quot;&gt;&lt;em&gt;step function&lt;/em&gt;&lt;/a&gt; which prevent researchers from perforiming backprop. See &lt;a href=&quot;https://homepages.cwi.nl/~sbohte/research.html&quot;&gt;Dr. Sander Bohte’s&lt;/a&gt; approach to this problem.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Memory storage and backprop through time:&lt;/strong&gt; assuming we can compute gradients (or approximate ones), we now need to deal with the fact the human neural nets show spiking latency at several different temporal scales. This is a problem becuase encoding neuron states at the scale of miliseconds for an hour of activity is incredibly memory ineffcient. Especially considering neurons exhibit &lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3154835/&quot;&gt;“lifetime sparseness”&lt;/a&gt;(Quiroga and Kreiman 2016), which means that in the brain, they don’t really fire that often. As a result, we end up encoding a lot of useless information about a neuron’s membrane potential.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Single cell activation functions:&lt;/strong&gt; This issue isn’t directly cited here, but I’d like to use it to group a few issues together. The issue that I think it’s most related to in the text is: &lt;em&gt;Homogeneous vs. heterogenous cell types&lt;/em&gt;. This is the idea that having neurons that vary in comparison to eachother and have different firing rules and thresholds allows the information to encode more information and actually results in improved prediction in temporally structured tasks, such as &lt;a href=&quot;https://zenkelab.org/resources/spiking-heidelberg-datasets-shd/&quot;&gt;SNN Audio MNIST from Zenke Lab&lt;/a&gt;. I’d like to add some more considerations here beyond homogeneity and heterogeneity. There are two other factors not mentioned here that result in heterogeneity. First, I think synapse types are important. Many researchers work on excitation and inhibition (E/I) balance in the brain has led to better understanding how attractor states might occur in the brain (see my &lt;a href=&quot;https://xanderladd.github.io/reviews/review3/&quot;&gt;previous review&lt;/a&gt;). Second, I don’t have many references for this on-hand, but any experienced EEG practicioner will tell you how much background activity and local field potentials impact single neuron firing rates. I think these ideas have been experimented with by SNN researchers, but aren’t quite as impactful as the cited results by &lt;a href=&quot;https://neural-reckoning.org/dan_goodman.html&quot;&gt;Goodman lab&lt;/a&gt; on heterogenous neuron types resulting in a 15-20% increase in accuracy on audio MNIST.&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;Anil also presents an array of ingenious research solutions to these problems such as EventProp (&lt;a href=&quot;https://scholar.google.com/citations?user=FzRMI38AAAAJ&amp;amp;hl=en&quot;&gt;Dr. Pehle 2021&lt;/a&gt;) and Surrogate Gradients (Neftci, Mostafa, and Zenke). These are covered pretty well in the original article. However, looking at this from a broader perspective, these approaches don’t seem like they’ve lead to anything that performs so well on MNIST or any other SOTA ML result that researchers enamored with transformers are going to jump ship anytime soon. Looking at this article within the broader context of consolidation with ML/AI, written about by &lt;a href=&quot;https://twitter.com/karpathy/status/1468370605229547522&quot;&gt;Andrej Karpathy&lt;/a&gt;, it seems most ML and AI researchers are focused on ANN based deep learning and are unlikely to migrate over just because of surrogate gradients. I don’t think this is a bad thing for either focus – in fact it’s a good thing &lt;em&gt;for both&lt;/em&gt;. No matter how open minded we frame ourselves, most researchers are biased towards their own research direction. We have to keep reinforcing a narrative that studying &lt;em&gt;X&lt;/em&gt; is more interesting than stuyding &lt;em&gt;Y&lt;/em&gt; for reason &lt;em&gt;J&lt;/em&gt;,&lt;em&gt;K&lt;/em&gt; and &lt;em&gt;L&lt;/em&gt;. This means that SNN researchers are either going to have to show that SNNs can be &lt;strong&gt;significantly&lt;/strong&gt; more energy efficent, or better yet &lt;strong&gt;convincingly&lt;/strong&gt; more accurate. Likely, the case for SNNs is as a worthwile tradeoff between accuracy and energy efficiency.&lt;/p&gt;
-
-    &lt;p&gt;As a enthusiast of biologically inspired networks, I find myself rooting for the future promise of SNNs. However, at the end of the day, for a field of machine intelligence that is extremely based on comparison and benchmarks, the world is not so simple. Mean absolute error (MAE) is important, but not all encompassing. &lt;a href=&quot;https://profiles.uts.edu.au/Tara.Hamilton&quot;&gt;Dr. Tara Hamilton’s&lt;/a&gt; presentation at &lt;a href=&quot;http://snufa.net/2021/&quot;&gt;SNUFA 2021&lt;/a&gt; really helped me realize that there are plently of insteresting use cases for SNNs, for example cochlea implants or heart rate monitoring. However, when it comes to self-driving cars, convolutional neural networks (CNNs) remain an obvious choice. This dynamic is actually a really amazing thing. However, as a researcher, I have to go back to the original quote, that SNNs are the language of the brain. For someone who is interested in reverse engineering the brain, I think it’s hard not consider SNNs an engaging model problem. My own experience with SNNs is very beginner, but it’s posts like this one by Anil that set the stage for an exciting future in the field.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Spiking Neural Networks by Anil Ananthaswamy.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors by Dr. Austin Graves Dr. Richard Huganir.</summary></entry></feed>

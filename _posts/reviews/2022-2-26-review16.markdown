@@ -1,0 +1,50 @@
+---
+layout: base
+title:  "Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections"
+date:   2022-2-26 5:16:13 -0700
+author: xander
+categories: reviews
+---
+
+
+[Predictive Coding, Variational Autoencoders,
+and Biological Connections](https://arxiv.org/pdf/2011.07464.pdf) by [Joseph Marino](https://joelouismarino.github.io/)
+
+Marino, Joseph. "Predictive coding, variational autoencoders, and biological connections." Neural Computation 34.1 (2021): 1-44.
+
+- Predictive encoding from the perspective of theoretical neuroscience and machine learning.
+- 2.3 Variational Inference
+    - Previously paper introduces $p_{\theta}(x,\mathbf{z})p_{\theta}(x)$ as latent variable models.
+    - To get $p_{\theta}(x) = \int p_{\theta}(x,\mathbf{z})d\mathbf{z}$ is often an intractable integral.
+    - Variational inference using evidence lower bound optimization (ELBO) $ \mathcal{L}(\mathbf{x}; q, \theta) \leq log p_{\theta}(\mathbf{x})$.
+    - ELBO objective:
+    $$ log p_{\theta}(\mathbf{x} = \mathcal{L}(\mathbf{x}; z, \theta) + KL(q(\mathbf{z} \mid \mathbf{x}) || p_{\theta}(\mathbf{z} \mid \mathbf{x})  ) $$
+    - Apporaches to optimizing:
+        - Alternating minimization (EM) between first and second term of ELBO.
+        - Computatiional graphn and differentiaion.
+- Predictive Coding
+    - Spatiotemporal
+        - Gaussian autoregessive model over sequences $x_1 ... x_t$:
+        $$ p(x_t \mid x_{1:T}) = \mathcal{N}(x_t; \mu_{x_{\leq t}}, diag(\sigma_{x_{\leq t}^2})) $$
+            - introduce $y_t \sim \mathcal(0,I) $ as prediction error: $ x_t =  \mu_{x_{\leq t}} + \sigma_{x_{\leq t}^2} \cdot y_t$
+            - whitenting transformation shows how this is actually prediction eror: $ y_t = \frac{x_t - \mu_{x_{\leq t}}}{\sigma_{\theta}(x_{\leq t})} $
+        - Prediticiton error can be measured over spatial dimensions using  autoregressive transform.   
+            - spatial whitening formula $\mathbf{y} = \Sigma_{\theta}^{-1/2}(x - \mathbf{\mu_{\theta}}) $
+        - Example of predictive coding: fly optic nerve performs autocorrelation of spatiotemporal signals for dyanmic range.
+        - Normalization through inhibitory neurons.
+        - Photorecptor inhibition to filter unpredicted motion. Ie; object was still in the background but now it is moving.
+        - Lateral inihibhition for spatiotemporal normalization.
+    - Hierarchical 
+        - Six layers of neocortex (I - VI)  organized into columns that communicate through interneurons and long range connections vis pyramidal neurons.
+        - Neocortical microcircuit w/ forward / backwards, excitatory / inihbitory projections.
+        - Theory: backward projections contain predictions and foward projections have error signal.
+        - Mathematical formulation of thalamus as an active blackboard that aims to minimize prediction error by Rao & Ballard (1999).
+            - $p_{\theta}(x \ mid z) = \mathcal{N}(x; f(Wz), diag(\sigma^2_{x}))$
+            - $p_{\theta}(z) = \mathcal{N}(x; \mu_{z}, diag(\sigma^2_{z}))$
+                - f = elementwise function, w = weight matrix, $\sigma_{x}^2$ and $\sigma_{z}^2$ are the respective variances for $x$ and $z$.
+            - MAP estimate of z is $z^*$ which maximizes $p_{\theta}(z \mid x)$. 
+            - Formulate that as an optimization problem: $$ z^* = argmax_{z} ( log(p_{\theta}(x \mid z)) + log p_{\theta}(z) )$$
+            - Each term in the above is convex squared error term so the whole thing can be solved analytically with $$ \nabla_{z}\ell(z, \theta) = W^T (\frac{x - W_z }{\sigma_x}) (\frac{x - \mu_z }{\sigma_z}) $$
+                - We can also use the above gradient to solve for $W$ w/ $\nabla_{W}$
+            - Under this construction of $\theta(W,z)$ we get learning rules that aim to be biologically plausible by optimizing against physical occurrances, like firing rate or membrane potential. Extending this, the latent variable model (LVM) can be the particular output of a specific cortical column.
+        - Various forms of evidence for this model in different sensory areas of mice, but ultimately, predictive coding is an incomplete theory because most of these models are oversimplified circuit models. 

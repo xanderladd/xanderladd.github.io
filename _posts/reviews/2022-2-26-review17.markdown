@@ -1,0 +1,41 @@
+---
+layout: base
+title:  "Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3"
+date:   2022-3-04 5:16:13 -0700
+author: xander
+categories: reviews
+---
+
+
+[Predictive Coding, Variational Autoencoders,
+and Biological Connections](https://arxiv.org/pdf/2011.07464.pdf) by [Joseph Marino](https://joelouismarino.github.io/)
+
+Marino, Joseph. "Predictive coding, variational autoencoders, and biological connections." Neural Computation 34.1 (2021): 1-44.
+
+- Predictive Coding Continued
+    - A major difference between predictive coding and inference is that predictive coding calculates gradients with backwards (top-down) projections and inference performs updates bottom up (forward pass).
+    - Referring to the previous set of note, these learning updates are computed using:
+     $$ \nabla_{z}\ell(z, \theta) = W^T (\frac{x - W_z }{\sigma_x}) (\frac{x - \mu_z }{\sigma_z}) $$
+     - The first team represents a local error $\mathcal{e}_x$ and the second term represents and error over the latent variable $\mathcal{e}_z$. These terms modulate the gain of each error. The paper mentions that they are related to attention and cites Feldman & Friston, 2010. Without any background, I can't see obviously how the error over the latent variable $z$ could be related to attention.
+     - Can expand the preivous equations beyond $\sigma_x$ to be multivariate spatial covariance $\Sigma_X$.
+    - Empirical support for predictive coding.
+        - Fitting retinal cell ganglion cells processes using spatial whitening kernel.
+        - Hierachial: top down signals can alter traditional receptive fields.
+        - Sensory cortex as engaged in hierarchical prediction of spatial / temporal domain.
+- Variational Auteoencoders 
+    - Deep network latent variable models trained using variational inference.
+        - Breaking this down:
+            - deep network - stacked layers of units / artifical neurons that perform linear transformations to the signal as it feeds forward.
+            - latent variable -  some random variables (noramlly denoted as $z$) which will be part of the model parameterizaiton. To me, an interesting intuition to thinking about latent variables is that they create a low dimensional subspace that bottlenecks the information from higher dimensional inputs / layers.
+            - using variational inference - this one was covered in the previous blog. 
+        - Optimizing conditional likelihood of latent variable requires differentiating the latent variable. This is tricky because the latent variable is sampled from a  normal distribution. How can we tune the parameters of this distribution _and_ the network? To do this we need to use the reparameterization trick. For brevity I am not going to cover in this blog. This allows us to train a network that gives latent variable vector $\mathbf{z}$, thus an autoencoder.
+- Connections and Comparisions
+    - Main connection: both are hierachcial latent variable models.
+        - Also, both preditive coding and VAEs rely on nonlinear connections between levels and covariance relationship between levels.
+            - IMO, this is the really impressive part about VAE and why it's so relevant for Neuroscience. It is well known that human NNs have nonlinear synaptic connectivty, but I think it's less clear (at least for the layman) that levels of cortical connectiviy might covary. But we know, especically from researching attention, that this is true. This is why VAE's are becoming my favorite brain inspired ML model! Although, credit assignment is still an outstanding issue.
+        - Inference: both methods perform inference but using diffeent optimization techniques (predictive: gradient, vae: amortized). (see last two reviews and previous section about optimizing VAE)
+    - Author aligns VAE and cortical network on the level of a network of pyramidal neuron dendrites.
+        - I don't know why this alignment is against dendrites. Why not against the entire neuron (axon, soma, etc.)
+        - Ok acutally I do think I know why: it's because these networks mainly integrate signal. Or at least it's easier to make the comparison they are integrating signal rather than integrating the signal and propogating it.
+    - Normalizing flows, which is mentioned in the paper, but not this blog, is compared to lateral neurons / lateral inhibition.
+        - I am generally making this note for myself to remember this.

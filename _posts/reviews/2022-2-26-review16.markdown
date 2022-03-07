@@ -1,6 +1,6 @@
 ---
 layout: base
-title:  "Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections"
+title:  "Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 2"
 date:   2022-2-26 5:16:13 -0700
 author: xander
 categories: reviews

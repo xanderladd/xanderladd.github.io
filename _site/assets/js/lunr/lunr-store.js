@@ -95,15 +95,21 @@ var store = [{
         "url": "/reviews/review14/",
         "teaser": "/assets/images/trees.jpeg"
       },{
-        "title": "Review 15: Predictive Coding, Variational Autoencoders, and Biological Connections",
+        "title": "Review 15: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 1",
         "excerpt":"Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino Marino, Joseph. “Predictive coding, variational autoencoders, and biological connections.” Neural Computation 34.1 (2021): 1-44. Predictive encoding from the perspective of theoretical neuroscience and machine learning. Informal defintion for predictive encoding: Neural circuits as probabilistic models of other neurons. Inception of...","categories": ["reviews"],
         "tags": [],
         "url": "/reviews/review15/",
         "teaser": "/assets/images/trees.jpeg"
       },{
-        "title": "Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections",
+        "title": "Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 2",
         "excerpt":"Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino Marino, Joseph. “Predictive coding, variational autoencoders, and biological connections.” Neural Computation 34.1 (2021): 1-44. Predictive encoding from the perspective of theoretical neuroscience and machine learning. 2.3 Variational Inference Previously paper introduces $p_{\\theta}(x,\\mathbf{z})p_{\\theta}(x)$ as latent variable models. To get $p_{\\theta}(x) =...","categories": ["reviews"],
         "tags": [],
         "url": "/reviews/review16/",
+        "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3",
+        "excerpt":"Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino Marino, Joseph. “Predictive coding, variational autoencoders, and biological connections.” Neural Computation 34.1 (2021): 1-44. Predictive Coding Continued A major difference between predictive coding and inference is that predictive coding calculates gradients with backwards (top-down) projections and inference performs updates bottom...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review17/",
         "teaser": "/assets/images/trees.jpeg"
       }]

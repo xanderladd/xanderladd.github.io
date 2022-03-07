@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-27T19:28:11-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections</title><link href="http://localhost:4000/reviews/review16/" rel="alternate" type="text/html" title="Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections" /><published>2022-02-26T04:16:13-08:00</published><updated>2022-02-26T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review16</id><content type="html" xml:base="http://localhost:4000/reviews/review16/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2011.07464.pdf&quot;&gt;Predictive Coding, Variational Autoencoders,
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-06T19:23:23-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3</title><link href="http://localhost:4000/reviews/review17/" rel="alternate" type="text/html" title="Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3" /><published>2022-03-04T04:16:13-08:00</published><updated>2022-03-04T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review17</id><content type="html" xml:base="http://localhost:4000/reviews/review17/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2011.07464.pdf&quot;&gt;Predictive Coding, Variational Autoencoders,
+and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.github.io/&quot;&gt;Joseph Marino&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Marino, Joseph. “Predictive coding, variational autoencoders, and biological connections.” Neural Computation 34.1 (2021): 1-44.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Predictive Coding Continued
+    &lt;ul&gt;
+      &lt;li&gt;A major difference between predictive coding and inference is that predictive coding calculates gradients with backwards (top-down) projections and inference performs updates bottom up (forward pass).&lt;/li&gt;
+      &lt;li&gt;Referring to the previous set of note, these learning updates are computed using:
+   \(\nabla_{z}\ell(z, \theta) = W^T (\frac{x - W_z }{\sigma_x}) (\frac{x - \mu_z }{\sigma_z})\)&lt;/li&gt;
+      &lt;li&gt;The first team represents a local error $\mathcal{e}_x$ and the second term represents and error over the latent variable $\mathcal{e}_z$.&lt;/li&gt;
+      &lt;li&gt;Can expand the preivous equations beyond $\sigma_x$ to be multivariate spatial covariance $\Sigma_X$&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino</summary></entry><entry><title type="html">Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 2</title><link href="http://localhost:4000/reviews/review16/" rel="alternate" type="text/html" title="Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 2" /><published>2022-02-26T04:16:13-08:00</published><updated>2022-02-26T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review16</id><content type="html" xml:base="http://localhost:4000/reviews/review16/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2011.07464.pdf&quot;&gt;Predictive Coding, Variational Autoencoders,
 and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.github.io/&quot;&gt;Joseph Marino&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Marino, Joseph. “Predictive coding, variational autoencoders, and biological connections.” Neural Computation 34.1 (2021): 1-44.&lt;/p&gt;
@@ -70,7 +85,7 @@ and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino</summary></entry><entry><title type="html">Review 15: Predictive Coding, Variational Autoencoders, and Biological Connections</title><link href="http://localhost:4000/reviews/review15/" rel="alternate" type="text/html" title="Review 15: Predictive Coding, Variational Autoencoders, and Biological Connections" /><published>2022-02-18T04:16:13-08:00</published><updated>2022-02-18T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review15</id><content type="html" xml:base="http://localhost:4000/reviews/review15/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2011.07464.pdf&quot;&gt;Predictive Coding, Variational Autoencoders,
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino</summary></entry><entry><title type="html">Review 15: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 1</title><link href="http://localhost:4000/reviews/review15/" rel="alternate" type="text/html" title="Review 15: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 1" /><published>2022-02-18T04:16:13-08:00</published><updated>2022-02-18T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review15</id><content type="html" xml:base="http://localhost:4000/reviews/review15/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2011.07464.pdf&quot;&gt;Predictive Coding, Variational Autoencoders,
 and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.github.io/&quot;&gt;Joseph Marino&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Marino, Joseph. “Predictive coding, variational autoencoders, and biological connections.” Neural Computation 34.1 (2021): 1-44.&lt;/p&gt;
@@ -691,83 +706,4 @@ and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.
       &lt;li&gt;Overall I thought this blog post did a great job of explaining several distinct pros and cons to distributed learning systems. It seems like these methods are becoming an &lt;em&gt;emerging trend&lt;/em&gt; (nod nod wink wink) in machine learning. I think even Geoff Hinton’s work on GLOM (&lt;a href=&quot;https://arxiv.org/pdf/2102.12627.pdf&quot;&gt;Hinton 2020&lt;/a&gt;) has some resemblance to distributed systems. Ultimately, neural networks have done an excellent job of stacking computational units together, but the opportunity for robustness in diverse and locally structured systems is exciting. It’s awesome to see so many examples tying deep learning networks into this concept of self-organizing systems. Outside of evolutionary algorithms, I don’t know much about this stuff but I’ll be following along!&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">The Future of Artificial Intelligence is Self-Organizing and Self-Assembling by Prof. Sebastian Risi</summary></entry><entry><title type="html">Review 7: Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors</title><link href="http://localhost:4000/reviews/review7/" rel="alternate" type="text/html" title="Review 7: Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors" /><published>2021-12-26T13:16:13-08:00</published><updated>2021-12-26T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review7</id><content type="html" xml:base="http://localhost:4000/reviews/review7/">&lt;p&gt;&lt;a href=&quot;https://elifesciences.org/articles/66809&quot;&gt;Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors&lt;/a&gt; by &lt;a href=&quot;http://neuroscience.bs.jhmi.edu/huganir/Member/AustinGraves.html&quot;&gt;Dr. Austin Graves&lt;/a&gt; &lt;a href=&quot;https://www.hopkinsmedicine.org/profiles/details/richard-huganir&quot;&gt;Dr. Richard Huganir&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Citation: Graves, Austin R., et al. “Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors.” Elife 10 (2021): e66809.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;First, I like how this article is structured. It has introduction, then just goes right into results. This is well tailored to the reader because unless you are in some very theoretical field and the method is &lt;em&gt;somehow&lt;/em&gt; more important than the result, we want to read the results.&lt;/li&gt;
-  &lt;li&gt;By the way, I had no idea what a SEP tag is or even what knockin means! I also didn’t know what GluA1 does.
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;knockin&lt;/strong&gt;: mouse genetic lines that have an altered gene sequence.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;SEP&lt;/strong&gt;:  super ecliptic pHluorin (SEP), flouresces at neutral Ph only meaning it will be expressed on the cell membrane, but not inside the cell. fluorescent tag for AMPAR (AMPA receptors)&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;GluA1&lt;/strong&gt;: Glutamate receptor protein that forms AMPAR&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;The begininning the results section focuses on how their SEP-GluA1 knockin mouse line is functionally the same as the wildtype (WT) mouse line.
-    &lt;ul&gt;
-      &lt;li&gt;The authors do this thoroughly using several experiments.
-        &lt;ol&gt;
-          &lt;li&gt;Northern and Western blot flourescence protocols to determine mRNA protein expression of GluA1, GluA2, and GluA3 in knockin line and WT line. This is done using slice of mouse hippocampal tissue. (Fig 1)
-            &lt;ul&gt;
-              &lt;li&gt;They noticed that in their knockin mice, GluA1 postsynaptic density is lowered due to the knockin line mutation of the mRNA. Then knockin line mice have higher GluA3 to compensate.&lt;/li&gt;
-              &lt;li&gt;However, this doesn’t seem to have any functional effects on synpatic plasticity – as the authors go on to show.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Single voltage clamp records of hippocampal slices (Fig 2), which show that the synaptic behavior of SEP-GluA1 knockin mice is unaffected by the tag.
-            &lt;ul&gt;
-              &lt;li&gt;They show this by showing that the EPSC (excitatory post synpatic currents) are unaffected by SEP tagging.&lt;/li&gt;
-              &lt;li&gt;They show this under LTP induction too in the next step.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Compounds like TTX and BIC have homogenous effects on relative surface AMPA recepots of both WT and SEP-GluA1 knockin mice.&lt;/li&gt;
-          &lt;li&gt;Behavioral experiments, where SEP-GluA1 mice had the same behavior on locomotor task, anxiety task, spatial novelty prefence task.
-            &lt;ul&gt;
-              &lt;li&gt;I know the difference is not significant but in the anxiety task it does look like SEP-GluA1 mice &lt;em&gt;do&lt;/em&gt; spend more time in the open arms. 
-        - Overall, this battery of evidence is convincing that we can consider SEP-GluA1 mice as representative of WT mice.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Now to discuss the good part. What happens to these synapses at large scale.&lt;/li&gt;
-  &lt;li&gt;First, this is good to know:
-    &lt;blockquote&gt;
-      &lt;p&gt;Graves et al., 2021&lt;/p&gt;
-      &lt;blockquote&gt;
-        &lt;p&gt;We found a significant correlation between SEP-GluA1 fluorescence intensity and uEPSC amplitude (Figure 5c), indicating that SEP fluorescent intensity can be used as a proxy for synaptic strength.&lt;/p&gt;
-      &lt;/blockquote&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Glutamate uncaging led to increased uEPSC amplitude and SEP fluorescence in stimulated spines.
-    &lt;ul&gt;
-      &lt;li&gt;glutamate uncaging is light induced photstimulation of neurons.&lt;/li&gt;
-      &lt;li&gt;authors show that as expected, this induced stimulation of neurons likely results in more AMPAR receptors on the cell membrane as a marker of increased synaptic strength.&lt;/li&gt;
-      &lt;li&gt;Shown clearly in Figure 5D-F. These are important figures. They show that LTP in high frequency pairings is marked by an incresed SEP flourescence.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Even &lt;em&gt;in vitro&lt;/em&gt; there’s a strong correlation between SEP fluorescence and EPSC amplitude.&lt;/li&gt;
-  &lt;li&gt;Paper presents an unsupervised algorithm for synapse detection.&lt;/li&gt;
-  &lt;li&gt;Sensory stimulation task
-    &lt;ul&gt;
-      &lt;li&gt;The detection algorithm recognizes &lt;strong&gt;hundreds of thousands of synapses&lt;/strong&gt;.&lt;/li&gt;
-      &lt;li&gt;The experimenter stimulates one mouse whisker but not the other.&lt;/li&gt;
-      &lt;li&gt;The C2 barrel corresponding to stimulated whisker displays a higher SEP-GluA1 intensity from the whisker stimulation induced LTP.&lt;/li&gt;
-      &lt;li&gt;The figure showing this (Fig 8c.) shows this result clearly and it is statisically significant.&lt;/li&gt;
-      &lt;li&gt;Not only that, we get the time scale this happened on as well. (3hrs)
-        &lt;ul&gt;
-          &lt;li&gt;well likely the effect just observed in post stim imaging actually.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;This sensory stimulation task is awesome for a few reasons.
-    &lt;ol&gt;
-      &lt;li&gt;They have a ton of data since they detect so many synapses. This means when something is significant it has an N &amp;gt; 100,00, which is very convincing.&lt;/li&gt;
-      &lt;li&gt;I &lt;em&gt;think&lt;/em&gt; this is the first experiment demonstrating one of the actual mechaisms of LTP &lt;em&gt;in vivo&lt;/em&gt; and that’s pretty cool.&lt;/li&gt;
-      &lt;li&gt;This is just showing a sensory stimulation task. I wonder what else this methodology can show!&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors by Dr. Austin Graves Dr. Richard Huganir.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">The Future of Artificial Intelligence is Self-Organizing and Self-Assembling by Prof. Sebastian Risi</summary></entry></feed>

@@ -112,4 +112,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review17/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 18: Deep Learning Is Hitting a Wall",
+        "excerpt":"Deep Learning is Hitting a Wall by Gary Marcus Marcus, Gary. “Deep Learning is Hitting a Wall” natuil.us (2022). I’ve been writing all day and I am struggling, but reading this is a breath of fresh air. It is well written and easy to read. Marcus claims the AI/ML hype...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review18/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

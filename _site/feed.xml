@@ -1,4 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-06T19:23:23-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3</title><link href="http://localhost:4000/reviews/review17/" rel="alternate" type="text/html" title="Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3" /><published>2022-03-04T04:16:13-08:00</published><updated>2022-03-04T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review17</id><content type="html" xml:base="http://localhost:4000/reviews/review17/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2011.07464.pdf&quot;&gt;Predictive Coding, Variational Autoencoders,
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-14T00:18:37-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 18: Deep Learning Is Hitting a Wall</title><link href="http://localhost:4000/reviews/review18/" rel="alternate" type="text/html" title="Review 18: Deep Learning Is Hitting a Wall" /><published>2022-03-13T05:16:13-07:00</published><updated>2022-03-13T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review18</id><content type="html" xml:base="http://localhost:4000/reviews/review18/">&lt;p&gt;&lt;a href=&quot;https://nautil.us/deep-learning-is-hitting-a-wall-14467/&quot;&gt;Deep Learning is Hitting a Wall&lt;/a&gt; by &lt;a href=&quot;https://en.wikipedia.org/wiki/Gary_Marcus&quot;&gt;Gary Marcus&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Marcus, Gary. “Deep Learning is Hitting a Wall” natuil.us (2022).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I’ve been writing all day and I am struggling, but reading this is a breath of fresh air. It is well written and easy to read.&lt;/li&gt;
+  &lt;li&gt;Marcus claims the AI/ML hype from 2005-2016 has overpromised.&lt;/li&gt;
+  &lt;li&gt;We can see it is deployed all the time in low risk and mundane tasks, but we don’t see it often deployed in high risk situations.
+    &lt;ul&gt;
+      &lt;li&gt;Self-driving being the mos ubiqitiously deployed ML but it requires human oversight.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Large ML language models show  examples of failing to form any underlying conceptual understanding of what the words in the prompt/generation structure mean.&lt;/li&gt;
+  &lt;li&gt;Many have touted ML scaling laws, stating that more data and larger models with continue to improve.
+    &lt;ul&gt;
+      &lt;li&gt;This improvement may be bounded.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Explicit symbol manipulation has been benished from the kingdom of AI.&lt;/li&gt;
+  &lt;li&gt;I like that the author focuses on trustworthiness and relibility models instead of accuracy. At the end of the day, humans don’t care about RMSE, we care about the impact it has on  our lives.&lt;/li&gt;
+  &lt;li&gt;Background on symbolic AI as codes to represent information. Like bits for example.
+    &lt;ul&gt;
+      &lt;li&gt;More background about symbol manipulation through explaining computer programs, variable assignment etc.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Google search as a great example of effective symbolic AI.&lt;/li&gt;
+  &lt;li&gt;The autor discuss the background of deep learning rise to fame over symbolic AI involving several key points in the 80s-2010s where certain leading researchers eschewed statements and made claims about which approach has the most merits.&lt;/li&gt;
+  &lt;li&gt;Some motivations for moving back to some ideas in symbol based AI:
+    &lt;ul&gt;
+      &lt;li&gt;Recipe argument: so many things we do are procedural, conditioned. Symbolic AI can better represent this knowledge.&lt;/li&gt;
+      &lt;li&gt;Black box: this is the famous DL is a black box argument. I think of this argument as technical debt. You build something capable of doing great things but can’t explicitly explain why it works.&lt;/li&gt;
+      &lt;li&gt;Silo arguement: most of the AI capabilities from image detection to NLP are siloed to their own domain. Integrating knowledge from mutiple domains can lead to more general forms of intelligence.&lt;/li&gt;
+      &lt;li&gt;Neural networks can’t do addition.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I think these arguments are well reseasoned and I don’t eschew symbolic AI by any means. However, the question in my mind, is how much symbolism from symbolic AI needs to be introduced.
+    &lt;blockquote&gt;
+      &lt;p&gt;qtd.  Marcus 2022&lt;/p&gt;
+      &lt;blockquote&gt;
+        &lt;p&gt;Artur Garcez and Luis Lamb wrote a manifesto for hybrid models in 2009, called Neural-Symbolic Cognitive Reasoning.&lt;/p&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Added to my reading list&lt;/li&gt;
+  &lt;li&gt;New developments in Symbolic AI
+    &lt;ul&gt;
+      &lt;li&gt;Alphafold&lt;/li&gt;
+      &lt;li&gt;AlphaGO&lt;/li&gt;
+      &lt;li&gt;Deepmind chess&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cognition and intelligence is many things and trying to fit them all into feedfoward net w/ backprop is not rational.&lt;/li&gt;
+  &lt;li&gt;End with quote:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;qtd.  Marcus 2022&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;With all the challenges in ethics and computation, and the knowledge needed from fields like linguistics, psychology, anthropology, and neuroscience, and not just mathematics and computer science, it will take a village to raise to an AI. We should never forget that the human brain is perhaps the most complicated system in the known universe; if we are to build something roughly its equal, open-hearted collaboration will be key&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Deep Learning is Hitting a Wall by Gary Marcus</summary></entry><entry><title type="html">Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3</title><link href="http://localhost:4000/reviews/review17/" rel="alternate" type="text/html" title="Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3" /><published>2022-03-04T04:16:13-08:00</published><updated>2022-03-04T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review17</id><content type="html" xml:base="http://localhost:4000/reviews/review17/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2011.07464.pdf&quot;&gt;Predictive Coding, Variational Autoencoders,
 and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.github.io/&quot;&gt;Joseph Marino&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Marino, Joseph. “Predictive coding, variational autoencoders, and biological connections.” Neural Computation 34.1 (2021): 1-44.&lt;/p&gt;
@@ -9,8 +69,56 @@ and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.
       &lt;li&gt;A major difference between predictive coding and inference is that predictive coding calculates gradients with backwards (top-down) projections and inference performs updates bottom up (forward pass).&lt;/li&gt;
       &lt;li&gt;Referring to the previous set of note, these learning updates are computed using:
    \(\nabla_{z}\ell(z, \theta) = W^T (\frac{x - W_z }{\sigma_x}) (\frac{x - \mu_z }{\sigma_z})\)&lt;/li&gt;
-      &lt;li&gt;The first team represents a local error $\mathcal{e}_x$ and the second term represents and error over the latent variable $\mathcal{e}_z$.&lt;/li&gt;
-      &lt;li&gt;Can expand the preivous equations beyond $\sigma_x$ to be multivariate spatial covariance $\Sigma_X$&lt;/li&gt;
+      &lt;li&gt;The first team represents a local error $\mathcal{e}_x$ and the second term represents and error over the latent variable $\mathcal{e}_z$. These terms modulate the gain of each error. The paper mentions that they are related to attention and cites Feldman &amp;amp; Friston, 2010. Without any background, I can’t see obviously how the error over the latent variable $z$ could be related to attention.&lt;/li&gt;
+      &lt;li&gt;Can expand the preivous equations beyond $\sigma_x$ to be multivariate spatial covariance $\Sigma_X$.&lt;/li&gt;
+      &lt;li&gt;Empirical support for predictive coding.
+        &lt;ul&gt;
+          &lt;li&gt;Fitting retinal cell ganglion cells processes using spatial whitening kernel.&lt;/li&gt;
+          &lt;li&gt;Hierachial: top down signals can alter traditional receptive fields.&lt;/li&gt;
+          &lt;li&gt;Sensory cortex as engaged in hierarchical prediction of spatial / temporal domain.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Variational Auteoencoders
+    &lt;ul&gt;
+      &lt;li&gt;Deep network latent variable models trained using variational inference.
+        &lt;ul&gt;
+          &lt;li&gt;Breaking this down:
+            &lt;ul&gt;
+              &lt;li&gt;deep network - stacked layers of units / artifical neurons that perform linear transformations to the signal as it feeds forward.&lt;/li&gt;
+              &lt;li&gt;latent variable -  some random variables (noramlly denoted as $z$) which will be part of the model parameterizaiton. To me, an interesting intuition to thinking about latent variables is that they create a low dimensional subspace that bottlenecks the information from higher dimensional inputs / layers.&lt;/li&gt;
+              &lt;li&gt;using variational inference - this one was covered in the previous blog.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Optimizing conditional likelihood of latent variable requires differentiating the latent variable. This is tricky because the latent variable is sampled from a  normal distribution. How can we tune the parameters of this distribution &lt;em&gt;and&lt;/em&gt; the network? To do this we need to use the reparameterization trick. For brevity I am not going to cover in this blog. This allows us to train a network that gives latent variable vector $\mathbf{z}$, thus an autoencoder.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Connections and Comparisions
+    &lt;ul&gt;
+      &lt;li&gt;Main connection: both are hierachcial latent variable models.
+        &lt;ul&gt;
+          &lt;li&gt;Also, both preditive coding and VAEs rely on nonlinear connections between levels and covariance relationship between levels.
+            &lt;ul&gt;
+              &lt;li&gt;IMO, this is the really impressive part about VAE and why it’s so relevant for Neuroscience. It is well known that human NNs have nonlinear synaptic connectivty, but I think it’s less clear (at least for the layman) that levels of cortical connectiviy might covary. But we know, especically from researching attention, that this is true. This is why VAE’s are becoming my favorite brain inspired ML model! Although, credit assignment is still an outstanding issue.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Inference: both methods perform inference but using diffeent optimization techniques (predictive: gradient, vae: amortized). (see last two reviews and previous section about optimizing VAE)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Author aligns VAE and cortical network on the level of a network of pyramidal neuron dendrites.
+        &lt;ul&gt;
+          &lt;li&gt;I don’t know why this alignment is against dendrites. Why not against the entire neuron (axon, soma, etc.)&lt;/li&gt;
+          &lt;li&gt;Ok acutally I do think I know why: it’s because these networks mainly integrate signal. Or at least it’s easier to make the comparison they are integrating signal rather than integrating the signal and propogating it.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Normalizing flows, which is mentioned in the paper, but not this blog, is compared to lateral neurons / lateral inhibition.
+        &lt;ul&gt;
+          &lt;li&gt;I am generally making this note for myself to remember this.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino</summary></entry><entry><title type="html">Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 2</title><link href="http://localhost:4000/reviews/review16/" rel="alternate" type="text/html" title="Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 2" /><published>2022-02-26T04:16:13-08:00</published><updated>2022-02-26T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review16</id><content type="html" xml:base="http://localhost:4000/reviews/review16/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2011.07464.pdf&quot;&gt;Predictive Coding, Variational Autoencoders,
@@ -623,87 +731,4 @@ and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Another thing I really like about this paper is that it isn’t crazy hard to understand. So many ML papers are steeped in lots of formula and notation and this paper truly tried to clearly communicate the message.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning by Dr. Ha and Yujin Tang</summary></entry><entry><title type="html">Review 8: The Future of Artificial Intelligence is Self-Organizing and Self-Assembling</title><link href="http://localhost:4000/reviews/review8/" rel="alternate" type="text/html" title="Review 8: The Future of Artificial Intelligence is Self-Organizing and Self-Assembling" /><published>2022-01-02T13:16:13-08:00</published><updated>2022-01-02T13:16:13-08:00</updated><id>http://localhost:4000/reviews/review8</id><content type="html" xml:base="http://localhost:4000/reviews/review8/">&lt;p&gt;&lt;a href=&quot;https://sebastianrisi.com/self_assembling_ai/9&quot;&gt;The Future of Artificial Intelligence is Self-Organizing and Self-Assembling&lt;/a&gt; by &lt;a href=&quot;https://sebastianrisi.com&quot;&gt;Prof. Sebastian Risi&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Citation: Risi, Sebastian. “The Future of Artificial Intelligence is Self-Organizing and Self-Assembling”. sebastianrisi. com (2021): n. pag. Web.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Today I am reading an interesting blog post by Professor Risi, at the &lt;a href=&quot;https://www.itu.dk/&quot;&gt;IT University of Copenhagen&lt;/a&gt;, about self organizing systems and how they can potentially solve some of the problems in developing generalizable AI.&lt;/li&gt;
-  &lt;li&gt;The blog post starts by detailing the incredible scale at which systems self-organize. I can’t help but recall an interesting tweet by &lt;a href=&quot;https://twitter.com/plinz?lang=en&quot;&gt;Joscha Bach&lt;/a&gt; that says something to the effect of “it’s computation all the way down”. My interpretation of this saying is that at every level of these complex systems, there are smaller and smaller constituents responsible for performing preceding simpler and simpler computations. In this way, a single ant can be responsible for finding a piece of food and then remembering the path to bring the food back home. However, the delegation of tasks to these ants allows a complex colony of ants to survive and ants are notoriously good at surviving. The problem with computation all the way down, is that the computation solves a simpler problem, but that doesn’t mean the computation itself is simple. This is why I think Prof. Risi brings up a good point in the first paragraph – if we want the benefit of robustness – we’ll need to find efficient training methods.&lt;/li&gt;
-  &lt;li&gt;The difference being drawn out between self-assembly and emergence is fascinating. Here’s why I think so. As an engineer (software engineer for the most part), I’ve started to realize how disastrous “over-engineering” is. The more code I have to write in order to extend some system for a simple problem is often a design flaw I made in the past. Amazingly, emergent systems like ants or swarms of insects don’t have this problem since their genetic code sets them up so well to carry out their &lt;em&gt;local&lt;/em&gt; and &lt;em&gt;global&lt;/em&gt; purposes. Historically, we are pretty damn good engineers, but when it comes to endowing our designs with this kind of adaptability, we often come up short. Our work is constantly being replaced, rebuilt, refactored, repurposed.
-    &lt;ul&gt;
-      &lt;li&gt;These words are inherent to human creations. Nature never refactors. It may replace or repurpose at times, but in the slowest timescale imaginable. Humans are always rushing to get these things done. To get a new version released, to improve state of the art, to hastily revitalize old infrastructure.&lt;/li&gt;
-      &lt;li&gt;One caveat to this point is that humans don’t build systems capable of robust adaptation: art. Great artists build things that seem to be constant sources of beauty (or functionality depending on what you expect out of art). For example, the Mona Lisa has been captivating for hundreds of years. Tchaikovsky’s music doesn’t need any refactoring or &lt;em&gt;remixing&lt;/em&gt;. On the other hand, it’s hard to argue that these things have some emergent behavior.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;I wonder how true it is that neural nets can’t generalize very well. I agree with Prof. Risi’s claim, but I think GPT-3 is an interesting counter-example. Sure it’s a giant net, but it can handily craft human-level responses to questions outside of its training data.&lt;/li&gt;
-  &lt;li&gt;I will continue reading but these references are hard to ignore!
-    &lt;blockquote&gt;
-      &lt;p&gt;Vichniac, 1984; Wolfram, 1984; Langton, 1986 qtd. in Risi 2021&lt;/p&gt;
-      &lt;blockquote&gt;
-        &lt;p&gt;Cellular Automata can aid in the understanding of biological pattern formations, modeling of lattice-based physical systems in percolation and nucleation, and synthesis of artificial life.&lt;/p&gt;
-      &lt;/blockquote&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://xanderladd.github.io/research/benchmarking&quot;&gt;My research&lt;/a&gt; involves evolutionary alorithms. So Neural Cellular Automata (NCAs) seem really interesting to me.
-    &lt;ul&gt;
-      &lt;li&gt;However, the fact that reassembling the Nordic flag causes non-optimal solutions gives a good idea that conquering challenging optimization landscapes can be a real tough problem.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://openreview.net/forum?id=7fFO4cMBx_9&quot;&gt;Variational Neural Cellular Automata&lt;/a&gt; reminds me I need to learn how VAEs work a bit better!&lt;/li&gt;
-  &lt;li&gt;Their &lt;a href=&quot;https://sebastianrisi.com/wp-content/uploads/minecraft_short.mp4&quot;&gt;3D Minecraft NCA tree house morphogenesis video&lt;/a&gt; is really cool. I am amazing by the detail of the reconstruction of their algo. Though I’ve never played minecraft.&lt;/li&gt;
-  &lt;li&gt;The really interesting part behind their demonstration of locomotive structures is that the interactions are developed at a local level. This kind of interaction structure is the same kind the brain uses.
-    &lt;ul&gt;
-      &lt;li&gt;For the most part.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;The above is confirmed by Prof. Risi here:
-    &lt;blockquote&gt;
-      &lt;p&gt;Risi 2021&lt;/p&gt;
-      &lt;blockquote&gt;
-        &lt;p&gt;For example, instead of optimizing the weight parameters of neural networks directly, only meta-learning synapse-specific Hebbian learning rules allows a network to continuously self-organize its weights during the lifetime of the agent (Najarro &amp;amp; Risi, 2020). We found that starting from completely random weights, evolved Hebbian rules enable an agent to navigate a dynamic 2D-pixel environment; likewise, the approach also allows a simulated 3D quadruped to learn how to walk while adapting to some morphological damage not seen during training and in the absence of any explicit reward or error signal in less than 100 timesteps.&lt;/p&gt;
-      &lt;/blockquote&gt;
-    &lt;/blockquote&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;Also, the “not seen during training example” &lt;a href=&quot;https://sebastianrisi.com/wp-content/uploads/ant_hebbian2.mp4&quot;&gt;here&lt;/a&gt; is pretty funny as it just flops around.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;The author describes several methods of parameter sharing:
-    &lt;ol&gt;
-      &lt;li&gt;Iteratively merging learning rules
-        &lt;ul&gt;
-          &lt;li&gt;based on the “genomic bottleneck” (&lt;a href=&quot;https://www.nature.com/articles/s41467-019-11786-6&quot;&gt;Zador 2019&lt;/a&gt;), they drastically reduce parameters by combining rules. (what is k-means being used on?)&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Learning learning rules through self-organization
-        &lt;ul&gt;
-          &lt;li&gt;OK, so this reference to Krisch and Schmidhuber is a must-read. &lt;a href=&quot;https://arxiv.org/abs/2012.14905&quot;&gt;https://arxiv.org/abs/2012.14905&lt;/a&gt;. Basically, small recurrent networks somehow self-organize and learn a global algorithm. Really want to find out more here.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Learning to be robust to unseen and permutated sensory inputs
-        &lt;ul&gt;
-          &lt;li&gt;Idea here is to add a global controller or attention mechanism to moderate local interactions. This can provide some robustness against variation.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Now time to discuss training. Prof. Risi says this is hard because:
-    &lt;ol&gt;
-      &lt;li&gt;There is no entity that is essentially fully in charge of the self-organizing system, no engineer at the helm.&lt;/li&gt;
-      &lt;li&gt;These systems are chaotic, it’s hard to analytically guide them to stable states. The solutions are non-deterministic and often degenerate to local minima.&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;So what can we do?
-    &lt;ul&gt;
-      &lt;li&gt;Quality Diversity (Pugh et al. 2016)[https://www.frontiersin.org/articles/10.3389/frobt.2016.00040/full] aims to generate a diverse set of solutions instead of only one satisfying solution.&lt;/li&gt;
-      &lt;li&gt;Deep learning + Compositional Pattern Producing Networks (CPPNs; Stanley 2007) &lt;a href=&quot;https://arxiv.org/abs/1908.06663&quot;&gt;Reinke et al. 2020,&lt;/a&gt;
-        &lt;ul&gt;
-          &lt;li&gt;I got lost here. I don’t know what CPNNs do and unfortunately, I already added enough to my reading list for today.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Overall I thought this blog post did a great job of explaining several distinct pros and cons to distributed learning systems. It seems like these methods are becoming an &lt;em&gt;emerging trend&lt;/em&gt; (nod nod wink wink) in machine learning. I think even Geoff Hinton’s work on GLOM (&lt;a href=&quot;https://arxiv.org/pdf/2102.12627.pdf&quot;&gt;Hinton 2020&lt;/a&gt;) has some resemblance to distributed systems. Ultimately, neural networks have done an excellent job of stacking computational units together, but the opportunity for robustness in diverse and locally structured systems is exciting. It’s awesome to see so many examples tying deep learning networks into this concept of self-organizing systems. Outside of evolutionary algorithms, I don’t know much about this stuff but I’ll be following along!&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">The Future of Artificial Intelligence is Self-Organizing and Self-Assembling by Prof. Sebastian Risi</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning by Dr. Ha and Yujin Tang</summary></entry></feed>

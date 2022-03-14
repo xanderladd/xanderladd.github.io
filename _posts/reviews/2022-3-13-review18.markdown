@@ -1,0 +1,45 @@
+---
+layout: base
+title:  "Review 18: Deep Learning Is Hitting a Wall"
+date:   2022-3-13 5:16:13 -0700
+author: xander
+categories: reviews
+---
+
+
+[Deep Learning is Hitting a Wall](https://nautil.us/deep-learning-is-hitting-a-wall-14467/) by [Gary Marcus](https://en.wikipedia.org/wiki/Gary_Marcus)
+
+Marcus, Gary. "Deep Learning is Hitting a Wall" natuil.us (2022).
+
+- I've been writing all day and I am struggling, but reading this is a breath of fresh air. It is well written and easy to read.
+- Marcus claims the AI/ML hype from 2005-2016 has overpromised.
+- We can see it is deployed all the time in low risk and mundane tasks, but we don't see it often deployed in high risk situations.
+    - Self-driving being the mos ubiqitiously deployed ML but it requires human oversight.
+- Large ML language models show  examples of failing to form any underlying conceptual understanding of what the words in the prompt/generation structure mean.
+- Many have touted ML scaling laws, stating that more data and larger models with continue to improve.
+    - This improvement may be bounded.
+- Explicit symbol manipulation has been benished from the kingdom of AI.
+- I like that the author focuses on trustworthiness and relibility models instead of accuracy. At the end of the day, humans don't care about RMSE, we care about the impact it has on  our lives.
+- Background on symbolic AI as codes to represent information. Like bits for example.
+    - More background about symbol manipulation through explaining computer programs, variable assignment etc.
+- Google search as a great example of effective symbolic AI.
+- The autor discuss the background of deep learning rise to fame over symbolic AI involving several key points in the 80s-2010s where certain leading researchers eschewed statements and made claims about which approach has the most merits.
+- Some motivations for moving back to some ideas in symbol based AI:
+    - Recipe argument: so many things we do are procedural, conditioned. Symbolic AI can better represent this knowledge.
+    - Black box: this is the famous DL is a black box argument. I think of this argument as technical debt. You build something capable of doing great things but can't explicitly explain why it works.
+    - Silo arguement: most of the AI capabilities from image detection to NLP are siloed to their own domain. Integrating knowledge from mutiple domains can lead to more general forms of intelligence.
+    - Neural networks can't do addition.
+- I think these arguments are well reseasoned and I don't eschew symbolic AI by any means. However, the question in my mind, is how much symbolism from symbolic AI needs to be introduced.
+> qtd.  Marcus 2022
+>> Artur Garcez and Luis Lamb wrote a manifesto for hybrid models in 2009, called Neural-Symbolic Cognitive Reasoning.
+
+- Added to my reading list
+- New developments in Symbolic AI
+    - Alphafold
+    - AlphaGO
+    - Deepmind chess
+- Cognition and intelligence is many things and trying to fit them all into feedfoward net w/ backprop is not rational.
+- End with quote:
+
+> qtd.  Marcus 2022
+>> With all the challenges in ethics and computation, and the knowledge needed from fields like linguistics, psychology, anthropology, and neuroscience, and not just mathematics and computer science, it will take a village to raise to an AI. We should never forget that the human brain is perhaps the most complicated system in the known universe; if we are to build something roughly its equal, open-hearted collaboration will be key

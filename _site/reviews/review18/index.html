@@ -9,38 +9,38 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3 - Alexander Ladd</title>
-<meta name="description" content="Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino">
+<!-- begin _includes/seo.html --><title>Review 18: Deep Learning Is Hitting a Wall - Alexander Ladd</title>
+<meta name="description" content="Deep Learning is Hitting a Wall by Gary Marcus">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Alexander Ladd">
-<meta property="og:title" content="Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3">
-<meta property="og:url" content="http://localhost:4000/reviews/review17/">
+<meta property="og:title" content="Review 18: Deep Learning Is Hitting a Wall">
+<meta property="og:url" content="http://localhost:4000/reviews/review18/">
 
 
-  <meta property="og:description" content="Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2022-03-04T04:16:13-08:00">
+  <meta property="og:description" content="Deep Learning is Hitting a Wall by Gary Marcus">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2022-03-13T05:16:13-07:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/reviews/review17/">
+
+<link rel="canonical" href="http://localhost:4000/reviews/review18/">
 
 
 
@@ -230,72 +230,69 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3</h1>
+      <h1 id="page-title" class="page__title">Review 18: Deep Learning Is Hitting a Wall</h1>
     
-    <p><a href="https://arxiv.org/pdf/2011.07464.pdf">Predictive Coding, Variational Autoencoders,
-and Biological Connections</a> by <a href="https://joelouismarino.github.io/">Joseph Marino</a></p>
+    <p><a href="https://nautil.us/deep-learning-is-hitting-a-wall-14467/">Deep Learning is Hitting a Wall</a> by <a href="https://en.wikipedia.org/wiki/Gary_Marcus">Gary Marcus</a></p>
 
-<p>Marino, Joseph. “Predictive coding, variational autoencoders, and biological connections.” Neural Computation 34.1 (2021): 1-44.</p>
+<p>Marcus, Gary. “Deep Learning is Hitting a Wall” natuil.us (2022).</p>
 
 <ul>
-  <li>Predictive Coding Continued
+  <li>I’ve been writing all day and I am struggling, but reading this is a breath of fresh air. It is well written and easy to read.</li>
+  <li>Marcus claims the AI/ML hype from 2005-2016 has overpromised.</li>
+  <li>We can see it is deployed all the time in low risk and mundane tasks, but we don’t see it often deployed in high risk situations.
     <ul>
-      <li>A major difference between predictive coding and inference is that predictive coding calculates gradients with backwards (top-down) projections and inference performs updates bottom up (forward pass).</li>
-      <li>Referring to the previous set of note, these learning updates are computed using:
-   \(\nabla_{z}\ell(z, \theta) = W^T (\frac{x - W_z }{\sigma_x}) (\frac{x - \mu_z }{\sigma_z})\)</li>
-      <li>The first team represents a local error $\mathcal{e}_x$ and the second term represents and error over the latent variable $\mathcal{e}_z$. These terms modulate the gain of each error. The paper mentions that they are related to attention and cites Feldman &amp; Friston, 2010. Without any background, I can’t see obviously how the error over the latent variable $z$ could be related to attention.</li>
-      <li>Can expand the preivous equations beyond $\sigma_x$ to be multivariate spatial covariance $\Sigma_X$.</li>
-      <li>Empirical support for predictive coding.
-        <ul>
-          <li>Fitting retinal cell ganglion cells processes using spatial whitening kernel.</li>
-          <li>Hierachial: top down signals can alter traditional receptive fields.</li>
-          <li>Sensory cortex as engaged in hierarchical prediction of spatial / temporal domain.</li>
-        </ul>
-      </li>
+      <li>Self-driving being the mos ubiqitiously deployed ML but it requires human oversight.</li>
     </ul>
   </li>
-  <li>Variational Auteoencoders
+  <li>Large ML language models show  examples of failing to form any underlying conceptual understanding of what the words in the prompt/generation structure mean.</li>
+  <li>Many have touted ML scaling laws, stating that more data and larger models with continue to improve.
     <ul>
-      <li>Deep network latent variable models trained using variational inference.
-        <ul>
-          <li>Breaking this down:
-            <ul>
-              <li>deep network - stacked layers of units / artifical neurons that perform linear transformations to the signal as it feeds forward.</li>
-              <li>latent variable -  some random variables (noramlly denoted as $z$) which will be part of the model parameterizaiton. To me, an interesting intuition to thinking about latent variables is that they create a low dimensional subspace that bottlenecks the information from higher dimensional inputs / layers.</li>
-              <li>using variational inference - this one was covered in the previous blog.</li>
-            </ul>
-          </li>
-          <li>Optimizing conditional likelihood of latent variable requires differentiating the latent variable. This is tricky because the latent variable is sampled from a  normal distribution. How can we tune the parameters of this distribution <em>and</em> the network? To do this we need to use the reparameterization trick. For brevity I am not going to cover in this blog. This allows us to train a network that gives latent variable vector $\mathbf{z}$, thus an autoencoder.</li>
-        </ul>
-      </li>
+      <li>This improvement may be bounded.</li>
     </ul>
   </li>
-  <li>Connections and Comparisions
+  <li>Explicit symbol manipulation has been benished from the kingdom of AI.</li>
+  <li>I like that the author focuses on trustworthiness and relibility models instead of accuracy. At the end of the day, humans don’t care about RMSE, we care about the impact it has on  our lives.</li>
+  <li>Background on symbolic AI as codes to represent information. Like bits for example.
     <ul>
-      <li>Main connection: both are hierachcial latent variable models.
-        <ul>
-          <li>Also, both preditive coding and VAEs rely on nonlinear connections between levels and covariance relationship between levels.
-            <ul>
-              <li>IMO, this is the really impressive part about VAE and why it’s so relevant for Neuroscience. It is well known that human NNs have nonlinear synaptic connectivty, but I think it’s less clear (at least for the layman) that levels of cortical connectiviy might covary. But we know, especically from researching attention, that this is true. This is why VAE’s are becoming my favorite brain inspired ML model! Although, credit assignment is still an outstanding issue.</li>
-            </ul>
-          </li>
-          <li>Inference: both methods perform inference but using diffeent optimization techniques (predictive: gradient, vae: amortized). (see last two reviews and previous section about optimizing VAE)</li>
-        </ul>
-      </li>
-      <li>Author aligns VAE and cortical network on the level of a network of pyramidal neuron dendrites.
-        <ul>
-          <li>I don’t know why this alignment is against dendrites. Why not against the entire neuron (axon, soma, etc.)</li>
-          <li>Ok acutally I do think I know why: it’s because these networks mainly integrate signal. Or at least it’s easier to make the comparison they are integrating signal rather than integrating the signal and propogating it.</li>
-        </ul>
-      </li>
-      <li>Normalizing flows, which is mentioned in the paper, but not this blog, is compared to lateral neurons / lateral inhibition.
-        <ul>
-          <li>I am generally making this note for myself to remember this.</li>
-        </ul>
-      </li>
+      <li>More background about symbol manipulation through explaining computer programs, variable assignment etc.</li>
     </ul>
   </li>
+  <li>Google search as a great example of effective symbolic AI.</li>
+  <li>The autor discuss the background of deep learning rise to fame over symbolic AI involving several key points in the 80s-2010s where certain leading researchers eschewed statements and made claims about which approach has the most merits.</li>
+  <li>Some motivations for moving back to some ideas in symbol based AI:
+    <ul>
+      <li>Recipe argument: so many things we do are procedural, conditioned. Symbolic AI can better represent this knowledge.</li>
+      <li>Black box: this is the famous DL is a black box argument. I think of this argument as technical debt. You build something capable of doing great things but can’t explicitly explain why it works.</li>
+      <li>Silo arguement: most of the AI capabilities from image detection to NLP are siloed to their own domain. Integrating knowledge from mutiple domains can lead to more general forms of intelligence.</li>
+      <li>Neural networks can’t do addition.</li>
+    </ul>
+  </li>
+  <li>I think these arguments are well reseasoned and I don’t eschew symbolic AI by any means. However, the question in my mind, is how much symbolism from symbolic AI needs to be introduced.
+    <blockquote>
+      <p>qtd.  Marcus 2022</p>
+      <blockquote>
+        <p>Artur Garcez and Luis Lamb wrote a manifesto for hybrid models in 2009, called Neural-Symbolic Cognitive Reasoning.</p>
+      </blockquote>
+    </blockquote>
+  </li>
+  <li>Added to my reading list</li>
+  <li>New developments in Symbolic AI
+    <ul>
+      <li>Alphafold</li>
+      <li>AlphaGO</li>
+      <li>Deepmind chess</li>
+    </ul>
+  </li>
+  <li>Cognition and intelligence is many things and trying to fit them all into feedfoward net w/ backprop is not rational.</li>
+  <li>End with quote:</li>
 </ul>
+
+<blockquote>
+  <p>qtd.  Marcus 2022</p>
+  <blockquote>
+    <p>With all the challenges in ethics and computation, and the knowledge needed from fields like linguistics, psychology, anthropology, and neuroscience, and not just mathematics and computer science, it will take a village to raise to an AI. We should never forget that the human brain is perhaps the most complicated system in the known universe; if we are to build something roughly its equal, open-hearted collaboration will be key</p>
+  </blockquote>
+</blockquote>
 
 
 
@@ -1140,7 +1137,7 @@ and Biological Connections by Joseph Marino
 
 <!-- 
 
-<title>Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3 - Alexander Ladd</title>
+<title>Review 18: Deep Learning Is Hitting a Wall - Alexander Ladd</title>
 <meta name="viewport" content="width=device-width">
 
 <link rel="stylesheet" href="/css/all.css"> -->

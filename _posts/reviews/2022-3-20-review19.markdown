@@ -1,0 +1,26 @@
+---
+layout: base
+title:  "Review 19: Let us never speak of these values again."
+date:   2022-3-20 5:16:13 -0700
+author: xander
+categories: reviews
+---
+
+
+[Let us never speak of these values again.](https://www.argmin.net/2022/02/23/standard-errors/) by [Ben Recht](https://www.argmin.net/)
+
+
+
+- This blog covers the utiliy of statistical signifigance measures like effect size and p value.
+- The range of success of claims is predicated off of a ratio of effect size to standard error.
+- Exposes that fact that signifigance is weighted by the spread of probability denisty. Meaning that if there is a slightly favorable outcome with a small PDF and one with a more favorable average outcome but larger PDF, the former may be favored by the p-value.
+- Simple approximations can distort this p-value. Esp. when it comes to averageing across groups.
+
+>> Most practicing scientists would be better off not knowing what a p-value is.
+
+- This leads to the philosophical problem here: how can we really trust the effect size is valid. This is made challenging by varying levels of validity:
+    - study design is valid?
+    - hypothesis testing is valid?
+    - claims are valid?
+
+- I think the third bullet is especially hard. How can you best gurantee performance on an unsen input/output?

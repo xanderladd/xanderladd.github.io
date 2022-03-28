@@ -107,7 +107,7 @@ var store = [{
         "url": "/reviews/review16/",
         "teaser": "/assets/images/trees.jpeg"
       },{
-        "title": "Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3",
+        "title": "Review 17: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3",
         "excerpt":"Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino Marino, Joseph. “Predictive coding, variational autoencoders, and biological connections.” Neural Computation 34.1 (2021): 1-44. Predictive Coding Continued A major difference between predictive coding and inference is that predictive coding calculates gradients with backwards (top-down) projections and inference performs updates bottom...","categories": ["reviews"],
         "tags": [],
         "url": "/reviews/review17/",
@@ -117,5 +117,17 @@ var store = [{
         "excerpt":"Deep Learning is Hitting a Wall by Gary Marcus Marcus, Gary. “Deep Learning is Hitting a Wall” natuil.us (2022). I’ve been writing all day and I am struggling, but reading this is a breath of fresh air. It is well written and easy to read. Marcus claims the AI/ML hype...","categories": ["reviews"],
         "tags": [],
         "url": "/reviews/review18/",
+        "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 19: Let us never speak of these values again.",
+        "excerpt":"Let us never speak of these values again. by Ben Recht This blog covers the utiliy of statistical signifigance measures like effect size and p value. The range of success of claims is predicated off of a ratio of effect size to standard error. Exposes that fact that signifigance is...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review19/",
+        "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 20: Trends in Computational Neuroscience: Cosyne 2022",
+        "excerpt":"Trends in Computational Neuroscience: Cosyne 2022 by Sabera Talukder I couldn’t go to Cosyne but it’s a workshop/conference I’d like to go to one day so I wanted to get the inside scoop of what gets discussed. Fortunately, this blog kept me in the loop, so that’s pretty cool. Notes:...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review20/",
         "teaser": "/assets/images/trees.jpeg"
       }]

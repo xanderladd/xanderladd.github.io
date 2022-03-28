@@ -1,0 +1,36 @@
+---
+layout: base
+title:  "Review 20: Trends in Computational Neuroscience: Cosyne 2022"
+date:   2022-3-25 5:16:13 -0700
+author: xander
+categories: reviews
+---
+
+
+[Trends in Computational Neuroscience: Cosyne 2022
+](https://saberatalukder.com/cosyne_2022_computational_and_systems_neuroscience_in_review.html) by [Sabera Talukder](https://saberatalukder.com/index.html)
+
+
+- I couldn't go to Cosyne but it's a workshop/conference I'd like to go to one day so I wanted to get the inside scoop of what gets discussed.
+- Fortunately, this blog kept me in the loop, so that's pretty cool.
+- Notes:
+- Major Trends
+    - Behavior
+        - Especially w.r.t. software, data analysis pipelines and pose tracking estimation.
+    - Comparing ANNs to RNNs
+        - I didn't have FOMO hearing about behavior, but now I do.
+        - One-to-one biological to neural network comparison.
+        - Generative modeling neural data with latent representation.
+            - This one has important impact on neuroengineering.
+        - Biological rules with ML tasks.
+            - This is one is interesting because I'd like to see how well biologically realistic credit assignment matches up against SOTA methods for MNIST.
+        - network similarity: how can you tell the distance between two nets?
+    - Dimensionality Reduction
+        - This one trend shows that PCA, UMAP, and tSNE can be improved upon to get low dim. representations that do not warp local and/or global distance. Ah, the curse of dimensionality.
+    - Data Scaling
+        - How to curate / record / assay large experiments for high throughput data?
+- I liked the writing / blog style because it was interesting to read and broke the monotony from reading papers.
+-  It was also a concise read so I could read the whole thing instead of skimming. Also packed with a bunch of info about applications of key themes.
+- To me, it's really exciting to see a conference where ANNs are compared to biological NNs because I find the two topics: generative modeling and biological nets on ML tasks to be interesting because of their relation to eachother. Both tasks seem to be two sides of the neural network coin. For the generative modeling task we are applying nets to better understand the brain and in the ML task we are trying to borrow the brain to make better ML models. 
+- Can't wait to see how these topics unfold in future conferences since I think they'll have important impact on brain computer interfaces and autonomous control in robotics.
+

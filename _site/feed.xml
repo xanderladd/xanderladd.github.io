@@ -1,4 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-14T00:18:37-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 18: Deep Learning Is Hitting a Wall</title><link href="http://localhost:4000/reviews/review18/" rel="alternate" type="text/html" title="Review 18: Deep Learning Is Hitting a Wall" /><published>2022-03-13T05:16:13-07:00</published><updated>2022-03-13T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review18</id><content type="html" xml:base="http://localhost:4000/reviews/review18/">&lt;p&gt;&lt;a href=&quot;https://nautil.us/deep-learning-is-hitting-a-wall-14467/&quot;&gt;Deep Learning is Hitting a Wall&lt;/a&gt; by &lt;a href=&quot;https://en.wikipedia.org/wiki/Gary_Marcus&quot;&gt;Gary Marcus&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-27T23:55:21-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 20: Trends in Computational Neuroscience: Cosyne 2022</title><link href="http://localhost:4000/reviews/review20/" rel="alternate" type="text/html" title="Review 20: Trends in Computational Neuroscience: Cosyne 2022" /><published>2022-03-25T05:16:13-07:00</published><updated>2022-03-25T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review20</id><content type="html" xml:base="http://localhost:4000/reviews/review20/">&lt;p&gt;&lt;a href=&quot;https://saberatalukder.com/cosyne_2022_computational_and_systems_neuroscience_in_review.html&quot;&gt;Trends in Computational Neuroscience: Cosyne 2022
+&lt;/a&gt; by &lt;a href=&quot;https://saberatalukder.com/index.html&quot;&gt;Sabera Talukder&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I couldn’t go to Cosyne but it’s a workshop/conference I’d like to go to one day so I wanted to get the inside scoop of what gets discussed.&lt;/li&gt;
+  &lt;li&gt;Fortunately, this blog kept me in the loop, so that’s pretty cool.&lt;/li&gt;
+  &lt;li&gt;Notes:&lt;/li&gt;
+  &lt;li&gt;Major Trends
+    &lt;ul&gt;
+      &lt;li&gt;Behavior
+        &lt;ul&gt;
+          &lt;li&gt;Especially w.r.t. software, data analysis pipelines and pose tracking estimation.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Comparing ANNs to RNNs
+        &lt;ul&gt;
+          &lt;li&gt;I didn’t have FOMO hearing about behavior, but now I do.&lt;/li&gt;
+          &lt;li&gt;One-to-one biological to neural network comparison.&lt;/li&gt;
+          &lt;li&gt;Generative modeling neural data with latent representation.
+            &lt;ul&gt;
+              &lt;li&gt;This one has important impact on neuroengineering.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Biological rules with ML tasks.
+            &lt;ul&gt;
+              &lt;li&gt;This is one is interesting because I’d like to see how well biologically realistic credit assignment matches up against SOTA methods for MNIST.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;network similarity: how can you tell the distance between two nets?&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Dimensionality Reduction
+        &lt;ul&gt;
+          &lt;li&gt;This one trend shows that PCA, UMAP, and tSNE can be improved upon to get low dim. representations that do not warp local and/or global distance. Ah, the curse of dimensionality.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Data Scaling
+        &lt;ul&gt;
+          &lt;li&gt;How to curate / record / assay large experiments for high throughput data?&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I liked the writing / blog style because it was interesting to read and broke the monotony from reading papers.&lt;/li&gt;
+  &lt;li&gt;It was also a concise read so I could read the whole thing instead of skimming. Also packed with a bunch of info about applications of key themes.&lt;/li&gt;
+  &lt;li&gt;To me, it’s really exciting to see a conference where ANNs are compared to biological NNs because I find the two topics: generative modeling and biological nets on ML tasks to be interesting because of their relation to eachother. Both tasks seem to be two sides of the neural network coin. For the generative modeling task we are applying nets to better understand the brain and in the ML task we are trying to borrow the brain to make better ML models.&lt;/li&gt;
+  &lt;li&gt;Can’t wait to see how these topics unfold in future conferences since I think they’ll have important impact on brain computer interfaces and autonomous control in robotics.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Trends in Computational Neuroscience: Cosyne 2022 by Sabera Talukder</summary></entry><entry><title type="html">Review 19: Let us never speak of these values again.</title><link href="http://localhost:4000/reviews/review19/" rel="alternate" type="text/html" title="Review 19: Let us never speak of these values again." /><published>2022-03-20T05:16:13-07:00</published><updated>2022-03-20T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review19</id><content type="html" xml:base="http://localhost:4000/reviews/review19/">&lt;p&gt;&lt;a href=&quot;https://www.argmin.net/2022/02/23/standard-errors/&quot;&gt;Let us never speak of these values again.&lt;/a&gt; by &lt;a href=&quot;https://www.argmin.net/&quot;&gt;Ben Recht&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This blog covers the utiliy of statistical signifigance measures like effect size and p value.&lt;/li&gt;
+  &lt;li&gt;The range of success of claims is predicated off of a ratio of effect size to standard error.&lt;/li&gt;
+  &lt;li&gt;Exposes that fact that signifigance is weighted by the spread of probability denisty. Meaning that if there is a slightly favorable outcome with a small PDF and one with a more favorable average outcome but larger PDF, the former may be favored by the p-value.&lt;/li&gt;
+  &lt;li&gt;Simple approximations can distort this p-value. Esp. when it comes to averageing across groups.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Most practicing scientists would be better off not knowing what a p-value is.&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This leads to the philosophical problem here: how can we really trust the effect size is valid. This is made challenging by varying levels of validity:
+    &lt;ul&gt;
+      &lt;li&gt;study design is valid?&lt;/li&gt;
+      &lt;li&gt;hypothesis testing is valid?&lt;/li&gt;
+      &lt;li&gt;claims are valid?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I think the third bullet is especially hard. How can you best gurantee performance on an unsen input/output?&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Let us never speak of these values again. by Ben Recht</summary></entry><entry><title type="html">Review 18: Deep Learning Is Hitting a Wall</title><link href="http://localhost:4000/reviews/review18/" rel="alternate" type="text/html" title="Review 18: Deep Learning Is Hitting a Wall" /><published>2022-03-13T05:16:13-07:00</published><updated>2022-03-13T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review18</id><content type="html" xml:base="http://localhost:4000/reviews/review18/">&lt;p&gt;&lt;a href=&quot;https://nautil.us/deep-learning-is-hitting-a-wall-14467/&quot;&gt;Deep Learning is Hitting a Wall&lt;/a&gt; by &lt;a href=&quot;https://en.wikipedia.org/wiki/Gary_Marcus&quot;&gt;Gary Marcus&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Marcus, Gary. “Deep Learning is Hitting a Wall” natuil.us (2022).&lt;/p&gt;
 
@@ -58,7 +129,7 @@
   &lt;blockquote&gt;
     &lt;p&gt;With all the challenges in ethics and computation, and the knowledge needed from fields like linguistics, psychology, anthropology, and neuroscience, and not just mathematics and computer science, it will take a village to raise to an AI. We should never forget that the human brain is perhaps the most complicated system in the known universe; if we are to build something roughly its equal, open-hearted collaboration will be key&lt;/p&gt;
   &lt;/blockquote&gt;
-&lt;/blockquote&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Deep Learning is Hitting a Wall by Gary Marcus</summary></entry><entry><title type="html">Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3</title><link href="http://localhost:4000/reviews/review17/" rel="alternate" type="text/html" title="Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3" /><published>2022-03-04T04:16:13-08:00</published><updated>2022-03-04T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review17</id><content type="html" xml:base="http://localhost:4000/reviews/review17/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2011.07464.pdf&quot;&gt;Predictive Coding, Variational Autoencoders,
+&lt;/blockquote&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Deep Learning is Hitting a Wall by Gary Marcus</summary></entry><entry><title type="html">Review 17: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3</title><link href="http://localhost:4000/reviews/review17/" rel="alternate" type="text/html" title="Review 17: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3" /><published>2022-03-04T04:16:13-08:00</published><updated>2022-03-04T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review17</id><content type="html" xml:base="http://localhost:4000/reviews/review17/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2011.07464.pdf&quot;&gt;Predictive Coding, Variational Autoencoders,
 and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.github.io/&quot;&gt;Joseph Marino&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Marino, Joseph. “Predictive coding, variational autoencoders, and biological connections.” Neural Computation 34.1 (2021): 1-44.&lt;/p&gt;
@@ -468,36 +539,7 @@ and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.
       &lt;li&gt;Can a policy recognize itself? I think this is a fascinating question and another step into a unqiue type of machine intelligence that must construct a detailed intermediate of representations of the world through the state space/policy optimization approach.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Just Ask for Generalization by Eric Jang</summary></entry><entry><title type="html">Review 11: The Bandwagon</title><link href="http://localhost:4000/reviews/review11/" rel="alternate" type="text/html" title="Review 11: The Bandwagon" /><published>2022-01-16T04:16:13-08:00</published><updated>2022-01-16T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review11</id><content type="html" xml:base="http://localhost:4000/reviews/review11/">&lt;p&gt;&lt;a href=&quot;https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10567741&quot;&gt;The Bandwagon&lt;/a&gt; by &lt;a href=&quot;https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1056774&quot;&gt;Claude E. Shannon&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Citation: Shannon, Claude E. “The bandwagon.” IRE transactions on Information Theory 2.1 (1956): 3.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;In the intersection of probability, statistics, and engineering, information theory has become applied ubiquitously throughout a wide range of research. In the 1940s, Dr. Claude Shannon conducted some of the most fundamental contributions to this field and has had the fascinating perspective of experiencing the adoption of these computational methods by computer scientists, physicists, and various engineers. Here he makes some disclaimers about the impact of information theory.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;This perspective is perpendicular to the linear thinking that creators have around their algorithms nowadays that goes like this:
-    &lt;ol&gt;
-      &lt;li&gt;Design algorithm.&lt;/li&gt;
-      &lt;li&gt;Show that it is better than methods $X$, $Y$, and $Z$.
-        &lt;ul&gt;
-          &lt;li&gt;&lt;strong&gt;Advertise&lt;/strong&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Have lots of other researchers and industries use it.
-        &lt;ul&gt;
-          &lt;li&gt;&lt;em&gt;clone&lt;/em&gt; and &lt;em&gt;star&lt;/em&gt; on github. Community develops around tool or algo.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Make some $, but also get influence and accolades, which also translate to $ /  other generally desired things.&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;I’m not saying that this is always the case or that it’s even a bad thing; Simply that there is a regression towards this trend. All we need to do is look at thing like &lt;a href=&quot;https://www.image-net.org/&quot;&gt;ImageNet&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/AlexNet&quot;&gt;AlexNet&lt;/a&gt;, &lt;a href=&quot;https://openai.com/blog/gpt-3-apps/&quot;&gt;GPT3&lt;/a&gt;, &lt;a href=&quot;https://pytorch.org/&quot;&gt;PyTorch&lt;/a&gt;, &lt;a href=&quot;https://www.tensorflow.org/&quot;&gt;Tensorflow&lt;/a&gt; and now &lt;a href=&quot;https://jax.readthedocs.io/en/latest/&quot;&gt;Jax&lt;/a&gt;. All of these things are awesome! There has been so much growth and development of useful things are these technologies. Taking this example further, cryptocurrency, WEB3, and NFTs all also enjoy this kind of advertising by its contributors.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Conversely, Dr. Claude Shannon makes a case &lt;em&gt;against&lt;/em&gt; widespread adoption in this article. He hits back at the idea that the volume of papers published doesn’t represent the progress in the field. In lieu, he advocates for well thought out and carefully experimented research. This kind of suggestion, along with the description as careful experimentation as tedious and slow is surprisingly honest. Simply using the tool from information theory and applying the word “mutual information” or “entropy” doesn’t give the experimental community very much. Shannon is arguing that researchers do not use his methods as a black box to put in A and get some claim about B. The same sentiment is echoed by &lt;a href=&quot;http://bayes.cs.ucla.edu/jp_home.html&quot;&gt;Judea Pearl&lt;/a&gt; on causality. Concepts in this realm of computational explainability are particularly tedious because of the following metaphor. Code in python can be bound to C and C++ and in the same way, probability, math, and English can be smashed together to make a claim or statement. However, the simplicity of the answer often depends on the question. Certain principles of math or probability aren’t enough to characterize all kinds of wild questions a researcher can ask. I think this is the big warning that Shannon has here. Something along the lines of: “I made some hammers, but don’t go using them to dig a hole or write a good book”. The hammer analogy obfuscates the fact that the methods of information theory are &lt;em&gt;not&lt;/em&gt; a black box. They can be tinkered with in various ways and with the right parameterization and use case, they uncover causal relationships that we doing have any other tools to understand intuitively. And speaking of intuitive understanding of information theory… if you are interested, maybe check out &lt;a href=&quot;https://twitter.com/TivadarDanka/status/1475456688547250176&quot;&gt;this twitter thread&lt;/a&gt; that helps me.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">The Bandwagon by Claude E. Shannon</summary></entry><entry><title type="html">Review 10: Beyond advertising: New infrastructures for publishing integrated research objects</title><link href="http://localhost:4000/reviews/review10/" rel="alternate" type="text/html" title="Review 10: Beyond advertising: New infrastructures for publishing integrated research objects" /><published>2022-01-16T04:16:13-08:00</published><updated>2022-01-16T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review10</id><content type="html" xml:base="http://localhost:4000/reviews/review10/">&lt;p&gt;&lt;a href=&quot;https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009651&quot;&gt;Beyond advertising: New infrastructures for publishing integrated research objects&lt;/a&gt; by &lt;a href=&quot;https://elizabeth-dupre.com/#/cv&quot;&gt;Elizabeth DuPre&lt;/a&gt; et al.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Just Ask for Generalization by Eric Jang</summary></entry><entry><title type="html">Review 10: Beyond advertising: New infrastructures for publishing integrated research objects</title><link href="http://localhost:4000/reviews/review10/" rel="alternate" type="text/html" title="Review 10: Beyond advertising: New infrastructures for publishing integrated research objects" /><published>2022-01-16T04:16:13-08:00</published><updated>2022-01-16T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review10</id><content type="html" xml:base="http://localhost:4000/reviews/review10/">&lt;p&gt;&lt;a href=&quot;https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009651&quot;&gt;Beyond advertising: New infrastructures for publishing integrated research objects&lt;/a&gt; by &lt;a href=&quot;https://elizabeth-dupre.com/#/cv&quot;&gt;Elizabeth DuPre&lt;/a&gt; et al.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -568,167 +610,4 @@ and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.
 &lt;ul&gt;
   &lt;li&gt;This is a very good sentiment to have for these platforms. Building such components to be equitable across large and small research groups is a difficult challenge as the authors have pointed out. But yes, &lt;a href=&quot;https://www.neurolibre.org/&quot;&gt;NeuroLibre&lt;/a&gt; and &lt;a href=&quot;https://pangeo.io/&quot;&gt;Pangeo&lt;/a&gt; are steps in the right direction.&lt;/li&gt;
   &lt;li&gt;My only real opinion here is that it doesn’t seem to help a paper if it has these integrated objects. I don’t see many reviewers taking this stuff into account, but there should be an incentive for both authors and reviewers to do so. I think this would create more of a community around these tools and then things can build from there. The problem right now is that it is too attractive to publish and then never touch your code again.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Beyond advertising: New infrastructures for publishing integrated research objects by Elizabeth DuPre et al.</summary></entry><entry><title type="html">Review 9: The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning</title><link href="http://localhost:4000/reviews/review9/" rel="alternate" type="text/html" title="Review 9: The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning" /><published>2022-01-09T04:16:13-08:00</published><updated>2022-01-09T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review9</id><content type="html" xml:base="http://localhost:4000/reviews/review9/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2109.02869.pdf&quot;&gt;The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning&lt;/a&gt; by &lt;a href=&quot;https://otoro.net/ml/&quot;&gt;Dr. Ha&lt;/a&gt; and &lt;a href=&quot;https://www.linkedin.com/in/yujin-tang-98b3ab5a/?originalSubdomain=jp&quot;&gt;Yujin Tang&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Citation: Tang, Yujin, and David Ha. “The sensory neuron as a transformer: Permutation-invariant neural networks for reinforcement learning.” Advances in Neural Information Processing Systems 34 (2021).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Today, I am reading a paper in NeurIPS by Dr. David Ha and Dr. Yujin Tang.&lt;/li&gt;
-  &lt;li&gt;These reviews are not really reviews but more like casual reading notes. I am writing what pops into my head as I read.&lt;/li&gt;
-  &lt;li&gt;The first thing that stands out to me just from reading the introduction is that shuffling around sensory input is generally fatal for most network problems. I doubt most image recognition modules would work at all if one just shuffled around 4x4 pixel blocks in an image.
-    &lt;ul&gt;
-      &lt;li&gt;I can think of a few problems that begin to crop up here.&lt;/li&gt;
-      &lt;li&gt;Firstly, if we think about swapping the pixels in a picture of a cat one by one, how many swaps do we need to make until it is just not a picture of a cat.
-        &lt;ul&gt;
-          &lt;li&gt;This issue is rectified in the paper because they are trying to complete a task or play a game, which means the objective is still definitively the same regardless of input shuffling.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Secondly, how does one parameterize image shuffling? Say we decide to shuffle around $64 x 64$ squares in an image. If we know the image is $256 x 256$ then it makes sense to define $16$ networks. But we’ve cheated and used some a priori knowledge about the image permutations.
-        &lt;ul&gt;
-          &lt;li&gt;$\frac{256 \times 256}{64 \times 64} = 16$&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;But now I start getting ahead of myself, I’ll keep reading and perhaps these issues aren’t relevant. Onward!&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;One more thing in the introduction is really surprising/exciting about this. All these references to cellular automata (CA) and emergent behavior makes me really excited to see how these local networks are going to start forming a coherent policy.&lt;/li&gt;
-  &lt;li&gt;Self-organizing network agents, while being a mouthful, does seem like a natural progression. I’m having trouble explaining why. I wanted to write something about NNs working better on local computation, but they do seem to do global computation pretty well too. I’m not sure this is the right distinction to make (whether NNs are better as local agents or singular global agents). Also there’s so much more research for the latter.&lt;/li&gt;
-  &lt;li&gt;Meta-learning policies
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;fast weights&lt;/strong&gt;: adapt weights to input.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;associative weights&lt;/strong&gt;: allow RNN weights to be attracted to recent hidden states.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;hypernetworks&lt;/strong&gt;: one network generates the weights for another.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Hebbian learning&lt;/strong&gt;: See more &lt;a href=&quot;https://arxiv.org/abs/2002.10585&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Attention
-    &lt;ul&gt;
-      &lt;li&gt;similar to previous adaptive weight mechanisms in that it modifies weights based on inputs.&lt;/li&gt;
-      &lt;li&gt;Authors cite several examples of attention learning inductive biases.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Method
-    &lt;ul&gt;
-      &lt;li&gt;A legit permutation invariant (PI) agent doesn’t need to be trained on permutations to recognize them.&lt;/li&gt;
-      &lt;li&gt;PI formulation: need a function $f(x): \mathcal{R}^N \longrightarrow \mathcal{R}^M$ s.t. $ f(x[x]) f(x)$ where $s$ is some permutation of the indices ${1 … n}$&lt;/li&gt;
-      &lt;li&gt;Self-attention as PE.
-        &lt;ul&gt;
-          &lt;li&gt;Simplest self attention: $\sigma(QK^T)V$ where $Q,K \in \mathcal{R^{n\times d_{q}}}$ and $V \in \mathcal{R^{n\times d_{v}}}$. Q,V and K are query, value and key matrices respectively.&lt;/li&gt;
-          &lt;li&gt;Normally these (Q,K,V) are functions of the input.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;contribution
-        &lt;ul&gt;
-          &lt;li&gt;authors propose to add an extra layer (called AttentionNeuron) in front of agent’s policy network $\pi$ that accepts observation $o_t$ and previous action $a_{t-1}$ as inputs.&lt;/li&gt;
-          &lt;li&gt;The $i$th neuron only has access to $o_t[i]$.&lt;/li&gt;
-          &lt;li&gt;each sensory neuron computes messages $f_k(o_t[i], a_{t-1})$ and $f_v(o_t[i])$.&lt;/li&gt;
-          &lt;li&gt;These messages are aggregated in &lt;em&gt;global latent code&lt;/em&gt; $m_t$.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;So I think it’s interesting that based off the figure, they don’t model this AttentionNeuron layer as a distinct part of each neuron but rather a layer that receives input from each neuron and aggregates input into $m_t$.
-        &lt;ul&gt;
-          &lt;li&gt;Computationally, it doesn’t matter if the transformation is affixed to the last layer of each neuron or if it stands alone. But I thought it was illustrative of how the Query, Key and Value matrices are formed.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Key matrix depends on $f_k(o_t, a_{t-1})$ and value matrix depends on $f_v(o_t)$&lt;/li&gt;
-      &lt;li&gt;They also have projection matrices $W_k, W_v, W_q$ (which is what gives us PE).&lt;/li&gt;
-      &lt;li&gt;Experiments and observation space are
-        &lt;ul&gt;
-          &lt;li&gt;Cartpole $\mathcal R^5$&lt;/li&gt;
-          &lt;li&gt;Ant $\mathcal R^28$&lt;/li&gt;
-          &lt;li&gt;Car Racing $\mathcal R^{96x96x4}$&lt;/li&gt;
-          &lt;li&gt;Atari Pong $\mathcal R^{84x84x4}$
-            &lt;ul&gt;
-              &lt;li&gt;Car Racing and Atari Pong have dimension $4$ because they are stacked grayscale RGB values.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;They never use more than 196 activation neurons.&lt;/li&gt;
-      &lt;li&gt;Also activation neurons do seem to be a function of observation space.&lt;/li&gt;
-      &lt;li&gt;Action space ranges from 1 action, to 8 possible actions.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Brief discussion of design choices.
-    &lt;ul&gt;
-      &lt;li&gt;I wonder what the motivation is for making $QW_q$ learnable instead of input dependent.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;They didn’t use a projection matrix for the Value matrix ($V$)&lt;/li&gt;
-  &lt;li&gt;The don’t use RNNs for high dimensional input, just feed forward neural network (FFN).&lt;/li&gt;
-  &lt;li&gt;Results
-    &lt;ul&gt;
-      &lt;li&gt;CartPoleSwingUpHarder
-        &lt;ul&gt;
-          &lt;li&gt;They compare against a two layer FFN trained with CMA-ES&lt;/li&gt;
-          &lt;li&gt;The benchmark agent is able to balance the pole faster under normal circumstances because their method requires a few burn in steps.&lt;/li&gt;
-          &lt;li&gt;But what is really notable here is that various peterbutations of shuffling the input or concatenating a noisy vector to the input don’t affect performance. No retraining required!
-            &lt;ul&gt;
-              &lt;li&gt;Might’ve liked to see a comparison against retrained benchmark.&lt;/li&gt;
-              &lt;li&gt;Yes I know it’s comparing apples to oranges and it probably wouldn’t make sense to put in a paper … but I’m curious.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;PyBullet Ant
-        &lt;ul&gt;
-          &lt;li&gt;Uses pre-trained models and behavior cloning for the benchmark.&lt;/li&gt;
-          &lt;li&gt;From table 4 the most notable insights I picked up:
-            &lt;ul&gt;
-              &lt;li&gt;BC works better with larger subsequent layers.&lt;/li&gt;
-              &lt;li&gt;ES shuffled works well on their agent as is. Slightly underperforms non-shuffled input version (FFN teacher). Shuffled FFN gets a really bad score.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Atari Pong
-        &lt;ul&gt;
-          &lt;li&gt;** shuffled atari pong :)&lt;/li&gt;
-          &lt;li&gt;I like the idea of maintaining a spatial representation of the 2D grid in $m_t$ because it is more interpretable.&lt;/li&gt;
-          &lt;li&gt;I see that this agent can take a subset of the screen and the authors suggest that would be interesting to conduct some kind of ablation experiment on. While I agree, I am also interested in what would happen if you blacked out part of the screen, thus forcing the agent to hallucinate what is happening in those shuffled blocks.&lt;/li&gt;
-          &lt;li&gt;The occluded agent rarely won when it couldn’t see certain blocks, but when the blocks are added back it does well.&lt;/li&gt;
-          &lt;li&gt;This is the generalization advantage.&lt;/li&gt;
-          &lt;li&gt;Figure 6 is a great example of why keeping 2d spatial embeddings is a nice design. The separability of embedding states based on state space is cool to look at.
-            &lt;ul&gt;
-              &lt;li&gt;Sometimes when I read these papers, I wonder how they coded some things in. This is one I am particularly interested on.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Car racing
-        &lt;ul&gt;
-          &lt;li&gt;As I guessed in the beginning, attention-based mechanisms are crippled by shuffling inputs.
-            &lt;ul&gt;
-              &lt;li&gt;This is shown in AttentionAgent failure to do anything but an original task.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;I have no idea how netRand + AttentionAgent are combined and I don’t understand them pretty well.&lt;/li&gt;
-          &lt;li&gt;That said, it’s clear that is the only way to compete with the presented method given new unseen and shuffled racing maps.&lt;/li&gt;
-          &lt;li&gt;Ah I spoke too soon… it’s explained below the figure.&lt;/li&gt;
-          &lt;li&gt;I see they just add AttentionAgent layer at the end but unfortunately, I don’t understand enough about these methods to say anything else.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Discussion + Conclusion
-    &lt;ul&gt;
-      &lt;li&gt;Further uses included dynamic input-output mappings in robots or cross-wired systems.
-        &lt;ul&gt;
-          &lt;li&gt;This isn’t an entirely broad application – it’s a bit specific to systems that receive shuffled inputs.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;However, I think the most important impact of this paper is that it “provides a lens for understanding a transformer as a self-organizing network” in what I felt was a natural way.
-        &lt;ul&gt;
-          &lt;li&gt;When I read the title, I imagined the authors would need to make more substantial leaps in connecting transformers with a sensory neuron, but now that I’ve read the paper it feels ok.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;One thing I wonder when reading this paper is: what is the best way to aggregate signals from the individual agents? This paper looked at aggregationthrough neural network layers, but I thought the reshape in the 2D spatial embeddingswas an interesting twist.
-    &lt;ul&gt;
-      &lt;li&gt;Generally, this paper adds some interesting ingredients to a mixture of local -&amp;gt; global computation using distributed agents.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Another thing I really like about this paper is that it isn’t crazy hard to understand. So many ML papers are steeped in lots of formula and notation and this paper truly tried to clearly communicate the message.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning by Dr. Ha and Yujin Tang</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Beyond advertising: New infrastructures for publishing integrated research objects by Elizabeth DuPre et al.</summary></entry></feed>

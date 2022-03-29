@@ -17,7 +17,7 @@ categories: reviews
 - Major Trends
     - Behavior
         - Especially w.r.t. software, data analysis pipelines and pose tracking estimation.
-    - Comparing ANNs to RNNs
+    - Comparing ANNs to Biologically realistic NN
         - I didn't have FOMO hearing about behavior, but now I do.
         - One-to-one biological to neural network comparison.
         - Generative modeling neural data with latent representation.

@@ -130,4 +130,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review20/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 21: Cracking the Neural Code in Humans",
+        "excerpt":"Cracking the Neural Code in Humans by Emily Singer at the Simons Foundation. Neuropixels: high resolution brain recording from implanted electrodes. Until recently Neuropixel devices are only used on primates and rodents, but now they can be used in people thanks to Dr. Paulk and Dr. Cash at Cashlab. Neural...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review21/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

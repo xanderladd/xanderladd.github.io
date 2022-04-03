@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-27T23:55:21-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 20: Trends in Computational Neuroscience: Cosyne 2022</title><link href="http://localhost:4000/reviews/review20/" rel="alternate" type="text/html" title="Review 20: Trends in Computational Neuroscience: Cosyne 2022" /><published>2022-03-25T05:16:13-07:00</published><updated>2022-03-25T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review20</id><content type="html" xml:base="http://localhost:4000/reviews/review20/">&lt;p&gt;&lt;a href=&quot;https://saberatalukder.com/cosyne_2022_computational_and_systems_neuroscience_in_review.html&quot;&gt;Trends in Computational Neuroscience: Cosyne 2022
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-03T03:13:35-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 21: Cracking the Neural Code in Humans</title><link href="http://localhost:4000/reviews/review21/" rel="alternate" type="text/html" title="Review 21: Cracking the Neural Code in Humans" /><published>2022-04-02T05:16:13-07:00</published><updated>2022-04-02T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review21</id><content type="html" xml:base="http://localhost:4000/reviews/review21/">&lt;p&gt;&lt;a href=&quot;https://www.simonsfoundation.org/2022/03/29/cracking-the-neural-code-in-humans/&quot;&gt;Cracking the Neural Code in Humans
+&lt;/a&gt; by &lt;a href=&quot;https://www.simonsfoundation.org/people/emily-singer/&quot;&gt;Emily Singer&lt;/a&gt; at the Simons Foundation.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Neuropixels: high resolution brain recording from implanted electrodes.&lt;/li&gt;
+  &lt;li&gt;Until recently Neuropixel devices are only used on primates and rodents, but now they can be used in people thanks to Dr. Paulk and Dr. Cash at &lt;a href=&quot;https://cashlab.mgh.harvard.edu/people/&quot;&gt;Cashlab&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Neural recordings for brain computer interfaces are researched in clinical trials due to the risks associated with implantable electrodes.&lt;/li&gt;
+  &lt;li&gt;However further development of the decoding that can be performed at various resolutions helps inform new and more effective BCI.&lt;/li&gt;
+  &lt;li&gt;Short, fast, and simple tasks may help understand neural coding at a more basic level.&lt;/li&gt;
+  &lt;li&gt;Primary application is that the user would control a robotic arm or robotic device that responds to decoded brain activity.&lt;/li&gt;
+  &lt;li&gt;Utah microelectrode array as the leading measurement device for 7 years.&lt;/li&gt;
+  &lt;li&gt;RNN Decoder translates Neural activity from 200 neurons into characters at rate of 90 characters per minute.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Shenoy 2022&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Your brain is actually issuing more information per second when you handwrite than when you make a straight line. That increased complexity made it easier to quickly decode the intended letter — and offers new opportunities for exploring neural coding,”&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Dr. Pandarinath researchers fast finger movements, unlike commonly researched reaching and grasping movements.&lt;/li&gt;
+  &lt;li&gt;Dr. Stavisky and Dr. Shenoy are able to reliably deocde speech related neural activity from handknob area in people who can’t move their hands but can still speak.&lt;/li&gt;
+  &lt;li&gt;Still the question of what machinery is used for what task is outstanding. It will be hard to map areas even between common tasks like walking and running.&lt;/li&gt;
+  &lt;li&gt;Lower dimension manifolds for interpreting neural recodings.&lt;/li&gt;
+  &lt;li&gt;Neuropixels code and data are public.&lt;/li&gt;
+  &lt;li&gt;Dr. Paulk says diversity of waveforms produced is a new and surprising result.&lt;/li&gt;
+  &lt;li&gt;There still exist significant engineering challenges around neuropixels, like how to stablize the device and transmit data.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Cracking the Neural Code in Humans by Emily Singer at the Simons Foundation.</summary></entry><entry><title type="html">Review 20: Trends in Computational Neuroscience: Cosyne 2022</title><link href="http://localhost:4000/reviews/review20/" rel="alternate" type="text/html" title="Review 20: Trends in Computational Neuroscience: Cosyne 2022" /><published>2022-03-25T05:16:13-07:00</published><updated>2022-03-25T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review20</id><content type="html" xml:base="http://localhost:4000/reviews/review20/">&lt;p&gt;&lt;a href=&quot;https://saberatalukder.com/cosyne_2022_computational_and_systems_neuroscience_in_review.html&quot;&gt;Trends in Computational Neuroscience: Cosyne 2022
 &lt;/a&gt; by &lt;a href=&quot;https://saberatalukder.com/index.html&quot;&gt;Sabera Talukder&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
@@ -12,7 +41,7 @@
           &lt;li&gt;Especially w.r.t. software, data analysis pipelines and pose tracking estimation.&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;Comparing ANNs to RNNs
+      &lt;li&gt;Comparing ANNs to Biologically realistic NN
         &lt;ul&gt;
           &lt;li&gt;I didn’t have FOMO hearing about behavior, but now I do.&lt;/li&gt;
           &lt;li&gt;One-to-one biological to neural network comparison.&lt;/li&gt;
@@ -539,75 +568,4 @@ and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.
       &lt;li&gt;Can a policy recognize itself? I think this is a fascinating question and another step into a unqiue type of machine intelligence that must construct a detailed intermediate of representations of the world through the state space/policy optimization approach.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Just Ask for Generalization by Eric Jang</summary></entry><entry><title type="html">Review 10: Beyond advertising: New infrastructures for publishing integrated research objects</title><link href="http://localhost:4000/reviews/review10/" rel="alternate" type="text/html" title="Review 10: Beyond advertising: New infrastructures for publishing integrated research objects" /><published>2022-01-16T04:16:13-08:00</published><updated>2022-01-16T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review10</id><content type="html" xml:base="http://localhost:4000/reviews/review10/">&lt;p&gt;&lt;a href=&quot;https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009651&quot;&gt;Beyond advertising: New infrastructures for publishing integrated research objects&lt;/a&gt; by &lt;a href=&quot;https://elizabeth-dupre.com/#/cv&quot;&gt;Elizabeth DuPre&lt;/a&gt; et al.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Citation: DuPre, Elizabeth, et al. “Beyond advertising: New infrastructures for publishing integrated research objects.” PLOS Computational Biology 18.1 (2022): e1009651.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Introduction
-    &lt;ul&gt;
-      &lt;li&gt;Discuss current practices in reviewing and publishing a paper, including new forms of curation like openreview and arxivsantiy. Also includes new practices like website hosting and Twitter paper advertising.&lt;/li&gt;
-      &lt;li&gt;Presents problem: Researchers have moved online but have not fully embraced web first workflows.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Hybrid Objects
-    &lt;ul&gt;
-      &lt;li&gt;Hybrid objects are described as an amalgamation of writing, code, computation, data, and documentation.&lt;/li&gt;
-      &lt;li&gt;The authors point out the major problem with hybrid objects, at least in regards to the data, which is a lack of data standards in most data publishing platforms.
-        &lt;ul&gt;
-          &lt;li&gt;And who can blame these data hosting platforms? If they want people to use them, they need looser data standards than their competitors. On the other hand, enforcing and complying to data standards is &lt;em&gt;huge&lt;/em&gt; problem because there are so many different possible formats to have data in (.json, .csv, .dat, .hdf5, .yaml, and the worst: .txt)&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;However, following the most prevalent compliant standard for publishing data sets should aid prospects of publication.
-        &lt;ul&gt;
-          &lt;li&gt;yes this is quite literally conformist.&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;When it comes to data standards having an ecosystem is a very bad thing&lt;/strong&gt;&lt;/li&gt;
-          &lt;li&gt;I think the best way to implement data standards is inheritance. You can make instantiations of some broader standard.&lt;/li&gt;
-          &lt;li&gt;Though, this problem is a rabbit hole.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Interactive and integrated research objects
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Claerbout Challenge&lt;/strong&gt; is the problem of sharing your whole code/data and env. It always comes with caveats like dependencies that take forever to install.
-        &lt;ul&gt;
-          &lt;li&gt;“Code provided for reproducibility” is often not as reproducible as we’d like it to be.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Sharing integrated research objects like notebooks is nice approach for this.&lt;/li&gt;
-      &lt;li&gt;But then comes the challenge of hosting such objects. So if you make a notebook, where do you put it so that people can engage. (I think github is fine).&lt;/li&gt;
-      &lt;li&gt;But this eLife pilot executable research article looks awesome!
-        &lt;ul&gt;
-          &lt;li&gt;did not know that existed.
-            &lt;blockquote&gt;
-              &lt;p&gt;DuPre 2022&lt;/p&gt;
-              &lt;blockquote&gt;
-                &lt;p&gt;We argue that sustainable development demands open standards with multistakeholder governance and leadership to ensure that resulting specifications are not driven by a single stakeholder.&lt;/p&gt;
-              &lt;/blockquote&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;This is word soup, but I totally agree with the sentiment. Open standards need to be equitable for all researchers. Python notebooks are great if you use python, but if you only know matlab or R, these formats could cause you a great deal of trouble.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Combining RMarkdown and Jupyter Notebooks seems like an excellent way to present research.
-    &lt;ul&gt;
-      &lt;li&gt;Though I might sub out RMarkdown for plain old markdown, or even better Jupyter Notebooks native mathjax (basically latex).&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Dupre 2022&lt;/p&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;By investing in infrastructure for integrated research objects that heavily rely on open, modular components, we can make strong contributions in individual research domains while still ensuring that these investments can be easily retooled and extended.&lt;/p&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;This is a very good sentiment to have for these platforms. Building such components to be equitable across large and small research groups is a difficult challenge as the authors have pointed out. But yes, &lt;a href=&quot;https://www.neurolibre.org/&quot;&gt;NeuroLibre&lt;/a&gt; and &lt;a href=&quot;https://pangeo.io/&quot;&gt;Pangeo&lt;/a&gt; are steps in the right direction.&lt;/li&gt;
-  &lt;li&gt;My only real opinion here is that it doesn’t seem to help a paper if it has these integrated objects. I don’t see many reviewers taking this stuff into account, but there should be an incentive for both authors and reviewers to do so. I think this would create more of a community around these tools and then things can build from there. The problem right now is that it is too attractive to publish and then never touch your code again.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Beyond advertising: New infrastructures for publishing integrated research objects by Elizabeth DuPre et al.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Just Ask for Generalization by Eric Jang</summary></entry></feed>

@@ -1,0 +1,32 @@
+---
+layout: base
+title:  "Review 21: Cracking the Neural Code in Humans"
+date:   2022-43 5:16:13 -0700
+author: xander
+categories: reviews
+---
+
+
+[Cracking the Neural Code in Humans
+](https://www.simonsfoundation.org/2022/03/29/cracking-the-neural-code-in-humans/) by [Emily Singer](https://www.simonsfoundation.org/people/emily-singer/) at the Simons Foundation.
+
+
+- Neuropixels: high resolution brain recording from implanted electrodes.
+- Until recently Neuropixel devices are only used on primates and rodents, but now they can be used in people thanks to Dr. Paulk and Dr. Cash at [Cashlab](https://cashlab.mgh.harvard.edu/people/).
+- Neural recordings for brain computer interfaces are researched in clinical trials due to the risks associated with implantable electrodes.
+- However further development of the decoding that can be performed at various resolutions helps inform new and more effective BCI.
+- Short, fast, and simple tasks may help understand neural coding at a more basic level.
+- Primary application is that the user would control a robotic arm or robotic device that responds to decoded brain activity.
+- Utah microelectrode array as the leading measurement device for 7 years.
+- RNN Decoder translates Neural activity from 200 neurons into characters at rate of 90 characters per minute.
+
+> Shenoy 2022
+>> Your brain is actually issuing more information per second when you handwrite than when you make a straight line. That increased complexity made it easier to quickly decode the intended letter — and offers new opportunities for exploring neural coding,"
+
+- Dr. Pandarinath researchers fast finger movements, unlike commonly researched reaching and grasping movements.
+- Dr. Stavisky and Dr. Shenoy are able to reliably deocde speech related neural activity from handknob area in people who can't move their hands but can still speak.
+- Still the question of what machinery is used for what task is outstanding. It will be hard to map areas even between common tasks like walking and running.
+- Lower dimension manifolds for interpreting neural recodings.
+- Neuropixels code and data are public.
+- Dr. Paulk says diversity of waveforms produced is a new and surprising result.
+- There still exist significant engineering challenges around neuropixels, like how to stablize the device and transmit data.

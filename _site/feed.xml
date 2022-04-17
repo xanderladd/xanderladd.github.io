@@ -1,4 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-03T03:13:35-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 21: Cracking the Neural Code in Humans</title><link href="http://localhost:4000/reviews/review21/" rel="alternate" type="text/html" title="Review 21: Cracking the Neural Code in Humans" /><published>2022-04-02T05:16:13-07:00</published><updated>2022-04-02T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review21</id><content type="html" xml:base="http://localhost:4000/reviews/review21/">&lt;p&gt;&lt;a href=&quot;https://www.simonsfoundation.org/2022/03/29/cracking-the-neural-code-in-humans/&quot;&gt;Cracking the Neural Code in Humans
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-17T14:11:42-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings</title><link href="http://localhost:4000/reviews/review23/" rel="alternate" type="text/html" title="Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings" /><published>2022-04-16T05:16:13-07:00</published><updated>2022-04-16T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review23</id><content type="html" xml:base="http://localhost:4000/reviews/review23/">&lt;p&gt;&lt;a href=&quot;https://www.biorxiv.org/content/10.1101/2020.10.27.358291v1.full.pdf&quot;&gt;Neuropixels 2.0: A miniaturized high-density probe for stable, long-term
+brain recordings&lt;/a&gt; by &lt;a href=&quot;http://www.nicksteinmetz.com/#:~:text=Nick%20Steinmetz,and%20cognition%20across%20the%20brain.&quot;&gt;Nick Steinmetz&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Paper notes for Neuropixels 2.0
+    &lt;ul&gt;
+      &lt;li&gt;Neuropixels new probe :
+        &lt;ul&gt;
+          &lt;li&gt;has over 5000 sites, features&lt;/li&gt;
+          &lt;li&gt;has 2 probes and a headstage&lt;/li&gt;
+          &lt;li&gt;records at 786 sites at once&lt;/li&gt;
+          &lt;li&gt;weighs over 1 gram&lt;/li&gt;
+          &lt;li&gt;enables recording from over &amp;gt; 10000 recording sites during free behavior in mice&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Stably recording neurons over days / weeks during long terms processes like learning and memory is challenging, but important for understanding neural coding.&lt;/li&gt;
+      &lt;li&gt;Many attempts to record from devices that are flexible and less than $\mu$m in size.
+        &lt;ul&gt;
+          &lt;li&gt;Paper states that downside to these approaches are: make insertion difficult and do not scale at large numbers of recording sites per shank.&lt;/li&gt;
+          &lt;li&gt;I don’t understand how small flexible devices could make insertion more difficult.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;More rigid and larger devices (Utah array, wire tetrodes, silicon probes) record high-quality signals for 8 weeks. However, no consistent recordings of individual neurons over the scale of months.&lt;/li&gt;
+      &lt;li&gt;Neuropixels: dense coverage along a line, another array: across a plane.&lt;/li&gt;
+      &lt;li&gt;algorithm stabilizes device to brain motion post hoc.&lt;/li&gt;
+      &lt;li&gt;two recording channels be simultaneously recorded in the same channel with noise penalty in snr.
+        &lt;ul&gt;
+          &lt;li&gt;At this point, I realized that there is a lot of past literature about these recording probes that I am missing. This feels like watching avengers before watching all the prequel movies.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Results
+        &lt;ul&gt;
+          &lt;li&gt;4 shanks, 1280 sites per shank, 5120 total sites.&lt;/li&gt;
+          &lt;li&gt;single wide band 14-bit data stream.&lt;/li&gt;
+          &lt;li&gt;Hardware switches can swap recording streams enabling recording from thousands of streams/experiment.&lt;/li&gt;
+          &lt;li&gt;can cover a plan of 750 x 720 $\mu$m during recording.&lt;/li&gt;
+          &lt;li&gt;Fig. 1
+            &lt;ul&gt;
+              &lt;li&gt;Neuropixels 2.0 is much less wide than the previous version.&lt;/li&gt;
+              &lt;li&gt;Shows LFP recording and spike waveform recording (overlapping channels).&lt;/li&gt;
+              &lt;li&gt;Probe rasters and reproduced raster of dorsal striatum firing pattern across ten trials.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;7 / 8  probes recovered in working condition.&lt;/li&gt;
+          &lt;li&gt;max time recording from implant: 309 days.&lt;/li&gt;
+          &lt;li&gt;Fig 2.
+            &lt;ul&gt;
+              &lt;li&gt;the proportion of spikes has a decaying distribution over the # of days after implant. A similar trend is shown in C. and D.&lt;/li&gt;
+              &lt;li&gt;hippocampus has a high proportion of firing neurons.&lt;/li&gt;
+              &lt;li&gt;comparison of spike recording stats between labs that used the device.
+                &lt;ul&gt;
+                  &lt;li&gt;I think this plot is hard to interpret because I know there are different conditions for each lab so plot does not necessarily show apples to apples.&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Paper claims brain motion leads to progressively less spikes during the duration of a recording.&lt;/li&gt;
+          &lt;li&gt;But they have an unsupervised learning algorithm to adjust for motion post hoc and re-detect spikes. This method increases recording stability (3E).&lt;/li&gt;
+          &lt;li&gt;Fig 3.
+            &lt;ul&gt;
+              &lt;li&gt;The results from this stabilization procedure a visually very convincing.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Now they expand the timescale alignment to long intervals.
+            &lt;ul&gt;
+              &lt;li&gt;successful tracking across days, and weeks (figure 4). 83% tracking accuracy after 9 weeks.&lt;/li&gt;
+              &lt;li&gt;wonder what that accuracy is across more than three months? But tracking 83% of neurons seems really good.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Average signals from two sites along a recording line and then decompose them.&lt;/li&gt;
+          &lt;li&gt;Fig 4
+            &lt;ul&gt;
+              &lt;li&gt;bank 1 and bank 2 separated to two sets of neurons and the switch helps record mapping between banks using mismatch.&lt;/li&gt;
+              &lt;li&gt;when both banks are recording noise is lower.&lt;/li&gt;
+              &lt;li&gt;3 configurations: both banks on, bank 1 on, bank 2 on.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings by Nick Steinmetz.</summary></entry><entry><title type="html">Review 21: Cracking the Neural Code in Humans</title><link href="http://localhost:4000/reviews/review21/" rel="alternate" type="text/html" title="Review 21: Cracking the Neural Code in Humans" /><published>2022-04-02T05:16:13-07:00</published><updated>2022-04-02T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review21</id><content type="html" xml:base="http://localhost:4000/reviews/review21/">&lt;p&gt;&lt;a href=&quot;https://www.simonsfoundation.org/2022/03/29/cracking-the-neural-code-in-humans/&quot;&gt;Cracking the Neural Code in Humans
 &lt;/a&gt; by &lt;a href=&quot;https://www.simonsfoundation.org/people/emily-singer/&quot;&gt;Emily Singer&lt;/a&gt; at the Simons Foundation.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -520,52 +601,4 @@ and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Computation Through Neural Population Dynamics by Saurabh Vyas</summary></entry><entry><title type="html">Review 12: Just Ask for Generalization</title><link href="http://localhost:4000/reviews/review12/" rel="alternate" type="text/html" title="Review 12: Just Ask for Generalization" /><published>2022-01-29T04:16:13-08:00</published><updated>2022-01-29T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review12</id><content type="html" xml:base="http://localhost:4000/reviews/review12/">&lt;p&gt;&lt;a href=&quot;https://evjang.com/2021/10/23/generalization.html&quot;&gt;Just Ask for Generalization&lt;/a&gt; by &lt;a href=&quot;https://evjang.com/&quot;&gt;Eric Jang&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Jang 2021&lt;/p&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;Generalizing to what you want may be easier than optimizing directly for what you want. We might even ask for “consciousness”.&lt;/p&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I read this hook and I was immediately into reading the blog. Saying something like “generalizing for consciousness” is engaging. Although it’s a grand claim from the looks of it, it’s a great way to start by saying &lt;em&gt;something&lt;/em&gt;. I think scientists are so careful about the claims they make, that their hooks become boring even in blogs. This is what blogs are for, let it fly! I’m in.&lt;/li&gt;
-  &lt;li&gt;The name “grokking” in the double descent phenomenon is weird. The authors could have chosen such a cooler name.
-    &lt;ul&gt;
-      &lt;li&gt;This is the idea that if you keep training after training loss has converged you can still get better generalization in test data.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Recently, we’ve seen neural networks and ML have a simple narrative. Lots of data, lots of computing, and lots of parameters (high capacity model) can do some great things.
-    &lt;ul&gt;
-      &lt;li&gt;The blog shows DALL-E which is really an excellent example of generalization in ML.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Interesting transition into the failure of RL to generalize the same way.&lt;/li&gt;
-  &lt;li&gt;Setting up Markov Decision Processes (MDP).
-    &lt;ul&gt;
-      &lt;li&gt;Distribution of actions in states: $p(a \mid s)$, reward: $p(r_t, s_t)$ and transition probabilities $p(s_{t+1} \mid s_t, a_t)$.&lt;/li&gt;
-      &lt;li&gt;Goal to maximize $R(\Theta)$ (reward) where theta is a policy over $t_i=1 \longrightarrow t$.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;In RL we don’t know the optimal policy, so we use the experience of the model.&lt;/li&gt;
-  &lt;li&gt;The various ways of doing this involve learning updates with gradients of the expected reward. Can learn by sampling policy parameters (CMA-ES), or by gradient guided actions (PPO).&lt;/li&gt;
-  &lt;li&gt;There are lots of sources of variance with RL, like the starting position of the agent, non-determinism in the state action transitions. Using an online learning policy incurs more of this variance and researchers need to have a large minibatch to get stable training outcomes.&lt;/li&gt;
-  &lt;li&gt;“Offline RL is not as data absorbent as supervised learning”&lt;/li&gt;
-  &lt;li&gt;Decision Transformer as an example of generalization in predicting all possible policy trajectories (not just the good ones)&lt;/li&gt;
-  &lt;li&gt;There is a lot that can be learned from simply differentiating good from bad policies and D-REX aims to leverage a perturbation kind of approach towards this.&lt;/li&gt;
-  &lt;li&gt;The move to begin making conclusions starts with this really cool “just ask for generalization” table.
-    &lt;ul&gt;
-      &lt;li&gt;Provides the “generalized” version of each RL optimization problem.&lt;/li&gt;
-      &lt;li&gt;There are a few, but “watch try learn” is the most interesting to me. The idea of learning a function that learns &lt;em&gt;how learning policies are learned&lt;/em&gt; seems inefficient at first look but is actually very useful.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;To sum some of this up: the generalized approaches change the single trajectory from initial states to one optimal policy to initial states to multiple trajectories.&lt;/li&gt;
-  &lt;li&gt;Now blog circles back to that initial flashy point on consciousness.
-    &lt;ul&gt;
-      &lt;li&gt;Author recommends reading the recipe for consciouesness with a few strong drinks but I’m hung over so a beer will have to do.&lt;/li&gt;
-      &lt;li&gt;(roughly) the idea is that by modeling how other agents imitate eachother using optimal / suboptimal policies will require agents to introspect into other agents and this will create a more convincing form of conscious agent.&lt;/li&gt;
-      &lt;li&gt;Can a policy recognize itself? I think this is a fascinating question and another step into a unqiue type of machine intelligence that must construct a detailed intermediate of representations of the world through the state space/policy optimization approach.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Just Ask for Generalization by Eric Jang</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Computation Through Neural Population Dynamics by Saurabh Vyas</summary></entry></feed>

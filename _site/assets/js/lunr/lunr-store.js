@@ -136,4 +136,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review21/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings",
+        "excerpt":"Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings by Nick Steinmetz. Paper notes for Neuropixels 2.0 Neuropixels new probe : has over 5000 sites, features has 2 probes and a headstage records at 786 sites at once weighs over 1 gram enables recording from over &gt; 10000...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review23/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

@@ -13,6 +13,18 @@ brain recordings](https://www.biorxiv.org/content/10.1101/2020.10.27.358291v1.fu
 
 
 - Paper notes for Neuropixels 2.0
+    - Notably, this is a pretty big collaboration. The following labs participated:
+        - O'Keefe Lab at UCL
+        - Moser Lab at NTNU
+        - Lee Lab at Janelia Research
+        - Dudman lab at Janelia Research
+        - Hausser Lab at UCL
+        - Steinmetz Lab at UW
+        - Svoboda Lab at Janelia
+        - Carandini/ Harris Lab
+        - Hantman Lab
+        - Haesler Lab
+
     - Neuropixels new probe :
         - has over 5000 sites, features 
         - has 2 probes and a head stage

@@ -1,7 +1,6 @@
 ---
 layout: base
 title:  "Review 24:The brain-reading devices helping paralysed people to move, talk and touch"
-brain recordings"
 date:   2022-4-23 5:16:13 -0700
 author: xander
 categories: reviews

@@ -9,38 +9,38 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings - Alexander Ladd</title>
-<meta name="description" content="Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings by Nick Steinmetz.">
+<!-- begin _includes/seo.html --><title>Review 24:The brain-reading devices helping paralysed people to move, talk and touch - Alexander Ladd</title>
+<meta name="description" content="The brain-reading devices helping paralysed people to move, talk and touch  by Liam Drew.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Alexander Ladd">
-<meta property="og:title" content="Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings">
-<meta property="og:url" content="http://localhost:4000/reviews/review23/">
+<meta property="og:title" content="Review 24:The brain-reading devices helping paralysed people to move, talk and touch">
+<meta property="og:url" content="http://localhost:4000/reviews/review24/">
 
 
-  <meta property="og:description" content="Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings by Nick Steinmetz.">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2022-04-16T05:16:13-07:00">
+  <meta property="og:description" content="The brain-reading devices helping paralysed people to move, talk and touch  by Liam Drew.">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2022-04-23T05:16:13-07:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/reviews/review23/">
+
+<link rel="canonical" href="http://localhost:4000/reviews/review24/">
 
 
 
@@ -123,6 +123,8 @@
               <a href="/projects">projects</a>
             </li><li class="masthead__menu-item">
               <a href="/research">research</a>
+            </li><li class="masthead__menu-item">
+              <a href="/reviews">reviews</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -230,89 +232,34 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings</h1>
+      <h1 id="page-title" class="page__title">Review 24:The brain-reading devices helping paralysed people to move, talk and touch</h1>
     
-    <p><a href="https://www.biorxiv.org/content/10.1101/2020.10.27.358291v1.full.pdf">Neuropixels 2.0: A miniaturized high-density probe for stable, long-term
-brain recordings</a> by <a href="http://www.nicksteinmetz.com/#:~:text=Nick%20Steinmetz,and%20cognition%20across%20the%20brain.">Nick Steinmetz</a>.</p>
+    <p><a href="https://www.nature.com/articles/d41586-022-01047-w?utm_medium=Social&amp;utm_campaign=nature&amp;utm_source=Twitter#Echobox=1650446178">The brain-reading devices helping paralysed people to move, talk and touch
+</a> by <a href="http://www.liamdrew.net/about">Liam Drew</a>.</p>
 
 <ul>
-  <li>Paper notes for Neuropixels 2.0
+  <li>Brain-computer interface clinical trials for paralysis where the patient uses thoughts to operate a computer application moving a robotic arm.</li>
+  <li>James Johnson, a volunteer for the new neurotech, reports that he can move a mouse on a screen using BCI.</li>
+  <li>Johnson is 1 of 35 individuals who have had a BCI implanted.
     <ul>
-      <li>Neuropixels new probe :
-        <ul>
-          <li>has over 5000 sites, features</li>
-          <li>has 2 probes and a headstage</li>
-          <li>records at 786 sites at once</li>
-          <li>weighs over 1 gram</li>
-          <li>enables recording from over &gt; 10000 recording sites during free behavior in mice</li>
-        </ul>
-      </li>
-      <li>Stably recording neurons over days / weeks during long terms processes like learning and memory is challenging, but important for understanding neural coding.</li>
-      <li>Many attempts to record from devices that are flexible and less than $\mu$m in size.
-        <ul>
-          <li>Paper states that downside to these approaches are: make insertion difficult and do not scale at large numbers of recording sites per shank.</li>
-          <li>I don’t understand how small flexible devices could make insertion more difficult.</li>
-        </ul>
-      </li>
-      <li>More rigid and larger devices (Utah array, wire tetrodes, silicon probes) record high-quality signals for 8 weeks. However, no consistent recordings of individual neurons over the scale of months.</li>
-      <li>Neuropixels: dense coverage along a line, another array: across a plane.</li>
-      <li>algorithm stabilizes device to brain motion post hoc.</li>
-      <li>two recording channels be simultaneously recorded in the same channel with noise penalty in snr.
-        <ul>
-          <li>At this point, I realized that there is a lot of past literature about these recording probes that I am missing. This feels like watching avengers before watching all the prequel movies.</li>
-        </ul>
-      </li>
-      <li>Results
-        <ul>
-          <li>4 shanks, 1280 sites per shank, 5120 total sites.</li>
-          <li>single wide band 14-bit data stream.</li>
-          <li>Hardware switches can swap recording streams enabling recording from thousands of streams/experiment.</li>
-          <li>can cover a plan of 750 x 720 $\mu$m during recording.</li>
-          <li>Fig. 1
-            <ul>
-              <li>Neuropixels 2.0 is much less wide than the previous version.</li>
-              <li>Shows LFP recording and spike waveform recording (overlapping channels).</li>
-              <li>Probe rasters and reproduced raster of dorsal striatum firing pattern across ten trials.</li>
-            </ul>
-          </li>
-          <li>7 / 8  probes recovered in working condition.</li>
-          <li>max time recording from implant: 309 days.</li>
-          <li>Fig 2.
-            <ul>
-              <li>the proportion of spikes has a decaying distribution over the # of days after implant. A similar trend is shown in C. and D.</li>
-              <li>hippocampus has a high proportion of firing neurons.</li>
-              <li>comparison of spike recording stats between labs that used the device.
-                <ul>
-                  <li>I think this plot is hard to interpret because I know there are different conditions for each lab so plot does not necessarily show apples to apples.</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>Paper claims brain motion leads to progressively less spikes during the duration of a recording.</li>
-          <li>But they have an unsupervised learning algorithm to adjust for motion post hoc and re-detect spikes. This method increases recording stability (3E).</li>
-          <li>Fig 3.
-            <ul>
-              <li>The results from this stabilization procedure a visually very convincing.</li>
-            </ul>
-          </li>
-          <li>Now they expand the timescale alignment to long intervals.
-            <ul>
-              <li>successful tracking across days, and weeks (figure 4). 83% tracking accuracy after 9 weeks.</li>
-              <li>wonder what that accuracy is across more than three months? But tracking 83% of neurons seems really good.</li>
-            </ul>
-          </li>
-          <li>Average signals from two sites along a recording line and then decompose them.</li>
-          <li>Fig 4
-            <ul>
-              <li>bank 1 and bank 2 separated to two sets of neurons and the switch helps record mapping between banks using mismatch.</li>
-              <li>when both banks are recording noise is lower.</li>
-              <li>3 configurations: both banks on, bank 1 on, bank 2 on.</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
+      <li>This number seems surprisingly low. I wouldn’t expect more than 1000 though.</li>
     </ul>
   </li>
+  <li>Black Rock Neurotech in Salt Lake City, Utah produces a lot of these devices.</li>
+  <li>2006 Landmark paper where Dr. Leigh Hochberg et al. teach a man to move a cursor using robotic arms and was the first of a multicenter set of trials called BrainGate which continues today.</li>
+  <li>Requires decoding algorithms to match neural data to actions.</li>
+  <li>A major goal is to restore motor independence in people who have lost ability in moving their limbs.</li>
+  <li>Bypass central nervous system by directly stimulating muscles responsible for movement.</li>
+  <li>Decoding algorithm improves and patient capacity to interface with the machine improves as well.</li>
+  <li>Richard Anderson leading clinical trials at caltech.</li>
+  <li>A focus of this research is stabilizing the movements.</li>
+  <li>Dr. Edward Chang works on restoring the ability to communicate at UCSF using BCI.</li>
+  <li>40 characters a minute by Shenoy et al. in cursor benchmark.</li>
+  <li>Turning thoughts into type which uses pattern analysis.</li>
+  <li>Chang lab uses sensors planted on the surface of the brain which have a lower resolution but a non-invasive.</li>
+  <li>All BCI companies are aiming to increase bandwidth of communication signals.</li>
+  <li>There is still a long way to go with the technology.</li>
+  <li>Major limitations right now are how long the device will last, how well it will adapt to each user, and if the device will still be supported or used later on down the road.</li>
 </ul>
 
 
@@ -331,7 +278,49 @@ brain recordings</a> by <a href="http://www.nicksteinmetz.com/#:~:text=Nick%20St
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/reviews/review23/" rel="permalink">Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings
+        <a href="/reviews/review24/" rel="permalink">Review 24:The brain-reading devices helping paralysed people to move, talk and touch
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">The brain-reading devices helping paralysed people to move, talk and touch
+ by Liam Drew.
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review23-copy/" rel="permalink">Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings
 </a>
       
     </h2>
@@ -1325,7 +1314,7 @@ and Biological Connections by Joseph Marino
 
 <!-- 
 
-<title>Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings - Alexander Ladd</title>
+<title>Review 24:The brain-reading devices helping paralysed people to move, talk and touch - Alexander Ladd</title>
 <meta name="viewport" content="width=device-width">
 
 <link rel="stylesheet" href="/css/all.css"> -->
@@ -1359,6 +1348,17 @@ and Biological Connections by Joseph Marino
 
     }
   });
+</script>
+
+
+
+<script src="https://utteranc.es/client.js"
+        repo="xanderladd/xanderladd.github.io"
+        issue-term="pathname"
+        label="comments"
+        theme="photon-dark"
+        crossorigin="anonymous"
+        async>
 </script>
 
 

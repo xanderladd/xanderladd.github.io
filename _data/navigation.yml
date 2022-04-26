@@ -17,3 +17,5 @@ main:
     url: /projects
   - title: "research"
     url: /research
+  - title:  "reviews"
+    url: /reviews

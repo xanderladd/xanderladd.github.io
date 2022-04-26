@@ -1,13 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-17T14:11:42-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings</title><link href="http://localhost:4000/reviews/review23/" rel="alternate" type="text/html" title="Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings" /><published>2022-04-16T05:16:13-07:00</published><updated>2022-04-16T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review23</id><content type="html" xml:base="http://localhost:4000/reviews/review23/">&lt;p&gt;&lt;a href=&quot;https://www.biorxiv.org/content/10.1101/2020.10.27.358291v1.full.pdf&quot;&gt;Neuropixels 2.0: A miniaturized high-density probe for stable, long-term
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-26T15:00:34-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 24:The brain-reading devices helping paralysed people to move, talk and touch</title><link href="http://localhost:4000/reviews/review24/" rel="alternate" type="text/html" title="Review 24:The brain-reading devices helping paralysed people to move, talk and touch" /><published>2022-04-23T05:16:13-07:00</published><updated>2022-04-23T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review24</id><content type="html" xml:base="http://localhost:4000/reviews/review24/">&lt;p&gt;&lt;a href=&quot;https://www.nature.com/articles/d41586-022-01047-w?utm_medium=Social&amp;amp;utm_campaign=nature&amp;amp;utm_source=Twitter#Echobox=1650446178&quot;&gt;The brain-reading devices helping paralysed people to move, talk and touch
+&lt;/a&gt; by &lt;a href=&quot;http://www.liamdrew.net/about&quot;&gt;Liam Drew&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Brain-computer interface clinical trials for paralysis where the patient uses thoughts to operate a computer application moving a robotic arm.&lt;/li&gt;
+  &lt;li&gt;James Johnson, a volunteer for the new neurotech, reports that he can move a mouse on a screen using BCI.&lt;/li&gt;
+  &lt;li&gt;Johnson is 1 of 35 individuals who have had a BCI implanted.
+    &lt;ul&gt;
+      &lt;li&gt;This number seems surprisingly low. I wouldn’t expect more than 1000 though.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Black Rock Neurotech in Salt Lake City, Utah produces a lot of these devices.&lt;/li&gt;
+  &lt;li&gt;2006 Landmark paper where Dr. Leigh Hochberg et al. teach a man to move a cursor using robotic arms and was the first of a multicenter set of trials called BrainGate which continues today.&lt;/li&gt;
+  &lt;li&gt;Requires decoding algorithms to match neural data to actions.&lt;/li&gt;
+  &lt;li&gt;A major goal is to restore motor independence in people who have lost ability in moving their limbs.&lt;/li&gt;
+  &lt;li&gt;Bypass central nervous system by directly stimulating muscles responsible for movement.&lt;/li&gt;
+  &lt;li&gt;Decoding algorithm improves and patient capacity to interface with the machine improves as well.&lt;/li&gt;
+  &lt;li&gt;Richard Anderson leading clinical trials at caltech.&lt;/li&gt;
+  &lt;li&gt;A focus of this research is stabilizing the movements.&lt;/li&gt;
+  &lt;li&gt;Dr. Edward Chang works on restoring the ability to communicate at UCSF using BCI.&lt;/li&gt;
+  &lt;li&gt;40 characters a minute by Shenoy et al. in cursor benchmark.&lt;/li&gt;
+  &lt;li&gt;Turning thoughts into type which uses pattern analysis.&lt;/li&gt;
+  &lt;li&gt;Chang lab uses sensors planted on the surface of the brain which have a lower resolution but a non-invasive.&lt;/li&gt;
+  &lt;li&gt;All BCI companies are aiming to increase bandwidth of communication signals.&lt;/li&gt;
+  &lt;li&gt;There is still a long way to go with the technology.&lt;/li&gt;
+  &lt;li&gt;Major limitations right now are how long the device will last, how well it will adapt to each user, and if the device will still be supported or used later on down the road.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">The brain-reading devices helping paralysed people to move, talk and touch by Liam Drew.</summary></entry><entry><title type="html">Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings</title><link href="http://localhost:4000/reviews/review23-copy/" rel="alternate" type="text/html" title="Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings" /><published>2022-04-16T05:16:13-07:00</published><updated>2022-04-16T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review23%20copy</id><content type="html" xml:base="http://localhost:4000/reviews/review23-copy/">&lt;p&gt;&lt;a href=&quot;https://www.biorxiv.org/content/10.1101/2020.10.27.358291v1.full.pdf&quot;&gt;Neuropixels 2.0: A miniaturized high-density probe for stable, long-term
 brain recordings&lt;/a&gt; by &lt;a href=&quot;http://www.nicksteinmetz.com/#:~:text=Nick%20Steinmetz,and%20cognition%20across%20the%20brain.&quot;&gt;Nick Steinmetz&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Paper notes for Neuropixels 2.0
     &lt;ul&gt;
+      &lt;li&gt;Notably, this is a pretty big collaboration. The following labs participated:
+        &lt;ul&gt;
+          &lt;li&gt;O’Keefe Lab at UCL&lt;/li&gt;
+          &lt;li&gt;Moser Lab at NTNU&lt;/li&gt;
+          &lt;li&gt;Lee Lab at Janelia Research&lt;/li&gt;
+          &lt;li&gt;Dudman lab at Janelia Research&lt;/li&gt;
+          &lt;li&gt;Hausser Lab at UCL&lt;/li&gt;
+          &lt;li&gt;Steinmetz Lab at UW&lt;/li&gt;
+          &lt;li&gt;Svoboda Lab at Janelia&lt;/li&gt;
+          &lt;li&gt;Carandini/ Harris Lab&lt;/li&gt;
+          &lt;li&gt;Hantman Lab&lt;/li&gt;
+          &lt;li&gt;Haesler Lab&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
       &lt;li&gt;Neuropixels new probe :
         &lt;ul&gt;
           &lt;li&gt;has over 5000 sites, features&lt;/li&gt;
-          &lt;li&gt;has 2 probes and a headstage&lt;/li&gt;
+          &lt;li&gt;has 2 probes and a head stage&lt;/li&gt;
           &lt;li&gt;records at 786 sites at once&lt;/li&gt;
           &lt;li&gt;weighs over 1 gram&lt;/li&gt;
           &lt;li&gt;enables recording from over &amp;gt; 10000 recording sites during free behavior in mice&lt;/li&gt;
@@ -507,98 +547,4 @@ and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.
     &lt;/ol&gt;
   &lt;/li&gt;
   &lt;li&gt;The first and last steps are very startup-esque. Build and rebuild kind of thing. The second point is a serious epistemological problem.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Computation Through Neural Population Dynamics by Saurabh Vyas</summary></entry><entry><title type="html">Review 13: Computation Through Neural Population Dynamics Part 1</title><link href="http://localhost:4000/reviews/review13/" rel="alternate" type="text/html" title="Review 13: Computation Through Neural Population Dynamics Part 1" /><published>2022-02-04T04:16:13-08:00</published><updated>2022-02-04T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review13</id><content type="html" xml:base="http://localhost:4000/reviews/review13/">&lt;p&gt;&lt;a href=&quot;https://www.annualreviews.org/doi/pdf/10.1146/annurev-neuro-092619-094115&quot;&gt;Computation Through Neural Population Dynamics&lt;/a&gt; by &lt;a href=&quot;https://smvyas.github.io/&quot;&gt;Saurabh Vyas&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Citation: Vyas, Saurabh, et al. “Computation through neural population dynamics.” Annual Review of Neuroscience 43 (2020): 249-275.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Gonna make this a two-part review since this one is a little longer.&lt;/li&gt;
-  &lt;li&gt;The dynamic systems approach to population neuron activity is  interesting. I just recently learned about the field called dynamical systems, which is exciting. I had always thought “dynamical system” was an adjective (and it is), but I never imagined they have their own field of mathematical research.
-    &lt;ul&gt;
-      &lt;li&gt;formal def. of dynamical system: $\frac{dx}{dt} = f(x(t), u(t)) $.&lt;/li&gt;
-      &lt;li&gt;$x$ is the neural population response at time $t$ and $u$ is the external input.&lt;/li&gt;
-      &lt;li&gt;pendulum as a brief example of a dynamical system.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Move from introduction to the brain as a dynamical system to discussing neuronal population firing trajectory.
-    &lt;ul&gt;
-      &lt;li&gt;Here they bring up dimensionality reduction as an efficient method for simplifying the case when you have thousands of neuron trajectories and of course this is a valid approach. However, the statement that “we only lose $x$ amount of variance with PCA, so PCA is good” is one I take with a grain of salt. Most data can have most of its variance accounted for by 10 PCs. I don’t think accounted variance means dim. reduction on neural trajectories is a great idea. On the other hand, it’s not likely we’re gonna start looking at all trajectories and find intuitive understanding, so I’ll stop complaining.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Computation through Dynamics (CTD)&lt;/strong&gt; : dynamics of how neural circuit + input evolve through state space.
-    &lt;ul&gt;
-      &lt;li&gt;underlying all the things we do!&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;CTD mathematical intro
-    &lt;ul&gt;
-      &lt;li&gt;Deep Learning
-        &lt;ul&gt;
-          &lt;li&gt;Data modeling: use the internal state to find $f$&lt;/li&gt;
-          &lt;li&gt;Task modeling: input / output pairs from a task and we wish to identify $f$ that could have possibly led to these pairs.
-            &lt;ul&gt;
-              &lt;li&gt;Task modeling seems so much harder!&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;RNNs as the neural network / DL approach to solving the $f$ responsible for dynamical systems.
-            &lt;ul&gt;
-              &lt;li&gt;glad they used the pendulum example to explain this.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;High Dim. Systems
-        &lt;ul&gt;
-          &lt;li&gt;Linear dynamical system (LDS) : $\frac{dx}{dt} = L(x(t),u(t)) = Ax(t) + Bu(t)$&lt;/li&gt;
-          &lt;li&gt;Linear dynamics around fixed points: attractor, repeller, oscillator.&lt;/li&gt;
-          &lt;li&gt;Stable orbits / unstable orbits.&lt;/li&gt;
-          &lt;li&gt;LDS around fixed point with input: $\frac{d\delta (s)}{dt} = A(x^*,u^*)\delta x(t) + B(x^*,u^*)\delta u(t) $
-            &lt;ul&gt;
-              &lt;li&gt;$\delta x(t) = x(t) - x^*$ and same for $\delta u(t)$. This just means they have an initial point denoted by $*$ term.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Linear Subspaces and Manifolds
-        &lt;ul&gt;
-          &lt;li&gt;2D manifold looks like a pringle.&lt;/li&gt;
-          &lt;li&gt;Most of this was reviewed, but I did not understand the purpose of figure 6 showing potent space and null space.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Dynamical Systems in Motor Control
-    &lt;ul&gt;
-      &lt;li&gt;What principles guide the generation of the observed time-varying patterns of motor cortical activity?&lt;/li&gt;
-      &lt;li&gt;Delay reaching task as an example of a common experimental paradigm for motor preparation.
-        &lt;ul&gt;
-          &lt;li&gt;CTD views preparatory activity as an initial condition. Not a necessary condition though; Other initial states can have the same motor movement, but being closer to the right one is advantageous for several reasons that they explain.
-            &lt;ul&gt;
-              &lt;li&gt;Competing hypothesis presented.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;RNN model to try to produce motor activity given preparatory activity.&lt;/li&gt;
-          &lt;li&gt;Null spaces as preparation preclude some activity because it is orthogonal to that initial condition.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Dynamical motifs during movement
-        &lt;ul&gt;
-          &lt;li&gt;&lt;strong&gt;Condition invariant signal&lt;/strong&gt;: signal that follows timing/onset of cue. Large component of population response.
-            &lt;ul&gt;
-              &lt;li&gt;Roughly, releases the preparatory state from an attractor-like state to a rotating state.&lt;/li&gt;
-              &lt;li&gt;The paper with citation (Sussile 2015) that is a “sufficiency test for the rotations motif” seems really interesting. Simple low dim RNN oscillation produced complex inputs/outputs for prep state –&amp;gt; muscle activity.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;A really interesting point is that maybe these oscillating states are inevitable outcomes of basic neuronal firing properties.
-            &lt;ul&gt;
-              &lt;li&gt;I don’t think asking “when are these oscillating states informative?” is as clear as asking “how informative are these oscillation states?”.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Two similar states –&amp;gt; same movement == tangling. Then the reverse process is untangling.&lt;/li&gt;
-          &lt;li&gt;Low degree of trajectory divergence in supplementary motor area (SMA).&lt;/li&gt;
-          &lt;li&gt;Summart lost me a (d) - (f). Feels like I missed those later points somewhere in the reading.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
 &lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Computation Through Neural Population Dynamics by Saurabh Vyas</summary></entry></feed>

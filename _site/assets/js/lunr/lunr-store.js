@@ -138,8 +138,14 @@ var store = [{
         "teaser": "/assets/images/trees.jpeg"
       },{
         "title": "Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings",
-        "excerpt":"Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings by Nick Steinmetz. Paper notes for Neuropixels 2.0 Neuropixels new probe : has over 5000 sites, features has 2 probes and a headstage records at 786 sites at once weighs over 1 gram enables recording from over &gt; 10000...","categories": ["reviews"],
+        "excerpt":"Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings by Nick Steinmetz. Paper notes for Neuropixels 2.0 Notably, this is a pretty big collaboration. The following labs participated: O’Keefe Lab at UCL Moser Lab at NTNU Lee Lab at Janelia Research Dudman lab at Janelia Research Hausser Lab...","categories": ["reviews"],
         "tags": [],
-        "url": "/reviews/review23/",
+        "url": "/reviews/review23-copy/",
+        "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 24:The brain-reading devices helping paralysed people to move, talk and touch",
+        "excerpt":"The brain-reading devices helping paralysed people to move, talk and touch by Liam Drew. Brain-computer interface clinical trials for paralysis where the patient uses thoughts to operate a computer application moving a robotic arm. James Johnson, a volunteer for the new neurotech, reports that he can move a mouse on...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review24/",
         "teaser": "/assets/images/trees.jpeg"
       }]

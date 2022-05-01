@@ -101,6 +101,10 @@
 <lastmod>2022-04-23T05:16:13-07:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/reviews/review25/</loc>
+<lastmod>2022-04-30T05:16:13-07:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/private_posts/2020-09-28-blogger/</loc>
 </url>
 <url>
@@ -159,6 +163,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/page5/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page6/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/assets/images/benchmarking_draft.pdf</loc>

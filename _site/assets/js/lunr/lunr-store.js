@@ -148,4 +148,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review24/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 25: Plug-and-play control of a brain–computer interface through neural map stabilization",
+        "excerpt":"Plug-and-play control of a brain–computer interface through neural map stabilization by Daniel Silversmith. Silversmith, Daniel B., et al. “Plug-and-play control of a brain–computer interface through neural map stabilization.” Nature Biotechnology 39.3 (2021): 326-335. Having recently read higher level overviews of BCIs, reading this paper in Nature Biotech will be especially...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review25/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

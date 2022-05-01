@@ -1,6 +1,6 @@
 ---
 layout: base
-title:  "Review 25: Plug-and-play control of a brain–computer interface through neural map stabilization"
+title:  "Review 25: Plug-and-play control of a brain-computer interface through neural map stabilization"
 date:   2022-4-30 5:16:13 -0700
 author: xander
 categories: reviews
@@ -8,23 +8,23 @@ comments: true
 ---
 
 
-[Plug-and-play control of a brain–computer interface through neural map stabilization
+[Plug-and-play control of a brain-computer interface through neural map stabilization
 ](https://www.nature.com/articles/s41587-020-0662-5) by [Daniel Silversmith](https://gangulylab.org/people.html).
 
-Silversmith, Daniel B., et al. "Plug-and-play control of a brain–computer interface through neural map stabilization." Nature Biotechnology 39.3 (2021): 326-335.
+Silversmith, Daniel B., et al. "Plug-and-play control of a brain-computer interface through neural map stabilization." Nature Biotechnology 39.3 (2021): 326-335.
 
-- Having recently read higher level overviews of BCIs, reading this paper in Nature Biotech will be especially relevant but more specfic.
+- Having recently read higher-level overviews of BCIs, reading this paper in Nature Biotech will be especially relevant but more specific.
 - Abstract
     - 180 channel electrocorticography (ECoG) implant in a paralyzed individual enabled stable monitoring of signals.
-    - Long term closed loop adaptataion updates decoder weights over several days, thus updating map and plug and play control.
+    - Long-term closed loop adaptation updates decoder weights over several days, thus updating map and plug and play control.
 Intro
-    - Currently, 30 min daily recalibration results in variability in peformance and decreased decoding performance in the long-term.
-    - ECoG PNP control achieved using interface that updates within session instead via closed loop decoder adaptation (CLDA) and potentially over longer terms (ltCDA).
+    - Currently, 30 min daily recalibration results in variability in performance and decreased decoding performance in the long-term.
+    - ECoG PNP control was achieved using an interface that updates within-session instead via closed-loop decoder adaptation (CLDA) and potentially over longer terms (ltCDA).
 Results
     - Fig. 1
-        - ECoG signal comes from a few brain reigions: S1, M1 , PMC, PMV, SMA.
+        - ECoG signal comes from a few brain regions: S1, M1 , PMC, PMV, SMA.
         - **Kalman Filter** decoder weights.
-        - There are a few aspects that are clearly different between ltCLDA and daily initializaiton:
+        - There are a few aspects that are different between ltCLDA and daily initialization:
             - Time to taget increased, though it is hard to tell by how much as I can't see mean values in the intervals.
             - ITR shows clear increase during ltCDA.
             - Convergence of decoder weights is faster using ltCDA.
@@ -32,33 +32,33 @@ Results
         - I do not understand box diagram in fig H. Are the outwward pointing arrows for CNS and KF pipeline outputs?
     - Weights are general orthogonal at the start of each dailty initializaiton, so pooling weights over days hurt model performance.
     - ltCDA resulted in stable convergence of decoder weights across sessions instead.
-    - Higher half life values (history length used in weight updates) led to better fixed control and more stable weight convergence.
+    - Higher half-life values (history length used in weight updates) led to better fixed control and more stable weight convergence.
     - Some weights exhibiting low magnitude or common trends may be redundant and enables sparseness.
     - Fig. 2
         - A lot more variance in decoder map weights for daily initialization method.
-        - As the days go on, the orthoganlity of the weights seems to decrease.
+        - As the days go on, the orthogonality of the weights seems to decrease.
         - mu weights decrease w/ linear trends and gamma2 weights increase w/ linear trend.
-        - Sparsity / weight pruning is pretty shocking with the 25% of the weights verison having a very similar time to target.
+        - Sparsity/weight pruning is pretty shocking with the 25% of the weights verison having a very similar time to target.
     - Fig. 3
         - Daily calibration had higher circular sd across channels in preferred direction (PD) task.
         - Decoder weight magnitude correlated to circular SD of PD.
         - gamma2 weights are stable from day 36+ and it is visually confirmed. 
-        - All weights show some trend toward stable convergence after day 18+, which is really interesting because it suggests long term improvment with ltCLDA method.
+        - All weights show some trend toward stable convergence after day 18+, which is really interesting because it suggests long-term improvement with ltCLDA method.
     - Fig. 4 
         - ltCDA to Fixed Decoder swap at day 206 + 28 recovery.
         - both ltCDA and CLDA after reset seem to have stable weights.
-        - Decoder weights angle is rougly 45 degress after reset.
+        - Decoder weights angle is roughly 45 degrees after reset.
     Fig. 5
         - Point and click task where cursor path and bits per second information rate are tracked.
         - Weights seem much sparser for click map.
         - I wonder how they will look for less convergent features.
         - Neural state needs to cross click threshold.
-        - Everyday, after cursor is in target area, stable clicking within 1 sec.
+        - Everyday, after the cursor is in target area, stable clicking within 1 sec.
     - No significant drop in performance during PnP sessions (plug and play = no recalibration).
-    - Decoder reinitialization had 45 degree weight angle change but then converge back to 0.
+    - Decoder reinitialization had 45-degree weight angle change but then converge back to 0.
 - Discussion
-    - ltCDA is important example of weights being carried over a long time constant.
-    - CLDA basd on coadaptation can rapidly allow skilled control.
-    - Task related manifolds can be remarkably stable.
-    - Results indicate feasibility of PnP.
+    - ltCDA is an important example of weights being carried over a long time constant.
+    - CLDA based on coadaptation can rapidly allow skilled control.
+    - Task-related manifolds can be remarkably stable.
+    - Results indicate the feasibility of PnP.
     

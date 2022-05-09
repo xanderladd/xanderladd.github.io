@@ -93,7 +93,7 @@
 <lastmod>2022-04-02T05:16:13-07:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/reviews/review23-copy/</loc>
+<loc>http://localhost:4000/reviews/review23/</loc>
 <lastmod>2022-04-16T05:16:13-07:00</lastmod>
 </url>
 <url>
@@ -103,6 +103,10 @@
 <url>
 <loc>http://localhost:4000/reviews/review25/</loc>
 <lastmod>2022-04-30T05:16:13-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/reviews/review26/</loc>
+<lastmod>2022-05-07T05:16:13-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/private_posts/2020-09-28-blogger/</loc>

@@ -1,23 +1,109 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-01T03:22:23-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 25: Plug-and-play control of a brain–computer interface through neural map stabilization</title><link href="http://localhost:4000/reviews/review25/" rel="alternate" type="text/html" title="Review 25: Plug-and-play control of a brain–computer interface through neural map stabilization" /><published>2022-04-30T05:16:13-07:00</published><updated>2022-04-30T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review25</id><content type="html" xml:base="http://localhost:4000/reviews/review25/">&lt;p&gt;&lt;a href=&quot;https://www.nature.com/articles/s41587-020-0662-5&quot;&gt;Plug-and-play control of a brain–computer interface through neural map stabilization
-&lt;/a&gt; by &lt;a href=&quot;https://gangulylab.org/people.html&quot;&gt;Daniel Silversmith&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-08T17:42:35-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 26: A control-theoretic approach to brain-computer interface design</title><link href="http://localhost:4000/reviews/review26/" rel="alternate" type="text/html" title="Review 26: A control-theoretic approach to brain-computer interface design" /><published>2022-05-07T05:16:13-07:00</published><updated>2022-05-07T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review26</id><content type="html" xml:base="http://localhost:4000/reviews/review26/">&lt;p&gt;&lt;a href=&quot;https://smithlab.net/~schase/docs/zhang_acc_2016.pdf&quot;&gt;A control-theoretic approach to brain-computer interface design* &lt;/a&gt; by Yin Zhang&lt;/p&gt;
 
-&lt;p&gt;Silversmith, Daniel B., et al. “Plug-and-play control of a brain–computer interface through neural map stabilization.” Nature Biotechnology 39.3 (2021): 326-335.&lt;/p&gt;
+&lt;p&gt;Zhang, Yin, and Steven M. Chase. “A control-theoretic approach to brain-computer interface design.” 2016 American Control Conference (ACC). IEEE, 2016.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Having recently read higher level overviews of BCIs, reading this paper in Nature Biotech will be especially relevant but more specfic.&lt;/li&gt;
+  &lt;li&gt;A challenge in brain computer interface (BCI) design is mapping from population activity to BCI actuation.&lt;/li&gt;
+  &lt;li&gt;This paper proposes using optimal control theory to formulate and improve BCI usability.&lt;/li&gt;
+  &lt;li&gt;Main algorithmic proposals for mapping population activity to behavior:
+    &lt;ol&gt;
+      &lt;li&gt;linear estimators&lt;/li&gt;
+      &lt;li&gt;Kalman filters&lt;/li&gt;
+      &lt;li&gt;Particle filters&lt;/li&gt;
+      &lt;li&gt;Neural net decoders&lt;/li&gt;
+      &lt;li&gt;point process filters&lt;/li&gt;
+      &lt;li&gt;kernel based techniques.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;That is a lot of potential approaches. The nuances of the application would be required in order to sort them out.&lt;/li&gt;
+  &lt;li&gt;MLE approach to BCI
+    &lt;ul&gt;
+      &lt;li&gt;Velocity kalman filter defined as: $\mathbf{y_t} = B\mathbf{v_t}^* + \mathbf{\epsilon_t
+  }$ where $\mathbf{y_t}$ are $n$ neuron’s firing rates and $\mathbf{v_t}$ is the velocity of a prosethetic effector.
+        &lt;ul&gt;
+          &lt;li&gt;This is clear mathemmatically but I don’t know what a prosthetic effector is.&lt;/li&gt;
+          &lt;li&gt;It seems like some implant that would drive neuron firing rates.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;A second assumption that this velocity changes smoothly over time.&lt;/li&gt;
+      &lt;li&gt;Using these two assumptions: BCI control reduces to Bayesian inference over how this velocity results in firing rates.
+        &lt;ul&gt;
+          &lt;li&gt;I thought there would be more here since after this level of inference you’d still have to infer the previous problem of spike activity mapping to actions.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Using the above equations and the a posteriori estimate of $p(\mathbf{v_t} \mid y_1 … y_t)$, one can create a time dependent state update rule for a BCI controlled cursor position $\mathbf{p_t}$ using $\mathbf{v_t}$.
+        &lt;ul&gt;
+          &lt;li&gt;notation here is confusing because I thought y was in $\mathbb{R}^n$ as a firing frequency for n neurons. I take it the authors mean to use the 1 - t as $y$ at some previous recording time t.&lt;/li&gt;
+          &lt;li&gt;This also answered my previous point about mpaping from $\mathbf{v_t}$ to actual actions.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;While estimation based decoder control has remarkable progress in enabling cursor speed w/ in a factor of 2 of a natural limb, there are still some aspects that can be improved:
+        &lt;ol&gt;
+          &lt;li&gt;Only decoders that correspond to simpe physical systems work well.&lt;/li&gt;
+          &lt;li&gt;Estimation framework assumes static tuning but performance in closed-loop system over time is often very different and offline decoders may not work well in long term.&lt;/li&gt;
+          &lt;li&gt;Biomemtic decoders are not guranteed optimal. Translating signals in terms of basic human motor movements are not necessairly the best way to solve control problems.&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Authors make 3 assumptions about brain as optimal controller:
+        &lt;ol&gt;
+          &lt;li&gt;The brain is emitting control signals that minimize some cost function.&lt;/li&gt;
+          &lt;li&gt;Priamry cortex activity is a direct reprresentation of these signals.&lt;/li&gt;
+          &lt;li&gt;End goal result of learning is to produce produce the optimal control signals of a given effector.
+            &lt;ul&gt;
+              &lt;li&gt;These assumptions have helped me understand a lot of what the paper is previously trying to build to.&lt;/li&gt;
+              &lt;li&gt;Mainly, what I see now that I did not before is why the signal estimation approach is limiting and why understanding motor cotrex signals as effector signals is so important. I believe this is because control theory allows a framework for much more specific definions of control when the goal is reconstructing effector signals instead of predicting movement. Predicting movement is often a more vague problem for a decoder while fine grained analysis of how brain signals enable optimal control in reaching for example is much more specific.
+&lt;img src=&quot;/assets/images/bci_schematic.png&quot; alt=&quot;bci schematic&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;I really like this figure since it is straightforward diagram of the control model here.&lt;/li&gt;
+      &lt;li&gt;It shows where that control signals feed into the plant for state updates in decoder.&lt;/li&gt;
+      &lt;li&gt;$x$ as cursor state, $u$ as control signal, and $J(u)$ as cost function for signal $u$.&lt;/li&gt;
+      &lt;li&gt;Optimal cost is $J^*  = J^(u^*)$, plant parameters are $\phi$&lt;/li&gt;
+      &lt;li&gt;$\phi$ determines usefulness of BCI based on how it minimzes cost funciton.&lt;/li&gt;
+      &lt;li&gt;Not so sure what $H_p$ and $H_v$ mean as spring like properties of the plant and viscous properties. Are these from control theory?&lt;/li&gt;
+      &lt;li&gt;BCI plant system dyanmics
+&lt;img src=&quot;/assets/images/r26_e1.png&quot; alt=&quot;bci schematic&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Quadratic cost function used  in motor learning studies
+&lt;img src=&quot;/assets/images/r26_e2.png&quot; alt=&quot;bci schematic&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Normally I like to use latex to write out he equations in the paper but I don’t wan’t to the \bmatrix formatting today.&lt;/li&gt;
+      &lt;li&gt;First solve forward control problem of optimizing $H_p$ and $H_t$.&lt;/li&gt;
+      &lt;li&gt;Linear quadratic regulator gives minmial cost under optimal policy: $J*(H_p,H_t) = tr(P_0,X_0)$.
+        &lt;ul&gt;
+          &lt;li&gt;are $H_p$ and $H_t$ suppoed to be $H_p^&lt;em&gt;$ and $H_t^&lt;/em&gt;$, the optimal conditions in order to get J*?
+            &lt;blockquote&gt;
+              &lt;p&gt;Zhang 2016 on simulation results for this paper:&lt;/p&gt;
+              &lt;blockquote&gt;
+                &lt;p&gt;In one sense, these results might seem trivial: the optimal 2D linear BCI plant is an integrator that provides no resistance on the inputs. This is an intuitive solution given
+that we assumed no bias in the control signals and further assumed a minimal effort constraint. In another sense, the results are quite surprising: the optimal dynamics identified through this approach to BCI design are qualitatively different from those of the typical BCI decoder, the VKF. In fact, the parameters identified with our method fall outside of the allowable parameters of a VKF.&lt;/p&gt;
+              &lt;/blockquote&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">A control-theoretic approach to brain-computer interface design* by Yin Zhang</summary></entry><entry><title type="html">Review 25: Plug-and-play control of a brain-computer interface through neural map stabilization</title><link href="http://localhost:4000/reviews/review25/" rel="alternate" type="text/html" title="Review 25: Plug-and-play control of a brain-computer interface through neural map stabilization" /><published>2022-04-30T05:16:13-07:00</published><updated>2022-04-30T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review25</id><content type="html" xml:base="http://localhost:4000/reviews/review25/">&lt;p&gt;&lt;a href=&quot;https://www.nature.com/articles/s41587-020-0662-5&quot;&gt;Plug-and-play control of a brain-computer interface through neural map stabilization
+&lt;/a&gt; by &lt;a href=&quot;https://gangulylab.org/people.html&quot;&gt;Daniel Silversmith&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Silversmith, Daniel B., et al. “Plug-and-play control of a brain-computer interface through neural map stabilization.” Nature Biotechnology 39.3 (2021): 326-335.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Having recently read higher-level overviews of BCIs, reading this paper in Nature Biotech will be especially relevant but more specific.&lt;/li&gt;
   &lt;li&gt;Abstract
     &lt;ul&gt;
       &lt;li&gt;180 channel electrocorticography (ECoG) implant in a paralyzed individual enabled stable monitoring of signals.&lt;/li&gt;
-      &lt;li&gt;Long term closed loop adaptataion updates decoder weights over several days, thus updating map and plug and play control.
+      &lt;li&gt;Long-term closed loop adaptation updates decoder weights over several days, thus updating map and plug and play control.
 Intro&lt;/li&gt;
-      &lt;li&gt;Currently, 30 min daily recalibration results in variability in peformance and decreased decoding performance in the long-term.&lt;/li&gt;
-      &lt;li&gt;ECoG PNP control achieved using interface that updates within session instead via closed loop decoder adaptation (CLDA) and potentially over longer terms (ltCDA).
+      &lt;li&gt;Currently, 30 min daily recalibration results in variability in performance and decreased decoding performance in the long-term.&lt;/li&gt;
+      &lt;li&gt;ECoG PNP control was achieved using an interface that updates within-session instead via closed-loop decoder adaptation (CLDA) and potentially over longer terms (ltCDA).
 Results&lt;/li&gt;
       &lt;li&gt;Fig. 1
         &lt;ul&gt;
-          &lt;li&gt;ECoG signal comes from a few brain reigions: S1, M1 , PMC, PMV, SMA.&lt;/li&gt;
+          &lt;li&gt;ECoG signal comes from a few brain regions: S1, M1 , PMC, PMV, SMA.&lt;/li&gt;
           &lt;li&gt;&lt;strong&gt;Kalman Filter&lt;/strong&gt; decoder weights.&lt;/li&gt;
-          &lt;li&gt;There are a few aspects that are clearly different between ltCLDA and daily initializaiton:
+          &lt;li&gt;There are a few aspects that are different between ltCLDA and daily initialization:
             &lt;ul&gt;
               &lt;li&gt;Time to taget increased, though it is hard to tell by how much as I can’t see mean values in the intervals.&lt;/li&gt;
               &lt;li&gt;ITR shows clear increase during ltCDA.&lt;/li&gt;
@@ -30,14 +116,14 @@ Results&lt;/li&gt;
       &lt;/li&gt;
       &lt;li&gt;Weights are general orthogonal at the start of each dailty initializaiton, so pooling weights over days hurt model performance.&lt;/li&gt;
       &lt;li&gt;ltCDA resulted in stable convergence of decoder weights across sessions instead.&lt;/li&gt;
-      &lt;li&gt;Higher half life values (history length used in weight updates) led to better fixed control and more stable weight convergence.&lt;/li&gt;
+      &lt;li&gt;Higher half-life values (history length used in weight updates) led to better fixed control and more stable weight convergence.&lt;/li&gt;
       &lt;li&gt;Some weights exhibiting low magnitude or common trends may be redundant and enables sparseness.&lt;/li&gt;
       &lt;li&gt;Fig. 2
         &lt;ul&gt;
           &lt;li&gt;A lot more variance in decoder map weights for daily initialization method.&lt;/li&gt;
-          &lt;li&gt;As the days go on, the orthoganlity of the weights seems to decrease.&lt;/li&gt;
+          &lt;li&gt;As the days go on, the orthogonality of the weights seems to decrease.&lt;/li&gt;
           &lt;li&gt;mu weights decrease w/ linear trends and gamma2 weights increase w/ linear trend.&lt;/li&gt;
-          &lt;li&gt;Sparsity / weight pruning is pretty shocking with the 25% of the weights verison having a very similar time to target.&lt;/li&gt;
+          &lt;li&gt;Sparsity/weight pruning is pretty shocking with the 25% of the weights verison having a very similar time to target.&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;Fig. 3
@@ -45,35 +131,35 @@ Results&lt;/li&gt;
           &lt;li&gt;Daily calibration had higher circular sd across channels in preferred direction (PD) task.&lt;/li&gt;
           &lt;li&gt;Decoder weight magnitude correlated to circular SD of PD.&lt;/li&gt;
           &lt;li&gt;gamma2 weights are stable from day 36+ and it is visually confirmed.&lt;/li&gt;
-          &lt;li&gt;All weights show some trend toward stable convergence after day 18+, which is really interesting because it suggests long term improvment with ltCLDA method.&lt;/li&gt;
+          &lt;li&gt;All weights show some trend toward stable convergence after day 18+, which is really interesting because it suggests long-term improvement with ltCLDA method.&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;Fig. 4
         &lt;ul&gt;
           &lt;li&gt;ltCDA to Fixed Decoder swap at day 206 + 28 recovery.&lt;/li&gt;
           &lt;li&gt;both ltCDA and CLDA after reset seem to have stable weights.&lt;/li&gt;
-          &lt;li&gt;Decoder weights angle is rougly 45 degress after reset.
+          &lt;li&gt;Decoder weights angle is roughly 45 degrees after reset.
   Fig. 5&lt;/li&gt;
           &lt;li&gt;Point and click task where cursor path and bits per second information rate are tracked.&lt;/li&gt;
           &lt;li&gt;Weights seem much sparser for click map.&lt;/li&gt;
           &lt;li&gt;I wonder how they will look for less convergent features.&lt;/li&gt;
           &lt;li&gt;Neural state needs to cross click threshold.&lt;/li&gt;
-          &lt;li&gt;Everyday, after cursor is in target area, stable clicking within 1 sec.&lt;/li&gt;
+          &lt;li&gt;Everyday, after the cursor is in target area, stable clicking within 1 sec.&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;No significant drop in performance during PnP sessions (plug and play = no recalibration).&lt;/li&gt;
-      &lt;li&gt;Decoder reinitialization had 45 degree weight angle change but then converge back to 0.&lt;/li&gt;
+      &lt;li&gt;Decoder reinitialization had 45-degree weight angle change but then converge back to 0.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Discussion
     &lt;ul&gt;
-      &lt;li&gt;ltCDA is important example of weights being carried over a long time constant.&lt;/li&gt;
-      &lt;li&gt;CLDA basd on coadaptation can rapidly allow skilled control.&lt;/li&gt;
-      &lt;li&gt;Task related manifolds can be remarkably stable.&lt;/li&gt;
-      &lt;li&gt;Results indicate feasibility of PnP.&lt;/li&gt;
+      &lt;li&gt;ltCDA is an important example of weights being carried over a long time constant.&lt;/li&gt;
+      &lt;li&gt;CLDA based on coadaptation can rapidly allow skilled control.&lt;/li&gt;
+      &lt;li&gt;Task-related manifolds can be remarkably stable.&lt;/li&gt;
+      &lt;li&gt;Results indicate the feasibility of PnP.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Plug-and-play control of a brain–computer interface through neural map stabilization by Daniel Silversmith.</summary></entry><entry><title type="html">Review 24:The brain-reading devices helping paralysed people to move, talk and touch</title><link href="http://localhost:4000/reviews/review24/" rel="alternate" type="text/html" title="Review 24:The brain-reading devices helping paralysed people to move, talk and touch" /><published>2022-04-23T05:16:13-07:00</published><updated>2022-04-23T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review24</id><content type="html" xml:base="http://localhost:4000/reviews/review24/">&lt;p&gt;&lt;a href=&quot;https://www.nature.com/articles/d41586-022-01047-w?utm_medium=Social&amp;amp;utm_campaign=nature&amp;amp;utm_source=Twitter#Echobox=1650446178&quot;&gt;The brain-reading devices helping paralysed people to move, talk and touch
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Plug-and-play control of a brain-computer interface through neural map stabilization by Daniel Silversmith.</summary></entry><entry><title type="html">Review 24:The brain-reading devices helping paralysed people to move, talk and touch</title><link href="http://localhost:4000/reviews/review24/" rel="alternate" type="text/html" title="Review 24:The brain-reading devices helping paralysed people to move, talk and touch" /><published>2022-04-23T05:16:13-07:00</published><updated>2022-04-23T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review24</id><content type="html" xml:base="http://localhost:4000/reviews/review24/">&lt;p&gt;&lt;a href=&quot;https://www.nature.com/articles/d41586-022-01047-w?utm_medium=Social&amp;amp;utm_campaign=nature&amp;amp;utm_source=Twitter#Echobox=1650446178&quot;&gt;The brain-reading devices helping paralysed people to move, talk and touch
 &lt;/a&gt; by &lt;a href=&quot;http://www.liamdrew.net/about&quot;&gt;Liam Drew&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -99,7 +185,7 @@ Results&lt;/li&gt;
   &lt;li&gt;All BCI companies are aiming to increase bandwidth of communication signals.&lt;/li&gt;
   &lt;li&gt;There is still a long way to go with the technology.&lt;/li&gt;
   &lt;li&gt;Major limitations right now are how long the device will last, how well it will adapt to each user, and if the device will still be supported or used later on down the road.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">The brain-reading devices helping paralysed people to move, talk and touch by Liam Drew.</summary></entry><entry><title type="html">Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings</title><link href="http://localhost:4000/reviews/review23-copy/" rel="alternate" type="text/html" title="Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings" /><published>2022-04-16T05:16:13-07:00</published><updated>2022-04-16T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review23%20copy</id><content type="html" xml:base="http://localhost:4000/reviews/review23-copy/">&lt;p&gt;&lt;a href=&quot;https://www.biorxiv.org/content/10.1101/2020.10.27.358291v1.full.pdf&quot;&gt;Neuropixels 2.0: A miniaturized high-density probe for stable, long-term
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">The brain-reading devices helping paralysed people to move, talk and touch by Liam Drew.</summary></entry><entry><title type="html">Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings</title><link href="http://localhost:4000/reviews/review23/" rel="alternate" type="text/html" title="Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings" /><published>2022-04-16T05:16:13-07:00</published><updated>2022-04-16T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review23</id><content type="html" xml:base="http://localhost:4000/reviews/review23/">&lt;p&gt;&lt;a href=&quot;https://www.biorxiv.org/content/10.1101/2020.10.27.358291v1.full.pdf&quot;&gt;Neuropixels 2.0: A miniaturized high-density probe for stable, long-term
 brain recordings&lt;/a&gt; by &lt;a href=&quot;http://www.nicksteinmetz.com/#:~:text=Nick%20Steinmetz,and%20cognition%20across%20the%20brain.&quot;&gt;Nick Steinmetz&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -485,81 +571,6 @@ and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.
             &lt;/ul&gt;
           &lt;/li&gt;
           &lt;li&gt;Various forms of evidence for this model in different sensory areas of mice, but ultimately, predictive coding is an incomplete theory because most of these models are oversimplified circuit models.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino</summary></entry><entry><title type="html">Review 15: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 1</title><link href="http://localhost:4000/reviews/review15/" rel="alternate" type="text/html" title="Review 15: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 1" /><published>2022-02-18T04:16:13-08:00</published><updated>2022-02-18T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review15</id><content type="html" xml:base="http://localhost:4000/reviews/review15/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2011.07464.pdf&quot;&gt;Predictive Coding, Variational Autoencoders,
-and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.github.io/&quot;&gt;Joseph Marino&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Marino, Joseph. “Predictive coding, variational autoencoders, and biological connections.” Neural Computation 34.1 (2021): 1-44.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Predictive encoding from the perspective of theoretical neuroscience and machine learning.&lt;/li&gt;
-  &lt;li&gt;Informal defintion for predictive encoding: Neural circuits as probabilistic models of other neurons.
-    &lt;ul&gt;
-      &lt;li&gt;Inception of this idea in cirucits for sensory processing, like the retina and visual pathways.&lt;/li&gt;
-      &lt;li&gt;Feedbackward connections that apply prediction error signal.&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.nature.com/articles/nn0199_79&quot;&gt;Rao, Ballard 1999&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;For neuroscience, cybernetics, hemholtz machine, and predictive encoding are the inspiration for Friston 2005 and 2008 work on free energy and active inference.&lt;/li&gt;
-  &lt;li&gt;For machine learning, this earlier work in variational inference and encoder-decoder models, culminates in the variational autoencoder.&lt;/li&gt;
-  &lt;li&gt;Lots of overlap conceptually, but much of the research between the two fields is divided.&lt;/li&gt;
-  &lt;li&gt;The next section is titled connecting predictive coding and VAEs. I take it that these two concepts form the bridge between the fields.
-    &lt;ul&gt;
-      &lt;li&gt;Just from the intro I like that this paper points two very similar concepts in two different fields and then describes the relationship between the two. I feel that there the’s potential for a lot of discovery in understanding the union and intersection between these two concepts.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Paper posits two possible correspondences between ML and neuro.
-    &lt;ul&gt;
-      &lt;li&gt;Dendrites of pyramidal neurons and neuronal networks.&lt;/li&gt;
-      &lt;li&gt;Lateral inhibition and normalizing flows.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Background info
-    &lt;ul&gt;
-      &lt;li&gt;MLE
-        &lt;ul&gt;
-          &lt;li&gt;How can we find some distribution $p_{data}$ using r.v. samples $\bf{x} \sim \hat{p}_{data}(\bf{x})$?&lt;/li&gt;
-          &lt;li&gt;Maximizing &lt;strong&gt;log likelihood&lt;/strong&gt; of samples under that distribution. 
-  \(\theta^* \longleftarrow argmax_{\theta} \mathbb{E}_{x \sim p_{data}(\bf{x})} [log(p_{theta}(\bf{x}))]\)&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Probabilistic models
-        &lt;ul&gt;
-          &lt;li&gt;&lt;strong&gt;autoregressive models&lt;/strong&gt;: $ p_{\theta(\bf{x})} = \prod_{j=1}^{m} p(\bf{x}_{j} \mid x_{&amp;lt; j} $&lt;/li&gt;
-          &lt;li&gt;Can factor out $\bf{x}$ in above as a series of distributions, from $t=1 … T$&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;Latent variable models (LVMs)&lt;/strong&gt;  with $z$ have the joint distribtion: \(p_{\theta}(\bf{x}, \bf{z}) = p_{theta}(\bf{x} \mid z)p_{theta}(\bf{z})\)&lt;/li&gt;
-          &lt;li&gt;$\bf{z}$ is being used here to describe $\bf{x}$, incurs computational cost.&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;flow based LVMs&lt;/strong&gt; \(p_{\theta}(\bf{x}) = p_{\theta}(x) \| det(\frac{\partial{\bf{x}}}{\partial{\bf{z}}}) \|^{-1}\)
-            &lt;ul&gt;
-              &lt;li&gt;Distilling this down to the idea that there if some function $f_{\theta}$ that can transfrom $f_{\theta}(\bf{x}) = \bf{z}, \ f_{\theta}^{-1}(\bf{z}) = \bf{x}$&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Can combine the above techniques for &lt;strong&gt;hierachical LVMs&lt;/strong&gt;, &lt;strong&gt;sequential LVMS&lt;/strong&gt; etc.
-            &lt;ul&gt;
-              &lt;li&gt;An interesting example is stacking latent variables $ \bf{z}^{1:L} = [ \bf{z}_{1} … \bf{z}_{L} ] $ and \(p_{\theta}(\bf{x},\bf{z}^{1:L}) = p_{\theta}(\bf{x}, \bf{z}^{1:L}) \prod_{\ell=1}^{L} p(\bf{z}^{\ell} \mid z^{\ell+1:L})\)&lt;/li&gt;
-              &lt;li&gt;I am confused by the conditional probability $ p(\bf{Z^{\ell}} \mid z^{\ell+1:L})$ and the directionality of the hierarchy. Why wouldn’t it go backwards:  $ p(\bf{Z^{\ell}} \mid z^{1:\ell+1})$&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Fitting these models
-            &lt;ul&gt;
-              &lt;li&gt;Log density of unit normal distribution becomes mean squared error.&lt;/li&gt;
-              &lt;li&gt;A simple univariate autoregressive model can be formulated as $ p_{\theta}(x_j \mid x_{&amp;lt; j}) = \mathcal{N}(x_j; \mu_{\theta}(x_{&amp;lt; j}), \sigma^2_{\theta}(x_{&amp;lt; j})) $ .
-                &lt;ul&gt;
-                  &lt;li&gt;I think there’s a minor notation error here that the $x_{&amp;lt; j}$ should be boldface since it is still a vector.&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;Training using the gradient of log likelikehood: $\nabla_{\theta}\mathbb{E}_{\bf{x} \sim p_{data}}[log p_{\theta}(\bf{x})]$&lt;/li&gt;
-              &lt;li&gt;Deep autoregressive and variational models can be broken apart by their latent variable impact on the objective with some interesting results.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Variational Inference
-        &lt;ul&gt;
-          &lt;li&gt;TODO: Left off here section 2.3&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;

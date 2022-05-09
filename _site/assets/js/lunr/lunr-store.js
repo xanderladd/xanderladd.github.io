@@ -140,7 +140,7 @@ var store = [{
         "title": "Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings",
         "excerpt":"Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings by Nick Steinmetz. Paper notes for Neuropixels 2.0 Notably, this is a pretty big collaboration. The following labs participated: O’Keefe Lab at UCL Moser Lab at NTNU Lee Lab at Janelia Research Dudman lab at Janelia Research Hausser Lab...","categories": ["reviews"],
         "tags": [],
-        "url": "/reviews/review23-copy/",
+        "url": "/reviews/review23/",
         "teaser": "/assets/images/trees.jpeg"
       },{
         "title": "Review 24:The brain-reading devices helping paralysed people to move, talk and touch",
@@ -149,9 +149,15 @@ var store = [{
         "url": "/reviews/review24/",
         "teaser": "/assets/images/trees.jpeg"
       },{
-        "title": "Review 25: Plug-and-play control of a brain–computer interface through neural map stabilization",
-        "excerpt":"Plug-and-play control of a brain–computer interface through neural map stabilization by Daniel Silversmith. Silversmith, Daniel B., et al. “Plug-and-play control of a brain–computer interface through neural map stabilization.” Nature Biotechnology 39.3 (2021): 326-335. Having recently read higher level overviews of BCIs, reading this paper in Nature Biotech will be especially...","categories": ["reviews"],
+        "title": "Review 25: Plug-and-play control of a brain-computer interface through neural map stabilization",
+        "excerpt":"Plug-and-play control of a brain-computer interface through neural map stabilization by Daniel Silversmith. Silversmith, Daniel B., et al. “Plug-and-play control of a brain-computer interface through neural map stabilization.” Nature Biotechnology 39.3 (2021): 326-335. Having recently read higher-level overviews of BCIs, reading this paper in Nature Biotech will be especially relevant...","categories": ["reviews"],
         "tags": [],
         "url": "/reviews/review25/",
+        "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 26: A control-theoretic approach to brain-computer interface design",
+        "excerpt":"A control-theoretic approach to brain-computer interface design* by Yin Zhang Zhang, Yin, and Steven M. Chase. “A control-theoretic approach to brain-computer interface design.” 2016 American Control Conference (ACC). IEEE, 2016. A challenge in brain computer interface (BCI) design is mapping from population activity to BCI actuation. This paper proposes using...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review26/",
         "teaser": "/assets/images/trees.jpeg"
       }]

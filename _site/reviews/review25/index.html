@@ -9,19 +9,19 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Review 25: Plug-and-play control of a brain–computer interface through neural map stabilization - Alexander Ladd</title>
-<meta name="description" content="Plug-and-play control of a brain–computer interface through neural map stabilization  by Daniel Silversmith.">
+<!-- begin _includes/seo.html --><title>Review 25: Plug-and-play control of a brain-computer interface through neural map stabilization - Alexander Ladd</title>
+<meta name="description" content="Plug-and-play control of a brain-computer interface through neural map stabilization  by Daniel Silversmith.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Alexander Ladd">
-<meta property="og:title" content="Review 25: Plug-and-play control of a brain–computer interface through neural map stabilization">
+<meta property="og:title" content="Review 25: Plug-and-play control of a brain-computer interface through neural map stabilization">
 <meta property="og:url" content="http://localhost:4000/reviews/review25/">
 
 
-  <meta property="og:description" content="Plug-and-play control of a brain–computer interface through neural map stabilization  by Daniel Silversmith.">
+  <meta property="og:description" content="Plug-and-play control of a brain-computer interface through neural map stabilization  by Daniel Silversmith.">
 
 
 
@@ -232,28 +232,28 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">Review 25: Plug-and-play control of a brain–computer interface through neural map stabilization</h1>
+      <h1 id="page-title" class="page__title">Review 25: Plug-and-play control of a brain-computer interface through neural map stabilization</h1>
     
-    <p><a href="https://www.nature.com/articles/s41587-020-0662-5">Plug-and-play control of a brain–computer interface through neural map stabilization
+    <p><a href="https://www.nature.com/articles/s41587-020-0662-5">Plug-and-play control of a brain-computer interface through neural map stabilization
 </a> by <a href="https://gangulylab.org/people.html">Daniel Silversmith</a>.</p>
 
-<p>Silversmith, Daniel B., et al. “Plug-and-play control of a brain–computer interface through neural map stabilization.” Nature Biotechnology 39.3 (2021): 326-335.</p>
+<p>Silversmith, Daniel B., et al. “Plug-and-play control of a brain-computer interface through neural map stabilization.” Nature Biotechnology 39.3 (2021): 326-335.</p>
 
 <ul>
-  <li>Having recently read higher level overviews of BCIs, reading this paper in Nature Biotech will be especially relevant but more specfic.</li>
+  <li>Having recently read higher-level overviews of BCIs, reading this paper in Nature Biotech will be especially relevant but more specific.</li>
   <li>Abstract
     <ul>
       <li>180 channel electrocorticography (ECoG) implant in a paralyzed individual enabled stable monitoring of signals.</li>
-      <li>Long term closed loop adaptataion updates decoder weights over several days, thus updating map and plug and play control.
+      <li>Long-term closed loop adaptation updates decoder weights over several days, thus updating map and plug and play control.
 Intro</li>
-      <li>Currently, 30 min daily recalibration results in variability in peformance and decreased decoding performance in the long-term.</li>
-      <li>ECoG PNP control achieved using interface that updates within session instead via closed loop decoder adaptation (CLDA) and potentially over longer terms (ltCDA).
+      <li>Currently, 30 min daily recalibration results in variability in performance and decreased decoding performance in the long-term.</li>
+      <li>ECoG PNP control was achieved using an interface that updates within-session instead via closed-loop decoder adaptation (CLDA) and potentially over longer terms (ltCDA).
 Results</li>
       <li>Fig. 1
         <ul>
-          <li>ECoG signal comes from a few brain reigions: S1, M1 , PMC, PMV, SMA.</li>
+          <li>ECoG signal comes from a few brain regions: S1, M1 , PMC, PMV, SMA.</li>
           <li><strong>Kalman Filter</strong> decoder weights.</li>
-          <li>There are a few aspects that are clearly different between ltCLDA and daily initializaiton:
+          <li>There are a few aspects that are different between ltCLDA and daily initialization:
             <ul>
               <li>Time to taget increased, though it is hard to tell by how much as I can’t see mean values in the intervals.</li>
               <li>ITR shows clear increase during ltCDA.</li>
@@ -266,14 +266,14 @@ Results</li>
       </li>
       <li>Weights are general orthogonal at the start of each dailty initializaiton, so pooling weights over days hurt model performance.</li>
       <li>ltCDA resulted in stable convergence of decoder weights across sessions instead.</li>
-      <li>Higher half life values (history length used in weight updates) led to better fixed control and more stable weight convergence.</li>
+      <li>Higher half-life values (history length used in weight updates) led to better fixed control and more stable weight convergence.</li>
       <li>Some weights exhibiting low magnitude or common trends may be redundant and enables sparseness.</li>
       <li>Fig. 2
         <ul>
           <li>A lot more variance in decoder map weights for daily initialization method.</li>
-          <li>As the days go on, the orthoganlity of the weights seems to decrease.</li>
+          <li>As the days go on, the orthogonality of the weights seems to decrease.</li>
           <li>mu weights decrease w/ linear trends and gamma2 weights increase w/ linear trend.</li>
-          <li>Sparsity / weight pruning is pretty shocking with the 25% of the weights verison having a very similar time to target.</li>
+          <li>Sparsity/weight pruning is pretty shocking with the 25% of the weights verison having a very similar time to target.</li>
         </ul>
       </li>
       <li>Fig. 3
@@ -281,32 +281,32 @@ Results</li>
           <li>Daily calibration had higher circular sd across channels in preferred direction (PD) task.</li>
           <li>Decoder weight magnitude correlated to circular SD of PD.</li>
           <li>gamma2 weights are stable from day 36+ and it is visually confirmed.</li>
-          <li>All weights show some trend toward stable convergence after day 18+, which is really interesting because it suggests long term improvment with ltCLDA method.</li>
+          <li>All weights show some trend toward stable convergence after day 18+, which is really interesting because it suggests long-term improvement with ltCLDA method.</li>
         </ul>
       </li>
       <li>Fig. 4
         <ul>
           <li>ltCDA to Fixed Decoder swap at day 206 + 28 recovery.</li>
           <li>both ltCDA and CLDA after reset seem to have stable weights.</li>
-          <li>Decoder weights angle is rougly 45 degress after reset.
+          <li>Decoder weights angle is roughly 45 degrees after reset.
   Fig. 5</li>
           <li>Point and click task where cursor path and bits per second information rate are tracked.</li>
           <li>Weights seem much sparser for click map.</li>
           <li>I wonder how they will look for less convergent features.</li>
           <li>Neural state needs to cross click threshold.</li>
-          <li>Everyday, after cursor is in target area, stable clicking within 1 sec.</li>
+          <li>Everyday, after the cursor is in target area, stable clicking within 1 sec.</li>
         </ul>
       </li>
       <li>No significant drop in performance during PnP sessions (plug and play = no recalibration).</li>
-      <li>Decoder reinitialization had 45 degree weight angle change but then converge back to 0.</li>
+      <li>Decoder reinitialization had 45-degree weight angle change but then converge back to 0.</li>
     </ul>
   </li>
   <li>Discussion
     <ul>
-      <li>ltCDA is important example of weights being carried over a long time constant.</li>
-      <li>CLDA basd on coadaptation can rapidly allow skilled control.</li>
-      <li>Task related manifolds can be remarkably stable.</li>
-      <li>Results indicate feasibility of PnP.</li>
+      <li>ltCDA is an important example of weights being carried over a long time constant.</li>
+      <li>CLDA based on coadaptation can rapidly allow skilled control.</li>
+      <li>Task-related manifolds can be remarkably stable.</li>
+      <li>Results indicate the feasibility of PnP.</li>
     </ul>
   </li>
 </ul>
@@ -327,7 +327,48 @@ Results</li>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/reviews/review25/" rel="permalink">Review 25: Plug-and-play control of a brain–computer interface through neural map stabilization
+        <a href="/reviews/review26/" rel="permalink">Review 26: A control-theoretic approach to brain-computer interface design
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">A control-theoretic approach to brain-computer interface design*  by Yin Zhang
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review25/" rel="permalink">Review 25: Plug-and-play control of a brain-computer interface through neural map stabilization
 </a>
       
     </h2>
@@ -352,7 +393,7 @@ Results</li>
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">Plug-and-play control of a brain–computer interface through neural map stabilization
+    <p class="archive__item-excerpt" itemprop="description">Plug-and-play control of a brain-computer interface through neural map stabilization
  by Daniel Silversmith.
 
 </p>
@@ -411,7 +452,7 @@ Results</li>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/reviews/review23-copy/" rel="permalink">Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings
+        <a href="/reviews/review23/" rel="permalink">Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings
 </a>
       
     </h2>
@@ -1405,7 +1446,7 @@ and Biological Connections by Joseph Marino
 
 <!-- 
 
-<title>Review 25: Plug-and-play control of a brain–computer interface through neural map stabilization - Alexander Ladd</title>
+<title>Review 25: Plug-and-play control of a brain-computer interface through neural map stabilization - Alexander Ladd</title>
 <meta name="viewport" content="width=device-width">
 
 <link rel="stylesheet" href="/css/all.css"> -->

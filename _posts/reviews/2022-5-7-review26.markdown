@@ -25,30 +25,30 @@ Zhang, Yin, and Steven M. Chase. "A control-theoretic approach to brain-computer
 - MLE approach to BCI
     - Velocity kalman filter defined as: $\mathbf{y_t} = B\mathbf{v_t}^* + \mathbf{\epsilon_t
     }$ where $\mathbf{y_t}$ are $n$ neuron's firing rates and $\mathbf{v_t}$ is the velocity of a prosethetic effector. 
-        - This is clear mathemmatically but I don't know what a prosthetic effector is.
+        - This is clear mathematically but I don't know what a prosthetic effector is.
         - It seems like some implant that would drive neuron firing rates.
-    - A second assumption that this velocity changes smoothly over time.
+    - A second assumption is that this velocity changes smoothly over time.
     - Using these two assumptions: BCI control reduces to Bayesian inference over how this velocity results in firing rates. 
         - I thought there would be more here since after this level of inference you'd still have to infer the previous problem of spike activity mapping to actions.
     - Using the above equations and the a posteriori estimate of $p(\mathbf{v_t} \mid y_1 ... y_t)$, one can create a time dependent state update rule for a BCI controlled cursor position $\mathbf{p_t}$ using $\mathbf{v_t}$.
         - notation here is confusing because I thought y was in $\mathbb{R}^n$ as a firing frequency for n neurons. I take it the authors mean to use the 1 - t as $y$ at some previous recording time t.
         - This also answered my previous point about mpaping from $\mathbf{v_t}$ to actual actions.
     - While estimation based decoder control has remarkable progress in enabling cursor speed w/ in a factor of 2 of a natural limb, there are still some aspects that can be improved:
-        1. Only decoders that correspond to simpe physical systems work well.
-        2. Estimation framework assumes static tuning but performance in closed-loop system over time is often very different and offline decoders may not work well in long term.
-        3. Biomemtic decoders are not guranteed optimal. Translating signals in terms of basic human motor movements are not necessairly the best way to solve control problems.
-    - Authors make 3 assumptions about brain as optimal controller:
+        1. Only decoders that correspond to simple physical systems work well.
+        2. Estimation framework assumes static tuning but performance in closed-loop systems over time is often very different and offline decoders may not work well in long term.
+        3. Biomemtic decoders are not guaranteed optimal. Translating signals in terms of basic human motor movements are not necessairly the best way to solve control problems.
+    - Authors make 3 assumptions about the brain as optimal controller:
         1. The brain is emitting control signals that minimize some cost function.
-        2. Priamry cortex activity is a direct reprresentation of these signals.
-        3. End goal result of learning is to produce produce the optimal control signals of a given effector.
+        2. Primary cortex activity is a direct representation of these signals.
+        3. End goal result of learning is to produce the optimal control signals of a given effector.
         - These assumptions have helped me understand a lot of what the paper is previously trying to build to.
-        - Mainly, what I see now that I did not before is why the signal estimation approach is limiting and why understanding motor cotrex signals as effector signals is so important. I believe this is because control theory allows a framework for much more specific definions of control when the goal is reconstructing effector signals instead of predicting movement. Predicting movement is often a more vague problem for a decoder while fine grained analysis of how brain signals enable optimal control in reaching for example is much more specific.
+        - Mainly, what I see now that I did not before is why the signal estimation approach is limiting and why understanding motor cotrex signals as effector signals is so important. I believe this is because control theory allows a framework for much more specific definitions of control when the goal is reconstructing effector signals instead of predicting movement. Predicting movement is often a more vague problem for a decoder while fine-grained analysis of how brain signals enable optimal control in reaching for example is much more specific.
 <img src="/assets/images/bci_schematic.png" alt="bci schematic" width="500" align="center"/>
-    - I really like this figure since it is straightforward diagram of the control model here.
+    - I really like this figure since it is a straightforward diagram of the control model here.
     - It shows where that control signals feed into the plant for state updates in decoder.
     - $x$ as cursor state, $u$ as control signal, and $J(u)$ as cost function for signal $u$.
     - Optimal cost is $J^*  = J^(u^*)$, plant parameters are $\phi$
-    - $\phi$ determines usefulness of BCI based on how it minimzes cost funciton.
+    - $\phi$ determines the usefulness of BCI based on how it minimizes cost function.
     - Not so sure what $H_p$ and $H_v$ mean as spring like properties of the plant and viscous properties. Are these from control theory?
     - BCI plant system dyanmics
 <img src="/assets/images/r26_e1.png" alt="bci schematic" width="500" align="center"/>

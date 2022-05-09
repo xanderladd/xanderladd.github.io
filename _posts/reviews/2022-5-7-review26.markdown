@@ -8,7 +8,7 @@ comments: true
 ---
 
 
-[A control-theoretic approach to brain-computer interface design* ](https://smithlab.net/~schase/docs/zhang_acc_2016.pdf) by Yin Zhang
+[A control-theoretic approach to brain-computer interface design](https://smithlab.net/~schase/docs/zhang_acc_2016.pdf) by Yin Zhang
 
 Zhang, Yin, and Steven M. Chase. "A control-theoretic approach to brain-computer interface design." 2016 American Control Conference (ACC). IEEE, 2016.
 

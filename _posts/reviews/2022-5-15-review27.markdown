@@ -1,0 +1,42 @@
+---
+layout: base
+title:  "Review 27: Parsing learning in networks using brain–machine
+interfaces"
+date:   2022-5-14 5:16:13 -0700
+author: xander
+categories: reviews
+comments: true
+---
+
+
+[Parsing learning in networks using brain-machine
+interfaces](https://www.sciencedirect.com/science/article/pii/S0959438817301642?casa_token=mBc7NGX5SMoAAAAA:_u-U4AxlrusxSveU-DitDvaDjvUhYixFrO7ZuZs4B0iIa6Dy0xmDc6Za4MZYRqBFf8E7IiwcVOQ) by [Amy Orsborn](https://people.ece.uw.edu/orsborn_amy/) and [Bijan Pesaran](https://as.nyu.edu/content/nyu-as/as/faculty/bijan-pesaran.html)
+
+Orsborn, Amy L., and Bijan Pesaran. "Parsing learning in networks using brain-machine interfaces." Current opinion in neurobiology 46 (2017): 76-83.
+
+- Introduction
+    - Motor BMIs: repurpose neural activity to control the movement of a device.
+        - Give the brain a new functionality that the brain can adapt to use.
+    - BMIs also allow us to study the mechanisms of learning for neuroscience.
+    - Yet, while there is work showing how BMIs can enable learning, the above point about the underlying neural mechanisms is still mostly unknown.
+    - These BCI papers all have really great figure 1s.
+    <img src="/assets/images/r27_fig1.png" alt="bci schematic" width="500" align="center"/>
+        - This figure presents three different perspectives on closed-loop Motor BCI systems.
+            - A: This is the main BCI closed-loop and very similar to the previous review. 
+            - B: Is interesting because it shows the affector/effector dynamics. It is also interesting because it shows that some nodes from the network should send a signal to the actuator while some nodes indirectly signal by not signaling. Finally, it shows that some external reward drives closed-loop BCI learning -- which is important because this shows the progression of closed-loop BCI device is dependent on the perceived reward system in the brain.
+                - External reward normally just processed through vision. If you control a cursor on a screen successfully you will see that.
+            - C: Shows what points can use learning feedback and what learning/error signal they require to improve. BCI closed-loop system can be improved in strategy/selection of motor plans and in the "internal" model... which I take to mean the decoder.
+                - As I start to become more specific in my focus on BCI, this kind of distinction can help inform future reading/research directions.
+    - Interesting point I did not know:
+        > Orsborn et al. 2017
+        >>"visual information is highly dominant over proprioceptive information" [44](https://www.science.org/doi/10.1126/science.143.3606.594)
+
+        - I guess this is probably really context-dependent though.
+    - Combining command nodes for BMI in a different way allows researchers to investigate the relationship between BMI learning and natural learning.
+    - Figure 2
+        - Feedback rate and control rate increases both increase success rate for in [Shanechi et al.](https://www.nature.com/articles/ncomms13825).
+        - BMIs can investigate sites of learning around probes. For example, optogenetic stimulation near electrode recording sites can help study neural mechanisms of feedback learning.
+    - The conclusion is very concise so I'll add this final part here.
+    > Orsborn et al. 2017
+    >> Since BMIs tap into our brain's innate ability to learn, understanding learning in BMIs will ultimately advance clinical applications of this technology. In the search for effective treatments, we may find that interfaces that harness learning can improve the patient experience compared with those which simply accommodate learning.
+        

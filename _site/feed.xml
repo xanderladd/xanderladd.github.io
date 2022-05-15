@@ -1,4 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-08T17:42:35-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 26: A control-theoretic approach to brain-computer interface design</title><link href="http://localhost:4000/reviews/review26/" rel="alternate" type="text/html" title="Review 26: A control-theoretic approach to brain-computer interface design" /><published>2022-05-07T05:16:13-07:00</published><updated>2022-05-07T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review26</id><content type="html" xml:base="http://localhost:4000/reviews/review26/">&lt;p&gt;&lt;a href=&quot;https://smithlab.net/~schase/docs/zhang_acc_2016.pdf&quot;&gt;A control-theoretic approach to brain-computer interface design* &lt;/a&gt; by Yin Zhang&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-15T13:54:45-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 27: Parsing learning in networks using brain–machine interfaces</title><link href="http://localhost:4000/reviews/review27/" rel="alternate" type="text/html" title="Review 27: Parsing learning in networks using brain–machine interfaces" /><published>2022-05-14T05:16:13-07:00</published><updated>2022-05-14T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review27</id><content type="html" xml:base="http://localhost:4000/reviews/review27/">&lt;p&gt;&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0959438817301642?casa_token=mBc7NGX5SMoAAAAA:_u-U4AxlrusxSveU-DitDvaDjvUhYixFrO7ZuZs4B0iIa6Dy0xmDc6Za4MZYRqBFf8E7IiwcVOQ&quot;&gt;Parsing learning in networks using brain-machine
+interfaces&lt;/a&gt; by &lt;a href=&quot;https://people.ece.uw.edu/orsborn_amy/&quot;&gt;Amy Orsborn&lt;/a&gt; and &lt;a href=&quot;https://as.nyu.edu/content/nyu-as/as/faculty/bijan-pesaran.html&quot;&gt;Bijan Pesaran&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Orsborn, Amy L., and Bijan Pesaran. “Parsing learning in networks using brain-machine interfaces.” Current opinion in neurobiology 46 (2017): 76-83.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Introduction
+    &lt;ul&gt;
+      &lt;li&gt;Motor BMIs: repurpose neural activity to control the movement of a device.
+        &lt;ul&gt;
+          &lt;li&gt;Give the brain a new functionality that the brain can adapt to use.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;BMIs also allow us to study the mechanisms of learning for neuroscience.&lt;/li&gt;
+      &lt;li&gt;Yet, while there is work showing how BMIs can enable learning, the above point about the underlying neural mechanisms is still mostly unknown.&lt;/li&gt;
+      &lt;li&gt;These BCI papers all have really great figure 1s.
+  &lt;img src=&quot;/assets/images/r27_fig1.png&quot; alt=&quot;bci schematic&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;
+        &lt;ul&gt;
+          &lt;li&gt;This figure presents three different perspectives on closed-loop Motor BCI systems.
+            &lt;ul&gt;
+              &lt;li&gt;A: This is the main BCI closed-loop and very similar to the previous review.&lt;/li&gt;
+              &lt;li&gt;B: Is interesting because it shows the affector/effector dynamics. It is also interesting because it shows that some nodes from the network should send a signal to the actuator while some nodes indirectly signal by not signaling. Finally, it shows that some external reward drives closed-loop BCI learning – which is important because this shows the progression of closed-loop BCI device is dependent on the perceived reward system in the brain.
+                &lt;ul&gt;
+                  &lt;li&gt;External reward normally just processed through vision. If you control a cursor on a screen successfully you will see that.&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;C: Shows what points can use learning feedback and what learning/error signal they require to improve. BCI closed-loop system can be improved in strategy/selection of motor plans and in the “internal” model… which I take to mean the decoder.
+                &lt;ul&gt;
+                  &lt;li&gt;As I start to become more specific in my focus on BCI, this kind of distinction can help inform future reading/research directions.&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Interesting point I did not know:
+        &lt;blockquote&gt;
+          &lt;p&gt;Orsborn et al. 2017&lt;/p&gt;
+          &lt;blockquote&gt;
+            &lt;p&gt;“visual information is highly dominant over proprioceptive information” &lt;a href=&quot;https://www.science.org/doi/10.1126/science.143.3606.594&quot;&gt;44&lt;/a&gt;&lt;/p&gt;
+          &lt;/blockquote&gt;
+        &lt;/blockquote&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;I guess this is probably really context-dependent though.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Combining command nodes for BMI in a different way allows researchers to investigate the relationship between BMI learning and natural learning.&lt;/li&gt;
+      &lt;li&gt;Figure 2
+        &lt;ul&gt;
+          &lt;li&gt;Feedback rate and control rate increases both increase success rate for in &lt;a href=&quot;https://www.nature.com/articles/ncomms13825&quot;&gt;Shanechi et al.&lt;/a&gt;.&lt;/li&gt;
+          &lt;li&gt;BMIs can investigate sites of learning around probes. For example, optogenetic stimulation near electrode recording sites can help study neural mechanisms of feedback learning.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The conclusion is very concise so I’ll add this final part here.
+        &lt;blockquote&gt;
+          &lt;p&gt;Orsborn et al. 2017&lt;/p&gt;
+          &lt;blockquote&gt;
+            &lt;p&gt;Since BMIs tap into our brain’s innate ability to learn, understanding learning in BMIs will ultimately advance clinical applications of this technology. In the search for effective treatments, we may find that interfaces that harness learning can improve the patient experience compared with those which simply accommodate learning.&lt;/p&gt;
+          &lt;/blockquote&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Parsing learning in networks using brain-machine interfaces by Amy Orsborn and Bijan Pesaran</summary></entry><entry><title type="html">Review 26: A control-theoretic approach to brain-computer interface design</title><link href="http://localhost:4000/reviews/review26/" rel="alternate" type="text/html" title="Review 26: A control-theoretic approach to brain-computer interface design" /><published>2022-05-07T05:16:13-07:00</published><updated>2022-05-07T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review26</id><content type="html" xml:base="http://localhost:4000/reviews/review26/">&lt;p&gt;&lt;a href=&quot;https://smithlab.net/~schase/docs/zhang_acc_2016.pdf&quot;&gt;A control-theoretic approach to brain-computer interface design&lt;/a&gt; by Yin Zhang and &lt;a href=&quot;https://www.cmu.edu/bme/People/Faculty/profile/schase.html&quot;&gt;Steven Chase&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Zhang, Yin, and Steven M. Chase. “A control-theoretic approach to brain-computer interface design.” 2016 American Control Conference (ACC). IEEE, 2016.&lt;/p&gt;
 
@@ -21,11 +85,11 @@
       &lt;li&gt;Velocity kalman filter defined as: $\mathbf{y_t} = B\mathbf{v_t}^* + \mathbf{\epsilon_t
   }$ where $\mathbf{y_t}$ are $n$ neuron’s firing rates and $\mathbf{v_t}$ is the velocity of a prosethetic effector.
         &lt;ul&gt;
-          &lt;li&gt;This is clear mathemmatically but I don’t know what a prosthetic effector is.&lt;/li&gt;
+          &lt;li&gt;This is clear mathematically but I don’t know what a prosthetic effector is.&lt;/li&gt;
           &lt;li&gt;It seems like some implant that would drive neuron firing rates.&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;A second assumption that this velocity changes smoothly over time.&lt;/li&gt;
+      &lt;li&gt;A second assumption is that this velocity changes smoothly over time.&lt;/li&gt;
       &lt;li&gt;Using these two assumptions: BCI control reduces to Bayesian inference over how this velocity results in firing rates.
         &lt;ul&gt;
           &lt;li&gt;I thought there would be more here since after this level of inference you’d still have to infer the previous problem of spike activity mapping to actions.&lt;/li&gt;
@@ -39,29 +103,29 @@
       &lt;/li&gt;
       &lt;li&gt;While estimation based decoder control has remarkable progress in enabling cursor speed w/ in a factor of 2 of a natural limb, there are still some aspects that can be improved:
         &lt;ol&gt;
-          &lt;li&gt;Only decoders that correspond to simpe physical systems work well.&lt;/li&gt;
-          &lt;li&gt;Estimation framework assumes static tuning but performance in closed-loop system over time is often very different and offline decoders may not work well in long term.&lt;/li&gt;
-          &lt;li&gt;Biomemtic decoders are not guranteed optimal. Translating signals in terms of basic human motor movements are not necessairly the best way to solve control problems.&lt;/li&gt;
+          &lt;li&gt;Only decoders that correspond to simple physical systems work well.&lt;/li&gt;
+          &lt;li&gt;Estimation framework assumes static tuning but performance in closed-loop systems over time is often very different and offline decoders may not work well in long term.&lt;/li&gt;
+          &lt;li&gt;Biomemtic decoders are not guaranteed optimal. Translating signals in terms of basic human motor movements are not necessairly the best way to solve control problems.&lt;/li&gt;
         &lt;/ol&gt;
       &lt;/li&gt;
-      &lt;li&gt;Authors make 3 assumptions about brain as optimal controller:
+      &lt;li&gt;Authors make 3 assumptions about the brain as optimal controller:
         &lt;ol&gt;
           &lt;li&gt;The brain is emitting control signals that minimize some cost function.&lt;/li&gt;
-          &lt;li&gt;Priamry cortex activity is a direct reprresentation of these signals.&lt;/li&gt;
-          &lt;li&gt;End goal result of learning is to produce produce the optimal control signals of a given effector.
+          &lt;li&gt;Primary cortex activity is a direct representation of these signals.&lt;/li&gt;
+          &lt;li&gt;End goal result of learning is to produce the optimal control signals of a given effector.
             &lt;ul&gt;
               &lt;li&gt;These assumptions have helped me understand a lot of what the paper is previously trying to build to.&lt;/li&gt;
-              &lt;li&gt;Mainly, what I see now that I did not before is why the signal estimation approach is limiting and why understanding motor cotrex signals as effector signals is so important. I believe this is because control theory allows a framework for much more specific definions of control when the goal is reconstructing effector signals instead of predicting movement. Predicting movement is often a more vague problem for a decoder while fine grained analysis of how brain signals enable optimal control in reaching for example is much more specific.
+              &lt;li&gt;Mainly, what I see now that I did not before is why the signal estimation approach is limiting and why understanding motor cotrex signals as effector signals is so important. I believe this is because control theory allows a framework for much more specific definitions of control when the goal is reconstructing effector signals instead of predicting movement. Predicting movement is often a more vague problem for a decoder while fine-grained analysis of how brain signals enable optimal control in reaching for example is much more specific.
 &lt;img src=&quot;/assets/images/bci_schematic.png&quot; alt=&quot;bci schematic&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
         &lt;/ol&gt;
       &lt;/li&gt;
-      &lt;li&gt;I really like this figure since it is straightforward diagram of the control model here.&lt;/li&gt;
+      &lt;li&gt;I really like this figure since it is a straightforward diagram of the control model here.&lt;/li&gt;
       &lt;li&gt;It shows where that control signals feed into the plant for state updates in decoder.&lt;/li&gt;
       &lt;li&gt;$x$ as cursor state, $u$ as control signal, and $J(u)$ as cost function for signal $u$.&lt;/li&gt;
       &lt;li&gt;Optimal cost is $J^*  = J^(u^*)$, plant parameters are $\phi$&lt;/li&gt;
-      &lt;li&gt;$\phi$ determines usefulness of BCI based on how it minimzes cost funciton.&lt;/li&gt;
+      &lt;li&gt;$\phi$ determines the usefulness of BCI based on how it minimizes cost function.&lt;/li&gt;
       &lt;li&gt;Not so sure what $H_p$ and $H_v$ mean as spring like properties of the plant and viscous properties. Are these from control theory?&lt;/li&gt;
       &lt;li&gt;BCI plant system dyanmics
 &lt;img src=&quot;/assets/images/r26_e1.png&quot; alt=&quot;bci schematic&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
@@ -84,7 +148,7 @@ that we assumed no bias in the control signals and further assumed a minimal eff
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">A control-theoretic approach to brain-computer interface design* by Yin Zhang</summary></entry><entry><title type="html">Review 25: Plug-and-play control of a brain-computer interface through neural map stabilization</title><link href="http://localhost:4000/reviews/review25/" rel="alternate" type="text/html" title="Review 25: Plug-and-play control of a brain-computer interface through neural map stabilization" /><published>2022-04-30T05:16:13-07:00</published><updated>2022-04-30T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review25</id><content type="html" xml:base="http://localhost:4000/reviews/review25/">&lt;p&gt;&lt;a href=&quot;https://www.nature.com/articles/s41587-020-0662-5&quot;&gt;Plug-and-play control of a brain-computer interface through neural map stabilization
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">A control-theoretic approach to brain-computer interface design by Yin Zhang and Steven Chase</summary></entry><entry><title type="html">Review 25: Plug-and-play control of a brain-computer interface through neural map stabilization</title><link href="http://localhost:4000/reviews/review25/" rel="alternate" type="text/html" title="Review 25: Plug-and-play control of a brain-computer interface through neural map stabilization" /><published>2022-04-30T05:16:13-07:00</published><updated>2022-04-30T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review25</id><content type="html" xml:base="http://localhost:4000/reviews/review25/">&lt;p&gt;&lt;a href=&quot;https://www.nature.com/articles/s41587-020-0662-5&quot;&gt;Plug-and-play control of a brain-computer interface through neural map stabilization
 &lt;/a&gt; by &lt;a href=&quot;https://gangulylab.org/people.html&quot;&gt;Daniel Silversmith&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Silversmith, Daniel B., et al. “Plug-and-play control of a brain-computer interface through neural map stabilization.” Nature Biotechnology 39.3 (2021): 326-335.&lt;/p&gt;
@@ -499,78 +563,6 @@ and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.
       &lt;li&gt;Normalizing flows, which is mentioned in the paper, but not this blog, is compared to lateral neurons / lateral inhibition.
         &lt;ul&gt;
           &lt;li&gt;I am generally making this note for myself to remember this.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino</summary></entry><entry><title type="html">Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 2</title><link href="http://localhost:4000/reviews/review16/" rel="alternate" type="text/html" title="Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 2" /><published>2022-02-26T04:16:13-08:00</published><updated>2022-02-26T04:16:13-08:00</updated><id>http://localhost:4000/reviews/review16</id><content type="html" xml:base="http://localhost:4000/reviews/review16/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2011.07464.pdf&quot;&gt;Predictive Coding, Variational Autoencoders,
-and Biological Connections&lt;/a&gt; by &lt;a href=&quot;https://joelouismarino.github.io/&quot;&gt;Joseph Marino&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Marino, Joseph. “Predictive coding, variational autoencoders, and biological connections.” Neural Computation 34.1 (2021): 1-44.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Predictive encoding from the perspective of theoretical neuroscience and machine learning.&lt;/li&gt;
-  &lt;li&gt;2.3 Variational Inference
-    &lt;ul&gt;
-      &lt;li&gt;Previously paper introduces $p_{\theta}(x,\mathbf{z})p_{\theta}(x)$ as latent variable models.&lt;/li&gt;
-      &lt;li&gt;To get $p_{\theta}(x) = \int p_{\theta}(x,\mathbf{z})d\mathbf{z}$ is often an intractable integral.&lt;/li&gt;
-      &lt;li&gt;Variational inference using evidence lower bound optimization (ELBO) $ \mathcal{L}(\mathbf{x}; q, \theta) \leq log p_{\theta}(\mathbf{x})$.&lt;/li&gt;
-      &lt;li&gt;ELBO objective:
-  \(log p_{\theta}(\mathbf{x} = \mathcal{L}(\mathbf{x}; z, \theta) + KL(q(\mathbf{z} \mid \mathbf{x}) || p_{\theta}(\mathbf{z} \mid \mathbf{x})  )\)&lt;/li&gt;
-      &lt;li&gt;Apporaches to optimizing:
-        &lt;ul&gt;
-          &lt;li&gt;Alternating minimization (EM) between first and second term of ELBO.&lt;/li&gt;
-          &lt;li&gt;Computatiional graphn and differentiaion.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Predictive Coding
-    &lt;ul&gt;
-      &lt;li&gt;Spatiotemporal
-        &lt;ul&gt;
-          &lt;li&gt;Gaussian autoregessive model over sequences $x_1 … x_t$:
-  \(p(x_t \mid x_{1:T}) = \mathcal{N}(x_t; \mu_{x_{\leq t}}, diag(\sigma_{x_{\leq t}^2}))\)
-            &lt;ul&gt;
-              &lt;li&gt;introduce $y_t \sim \mathcal(0,I) $ as prediction error: $ x_t =  \mu_{x_{\leq t}} + \sigma_{x_{\leq t}^2} \cdot y_t$&lt;/li&gt;
-              &lt;li&gt;whitenting transformation shows how this is actually prediction eror: $ y_t = \frac{x_t - \mu_{x_{\leq t}}}{\sigma_{\theta}(x_{\leq t})} $&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Prediticiton error can be measured over spatial dimensions using  autoregressive transform.
-            &lt;ul&gt;
-              &lt;li&gt;spatial whitening formula $\mathbf{y} = \Sigma_{\theta}^{-1/2}(x - \mathbf{\mu_{\theta}}) $&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Example of predictive coding: fly optic nerve performs autocorrelation of spatiotemporal signals for dyanmic range.&lt;/li&gt;
-          &lt;li&gt;Normalization through inhibitory neurons.&lt;/li&gt;
-          &lt;li&gt;Photorecptor inhibition to filter unpredicted motion. Ie; object was still in the background but now it is moving.&lt;/li&gt;
-          &lt;li&gt;Lateral inihibhition for spatiotemporal normalization.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Hierarchical
-        &lt;ul&gt;
-          &lt;li&gt;Six layers of neocortex (I - VI)  organized into columns that communicate through interneurons and long range connections vis pyramidal neurons.&lt;/li&gt;
-          &lt;li&gt;Neocortical microcircuit w/ forward / backwards, excitatory / inihbitory projections.&lt;/li&gt;
-          &lt;li&gt;Theory: backward projections contain predictions and foward projections have error signal.&lt;/li&gt;
-          &lt;li&gt;Mathematical formulation of thalamus as an active blackboard that aims to minimize prediction error by Rao &amp;amp; Ballard (1999).
-            &lt;ul&gt;
-              &lt;li&gt;$p_{\theta}(x \ mid z) = \mathcal{N}(x; f(Wz), diag(\sigma^2_{x}))$&lt;/li&gt;
-              &lt;li&gt;$p_{\theta}(z) = \mathcal{N}(x; \mu_{z}, diag(\sigma^2_{z}))$
-                &lt;ul&gt;
-                  &lt;li&gt;f = elementwise function, w = weight matrix, $\sigma_{x}^2$ and $\sigma_{z}^2$ are the respective variances for $x$ and $z$.&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;MAP estimate of z is $z^*$ which maximizes $p_{\theta}(z \mid x)$.&lt;/li&gt;
-              &lt;li&gt;Formulate that as an optimization problem: \(z^* = argmax_{z} ( log(p_{\theta}(x \mid z)) + log p_{\theta}(z) )\)&lt;/li&gt;
-              &lt;li&gt;Each term in the above is convex squared error term so the whole thing can be solved analytically with \(\nabla_{z}\ell(z, \theta) = W^T (\frac{x - W_z }{\sigma_x}) (\frac{x - \mu_z }{\sigma_z})\)
-                &lt;ul&gt;
-                  &lt;li&gt;We can also use the above gradient to solve for $W$ w/ $\nabla_{W}$&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;Under this construction of $\theta(W,z)$ we get learning rules that aim to be biologically plausible by optimizing against physical occurrances, like firing rate or membrane potential. Extending this, the latent variable model (LVM) can be the particular output of a specific cortical column.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Various forms of evidence for this model in different sensory areas of mice, but ultimately, predictive coding is an incomplete theory because most of these models are oversimplified circuit models.&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;

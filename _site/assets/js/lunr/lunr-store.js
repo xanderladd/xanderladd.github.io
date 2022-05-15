@@ -156,8 +156,14 @@ var store = [{
         "teaser": "/assets/images/trees.jpeg"
       },{
         "title": "Review 26: A control-theoretic approach to brain-computer interface design",
-        "excerpt":"A control-theoretic approach to brain-computer interface design* by Yin Zhang Zhang, Yin, and Steven M. Chase. “A control-theoretic approach to brain-computer interface design.” 2016 American Control Conference (ACC). IEEE, 2016. A challenge in brain computer interface (BCI) design is mapping from population activity to BCI actuation. This paper proposes using...","categories": ["reviews"],
+        "excerpt":"A control-theoretic approach to brain-computer interface design by Yin Zhang and Steven Chase Zhang, Yin, and Steven M. Chase. “A control-theoretic approach to brain-computer interface design.” 2016 American Control Conference (ACC). IEEE, 2016. A challenge in brain computer interface (BCI) design is mapping from population activity to BCI actuation. This...","categories": ["reviews"],
         "tags": [],
         "url": "/reviews/review26/",
+        "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 27: Parsing learning in networks using brain–machine interfaces",
+        "excerpt":"Parsing learning in networks using brain-machine interfaces by Amy Orsborn and Bijan Pesaran Orsborn, Amy L., and Bijan Pesaran. “Parsing learning in networks using brain-machine interfaces.” Current opinion in neurobiology 46 (2017): 76-83. Introduction Motor BMIs: repurpose neural activity to control the movement of a device. Give the brain a...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review27/",
         "teaser": "/assets/images/trees.jpeg"
       }]

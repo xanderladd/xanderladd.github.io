@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Review 26: A control-theoretic approach to brain-computer interface design - Alexander Ladd</title>
-<meta name="description" content="A control-theoretic approach to brain-computer interface design*  by Yin Zhang">
+<meta name="description" content="A control-theoretic approach to brain-computer interface design by Yin Zhang and Steven Chase">
 
 
 
@@ -21,7 +21,7 @@
 <meta property="og:url" content="http://localhost:4000/reviews/review26/">
 
 
-  <meta property="og:description" content="A control-theoretic approach to brain-computer interface design*  by Yin Zhang">
+  <meta property="og:description" content="A control-theoretic approach to brain-computer interface design by Yin Zhang and Steven Chase">
 
 
 
@@ -234,7 +234,7 @@
     
       <h1 id="page-title" class="page__title">Review 26: A control-theoretic approach to brain-computer interface design</h1>
     
-    <p><a href="https://smithlab.net/~schase/docs/zhang_acc_2016.pdf">A control-theoretic approach to brain-computer interface design* </a> by Yin Zhang</p>
+    <p><a href="https://smithlab.net/~schase/docs/zhang_acc_2016.pdf">A control-theoretic approach to brain-computer interface design</a> by Yin Zhang and <a href="https://www.cmu.edu/bme/People/Faculty/profile/schase.html">Steven Chase</a></p>
 
 <p>Zhang, Yin, and Steven M. Chase. “A control-theoretic approach to brain-computer interface design.” 2016 American Control Conference (ACC). IEEE, 2016.</p>
 
@@ -257,11 +257,11 @@
       <li>Velocity kalman filter defined as: $\mathbf{y_t} = B\mathbf{v_t}^* + \mathbf{\epsilon_t
   }$ where $\mathbf{y_t}$ are $n$ neuron’s firing rates and $\mathbf{v_t}$ is the velocity of a prosethetic effector.
         <ul>
-          <li>This is clear mathemmatically but I don’t know what a prosthetic effector is.</li>
+          <li>This is clear mathematically but I don’t know what a prosthetic effector is.</li>
           <li>It seems like some implant that would drive neuron firing rates.</li>
         </ul>
       </li>
-      <li>A second assumption that this velocity changes smoothly over time.</li>
+      <li>A second assumption is that this velocity changes smoothly over time.</li>
       <li>Using these two assumptions: BCI control reduces to Bayesian inference over how this velocity results in firing rates.
         <ul>
           <li>I thought there would be more here since after this level of inference you’d still have to infer the previous problem of spike activity mapping to actions.</li>
@@ -275,29 +275,29 @@
       </li>
       <li>While estimation based decoder control has remarkable progress in enabling cursor speed w/ in a factor of 2 of a natural limb, there are still some aspects that can be improved:
         <ol>
-          <li>Only decoders that correspond to simpe physical systems work well.</li>
-          <li>Estimation framework assumes static tuning but performance in closed-loop system over time is often very different and offline decoders may not work well in long term.</li>
-          <li>Biomemtic decoders are not guranteed optimal. Translating signals in terms of basic human motor movements are not necessairly the best way to solve control problems.</li>
+          <li>Only decoders that correspond to simple physical systems work well.</li>
+          <li>Estimation framework assumes static tuning but performance in closed-loop systems over time is often very different and offline decoders may not work well in long term.</li>
+          <li>Biomemtic decoders are not guaranteed optimal. Translating signals in terms of basic human motor movements are not necessairly the best way to solve control problems.</li>
         </ol>
       </li>
-      <li>Authors make 3 assumptions about brain as optimal controller:
+      <li>Authors make 3 assumptions about the brain as optimal controller:
         <ol>
           <li>The brain is emitting control signals that minimize some cost function.</li>
-          <li>Priamry cortex activity is a direct reprresentation of these signals.</li>
-          <li>End goal result of learning is to produce produce the optimal control signals of a given effector.
+          <li>Primary cortex activity is a direct representation of these signals.</li>
+          <li>End goal result of learning is to produce the optimal control signals of a given effector.
             <ul>
               <li>These assumptions have helped me understand a lot of what the paper is previously trying to build to.</li>
-              <li>Mainly, what I see now that I did not before is why the signal estimation approach is limiting and why understanding motor cotrex signals as effector signals is so important. I believe this is because control theory allows a framework for much more specific definions of control when the goal is reconstructing effector signals instead of predicting movement. Predicting movement is often a more vague problem for a decoder while fine grained analysis of how brain signals enable optimal control in reaching for example is much more specific.
+              <li>Mainly, what I see now that I did not before is why the signal estimation approach is limiting and why understanding motor cotrex signals as effector signals is so important. I believe this is because control theory allows a framework for much more specific definitions of control when the goal is reconstructing effector signals instead of predicting movement. Predicting movement is often a more vague problem for a decoder while fine-grained analysis of how brain signals enable optimal control in reaching for example is much more specific.
 <img src="/assets/images/bci_schematic.png" alt="bci schematic" width="500" align="center" /></li>
             </ul>
           </li>
         </ol>
       </li>
-      <li>I really like this figure since it is straightforward diagram of the control model here.</li>
+      <li>I really like this figure since it is a straightforward diagram of the control model here.</li>
       <li>It shows where that control signals feed into the plant for state updates in decoder.</li>
       <li>$x$ as cursor state, $u$ as control signal, and $J(u)$ as cost function for signal $u$.</li>
       <li>Optimal cost is $J^*  = J^(u^*)$, plant parameters are $\phi$</li>
-      <li>$\phi$ determines usefulness of BCI based on how it minimzes cost funciton.</li>
+      <li>$\phi$ determines the usefulness of BCI based on how it minimizes cost function.</li>
       <li>Not so sure what $H_p$ and $H_v$ mean as spring like properties of the plant and viscous properties. Are these from control theory?</li>
       <li>BCI plant system dyanmics
 <img src="/assets/images/r26_e1.png" alt="bci schematic" width="500" align="center" /></li>
@@ -338,6 +338,48 @@ that we assumed no bias in the control signals and further assumed a minimal eff
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
+        <a href="/reviews/review27/" rel="permalink">Review 27: Parsing learning in networks using brain–machine interfaces
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Parsing learning in networks using brain-machine
+interfaces by Amy Orsborn and Bijan Pesaran
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
         <a href="/reviews/review26/" rel="permalink">Review 26: A control-theoretic approach to brain-computer interface design
 </a>
       
@@ -363,7 +405,7 @@ that we assumed no bias in the control signals and further assumed a minimal eff
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">A control-theoretic approach to brain-computer interface design*  by Yin Zhang
+    <p class="archive__item-excerpt" itemprop="description">A control-theoretic approach to brain-computer interface design by Yin Zhang and Steven Chase
 
 </p>
   </article>

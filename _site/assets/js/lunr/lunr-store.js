@@ -166,4 +166,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review27/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 28: Four ethical priorities for neurotechnologies and AI",
+        "excerpt":"Four ethical priorities for neurotechnologies and AI by Rafael Yuste and Sara Goering Yuste, Rafael, et al. “Four ethical priorities for neurotechnologies and AI.” Nature 551.7679 (2017): 159-163. While full integration of neurotechnology into human life may take decades, it is critical to think about the ethical applications now. The...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review28/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

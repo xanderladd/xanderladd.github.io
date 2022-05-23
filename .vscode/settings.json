@@ -1,0 +1,9 @@
+{
+    "grammarly.selectors": [
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "_posts/reviews/2022-5-22-review28.markdown"
+        }
+    ]
+}

@@ -9,38 +9,38 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Review 17: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3 - Alexander Ladd</title>
-<meta name="description" content="Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino">
+<!-- begin _includes/seo.html --><title>Review 28: Four ethical priorities for neurotechnologies and AI - Alexander Ladd</title>
+<meta name="description" content="Four ethical priorities for neurotechnologies and AI  by Rafael Yuste and Sara Goering">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Alexander Ladd">
-<meta property="og:title" content="Review 17: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3">
-<meta property="og:url" content="http://localhost:4000/reviews/review17/">
+<meta property="og:title" content="Review 28: Four ethical priorities for neurotechnologies and AI">
+<meta property="og:url" content="http://localhost:4000/reviews/review28/">
 
 
-  <meta property="og:description" content="Predictive Coding, Variational Autoencoders, and Biological Connections by Joseph Marino">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2022-03-04T04:16:13-08:00">
+  <meta property="og:description" content="Four ethical priorities for neurotechnologies and AI  by Rafael Yuste and Sara Goering">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2022-05-14T05:16:13-07:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/reviews/review17/">
+
+<link rel="canonical" href="http://localhost:4000/reviews/review28/">
 
 
 
@@ -232,69 +232,40 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">Review 17: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3</h1>
+      <h1 id="page-title" class="page__title">Review 28: Four ethical priorities for neurotechnologies and AI</h1>
     
-    <p><a href="https://arxiv.org/pdf/2011.07464.pdf">Predictive Coding, Variational Autoencoders,
-and Biological Connections</a> by <a href="https://joelouismarino.github.io/">Joseph Marino</a></p>
+    <p><a href="https://www.nature.com/articles/551159a">Four ethical priorities for neurotechnologies and AI
+</a> by <a href="https://scholar.google.com/citations?user=G0WcJagAAAAJ">Rafael Yuste</a> and <a href="https://phil.washington.edu/people/sara-goering">Sara Goering</a></p>
 
-<p>Marino, Joseph. “Predictive coding, variational autoencoders, and biological connections.” Neural Computation 34.1 (2021): 1-44.</p>
+<p>Yuste, Rafael, et al. “Four ethical priorities for neurotechnologies and AI.” Nature 551.7679 (2017): 159-163.</p>
 
 <ul>
-  <li>Predictive Coding Continued
+  <li>While full integration of neurotechnology into human life may take decades, it is critical to think about the ethical applications now.</li>
+  <li>The morningside group is comprised of neurotech companies, academic labs, and intl. brain projects.</li>
+  <li>The existing ethics guidlines, such as Declariation of Helsinki in 1964, Belmont report, and Asilomar AI report, don’t cover many of the issues that are raised by BCI technology.</li>
+  <li>This is a very cool tidbit:
+    <blockquote>
+      <p>(Yuste &amp; Goering 2017)</p>
+      <blockquote>
+        <p>Meanwhile, researchers at Duke University in Durham, North Carolina, have shown that three monkeys with electrode implants can operate as a ‘brain net’ to move an avatar arm collaboratively.</p>
+      </blockquote>
+    </blockquote>
+
+    <p><a href="https://www.nature.com/articles/srep10767">Link</a></p>
+  </li>
+  <li>This BrainNet paper is one I am really interested in reading.</li>
+  <li>DARPA Neural Engineering Project that aims to implant 1 million electrodes and selectively stimulates up to 100k neurons. The University of Freiburg in Germany is using EEG signals to decode motor planning activity to control robots.</li>
+  <li>The four ethical priorities:
     <ul>
-      <li>A major difference between predictive coding and inference is that predictive coding calculates gradients with backwards (top-down) projections and inference performs updates bottom up (forward pass).</li>
-      <li>Referring to the previous set of note, these learning updates are computed using:
-   \(\nabla_{z}\ell(z, \theta) = W^T (\frac{x - W_z }{\sigma_x}) (\frac{x - \mu_z }{\sigma_z})\)</li>
-      <li>The first team represents a local error $\mathcal{e}_x$ and the second term represents and error over the latent variable $\mathcal{e}_z$. These terms modulate the gain of each error. The paper mentions that they are related to attention and cites Feldman &amp; Friston, 2010. Without any background, I can’t see obviously how the error over the latent variable $z$ could be related to attention.</li>
-      <li>Can expand the preivous equations beyond $\sigma_x$ to be multivariate spatial covariance $\Sigma_X$.</li>
-      <li>Empirical support for predictive coding.
-        <ul>
-          <li>Fitting retinal cell ganglion cells processes using spatial whitening kernel.</li>
-          <li>Hierachial: top down signals can alter traditional receptive fields.</li>
-          <li>Sensory cortex as engaged in hierarchical prediction of spatial / temporal domain.</li>
-        </ul>
-      </li>
+      <li>Privacy and consent: This concern has been pervasive throughout all types of recent technological advancements. There are many researchers working on what makes a system secure, but keeping data secure has proven to be a comparably large challenge as well. Often times data breaches that would occur in neurotech may use external data to draw connections that might allow them to identify individuals based on neural activity. Furthermore, many potential exploitative practices can extend from the centralization of neural data. The authors pose multiple mitigation strategies, but I really strongly agree with the strategy of not allowing the centralized storage of human neural data from BMI devices. While this may limit how devices can be developed, for now, it seems like a central safeguard from potentially disastrous data breaches.</li>
     </ul>
   </li>
-  <li>Variational Auteoencoders
+  <li>Agency / Identity: This concern caught me off guard because I hadn’t considered it much at all until I read this. Simply put, BMI devices can blue the line of how much agency they can attribute to certain actions. In this way, BMI devices can interfere with someone’s sense of identity in a negative way. I also found the potential mitigation strategies here less satisfying, although I don’t have any better ideas. I am in support for drafting a constitution of “neurorights” but I don’t see how this would help those with issues in BMI affected identity. Better yet would be a fast safeguard in each device to immediately shut off its functioning if needed. The reason I advocate for this is that the user should have complete autonomy over when they use the device and when it is inactive. This does open the device up to hacking. Also this kind of on/off switch might not be possible due to negative consequences from terminating the tight feedback loop between device and person. Regardless, I generally advocate that BMI functionality should be treated more like glasses and less like a pacemaker so that users will never feel completely trapped with the BMI.</li>
+  <li>Augmentation: This is a very futuristic concern, but also one that should be considered now. At this point, the weaponization and militaristic augmentation of BMI devices are not major concerns. Though in the future they may be. To steer BMI devices on the right path, the authors argue for the establishment of a neurotechnology geneva convention style agreement about what research and applications can be ethically conducted using BMI devices.</li>
+  <li>Bias: Just like ML systems nowadays are biased by negative aspects of their data, such as hate speech in text datasets or lack of representation in image datasets, BMI devices can further perpetuate societal inequalities. To prevent this, it is necessary to open source data, algorithms, user research groups, and design. Through the proper channels, civil liberties and nonprofit auditors should be able to inspect the scientific practices of companies or groups doing neural engineering. Representation of diverse needs and circumstances should be considered in thorough research feature testing, quality testing, and design. Recently, there have been many failures in preventing biased models and disinformation on major technology platforms, so the future for this will be challenging.</li>
+  <li>Moving forward:
     <ul>
-      <li>Deep network latent variable models trained using variational inference.
-        <ul>
-          <li>Breaking this down:
-            <ul>
-              <li>deep network - stacked layers of units / artifical neurons that perform linear transformations to the signal as it feeds forward.</li>
-              <li>latent variable -  some random variables (noramlly denoted as $z$) which will be part of the model parameterizaiton. To me, an interesting intuition to thinking about latent variables is that they create a low dimensional subspace that bottlenecks the information from higher dimensional inputs / layers.</li>
-              <li>using variational inference - this one was covered in the previous blog.</li>
-            </ul>
-          </li>
-          <li>Optimizing conditional likelihood of latent variable requires differentiating the latent variable. This is tricky because the latent variable is sampled from a  normal distribution. How can we tune the parameters of this distribution <em>and</em> the network? To do this we need to use the reparameterization trick. For brevity I am not going to cover in this blog. This allows us to train a network that gives latent variable vector $\mathbf{z}$, thus an autoencoder.</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>Connections and Comparisions
-    <ul>
-      <li>Main connection: both are hierachcial latent variable models.
-        <ul>
-          <li>Also, both preditive coding and VAEs rely on nonlinear connections between levels and covariance relationship between levels.
-            <ul>
-              <li>IMO, this is the really impressive part about VAE and why it’s so relevant for Neuroscience. It is well known that human NNs have nonlinear synaptic connectivty, but I think it’s less clear (at least for the layman) that levels of cortical connectiviy might covary. But we know, especically from researching attention, that this is true. This is why VAE’s are becoming my favorite brain inspired ML model! Although, credit assignment is still an outstanding issue.</li>
-            </ul>
-          </li>
-          <li>Inference: both methods perform inference but using diffeent optimization techniques (predictive: gradient, vae: amortized). (see last two reviews and previous section about optimizing VAE)</li>
-        </ul>
-      </li>
-      <li>Author aligns VAE and cortical network on the level of a network of pyramidal neuron dendrites.
-        <ul>
-          <li>I don’t know why this alignment is against dendrites. Why not against the entire neuron (axon, soma, etc.)</li>
-          <li>Ok acutally I do think I know why: it’s because these networks mainly integrate signal. Or at least it’s easier to make the comparison they are integrating signal rather than integrating the signal and propogating it.</li>
-        </ul>
-      </li>
-      <li>Normalizing flows, which is mentioned in the paper, but not this blog, is compared to lateral neurons / lateral inhibition.
-        <ul>
-          <li>I am generally making this note for myself to remember this.</li>
-        </ul>
-      </li>
+      <li>This kind of review provides great directions for moving forward; including widespread adoption of a Hippocratic oath for neuro engineers and ethical discussion sections for labs. While training certainly helps move employees and individuals in the right direction, in my opinion, the field would benefit from the following: (1) Some kind of agency responsible for oversight of responsible use of BMI devices. (2) Forums / conferences / journals for neuroethics. (3) Some kind of open sourced / democratized code for precedents.</li>
     </ul>
   </li>
 </ul>
@@ -458,7 +429,7 @@ interfaces by Amy Orsborn and Bijan Pesaran
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 minute read
+          2 minute read
         
       </span>
     
@@ -542,7 +513,7 @@ interfaces by Amy Orsborn and Bijan Pesaran
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 minute read
+          2 minute read
         
       </span>
     
@@ -1518,7 +1489,7 @@ and Biological Connections by Joseph Marino
 
 <!-- 
 
-<title>Review 17: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3 - Alexander Ladd</title>
+<title>Review 28: Four ethical priorities for neurotechnologies and AI - Alexander Ladd</title>
 <meta name="viewport" content="width=device-width">
 
 <link rel="stylesheet" href="/css/all.css"> -->

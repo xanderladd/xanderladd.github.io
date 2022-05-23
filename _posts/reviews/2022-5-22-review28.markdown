@@ -1,0 +1,32 @@
+---
+layout: base
+title:  "Review 28: Four ethical priorities for neurotechnologies and AI"
+date:   2022-5-14 5:16:13 -0700
+author: xander
+categories: reviews
+comments: true
+---
+
+
+[Four ethical priorities for neurotechnologies and AI
+](https://www.nature.com/articles/551159a) by [Rafael Yuste](https://scholar.google.com/citations?user=G0WcJagAAAAJ) and [Sara Goering](https://phil.washington.edu/people/sara-goering)
+
+Yuste, Rafael, et al. "Four ethical priorities for neurotechnologies and AI." Nature 551.7679 (2017): 159-163.
+
+- While full integration of neurotechnology into human life may take decades, it is critical to think about the ethical applications now. 
+- The morningside group is comprised of neurotech companies, academic labs, and intl. brain projects.
+- The existing ethics guidlines, such as Declariation of Helsinki in 1964, Belmont report, and Asilomar AI report, don't cover many of the issues that are raised by BCI technology.
+- This is a very cool tidbit:
+    > (Yuste & Goering 2017)
+    >> Meanwhile, researchers at Duke University in Durham, North Carolina, have shown that three monkeys with electrode implants can operate as a 'brain net' to move an avatar arm collaboratively.
+
+    [Link](https://www.nature.com/articles/srep10767)
+- This BrainNet paper is one I am really interested in reading.
+- DARPA Neural Engineering Project that aims to implant 1 million electrodes and selectively stimulates up to 100k neurons. The University of Freiburg in Germany is using EEG signals to decode motor planning activity to control robots.
+- The four ethical priorities:
+    - Privacy and consent: This concern has been pervasive throughout all types of recent technological advancements. There are many researchers working on what makes a system secure, but keeping data secure has proven to be a comparably large challenge as well. Often times data breaches that would occur in neurotech may use external data to draw connections that might allow them to identify individuals based on neural activity. Furthermore, many potential exploitative practices can extend from the centralization of neural data. The authors pose multiple mitigation strategies, but I really strongly agree with the strategy of not allowing the centralized storage of human neural data from BMI devices. While this may limit how devices can be developed, for now, it seems like a central safeguard from potentially disastrous data breaches.
+- Agency / Identity: This concern caught me off guard because I hadn't considered it much at all until I read this. Simply put, BMI devices can blue the line of how much agency they can attribute to certain actions. In this way, BMI devices can interfere with someone's sense of identity in a negative way. I also found the potential mitigation strategies here less satisfying, although I don't have any better ideas. I am in support for drafting a constitution of "neurorights" but I don't see how this would help those with issues in BMI affected identity. Better yet would be a fast safeguard in each device to immediately shut off its functioning if needed. The reason I advocate for this is that the user should have complete autonomy over when they use the device and when it is inactive. This does open the device up to hacking. Also this kind of on/off switch might not be possible due to negative consequences from terminating the tight feedback loop between device and person. Regardless, I generally advocate that BMI functionality should be treated more like glasses and less like a pacemaker so that users will never feel completely trapped with the BMI. 
+- Augmentation: This is a very futuristic concern, but also one that should be considered now. At this point, the weaponization and militaristic augmentation of BMI devices are not major concerns. Though in the future they may be. To steer BMI devices on the right path, the authors argue for the establishment of a neurotechnology geneva convention style agreement about what research and applications can be ethically conducted using BMI devices.
+- Bias: Just like ML systems nowadays are biased by negative aspects of their data, such as hate speech in text datasets or lack of representation in image datasets, BMI devices can further perpetuate societal inequalities. To prevent this, it is necessary to open source data, algorithms, user research groups, and design. Through the proper channels, civil liberties and nonprofit auditors should be able to inspect the scientific practices of companies or groups doing neural engineering. Representation of diverse needs and circumstances should be considered in thorough research feature testing, quality testing, and design. Recently, there have been many failures in preventing biased models and disinformation on major technology platforms, so the future for this will be challenging.
+- Moving forward:
+    - This kind of review provides great directions for moving forward; including widespread adoption of a Hippocratic oath for neuro engineers and ethical discussion sections for labs. While training certainly helps move employees and individuals in the right direction, in my opinion, the field would benefit from the following: (1) Some kind of agency responsible for oversight of responsible use of BMI devices. (2) Forums / conferences / journals for neuroethics. (3) Some kind of open sourced / democratized code for precedents.

@@ -1,0 +1,70 @@
+---
+layout: base
+title:  "Review 29: Emergence of Coordinated Neural Dynamics Underlies Neuroprosthetic Learning and Skillful Control"
+date:   2022-5-28 5:16:13 -0700
+author: xander
+categories: reviews
+comments: true
+---
+
+
+[Emergence of Coordinated Neural Dynamics Underlies Neuroprosthetic Learning and Skillful Control](https://www.sciencedirect.com/science/article/pii/S0896627317300405) by [Vivek Athalye](https://www.actingbrain.com/vivek-athalye) and [Jose Carmena](https://www2.eecs.berkeley.edu/Faculty/Homepages/carmena.html)
+
+Athalye, Vivek R., et al. "Emergence of coordinated neural dynamics underlies neuroprosthetic learning and skillful control." Neuron 93.4 (2017): 955-970.
+
+- Pretty cool that this article is OA.
+- This work demonstrates how variance decreases in M1 neuronal population during skillful acquistion using brain machine interface (BMI).
+- Intro
+    - The fact that movement variability decreases across trials during point and click task suggests that there is some population of neurons generating the activity behind stable control.
+    - So they try to identify some of these neurons using a BMI recording device attached to around 15 neurons and use mathematical transforms to get low dimensional representation of neural trajectories.
+    - Novel task so subjects must start by exploring the action space. But eventually their performance on the task improves. How does this happen?
+    - There are three perspectives introduced:
+        1. Independent neuron learning: controller inputs come directly from each neuron.
+        2. Constrained network learning: controller inputs come from sets of neurons.
+        3. Flexible network learning: controller inputs comes from a mix of direct activation and set activation.
+    - Matrix factor analysis will help disambiguate between these approaches.
+    - Experiment parameters:
+        - Variability time scale is ~ 1 second.
+        - Decoder time scale is 100 ms.
+        - Center out BMI reaching task.
+        - Decoder gives upper limb movements to xy cursor position on a screen.
+Signal-specific readout space drives activity.
+            - signal alignment -- 0 being subspaces match and 1 being they are orthogonal between epochs.
+            - amount of valid signals -- how many readout signals actually have valid positions.
+- Results
+    - Authors propose variance changes in control happen between neuron private variance and neuron shared variance.
+    - And that these can be composed into two covariance factors and that firing rate be the mean. 
+    - Then we will have $x = \mathcal{N}(\mu, \Sigma^{total} = \Sigma^{shared} + \Sigma^{private})$
+    -  There is a visualization of the evolution of cursor trajectory which was striking.
+    - Success rate, % of correct answers increase over trials and the project (workspace position) begins to become increasingly similar to a converged upon representation.
+    <img src="/assets/images/skillful_fig1.png" alt="bci schematic" width="500" align="center"/>
+    <img src="/assets/images/skillful_legend1.png" alt="bci schematic" width="500" align="center"/>
+
+    - I'm interested in specifically how they generate this low-dimensional representation. I guess they are probably using PCA and this is how they can calculate orthogonality etc. There are a lot of dimensional reduction methods though. I didn't check the STAR methods.
+    - Private variance: diagonal terms. within neuron variance of spike train.
+    - Shared variance: off-diagonal covariance that represents the pairwise similarity between binned spike trains.
+    - Shared variance increasingly drives movement across trials.
+    - Main shared variance begins to align as epochs increase and success rate increases. This suggests that alignment of shared variance in neuron firing rates drives consolidated learning.
+    - Private variance also aligns and drives cursor movement but more so in the earlier trials.
+    <img src="/assets/images/skillful_fig2.png" alt="bci schematic" width="500" align="center"/>
+    <img src="/assets/images/skillful_legend2.png" alt="bci schematic" width="500" align="center"/>
+
+    - As such, the authors suggest that the private variance serves an early exploratory role and the shared variance had more contribution on skillful control in support of flexible network learning hypothesis.
+    - Main shared space aligns with readout space making shared variance more effective in producing skillful movements.
+    - Magnitude growth and re-alignemnt both increase for main shared variance over epochs.
+        - re-alignment is the distance between successive subspsaces (I think?).
+        - Magnitude growth seems like it's just the magnitude of the shared variance or the magnitude of the readout variance.
+        <img src="/assets/images/skillful3.png" alt="bci schematic" width="500" align="center"/>
+- Discussion
+    - Neuroprosthetic learning studies provide intriguing evidence that the brain can solve the credit assignment problem by specifically adapting neurons that contribute to the global error signal provided by the prosthetic cursor.
+    - I'm not so surprised that the magnitude of the shared signal norm increases across trials because the BCI reward feedback is likely to introduce some change in the scale of a variance measure.
+    
+    > Athalye et al. 2017
+    >> We hypothesize that the population finds this solution by selecting particular shared inputs that produce goal-achieving activity within a characteristic manifold.
+
+    - BMI manifold emerged that contained consolidated neural trajectories for skillful control.
+    - I **really** like this final quote for a few future reasearch question:
+    > Athalye et al. 2017
+    >> Future decoders might benefit from more detailed models of neural population dynamics and how they change with learning. Indeed, a recent algorithmic approach yielded significant performance improvement by modeling neural population dynamics underlying natural movements to decode the subject’s intent while moving freely (Kao et al., 2015). Perhaps neural learning can help to generalize this approach to immobile patients, as we found coordinated neural dynamics can be consolidated over training in the absence of overt movement. Given our findings that main shared variance achieves better performance than total activity in simulations (Figures S6B–S6D), a performance-motivated extension would be to design a decoder that is able to denoise neural observations based on learned neural dynamics (Shenoy and Carmena, 2014).
+
+    - In my opinion, each sentence here can be taken apart and used to brainstorm future research directions that are related. There is an interesting web of interesting connections here.

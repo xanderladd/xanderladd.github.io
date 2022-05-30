@@ -172,4 +172,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review28/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 29: Emergence of Coordinated Neural Dynamics Underlies Neuroprosthetic Learning and Skillful Control",
+        "excerpt":"Emergence of Coordinated Neural Dynamics Underlies Neuroprosthetic Learning and Skillful Control by Vivek Athalye and Jose Carmena Athalye, Vivek R., et al. “Emergence of coordinated neural dynamics underlies neuroprosthetic learning and skillful control.” Neuron 93.4 (2017): 955-970. Pretty cool that this article is OA. This work demonstrates how variance decreases...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review29/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

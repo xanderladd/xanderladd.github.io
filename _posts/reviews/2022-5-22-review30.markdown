@@ -1,0 +1,42 @@
+---
+layout: base
+title:  "Review 30: Eavesdropping on the Brain With 10,000 Electrodes"
+date:   2022-6-05 5:16:13 -0700
+author: xander
+categories: reviews
+comments: true
+---
+
+
+[Eavesdropping on the Brain With 10,000 Electrodes](https://spectrum.ieee.org/brain-implant) by [Barun Dutta](https://www.imecitf.com/2021/health/speakers/barun-dutta-chief-scientist-sts-imec) 
+
+Dutta, Barun. "Eavesdropping on the Brain With 10,000 Electrodes." IEEE Spectrum (2022)
+
+- This is interesting because this article is released by Barun Dutta, one of the principal investigators of the neuropixels devices.
+- The hook begins with the infamous brain-computer metaphor.
+    - This "brain is a computer" comparison is tired, but this hook works well anyway because it points to the really astounding fact that the brain only requires 20 watts of power.
+- The introduction sets the stage for introducing [Imec](https://www.imec-int.com/en) importance of large-scale recordings of individual neurons and a freely moving animal. This company does some really awesome things with nano and digital technologies.
+- The name "neuropixels" is explained as a field potential recording system that relies on signal processing, kind of like a camera. 
+- We also see that neuropixels aims to tackle some of the issues located physically deeper in the brain.
+- Neuropixels 1.0 has a single shank and 1000 electrodes.
+- Neuropixels 2.0 has four shanks with 1280 electrodes. 
+- With 3.0 they claim they are moving along an exponential growth curve for BCI recording.
+- It is encouraging to see Imec's efforts in materials sciences in CMOS fabrication.
+    - low impedance electro-ceramic shanks sound more durable and much less likely to have electrical discharge.
+
+- I find this quote surprising:
+> Dutta (2022)
+>> "the thousandfold difference in elasticity between CMOS shanks and brain tissue"
+
+    - because I had no idea that even the most flexible shanks are still this level of magnitude more rigid than brain tissue. This  highlights the importance of these efforts in materials sciences and electrical engineering.
+- 2D readouts help power stabilization algorithm that allows the long-term tracking of specific neurons.
+- The new neuropixels device also features a smaller head-stage.
+- 30 kilohertz sampling rate is very high. I wonder if anyone makes the argument that a higher sampling rate could ever be needed. I think at this resolution one could even analyze fast activating channel dynamics.
+- The "pixel" or neuron recording count is predicted to leap 50,000 - 100,000 neurons.
+    - Big if true.
+    - Neuropixels 1 has 1000 recording sites and then Neuropixels 2 has 6000 recording sites, so a projection of 50k is bold.
+
+- Overall, the pace of development is astounding but in my opinion "Moore's law" is a mischaracterization. Here's why:
+    - So far we've observed one cycle and there was a 6x increase in recording sites, which is technically in line with the trend. However, this characterization of exponential growth would need to be sustained over multiple cycles... I think it is just too early to call.
+    - Also, 1.0 and 2.0 don't have that much of a difference in recording fidelity. 2.0 gets the increase in recording sites using more shanks and better tracking algorithms.
+    - While the advent of these areas of development is notable, I wonder if we see sustained progress in these domains or if new features can be added that will enable increasing recording sites in other ways.

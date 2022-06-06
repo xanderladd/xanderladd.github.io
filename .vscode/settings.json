@@ -9,6 +9,11 @@
             "language": "markdown",
             "scheme": "file",
             "pattern": "_posts/reviews/2022-5-22-review29.markdown"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "_posts/reviews/2022-5-22-review30.markdown"
         }
     ]
 }

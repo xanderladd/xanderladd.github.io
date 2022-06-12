@@ -1,0 +1,96 @@
+---
+layout: base
+title:  "Review 31: Noninvasive Brain–Machine Interfaces for Robotic Devices"
+date:   2022-6-11 5:16:13 -0700
+author: xander
+categories: reviews
+comments: true
+---
+
+
+[Noninvasive Brain–Machine Interfaces for Robotic Devices](https://spectrum.ieee.org/brain-implant) by [Luca Toning](https://scholar.google.com/citations?user=U2N9FlcAAAAJ&hl=en) and [José del R. Millán](https://www.ece.utexas.edu/people/faculty/jose-del-r-millan)
+
+Tonin, Luca, and José del R. Millán. "Noninvasive brain–machine interfaces for robotic devices." Annual Review of Control, Robotics, and Autonomous Systems 4 (2021): 191-214.
+
+
+- First this from the abstract: ". We found that BMIs are used mostly to drive devices for navigation (e.g., telepresence mobile robots), with BMI paradigms based mainly on exogenous stimulation, and the majority of brain-actuated robots adopt a discrete control strategy,".
+- Introduction
+    - Main focus of brain-machine interfaces, or BMIs, is to restore motor functions for those with damaged pathways or motor dysfunction.
+eg; brain-controlled cursor movement, keyboards + typing, remote-controlled devices.
+    - Not just a plug and play engineering problem, we should think about how to generate effective control signals as well.
+    - Paper roadmap: introduce closed-loop system -> turn to main modalities of interaction/control -> provide an overview of 86 works over the past 15 years -> lay out challenges and future directions.
+- The Closed Loop of a Brain-Machine Interface: A Mutual Learning Interaction
+    - Here is a high level description of Fig 1.
+        - Brain activity is elicited and recorded.
+            - Endogenous: user voluntarily engages activity in some mental task.
+            - Exogenous: user is presented stimuli and correlates of brain activity are measured during this task.
+        - Features are extracted.
+        - Control.
+            - This block in the flow is complicated. Suffice it to say that this part is a signal handed to a robotic device. 
+        - Online feedback.
+            - User _sees_ behavior and deems it rewarding / not rewarding.
+        - Rinse and Repeat.
+    - Two key considerations for this loop to work:
+        > Toning 2021
+        >> Two concepts therefore become essential in the design of the BMI closed loop: a fast response by the robot to the user’s intention, in order to allow fine and reactive control over the device (Section 4), and a bidirectional interaction between the robot and BMI, in order to trigger and exploit the robot intelligence and thus support the user in performing complex actions (Section 5).
+    - Ultimately this seems like communication bandwidth between the human/animal (affector) and the controlled device (effector).
+
+- Invasive and Noninvasive Acquisition Techniques
+    - Noninvasive BMIs can access either electrocorticogram signals (EEG) or hemodynamic activity (bloodflow) like seen in fMRIs.
+        - EEG has an advantage temporally but fMRI has an advantage spatially.
+- Signal Processing and Feature Extraction
+    - Lots of filtering happens in non-invasive BCI so that we can increase signal to noise ratio.
+        - Filter DC component.
+        - Spatial filters.
+        - Low dimensional reductions of data.
+        - Hilbert transform, FFT transform, wavelet decomposition.
+- Feature Selection and Classification Algorithms
+    - 16 channels with 4-48hz resolution result in 340+ features to potentially consider.
+    - During calibration channels that are discriminative or particularly relevant to functional neural correlates are selected in feature selection.
+    - After online/control phase, the decoder is then used for offline discriminant classification.
+        - SVM, Gaussian +/ kernel models.
+- Human-In-The-Loop: Interaction Modalities in Brain-Machine Interfaces
+    - Exogenous paradigms
+        - Steady-state evoked potential (SSEP) based BMIs: present several visual stimuli to target (like a flashing light) and the user can guide control by fixing their eyes on a specific target, which corresponds to an action in a remote-controlled robotic device.
+        - P300 signals are evoked after some anomalistic pattern is observed. It's hard to see how users picking out infrequent patterns or letters can lead to goal-directed control of a robotic arm. I'd have to look into the Farwell–Donchin spellers task.
+        - Error-related signals can be used to increase robustness for BMI applications.
+    -  Endogenous Paradigms
+        - Event-related localized changes in frequency, or an increment or decrement in EEG.
+            - $\mu$ and $\beta$ bands of activity specifically related to motor imagination.
+            - Event-related synchronization or desynchronization.
+        - Task-specific modulation is represented as a marker on a screen, which is important because the capacity for the user to receive continuous feedback about cursor position.
+        - Figure 2 quick jot.
+            - Surprisingly, relative fisher scores for features were very stable over different frequencies.
+            - Also 12hz ($\mu$ band) was particularly identifiable.
+            - Quadratic boundary used for foot movement v.s. hand movement discrimination.
+                - This is also surprising as the feature representation is projected to a $\mathbb{R}^2$ subspace which is very compact. Yet a basic quadratic discrimator works!
+            - Signal trajectory needs to converge past boundary to be classified. In one trajectory, neither hand nor foot is detected.
+- Control strategies
+    - BMI control is often combined with a corresponding control strategy from the stimulated device.
+    - While most systems use discrete control in continuous v.s. discrete control, there is the potential for both.
+        -  Discrete is slower and has lower bandwidth.
+        - Continuous control is interesting but not as studied.
+            - One of the interesting apps is as a continuous driving signal. The other app is the stabilization of discrete commands.
+    - EEG patterns are non-stationary.
+- Robot in the Loop: Sharing the Intelligence
+    - Since many tasks (eg; robotic arm) reaching with non-invasive (and invasive?) BMI is pretty difficult, the devices are often equipped with (or learn) fine level control and stabilization.
+    - Two approaches to machine autonomous control: 1. user looks at a spot and the machine takes responsibility for guiding it there using whatever control sequences it pleases or 2. user can offer more granular directions, like turning a wheelchair using a finite state machine (Iturrate et al. (52) qtd. in Toning 2021).
+        - I am looking forward to hearing what the challenges for 2 are where. There seems to be a bottleneck in terms of how much bandwidth there is for control, just like in the case of continuous decoding.
+    - Sequential control passed between human and robotic arm during grasping task. Human uses menu-based assistance to guide arm and then uses BMI to complete grasping action.
+    - Shared control ultimately seems like a nice future direction since humans can have higher-level control and robot can have lower-level control.
+    - Subversion of explicit BMI signaling using detection of error-related signals in BMI.
+        - An error-based override allows the robot to re-interpret the signal.
+- Current Applications
+    - Devices, Interaction Modalities, and Control Strategies
+        - Here the authors give a nice breakdown of mobile control studies: " brain-controlled mobile robots for telepresence are the type that is most common in the literature (Figure 4a), representing 38.4% of the reviewed studies, followed by powered wheelchairs (22.1%), robotic arms (19.8%), lower limb and upper limb exoskeletons (9.3% and 7.0%, respectively), and quadcopters (3.5%)." (Toning 2021).
+        - See figure:
+             <img src="/assets/images/tonin1.png" alt="bmi overview" width="500" align="center"/>
+        - Brain-controlled robotic arms are studied in several different studies.
+        - Surprisingly only 16.3% of studies included participants that had motor defecits.
+- Open Challenges and Future Directions
+    - Integration between BMI and robots is in early days. Normally, the robot is just seen as an actuator.
+    - Overcoming commitment to exogenous systems and developing endogenous and self-paced systems has more deploy-ability but comes with challenges for calibration and user mental capacity to focus on this kind of control.
+    - The biggest challenge is that most studies are not conducted in coordination with the end-users. 
+        - Which biases the design of the device and calibration/training strategies.
+        - A lot of the time, training phases can take weeks.
+    - Applications in navigation and manipulation may not be the most prioritized use case for the end-user. It would be best to coordinate with patients whom BMI researchers aim to help in order to re-contextualize what their priorities are in order to get better alignment.

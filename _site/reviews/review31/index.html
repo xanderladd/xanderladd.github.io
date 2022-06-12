@@ -9,38 +9,38 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Review 10: Beyond advertising: New infrastructures for publishing integrated research objects - Alexander Ladd</title>
-<meta name="description" content="Beyond advertising: New infrastructures for publishing integrated research objects by Elizabeth DuPre et al.">
+<!-- begin _includes/seo.html --><title>Review 31: Noninvasive Brain–Machine Interfaces for Robotic Devices - Alexander Ladd</title>
+<meta name="description" content="Noninvasive Brain–Machine Interfaces for Robotic Devices by Luca Toning and José del R. Millán">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Alexander Ladd">
-<meta property="og:title" content="Review 10: Beyond advertising: New infrastructures for publishing integrated research objects">
-<meta property="og:url" content="http://localhost:4000/reviews/review10/">
+<meta property="og:title" content="Review 31: Noninvasive Brain–Machine Interfaces for Robotic Devices">
+<meta property="og:url" content="http://localhost:4000/reviews/review31/">
 
 
-  <meta property="og:description" content="Beyond advertising: New infrastructures for publishing integrated research objects by Elizabeth DuPre et al.">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2022-01-16T04:16:13-08:00">
+  <meta property="og:description" content="Noninvasive Brain–Machine Interfaces for Robotic Devices by Luca Toning and José del R. Millán">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2022-06-11T05:16:13-07:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/reviews/review10/">
+
+<link rel="canonical" href="http://localhost:4000/reviews/review31/">
 
 
 
@@ -232,79 +232,182 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">Review 10: Beyond advertising: New infrastructures for publishing integrated research objects</h1>
+      <h1 id="page-title" class="page__title">Review 31: Noninvasive Brain–Machine Interfaces for Robotic Devices</h1>
     
-    <p><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009651">Beyond advertising: New infrastructures for publishing integrated research objects</a> by <a href="https://elizabeth-dupre.com/#/cv">Elizabeth DuPre</a> et al.</p>
+    <p><a href="https://spectrum.ieee.org/brain-implant">Noninvasive Brain–Machine Interfaces for Robotic Devices</a> by <a href="https://scholar.google.com/citations?user=U2N9FlcAAAAJ&amp;hl=en">Luca Toning</a> and <a href="https://www.ece.utexas.edu/people/faculty/jose-del-r-millan">José del R. Millán</a></p>
+
+<p>Tonin, Luca, and José del R. Millán. “Noninvasive brain–machine interfaces for robotic devices.” Annual Review of Control, Robotics, and Autonomous Systems 4 (2021): 191-214.</p>
 
 <ul>
-  <li>
-    <p>Citation: DuPre, Elizabeth, et al. “Beyond advertising: New infrastructures for publishing integrated research objects.” PLOS Computational Biology 18.1 (2022): e1009651.</p>
-  </li>
+  <li>First this from the abstract: “. We found that BMIs are used mostly to drive devices for navigation (e.g., telepresence mobile robots), with BMI paradigms based mainly on exogenous stimulation, and the majority of brain-actuated robots adopt a discrete control strategy,”.</li>
   <li>Introduction
     <ul>
-      <li>Discuss current practices in reviewing and publishing a paper, including new forms of curation like openreview and arxivsantiy. Also includes new practices like website hosting and Twitter paper advertising.</li>
-      <li>Presents problem: Researchers have moved online but have not fully embraced web first workflows.</li>
+      <li>Main focus of brain-machine interfaces, or BMIs, is to restore motor functions for those with damaged pathways or motor dysfunction.
+eg; brain-controlled cursor movement, keyboards + typing, remote-controlled devices.</li>
+      <li>Not just a plug and play engineering problem, we should think about how to generate effective control signals as well.</li>
+      <li>Paper roadmap: introduce closed-loop system -&gt; turn to main modalities of interaction/control -&gt; provide an overview of 86 works over the past 15 years -&gt; lay out challenges and future directions.</li>
     </ul>
   </li>
-  <li>Hybrid Objects
+  <li>The Closed Loop of a Brain-Machine Interface: A Mutual Learning Interaction
     <ul>
-      <li>Hybrid objects are described as an amalgamation of writing, code, computation, data, and documentation.</li>
-      <li>The authors point out the major problem with hybrid objects, at least in regards to the data, which is a lack of data standards in most data publishing platforms.
+      <li>Here is a high level description of Fig 1.
         <ul>
-          <li>And who can blame these data hosting platforms? If they want people to use them, they need looser data standards than their competitors. On the other hand, enforcing and complying to data standards is <em>huge</em> problem because there are so many different possible formats to have data in (.json, .csv, .dat, .hdf5, .yaml, and the worst: .txt)</li>
+          <li>Brain activity is elicited and recorded.
+            <ul>
+              <li>Endogenous: user voluntarily engages activity in some mental task.</li>
+              <li>Exogenous: user is presented stimuli and correlates of brain activity are measured during this task.</li>
+            </ul>
+          </li>
+          <li>Features are extracted.</li>
+          <li>Control.
+            <ul>
+              <li>This block in the flow is complicated. Suffice it to say that this part is a signal handed to a robotic device.</li>
+            </ul>
+          </li>
+          <li>Online feedback.
+            <ul>
+              <li>User <em>sees</em> behavior and deems it rewarding / not rewarding.</li>
+            </ul>
+          </li>
+          <li>Rinse and Repeat.</li>
         </ul>
       </li>
-      <li>However, following the most prevalent compliant standard for publishing data sets should aid prospects of publication.
+      <li>Two key considerations for this loop to work:
+        <blockquote>
+          <p>Toning 2021</p>
+          <blockquote>
+            <p>Two concepts therefore become essential in the design of the BMI closed loop: a fast response by the robot to the user’s intention, in order to allow fine and reactive control over the device (Section 4), and a bidirectional interaction between the robot and BMI, in order to trigger and exploit the robot intelligence and thus support the user in performing complex actions (Section 5).</p>
+          </blockquote>
+        </blockquote>
+      </li>
+      <li>Ultimately this seems like communication bandwidth between the human/animal (affector) and the controlled device (effector).</li>
+    </ul>
+  </li>
+  <li>Invasive and Noninvasive Acquisition Techniques
+    <ul>
+      <li>Noninvasive BMIs can access either electrocorticogram signals (EEG) or hemodynamic activity (bloodflow) like seen in fMRIs.
         <ul>
-          <li>yes this is quite literally conformist.</li>
-          <li><strong>When it comes to data standards having an ecosystem is a very bad thing</strong></li>
-          <li>I think the best way to implement data standards is inheritance. You can make instantiations of some broader standard.</li>
-          <li>Though, this problem is a rabbit hole.</li>
+          <li>EEG has an advantage temporally but fMRI has an advantage spatially.</li>
         </ul>
       </li>
     </ul>
   </li>
-  <li>Interactive and integrated research objects
+  <li>Signal Processing and Feature Extraction
     <ul>
-      <li><strong>Claerbout Challenge</strong> is the problem of sharing your whole code/data and env. It always comes with caveats like dependencies that take forever to install.
+      <li>Lots of filtering happens in non-invasive BCI so that we can increase signal to noise ratio.
         <ul>
-          <li>“Code provided for reproducibility” is often not as reproducible as we’d like it to be.</li>
+          <li>Filter DC component.</li>
+          <li>Spatial filters.</li>
+          <li>Low dimensional reductions of data.</li>
+          <li>Hilbert transform, FFT transform, wavelet decomposition.</li>
         </ul>
       </li>
-      <li>Sharing integrated research objects like notebooks is nice approach for this.</li>
-      <li>But then comes the challenge of hosting such objects. So if you make a notebook, where do you put it so that people can engage. (I think github is fine).</li>
-      <li>But this eLife pilot executable research article looks awesome!
+    </ul>
+  </li>
+  <li>Feature Selection and Classification Algorithms
+    <ul>
+      <li>16 channels with 4-48hz resolution result in 340+ features to potentially consider.</li>
+      <li>During calibration channels that are discriminative or particularly relevant to functional neural correlates are selected in feature selection.</li>
+      <li>After online/control phase, the decoder is then used for offline discriminant classification.
         <ul>
-          <li>did not know that existed.
-            <blockquote>
-              <p>DuPre 2022</p>
-              <blockquote>
-                <p>We argue that sustainable development demands open standards with multistakeholder governance and leadership to ensure that resulting specifications are not driven by a single stakeholder.</p>
-              </blockquote>
-            </blockquote>
+          <li>SVM, Gaussian +/ kernel models.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Human-In-The-Loop: Interaction Modalities in Brain-Machine Interfaces
+    <ul>
+      <li>Exogenous paradigms
+        <ul>
+          <li>Steady-state evoked potential (SSEP) based BMIs: present several visual stimuli to target (like a flashing light) and the user can guide control by fixing their eyes on a specific target, which corresponds to an action in a remote-controlled robotic device.</li>
+          <li>P300 signals are evoked after some anomalistic pattern is observed. It’s hard to see how users picking out infrequent patterns or letters can lead to goal-directed control of a robotic arm. I’d have to look into the Farwell–Donchin spellers task.</li>
+          <li>Error-related signals can be used to increase robustness for BMI applications.</li>
+        </ul>
+      </li>
+      <li>Endogenous Paradigms
+        <ul>
+          <li>Event-related localized changes in frequency, or an increment or decrement in EEG.
+            <ul>
+              <li>$\mu$ and $\beta$ bands of activity specifically related to motor imagination.</li>
+              <li>Event-related synchronization or desynchronization.</li>
+            </ul>
+          </li>
+          <li>Task-specific modulation is represented as a marker on a screen, which is important because the capacity for the user to receive continuous feedback about cursor position.</li>
+          <li>Figure 2 quick jot.
+            <ul>
+              <li>Surprisingly, relative fisher scores for features were very stable over different frequencies.</li>
+              <li>Also 12hz ($\mu$ band) was particularly identifiable.</li>
+              <li>Quadratic boundary used for foot movement v.s. hand movement discrimination.
+                <ul>
+                  <li>This is also surprising as the feature representation is projected to a $\mathbb{R}^2$ subspace which is very compact. Yet a basic quadratic discrimator works!</li>
+                </ul>
+              </li>
+              <li>Signal trajectory needs to converge past boundary to be classified. In one trajectory, neither hand nor foot is detected.</li>
+            </ul>
           </li>
         </ul>
       </li>
-      <li>This is word soup, but I totally agree with the sentiment. Open standards need to be equitable for all researchers. Python notebooks are great if you use python, but if you only know matlab or R, these formats could cause you a great deal of trouble.</li>
     </ul>
   </li>
-  <li>Combining RMarkdown and Jupyter Notebooks seems like an excellent way to present research.
+  <li>Control strategies
     <ul>
-      <li>Though I might sub out RMarkdown for plain old markdown, or even better Jupyter Notebooks native mathjax (basically latex).</li>
+      <li>BMI control is often combined with a corresponding control strategy from the stimulated device.</li>
+      <li>While most systems use discrete control in continuous v.s. discrete control, there is the potential for both.
+        <ul>
+          <li>Discrete is slower and has lower bandwidth.</li>
+          <li>Continuous control is interesting but not as studied.
+            <ul>
+              <li>One of the interesting apps is as a continuous driving signal. The other app is the stabilization of discrete commands.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>EEG patterns are non-stationary.</li>
     </ul>
   </li>
-</ul>
-
-<blockquote>
-  <p>Dupre 2022</p>
-  <blockquote>
-    <p>By investing in infrastructure for integrated research objects that heavily rely on open, modular components, we can make strong contributions in individual research domains while still ensuring that these investments can be easily retooled and extended.</p>
-  </blockquote>
-</blockquote>
-
-<ul>
-  <li>This is a very good sentiment to have for these platforms. Building such components to be equitable across large and small research groups is a difficult challenge as the authors have pointed out. But yes, <a href="https://www.neurolibre.org/">NeuroLibre</a> and <a href="https://pangeo.io/">Pangeo</a> are steps in the right direction.</li>
-  <li>My only real opinion here is that it doesn’t seem to help a paper if it has these integrated objects. I don’t see many reviewers taking this stuff into account, but there should be an incentive for both authors and reviewers to do so. I think this would create more of a community around these tools and then things can build from there. The problem right now is that it is too attractive to publish and then never touch your code again.</li>
+  <li>Robot in the Loop: Sharing the Intelligence
+    <ul>
+      <li>Since many tasks (eg; robotic arm) reaching with non-invasive (and invasive?) BMI is pretty difficult, the devices are often equipped with (or learn) fine level control and stabilization.</li>
+      <li>Two approaches to machine autonomous control: 1. user looks at a spot and the machine takes responsibility for guiding it there using whatever control sequences it pleases or 2. user can offer more granular directions, like turning a wheelchair using a finite state machine (Iturrate et al. (52) qtd. in Toning 2021).
+        <ul>
+          <li>I am looking forward to hearing what the challenges for 2 are where. There seems to be a bottleneck in terms of how much bandwidth there is for control, just like in the case of continuous decoding.</li>
+        </ul>
+      </li>
+      <li>Sequential control passed between human and robotic arm during grasping task. Human uses menu-based assistance to guide arm and then uses BMI to complete grasping action.</li>
+      <li>Shared control ultimately seems like a nice future direction since humans can have higher-level control and robot can have lower-level control.</li>
+      <li>Subversion of explicit BMI signaling using detection of error-related signals in BMI.
+        <ul>
+          <li>An error-based override allows the robot to re-interpret the signal.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Current Applications
+    <ul>
+      <li>Devices, Interaction Modalities, and Control Strategies
+        <ul>
+          <li>Here the authors give a nice breakdown of mobile control studies: “ brain-controlled mobile robots for telepresence are the type that is most common in the literature (Figure 4a), representing 38.4% of the reviewed studies, followed by powered wheelchairs (22.1%), robotic arms (19.8%), lower limb and upper limb exoskeletons (9.3% and 7.0%, respectively), and quadcopters (3.5%).” (Toning 2021).</li>
+          <li>See figure:
+   <img src="/assets/images/tonin1.png" alt="bmi overview" width="500" align="center" /></li>
+          <li>Brain-controlled robotic arms are studied in several different studies.</li>
+          <li>Surprisingly only 16.3% of studies included participants that had motor defecits.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Open Challenges and Future Directions
+    <ul>
+      <li>Integration between BMI and robots is in early days. Normally, the robot is just seen as an actuator.</li>
+      <li>Overcoming commitment to exogenous systems and developing endogenous and self-paced systems has more deploy-ability but comes with challenges for calibration and user mental capacity to focus on this kind of control.</li>
+      <li>The biggest challenge is that most studies are not conducted in coordination with the end-users.
+        <ul>
+          <li>Which biases the design of the device and calibration/training strategies.</li>
+          <li>A lot of the time, training phases can take weeks.</li>
+        </ul>
+      </li>
+      <li>Applications in navigation and manipulation may not be the most prioritized use case for the end-user. It would be best to coordinate with patients whom BMI researchers aim to help in order to re-contextualize what their priorities are in order to get better alignment.</li>
+    </ul>
+  </li>
 </ul>
 
 
@@ -341,7 +444,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          6 minute read
+          5 minute read
         
       </span>
     
@@ -589,7 +692,7 @@ interfaces by Amy Orsborn and Bijan Pesaran
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 minute read
+          2 minute read
         
       </span>
     
@@ -673,7 +776,7 @@ interfaces by Amy Orsborn and Bijan Pesaran
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 minute read
+          2 minute read
         
       </span>
     
@@ -881,7 +984,7 @@ brain recordings by Nick Steinmetz.
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 minute read
+          2 minute read
         
       </span>
     
@@ -1089,7 +1192,7 @@ and Biological Connections by Joseph Marino
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 minute read
+          2 minute read
         
       </span>
     
@@ -1649,7 +1752,7 @@ and Biological Connections by Joseph Marino
 
 <!-- 
 
-<title>Review 10: Beyond advertising: New infrastructures for publishing integrated research objects - Alexander Ladd</title>
+<title>Review 31: Noninvasive Brain–Machine Interfaces for Robotic Devices - Alexander Ladd</title>
 <meta name="viewport" content="width=device-width">
 
 <link rel="stylesheet" href="/css/all.css"> -->

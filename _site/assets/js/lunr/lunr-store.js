@@ -178,4 +178,16 @@ var store = [{
         "tags": [],
         "url": "/reviews/review29/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 30: Eavesdropping on the Brain With 10,000 Electrodes",
+        "excerpt":"Eavesdropping on the Brain With 10,000 Electrodes by Barun Dutta Dutta, Barun. “Eavesdropping on the Brain With 10,000 Electrodes.” IEEE Spectrum (2022) This is interesting because this article is released by Barun Dutta, one of the principal investigators of the neuropixels devices. The hook begins with the infamous brain-computer metaphor....","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review30/",
+        "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 31: Noninvasive Brain–Machine Interfaces for Robotic Devices",
+        "excerpt":"Noninvasive Brain–Machine Interfaces for Robotic Devices by Luca Toning and José del R. Millán Tonin, Luca, and José del R. Millán. “Noninvasive brain–machine interfaces for robotic devices.” Annual Review of Control, Robotics, and Autonomous Systems 4 (2021): 191-214. First this from the abstract: “. We found that BMIs are used...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review31/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

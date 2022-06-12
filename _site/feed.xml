@@ -1,4 +1,228 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-29T23:38:43-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 29: Emergence of Coordinated Neural Dynamics Underlies Neuroprosthetic Learning and Skillful Control</title><link href="http://localhost:4000/reviews/review29/" rel="alternate" type="text/html" title="Review 29: Emergence of Coordinated Neural Dynamics Underlies Neuroprosthetic Learning and Skillful Control" /><published>2022-05-28T05:16:13-07:00</published><updated>2022-05-28T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review29</id><content type="html" xml:base="http://localhost:4000/reviews/review29/">&lt;p&gt;&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0896627317300405&quot;&gt;Emergence of Coordinated Neural Dynamics Underlies Neuroprosthetic Learning and Skillful Control&lt;/a&gt; by &lt;a href=&quot;https://www.actingbrain.com/vivek-athalye&quot;&gt;Vivek Athalye&lt;/a&gt; and &lt;a href=&quot;https://www2.eecs.berkeley.edu/Faculty/Homepages/carmena.html&quot;&gt;Jose Carmena&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-12T11:52:42-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 31: Noninvasive Brain–Machine Interfaces for Robotic Devices</title><link href="http://localhost:4000/reviews/review31/" rel="alternate" type="text/html" title="Review 31: Noninvasive Brain–Machine Interfaces for Robotic Devices" /><published>2022-06-11T05:16:13-07:00</published><updated>2022-06-11T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review31</id><content type="html" xml:base="http://localhost:4000/reviews/review31/">&lt;p&gt;&lt;a href=&quot;https://spectrum.ieee.org/brain-implant&quot;&gt;Noninvasive Brain–Machine Interfaces for Robotic Devices&lt;/a&gt; by &lt;a href=&quot;https://scholar.google.com/citations?user=U2N9FlcAAAAJ&amp;amp;hl=en&quot;&gt;Luca Toning&lt;/a&gt; and &lt;a href=&quot;https://www.ece.utexas.edu/people/faculty/jose-del-r-millan&quot;&gt;José del R. Millán&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tonin, Luca, and José del R. Millán. “Noninvasive brain–machine interfaces for robotic devices.” Annual Review of Control, Robotics, and Autonomous Systems 4 (2021): 191-214.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First this from the abstract: “. We found that BMIs are used mostly to drive devices for navigation (e.g., telepresence mobile robots), with BMI paradigms based mainly on exogenous stimulation, and the majority of brain-actuated robots adopt a discrete control strategy,”.&lt;/li&gt;
+  &lt;li&gt;Introduction
+    &lt;ul&gt;
+      &lt;li&gt;Main focus of brain-machine interfaces, or BMIs, is to restore motor functions for those with damaged pathways or motor dysfunction.
+eg; brain-controlled cursor movement, keyboards + typing, remote-controlled devices.&lt;/li&gt;
+      &lt;li&gt;Not just a plug and play engineering problem, we should think about how to generate effective control signals as well.&lt;/li&gt;
+      &lt;li&gt;Paper roadmap: introduce closed-loop system -&amp;gt; turn to main modalities of interaction/control -&amp;gt; provide an overview of 86 works over the past 15 years -&amp;gt; lay out challenges and future directions.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The Closed Loop of a Brain-Machine Interface: A Mutual Learning Interaction
+    &lt;ul&gt;
+      &lt;li&gt;Here is a high level description of Fig 1.
+        &lt;ul&gt;
+          &lt;li&gt;Brain activity is elicited and recorded.
+            &lt;ul&gt;
+              &lt;li&gt;Endogenous: user voluntarily engages activity in some mental task.&lt;/li&gt;
+              &lt;li&gt;Exogenous: user is presented stimuli and correlates of brain activity are measured during this task.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Features are extracted.&lt;/li&gt;
+          &lt;li&gt;Control.
+            &lt;ul&gt;
+              &lt;li&gt;This block in the flow is complicated. Suffice it to say that this part is a signal handed to a robotic device.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Online feedback.
+            &lt;ul&gt;
+              &lt;li&gt;User &lt;em&gt;sees&lt;/em&gt; behavior and deems it rewarding / not rewarding.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Rinse and Repeat.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Two key considerations for this loop to work:
+        &lt;blockquote&gt;
+          &lt;p&gt;Toning 2021&lt;/p&gt;
+          &lt;blockquote&gt;
+            &lt;p&gt;Two concepts therefore become essential in the design of the BMI closed loop: a fast response by the robot to the user’s intention, in order to allow fine and reactive control over the device (Section 4), and a bidirectional interaction between the robot and BMI, in order to trigger and exploit the robot intelligence and thus support the user in performing complex actions (Section 5).&lt;/p&gt;
+          &lt;/blockquote&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Ultimately this seems like communication bandwidth between the human/animal (affector) and the controlled device (effector).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Invasive and Noninvasive Acquisition Techniques
+    &lt;ul&gt;
+      &lt;li&gt;Noninvasive BMIs can access either electrocorticogram signals (EEG) or hemodynamic activity (bloodflow) like seen in fMRIs.
+        &lt;ul&gt;
+          &lt;li&gt;EEG has an advantage temporally but fMRI has an advantage spatially.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Signal Processing and Feature Extraction
+    &lt;ul&gt;
+      &lt;li&gt;Lots of filtering happens in non-invasive BCI so that we can increase signal to noise ratio.
+        &lt;ul&gt;
+          &lt;li&gt;Filter DC component.&lt;/li&gt;
+          &lt;li&gt;Spatial filters.&lt;/li&gt;
+          &lt;li&gt;Low dimensional reductions of data.&lt;/li&gt;
+          &lt;li&gt;Hilbert transform, FFT transform, wavelet decomposition.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Feature Selection and Classification Algorithms
+    &lt;ul&gt;
+      &lt;li&gt;16 channels with 4-48hz resolution result in 340+ features to potentially consider.&lt;/li&gt;
+      &lt;li&gt;During calibration channels that are discriminative or particularly relevant to functional neural correlates are selected in feature selection.&lt;/li&gt;
+      &lt;li&gt;After online/control phase, the decoder is then used for offline discriminant classification.
+        &lt;ul&gt;
+          &lt;li&gt;SVM, Gaussian +/ kernel models.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Human-In-The-Loop: Interaction Modalities in Brain-Machine Interfaces
+    &lt;ul&gt;
+      &lt;li&gt;Exogenous paradigms
+        &lt;ul&gt;
+          &lt;li&gt;Steady-state evoked potential (SSEP) based BMIs: present several visual stimuli to target (like a flashing light) and the user can guide control by fixing their eyes on a specific target, which corresponds to an action in a remote-controlled robotic device.&lt;/li&gt;
+          &lt;li&gt;P300 signals are evoked after some anomalistic pattern is observed. It’s hard to see how users picking out infrequent patterns or letters can lead to goal-directed control of a robotic arm. I’d have to look into the Farwell–Donchin spellers task.&lt;/li&gt;
+          &lt;li&gt;Error-related signals can be used to increase robustness for BMI applications.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Endogenous Paradigms
+        &lt;ul&gt;
+          &lt;li&gt;Event-related localized changes in frequency, or an increment or decrement in EEG.
+            &lt;ul&gt;
+              &lt;li&gt;$\mu$ and $\beta$ bands of activity specifically related to motor imagination.&lt;/li&gt;
+              &lt;li&gt;Event-related synchronization or desynchronization.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Task-specific modulation is represented as a marker on a screen, which is important because the capacity for the user to receive continuous feedback about cursor position.&lt;/li&gt;
+          &lt;li&gt;Figure 2 quick jot.
+            &lt;ul&gt;
+              &lt;li&gt;Surprisingly, relative fisher scores for features were very stable over different frequencies.&lt;/li&gt;
+              &lt;li&gt;Also 12hz ($\mu$ band) was particularly identifiable.&lt;/li&gt;
+              &lt;li&gt;Quadratic boundary used for foot movement v.s. hand movement discrimination.
+                &lt;ul&gt;
+                  &lt;li&gt;This is also surprising as the feature representation is projected to a $\mathbb{R}^2$ subspace which is very compact. Yet a basic quadratic discrimator works!&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;Signal trajectory needs to converge past boundary to be classified. In one trajectory, neither hand nor foot is detected.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Control strategies
+    &lt;ul&gt;
+      &lt;li&gt;BMI control is often combined with a corresponding control strategy from the stimulated device.&lt;/li&gt;
+      &lt;li&gt;While most systems use discrete control in continuous v.s. discrete control, there is the potential for both.
+        &lt;ul&gt;
+          &lt;li&gt;Discrete is slower and has lower bandwidth.&lt;/li&gt;
+          &lt;li&gt;Continuous control is interesting but not as studied.
+            &lt;ul&gt;
+              &lt;li&gt;One of the interesting apps is as a continuous driving signal. The other app is the stabilization of discrete commands.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;EEG patterns are non-stationary.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Robot in the Loop: Sharing the Intelligence
+    &lt;ul&gt;
+      &lt;li&gt;Since many tasks (eg; robotic arm) reaching with non-invasive (and invasive?) BMI is pretty difficult, the devices are often equipped with (or learn) fine level control and stabilization.&lt;/li&gt;
+      &lt;li&gt;Two approaches to machine autonomous control: 1. user looks at a spot and the machine takes responsibility for guiding it there using whatever control sequences it pleases or 2. user can offer more granular directions, like turning a wheelchair using a finite state machine (Iturrate et al. (52) qtd. in Toning 2021).
+        &lt;ul&gt;
+          &lt;li&gt;I am looking forward to hearing what the challenges for 2 are where. There seems to be a bottleneck in terms of how much bandwidth there is for control, just like in the case of continuous decoding.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Sequential control passed between human and robotic arm during grasping task. Human uses menu-based assistance to guide arm and then uses BMI to complete grasping action.&lt;/li&gt;
+      &lt;li&gt;Shared control ultimately seems like a nice future direction since humans can have higher-level control and robot can have lower-level control.&lt;/li&gt;
+      &lt;li&gt;Subversion of explicit BMI signaling using detection of error-related signals in BMI.
+        &lt;ul&gt;
+          &lt;li&gt;An error-based override allows the robot to re-interpret the signal.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Current Applications
+    &lt;ul&gt;
+      &lt;li&gt;Devices, Interaction Modalities, and Control Strategies
+        &lt;ul&gt;
+          &lt;li&gt;Here the authors give a nice breakdown of mobile control studies: “ brain-controlled mobile robots for telepresence are the type that is most common in the literature (Figure 4a), representing 38.4% of the reviewed studies, followed by powered wheelchairs (22.1%), robotic arms (19.8%), lower limb and upper limb exoskeletons (9.3% and 7.0%, respectively), and quadcopters (3.5%).” (Toning 2021).&lt;/li&gt;
+          &lt;li&gt;See figure:
+   &lt;img src=&quot;/assets/images/tonin1.png&quot; alt=&quot;bmi overview&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
+          &lt;li&gt;Brain-controlled robotic arms are studied in several different studies.&lt;/li&gt;
+          &lt;li&gt;Surprisingly only 16.3% of studies included participants that had motor defecits.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Open Challenges and Future Directions
+    &lt;ul&gt;
+      &lt;li&gt;Integration between BMI and robots is in early days. Normally, the robot is just seen as an actuator.&lt;/li&gt;
+      &lt;li&gt;Overcoming commitment to exogenous systems and developing endogenous and self-paced systems has more deploy-ability but comes with challenges for calibration and user mental capacity to focus on this kind of control.&lt;/li&gt;
+      &lt;li&gt;The biggest challenge is that most studies are not conducted in coordination with the end-users.
+        &lt;ul&gt;
+          &lt;li&gt;Which biases the design of the device and calibration/training strategies.&lt;/li&gt;
+          &lt;li&gt;A lot of the time, training phases can take weeks.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Applications in navigation and manipulation may not be the most prioritized use case for the end-user. It would be best to coordinate with patients whom BMI researchers aim to help in order to re-contextualize what their priorities are in order to get better alignment.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Noninvasive Brain–Machine Interfaces for Robotic Devices by Luca Toning and José del R. Millán</summary></entry><entry><title type="html">Review 30: Eavesdropping on the Brain With 10,000 Electrodes</title><link href="http://localhost:4000/reviews/review30/" rel="alternate" type="text/html" title="Review 30: Eavesdropping on the Brain With 10,000 Electrodes" /><published>2022-06-05T05:16:13-07:00</published><updated>2022-06-05T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review30</id><content type="html" xml:base="http://localhost:4000/reviews/review30/">&lt;p&gt;&lt;a href=&quot;https://spectrum.ieee.org/brain-implant&quot;&gt;Eavesdropping on the Brain With 10,000 Electrodes&lt;/a&gt; by &lt;a href=&quot;https://www.imecitf.com/2021/health/speakers/barun-dutta-chief-scientist-sts-imec&quot;&gt;Barun Dutta&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Dutta, Barun. “Eavesdropping on the Brain With 10,000 Electrodes.” IEEE Spectrum (2022)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This is interesting because this article is released by Barun Dutta, one of the principal investigators of the neuropixels devices.&lt;/li&gt;
+  &lt;li&gt;The hook begins with the infamous brain-computer metaphor.
+    &lt;ul&gt;
+      &lt;li&gt;This “brain is a computer” comparison is tired, but this hook works well anyway because it points to the really astounding fact that the brain only requires 20 watts of power.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The introduction sets the stage for introducing &lt;a href=&quot;https://www.imec-int.com/en&quot;&gt;Imec&lt;/a&gt; importance of large-scale recordings of individual neurons and a freely moving animal. This company does some really awesome things with nano and digital technologies.&lt;/li&gt;
+  &lt;li&gt;The name “neuropixels” is explained as a field potential recording system that relies on signal processing, kind of like a camera.&lt;/li&gt;
+  &lt;li&gt;We also see that neuropixels aims to tackle some of the issues located physically deeper in the brain.&lt;/li&gt;
+  &lt;li&gt;Neuropixels 1.0 has a single shank and 1000 electrodes.&lt;/li&gt;
+  &lt;li&gt;Neuropixels 2.0 has four shanks with 1280 electrodes.&lt;/li&gt;
+  &lt;li&gt;With 3.0 they claim they are moving along an exponential growth curve for BCI recording.&lt;/li&gt;
+  &lt;li&gt;It is encouraging to see Imec’s efforts in materials sciences in CMOS fabrication.
+    &lt;ul&gt;
+      &lt;li&gt;low impedance electro-ceramic shanks sound more durable and much less likely to have electrical discharge.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I find this quote surprising:
+    &lt;blockquote&gt;
+      &lt;p&gt;Dutta (2022)&lt;/p&gt;
+      &lt;blockquote&gt;
+        &lt;p&gt;“the thousandfold difference in elasticity between CMOS shanks and brain tissue”&lt;/p&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;because I had no idea that even the most flexible shanks are still this level of magnitude more rigid than brain tissue. This  highlights the importance of these efforts in materials sciences and electrical engineering.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;2D readouts help power stabilization algorithm that allows the long-term tracking of specific neurons.&lt;/li&gt;
+  &lt;li&gt;The new neuropixels device also features a smaller head-stage.&lt;/li&gt;
+  &lt;li&gt;30 kilohertz sampling rate is very high. I wonder if anyone makes the argument that a higher sampling rate could ever be needed. I think at this resolution one could even analyze fast activating channel dynamics.&lt;/li&gt;
+  &lt;li&gt;The “pixel” or neuron recording count is predicted to leap 50,000 - 100,000 neurons.
+    &lt;ul&gt;
+      &lt;li&gt;Big if true.&lt;/li&gt;
+      &lt;li&gt;Neuropixels 1 has 1000 recording sites and then Neuropixels 2 has 6000 recording sites, so a projection of 50k is bold.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Overall, the pace of development is astounding but in my opinion “Moore’s law” is a mischaracterization. Here’s why:
+    &lt;ul&gt;
+      &lt;li&gt;So far we’ve observed one cycle and there was a 6x increase in recording sites, which is technically in line with the trend. However, this characterization of exponential growth would need to be sustained over multiple cycles… I think it is just too early to call.&lt;/li&gt;
+      &lt;li&gt;Also, 1.0 and 2.0 don’t have that much of a difference in recording fidelity. 2.0 gets the increase in recording sites using more shanks and better tracking algorithms.&lt;/li&gt;
+      &lt;li&gt;While the advent of these areas of development is notable, I wonder if we see sustained progress in these domains or if new features can be added that will enable increasing recording sites in other ways.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Eavesdropping on the Brain With 10,000 Electrodes by Barun Dutta</summary></entry><entry><title type="html">Review 29: Emergence of Coordinated Neural Dynamics Underlies Neuroprosthetic Learning and Skillful Control</title><link href="http://localhost:4000/reviews/review29/" rel="alternate" type="text/html" title="Review 29: Emergence of Coordinated Neural Dynamics Underlies Neuroprosthetic Learning and Skillful Control" /><published>2022-05-28T05:16:13-07:00</published><updated>2022-05-28T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review29</id><content type="html" xml:base="http://localhost:4000/reviews/review29/">&lt;p&gt;&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0896627317300405&quot;&gt;Emergence of Coordinated Neural Dynamics Underlies Neuroprosthetic Learning and Skillful Control&lt;/a&gt; by &lt;a href=&quot;https://www.actingbrain.com/vivek-athalye&quot;&gt;Vivek Athalye&lt;/a&gt; and &lt;a href=&quot;https://www2.eecs.berkeley.edu/Faculty/Homepages/carmena.html&quot;&gt;Jose Carmena&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Athalye, Vivek R., et al. “Emergence of coordinated neural dynamics underlies neuroprosthetic learning and skillful control.” Neuron 93.4 (2017): 955-970.&lt;/p&gt;
 
@@ -92,7 +316,41 @@ Signal-specific readout space drives activity.
       &lt;li&gt;In my opinion, each sentence here can be taken apart and used to brainstorm future research directions that are related. There is an interesting web of interesting connections here.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Emergence of Coordinated Neural Dynamics Underlies Neuroprosthetic Learning and Skillful Control by Vivek Athalye and Jose Carmena</summary></entry><entry><title type="html">Review 27: Parsing learning in networks using brain–machine interfaces</title><link href="http://localhost:4000/reviews/review27/" rel="alternate" type="text/html" title="Review 27: Parsing learning in networks using brain–machine interfaces" /><published>2022-05-14T05:16:13-07:00</published><updated>2022-05-14T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review27</id><content type="html" xml:base="http://localhost:4000/reviews/review27/">&lt;p&gt;&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0959438817301642?casa_token=mBc7NGX5SMoAAAAA:_u-U4AxlrusxSveU-DitDvaDjvUhYixFrO7ZuZs4B0iIa6Dy0xmDc6Za4MZYRqBFf8E7IiwcVOQ&quot;&gt;Parsing learning in networks using brain-machine
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Emergence of Coordinated Neural Dynamics Underlies Neuroprosthetic Learning and Skillful Control by Vivek Athalye and Jose Carmena</summary></entry><entry><title type="html">Review 28: Four ethical priorities for neurotechnologies and AI</title><link href="http://localhost:4000/reviews/review28/" rel="alternate" type="text/html" title="Review 28: Four ethical priorities for neurotechnologies and AI" /><published>2022-05-14T05:16:13-07:00</published><updated>2022-05-14T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review28</id><content type="html" xml:base="http://localhost:4000/reviews/review28/">&lt;p&gt;&lt;a href=&quot;https://www.nature.com/articles/551159a&quot;&gt;Four ethical priorities for neurotechnologies and AI
+&lt;/a&gt; by &lt;a href=&quot;https://scholar.google.com/citations?user=G0WcJagAAAAJ&quot;&gt;Rafael Yuste&lt;/a&gt; and &lt;a href=&quot;https://phil.washington.edu/people/sara-goering&quot;&gt;Sara Goering&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Yuste, Rafael, et al. “Four ethical priorities for neurotechnologies and AI.” Nature 551.7679 (2017): 159-163.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;While full integration of neurotechnology into human life may take decades, it is critical to think about the ethical applications now.&lt;/li&gt;
+  &lt;li&gt;The morningside group is comprised of neurotech companies, academic labs, and intl. brain projects.&lt;/li&gt;
+  &lt;li&gt;The existing ethics guidlines, such as Declariation of Helsinki in 1964, Belmont report, and Asilomar AI report, don’t cover many of the issues that are raised by BCI technology.&lt;/li&gt;
+  &lt;li&gt;This is a very cool tidbit:
+    &lt;blockquote&gt;
+      &lt;p&gt;(Yuste &amp;amp; Goering 2017)&lt;/p&gt;
+      &lt;blockquote&gt;
+        &lt;p&gt;Meanwhile, researchers at Duke University in Durham, North Carolina, have shown that three monkeys with electrode implants can operate as a ‘brain net’ to move an avatar arm collaboratively.&lt;/p&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www.nature.com/articles/srep10767&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;This BrainNet paper is one I am really interested in reading.&lt;/li&gt;
+  &lt;li&gt;DARPA Neural Engineering Project that aims to implant 1 million electrodes and selectively stimulates up to 100k neurons. The University of Freiburg in Germany is using EEG signals to decode motor planning activity to control robots.&lt;/li&gt;
+  &lt;li&gt;The four ethical priorities:
+    &lt;ul&gt;
+      &lt;li&gt;Privacy and consent: This concern has been pervasive throughout all types of recent technological advancements. There are many researchers working on what makes a system secure, but keeping data secure has proven to be a comparably large challenge as well. Often times data breaches that would occur in neurotech may use external data to draw connections that might allow them to identify individuals based on neural activity. Furthermore, many potential exploitative practices can extend from the centralization of neural data. The authors pose multiple mitigation strategies, but I really strongly agree with the strategy of not allowing the centralized storage of human neural data from BMI devices. While this may limit how devices can be developed, for now, it seems like a central safeguard from potentially disastrous data breaches.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Agency / Identity: This concern caught me off guard because I hadn’t considered it much at all until I read this. Simply put, BMI devices can blue the line of how much agency they can attribute to certain actions. In this way, BMI devices can interfere with someone’s sense of identity in a negative way. I also found the potential mitigation strategies here less satisfying, although I don’t have any better ideas. I am in support for drafting a constitution of “neurorights” but I don’t see how this would help those with issues in BMI affected identity. Better yet would be a fast safeguard in each device to immediately shut off its functioning if needed. The reason I advocate for this is that the user should have complete autonomy over when they use the device and when it is inactive. This does open the device up to hacking. Also this kind of on/off switch might not be possible due to negative consequences from terminating the tight feedback loop between device and person. Regardless, I generally advocate that BMI functionality should be treated more like glasses and less like a pacemaker so that users will never feel completely trapped with the BMI.&lt;/li&gt;
+  &lt;li&gt;Augmentation: This is a very futuristic concern, but also one that should be considered now. At this point, the weaponization and militaristic augmentation of BMI devices are not major concerns. Though in the future they may be. To steer BMI devices on the right path, the authors argue for the establishment of a neurotechnology geneva convention style agreement about what research and applications can be ethically conducted using BMI devices.&lt;/li&gt;
+  &lt;li&gt;Bias: Just like ML systems nowadays are biased by negative aspects of their data, such as hate speech in text datasets or lack of representation in image datasets, BMI devices can further perpetuate societal inequalities. To prevent this, it is necessary to open source data, algorithms, user research groups, and design. Through the proper channels, civil liberties and nonprofit auditors should be able to inspect the scientific practices of companies or groups doing neural engineering. Representation of diverse needs and circumstances should be considered in thorough research feature testing, quality testing, and design. Recently, there have been many failures in preventing biased models and disinformation on major technology platforms, so the future for this will be challenging.&lt;/li&gt;
+  &lt;li&gt;Moving forward:
+    &lt;ul&gt;
+      &lt;li&gt;This kind of review provides great directions for moving forward; including widespread adoption of a Hippocratic oath for neuro engineers and ethical discussion sections for labs. While training certainly helps move employees and individuals in the right direction, in my opinion, the field would benefit from the following: (1) Some kind of agency responsible for oversight of responsible use of BMI devices. (2) Forums / conferences / journals for neuroethics. (3) Some kind of open sourced / democratized code for precedents.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Four ethical priorities for neurotechnologies and AI by Rafael Yuste and Sara Goering</summary></entry><entry><title type="html">Review 27: Parsing learning in networks using brain–machine interfaces</title><link href="http://localhost:4000/reviews/review27/" rel="alternate" type="text/html" title="Review 27: Parsing learning in networks using brain–machine interfaces" /><published>2022-05-14T05:16:13-07:00</published><updated>2022-05-14T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review27</id><content type="html" xml:base="http://localhost:4000/reviews/review27/">&lt;p&gt;&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0959438817301642?casa_token=mBc7NGX5SMoAAAAA:_u-U4AxlrusxSveU-DitDvaDjvUhYixFrO7ZuZs4B0iIa6Dy0xmDc6Za4MZYRqBFf8E7IiwcVOQ&quot;&gt;Parsing learning in networks using brain-machine
 interfaces&lt;/a&gt; by &lt;a href=&quot;https://people.ece.uw.edu/orsborn_amy/&quot;&gt;Amy Orsborn&lt;/a&gt; and &lt;a href=&quot;https://as.nyu.edu/content/nyu-as/as/faculty/bijan-pesaran.html&quot;&gt;Bijan Pesaran&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Orsborn, Amy L., and Bijan Pesaran. “Parsing learning in networks using brain-machine interfaces.” Current opinion in neurobiology 46 (2017): 76-83.&lt;/p&gt;
@@ -156,41 +414,7 @@ interfaces&lt;/a&gt; by &lt;a href=&quot;https://people.ece.uw.edu/orsborn_amy/&
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Parsing learning in networks using brain-machine interfaces by Amy Orsborn and Bijan Pesaran</summary></entry><entry><title type="html">Review 28: Four ethical priorities for neurotechnologies and AI</title><link href="http://localhost:4000/reviews/review28/" rel="alternate" type="text/html" title="Review 28: Four ethical priorities for neurotechnologies and AI" /><published>2022-05-14T05:16:13-07:00</published><updated>2022-05-14T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review28</id><content type="html" xml:base="http://localhost:4000/reviews/review28/">&lt;p&gt;&lt;a href=&quot;https://www.nature.com/articles/551159a&quot;&gt;Four ethical priorities for neurotechnologies and AI
-&lt;/a&gt; by &lt;a href=&quot;https://scholar.google.com/citations?user=G0WcJagAAAAJ&quot;&gt;Rafael Yuste&lt;/a&gt; and &lt;a href=&quot;https://phil.washington.edu/people/sara-goering&quot;&gt;Sara Goering&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Yuste, Rafael, et al. “Four ethical priorities for neurotechnologies and AI.” Nature 551.7679 (2017): 159-163.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;While full integration of neurotechnology into human life may take decades, it is critical to think about the ethical applications now.&lt;/li&gt;
-  &lt;li&gt;The morningside group is comprised of neurotech companies, academic labs, and intl. brain projects.&lt;/li&gt;
-  &lt;li&gt;The existing ethics guidlines, such as Declariation of Helsinki in 1964, Belmont report, and Asilomar AI report, don’t cover many of the issues that are raised by BCI technology.&lt;/li&gt;
-  &lt;li&gt;This is a very cool tidbit:
-    &lt;blockquote&gt;
-      &lt;p&gt;(Yuste &amp;amp; Goering 2017)&lt;/p&gt;
-      &lt;blockquote&gt;
-        &lt;p&gt;Meanwhile, researchers at Duke University in Durham, North Carolina, have shown that three monkeys with electrode implants can operate as a ‘brain net’ to move an avatar arm collaboratively.&lt;/p&gt;
-      &lt;/blockquote&gt;
-    &lt;/blockquote&gt;
-
-    &lt;p&gt;&lt;a href=&quot;https://www.nature.com/articles/srep10767&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;This BrainNet paper is one I am really interested in reading.&lt;/li&gt;
-  &lt;li&gt;DARPA Neural Engineering Project that aims to implant 1 million electrodes and selectively stimulates up to 100k neurons. The University of Freiburg in Germany is using EEG signals to decode motor planning activity to control robots.&lt;/li&gt;
-  &lt;li&gt;The four ethical priorities:
-    &lt;ul&gt;
-      &lt;li&gt;Privacy and consent: This concern has been pervasive throughout all types of recent technological advancements. There are many researchers working on what makes a system secure, but keeping data secure has proven to be a comparably large challenge as well. Often times data breaches that would occur in neurotech may use external data to draw connections that might allow them to identify individuals based on neural activity. Furthermore, many potential exploitative practices can extend from the centralization of neural data. The authors pose multiple mitigation strategies, but I really strongly agree with the strategy of not allowing the centralized storage of human neural data from BMI devices. While this may limit how devices can be developed, for now, it seems like a central safeguard from potentially disastrous data breaches.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Agency / Identity: This concern caught me off guard because I hadn’t considered it much at all until I read this. Simply put, BMI devices can blue the line of how much agency they can attribute to certain actions. In this way, BMI devices can interfere with someone’s sense of identity in a negative way. I also found the potential mitigation strategies here less satisfying, although I don’t have any better ideas. I am in support for drafting a constitution of “neurorights” but I don’t see how this would help those with issues in BMI affected identity. Better yet would be a fast safeguard in each device to immediately shut off its functioning if needed. The reason I advocate for this is that the user should have complete autonomy over when they use the device and when it is inactive. This does open the device up to hacking. Also this kind of on/off switch might not be possible due to negative consequences from terminating the tight feedback loop between device and person. Regardless, I generally advocate that BMI functionality should be treated more like glasses and less like a pacemaker so that users will never feel completely trapped with the BMI.&lt;/li&gt;
-  &lt;li&gt;Augmentation: This is a very futuristic concern, but also one that should be considered now. At this point, the weaponization and militaristic augmentation of BMI devices are not major concerns. Though in the future they may be. To steer BMI devices on the right path, the authors argue for the establishment of a neurotechnology geneva convention style agreement about what research and applications can be ethically conducted using BMI devices.&lt;/li&gt;
-  &lt;li&gt;Bias: Just like ML systems nowadays are biased by negative aspects of their data, such as hate speech in text datasets or lack of representation in image datasets, BMI devices can further perpetuate societal inequalities. To prevent this, it is necessary to open source data, algorithms, user research groups, and design. Through the proper channels, civil liberties and nonprofit auditors should be able to inspect the scientific practices of companies or groups doing neural engineering. Representation of diverse needs and circumstances should be considered in thorough research feature testing, quality testing, and design. Recently, there have been many failures in preventing biased models and disinformation on major technology platforms, so the future for this will be challenging.&lt;/li&gt;
-  &lt;li&gt;Moving forward:
-    &lt;ul&gt;
-      &lt;li&gt;This kind of review provides great directions for moving forward; including widespread adoption of a Hippocratic oath for neuro engineers and ethical discussion sections for labs. While training certainly helps move employees and individuals in the right direction, in my opinion, the field would benefit from the following: (1) Some kind of agency responsible for oversight of responsible use of BMI devices. (2) Forums / conferences / journals for neuroethics. (3) Some kind of open sourced / democratized code for precedents.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Four ethical priorities for neurotechnologies and AI by Rafael Yuste and Sara Goering</summary></entry><entry><title type="html">Review 26: A control-theoretic approach to brain-computer interface design</title><link href="http://localhost:4000/reviews/review26/" rel="alternate" type="text/html" title="Review 26: A control-theoretic approach to brain-computer interface design" /><published>2022-05-07T05:16:13-07:00</published><updated>2022-05-07T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review26</id><content type="html" xml:base="http://localhost:4000/reviews/review26/">&lt;p&gt;&lt;a href=&quot;https://smithlab.net/~schase/docs/zhang_acc_2016.pdf&quot;&gt;A control-theoretic approach to brain-computer interface design&lt;/a&gt; by Yin Zhang and &lt;a href=&quot;https://www.cmu.edu/bme/People/Faculty/profile/schase.html&quot;&gt;Steven Chase&lt;/a&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Parsing learning in networks using brain-machine interfaces by Amy Orsborn and Bijan Pesaran</summary></entry><entry><title type="html">Review 26: A control-theoretic approach to brain-computer interface design</title><link href="http://localhost:4000/reviews/review26/" rel="alternate" type="text/html" title="Review 26: A control-theoretic approach to brain-computer interface design" /><published>2022-05-07T05:16:13-07:00</published><updated>2022-05-07T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review26</id><content type="html" xml:base="http://localhost:4000/reviews/review26/">&lt;p&gt;&lt;a href=&quot;https://smithlab.net/~schase/docs/zhang_acc_2016.pdf&quot;&gt;A control-theoretic approach to brain-computer interface design&lt;/a&gt; by Yin Zhang and &lt;a href=&quot;https://www.cmu.edu/bme/People/Faculty/profile/schase.html&quot;&gt;Steven Chase&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Zhang, Yin, and Steven M. Chase. “A control-theoretic approach to brain-computer interface design.” 2016 American Control Conference (ACC). IEEE, 2016.&lt;/p&gt;
 
@@ -501,75 +725,4 @@ brain recordings&lt;/a&gt; by &lt;a href=&quot;http://www.nicksteinmetz.com/#:~:
   &lt;li&gt;Neuropixels code and data are public.&lt;/li&gt;
   &lt;li&gt;Dr. Paulk says diversity of waveforms produced is a new and surprising result.&lt;/li&gt;
   &lt;li&gt;There still exist significant engineering challenges around neuropixels, like how to stablize the device and transmit data.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Cracking the Neural Code in Humans by Emily Singer at the Simons Foundation.</summary></entry><entry><title type="html">Review 20: Trends in Computational Neuroscience: Cosyne 2022</title><link href="http://localhost:4000/reviews/review20/" rel="alternate" type="text/html" title="Review 20: Trends in Computational Neuroscience: Cosyne 2022" /><published>2022-03-25T05:16:13-07:00</published><updated>2022-03-25T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review20</id><content type="html" xml:base="http://localhost:4000/reviews/review20/">&lt;p&gt;&lt;a href=&quot;https://saberatalukder.com/cosyne_2022_computational_and_systems_neuroscience_in_review.html&quot;&gt;Trends in Computational Neuroscience: Cosyne 2022
-&lt;/a&gt; by &lt;a href=&quot;https://saberatalukder.com/index.html&quot;&gt;Sabera Talukder&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I couldn’t go to Cosyne but it’s a workshop/conference I’d like to go to one day so I wanted to get the inside scoop of what gets discussed.&lt;/li&gt;
-  &lt;li&gt;Fortunately, this blog kept me in the loop, so that’s pretty cool.&lt;/li&gt;
-  &lt;li&gt;Notes:&lt;/li&gt;
-  &lt;li&gt;Major Trends
-    &lt;ul&gt;
-      &lt;li&gt;Behavior
-        &lt;ul&gt;
-          &lt;li&gt;Especially w.r.t. software, data analysis pipelines and pose tracking estimation.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Comparing ANNs to Biologically realistic NN
-        &lt;ul&gt;
-          &lt;li&gt;I didn’t have FOMO hearing about behavior, but now I do.&lt;/li&gt;
-          &lt;li&gt;One-to-one biological to neural network comparison.&lt;/li&gt;
-          &lt;li&gt;Generative modeling neural data with latent representation.
-            &lt;ul&gt;
-              &lt;li&gt;This one has important impact on neuroengineering.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Biological rules with ML tasks.
-            &lt;ul&gt;
-              &lt;li&gt;This is one is interesting because I’d like to see how well biologically realistic credit assignment matches up against SOTA methods for MNIST.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;network similarity: how can you tell the distance between two nets?&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Dimensionality Reduction
-        &lt;ul&gt;
-          &lt;li&gt;This one trend shows that PCA, UMAP, and tSNE can be improved upon to get low dim. representations that do not warp local and/or global distance. Ah, the curse of dimensionality.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Data Scaling
-        &lt;ul&gt;
-          &lt;li&gt;How to curate / record / assay large experiments for high throughput data?&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;I liked the writing / blog style because it was interesting to read and broke the monotony from reading papers.&lt;/li&gt;
-  &lt;li&gt;It was also a concise read so I could read the whole thing instead of skimming. Also packed with a bunch of info about applications of key themes.&lt;/li&gt;
-  &lt;li&gt;To me, it’s really exciting to see a conference where ANNs are compared to biological NNs because I find the two topics: generative modeling and biological nets on ML tasks to be interesting because of their relation to eachother. Both tasks seem to be two sides of the neural network coin. For the generative modeling task we are applying nets to better understand the brain and in the ML task we are trying to borrow the brain to make better ML models.&lt;/li&gt;
-  &lt;li&gt;Can’t wait to see how these topics unfold in future conferences since I think they’ll have important impact on brain computer interfaces and autonomous control in robotics.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Trends in Computational Neuroscience: Cosyne 2022 by Sabera Talukder</summary></entry><entry><title type="html">Review 19: Let us never speak of these values again.</title><link href="http://localhost:4000/reviews/review19/" rel="alternate" type="text/html" title="Review 19: Let us never speak of these values again." /><published>2022-03-20T05:16:13-07:00</published><updated>2022-03-20T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review19</id><content type="html" xml:base="http://localhost:4000/reviews/review19/">&lt;p&gt;&lt;a href=&quot;https://www.argmin.net/2022/02/23/standard-errors/&quot;&gt;Let us never speak of these values again.&lt;/a&gt; by &lt;a href=&quot;https://www.argmin.net/&quot;&gt;Ben Recht&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;This blog covers the utiliy of statistical signifigance measures like effect size and p value.&lt;/li&gt;
-  &lt;li&gt;The range of success of claims is predicated off of a ratio of effect size to standard error.&lt;/li&gt;
-  &lt;li&gt;Exposes that fact that signifigance is weighted by the spread of probability denisty. Meaning that if there is a slightly favorable outcome with a small PDF and one with a more favorable average outcome but larger PDF, the former may be favored by the p-value.&lt;/li&gt;
-  &lt;li&gt;Simple approximations can distort this p-value. Esp. when it comes to averageing across groups.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;Most practicing scientists would be better off not knowing what a p-value is.&lt;/p&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;This leads to the philosophical problem here: how can we really trust the effect size is valid. This is made challenging by varying levels of validity:
-    &lt;ul&gt;
-      &lt;li&gt;study design is valid?&lt;/li&gt;
-      &lt;li&gt;hypothesis testing is valid?&lt;/li&gt;
-      &lt;li&gt;claims are valid?&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;I think the third bullet is especially hard. How can you best gurantee performance on an unsen input/output?&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Let us never speak of these values again. by Ben Recht</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Cracking the Neural Code in Humans by Emily Singer at the Simons Foundation.</summary></entry></feed>

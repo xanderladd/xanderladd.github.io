@@ -1,4 +1,93 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-12T11:52:42-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 31: Noninvasive Brain–Machine Interfaces for Robotic Devices</title><link href="http://localhost:4000/reviews/review31/" rel="alternate" type="text/html" title="Review 31: Noninvasive Brain–Machine Interfaces for Robotic Devices" /><published>2022-06-11T05:16:13-07:00</published><updated>2022-06-11T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review31</id><content type="html" xml:base="http://localhost:4000/reviews/review31/">&lt;p&gt;&lt;a href=&quot;https://spectrum.ieee.org/brain-implant&quot;&gt;Noninvasive Brain–Machine Interfaces for Robotic Devices&lt;/a&gt; by &lt;a href=&quot;https://scholar.google.com/citations?user=U2N9FlcAAAAJ&amp;amp;hl=en&quot;&gt;Luca Toning&lt;/a&gt; and &lt;a href=&quot;https://www.ece.utexas.edu/people/faculty/jose-del-r-millan&quot;&gt;José del R. Millán&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-08T09:32:54-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 32: Living Science: Maintaining the Joy of Discovery</title><link href="http://localhost:4000/reviews/review32/" rel="alternate" type="text/html" title="Review 32: Living Science: Maintaining the Joy of Discovery" /><published>2022-07-08T05:16:13-07:00</published><updated>2022-07-08T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review32</id><content type="html" xml:base="http://localhost:4000/reviews/review32/">&lt;p&gt;&lt;a href=&quot;https://elifesciences.org/articles/80711&quot;&gt;Living Science: Maintaining the Joy of Discovery&lt;/a&gt; by &lt;a href=&quot;https://www.brandeis.edu/biology/faculty/marder-eve.html&quot;&gt;Eve Marder&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Marder, Eve. “Living Science: Maintaining the joy of discovery.” Elife 11 (2022): e80711.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;DISCLAIMER: these are my reading notes, not my personal opinion&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Marder 2022&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Changes in science over the past 50 years have reduced the chances of trainees experiencing the joy of discovery.&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Writing starts out with using “you get out what you put in” as the hook but then cites increasing authorship, price, time, and complexity behind important breakthroughs as the reason young scientists may not be able to engage with science the same way she did.&lt;/li&gt;
+  &lt;li&gt;The longer turnaround time for analysis and having others analyze your data can damper the joy of discovery.&lt;/li&gt;
+  &lt;li&gt;Suggests doing data analysis contemporaneously with generating data.&lt;/li&gt;
+  &lt;li&gt;Massive amount of literature available and differing SEO policies on gScholar make orienting oneself if the literature challenging.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Marder 2022&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Oftentimes, I finally understood the potential significance of a piece of work while writing the paper.&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Large-scale collaboration can separate the student from the actual piece of work. Doesn’t always work this way.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Takeaways
+    &lt;ul&gt;
+      &lt;li&gt;You get out what you put in.&lt;/li&gt;
+      &lt;li&gt;gScholar SEO biases search results. Needs to be a better way of orienting oneself in the field.&lt;/li&gt;
+      &lt;li&gt;Read / write more.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;My opinion:
+    &lt;ul&gt;
+      &lt;li&gt;I picked this writing up after I saw &lt;a href=&quot;https://twitter.com/drugmonkeyblog/status/1544559316140584961&quot;&gt;this tweet&lt;/a&gt; calling it a “handwringer”.&lt;/li&gt;
+      &lt;li&gt;Upon reflection, I don’t find anything here that concerning.&lt;/li&gt;
+      &lt;li&gt;Firstly, I don’t agree with the premise that there isn’t as much low-hanging fruit as there used to be. The low-hanging fruit isn’t the same anymore in terms of conducting very basic science and running a simple and quick analysis of the data; it has changed. With the advent of repositories of open data sets and open-source statistical tools / other tools for data analysis, the low-hanging fruit has just shifted to an entirely different format.
+        &lt;ul&gt;
+          &lt;li&gt;This is mildly concerning for young researchers who hate stats and don’t have any coding experience but at the end of the day, the reason these methods are prominent is that they provide the most efficient interface with science. Undoubtedly, there is an aspect of gatekeeping here. But what other alternative is there? Removing the systems that perpetuate this is atavistic.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Secondly, the point about contemporaneous analysis is a really good one. I just don’t see why analysis should ever take days or weeks to turn around, that’s just ineffective design.
+        &lt;ul&gt;
+          &lt;li&gt;I realized this &lt;em&gt;very&lt;/em&gt; recently but IMO you should never find yourself just sitting around waiting for analysis to complete.&lt;/li&gt;
+          &lt;li&gt;In my own experience, every time I am sitting around waiting for the analysis to complete there is always a simpler way to break either the data or the analysis into parts and analyze each component very quickly. I argue that learning to break complex analyses into small chunks that can be turned around and verified quickly is an essential skill. It also makes this point a non-factor if you are good enough at it.&lt;/li&gt;
+          &lt;li&gt;I’ve yet to see a single analysis not amenable to this treatment in some way.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Third, the point about SEO optimization and the pitfalls of modern literature search is &lt;strong&gt;absolutely valid&lt;/strong&gt;. But mitigating this is just not that hard. There are a million ways to do so:
+        &lt;ul&gt;
+          &lt;li&gt;Collaborative annotated citations&lt;/li&gt;
+          &lt;li&gt;Keyword hacking on gScholar&lt;/li&gt;
+          &lt;li&gt;Follow citation trails&lt;/li&gt;
+          &lt;li&gt;Follow author trails&lt;/li&gt;
+          &lt;li&gt;Articles with over 1k citations are categorically prominent works in the field&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;However, on the point about not feeling like an expert because of the overwhelming amount of papers available: this is the big fish small pond problem. When there are only a few journals you &lt;em&gt;feel&lt;/em&gt; like an expert and you &lt;em&gt;feel&lt;/em&gt; like you are engaging with your field but the actual engagement is much less than you perceive. On the other hand, in the new age, you never feel like an expert but you are much more informed than you feel. If you can’t enjoy science without feeling like an expert by dwarfing the literature available then you bite your nose to spite your face. The information hose (the internet) is just going to keep blasting and it is empirically a good thing. New experts just understand how to distill the deluge of papers, like &lt;a href=&quot;https://arxiv-sanity-lite.com/&quot;&gt;arxiv sanity&lt;/a&gt; or online journal clubs.&lt;/li&gt;
+      &lt;li&gt;Finally I wholeheartedly agree with the point about appreciating the impact of the work through writing and I think that oppurtunity is now more accessible than ever!
+        &lt;ul&gt;
+          &lt;li&gt;Writing small articles for arxiv&lt;/li&gt;
+          &lt;li&gt;Writing blog posts (like this!)&lt;/li&gt;
+          &lt;li&gt;Tweetprints&lt;/li&gt;
+          &lt;li&gt;Posting your work on your website&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;So in conclusion:
+        &lt;ul&gt;
+          &lt;li&gt;I feel that finding the joy in science isn’t &lt;em&gt;harder&lt;/em&gt; per say it’s just different.&lt;/li&gt;
+          &lt;li&gt;But the lead message of this paper is still poignant: &lt;strong&gt;you get out what you put in&lt;/strong&gt;.
+            &lt;ul&gt;
+              &lt;li&gt;If you let the deluge of papers stop you from reading then you are worse off.&lt;/li&gt;
+              &lt;li&gt;If you let the big project you are working on prevent you from releasing your own conference workshop paper for example then yes you are being restricted from writing.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;It’s not easy because in my opinion there are some worse pitfalls for young scientists but they are broader concerns for young professionals in general.&lt;/li&gt;
+          &lt;li&gt;But I believe that research has not become overall less or more fulfilling. The opportunity is always just a few small steps away. We just need to get out of our own way first.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Living Science: Maintaining the Joy of Discovery by Eve Marder</summary></entry><entry><title type="html">Review 31: Noninvasive Brain–Machine Interfaces for Robotic Devices</title><link href="http://localhost:4000/reviews/review31/" rel="alternate" type="text/html" title="Review 31: Noninvasive Brain–Machine Interfaces for Robotic Devices" /><published>2022-06-11T05:16:13-07:00</published><updated>2022-06-11T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review31</id><content type="html" xml:base="http://localhost:4000/reviews/review31/">&lt;p&gt;&lt;a href=&quot;https://spectrum.ieee.org/brain-implant&quot;&gt;Noninvasive Brain–Machine Interfaces for Robotic Devices&lt;/a&gt; by &lt;a href=&quot;https://scholar.google.com/citations?user=U2N9FlcAAAAJ&amp;amp;hl=en&quot;&gt;Luca Toning&lt;/a&gt; and &lt;a href=&quot;https://www.ece.utexas.edu/people/faculty/jose-del-r-millan&quot;&gt;José del R. Millán&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Tonin, Luca, and José del R. Millán. “Noninvasive brain–machine interfaces for robotic devices.” Annual Review of Control, Robotics, and Autonomous Systems 4 (2021): 191-214.&lt;/p&gt;
 
@@ -696,33 +785,4 @@ brain recordings&lt;/a&gt; by &lt;a href=&quot;http://www.nicksteinmetz.com/#:~:
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings by Nick Steinmetz.</summary></entry><entry><title type="html">Review 21: Cracking the Neural Code in Humans</title><link href="http://localhost:4000/reviews/review21/" rel="alternate" type="text/html" title="Review 21: Cracking the Neural Code in Humans" /><published>2022-04-02T05:16:13-07:00</published><updated>2022-04-02T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review21</id><content type="html" xml:base="http://localhost:4000/reviews/review21/">&lt;p&gt;&lt;a href=&quot;https://www.simonsfoundation.org/2022/03/29/cracking-the-neural-code-in-humans/&quot;&gt;Cracking the Neural Code in Humans
-&lt;/a&gt; by &lt;a href=&quot;https://www.simonsfoundation.org/people/emily-singer/&quot;&gt;Emily Singer&lt;/a&gt; at the Simons Foundation.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Neuropixels: high resolution brain recording from implanted electrodes.&lt;/li&gt;
-  &lt;li&gt;Until recently Neuropixel devices are only used on primates and rodents, but now they can be used in people thanks to Dr. Paulk and Dr. Cash at &lt;a href=&quot;https://cashlab.mgh.harvard.edu/people/&quot;&gt;Cashlab&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Neural recordings for brain computer interfaces are researched in clinical trials due to the risks associated with implantable electrodes.&lt;/li&gt;
-  &lt;li&gt;However further development of the decoding that can be performed at various resolutions helps inform new and more effective BCI.&lt;/li&gt;
-  &lt;li&gt;Short, fast, and simple tasks may help understand neural coding at a more basic level.&lt;/li&gt;
-  &lt;li&gt;Primary application is that the user would control a robotic arm or robotic device that responds to decoded brain activity.&lt;/li&gt;
-  &lt;li&gt;Utah microelectrode array as the leading measurement device for 7 years.&lt;/li&gt;
-  &lt;li&gt;RNN Decoder translates Neural activity from 200 neurons into characters at rate of 90 characters per minute.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Shenoy 2022&lt;/p&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;Your brain is actually issuing more information per second when you handwrite than when you make a straight line. That increased complexity made it easier to quickly decode the intended letter — and offers new opportunities for exploring neural coding,”&lt;/p&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Dr. Pandarinath researchers fast finger movements, unlike commonly researched reaching and grasping movements.&lt;/li&gt;
-  &lt;li&gt;Dr. Stavisky and Dr. Shenoy are able to reliably deocde speech related neural activity from handknob area in people who can’t move their hands but can still speak.&lt;/li&gt;
-  &lt;li&gt;Still the question of what machinery is used for what task is outstanding. It will be hard to map areas even between common tasks like walking and running.&lt;/li&gt;
-  &lt;li&gt;Lower dimension manifolds for interpreting neural recodings.&lt;/li&gt;
-  &lt;li&gt;Neuropixels code and data are public.&lt;/li&gt;
-  &lt;li&gt;Dr. Paulk says diversity of waveforms produced is a new and surprising result.&lt;/li&gt;
-  &lt;li&gt;There still exist significant engineering challenges around neuropixels, like how to stablize the device and transmit data.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Cracking the Neural Code in Humans by Emily Singer at the Simons Foundation.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings by Nick Steinmetz.</summary></entry></feed>

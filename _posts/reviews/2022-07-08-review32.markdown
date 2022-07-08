@@ -1,0 +1,64 @@
+---
+layout: base
+title:  "Review 32: Living Science: Maintaining the Joy of Discovery"
+date:   2022-07-08 5:16:13 -0700
+author: xander
+categories: reviews
+comments: true
+---
+
+
+[Living Science: Maintaining the Joy of Discovery](https://elifesciences.org/articles/80711) by [Eve Marder](https://www.brandeis.edu/biology/faculty/marder-eve.html)
+
+Marder, Eve. "Living Science: Maintaining the joy of discovery." Elife 11 (2022): e80711.
+
+- **DISCLAIMER: these are my reading notes, not my personal opinion**
+
+> Marder 2022
+>> Changes in science over the past 50 years have reduced the chances of trainees experiencing the joy of discovery.
+
+- Writing starts out with using "you get out what you put in" as the hook but then cites increasing authorship, price, time, and complexity behind important breakthroughs as the reason young scientists may not be able to engage with science the same way she did.
+- The longer turnaround time for analysis and having others analyze your data can damper the joy of discovery.
+- Suggests doing data analysis contemporaneously with generating data.
+- Massive amount of literature available and differing SEO policies on gScholar make orienting oneself if the literature challenging.
+
+> Marder 2022
+>> Oftentimes, I finally understood the potential significance of a piece of work while writing the paper.
+
+- Large-scale collaboration can separate the student from the actual piece of work. Doesn't always work this way.
+
+
+- Takeaways
+    - You get out what you put in.
+    - gScholar SEO biases search results. Needs to be a better way of orienting oneself in the field.
+    - Read / write more.
+
+
+- My opinion:
+    - I picked this writing up after I saw [this tweet](https://twitter.com/drugmonkeyblog/status/1544559316140584961) calling it a "handwringer".
+    - Upon reflection, I don't find anything here that concerning. 
+    - Firstly, I don't agree with the premise that there isn't as much low-hanging fruit as there used to be. The low-hanging fruit isn't the same anymore in terms of conducting very basic science and running a simple and quick analysis of the data; it has changed. With the advent of repositories of open data sets and open-source statistical tools / other tools for data analysis, the low-hanging fruit has just shifted to an entirely different format. 
+        - This is mildly concerning for young researchers who hate stats and don't have any coding experience but at the end of the day, the reason these methods are prominent is that they provide the most efficient interface with science. Undoubtedly, there is an aspect of gatekeeping here. But what other alternative is there? Removing the systems that perpetuate this is atavistic.
+    - Secondly, the point about contemporaneous analysis is a really good one. I just don't see why analysis should ever take days or weeks to turn around, that's just ineffective design.
+        - I realized this _very_ recently but IMO you should never find yourself just sitting around waiting for analysis to complete.
+        - In my own experience, every time I am sitting around waiting for the analysis to complete there is always a simpler way to break either the data or the analysis into parts and analyze each component very quickly. I argue that learning to break complex analyses into small chunks that can be turned around and verified quickly is an essential skill. It also makes this point a non-factor if you are good enough at it.
+        - I've yet to see a single analysis not amenable to this treatment in some way.
+    - Third, the point about SEO optimization and the pitfalls of modern literature search is **absolutely valid**. But mitigating this is just not that hard. There are a million ways to do so:
+        - Collaborative annotated citations
+        - Keyword hacking on gScholar
+        - Follow citation trails 
+        - Follow author trails
+        - Articles with over 1k citations are categorically prominent works in the field
+    - However, on the point about not feeling like an expert because of the overwhelming amount of papers available: this is the big fish small pond problem. When there are only a few journals you _feel_ like an expert and you _feel_ like you are engaging with your field but the actual engagement is much less than you perceive. On the other hand, in the new age, you never feel like an expert but you are much more informed than you feel. If you can't enjoy science without feeling like an expert by dwarfing the literature available then you bite your nose to spite your face. The information hose (the internet) is just going to keep blasting and it is empirically a good thing. New experts just understand how to distill the deluge of papers, like [arxiv sanity](https://arxiv-sanity-lite.com/) or online journal clubs.
+    - Finally I wholeheartedly agree with the point about appreciating the impact of the work through writing and I think that oppurtunity is now more accessible than ever!
+        - Writing small articles for arxiv
+        - Writing blog posts (like this!)
+        - Tweetprints
+        - Posting your work on your website
+    - So in conclusion:
+        - I feel that finding the joy in science isn't _harder_ per say it's just different.
+        - But the lead message of this paper is still poignant: **you get out what you put in**.
+            - If you let the deluge of papers stop you from reading then you are worse off.
+            - If you let the big project you are working on prevent you from releasing your own conference workshop paper for example then yes you are being restricted from writing.
+        -  It's not easy because in my opinion there are some worse pitfalls for young scientists but they are broader concerns for young professionals in general.
+        - But I believe that research has not become overall less or more fulfilling. The opportunity is always just a few small steps away. We just need to get out of our own way first.

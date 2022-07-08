@@ -190,4 +190,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review31/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 32: Living Science: Maintaining the Joy of Discovery",
+        "excerpt":"Living Science: Maintaining the Joy of Discovery by Eve Marder Marder, Eve. “Living Science: Maintaining the joy of discovery.” Elife 11 (2022): e80711. DISCLAIMER: these are my reading notes, not my personal opinion Marder 2022 Changes in science over the past 50 years have reduced the chances of trainees experiencing...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review32/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

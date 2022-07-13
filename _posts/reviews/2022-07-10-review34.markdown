@@ -1,0 +1,44 @@
+---
+layout: base
+title:  "Review 34: The Role of Population Structure in Computations Through Neural Dynamics"
+date:   2022-07-10 5:17:13 -0700
+author: xander
+categories: reviews
+comments: true
+---
+
+
+[The Role of Population Structure in Computations Through Neural Dynamics]() by [Alexis Dubreuil]() [Adrian Valente]() and [Srdjan Ostojic]()
+
+## TODO CITATION NEEDED
+## TODO: J. A. Gallego, M. G. Perich, L. E. Miller, and S. A. Solla. Neural manifolds for the control of movement. Neuron,
+## TODO L. Duncker, L. Driscoll, K. V. Shenoy, M. Sahani, and D. Sussillo. Organizing recurrent network dynamics by task-computation to enable continual learning. Advances in Neural Information Processing Systems, 33, 2020.
+
+- This is a longer paper than I noramlly read, so I will need to read less content or else I will be reading forever. I usually read at least 75% of the sentences in a paper but for this one I will scale back to 50%. As a consolation, I'll focus a bit more on the figures and the overall message.
+- Introduction 
+    - Two antagonistic approaches are represented: 1. functional populations by cell categorization and 2. low dimensional trajectories of population dynamics. 1. is challenged by the fact that function and neuron subtype are seemingly random at higher level cortical areas. 2. Is fairly new, but can be well understood through Vyas et al. 2020 computation throud dynamics framework (see review ? TODO: figure out what review).
+    - Two studies [Hirokawa et al., 2019] and [Raposo et al., 2014] study posterior parietal cortex (PPC) and try to look for statistically verifiable measures of population activity and come to opposite conclusions about whether activity is entirely multiplexed or if there is some non-random population structure in selective responses.
+    - To reconcile, this study trains recurrent neural networks (RNNs) on a range of systems neuroscience tasks and finds that random population structure can accomplish most tasks but some tasks required non-random sub-population structure in terms of connectivity (study also looks for structure in selectivity).
+    - They focus on a class of low-rank models that have latent dynamics understood through a minimal intrinsic dimension and number of sub-populations.
+        - I have no clue what this means. I get the part about a minimal dimension and subpopulations but I have no idea what a low-rank model is. I think it is probably something I am familiar mathemtically with but the terminology is being mixed around here and thus entirely lost on me.
+- Results
+    - RNNs trained on 5 systems neuroscience task:
+        - perceptual decision making (DM)
+        - working memory (WM)
+        - multi-sensory decision making (MDM)
+        - contextual decision making (CDM)
+        - delay match to sample (DMS)
+    - Each task has 100 RNNs trained with different random initializations.
+    - Rough description of mathemtical network:
+        $$ \gamma \frac{dx_i}{dt} = -x_i + \sum^N_{j=1}J_{i,j}\phi(x_j) + \sum^{N_{in} }_{s=1}I_i^{ (s) } u_s(t) + \eta_i(t) $$
+        - component 1: sum of nonlinearity activation units ($\phi(x_j) $) times recurrent netowrk connectivity matrices over all neurons $J_{i,j}$. 
+        - component 2: Sum of feedforward weights  $I_i^{(s)}$ times inputs $u_s(t)$ plus some noise $\eta_i(t)$
+    - Selectivity structure
+        - selectivity space defined by 2-4 dimensional where each axis was given by the linear regression coefficient $\Beta^{v}_{i}$ of neural firing rate with respect to a task variable v such as stimulus, decision or context. Gaussian isotropic distribution in this space reprsents random population selectivity (v. non-random mixed selectivity).
+        - 2/5 tasks show non-random mixed selectivity.
+    - Population structure
+        - Low rank structure means high dim. neural connectivity matrix projected onto smaller subspace using a few parameters. Thien they use the same bonferroni corrected ePAIRS  (defined in STAR methods but also by Hirokawa and Raposo studies TODO: make this a footnote) signfigance test against isotropic Gaussian.
+            - Now we know that our "low-rank" models are just projections of connectivity matrices $J_{i,j}$. Specifically they are models of rank R (decomposition of $J_{i,j}$ by sequence of vector products $m_{i}^{ {1) }n_{j}^{ {1) } + ... m_{i}^{ (R) }n_{j}^{(R)}$. There are aso $N_{in}$ inputs. This leads to each neuron connectivity being parameterized by 2R + $N_{in}$ + 1. 1 readout weight and 2R because there are $m$ and $n$ terms in $J_{i,j}$.
+    -  CDM and DMS taks show networks converging to have structure in terms of both selectivity and connectivity. But this is just correlational evidence. Love to see the authors push for causal evidence using resampling strategy.
+        - They resample using mvn Gaussian matching low rank RNN to get new connectivity weights and see if performance on input / output task becomes scrambled due to scrambling potential population structure. Indeed CDM and DMS outputs are scrambled.
+    - 

@@ -1,0 +1,47 @@
+---
+layout: base
+title:  "Review 35: Cortical activity during motor execution, motor imagery, and imagery-based online feedback"
+date:   2022-07-13 5:17:13 -0700
+author: xander
+categories: reviews
+comments: true
+---
+
+
+[Cortical activity during motor execution, motor imagery, and imagery-based online feedback]() by [Kai Miller](https://www.mayoclinic.org/biographies/miller-kai-j-m-d-ph-d/bio-20456021) and [Rajesh P.N. Rao](https://www.rajeshpnrao.com/)
+
+Miller, Kai J., et al. "Cortical activity during motor execution, motor imagery, and imagery-based online feedback." Proceedings of the National Academy of Sciences 107.9 (2010): 4430-4435.
+
+- Hey Neuromatch friends!! Since we are using this dataset I thought I'd take out two birds with one stone and review it on my website too. Let's get started.
+- Introduction
+    - Many of the same areas involved in motor skill execution are involved in planning.
+        - medial supplemental motor area 
+        - premotor cortex
+        - dorsolateral prefrontal cortex (LFPC)
+        - posterior parietal cortex (PPC)
+    - Previous papers show motor function is revealed in high frequency band (HFB) of ECoG (electrocorticography) cortical surface potential of power spectral density (PSD).
+        - Independent dynamics of fingers can be resolved at 20ms time scale in single electrodes by using changes in PSD.
+    - $\alpha$ and $\beta$ rythms spatially overlap _in LFPC_ between overt movement and imagery but also overlap for different movement types as well. On the other hand, high frequency component did overlap between overt / imagery but did not overlap for movement types.
+        - Thus there are shared representations for movement and imagery at the population level.
+- Results
+    - Low freq. band (LFB) decreases during movement and HFB increases.
+    -  <img src="/assets/images/imagery1.png" alt="no alt" width="500" align="center"/>
+    - Figure 1
+        - A: PSD for hand movement movement (red) v.s. rest (blue). Left is during movement and right is during imagery. Notice the gap between PSD in for HFB and LFB is tighter for imagery.
+            - Caveat: PSDs are for primary motor electrode (see paper to find where this is, it's also circled in B).
+        - B: Electrode positions. Blue = hand, pink = tongue.
+        - C: normalized HFB activation maps.
+        - D same as C but LFB.
+    -  <img src="/assets/images/imagery2.png" alt="no alt" width="500" align="center"/>
+    - Figure 2
+        - A: Geometric mean of PSD of electrodes during imagery v.s. movement.
+        - B:  For subjects 2–5, the overlap is quantified between hand and tongue movement (yel- low), hand movement and imagery (light blue), and tongue movement and imagery (light pink). ø, significance, P > 0.01 (by reshuffling).
+    - 38 electrodes selected to quantify activity using signifigance. 21 elec. for tongue and 17 for hand. Relative change in PSD for imagery (to movement) in HFB was 25% and relative change in PSD for LFB was 46%. 
+    - Spatial overlap in HFB and LFB was signifcant for imagery v.s. movement but not movement v.s. movement.
+    - Fairly high rates of using motor imagery to control a cursor. Magnitude of HFB increases as patients move cursor.
+- Discussion
+    - α/β desynchronization captured by LFB reflects an aspect of cortical processing that is fundamentally nonspecific. It may represent feedback between cortical and subcortical structures.
+    - Recent findings suggest PSD amp. changes are corr. with neuronal firing rate. Thus suggest 25% change in imagery means population is either a) firing 4x more during movement or b) 4x more active neurons during movement. Or some combination of both.
+    -  <img src="/assets/images/imagery5.png" alt="no alt" width="500" align="center"/>
+
+    

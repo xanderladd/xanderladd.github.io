@@ -1,4 +1,264 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-08T09:32:54-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 32: Living Science: Maintaining the Joy of Discovery</title><link href="http://localhost:4000/reviews/review32/" rel="alternate" type="text/html" title="Review 32: Living Science: Maintaining the Joy of Discovery" /><published>2022-07-08T05:16:13-07:00</published><updated>2022-07-08T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review32</id><content type="html" xml:base="http://localhost:4000/reviews/review32/">&lt;p&gt;&lt;a href=&quot;https://elifesciences.org/articles/80711&quot;&gt;Living Science: Maintaining the Joy of Discovery&lt;/a&gt; by &lt;a href=&quot;https://www.brandeis.edu/biology/faculty/marder-eve.html&quot;&gt;Eve Marder&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-13T15:20:48-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 35: Cortical activity during motor execution, motor imagery, and imagery-based online feedback</title><link href="http://localhost:4000/reviews/review35/" rel="alternate" type="text/html" title="Review 35: Cortical activity during motor execution, motor imagery, and imagery-based online feedback" /><published>2022-07-13T05:17:13-07:00</published><updated>2022-07-13T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review35</id><content type="html" xml:base="http://localhost:4000/reviews/review35/">&lt;p&gt;&lt;a href=&quot;&quot;&gt;Cortical activity during motor execution, motor imagery, and imagery-based online feedback&lt;/a&gt; by &lt;a href=&quot;https://www.mayoclinic.org/biographies/miller-kai-j-m-d-ph-d/bio-20456021&quot;&gt;Kai Miller&lt;/a&gt; and &lt;a href=&quot;https://www.rajeshpnrao.com/&quot;&gt;Rajesh P.N. Rao&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Miller, Kai J., et al. “Cortical activity during motor execution, motor imagery, and imagery-based online feedback.” Proceedings of the National Academy of Sciences 107.9 (2010): 4430-4435.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hey Neuromatch friends!! Since we are using this dataset I thought I’d take out two birds with one stone and review it on my website too. Let’s get started.&lt;/li&gt;
+  &lt;li&gt;Introduction
+    &lt;ul&gt;
+      &lt;li&gt;Many of the same areas involved in motor skill execution are involved in planning.
+        &lt;ul&gt;
+          &lt;li&gt;medial supplemental motor area&lt;/li&gt;
+          &lt;li&gt;premotor cortex&lt;/li&gt;
+          &lt;li&gt;dorsolateral prefrontal cortex (LFPC)&lt;/li&gt;
+          &lt;li&gt;posterior parietal cortex (PPC)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Previous papers show motor function is revealed in high frequency band (HFB) of ECoG (electrocorticography) cortical surface potential of power spectral density (PSD).
+        &lt;ul&gt;
+          &lt;li&gt;Independent dynamics of fingers can be resolved at 20ms time scale in single electrodes by using changes in PSD.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;$\alpha$ and $\beta$ rythms spatially overlap &lt;em&gt;in LFPC&lt;/em&gt; between overt movement and imagery but also overlap for different movement types as well. On the other hand, high frequency component did overlap between overt / imagery but did not overlap for movement types.
+        &lt;ul&gt;
+          &lt;li&gt;Thus there are shared representations for movement and imagery at the population level.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Results
+    &lt;ul&gt;
+      &lt;li&gt;Low freq. band (LFB) decreases during movement and HFB increases.&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;/assets/images/imagery1.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Figure 1
+        &lt;ul&gt;
+          &lt;li&gt;A: PSD for hand movement movement (red) v.s. rest (blue). Left is during movement and right is during imagery. Notice the gap between PSD in for HFB and LFB is tighter for imagery.
+            &lt;ul&gt;
+              &lt;li&gt;Caveat: PSDs are for primary motor electrode (see paper to find where this is, it’s also circled in B).&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;B: Electrode positions. Blue = hand, pink = tongue.&lt;/li&gt;
+          &lt;li&gt;C: normalized HFB activation maps.&lt;/li&gt;
+          &lt;li&gt;D same as C but LFB.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;/assets/images/imagery2.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Figure 2
+        &lt;ul&gt;
+          &lt;li&gt;A: Geometric mean of PSD of electrodes during imagery v.s. movement.&lt;/li&gt;
+          &lt;li&gt;B:  For subjects 2–5, the overlap is quantified between hand and tongue movement (yel- low), hand movement and imagery (light blue), and tongue movement and imagery (light pink). ø, significance, P &amp;gt; 0.01 (by reshuffling).&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;38 electrodes selected to quantify activity using signifigance. 21 elec. for tongue and 17 for hand. Relative change in PSD for imagery (to movement) in HFB was 25% and relative change in PSD for LFB was 46%.&lt;/li&gt;
+      &lt;li&gt;Spatial overlap in HFB and LFB was signifcant for imagery v.s. movement but not movement v.s. movement.&lt;/li&gt;
+      &lt;li&gt;Fairly high rates of using motor imagery to control a cursor. Magnitude of HFB increases as patients move cursor.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Discussion
+    &lt;ul&gt;
+      &lt;li&gt;α/β desynchronization captured by LFB reflects an aspect of cortical processing that is fundamentally nonspecific. It may represent feedback between cortical and subcortical structures.&lt;/li&gt;
+      &lt;li&gt;Recent findings suggest PSD amp. changes are corr. with neuronal firing rate. Thus suggest 25% change in imagery means population is either a) firing 4x more during movement or b) 4x more active neurons during movement. Or some combination of both.&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;/assets/images/imagery5.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Cortical activity during motor execution, motor imagery, and imagery-based online feedback by Kai Miller and Rajesh P.N. Rao</summary></entry><entry><title type="html">Review 34: The Role of Population Structure in Computations Through Neural Dynamics</title><link href="http://localhost:4000/reviews/review34/" rel="alternate" type="text/html" title="Review 34: The Role of Population Structure in Computations Through Neural Dynamics" /><published>2022-07-10T05:17:13-07:00</published><updated>2022-07-10T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review34</id><content type="html" xml:base="http://localhost:4000/reviews/review34/">&lt;p&gt;&lt;a href=&quot;&quot;&gt;The Role of Population Structure in Computations Through Neural Dynamics&lt;/a&gt; by &lt;a href=&quot;&quot;&gt;Alexis Dubreuil&lt;/a&gt; &lt;a href=&quot;&quot;&gt;Adrian Valente&lt;/a&gt; and &lt;a href=&quot;&quot;&gt;Srdjan Ostojic&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;todo-citation-needed&quot;&gt;TODO CITATION NEEDED&lt;/h2&gt;
+&lt;h2 id=&quot;todo-j-a-gallego-m-g-perich-l-e-miller-and-s-a-solla-neural-manifolds-for-the-control-of-movement-neuron&quot;&gt;TODO: J. A. Gallego, M. G. Perich, L. E. Miller, and S. A. Solla. Neural manifolds for the control of movement. Neuron,&lt;/h2&gt;
+&lt;h2 id=&quot;todo-l-duncker-l-driscoll-k-v-shenoy-m-sahani-and-d-sussillo-organizing-recurrent-network-dynamics-by-task-computation-to-enable-continual-learning-advances-in-neural-information-processing-systems-33-2020&quot;&gt;TODO L. Duncker, L. Driscoll, K. V. Shenoy, M. Sahani, and D. Sussillo. Organizing recurrent network dynamics by task-computation to enable continual learning. Advances in Neural Information Processing Systems, 33, 2020.&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This is a longer paper than I noramlly read, so I will need to read less content or else I will be reading forever. I usually read at least 75% of the sentences in a paper but for this one I will scale back to 50%. As a consolation, I’ll focus a bit more on the figures and the overall message.&lt;/li&gt;
+  &lt;li&gt;Introduction
+    &lt;ul&gt;
+      &lt;li&gt;Two antagonistic approaches are represented: 1. functional populations by cell categorization and 2. low dimensional trajectories of population dynamics. 1. is challenged by the fact that function and neuron subtype are seemingly random at higher level cortical areas. 2. Is fairly new, but can be well understood through Vyas et al. 2020 computation throud dynamics framework (see review ? TODO: figure out what review).&lt;/li&gt;
+      &lt;li&gt;Two studies [Hirokawa et al., 2019] and [Raposo et al., 2014] study posterior parietal cortex (PPC) and try to look for statistically verifiable measures of population activity and come to opposite conclusions about whether activity is entirely multiplexed or if there is some non-random population structure in selective responses.&lt;/li&gt;
+      &lt;li&gt;To reconcile, this study trains recurrent neural networks (RNNs) on a range of systems neuroscience tasks and finds that random population structure can accomplish most tasks but some tasks required non-random sub-population structure in terms of connectivity (study also looks for structure in selectivity).&lt;/li&gt;
+      &lt;li&gt;They focus on a class of low-rank models that have latent dynamics understood through a minimal intrinsic dimension and number of sub-populations.
+        &lt;ul&gt;
+          &lt;li&gt;I have no clue what this means. I get the part about a minimal dimension and subpopulations but I have no idea what a low-rank model is. I think it is probably something I am familiar mathemtically with but the terminology is being mixed around here and thus entirely lost on me.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Results
+    &lt;ul&gt;
+      &lt;li&gt;RNNs trained on 5 systems neuroscience task:
+        &lt;ul&gt;
+          &lt;li&gt;perceptual decision making (DM)&lt;/li&gt;
+          &lt;li&gt;working memory (WM)&lt;/li&gt;
+          &lt;li&gt;multi-sensory decision making (MDM)&lt;/li&gt;
+          &lt;li&gt;contextual decision making (CDM)&lt;/li&gt;
+          &lt;li&gt;delay match to sample (DMS)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Each task has 100 RNNs trained with different random initializations.&lt;/li&gt;
+      &lt;li&gt;Rough description of mathemtical network:
+  \(\gamma \frac{dx_i}{dt} = -x_i + \sum^N_{j=1}J_{i,j}\phi(x_j) + \sum^{N_{in} }_{s=1}I_i^{ (s) } u_s(t) + \eta_i(t)\)
+        &lt;ul&gt;
+          &lt;li&gt;component 1: sum of nonlinearity activation units ($\phi(x_j) $) times recurrent netowrk connectivity matrices over all neurons $J_{i,j}$.&lt;/li&gt;
+          &lt;li&gt;component 2: Sum of feedforward weights  $I_i^{(s)}$ times inputs $u_s(t)$ plus some noise $\eta_i(t)$&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Selectivity structure
+        &lt;ul&gt;
+          &lt;li&gt;selectivity space defined by 2-4 dimensional where each axis was given by the linear regression coefficient $\Beta^{v}_{i}$ of neural firing rate with respect to a task variable v such as stimulus, decision or context. Gaussian isotropic distribution in this space reprsents random population selectivity (v. non-random mixed selectivity).&lt;/li&gt;
+          &lt;li&gt;2/5 tasks show non-random mixed selectivity.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Population structure
+        &lt;ul&gt;
+          &lt;li&gt;Low rank structure means high dim. neural connectivity matrix projected onto smaller subspace using a few parameters. Thien they use the same bonferroni corrected ePAIRS  (defined in STAR methods but also by Hirokawa and Raposo studies TODO: make this a footnote) signfigance test against isotropic Gaussian.
+            &lt;ul&gt;
+              &lt;li&gt;Now we know that our “low-rank” models are just projections of connectivity matrices $J_{i,j}$. Specifically they are models of rank R (decomposition of $J_{i,j}$ by sequence of vector products $m_{i}^{ {1) }n_{j}^{ {1) } + … m_{i}^{ (R) }n_{j}^{(R)}$. There are aso $N_{in}$ inputs. This leads to each neuron connectivity being parameterized by 2R + $N_{in}$ + 1. 1 readout weight and 2R because there are $m$ and $n$ terms in $J_{i,j}$.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;CDM and DMS taks show networks converging to have structure in terms of both selectivity and connectivity. But this is just correlational evidence. Love to see the authors push for causal evidence using resampling strategy.
+        &lt;ul&gt;
+          &lt;li&gt;They resample using mvn Gaussian matching low rank RNN to get new connectivity weights and see if performance on input / output task becomes scrambled due to scrambling potential population structure. Indeed CDM and DMS outputs are scrambled.
+  -&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">The Role of Population Structure in Computations Through Neural Dynamics by Alexis Dubreuil Adrian Valente and Srdjan Ostojic</summary></entry><entry><title type="html">Review 33: High-density Single-unit Human Cortical Recordings Using the Neuropixels Probe</title><link href="http://localhost:4000/reviews/review33/" rel="alternate" type="text/html" title="Review 33: High-density Single-unit Human Cortical Recordings Using the Neuropixels Probe" /><published>2022-07-10T05:16:13-07:00</published><updated>2022-07-10T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review33</id><content type="html" xml:base="http://localhost:4000/reviews/review33/">&lt;p&gt;&lt;a href=&quot;&quot;&gt;High-density Single-unit Human Cortical Recordings Using the Neuropixels Probe&lt;/a&gt; by &lt;a href=&quot;&quot;&gt;Jason Chung&lt;/a&gt; and &lt;a href=&quot;&quot;&gt;Edward F. Chang&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;todo-citation-needed&quot;&gt;TODO CITATION NEEDED&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I’ve reviewed the Neuropixels and Neuropixels 2.0 probes recently but this review is interesting because it translates the capacity of the Neuropixels probe to record from thousands of neurons in animal models to hundreds of neurons in humans undergoing neurosurgical procedures.&lt;/li&gt;
+  &lt;li&gt;Highlights
+    &lt;ul&gt;
+      &lt;li&gt;8 human patients&lt;/li&gt;
+      &lt;li&gt;596 putative neuron units&lt;/li&gt;
+      &lt;li&gt;First spike takes longer in anesthesized subjects&lt;/li&gt;
+      &lt;li&gt;Motion of electrode array inversely correlated with yield&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Introduction
+    &lt;ul&gt;
+      &lt;li&gt;Microelectrode array recordings (MEA) have many use cases during neursurgical procedures for identifying cell types and structure in the basal ganglia and thalamus, however, these small targets means that probe movement of even 1-2mm can cause potential issues.&lt;/li&gt;
+      &lt;li&gt;The number of neurons that can be recorded from simultaneously is a severe limtation.
+        &lt;ul&gt;
+          &lt;li&gt;Sharp metal MEA records 1 neuron at a time.&lt;/li&gt;
+          &lt;li&gt;Microwire can yield up to 3 neurons but normally 1-2.&lt;/li&gt;
+          &lt;li&gt;Utah arrays have 96 channels but take awhile to calibrate and cannot sample across cortical depth.
+            &lt;ul&gt;
+              &lt;li&gt;I wonder how many electrodes utah arrays can record from?&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Recent advances in microfabrication have revealed much about the spatial and temporal scales of neural circuit activity but “[ inability of ] translation of methods for recording fundamental computational units [ such as ] single neurons and ensembles ha led to an increasing gap between what can be learned in animal models and how these detailed principles apply to the human brain,”.
+        &lt;ul&gt;
+          &lt;li&gt;I paraphrase here because I don’t quite understand how these methods can record from a circuit but not neurons/ensembles of neurons.&lt;/li&gt;
+          &lt;li&gt;Also, it is not naturally clear to me how this issue affects translation of insights between animal and human brains.&lt;/li&gt;
+          &lt;li&gt;TODO: investigate&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Looking at table 1:
+        &lt;ul&gt;
+          &lt;li&gt;I think it’s surprising that 4 probes broke but I don’t know if it’s surprisingly high or surpsignly low. I think it is probably low when we consider the fact that device bio-compatiblity with the brain must be very difficult to accomplish. I’d be curious to know the key factors that break these devices.&lt;/li&gt;
+          &lt;li&gt;Also, I had no idea that most patients were actually awake for these procedures!&lt;/li&gt;
+          &lt;li&gt;NP11 and NP06 are interested since probe is inserted into motor cortex.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;It looks like they are using Neurpixels 1.0, but see Review 23 (*TODO: add link) to see how CMOS tech + multichannel recording and high density MEA enable lightweight recording from 1000s of electrodes.&lt;/li&gt;
+      &lt;li&gt;960 12 x 12 $\mu$m contacts, 384 channels, 10 mm shanks. (*TODO add picture)&lt;/li&gt;
+      &lt;li&gt;
+        &lt;ul&gt;
+          &lt;li&gt;TODO: check out twin study by Paulk&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Final pargraph just formally recaps the info from the highlights section in the body of the paper. However, they do add some interesting extra info on the extensiblity of impalnting in different regions and feasiblity for use during craniotomy.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Results
+    &lt;ul&gt;
+      &lt;li&gt;First pargraph details the insertion procedure. I found this part interestnig:
+        &lt;blockquote&gt;
+          &lt;p&gt;(Chung 2022)&lt;/p&gt;
+          &lt;blockquote&gt;
+            &lt;p&gt;The insertion locations were at the center of a gyrus, away from surface vasculature, that was going to be resected in the same surgical procedure (Figure 1B).&lt;/p&gt;
+          &lt;/blockquote&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+      &lt;li&gt;My best geuss is that there is an insertion tract lesion of .25 mm in width and about 3mm long.&lt;/li&gt;
+      &lt;li&gt;In figure 1D the light yellow dots are very hard to see. A different color scheme or dot labeling scheme would have worked better.&lt;/li&gt;
+      &lt;li&gt;They were able to improve functionality by:
+        &lt;ul&gt;
+          &lt;li&gt;reducing noise from AC to get better SNR ratio.&lt;/li&gt;
+          &lt;li&gt;Increasing reducing positive end expiratory pressure patients to help reduce amplitude of brain pulsations.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Spiking increases for the first several minutes of insertion.&lt;/li&gt;
+      &lt;li&gt;75% of all units of device were active at 2mins in.&lt;/li&gt;
+      &lt;li&gt;11 recordsings with length 10-23 mins and 596 units identified in total with $54 +/- 24 SD$.&lt;/li&gt;
+      &lt;li&gt;Figure 2 looks nice. It shows rasters, recordings snippets, time to first spike CDF and # of units against recording length.
+        &lt;ul&gt;
+          &lt;li&gt;The  # of units against recording length is not super positively correlated which maybe shows a limit to how variable population activity is over time. If those regions do not fire in 10 minutes, they are likely not going to fire for awhile. I wonder if they’d fire after 2hours? Gonna be hard pressed to get an answer to that one though.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;ul&gt;
+          &lt;li&gt;TODO what are cluster metrics in STAR.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The authors discuss stabilization as a major limitation of recording technique and discuss using a stabilization algorithm in kilosort that uses spike foot[rint across a few channels to correct for motion.&lt;/li&gt;
+      &lt;li&gt;They quantify motion by using higher freq. and amplitude units as spatial markers to discover 251 +- 112 $\mu$m or movement.&lt;/li&gt;
+      &lt;li&gt;Cell Pair Coordination index (TODO: what is this) increases with cross-correleogram pairs under 50ms compared to those CCH pairs over 50ms.&lt;/li&gt;
+      &lt;li&gt;Figure 3: noise increases (SNR decreases) with amplitude of signal ($\mu$V) and the ISI 1ms violations increase. Histogram truncation is minimal when spike amplitude is around 200 $\muV$, making a U shaped curve.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Discussion
+    &lt;ul&gt;
+      &lt;li&gt;Elimating all AC current devices attached to patient was important for reducing SNR.&lt;/li&gt;
+      &lt;li&gt;First comparison between animal and human neurpixels due to clustering and other metrics reported.&lt;/li&gt;
+      &lt;li&gt;I’m glad they bring up that neurpixels 2.0 actually has a motion stabilization algorithm. Really shows the alignment of objectives between Steinmetz et al. and applicaiton of Neurpixels.&lt;/li&gt;
+      &lt;li&gt;Timeline of recording advances:
+        &lt;ul&gt;
+          &lt;li&gt;Earliest single unit recordings (Ward and Thomas 1955)&lt;/li&gt;
+          &lt;li&gt;90 units over 17 patients (Wyler 1982)&lt;/li&gt;
+          &lt;li&gt;Utah aray enables BCI-control of a cursor (Hochberg et al. 2006) and robotic limb (Alfalo 2015)&lt;/li&gt;
+          &lt;li&gt;Longitudal recording of up to 1500 days (Hughes et al. 2021) and noted immune response + structural reorganization.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Advice on ethical considerations
+        &lt;ul&gt;
+          &lt;li&gt;TODO: note and cite Chiong et al. (2018) and Feinsinger et al. (2022) f&lt;/li&gt;
+          &lt;li&gt;Clinical care and safety should never be comprimised for research.&lt;/li&gt;
+          &lt;li&gt;Team includes treating physicians and non treating researchers.&lt;/li&gt;
+          &lt;li&gt;Assesment for appropriateness and ability to participate in the study.&lt;/li&gt;
+          &lt;li&gt;Continous monitoring and consent for patient participation in the study.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;Chung 2022&lt;/p&gt;
+      &lt;blockquote&gt;
+        &lt;p&gt;The major advance demonstrated here is recording in human brain with densely spaced high channel count simultaneously acquired across the cortical thickness.&lt;/p&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Challenges / Lessons Learned:
+        &lt;ul&gt;
+          &lt;li&gt;Minimize patient movement&lt;/li&gt;
+          &lt;li&gt;Turn off non-essential electrical device to minmize noise&lt;/li&gt;
+          &lt;li&gt;Remove AC devices on the patient&lt;/li&gt;
+          &lt;li&gt;The positive airflow intutabation thing&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Really points to motion correction for future work.&lt;/li&gt;
+      &lt;li&gt;Suggests longer recordings.&lt;/li&gt;
+      &lt;li&gt;Warns against shank breaking in deeper structures and then needing to retrieve (with forceps?).&lt;/li&gt;
+      &lt;li&gt;Neuropixels does not allow stimulation.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">High-density Single-unit Human Cortical Recordings Using the Neuropixels Probe by Jason Chung and Edward F. Chang</summary></entry><entry><title type="html">Review 32: Living Science: Maintaining the Joy of Discovery</title><link href="http://localhost:4000/reviews/review32/" rel="alternate" type="text/html" title="Review 32: Living Science: Maintaining the Joy of Discovery" /><published>2022-07-08T05:16:13-07:00</published><updated>2022-07-08T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review32</id><content type="html" xml:base="http://localhost:4000/reviews/review32/">&lt;p&gt;&lt;a href=&quot;https://elifesciences.org/articles/80711&quot;&gt;Living Science: Maintaining the Joy of Discovery&lt;/a&gt; by &lt;a href=&quot;https://www.brandeis.edu/biology/faculty/marder-eve.html&quot;&gt;Eve Marder&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Marder, Eve. “Living Science: Maintaining the joy of discovery.” Elife 11 (2022): e80711.&lt;/p&gt;
 
@@ -589,200 +849,4 @@ that we assumed no bias in the control signals and further assumed a minimal eff
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">A control-theoretic approach to brain-computer interface design by Yin Zhang and Steven Chase</summary></entry><entry><title type="html">Review 25: Plug-and-play control of a brain-computer interface through neural map stabilization</title><link href="http://localhost:4000/reviews/review25/" rel="alternate" type="text/html" title="Review 25: Plug-and-play control of a brain-computer interface through neural map stabilization" /><published>2022-04-30T05:16:13-07:00</published><updated>2022-04-30T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review25</id><content type="html" xml:base="http://localhost:4000/reviews/review25/">&lt;p&gt;&lt;a href=&quot;https://www.nature.com/articles/s41587-020-0662-5&quot;&gt;Plug-and-play control of a brain-computer interface through neural map stabilization
-&lt;/a&gt; by &lt;a href=&quot;https://gangulylab.org/people.html&quot;&gt;Daniel Silversmith&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Silversmith, Daniel B., et al. “Plug-and-play control of a brain-computer interface through neural map stabilization.” Nature Biotechnology 39.3 (2021): 326-335.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Having recently read higher-level overviews of BCIs, reading this paper in Nature Biotech will be especially relevant but more specific.&lt;/li&gt;
-  &lt;li&gt;Abstract
-    &lt;ul&gt;
-      &lt;li&gt;180 channel electrocorticography (ECoG) implant in a paralyzed individual enabled stable monitoring of signals.&lt;/li&gt;
-      &lt;li&gt;Long-term closed loop adaptation updates decoder weights over several days, thus updating map and plug and play control.
-Intro&lt;/li&gt;
-      &lt;li&gt;Currently, 30 min daily recalibration results in variability in performance and decreased decoding performance in the long-term.&lt;/li&gt;
-      &lt;li&gt;ECoG PNP control was achieved using an interface that updates within-session instead via closed-loop decoder adaptation (CLDA) and potentially over longer terms (ltCDA).
-Results&lt;/li&gt;
-      &lt;li&gt;Fig. 1
-        &lt;ul&gt;
-          &lt;li&gt;ECoG signal comes from a few brain regions: S1, M1 , PMC, PMV, SMA.&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;Kalman Filter&lt;/strong&gt; decoder weights.&lt;/li&gt;
-          &lt;li&gt;There are a few aspects that are different between ltCLDA and daily initialization:
-            &lt;ul&gt;
-              &lt;li&gt;Time to taget increased, though it is hard to tell by how much as I can’t see mean values in the intervals.&lt;/li&gt;
-              &lt;li&gt;ITR shows clear increase during ltCDA.&lt;/li&gt;
-              &lt;li&gt;Convergence of decoder weights is faster using ltCDA.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Time to target decreases from 18 to 6 seconds with tight error bounds.&lt;/li&gt;
-          &lt;li&gt;I do not understand box diagram in fig H. Are the outwward pointing arrows for CNS and KF pipeline outputs?&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Weights are general orthogonal at the start of each dailty initializaiton, so pooling weights over days hurt model performance.&lt;/li&gt;
-      &lt;li&gt;ltCDA resulted in stable convergence of decoder weights across sessions instead.&lt;/li&gt;
-      &lt;li&gt;Higher half-life values (history length used in weight updates) led to better fixed control and more stable weight convergence.&lt;/li&gt;
-      &lt;li&gt;Some weights exhibiting low magnitude or common trends may be redundant and enables sparseness.&lt;/li&gt;
-      &lt;li&gt;Fig. 2
-        &lt;ul&gt;
-          &lt;li&gt;A lot more variance in decoder map weights for daily initialization method.&lt;/li&gt;
-          &lt;li&gt;As the days go on, the orthogonality of the weights seems to decrease.&lt;/li&gt;
-          &lt;li&gt;mu weights decrease w/ linear trends and gamma2 weights increase w/ linear trend.&lt;/li&gt;
-          &lt;li&gt;Sparsity/weight pruning is pretty shocking with the 25% of the weights verison having a very similar time to target.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Fig. 3
-        &lt;ul&gt;
-          &lt;li&gt;Daily calibration had higher circular sd across channels in preferred direction (PD) task.&lt;/li&gt;
-          &lt;li&gt;Decoder weight magnitude correlated to circular SD of PD.&lt;/li&gt;
-          &lt;li&gt;gamma2 weights are stable from day 36+ and it is visually confirmed.&lt;/li&gt;
-          &lt;li&gt;All weights show some trend toward stable convergence after day 18+, which is really interesting because it suggests long-term improvement with ltCLDA method.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Fig. 4
-        &lt;ul&gt;
-          &lt;li&gt;ltCDA to Fixed Decoder swap at day 206 + 28 recovery.&lt;/li&gt;
-          &lt;li&gt;both ltCDA and CLDA after reset seem to have stable weights.&lt;/li&gt;
-          &lt;li&gt;Decoder weights angle is roughly 45 degrees after reset.
-  Fig. 5&lt;/li&gt;
-          &lt;li&gt;Point and click task where cursor path and bits per second information rate are tracked.&lt;/li&gt;
-          &lt;li&gt;Weights seem much sparser for click map.&lt;/li&gt;
-          &lt;li&gt;I wonder how they will look for less convergent features.&lt;/li&gt;
-          &lt;li&gt;Neural state needs to cross click threshold.&lt;/li&gt;
-          &lt;li&gt;Everyday, after the cursor is in target area, stable clicking within 1 sec.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;No significant drop in performance during PnP sessions (plug and play = no recalibration).&lt;/li&gt;
-      &lt;li&gt;Decoder reinitialization had 45-degree weight angle change but then converge back to 0.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Discussion
-    &lt;ul&gt;
-      &lt;li&gt;ltCDA is an important example of weights being carried over a long time constant.&lt;/li&gt;
-      &lt;li&gt;CLDA based on coadaptation can rapidly allow skilled control.&lt;/li&gt;
-      &lt;li&gt;Task-related manifolds can be remarkably stable.&lt;/li&gt;
-      &lt;li&gt;Results indicate the feasibility of PnP.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Plug-and-play control of a brain-computer interface through neural map stabilization by Daniel Silversmith.</summary></entry><entry><title type="html">Review 24:The brain-reading devices helping paralysed people to move, talk and touch</title><link href="http://localhost:4000/reviews/review24/" rel="alternate" type="text/html" title="Review 24:The brain-reading devices helping paralysed people to move, talk and touch" /><published>2022-04-23T05:16:13-07:00</published><updated>2022-04-23T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review24</id><content type="html" xml:base="http://localhost:4000/reviews/review24/">&lt;p&gt;&lt;a href=&quot;https://www.nature.com/articles/d41586-022-01047-w?utm_medium=Social&amp;amp;utm_campaign=nature&amp;amp;utm_source=Twitter#Echobox=1650446178&quot;&gt;The brain-reading devices helping paralysed people to move, talk and touch
-&lt;/a&gt; by &lt;a href=&quot;http://www.liamdrew.net/about&quot;&gt;Liam Drew&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Brain-computer interface clinical trials for paralysis where the patient uses thoughts to operate a computer application moving a robotic arm.&lt;/li&gt;
-  &lt;li&gt;James Johnson, a volunteer for the new neurotech, reports that he can move a mouse on a screen using BCI.&lt;/li&gt;
-  &lt;li&gt;Johnson is 1 of 35 individuals who have had a BCI implanted.
-    &lt;ul&gt;
-      &lt;li&gt;This number seems surprisingly low. I wouldn’t expect more than 1000 though.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Black Rock Neurotech in Salt Lake City, Utah produces a lot of these devices.&lt;/li&gt;
-  &lt;li&gt;2006 Landmark paper where Dr. Leigh Hochberg et al. teach a man to move a cursor using robotic arms and was the first of a multicenter set of trials called BrainGate which continues today.&lt;/li&gt;
-  &lt;li&gt;Requires decoding algorithms to match neural data to actions.&lt;/li&gt;
-  &lt;li&gt;A major goal is to restore motor independence in people who have lost ability in moving their limbs.&lt;/li&gt;
-  &lt;li&gt;Bypass central nervous system by directly stimulating muscles responsible for movement.&lt;/li&gt;
-  &lt;li&gt;Decoding algorithm improves and patient capacity to interface with the machine improves as well.&lt;/li&gt;
-  &lt;li&gt;Richard Anderson leading clinical trials at caltech.&lt;/li&gt;
-  &lt;li&gt;A focus of this research is stabilizing the movements.&lt;/li&gt;
-  &lt;li&gt;Dr. Edward Chang works on restoring the ability to communicate at UCSF using BCI.&lt;/li&gt;
-  &lt;li&gt;40 characters a minute by Shenoy et al. in cursor benchmark.&lt;/li&gt;
-  &lt;li&gt;Turning thoughts into type which uses pattern analysis.&lt;/li&gt;
-  &lt;li&gt;Chang lab uses sensors planted on the surface of the brain which have a lower resolution but a non-invasive.&lt;/li&gt;
-  &lt;li&gt;All BCI companies are aiming to increase bandwidth of communication signals.&lt;/li&gt;
-  &lt;li&gt;There is still a long way to go with the technology.&lt;/li&gt;
-  &lt;li&gt;Major limitations right now are how long the device will last, how well it will adapt to each user, and if the device will still be supported or used later on down the road.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">The brain-reading devices helping paralysed people to move, talk and touch by Liam Drew.</summary></entry><entry><title type="html">Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings</title><link href="http://localhost:4000/reviews/review23/" rel="alternate" type="text/html" title="Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings" /><published>2022-04-16T05:16:13-07:00</published><updated>2022-04-16T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review23</id><content type="html" xml:base="http://localhost:4000/reviews/review23/">&lt;p&gt;&lt;a href=&quot;https://www.biorxiv.org/content/10.1101/2020.10.27.358291v1.full.pdf&quot;&gt;Neuropixels 2.0: A miniaturized high-density probe for stable, long-term
-brain recordings&lt;/a&gt; by &lt;a href=&quot;http://www.nicksteinmetz.com/#:~:text=Nick%20Steinmetz,and%20cognition%20across%20the%20brain.&quot;&gt;Nick Steinmetz&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Paper notes for Neuropixels 2.0
-    &lt;ul&gt;
-      &lt;li&gt;Notably, this is a pretty big collaboration. The following labs participated:
-        &lt;ul&gt;
-          &lt;li&gt;O’Keefe Lab at UCL&lt;/li&gt;
-          &lt;li&gt;Moser Lab at NTNU&lt;/li&gt;
-          &lt;li&gt;Lee Lab at Janelia Research&lt;/li&gt;
-          &lt;li&gt;Dudman lab at Janelia Research&lt;/li&gt;
-          &lt;li&gt;Hausser Lab at UCL&lt;/li&gt;
-          &lt;li&gt;Steinmetz Lab at UW&lt;/li&gt;
-          &lt;li&gt;Svoboda Lab at Janelia&lt;/li&gt;
-          &lt;li&gt;Carandini/ Harris Lab&lt;/li&gt;
-          &lt;li&gt;Hantman Lab&lt;/li&gt;
-          &lt;li&gt;Haesler Lab&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Neuropixels new probe :
-        &lt;ul&gt;
-          &lt;li&gt;has over 5000 sites, features&lt;/li&gt;
-          &lt;li&gt;has 2 probes and a head stage&lt;/li&gt;
-          &lt;li&gt;records at 786 sites at once&lt;/li&gt;
-          &lt;li&gt;weighs over 1 gram&lt;/li&gt;
-          &lt;li&gt;enables recording from over &amp;gt; 10000 recording sites during free behavior in mice&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Stably recording neurons over days / weeks during long terms processes like learning and memory is challenging, but important for understanding neural coding.&lt;/li&gt;
-      &lt;li&gt;Many attempts to record from devices that are flexible and less than $\mu$m in size.
-        &lt;ul&gt;
-          &lt;li&gt;Paper states that downside to these approaches are: make insertion difficult and do not scale at large numbers of recording sites per shank.&lt;/li&gt;
-          &lt;li&gt;I don’t understand how small flexible devices could make insertion more difficult.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;More rigid and larger devices (Utah array, wire tetrodes, silicon probes) record high-quality signals for 8 weeks. However, no consistent recordings of individual neurons over the scale of months.&lt;/li&gt;
-      &lt;li&gt;Neuropixels: dense coverage along a line, another array: across a plane.&lt;/li&gt;
-      &lt;li&gt;algorithm stabilizes device to brain motion post hoc.&lt;/li&gt;
-      &lt;li&gt;two recording channels be simultaneously recorded in the same channel with noise penalty in snr.
-        &lt;ul&gt;
-          &lt;li&gt;At this point, I realized that there is a lot of past literature about these recording probes that I am missing. This feels like watching avengers before watching all the prequel movies.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Results
-        &lt;ul&gt;
-          &lt;li&gt;4 shanks, 1280 sites per shank, 5120 total sites.&lt;/li&gt;
-          &lt;li&gt;single wide band 14-bit data stream.&lt;/li&gt;
-          &lt;li&gt;Hardware switches can swap recording streams enabling recording from thousands of streams/experiment.&lt;/li&gt;
-          &lt;li&gt;can cover a plan of 750 x 720 $\mu$m during recording.&lt;/li&gt;
-          &lt;li&gt;Fig. 1
-            &lt;ul&gt;
-              &lt;li&gt;Neuropixels 2.0 is much less wide than the previous version.&lt;/li&gt;
-              &lt;li&gt;Shows LFP recording and spike waveform recording (overlapping channels).&lt;/li&gt;
-              &lt;li&gt;Probe rasters and reproduced raster of dorsal striatum firing pattern across ten trials.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;7 / 8  probes recovered in working condition.&lt;/li&gt;
-          &lt;li&gt;max time recording from implant: 309 days.&lt;/li&gt;
-          &lt;li&gt;Fig 2.
-            &lt;ul&gt;
-              &lt;li&gt;the proportion of spikes has a decaying distribution over the # of days after implant. A similar trend is shown in C. and D.&lt;/li&gt;
-              &lt;li&gt;hippocampus has a high proportion of firing neurons.&lt;/li&gt;
-              &lt;li&gt;comparison of spike recording stats between labs that used the device.
-                &lt;ul&gt;
-                  &lt;li&gt;I think this plot is hard to interpret because I know there are different conditions for each lab so plot does not necessarily show apples to apples.&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Paper claims brain motion leads to progressively less spikes during the duration of a recording.&lt;/li&gt;
-          &lt;li&gt;But they have an unsupervised learning algorithm to adjust for motion post hoc and re-detect spikes. This method increases recording stability (3E).&lt;/li&gt;
-          &lt;li&gt;Fig 3.
-            &lt;ul&gt;
-              &lt;li&gt;The results from this stabilization procedure a visually very convincing.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Now they expand the timescale alignment to long intervals.
-            &lt;ul&gt;
-              &lt;li&gt;successful tracking across days, and weeks (figure 4). 83% tracking accuracy after 9 weeks.&lt;/li&gt;
-              &lt;li&gt;wonder what that accuracy is across more than three months? But tracking 83% of neurons seems really good.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Average signals from two sites along a recording line and then decompose them.&lt;/li&gt;
-          &lt;li&gt;Fig 4
-            &lt;ul&gt;
-              &lt;li&gt;bank 1 and bank 2 separated to two sets of neurons and the switch helps record mapping between banks using mismatch.&lt;/li&gt;
-              &lt;li&gt;when both banks are recording noise is lower.&lt;/li&gt;
-              &lt;li&gt;3 configurations: both banks on, bank 1 on, bank 2 on.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings by Nick Steinmetz.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">A control-theoretic approach to brain-computer interface design by Yin Zhang and Steven Chase</summary></entry></feed>

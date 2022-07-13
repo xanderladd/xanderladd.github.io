@@ -196,4 +196,22 @@ var store = [{
         "tags": [],
         "url": "/reviews/review32/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 33: High-density Single-unit Human Cortical Recordings Using the Neuropixels Probe",
+        "excerpt":"High-density Single-unit Human Cortical Recordings Using the Neuropixels Probe by Jason Chung and Edward F. Chang TODO CITATION NEEDED I’ve reviewed the Neuropixels and Neuropixels 2.0 probes recently but this review is interesting because it translates the capacity of the Neuropixels probe to record from thousands of neurons in animal...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review33/",
+        "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 34: The Role of Population Structure in Computations Through Neural Dynamics",
+        "excerpt":"The Role of Population Structure in Computations Through Neural Dynamics by Alexis Dubreuil Adrian Valente and Srdjan Ostojic TODO CITATION NEEDED TODO: J. A. Gallego, M. G. Perich, L. E. Miller, and S. A. Solla. Neural manifolds for the control of movement. Neuron, TODO L. Duncker, L. Driscoll, K. V....","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review34/",
+        "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 35: Cortical activity during motor execution, motor imagery, and imagery-based online feedback",
+        "excerpt":"Cortical activity during motor execution, motor imagery, and imagery-based online feedback by Kai Miller and Rajesh P.N. Rao Miller, Kai J., et al. “Cortical activity during motor execution, motor imagery, and imagery-based online feedback.” Proceedings of the National Academy of Sciences 107.9 (2010): 4430-4435. Hey Neuromatch friends!! Since we are...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review35/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

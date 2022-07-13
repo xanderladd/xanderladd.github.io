@@ -1,0 +1,87 @@
+---
+layout: base
+title:  "Review 33: High-density Single-unit Human Cortical Recordings Using the Neuropixels Probe"
+date:   2022-07-10 5:16:13 -0700
+author: xander
+categories: reviews
+comments: true
+---
+
+
+[High-density Single-unit Human Cortical Recordings Using the Neuropixels Probe]() by [Jason Chung]() and [Edward F. Chang]()
+
+## TODO CITATION NEEDED
+
+- I've reviewed the Neuropixels and Neuropixels 2.0 probes recently but this review is interesting because it translates the capacity of the Neuropixels probe to record from thousands of neurons in animal models to hundreds of neurons in humans undergoing neurosurgical procedures.
+- Highlights
+    - 8 human patients
+    - 596 putative neuron units
+    - First spike takes longer in anesthesized subjects
+    - Motion of electrode array inversely correlated with yield
+- Introduction
+    - Microelectrode array recordings (MEA) have many use cases during neursurgical procedures for identifying cell types and structure in the basal ganglia and thalamus, however, these small targets means that probe movement of even 1-2mm can cause potential issues.
+    - The number of neurons that can be recorded from simultaneously is a severe limtation.
+        - Sharp metal MEA records 1 neuron at a time.
+        - Microwire can yield up to 3 neurons but normally 1-2.
+        - Utah arrays have 96 channels but take awhile to calibrate and cannot sample across cortical depth.
+            - I wonder how many electrodes utah arrays can record from?
+    - Recent advances in microfabrication have revealed much about the spatial and temporal scales of neural circuit activity but "\[ inability of \] translation of methods for recording fundamental computational units \[ such as \] single neurons and ensembles ha led to an increasing gap between what can be learned in animal models and how these detailed principles apply to the human brain,". 
+        - I paraphrase here because I don't quite understand how these methods can record from a circuit but not neurons/ensembles of neurons.
+        - Also, it is not naturally clear to me how this issue affects translation of insights between animal and human brains.
+        * TODO: investigate
+    - Looking at table 1:
+        - I think it's surprising that 4 probes broke but I don't know if it's surprisingly high or surpsignly low. I think it is probably low when we consider the fact that device bio-compatiblity with the brain must be very difficult to accomplish. I'd be curious to know the key factors that break these devices.
+        - Also, I had no idea that most patients were actually awake for these procedures!
+        - NP11 and NP06 are interested since probe is inserted into motor cortex.
+    - It looks like they are using Neurpixels 1.0, but see Review 23 (*TODO: add link) to see how CMOS tech + multichannel recording and high density MEA enable lightweight recording from 1000s of electrodes.
+    - 960 12 x 12 $\mu$m contacts, 384 channels, 10 mm shanks. (*TODO add picture) 
+    - * TODO: check out twin study by Paulk
+    - Final pargraph just formally recaps the info from the highlights section in the body of the paper. However, they do add some interesting extra info on the extensiblity of impalnting in different regions and feasiblity for use during craniotomy.
+- Results
+    - First pargraph details the insertion procedure. I found this part interestnig: 
+    > (Chung 2022)
+    >> The insertion locations were at the center of a gyrus, away from surface vasculature, that was going to be resected in the same surgical procedure (Figure 1B). 
+
+    - My best geuss is that there is an insertion tract lesion of .25 mm in width and about 3mm long.
+    - In figure 1D the light yellow dots are very hard to see. A different color scheme or dot labeling scheme would have worked better.
+    - They were able to improve functionality by: 
+        - reducing noise from AC to get better SNR ratio.
+        -  Increasing reducing positive end expiratory pressure patients to help reduce amplitude of brain pulsations.
+    - Spiking increases for the first several minutes of insertion.
+    - 75% of all units of device were active at 2mins in.
+    - 11 recordsings with length 10-23 mins and 596 units identified in total with $54 +/- 24 SD$. 
+    - Figure 2 looks nice. It shows rasters, recordings snippets, time to first spike CDF and # of units against recording length. 
+        - The  # of units against recording length is not super positively correlated which maybe shows a limit to how variable population activity is over time. If those regions do not fire in 10 minutes, they are likely not going to fire for awhile. I wonder if they'd fire after 2hours? Gonna be hard pressed to get an answer to that one though.
+    - * TODO what are cluster metrics in STAR.
+    - The authors discuss stabilization as a major limitation of recording technique and discuss using a stabilization algorithm in kilosort that uses spike foot[rint across a few channels to correct for motion.
+    - They quantify motion by using higher freq. and amplitude units as spatial markers to discover 251 +\- 112 $\mu$m or movement.
+    - Cell Pair Coordination index (TODO: what is this) increases with cross-correleogram pairs under 50ms compared to those CCH pairs over 50ms.
+    - Figure 3: noise increases (SNR decreases) with amplitude of signal ($\mu$V) and the ISI 1ms violations increase. Histogram truncation is minimal when spike amplitude is around 200 $\muV$, making a U shaped curve.
+- Discussion
+    - Elimating all AC current devices attached to patient was important for reducing SNR.
+    - First comparison between animal and human neurpixels due to clustering and other metrics reported.
+    - I'm glad they bring up that neurpixels 2.0 actually has a motion stabilization algorithm. Really shows the alignment of objectives between Steinmetz et al. and applicaiton of Neurpixels.
+    - Timeline of recording advances:
+        - Earliest single unit recordings (Ward and Thomas 1955)
+        - 90 units over 17 patients (Wyler 1982)
+        - Utah aray enables BCI-control of a cursor (Hochberg et al. 2006) and robotic limb (Alfalo 2015)
+        - Longitudal recording of up to 1500 days (Hughes et al. 2021) and noted immune response + structural reorganization.
+    - Advice on ethical considerations
+        - TODO: note and cite Chiong et al. (2018) and Feinsinger et al. (2022) f
+        - Clinical care and safety should never be comprimised for research.
+        - Team includes treating physicians and non treating researchers.
+        - Assesment for appropriateness and ability to participate in the study.
+        - Continous monitoring and consent for patient participation in the study.
+    
+    > Chung 2022
+    >> The major advance demonstrated here is recording in human brain with densely spaced high channel count simultaneously acquired across the cortical thickness.
+    
+    - Challenges / Lessons Learned:
+        - Minimize patient movement
+        - Turn off non-essential electrical device to minmize noise
+        - Remove AC devices on the patient
+        - The positive airflow intutabation thing
+    - Really points to motion correction for future work.
+    - Suggests longer recordings.
+    - Warns against shank breaking in deeper structures and then needing to retrieve (with forceps?).
+    - Neuropixels does not allow stimulation.

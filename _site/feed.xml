@@ -1,4 +1,140 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-13T15:20:48-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 35: Cortical activity during motor execution, motor imagery, and imagery-based online feedback</title><link href="http://localhost:4000/reviews/review35/" rel="alternate" type="text/html" title="Review 35: Cortical activity during motor execution, motor imagery, and imagery-based online feedback" /><published>2022-07-13T05:17:13-07:00</published><updated>2022-07-13T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review35</id><content type="html" xml:base="http://localhost:4000/reviews/review35/">&lt;p&gt;&lt;a href=&quot;&quot;&gt;Cortical activity during motor execution, motor imagery, and imagery-based online feedback&lt;/a&gt; by &lt;a href=&quot;https://www.mayoclinic.org/biographies/miller-kai-j-m-d-ph-d/bio-20456021&quot;&gt;Kai Miller&lt;/a&gt; and &lt;a href=&quot;https://www.rajeshpnrao.com/&quot;&gt;Rajesh P.N. Rao&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-09-18T16:11:42-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 36: Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks</title><link href="http://localhost:4000/reviews/review36/" rel="alternate" type="text/html" title="Review 36: Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks" /><published>2022-07-13T05:17:13-07:00</published><updated>2022-07-13T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review36</id><content type="html" xml:base="http://localhost:4000/reviews/review36/">&lt;p&gt;&lt;a href=&quot;https://direct.mit.edu/neco/article-abstract/25/3/626/7854/Opening-the-Black-Box-Low-Dimensional-Dynamics-in&quot;&gt;Opening the Black Box: Low-Dimensional Dynamics
+in High-Dimensional Recurrent Neural Networks&lt;/a&gt; by &lt;a href=&quot;https://scholar.google.com/citations?user=ebBgMSkAAAAJ&amp;amp;hl=en&quot;&gt;David Sussillo&lt;/a&gt; and &lt;a href=&quot;https://scholar.google.com/citations?user=6BrZ2isAAAAJ&amp;amp;hl=en&quot;&gt;Omri Barak&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Sussillo, David, and Omri Barak. “Opening the black box: low-dimensional dynamics in high-dimensional recurrent neural networks.” Neural computation 25.3 (2013): 626-649.
+ &lt;!-- -  &lt;img src=&quot;/assets/images/imagery5.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot;/&gt; --&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Notation : I don’t know how to use macro &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bm&lt;/code&gt; instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mathbf&lt;/code&gt; on this website so vector notation is going out of the window. That can be very confusing… but &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mathbf&lt;/code&gt; is clunky.&lt;/li&gt;
+  &lt;li&gt;Introduction
+    &lt;ul&gt;
+      &lt;li&gt;View of RNN as a non-linear dynamical system (NLDS).&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Phase space&lt;/strong&gt;: Just a more specifc term than state space, instead of general description of all possible states, phase space defines a state as a set of coordinates.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Fixed points&lt;/strong&gt;: Coordinates in the phase space that exhibit zero motion. extends to &lt;strong&gt;Slow points&lt;/strong&gt;.
+        &lt;ul&gt;
+          &lt;li&gt;Stable or unstable (or attractor v. repeller), meaning system converges towards or away from these points.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;mode&lt;/strong&gt;: independent pattern of activity that arises around fixed point when the linear system is diagonalized.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Hypothesis is that RNN == NLDS, but at slow points, linearization is valid. Paper provides principled approach to finding regions with slow points, then linearizes arround each slow point, and then relates interaction between regions.&lt;/li&gt;
+      &lt;li&gt;Technique introduced allows id. of attractors, repellers, and saddle ponts.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Linear approximations
+    &lt;ul&gt;
+      &lt;li&gt;a system of diff. eqs.: $ \dot{x} = F(x) $ and trying to find points, $ x^{*} $ such that $ | F(x^{*}) \partial x | \geq F(x^{*}) $ and $ | F(x^{*}) \partial x | \geq  | \frac{1}{2}  \partial x  F’‘(x^{*}) \partial x | $.&lt;/li&gt;
+      &lt;li&gt;The way I understand this is that peturbations induce a linear rate of change in the value of the system and the rate of change in the system.&lt;/li&gt;
+      &lt;li&gt;speed, or kinetic energy of the systm is : $ q(x) = \frac{1}{2}|F(x)|^2  $, which is useful becuase it is a scalar that can be optimized,  q = 0 only at fixed points, and gradient and hessian of q are amenable to finding minumum values that are not fixed points (so they are saddle points?).
+        &lt;ul&gt;
+          &lt;li&gt;don’t fully understand how the conditions for minmimum are derived but moving on for now.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;2 - d example:
+        &lt;ul&gt;
+          &lt;li&gt;defined as dynamical system:
+  \begin{equation}
+  \dot(x_1) = (1 - x_1^2)x_2
+  \dot(x_2) = x_1 / 2 - x_2
+  \end{equation}&lt;/li&gt;
+          &lt;li&gt;The system has three fixed points: a saddle at (0, 0) and two attractors at (1, 1/2) and (−1, −1/2).&lt;/li&gt;
+          &lt;li&gt;Here is the figure used to describe this dynamical system. I find it useful because it shows how differnt ICs (inital conditions) can converge to different fixed points and does a decent job of showing the difference between saddle and fixed point.
+  &lt;!-- &lt;img src=&quot;/assets/images/sussillo_2013_fig1.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot;/&gt;  --&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;RNN formulation
+        &lt;ul&gt;
+          &lt;li&gt;$\mathbf{x}$ is the vector of activations and $\r(x_i)$ is the firing rate for neuron $i$
+  \begin{equation}
+  \dot{x_i} = -x_i \sum_{k}^N j_{ik}r_k + \sum_{k}{N} B_{ik}u_k
+  r_i = h(x_i)
+  \end{equation}&lt;/li&gt;
+          &lt;li&gt;The recurrence of the network is defined by the matrix J, and the network receives the I-dimensional input u through the synaptic weight matrix B.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;3 bit flip flop
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;&lt;em&gt;TODO&lt;/em&gt;&lt;/strong&gt; I do not understand many things about the 3 bit task. So I just write open questions here instead.
+            &lt;ul&gt;
+              &lt;li&gt;Do the 3 units have a sequential relationship?&lt;/li&gt;
+              &lt;li&gt;The input pulses are real valued? How are they thresholded?&lt;/li&gt;
+              &lt;li&gt;In figure 2, are the inputs colored or the outputs? Seem like the outputs are colored, but it’s still hard to relate them.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Still, I need to give best description of the system so we’ll go ahead.&lt;/li&gt;
+          &lt;li&gt;$2^3 = 8$ possible memories. Random impulses hit each bit and either confirm the sign (because it matched +1,-1) or flip sign from +1 to -1.&lt;/li&gt;
+          &lt;li&gt;modeled with echostate RNN trained using FORCE (Sussillo &amp;amp; Abbot 2007) and trained using random init. weights and 600 different starting points (ICs). Fixed point finder resulted in 26 distinct fixed points and then they analyze these w/ linear stabiility anaylsis described above.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;important&lt;/strong&gt; there are 8 attractors for every memory state. 
+  &lt;!-- -  &lt;img src=&quot;/assets/images/sussillo_2013_fig3.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot;/&gt;  --&gt;
+            &lt;blockquote&gt;
+              &lt;p&gt;Sussillo and Barak 2013&lt;/p&gt;
+              &lt;blockquote&gt;
+                &lt;p&gt;Figure 3: Low-dimensional phase space representation of 3-bit flip-flop task. (Left) The eight memory states are shown as black x. In blue are shown all 24 1-bit transitions between the eight memory states of the 3-bit flip-flop. The saddle fixed points with one unstable dimension are shown with green x. A thick red line denotes the dimension of instability of these saddle points. In thin red are the network trajectories started just off the unstable dimensions of the saddle points. These are heteroclinic orbits between the saddles that decide the boundaries and the attractor fixed points that represent the memories. Finally, the pink x show other fixed points, all with four unstable dimensions. Thick red lines show these dimensions of instability, and thin red lines show network trajectories started just off the fixed points in these unstable dimensions. (Right) Demonstration that a saddle point mediates the transitions between attractors. The input for a transition (circled region in left panel) was varied from 0 to 1, and the network dynamics are shown (blue for normal input pulse and cyan for the rest). As the input pulse increased in value, the network came ever closer to the saddle and then finally transitioned to the new attractor state.&lt;/p&gt;
+              &lt;/blockquote&gt;
+            &lt;/blockquote&gt;
+          &lt;/li&gt;
+          &lt;li&gt;System uses saddle points to mediate transition from one memory to another.&lt;/li&gt;
+          &lt;li&gt;Though most transition from memory states are fairly straightforward, there are some unstable trajectories that appear to serve no purpose (pink fixed points).&lt;/li&gt;
+          &lt;li&gt;Without explicit design of a network for a particular phase space, there can be redundant or multiple fixed points between two attractor states.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Sine wave generator
+        &lt;ul&gt;
+          &lt;li&gt;Network that produces a target sine wave for a given frequency from 1-51 frequency values.&lt;/li&gt;
+          &lt;li&gt;linearized system had only two unstable dimensions.&lt;/li&gt;
+          &lt;li&gt;Is it a surprising result that there is a fixed point corresponding to the 51 freq. values? Obviously we know some of them sill result in regions of interest, but is the 1-1 correspondence implied by the task or not?
+            &lt;ul&gt;
+              &lt;li&gt;These regions are rigoursly verified by norm of linear term agreeing with conditions (idk the eq. # above, but it’s the ones under “linear approximations” section).&lt;/li&gt;
+              &lt;li&gt;So I guess that is not necessarily implied by the fixed point analysis.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Beyond fixed points
+        &lt;ul&gt;
+          &lt;li&gt;saddle points found by $q$ (“linear approximations” section) also provide insight system because linear term is dominating even if zero order of taylor expansion != 0. They term these points ghost points (or slow points) and state that even if they are not mediating transitions directly like fixed points, they are influencing the tracjectory of the system as shown below.
+            &lt;ul&gt;
+              &lt;li&gt;I thought zero-order term was linear? And first or second order might not = 0.
+  &lt;!-- -  &lt;img src=&quot;/assets/images/sussillo_2013_fig5.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot;/&gt;  --&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;paper includes some examples and formalizaiton of linear dymamics around this point.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Approximate plane attractor
+        &lt;ul&gt;
+          &lt;li&gt;This example further demonstrates the utility of finding saddle points using $q$. Because this is a summary I won’t explain the approximate plane attractor in too much detail.&lt;/li&gt;
+          &lt;li&gt;The gist is that it is a 2 point moving average task which means two values need to be stored in memory.&lt;/li&gt;
+          &lt;li&gt;100dim. RNN slow points ($q \leq 1e-4$) actually created a two dimensional manifold.&lt;/li&gt;
+          &lt;li&gt;“Ablation study” so to speak done by replace slow points with  linear time-varying dynamical system (LTVDS) with very low mean squared error on transition states.&lt;/li&gt;
+          &lt;li&gt;finally, they show the method is robust to peturbations in RNN and doesn’t rely on a finely tuned RNN.
+            &lt;ul&gt;
+              &lt;li&gt;This is important to show (something a reviewer might have asked for), but I will not cover it here.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Discussion
+        &lt;ul&gt;
+          &lt;li&gt;Open points for future work include
+            &lt;ul&gt;
+              &lt;li&gt;generalization to higher dimensional inputs and tasks.&lt;/li&gt;
+              &lt;li&gt;May provide insight into observed experimental findings of low-dim. dynamics of experimental neuroscience.
+                &lt;ul&gt;
+                  &lt;li&gt;This is the one I am interested in!&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;Applying this technique to spiking models.
+                &lt;ul&gt;
+                  &lt;li&gt;Also this…&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks by David Sussillo and Omri Barak</summary></entry><entry><title type="html">Review 35: Cortical activity during motor execution, motor imagery, and imagery-based online feedback</title><link href="http://localhost:4000/reviews/review35/" rel="alternate" type="text/html" title="Review 35: Cortical activity during motor execution, motor imagery, and imagery-based online feedback" /><published>2022-07-13T05:17:13-07:00</published><updated>2022-07-13T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review35</id><content type="html" xml:base="http://localhost:4000/reviews/review35/">&lt;p&gt;&lt;a href=&quot;&quot;&gt;Cortical activity during motor execution, motor imagery, and imagery-based online feedback&lt;/a&gt; by &lt;a href=&quot;https://www.mayoclinic.org/biographies/miller-kai-j-m-d-ph-d/bio-20456021&quot;&gt;Kai Miller&lt;/a&gt; and &lt;a href=&quot;https://www.rajeshpnrao.com/&quot;&gt;Rajesh P.N. Rao&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Miller, Kai J., et al. “Cortical activity during motor execution, motor imagery, and imagery-based online feedback.” Proceedings of the National Academy of Sciences 107.9 (2010): 4430-4435.&lt;/p&gt;
 
@@ -763,90 +899,4 @@ interfaces&lt;/a&gt; by &lt;a href=&quot;https://people.ece.uw.edu/orsborn_amy/&
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Parsing learning in networks using brain-machine interfaces by Amy Orsborn and Bijan Pesaran</summary></entry><entry><title type="html">Review 26: A control-theoretic approach to brain-computer interface design</title><link href="http://localhost:4000/reviews/review26/" rel="alternate" type="text/html" title="Review 26: A control-theoretic approach to brain-computer interface design" /><published>2022-05-07T05:16:13-07:00</published><updated>2022-05-07T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review26</id><content type="html" xml:base="http://localhost:4000/reviews/review26/">&lt;p&gt;&lt;a href=&quot;https://smithlab.net/~schase/docs/zhang_acc_2016.pdf&quot;&gt;A control-theoretic approach to brain-computer interface design&lt;/a&gt; by Yin Zhang and &lt;a href=&quot;https://www.cmu.edu/bme/People/Faculty/profile/schase.html&quot;&gt;Steven Chase&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Zhang, Yin, and Steven M. Chase. “A control-theoretic approach to brain-computer interface design.” 2016 American Control Conference (ACC). IEEE, 2016.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A challenge in brain computer interface (BCI) design is mapping from population activity to BCI actuation.&lt;/li&gt;
-  &lt;li&gt;This paper proposes using optimal control theory to formulate and improve BCI usability.&lt;/li&gt;
-  &lt;li&gt;Main algorithmic proposals for mapping population activity to behavior:
-    &lt;ol&gt;
-      &lt;li&gt;linear estimators&lt;/li&gt;
-      &lt;li&gt;Kalman filters&lt;/li&gt;
-      &lt;li&gt;Particle filters&lt;/li&gt;
-      &lt;li&gt;Neural net decoders&lt;/li&gt;
-      &lt;li&gt;point process filters&lt;/li&gt;
-      &lt;li&gt;kernel based techniques.&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;That is a lot of potential approaches. The nuances of the application would be required in order to sort them out.&lt;/li&gt;
-  &lt;li&gt;MLE approach to BCI
-    &lt;ul&gt;
-      &lt;li&gt;Velocity kalman filter defined as: $\mathbf{y_t} = B\mathbf{v_t}^* + \mathbf{\epsilon_t
-  }$ where $\mathbf{y_t}$ are $n$ neuron’s firing rates and $\mathbf{v_t}$ is the velocity of a prosethetic effector.
-        &lt;ul&gt;
-          &lt;li&gt;This is clear mathematically but I don’t know what a prosthetic effector is.&lt;/li&gt;
-          &lt;li&gt;It seems like some implant that would drive neuron firing rates.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;A second assumption is that this velocity changes smoothly over time.&lt;/li&gt;
-      &lt;li&gt;Using these two assumptions: BCI control reduces to Bayesian inference over how this velocity results in firing rates.
-        &lt;ul&gt;
-          &lt;li&gt;I thought there would be more here since after this level of inference you’d still have to infer the previous problem of spike activity mapping to actions.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Using the above equations and the a posteriori estimate of $p(\mathbf{v_t} \mid y_1 … y_t)$, one can create a time dependent state update rule for a BCI controlled cursor position $\mathbf{p_t}$ using $\mathbf{v_t}$.
-        &lt;ul&gt;
-          &lt;li&gt;notation here is confusing because I thought y was in $\mathbb{R}^n$ as a firing frequency for n neurons. I take it the authors mean to use the 1 - t as $y$ at some previous recording time t.&lt;/li&gt;
-          &lt;li&gt;This also answered my previous point about mpaping from $\mathbf{v_t}$ to actual actions.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;While estimation based decoder control has remarkable progress in enabling cursor speed w/ in a factor of 2 of a natural limb, there are still some aspects that can be improved:
-        &lt;ol&gt;
-          &lt;li&gt;Only decoders that correspond to simple physical systems work well.&lt;/li&gt;
-          &lt;li&gt;Estimation framework assumes static tuning but performance in closed-loop systems over time is often very different and offline decoders may not work well in long term.&lt;/li&gt;
-          &lt;li&gt;Biomemtic decoders are not guaranteed optimal. Translating signals in terms of basic human motor movements are not necessairly the best way to solve control problems.&lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Authors make 3 assumptions about the brain as optimal controller:
-        &lt;ol&gt;
-          &lt;li&gt;The brain is emitting control signals that minimize some cost function.&lt;/li&gt;
-          &lt;li&gt;Primary cortex activity is a direct representation of these signals.&lt;/li&gt;
-          &lt;li&gt;End goal result of learning is to produce the optimal control signals of a given effector.
-            &lt;ul&gt;
-              &lt;li&gt;These assumptions have helped me understand a lot of what the paper is previously trying to build to.&lt;/li&gt;
-              &lt;li&gt;Mainly, what I see now that I did not before is why the signal estimation approach is limiting and why understanding motor cotrex signals as effector signals is so important. I believe this is because control theory allows a framework for much more specific definitions of control when the goal is reconstructing effector signals instead of predicting movement. Predicting movement is often a more vague problem for a decoder while fine-grained analysis of how brain signals enable optimal control in reaching for example is much more specific.
-&lt;img src=&quot;/assets/images/bci_schematic.png&quot; alt=&quot;bci schematic&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-      &lt;li&gt;I really like this figure since it is a straightforward diagram of the control model here.&lt;/li&gt;
-      &lt;li&gt;It shows where that control signals feed into the plant for state updates in decoder.&lt;/li&gt;
-      &lt;li&gt;$x$ as cursor state, $u$ as control signal, and $J(u)$ as cost function for signal $u$.&lt;/li&gt;
-      &lt;li&gt;Optimal cost is $J^*  = J^(u^*)$, plant parameters are $\phi$&lt;/li&gt;
-      &lt;li&gt;$\phi$ determines the usefulness of BCI based on how it minimizes cost function.&lt;/li&gt;
-      &lt;li&gt;Not so sure what $H_p$ and $H_v$ mean as spring like properties of the plant and viscous properties. Are these from control theory?&lt;/li&gt;
-      &lt;li&gt;BCI plant system dyanmics
-&lt;img src=&quot;/assets/images/r26_e1.png&quot; alt=&quot;bci schematic&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
-      &lt;li&gt;Quadratic cost function used  in motor learning studies
-&lt;img src=&quot;/assets/images/r26_e2.png&quot; alt=&quot;bci schematic&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
-      &lt;li&gt;Normally I like to use latex to write out he equations in the paper but I don’t wan’t to the \bmatrix formatting today.&lt;/li&gt;
-      &lt;li&gt;First solve forward control problem of optimizing $H_p$ and $H_t$.&lt;/li&gt;
-      &lt;li&gt;Linear quadratic regulator gives minmial cost under optimal policy: $J*(H_p,H_t) = tr(P_0,X_0)$.
-        &lt;ul&gt;
-          &lt;li&gt;are $H_p$ and $H_t$ suppoed to be $H_p^&lt;em&gt;$ and $H_t^&lt;/em&gt;$, the optimal conditions in order to get J*?
-            &lt;blockquote&gt;
-              &lt;p&gt;Zhang 2016 on simulation results for this paper:&lt;/p&gt;
-              &lt;blockquote&gt;
-                &lt;p&gt;In one sense, these results might seem trivial: the optimal 2D linear BCI plant is an integrator that provides no resistance on the inputs. This is an intuitive solution given
-that we assumed no bias in the control signals and further assumed a minimal effort constraint. In another sense, the results are quite surprising: the optimal dynamics identified through this approach to BCI design are qualitatively different from those of the typical BCI decoder, the VKF. In fact, the parameters identified with our method fall outside of the allowable parameters of a VKF.&lt;/p&gt;
-              &lt;/blockquote&gt;
-            &lt;/blockquote&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">A control-theoretic approach to brain-computer interface design by Yin Zhang and Steven Chase</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Parsing learning in networks using brain-machine interfaces by Amy Orsborn and Bijan Pesaran</summary></entry></feed>

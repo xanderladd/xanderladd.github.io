@@ -9,38 +9,38 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Review 20: Trends in Computational Neuroscience: Cosyne 2022 - Alexander Ladd</title>
-<meta name="description" content="Trends in Computational Neuroscience: Cosyne 2022  by Sabera Talukder">
+<!-- begin _includes/seo.html --><title>Review 36: Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks - Alexander Ladd</title>
+<meta name="description" content="Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks by David Sussillo and Omri Barak">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Alexander Ladd">
-<meta property="og:title" content="Review 20: Trends in Computational Neuroscience: Cosyne 2022">
-<meta property="og:url" content="http://localhost:4000/reviews/review20/">
+<meta property="og:title" content="Review 36: Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks">
+<meta property="og:url" content="http://localhost:4000/reviews/review36/">
 
 
-  <meta property="og:description" content="Trends in Computational Neuroscience: Cosyne 2022  by Sabera Talukder">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2022-03-25T05:16:13-07:00">
+  <meta property="og:description" content="Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks by David Sussillo and Omri Barak">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2022-07-13T05:17:13-07:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/reviews/review20/">
+
+<link rel="canonical" href="http://localhost:4000/reviews/review36/">
 
 
 
@@ -232,55 +232,144 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">Review 20: Trends in Computational Neuroscience: Cosyne 2022</h1>
+      <h1 id="page-title" class="page__title">Review 36: Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks</h1>
     
-    <p><a href="https://saberatalukder.com/cosyne_2022_computational_and_systems_neuroscience_in_review.html">Trends in Computational Neuroscience: Cosyne 2022
-</a> by <a href="https://saberatalukder.com/index.html">Sabera Talukder</a></p>
+    <p><a href="https://direct.mit.edu/neco/article-abstract/25/3/626/7854/Opening-the-Black-Box-Low-Dimensional-Dynamics-in">Opening the Black Box: Low-Dimensional Dynamics
+in High-Dimensional Recurrent Neural Networks</a> by <a href="https://scholar.google.com/citations?user=ebBgMSkAAAAJ&amp;hl=en">David Sussillo</a> and <a href="https://scholar.google.com/citations?user=6BrZ2isAAAAJ&amp;hl=en">Omri Barak</a></p>
+
+<p>Sussillo, David, and Omri Barak. “Opening the black box: low-dimensional dynamics in high-dimensional recurrent neural networks.” Neural computation 25.3 (2013): 626-649.
+ <!-- -  <img src="/assets/images/imagery5.png" alt="no alt" width="500" align="center"/> --></p>
 
 <ul>
-  <li>I couldn’t go to Cosyne but it’s a workshop/conference I’d like to go to one day so I wanted to get the inside scoop of what gets discussed.</li>
-  <li>Fortunately, this blog kept me in the loop, so that’s pretty cool.</li>
-  <li>Notes:</li>
-  <li>Major Trends
+  <li>Notation : I don’t know how to use macro <code class="language-plaintext highlighter-rouge">\bm</code> instead of <code class="language-plaintext highlighter-rouge">\mathbf</code> on this website so vector notation is going out of the window. That can be very confusing… but <code class="language-plaintext highlighter-rouge">\mathbf</code> is clunky.</li>
+  <li>Introduction
     <ul>
-      <li>Behavior
+      <li>View of RNN as a non-linear dynamical system (NLDS).</li>
+      <li><strong>Phase space</strong>: Just a more specifc term than state space, instead of general description of all possible states, phase space defines a state as a set of coordinates.</li>
+      <li><strong>Fixed points</strong>: Coordinates in the phase space that exhibit zero motion. extends to <strong>Slow points</strong>.
         <ul>
-          <li>Especially w.r.t. software, data analysis pipelines and pose tracking estimation.</li>
+          <li>Stable or unstable (or attractor v. repeller), meaning system converges towards or away from these points.</li>
+          <li><strong>mode</strong>: independent pattern of activity that arises around fixed point when the linear system is diagonalized.</li>
         </ul>
       </li>
-      <li>Comparing ANNs to Biologically realistic NN
+      <li>Hypothesis is that RNN == NLDS, but at slow points, linearization is valid. Paper provides principled approach to finding regions with slow points, then linearizes arround each slow point, and then relates interaction between regions.</li>
+      <li>Technique introduced allows id. of attractors, repellers, and saddle ponts.</li>
+    </ul>
+  </li>
+  <li>Linear approximations
+    <ul>
+      <li>a system of diff. eqs.: $ \dot{x} = F(x) $ and trying to find points, $ x^{*} $ such that $ | F(x^{*}) \partial x | \geq F(x^{*}) $ and $ | F(x^{*}) \partial x | \geq  | \frac{1}{2}  \partial x  F’‘(x^{*}) \partial x | $.</li>
+      <li>The way I understand this is that peturbations induce a linear rate of change in the value of the system and the rate of change in the system.</li>
+      <li>speed, or kinetic energy of the systm is : $ q(x) = \frac{1}{2}|F(x)|^2  $, which is useful becuase it is a scalar that can be optimized,  q = 0 only at fixed points, and gradient and hessian of q are amenable to finding minumum values that are not fixed points (so they are saddle points?).
         <ul>
-          <li>I didn’t have FOMO hearing about behavior, but now I do.</li>
-          <li>One-to-one biological to neural network comparison.</li>
-          <li>Generative modeling neural data with latent representation.
+          <li>don’t fully understand how the conditions for minmimum are derived but moving on for now.</li>
+        </ul>
+      </li>
+      <li>2 - d example:
+        <ul>
+          <li>defined as dynamical system:
+  \begin{equation}
+  \dot(x_1) = (1 - x_1^2)x_2
+  \dot(x_2) = x_1 / 2 - x_2
+  \end{equation}</li>
+          <li>The system has three fixed points: a saddle at (0, 0) and two attractors at (1, 1/2) and (−1, −1/2).</li>
+          <li>Here is the figure used to describe this dynamical system. I find it useful because it shows how differnt ICs (inital conditions) can converge to different fixed points and does a decent job of showing the difference between saddle and fixed point.
+  <!-- <img src="/assets/images/sussillo_2013_fig1.png" alt="no alt" width="500" align="center"/>  --></li>
+        </ul>
+      </li>
+      <li>RNN formulation
+        <ul>
+          <li>$\mathbf{x}$ is the vector of activations and $\r(x_i)$ is the firing rate for neuron $i$
+  \begin{equation}
+  \dot{x_i} = -x_i \sum_{k}^N j_{ik}r_k + \sum_{k}{N} B_{ik}u_k
+  r_i = h(x_i)
+  \end{equation}</li>
+          <li>The recurrence of the network is defined by the matrix J, and the network receives the I-dimensional input u through the synaptic weight matrix B.</li>
+        </ul>
+      </li>
+      <li>3 bit flip flop
+        <ul>
+          <li><strong><em>TODO</em></strong> I do not understand many things about the 3 bit task. So I just write open questions here instead.
             <ul>
-              <li>This one has important impact on neuroengineering.</li>
+              <li>Do the 3 units have a sequential relationship?</li>
+              <li>The input pulses are real valued? How are they thresholded?</li>
+              <li>In figure 2, are the inputs colored or the outputs? Seem like the outputs are colored, but it’s still hard to relate them.</li>
             </ul>
           </li>
-          <li>Biological rules with ML tasks.
+          <li>Still, I need to give best description of the system so we’ll go ahead.</li>
+          <li>$2^3 = 8$ possible memories. Random impulses hit each bit and either confirm the sign (because it matched +1,-1) or flip sign from +1 to -1.</li>
+          <li>modeled with echostate RNN trained using FORCE (Sussillo &amp; Abbot 2007) and trained using random init. weights and 600 different starting points (ICs). Fixed point finder resulted in 26 distinct fixed points and then they analyze these w/ linear stabiility anaylsis described above.</li>
+          <li><strong>important</strong> there are 8 attractors for every memory state. 
+  <!-- -  <img src="/assets/images/sussillo_2013_fig3.png" alt="no alt" width="500" align="center"/>  -->
+            <blockquote>
+              <p>Sussillo and Barak 2013</p>
+              <blockquote>
+                <p>Figure 3: Low-dimensional phase space representation of 3-bit flip-flop task. (Left) The eight memory states are shown as black x. In blue are shown all 24 1-bit transitions between the eight memory states of the 3-bit flip-flop. The saddle fixed points with one unstable dimension are shown with green x. A thick red line denotes the dimension of instability of these saddle points. In thin red are the network trajectories started just off the unstable dimensions of the saddle points. These are heteroclinic orbits between the saddles that decide the boundaries and the attractor fixed points that represent the memories. Finally, the pink x show other fixed points, all with four unstable dimensions. Thick red lines show these dimensions of instability, and thin red lines show network trajectories started just off the fixed points in these unstable dimensions. (Right) Demonstration that a saddle point mediates the transitions between attractors. The input for a transition (circled region in left panel) was varied from 0 to 1, and the network dynamics are shown (blue for normal input pulse and cyan for the rest). As the input pulse increased in value, the network came ever closer to the saddle and then finally transitioned to the new attractor state.</p>
+              </blockquote>
+            </blockquote>
+          </li>
+          <li>System uses saddle points to mediate transition from one memory to another.</li>
+          <li>Though most transition from memory states are fairly straightforward, there are some unstable trajectories that appear to serve no purpose (pink fixed points).</li>
+          <li>Without explicit design of a network for a particular phase space, there can be redundant or multiple fixed points between two attractor states.</li>
+        </ul>
+      </li>
+      <li>Sine wave generator
+        <ul>
+          <li>Network that produces a target sine wave for a given frequency from 1-51 frequency values.</li>
+          <li>linearized system had only two unstable dimensions.</li>
+          <li>Is it a surprising result that there is a fixed point corresponding to the 51 freq. values? Obviously we know some of them sill result in regions of interest, but is the 1-1 correspondence implied by the task or not?
             <ul>
-              <li>This is one is interesting because I’d like to see how well biologically realistic credit assignment matches up against SOTA methods for MNIST.</li>
+              <li>These regions are rigoursly verified by norm of linear term agreeing with conditions (idk the eq. # above, but it’s the ones under “linear approximations” section).</li>
+              <li>So I guess that is not necessarily implied by the fixed point analysis.</li>
             </ul>
           </li>
-          <li>network similarity: how can you tell the distance between two nets?</li>
         </ul>
       </li>
-      <li>Dimensionality Reduction
+      <li>Beyond fixed points
         <ul>
-          <li>This one trend shows that PCA, UMAP, and tSNE can be improved upon to get low dim. representations that do not warp local and/or global distance. Ah, the curse of dimensionality.</li>
+          <li>saddle points found by $q$ (“linear approximations” section) also provide insight system because linear term is dominating even if zero order of taylor expansion != 0. They term these points ghost points (or slow points) and state that even if they are not mediating transitions directly like fixed points, they are influencing the tracjectory of the system as shown below.
+            <ul>
+              <li>I thought zero-order term was linear? And first or second order might not = 0.
+  <!-- -  <img src="/assets/images/sussillo_2013_fig5.png" alt="no alt" width="500" align="center"/>  --></li>
+            </ul>
+          </li>
+          <li>paper includes some examples and formalizaiton of linear dymamics around this point.</li>
         </ul>
       </li>
-      <li>Data Scaling
+      <li>Approximate plane attractor
         <ul>
-          <li>How to curate / record / assay large experiments for high throughput data?</li>
+          <li>This example further demonstrates the utility of finding saddle points using $q$. Because this is a summary I won’t explain the approximate plane attractor in too much detail.</li>
+          <li>The gist is that it is a 2 point moving average task which means two values need to be stored in memory.</li>
+          <li>100dim. RNN slow points ($q \leq 1e-4$) actually created a two dimensional manifold.</li>
+          <li>“Ablation study” so to speak done by replace slow points with  linear time-varying dynamical system (LTVDS) with very low mean squared error on transition states.</li>
+          <li>finally, they show the method is robust to peturbations in RNN and doesn’t rely on a finely tuned RNN.
+            <ul>
+              <li>This is important to show (something a reviewer might have asked for), but I will not cover it here.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Discussion
+        <ul>
+          <li>Open points for future work include
+            <ul>
+              <li>generalization to higher dimensional inputs and tasks.</li>
+              <li>May provide insight into observed experimental findings of low-dim. dynamics of experimental neuroscience.
+                <ul>
+                  <li>This is the one I am interested in!</li>
+                </ul>
+              </li>
+              <li>Applying this technique to spiking models.
+                <ul>
+                  <li>Also this…</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
   </li>
-  <li>I liked the writing / blog style because it was interesting to read and broke the monotony from reading papers.</li>
-  <li>It was also a concise read so I could read the whole thing instead of skimming. Also packed with a bunch of info about applications of key themes.</li>
-  <li>To me, it’s really exciting to see a conference where ANNs are compared to biological NNs because I find the two topics: generative modeling and biological nets on ML tasks to be interesting because of their relation to eachother. Both tasks seem to be two sides of the neural network coin. For the generative modeling task we are applying nets to better understand the brain and in the ML task we are trying to borrow the brain to make better ML models.</li>
-  <li>Can’t wait to see how these topics unfold in future conferences since I think they’ll have important impact on brain computer interfaces and autonomous control in robotics.</li>
 </ul>
 
 
@@ -523,7 +612,7 @@ in High-Dimensional Recurrent Neural Networks by David Sussillo and Omri Barak
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          6 minute read
+          5 minute read
         
       </span>
     
@@ -771,7 +860,7 @@ interfaces by Amy Orsborn and Bijan Pesaran
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 minute read
+          2 minute read
         
       </span>
     
@@ -855,7 +944,7 @@ interfaces by Amy Orsborn and Bijan Pesaran
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 minute read
+          2 minute read
         
       </span>
     
@@ -1831,7 +1920,7 @@ and Biological Connections by Joseph Marino
 
 <!-- 
 
-<title>Review 20: Trends in Computational Neuroscience: Cosyne 2022 - Alexander Ladd</title>
+<title>Review 36: Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks - Alexander Ladd</title>
 <meta name="viewport" content="width=device-width">
 
 <link rel="stylesheet" href="/css/all.css"> -->

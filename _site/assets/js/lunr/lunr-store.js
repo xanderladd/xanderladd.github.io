@@ -214,4 +214,10 @@ var store = [{
         "tags": [],
         "url": "/reviews/review35/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 36: Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks",
+        "excerpt":"Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks by David Sussillo and Omri Barak Sussillo, David, and Omri Barak. “Opening the black box: low-dimensional dynamics in high-dimensional recurrent neural networks.” Neural computation 25.3 (2013): 626-649. Notation : I don’t know how to use macro \\bm instead of...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review36/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

@@ -37,7 +37,7 @@ Sussillo, David, and Omri Barak. "Opening the black box: low-dimensional dynamic
         \end{equation}
         - The system has three fixed points: a saddle at (0, 0) and two attractors at (1, 1/2) and (−1, −1/2).
         - Here is the figure used to describe this dynamical system. I find it useful because it shows how differnt ICs (inital conditions) can converge to different fixed points and does a decent job of showing the difference between saddle and fixed point.
-        <!-- <img src="/assets/images/sussillo_2013_fig1.png" alt="no alt" width="500" align="center"/>  -->
+        <img src="/assets/images/sussillo_2013_fig1.png" alt="no alt" width="500" align="center"/> 
     - RNN formulation
         - $\mathbf{x}$ is the vector of activations and $\r(x_i)$ is the firing rate for neuron $i$
         \begin{equation}
@@ -54,7 +54,7 @@ Sussillo, David, and Omri Barak. "Opening the black box: low-dimensional dynamic
         - $2^3 = 8$ possible memories. Random impulses hit each bit and either confirm the sign (because it matched +1,-1) or flip sign from +1 to -1.
         - modeled with echostate RNN trained using FORCE (Sussillo & Abbot 2007) and trained using random init. weights and 600 different starting points (ICs). Fixed point finder resulted in 26 distinct fixed points and then they analyze these w/ linear stabiility anaylsis described above.
         - **important** there are 8 attractors for every memory state. 
-        <!-- -  <img src="/assets/images/sussillo_2013_fig3.png" alt="no alt" width="500" align="center"/>  -->
+        -  <img src="/assets/images/sussillo_2013_fig3.png" alt="no alt" width="500" align="center"/> 
         > Sussillo and Barak 2013
         >> Figure 3: Low-dimensional phase space representation of 3-bit flip-flop task. (Left) The eight memory states are shown as black x. In blue are shown all 24 1-bit transitions between the eight memory states of the 3-bit flip-flop. The saddle fixed points with one unstable dimension are shown with green x. A thick red line denotes the dimension of instability of these saddle points. In thin red are the network trajectories started just off the unstable dimensions of the saddle points. These are heteroclinic orbits between the saddles that decide the boundaries and the attractor fixed points that represent the memories. Finally, the pink x show other fixed points, all with four unstable dimensions. Thick red lines show these dimensions of instability, and thin red lines show network trajectories started just off the fixed points in these unstable dimensions. (Right) Demonstration that a saddle point mediates the transitions between attractors. The input for a transition (circled region in left panel) was varied from 0 to 1, and the network dynamics are shown (blue for normal input pulse and cyan for the rest). As the input pulse increased in value, the network came ever closer to the saddle and then finally transitioned to the new attractor state.
         - System uses saddle points to mediate transition from one memory to another.
@@ -69,7 +69,7 @@ Sussillo, David, and Omri Barak. "Opening the black box: low-dimensional dynamic
     - Beyond fixed points
         - saddle points found by $q$ ("linear approximations" section) also provide insight system because linear term is dominating even if zero order of taylor expansion != 0. They term these points ghost points (or slow points) and state that even if they are not mediating transitions directly like fixed points, they are influencing the tracjectory of the system as shown below.
             - I thought zero-order term was linear? And first or second order might not = 0.
-            <!-- -  <img src="/assets/images/sussillo_2013_fig5.png" alt="no alt" width="500" align="center"/>  -->
+            -  <img src="/assets/images/sussillo_2013_fig5.png" alt="no alt" width="500" align="center"/> 
         - paper includes some examples and formalizaiton of linear dymamics around this point.
     - Approximate plane attractor
         - This example further demonstrates the utility of finding saddle points using $q$. Because this is a summary I won't explain the approximate plane attractor in too much detail.

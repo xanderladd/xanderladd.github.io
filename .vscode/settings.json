@@ -24,6 +24,11 @@
             "language": "markdown",
             "scheme": "file",
             "pattern": "_posts/reviews/2022-07-08-review32.markdown"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "_posts/reviews/2022-09-18-review36.markdown"
         }
     ]
 }

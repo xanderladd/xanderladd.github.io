@@ -26,14 +26,16 @@ Sussillo, David, and Omri Barak. "Opening the black box: low-dimensional dynamic
     - Technique introduced allows id. of attractors, repellers, and saddle ponts.
 - Linear approximations
     -  a system of diff. eqs.: $ \dot{x} = F(x) $ and trying to find points, $ x^{\*} $ such that $ \| F(x^{\*}) \partial x \| \geq F(x^{\*}) $ and $ \| F(x^{\*}) \partial x \| \geq  \| \frac{1}{2}  \partial x  F''(x^{\*}) \partial x \| $.
-    - The way I understand this is that peturbations induce a linear rate of change in the value of the system and the rate of change in the system.
-    -  speed, or kinetic energy of the systm is : $ q(x) = \frac{1}{2}\|F(x)\|^2  $, which is useful becuase it is a scalar that can be optimized,  q = 0 only at fixed points, and gradient and hessian of q are amenable to finding minumum values that are not fixed points (so they are saddle points?).
-        - don't fully understand how the conditions for minmimum are derived but moving on for now.
+    - The way I understand this is that perturbations induce a linear rate of change in the value of the system and the rate of change in the system.
+    -  Speed, or kinetic energy, of the system is : $ q(x) = \frac{1}{2}\|F(x)\|^2  $, which is useful because it is a scalar that can be optimized,  q = 0 only at fixed points, and gradient and hessian of q are amenable to finding minimum values that are not fixed points (so they are saddle points?).
+        - don't fully understand how the conditions for minimum are derived but moving on for now.
     - 2 - d example:
         - defined as dynamical system:
         \begin{equation}
-            \dot(x_1) = (1 - x_1^2)x_2
-            \dot(x_2) = x_1 / 2 - x_2
+            \dot{x_1} = (1 - x_1^2)x_2
+        \end{equation}
+        \begin{equation}
+            \dot{x_2} = x_1 / 2 - x_2
         \end{equation}
         - The system has three fixed points: a saddle at (0, 0) and two attractors at (1, 1/2) and (−1, −1/2).
         - Here is the figure used to describe this dynamical system. I find it useful because it shows how differnt ICs (inital conditions) can converge to different fixed points and does a decent job of showing the difference between saddle and fixed point.
@@ -63,20 +65,20 @@ Sussillo, David, and Omri Barak. "Opening the black box: low-dimensional dynamic
     - Sine wave generator
         - Network that produces a target sine wave for a given frequency from 1-51 frequency values.
         - linearized system had only two unstable dimensions.
-        - Is it a surprising result that there is a fixed point corresponding to the 51 freq. values? Obviously we know some of them sill result in regions of interest, but is the 1-1 correspondence implied by the task or not?
-            - These regions are rigoursly verified by norm of linear term agreeing with conditions (idk the eq. # above, but it's the ones under "linear approximations" section).
+        - Is it a surprising result that there is a fixed point corresponding to the 51 freq. values? Obviously we know some of them still result in regions of interest, but is the 1-1 correspondence implied by the task or not?
+            - These regions are rigorously verified by norm of linear term agreeing with conditions (idk the eq. # above, but it's the ones under "linear approximations" section).
             - So I guess that is not necessarily implied by the fixed point analysis.
     - Beyond fixed points
         - saddle points found by $q$ ("linear approximations" section) also provide insight system because linear term is dominating even if zero order of taylor expansion != 0. They term these points ghost points (or slow points) and state that even if they are not mediating transitions directly like fixed points, they are influencing the tracjectory of the system as shown below.
             - I thought zero-order term was linear? And first or second order might not = 0.
             -  <img src="/assets/images/sussillo_2013_fig5.png" alt="no alt" width="500" align="center"/> 
-        - paper includes some examples and formalizaiton of linear dymamics around this point.
+        - paper includes some examples and formalizaiton of linear dynamics around this point.
     - Approximate plane attractor
         - This example further demonstrates the utility of finding saddle points using $q$. Because this is a summary I won't explain the approximate plane attractor in too much detail.
         - The gist is that it is a 2 point moving average task which means two values need to be stored in memory. 
         - 100dim. RNN slow points ($q \leq 1e-4$) actually created a two dimensional manifold.
-        - "Ablation study" so to speak done by replace slow points with  linear time-varying dynamical system (LTVDS) with very low mean squared error on transition states.
-        - finally, they show the method is robust to peturbations in RNN and doesn't rely on a finely tuned RNN.
+        - "Ablation study" so to speak done by replacing slow points with linear time-varying dynamical system (LTVDS) with very low mean squared error on transition states.
+        - finally, they show the method is robust to perturbations in RNN and doesn't rely on a finely tuned RNN.
             - This is important to show (something a reviewer might have asked for), but I will not cover it here.
     - Discussion
         - Open points for future work include 

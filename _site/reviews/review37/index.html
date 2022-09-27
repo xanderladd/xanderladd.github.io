@@ -1,0 +1,2169 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Review 37: Auto-Encoding Variational Bayes - Alexander Ladd</title>
+<meta name="description" content="Auto-Encoding Variational Bayes by Diederik P. Kingma and Max Welling">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Alexander Ladd">
+<meta property="og:title" content="Review 37: Auto-Encoding Variational Bayes">
+<meta property="og:url" content="http://localhost:4000/reviews/review37/">
+
+
+  <meta property="og:description" content="Auto-Encoding Variational Bayes by Diederik P. Kingma and Max Welling">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-09-23T05:17:13-07:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/reviews/review37/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Alexander Ladd",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Alexander Ladd Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--base wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/xander_pic.png" alt="Alexander Ladd"></a>
+        
+        <a class="site-title" href="/">
+          Alexander Ladd
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects">projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/research">research</a>
+            </li><li class="masthead__menu-item">
+              <a href="/reviews">reviews</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url"></a>
+    </h3>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+  
+  </div>
+
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title">Review 37: Auto-Encoding Variational Bayes</h1>
+    
+    <p><a href="https://arxiv.org/pdf/1312.6114.pdf">Auto-Encoding Variational Bayes</a> by <a href="http://dpkingma.com/">Diederik P. Kingma</a> and <a href="https://staff.fnwi.uva.nl/m.welling/">Max Welling</a></p>
+
+<p>Kingma, Diederik P., and Max Welling. “Auto-encoding variational bayes.” arXiv preprint arXiv:1312.6114 (2013).
+ <!-- -  <img src="/assets/images/imagery5.png" alt="no alt" width="500" align="center"/> --></p>
+
+<ul>
+  <li>Notation : I don’t know how to use macro <code class="language-plaintext highlighter-rouge">\bm</code> instead of <code class="language-plaintext highlighter-rouge">\mathbf</code> on this website so vector notation is going out of the window. That can be very confusing… but <code class="language-plaintext highlighter-rouge">\mathbf</code> is clunky.</li>
+  <li>Introduction
+    <ul>
+      <li>They show how a simple reparamterization of the variational lower bound yields a simple differntiable unbiased estimator of the lower bound in SGVB (stochastic gradient variational bayes).</li>
+      <li>The approximate posterior inference model can be used for representation, denoising, recgoniztion, visualization etc. and they call it Variational auto-encoder.</li>
+    </ul>
+  </li>
+  <li>Methods
+    <ul>
+      <li>
+        <p><img src="/assets/images/kingma_fig_1.png" alt="no alt" width="500" align="center" /></p>
+      </li>
+      <li>Problem setting
+        <ul>
+          <li>Consider dataset  $ X = { [x^{(i)}] }^N_{i=1} $ consisting of N iid samples of some contininous or discrete variable $x$.</li>
+          <li>Data is generated by some by some process represented by latent variable $z$ with prior $z \sim p_{\theta^*}(z)$ and likelihood $x \sim p_{\theta^*}(x \mid z)$. Where distribution $\theta^*$ and latent R.V. $z$ are unknown.</li>
+          <li>Paper does not make several assumptions resulting in a setting characterized by:
+            <ol>
+              <li>Intractability: Assume we cannot explictly compute the integral of the marginal likelihood $p_{\theta}(x)= \int p_{\theta}(x \mid z) p_{\theta}(z) dz$.</li>
+              <li>Dataset is too large to sample solutions to MAP using Monte Carlo EM.</li>
+            </ol>
+          </li>
+          <li>So they propose a solution to 3 real world problems in this setting.
+            <ol>
+              <li>Efficient maximum likelihood (ML) of maximum a posteriori (MAP) of parameters of  $\theta$</li>
+              <li>Inference on latent variable $z$ given $x$ and estimated parameters of $\theta$.</li>
+              <li>Efficient approximate marginal inference of the variable $x$.</li>
+            </ol>
+          </li>
+          <li>Introduce a “recognition model” or appromximation of the true posterior $p_{\theta}(z \mid x)$ as $q_{\theta}(z \mid x)$.</li>
+        </ul>
+      </li>
+      <li>Variational Bound
+        <ul>
+          <li>The likelihood of a given sample is 
+  \(log p_{\theta}(x^{(i)}) = KL(q_{\theta}(z \mid x^{(i}) || p_{\theta}(z \mid x^{(i)}) + \mathcal{L}(\theta, \phi ; x^{(i)})\) for $ i = 1 … N$ datapoints.</li>
+          <li>Then we can replace $ \mathcal{L}(\theta, \phi ; x^{(i)}) $ with \(\mathbb{E}_{ q^{\phi}(z \mid x) } [- log q_{ \theta }(z \mid x) + log p_{\theta}(z, x)]\)
+            <ul>
+              <li>How does this derivation work for the variational lower bound?</li>
+            </ul>
+          </li>
+          <li>Then the final equation we get for the variatonal lower bound is: 
+ \begin{equation}
+   log p_{\theta}(x^{(i)}) = KL(q_{\theta}(z \mid x^{(i}) || p_{\theta}(z \mid x^{(i)}) + \ \mathbb{E}_{q^{\phi}(z \mid x)}  [- log q_{ \theta }(z \mid x) + log p_{\theta}(z, x)]]
+  \end{equation}</li>
+          <li>Gradient w.r.t. to $\phi$ the recognition model parameters is tricky to compute because you’d have to use naive monte carlo gradient estimator.</li>
+        </ul>
+      </li>
+      <li>The SGVB estimator and the AEVB algorithm
+        <ul>
+          <li>This is the good part now. They reparameterize $\tilde{z} = q_{\phi}(z \mid x)$ using a differentiable equation $  g_{\phi}(\epsilon, x)$ ! where $\epsilon$ is a random noise variable. So:
+  \(\tilde{z} = g_{\phi}(\epsilon, x) \ \text{with} \  \epsilon \sim P(\epsilon)\)</li>
+          <li>Then we can replace $q_{phi}(z \mid x)$ in equation 1 with function $g_{\phi}(\epsilon, x)$. Except now the monte carlo estimate of expectation is conditioned on $p(\epsilon)$ now, because that is the underlying distribution.</li>
+          <li>Now we using stochastic variational estimate: $\tilde{\mathcal{L}}^A(\theta, \phi ; x^{(i)}) $</li>
+          <li>Thus we finally get to the form of the Stochastic Gradient Variational Bayes (SGVB) estimator:
+  \begin{equation}
+  \tilde{\mathcal{L}}^A(\theta, \phi ; x^{(i)}) = \frac{1}{L} \sum_{l=1}^L log_{p_{\theta}} (x^{(i)}, z^{(i,l)}) - log_{p_{\theta}}(z^{(i,l)} \mid x^{(i)})
+  \end{equation} where $z^{(i,l)} = g(\epsilon^{i,l},x^{(i)}) $ and $\epsilon^{l} \sim p(\epsilon)$ .</li>
+          <li>Then there is the regularized version of SGVB which uses KL divergence to ground the variational distribution $q_{\theta}$ with a prior distribution. This has the form:
+  \begin{equation}
+  \tilde{\mathcal{L}}^A(\theta, \phi ; x^{(i)}) =  KL(q_{\theta}(z \mid x^{(i}) || p_{\theta}(z \mid x^{(i)}) +  \ \frac{1}{L} \sum_{l=1}^L log_{p_{\theta}} (x^{(i)}, z^{(i,l)}) - log_{p_{\theta}}(z^{(i,l)} \mid x^{(i)})
+  \end{equation}.</li>
+          <li>The next part of this paper describes how to do minibatch updates using an optimizer like SGD / ADAM because we can now take gradients w.r.t to $\theta$ and $\phi$.</li>
+          <li>In equation 3 the first term serves as a regularizer and the second term serves as a reconstruction loss as it produces a generative model of datapoint $x^{(i)}$ given $z^{(i,l)}$ .</li>
+        </ul>
+      </li>
+      <li>The reparameterization trick
+        <ul>
+          <li>If $z$ is a continuous r.v. sampled from $q_{\phi}$(z \mid x)$, then they express $z$ in terms of a deterministic variable $z = g(\epsilon, x)$ with an indpendent marginal $p(\phi)$.</li>
+          <li>Then they provide a proof for why monte carlo estimate of expectation is differentiable w.r.t. $\phi$.</li>
+          <li>But still, the trick is hard to understand intuitively since changing the parameters of $q_{\phi}$ doesn’t change the indpendent marginal $p(\epsilon)$ which is some noise.</li>
+          <li>On that note, the rest of this section goes on to describe the reasonable choices for  $p(\epsilon)$.</li>
+        </ul>
+      </li>
+      <li>Variatonal AutoEncoder
+        <ul>
+          <li>Start by assuming variational approximate posterior is multivariate gaussian s.t.: $ log q_{\phi}( z \mid x^{(i)}) = \mathcal{N}(z; \mu^{(i)}, \sigma^{2(i)} I)$ where the mean and s.d. of the approximate posterior, $\mu^{(i)}$ and  $\sigma^{i}$ are outputs of the encoding MLP, i.e. nonlinear functions of datapoint $x^{(i)}$ and variatonal parameters $\phi$.</li>
+          <li>Then the resulting estimator is:
+  \begin{equation}
+  \mathcal{L}(\theta, \phi ; x^{(i)}) \simeq \frac{1}{2} \sum_{j=1}{J} ((log(\sigma_{j}^{(i)})^ 2) + (\mu_{j}^{(i)})^ 2) - (\sigma_{j}^{(i)})^ 2)) + \frac{1}{L} \sum_{l=1}^L p_{\theta}(x^{(i)} \mid z^{(i,l)})
+  \end{equation}</li>
+        </ul>
+      </li>
+      <li>The relational works section is pretty interesting because it shows just how novel this method is. There does seem to have been some work, called wake-sleep, on recognition for latent variable model for an approximation of the true posterior, but certainly it did not involve gradient descent. Besides that, related work is auto-encoders.
+   <img src="/assets/images/kingma_fig_2.png" alt="no alt" width="500" align="center" /></li>
+      <li>Experiments.
+        <ul>
+          <li>MNIST
+            <ul>
+              <li>outperforms wake-sleep benchmark even with only 3 latent variables.</li>
+              <li>lower likelihood than Frey face.</li>
+            </ul>
+          </li>
+          <li>Frey Face
+            <ul>
+              <li>outperforms wake-sleep benchmark even with only 3 latent variables.</li>
+              <li>much higher likelihood model</li>
+            </ul>
+          </li>
+          <li>Adding more latent variables never actually decreases evidence lower bound which is kinda crazy given they usee 200 latent variables.
+            <ul>
+              <li>Something that would be abosolutely impossible if using MCMC approximation.</li>
+            </ul>
+          </li>
+          <li>Figure 3 shows an excellent result w.r.t. to scale. That is simply: using less latent variables they can use MCMC to approximate posterior but the effectiveness does not scale nearly as well with more training data. Showing scalability of the AEVB method is an excellent idea.
+  <img src="/assets/images/kingma_fig_3.png" alt="no alt" width="500" align="center" /></li>
+        </ul>
+      </li>
+      <li>Future work
+        <blockquote>
+          <p>Kingma and Welling 2013</p>
+          <blockquote>
+            <p>there are plenty of future directions: (i) learning hierarchical generative architectures with deep neural networks (e.g. convolutional networks) used for the encoders and decoders, trained jointly with AEVB; (ii) time-series models (i.e. dynamic Bayesian networks); (iii) application of SGVB to the global parameters; (iv) supervised models with latent variables, useful for learning complicated noise distributions.</p>
+          </blockquote>
+        </blockquote>
+        <ul>
+          <li>We like (ii)!</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+<!-- 
+<div class="entries-list">
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review39/" rel="permalink">Review 38: Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations by Timothy Doyeon Kim and Carlos D. Brody
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review38/" rel="permalink">Review 38: Latent Factor Analysis via Dynamical Systems (LFADS)
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">LFADS - Latent Factor Analysis via Dynamical
+Systems by David Sussillo and Chethan Pandarinath
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review37/" rel="permalink">Review 37: Auto-Encoding Variational Bayes
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Auto-Encoding Variational Bayes by Diederik P. Kingma and Max Welling
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review36/" rel="permalink">Review 36: Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          6 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Opening the Black Box: Low-Dimensional Dynamics
+in High-Dimensional Recurrent Neural Networks by David Sussillo and Omri Barak
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review35/" rel="permalink">Review 35: Cortical activity during motor execution, motor imagery, and imagery-based online feedback
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Cortical activity during motor execution, motor imagery, and imagery-based online feedback by Kai Miller and Rajesh P.N. Rao
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review34/" rel="permalink">Review 34: The Role of Population Structure in Computations Through Neural Dynamics
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">The Role of Population Structure in Computations Through Neural Dynamics by Alexis Dubreuil Adrian Valente and Srdjan Ostojic
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review33/" rel="permalink">Review 33: High-density Single-unit Human Cortical Recordings Using the Neuropixels Probe
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">High-density Single-unit Human Cortical Recordings Using the Neuropixels Probe by Jason Chung and Edward F. Chang
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review32/" rel="permalink">Review 32: Living Science: Maintaining the Joy of Discovery
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Living Science: Maintaining the Joy of Discovery by Eve Marder
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review31/" rel="permalink">Review 31: Noninvasive Brain–Machine Interfaces for Robotic Devices
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Noninvasive Brain–Machine Interfaces for Robotic Devices by Luca Toning and José del R. Millán
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review30/" rel="permalink">Review 30: Eavesdropping on the Brain With 10,000 Electrodes
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Eavesdropping on the Brain With 10,000 Electrodes by Barun Dutta
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review29/" rel="permalink">Review 29: Emergence of Coordinated Neural Dynamics Underlies Neuroprosthetic Learning and Skillful Control
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Emergence of Coordinated Neural Dynamics Underlies Neuroprosthetic Learning and Skillful Control by Vivek Athalye and Jose Carmena
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review28/" rel="permalink">Review 28: Four ethical priorities for neurotechnologies and AI
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Four ethical priorities for neurotechnologies and AI
+ by Rafael Yuste and Sara Goering
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review27/" rel="permalink">Review 27: Parsing learning in networks using brain–machine interfaces
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Parsing learning in networks using brain-machine
+interfaces by Amy Orsborn and Bijan Pesaran
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review26/" rel="permalink">Review 26: A control-theoretic approach to brain-computer interface design
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">A control-theoretic approach to brain-computer interface design by Yin Zhang and Steven Chase
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review25/" rel="permalink">Review 25: Plug-and-play control of a brain-computer interface through neural map stabilization
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Plug-and-play control of a brain-computer interface through neural map stabilization
+ by Daniel Silversmith.
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review24/" rel="permalink">Review 24:The brain-reading devices helping paralysed people to move, talk and touch
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">The brain-reading devices helping paralysed people to move, talk and touch
+ by Liam Drew.
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review23/" rel="permalink">Review 23: Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Neuropixels 2.0: A miniaturized high-density probe for stable, long-term
+brain recordings by Nick Steinmetz.
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review21/" rel="permalink">Review 21: Cracking the Neural Code in Humans
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Cracking the Neural Code in Humans
+ by Emily Singer at the Simons Foundation.
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review20/" rel="permalink">Review 20: Trends in Computational Neuroscience: Cosyne 2022
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Trends in Computational Neuroscience: Cosyne 2022
+ by Sabera Talukder
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review19/" rel="permalink">Review 19: Let us never speak of these values again.
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Let us never speak of these values again. by Ben Recht
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review18/" rel="permalink">Review 18: Deep Learning Is Hitting a Wall
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Deep Learning is Hitting a Wall by Gary Marcus
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review17/" rel="permalink">Review 17: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 3
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Predictive Coding, Variational Autoencoders,
+and Biological Connections by Joseph Marino
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review16/" rel="permalink">Review 16: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 2
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Predictive Coding, Variational Autoencoders,
+and Biological Connections by Joseph Marino
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review15/" rel="permalink">Review 15: Predictive Coding, Variational Autoencoders, and Biological Connections Pt 1
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Predictive Coding, Variational Autoencoders,
+and Biological Connections by Joseph Marino
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review14/" rel="permalink">Review 14: Computation Through Neural Population Dynamics Part 2
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Computation Through Neural Population Dynamics by Saurabh Vyas
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review13/" rel="permalink">Review 13: Computation Through Neural Population Dynamics Part 1
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Computation Through Neural Population Dynamics by Saurabh Vyas
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review12/" rel="permalink">Review 12: Just Ask for Generalization
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Just Ask for Generalization by Eric Jang
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review11/" rel="permalink">Review 11: The Bandwagon
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">The Bandwagon by Claude E. Shannon
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review10/" rel="permalink">Review 10: Beyond advertising: New infrastructures for publishing integrated research objects
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Beyond advertising: New infrastructures for publishing integrated research objects by Elizabeth DuPre et al.
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review9/" rel="permalink">Review 9: The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          6 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">The Sensory Neuron as a Transformer: Permutation-Invariant Neural Networks for Reinforcement Learning by Dr. Ha and Yujin Tang
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review8/" rel="permalink">Review 8: The Future of Artificial Intelligence is Self-Organizing and Self-Assembling
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">The Future of Artificial Intelligence is Self-Organizing and Self-Assembling by Prof. Sebastian Risi
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review7/" rel="permalink">Review 7: Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors by Dr. Austin Graves Dr. Richard Huganir.
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review6/" rel="permalink">Review 6: Spiking Neural Nets
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Spiking Neural Networks by Anil Ananthaswamy.
+
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review5/" rel="permalink">Review 5
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Making RL Tractable by Learning More Informative Reward Functions: Example-Based Control, Meta-Learning, and Normalized Maximum Likelihood.
+
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/Not_Even_Wrong/" rel="permalink">Not Even Wrong
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Wow, I just found out what it means to be “Not even wrong”. The phase, coined by Wolfgang Pauli has just given me a huge slice of humble pie. Basically not e...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review4/" rel="permalink">Review 4
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  If we already understood the brain, would we even know it? by Tal Yarkoni.
+
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review3/" rel="permalink">Review 3
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  From synapse to network: models of information storage and retrieval in neural circuits
+ by Johnatan (Yonatan) Aljadeff et al.
+
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review2/" rel="permalink">Review 2
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          6 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Sparse balance: excitatory-inhibitory networks with small bias currents and broadly distributed synaptic weights
+ by Ramin Khajeh, Francesco Fumarola, Lar...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review1/" rel="permalink">Review 1
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Review 1 : In Silico by Dr. Fairhall
+    
+      Citation: Fairhall, Adrienne L. “In silico: where next?.” Eneuro 8.2 (2021).
+      Intro
+        
+        ...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/whos_in_charge/" rel="permalink">Who’s In Charge
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Well I am very busy so I’ll keep this short and sweet but I was listening to Alan Watts and ever since I’ve turned it off this one thought has stuck with me....</p>
+  </article>
+</div>
+
+  
+</div> -->
+
+<!-- 
+
+<title>Review 37: Auto-Encoding Variational Bayes - Alexander Ladd</title>
+<meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" href="/css/all.css"> -->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51807848-1', 'simple.gy');
+  ga('send', 'pageview');
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true},
+      jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
+      extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
+      TeX: {
+      extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
+      equationNumbers: {
+      autoNumber: "AMS",
+      tags: 'ams'
+      },
+      tex: {packages: {'[+]': ['boldsymbol'], '[+]': ['bm']}}
+
+    }
+  });
+</script>
+
+
+
+<script src="https://utteranc.es/client.js"
+        repo="xanderladd/xanderladd.github.io"
+        issue-term="pathname"
+        label="comments"
+        theme="photon-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+  </div>
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Alexander Ladd. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+    <script>
+  'use strict';
+
+  (function() {
+    var commentContainer = document.querySelector('#utterances-comments');
+
+    if (!commentContainer) {
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.setAttribute('src', 'https://utteranc.es/client.js');
+    script.setAttribute('repo', '');
+    script.setAttribute('issue-term', 'pathname');
+    script.setAttribute('theme', 'github-light');
+    script.setAttribute('crossorigin', 'anonymous');
+
+    commentContainer.appendChild(script);
+  })();
+</script>
+
+  
+
+
+
+
+
+  </body>
+</html>

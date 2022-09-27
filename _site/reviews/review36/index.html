@@ -259,22 +259,24 @@ in High-Dimensional Recurrent Neural Networks</a> by <a href="https://scholar.go
   <li>Linear approximations
     <ul>
       <li>a system of diff. eqs.: $ \dot{x} = F(x) $ and trying to find points, $ x^{*} $ such that $ | F(x^{*}) \partial x | \geq F(x^{*}) $ and $ | F(x^{*}) \partial x | \geq  | \frac{1}{2}  \partial x  F’‘(x^{*}) \partial x | $.</li>
-      <li>The way I understand this is that peturbations induce a linear rate of change in the value of the system and the rate of change in the system.</li>
-      <li>speed, or kinetic energy of the systm is : $ q(x) = \frac{1}{2}|F(x)|^2  $, which is useful becuase it is a scalar that can be optimized,  q = 0 only at fixed points, and gradient and hessian of q are amenable to finding minumum values that are not fixed points (so they are saddle points?).
+      <li>The way I understand this is that perturbations induce a linear rate of change in the value of the system and the rate of change in the system.</li>
+      <li>Speed, or kinetic energy, of the system is : $ q(x) = \frac{1}{2}|F(x)|^2  $, which is useful because it is a scalar that can be optimized,  q = 0 only at fixed points, and gradient and hessian of q are amenable to finding minimum values that are not fixed points (so they are saddle points?).
         <ul>
-          <li>don’t fully understand how the conditions for minmimum are derived but moving on for now.</li>
+          <li>don’t fully understand how the conditions for minimum are derived but moving on for now.</li>
         </ul>
       </li>
       <li>2 - d example:
         <ul>
           <li>defined as dynamical system:
   \begin{equation}
-  \dot(x_1) = (1 - x_1^2)x_2
-  \dot(x_2) = x_1 / 2 - x_2
+  \dot{x_1} = (1 - x_1^2)x_2
+  \end{equation}
+  \begin{equation}
+  \dot{x_2} = x_1 / 2 - x_2
   \end{equation}</li>
           <li>The system has three fixed points: a saddle at (0, 0) and two attractors at (1, 1/2) and (−1, −1/2).</li>
           <li>Here is the figure used to describe this dynamical system. I find it useful because it shows how differnt ICs (inital conditions) can converge to different fixed points and does a decent job of showing the difference between saddle and fixed point.
-  <!-- <img src="/assets/images/sussillo_2013_fig1.png" alt="no alt" width="500" align="center"/>  --></li>
+  <img src="/assets/images/sussillo_2013_fig1.png" alt="no alt" width="500" align="center" /></li>
         </ul>
       </li>
       <li>RNN formulation
@@ -299,8 +301,8 @@ in High-Dimensional Recurrent Neural Networks</a> by <a href="https://scholar.go
           <li>Still, I need to give best description of the system so we’ll go ahead.</li>
           <li>$2^3 = 8$ possible memories. Random impulses hit each bit and either confirm the sign (because it matched +1,-1) or flip sign from +1 to -1.</li>
           <li>modeled with echostate RNN trained using FORCE (Sussillo &amp; Abbot 2007) and trained using random init. weights and 600 different starting points (ICs). Fixed point finder resulted in 26 distinct fixed points and then they analyze these w/ linear stabiility anaylsis described above.</li>
-          <li><strong>important</strong> there are 8 attractors for every memory state. 
-  <!-- -  <img src="/assets/images/sussillo_2013_fig3.png" alt="no alt" width="500" align="center"/>  -->
+          <li><strong>important</strong> there are 8 attractors for every memory state.</li>
+          <li><img src="/assets/images/sussillo_2013_fig3.png" alt="no alt" width="500" align="center" />
             <blockquote>
               <p>Sussillo and Barak 2013</p>
               <blockquote>
@@ -317,9 +319,9 @@ in High-Dimensional Recurrent Neural Networks</a> by <a href="https://scholar.go
         <ul>
           <li>Network that produces a target sine wave for a given frequency from 1-51 frequency values.</li>
           <li>linearized system had only two unstable dimensions.</li>
-          <li>Is it a surprising result that there is a fixed point corresponding to the 51 freq. values? Obviously we know some of them sill result in regions of interest, but is the 1-1 correspondence implied by the task or not?
+          <li>Is it a surprising result that there is a fixed point corresponding to the 51 freq. values? Obviously we know some of them still result in regions of interest, but is the 1-1 correspondence implied by the task or not?
             <ul>
-              <li>These regions are rigoursly verified by norm of linear term agreeing with conditions (idk the eq. # above, but it’s the ones under “linear approximations” section).</li>
+              <li>These regions are rigorously verified by norm of linear term agreeing with conditions (idk the eq. # above, but it’s the ones under “linear approximations” section).</li>
               <li>So I guess that is not necessarily implied by the fixed point analysis.</li>
             </ul>
           </li>
@@ -329,11 +331,11 @@ in High-Dimensional Recurrent Neural Networks</a> by <a href="https://scholar.go
         <ul>
           <li>saddle points found by $q$ (“linear approximations” section) also provide insight system because linear term is dominating even if zero order of taylor expansion != 0. They term these points ghost points (or slow points) and state that even if they are not mediating transitions directly like fixed points, they are influencing the tracjectory of the system as shown below.
             <ul>
-              <li>I thought zero-order term was linear? And first or second order might not = 0.
-  <!-- -  <img src="/assets/images/sussillo_2013_fig5.png" alt="no alt" width="500" align="center"/>  --></li>
+              <li>I thought zero-order term was linear? And first or second order might not = 0.</li>
+              <li><img src="/assets/images/sussillo_2013_fig5.png" alt="no alt" width="500" align="center" /></li>
             </ul>
           </li>
-          <li>paper includes some examples and formalizaiton of linear dymamics around this point.</li>
+          <li>paper includes some examples and formalizaiton of linear dynamics around this point.</li>
         </ul>
       </li>
       <li>Approximate plane attractor
@@ -341,8 +343,8 @@ in High-Dimensional Recurrent Neural Networks</a> by <a href="https://scholar.go
           <li>This example further demonstrates the utility of finding saddle points using $q$. Because this is a summary I won’t explain the approximate plane attractor in too much detail.</li>
           <li>The gist is that it is a 2 point moving average task which means two values need to be stored in memory.</li>
           <li>100dim. RNN slow points ($q \leq 1e-4$) actually created a two dimensional manifold.</li>
-          <li>“Ablation study” so to speak done by replace slow points with  linear time-varying dynamical system (LTVDS) with very low mean squared error on transition states.</li>
-          <li>finally, they show the method is robust to peturbations in RNN and doesn’t rely on a finely tuned RNN.
+          <li>“Ablation study” so to speak done by replacing slow points with linear time-varying dynamical system (LTVDS) with very low mean squared error on transition states.</li>
+          <li>finally, they show the method is robust to perturbations in RNN and doesn’t rely on a finely tuned RNN.
             <ul>
               <li>This is important to show (something a reviewer might have asked for), but I will not cover it here.</li>
             </ul>
@@ -378,6 +380,130 @@ in High-Dimensional Recurrent Neural Networks</a> by <a href="https://scholar.go
 
 <!-- 
 <div class="entries-list">
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review39/" rel="permalink">Review 38: Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations by Timothy Doyeon Kim and Carlos D. Brody
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review38/" rel="permalink">Review 38: Latent Factor Analysis via Dynamical Systems (LFADS)
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">LFADS - Latent Factor Analysis via Dynamical
+Systems by David Sussillo and Chethan Pandarinath
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/reviews/review37/" rel="permalink">Review 37: Auto-Encoding Variational Bayes
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Auto-Encoding Variational Bayes by Diederik P. Kingma and Max Welling
+
+</p>
+  </article>
+</div>
+
   
     
 

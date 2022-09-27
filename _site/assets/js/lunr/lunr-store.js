@@ -220,4 +220,22 @@ var store = [{
         "tags": [],
         "url": "/reviews/review36/",
         "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 37: Auto-Encoding Variational Bayes",
+        "excerpt":"Auto-Encoding Variational Bayes by Diederik P. Kingma and Max Welling Kingma, Diederik P., and Max Welling. “Auto-encoding variational bayes.” arXiv preprint arXiv:1312.6114 (2013). Notation : I don’t know how to use macro \\bm instead of \\mathbf on this website so vector notation is going out of the window. That can...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review37/",
+        "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 38: Latent Factor Analysis via Dynamical Systems (LFADS)",
+        "excerpt":"LFADS - Latent Factor Analysis via Dynamical Systems by David Sussillo and Chethan Pandarinath Sussillo, David, et al. “Lfads-latent factor analysis via dynamical systems.” arXiv preprint arXiv:1608.06315 (2016). Notation : I don’t know how to use macro \\bm instead of \\mathbf on this website so vector notation is going out...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review38/",
+        "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 38: Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations",
+        "excerpt":"Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations by Timothy Doyeon Kim and Carlos D. Brody Kim, Timothy D., et al. “Inferring latent dynamics underlying neural population activity via neural differential equations.” International Conference on Machine Learning. PMLR, 2021. Notation : I don’t know how to use...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review39/",
+        "teaser": "/assets/images/trees.jpeg"
       }]

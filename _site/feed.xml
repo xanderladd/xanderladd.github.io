@@ -1,4 +1,416 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-09-18T16:11:42-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 36: Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks</title><link href="http://localhost:4000/reviews/review36/" rel="alternate" type="text/html" title="Review 36: Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks" /><published>2022-07-13T05:17:13-07:00</published><updated>2022-07-13T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review36</id><content type="html" xml:base="http://localhost:4000/reviews/review36/">&lt;p&gt;&lt;a href=&quot;https://direct.mit.edu/neco/article-abstract/25/3/626/7854/Opening-the-Black-Box-Low-Dimensional-Dynamics-in&quot;&gt;Opening the Black Box: Low-Dimensional Dynamics
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-09-27T06:14:41-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 38: Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations</title><link href="http://localhost:4000/reviews/review39/" rel="alternate" type="text/html" title="Review 38: Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations" /><published>2022-09-24T05:17:13-07:00</published><updated>2022-09-24T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review39</id><content type="html" xml:base="http://localhost:4000/reviews/review39/">&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v139/kim21h/kim21h.pdf&quot;&gt;Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations&lt;/a&gt; by &lt;a href=&quot;https://timkimd.github.io/&quot;&gt;Timothy Doyeon Kim&lt;/a&gt; and &lt;a href=&quot;http://brodylab.org/&quot;&gt;Carlos D. Brody&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Kim, Timothy D., et al. “Inferring latent dynamics underlying neural population activity via neural differential equations.” International Conference on Machine Learning. PMLR, 2021.
+ &lt;!-- -  &lt;img src=&quot;/assets/images/imagery5.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot;/&gt; --&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Notation : I don’t know how to use macro &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bm&lt;/code&gt; instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mathbf&lt;/code&gt; on this website so vector notation is going out of the window. That can be very confusing… but &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mathbf&lt;/code&gt; is clunky.&lt;/li&gt;
+  &lt;li&gt;Introduction
+    &lt;ul&gt;
+      &lt;li&gt;Introduces generic latent model of dynamical system of neuron activity.
+  \(\dot{z_t} = f(z(t),u(t), t)\)
+        &lt;ul&gt;
+          &lt;li&gt;this doesn’t not make sense to me because where is $x(t)$, or the spiking activity at time $t$ and what is the difference between $\dot{z_t}$ and $z(t)$?&lt;/li&gt;
+          &lt;li&gt;Actually, I think they mean that $\dot{z_t}$ is the subsequent measurement after reading a bit more context.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Gives spike time formulation in terms of Poisson process as in previous post (LFADS).&lt;/li&gt;
+      &lt;li&gt;Drawbacks to LFADS
+        &lt;ul&gt;
+          &lt;li&gt;RNN is high dimensional making it mostly black box until you get factors.&lt;/li&gt;
+          &lt;li&gt;requires many trials to train.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;the initial state of the RNN and the external input stimuli completely determine the state trajectory.&lt;/strong&gt;
+            &lt;ul&gt;
+              &lt;li&gt;In reality, the same stimuli may not give rise to the same output … the brain is not deterministic.&lt;/li&gt;
+              &lt;li&gt;Also different exogenous stimuli can give rise to the same output… not sure if these matter as much here.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;This paper introduces a low dimensional model that uses neural ODES (Chen et al. 2018) to model population dynamics.
+        &lt;ul&gt;
+          &lt;li&gt;This means we can find the fixed points using the jacobian of the diff. eqs. of this model like Sussillo 2013 (see review 36).&lt;/li&gt;
+          &lt;li&gt;Outperforms LFADS in single trial tasks.&lt;/li&gt;
+          &lt;li&gt;Latent trajectories are sampled then computed using ODE Solver so they are not deterministic.&lt;/li&gt;
+          &lt;li&gt;Model gives phase portraits that can reconstruct flow field (is it flow field or curl field or vector field… IDK terminology here).&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Background
+    &lt;ul&gt;
+      &lt;li&gt;Poisson Linear Dynamical System (PLDS)
+ \(\begin{aligned}
+ &amp;amp;z_0 = \mathcal{N}(\mu_{z_0}, Q_0 ) \hspace{20pt} \tiny{\textit{sample initial latent state}} \\
+ \eta_t \sim \mathcal{N}(0,Q_t) \tiny{\textit{sample noise?}} \\
+ &amp;amp;z_t = Az_{t-1} + Bu_t + \eta_t \tiny{\textit{linear model for next latent state}} \\
+ &amp;amp;\lambda_t = exp(C_k z_t + \eta_t) \tiny{\textit{find poisson rate}} \\
+ &amp;amp;x_{t,n} = \text{poisson}(\delta t\lambda_{t,n}) \tiny{\textit{sample spike trains}}
+ \end{aligned}\)
+        &lt;ul&gt;
+          &lt;li&gt;though they use $k$ to denote instantaneous measurements instead of $t$.&lt;/li&gt;
+          &lt;li&gt;This is solved via EM… is guess on the latent distributions $Q_0$ and $Q_t$ and then on the linear regression weights $A$,$B$, and $C_k$.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;2.2 LFADS - latent factor analysis via dynamical systems. I’ll skip this background since it is covered thoroughly in review 38, (TODO: add links) the previous review.&lt;/li&gt;
+      &lt;li&gt;Neural ODE
+        &lt;ul&gt;
+          &lt;li&gt;Instead of using feed-forward net to solve latent trajectory, one can use ordinary differential equations.&lt;/li&gt;
+          &lt;li&gt;Instead of an explicit ODE solve method, (Chen 2018) proposes using adjoint states to approximate the gradient of the loss of the ODES (latent ODEs that is).&lt;/li&gt;
+          &lt;li&gt;Adjoint state for latent traj: $a(t) = \frac{d\mathcal{L}}{dz(t)}$
+            &lt;ul&gt;
+              &lt;li&gt;Respective ODE $\frac{da(t)}{dt}= -a(t) \frac{\partial f_{\psi}(z(t),t)}{\partial z(t)}$&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Adjoint state for approx. of loss $a_{\psi}(t) = \frac{d\mathcal{L}}{d{\psi}}$
+            &lt;ul&gt;
+              &lt;li&gt;Respective ODE $\frac{da_\psi(t)}{dt}= -a(t) \frac{\partial f_{\psi}(z(t),t)}{\partial \psi}$&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;2.5. Pulsatile Evidence Accumulation in Perceptual Decision-Making
+        &lt;ul&gt;
+          &lt;li&gt;Rodent has clicks on the left and right side and is rewarded for choosing what side had the most clicks.&lt;/li&gt;
+          &lt;li&gt;Model by 
+  \(dz = \lambda z dt + \delta_R(C^R + \eta_R)dt +  \delta_l(C^L + \eta_L)dt + \sigma_z dW\)
+            &lt;ul&gt;
+              &lt;li&gt;where $\eta_L$ and $\eta_R$ $\sim \mathcal{N}(0,\sigma)$&lt;/li&gt;
+              &lt;li&gt;and $C^L$ and $C^R$ represent update frequencies.&lt;/li&gt;
+              &lt;li&gt;Do not understand $dW$ (how would there be deriv. w.r.t to W if there’s no W in the eq.??)&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;PLNDS
+    &lt;ul&gt;
+      &lt;li&gt;log-likelihood function ($p_{\Theta}(t_x \mid u)$) is the likelihood of spike times for N observed neurons and $u$ is the input.&lt;/li&gt;
+      &lt;li&gt;parameters of the model are $\Theta = [\theta,\phi]$ where $\theta$ are ODE solver params and $\phi$ are variational params.&lt;/li&gt;
+      &lt;li&gt;Then log-lik = 
+  \(\begin{equation}
+  \mathcal{L} = \mathbb{E}_{q}[p_{\theta}(t_x \mid u, z)] + KL(p_{\theta}(z \mid u, t_x) || q_{\phi}(z \mid t_x,  u)) 
+  \end{equation}\)&lt;/li&gt;
+      &lt;li&gt;And likelihood is reduced to 
+  \(\begin{equation}
+  \mathbb{E}_{q}[p_{\theta}(t_x \mid u, z)] = \mathbb{E}_{q}[p_{\theta}(t_x \mid \lambda)] = \sum_{n=1}^{N} \mathbb{E}_{q}[log(p_{\theta}(t_x^{(n)}))] \mid \lambda_n)] \\ 
+  \text{  where  }
+  \mathbb{E}_{q}[log(p_{\theta}(t_x^{(n)}))] = - \int_{\tau} \lambda_n t dt + \sum_{i=1}^{\alpha(n)} log \lambda_n t_{x,i}^{(n)} 
+  \end{equation}\)
+        &lt;ul&gt;
+          &lt;li&gt;not quite sure how we get the final expansion of log likelihood for $p(\t_x \mid \lambda_t)$. I thought it would be like a binary crossentropy kinda thing but the integral over $\lambda_n$ is throwing me off.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Going to skip the part about computing adjoints and computing the KL Div. for adjoints… I imagine this derivation is from Chen 2018.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Experiments&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/images/PLNDS_fig_2.png&quot; alt=&quot;no alt&quot; width=&quot;1000&quot; height=&quot;1000&quot; align=&quot;left&quot; /&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;PLNDS accurately reconstructs phase portrait spiral resulting from linear dynamical system of eq. similar to that of Brunton 2016.&lt;/li&gt;
+      &lt;li&gt;Fixed points found using Newtons method and autodiff of FNN (fig 2A).&lt;/li&gt;
+      &lt;li&gt;PLNDE outperformed LFADS and PLDS in firing rate reconstruction accuracy experiments where number of training trials and firing rates varied (fig 2B / 2C). This is demonstrated in $R^2$ on the right panel and reconstruction of latent trajectories on the left panel for 2B and 2C. The trend here shows a very high correlation for PLNDE with actual firing rate in the early trials for high activity. This drops off for low activity but eventually recovers after many trials. This is not the case for PLDS and LFADS.&lt;/li&gt;
+      &lt;li&gt;Paper provides a method for finding the right number of latent dimensions using validation loss.&lt;/li&gt;
+      &lt;li&gt;“We found that PLNDE can accurately infer the phase portrait of FitzHugh-Nagumo, capturing the limit cycle and the unstable fixed point. [and] 4.2), PLNDE can infer the phase portrait of the mutual inhibition dynamics, correctly identifying the two stable and one unstable fixed “&lt;/li&gt;
+      &lt;li&gt;Next they fit PLNDE to various regions (prelimibic, secondary motor, pre-frontal) of a rat in a decision making task.&lt;/li&gt;
+      &lt;li&gt;PLNDE confirms importance of decision making regions while also creating latent space phase portrait. That would be figure B below.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/images/PLNDS_fig4.png&quot; alt=&quot;no alt&quot; width=&quot;800&quot; height=&quot;1000&quot; align=&quot;left&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Discussion
+    &lt;ul&gt;
+      &lt;li&gt;PLNDE does not provide a measure of confidence in it’s estimate of the phase portrait. Thus a measure of caution should be used in the underlying assumptions about the stationarity of the system and the portrait being used to describe the system.&lt;/li&gt;
+      &lt;li&gt;Model has less parameters than LFADS.&lt;/li&gt;
+      &lt;li&gt;We may also consider amortizing posterior inference of our model by having, for example, an RNN encoder like (6), ODE-RNN encoder (Rubanova et al., 2019).&lt;/li&gt;
+      &lt;li&gt;Final point about hyperparm optimization.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations by Timothy Doyeon Kim and Carlos D. Brody</summary></entry><entry><title type="html">Review 37: Auto-Encoding Variational Bayes</title><link href="http://localhost:4000/reviews/review37/" rel="alternate" type="text/html" title="Review 37: Auto-Encoding Variational Bayes" /><published>2022-09-23T05:17:13-07:00</published><updated>2022-09-23T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review37</id><content type="html" xml:base="http://localhost:4000/reviews/review37/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/1312.6114.pdf&quot;&gt;Auto-Encoding Variational Bayes&lt;/a&gt; by &lt;a href=&quot;http://dpkingma.com/&quot;&gt;Diederik P. Kingma&lt;/a&gt; and &lt;a href=&quot;https://staff.fnwi.uva.nl/m.welling/&quot;&gt;Max Welling&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Kingma, Diederik P., and Max Welling. “Auto-encoding variational bayes.” arXiv preprint arXiv:1312.6114 (2013).
+ &lt;!-- -  &lt;img src=&quot;/assets/images/imagery5.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot;/&gt; --&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Notation : I don’t know how to use macro &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bm&lt;/code&gt; instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mathbf&lt;/code&gt; on this website so vector notation is going out of the window. That can be very confusing… but &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mathbf&lt;/code&gt; is clunky.&lt;/li&gt;
+  &lt;li&gt;Introduction
+    &lt;ul&gt;
+      &lt;li&gt;They show how a simple reparamterization of the variational lower bound yields a simple differntiable unbiased estimator of the lower bound in SGVB (stochastic gradient variational bayes).&lt;/li&gt;
+      &lt;li&gt;The approximate posterior inference model can be used for representation, denoising, recgoniztion, visualization etc. and they call it Variational auto-encoder.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Methods
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;img src=&quot;/assets/images/kingma_fig_1.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Problem setting
+        &lt;ul&gt;
+          &lt;li&gt;Consider dataset  $ X = { [x^{(i)}] }^N_{i=1} $ consisting of N iid samples of some contininous or discrete variable $x$.&lt;/li&gt;
+          &lt;li&gt;Data is generated by some by some process represented by latent variable $z$ with prior $z \sim p_{\theta^*}(z)$ and likelihood $x \sim p_{\theta^*}(x \mid z)$. Where distribution $\theta^*$ and latent R.V. $z$ are unknown.&lt;/li&gt;
+          &lt;li&gt;Paper does not make several assumptions resulting in a setting characterized by:
+            &lt;ol&gt;
+              &lt;li&gt;Intractability: Assume we cannot explictly compute the integral of the marginal likelihood $p_{\theta}(x)= \int p_{\theta}(x \mid z) p_{\theta}(z) dz$.&lt;/li&gt;
+              &lt;li&gt;Dataset is too large to sample solutions to MAP using Monte Carlo EM.&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+          &lt;li&gt;So they propose a solution to 3 real world problems in this setting.
+            &lt;ol&gt;
+              &lt;li&gt;Efficient maximum likelihood (ML) of maximum a posteriori (MAP) of parameters of  $\theta$&lt;/li&gt;
+              &lt;li&gt;Inference on latent variable $z$ given $x$ and estimated parameters of $\theta$.&lt;/li&gt;
+              &lt;li&gt;Efficient approximate marginal inference of the variable $x$.&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Introduce a “recognition model” or appromximation of the true posterior $p_{\theta}(z \mid x)$ as $q_{\theta}(z \mid x)$.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Variational Bound
+        &lt;ul&gt;
+          &lt;li&gt;The likelihood of a given sample is 
+  \(log p_{\theta}(x^{(i)}) = KL(q_{\theta}(z \mid x^{(i}) || p_{\theta}(z \mid x^{(i)}) + \mathcal{L}(\theta, \phi ; x^{(i)})\) for $ i = 1 … N$ datapoints.&lt;/li&gt;
+          &lt;li&gt;Then we can replace $ \mathcal{L}(\theta, \phi ; x^{(i)}) $ with \(\mathbb{E}_{ q^{\phi}(z \mid x) } [- log q_{ \theta }(z \mid x) + log p_{\theta}(z, x)]\)
+            &lt;ul&gt;
+              &lt;li&gt;How does this derivation work for the variational lower bound?&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Then the final equation we get for the variatonal lower bound is: 
+ \begin{equation}
+   log p_{\theta}(x^{(i)}) = KL(q_{\theta}(z \mid x^{(i}) || p_{\theta}(z \mid x^{(i)}) + \ \mathbb{E}_{q^{\phi}(z \mid x)}  [- log q_{ \theta }(z \mid x) + log p_{\theta}(z, x)]]
+  \end{equation}&lt;/li&gt;
+          &lt;li&gt;Gradient w.r.t. to $\phi$ the recognition model parameters is tricky to compute because you’d have to use naive monte carlo gradient estimator.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The SGVB estimator and the AEVB algorithm
+        &lt;ul&gt;
+          &lt;li&gt;This is the good part now. They reparameterize $\tilde{z} = q_{\phi}(z \mid x)$ using a differentiable equation $  g_{\phi}(\epsilon, x)$ ! where $\epsilon$ is a random noise variable. So:
+  \(\tilde{z} = g_{\phi}(\epsilon, x) \ \text{with} \  \epsilon \sim P(\epsilon)\)&lt;/li&gt;
+          &lt;li&gt;Then we can replace $q_{phi}(z \mid x)$ in equation 1 with function $g_{\phi}(\epsilon, x)$. Except now the monte carlo estimate of expectation is conditioned on $p(\epsilon)$ now, because that is the underlying distribution.&lt;/li&gt;
+          &lt;li&gt;Now we using stochastic variational estimate: $\tilde{\mathcal{L}}^A(\theta, \phi ; x^{(i)}) $&lt;/li&gt;
+          &lt;li&gt;Thus we finally get to the form of the Stochastic Gradient Variational Bayes (SGVB) estimator:
+  \begin{equation}
+  \tilde{\mathcal{L}}^A(\theta, \phi ; x^{(i)}) = \frac{1}{L} \sum_{l=1}^L log_{p_{\theta}} (x^{(i)}, z^{(i,l)}) - log_{p_{\theta}}(z^{(i,l)} \mid x^{(i)})
+  \end{equation} where $z^{(i,l)} = g(\epsilon^{i,l},x^{(i)}) $ and $\epsilon^{l} \sim p(\epsilon)$ .&lt;/li&gt;
+          &lt;li&gt;Then there is the regularized version of SGVB which uses KL divergence to ground the variational distribution $q_{\theta}$ with a prior distribution. This has the form:
+  \begin{equation}
+  \tilde{\mathcal{L}}^A(\theta, \phi ; x^{(i)}) =  KL(q_{\theta}(z \mid x^{(i}) || p_{\theta}(z \mid x^{(i)}) +  \ \frac{1}{L} \sum_{l=1}^L log_{p_{\theta}} (x^{(i)}, z^{(i,l)}) - log_{p_{\theta}}(z^{(i,l)} \mid x^{(i)})
+  \end{equation}.&lt;/li&gt;
+          &lt;li&gt;The next part of this paper describes how to do minibatch updates using an optimizer like SGD / ADAM because we can now take gradients w.r.t to $\theta$ and $\phi$.&lt;/li&gt;
+          &lt;li&gt;In equation 3 the first term serves as a regularizer and the second term serves as a reconstruction loss as it produces a generative model of datapoint $x^{(i)}$ given $z^{(i,l)}$ .&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The reparameterization trick
+        &lt;ul&gt;
+          &lt;li&gt;If $z$ is a continuous r.v. sampled from $q_{\phi}$(z \mid x)$, then they express $z$ in terms of a deterministic variable $z = g(\epsilon, x)$ with an indpendent marginal $p(\phi)$.&lt;/li&gt;
+          &lt;li&gt;Then they provide a proof for why monte carlo estimate of expectation is differentiable w.r.t. $\phi$.&lt;/li&gt;
+          &lt;li&gt;But still, the trick is hard to understand intuitively since changing the parameters of $q_{\phi}$ doesn’t change the indpendent marginal $p(\epsilon)$ which is some noise.&lt;/li&gt;
+          &lt;li&gt;On that note, the rest of this section goes on to describe the reasonable choices for  $p(\epsilon)$.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Variatonal AutoEncoder
+        &lt;ul&gt;
+          &lt;li&gt;Start by assuming variational approximate posterior is multivariate gaussian s.t.: $ log q_{\phi}( z \mid x^{(i)}) = \mathcal{N}(z; \mu^{(i)}, \sigma^{2(i)} I)$ where the mean and s.d. of the approximate posterior, $\mu^{(i)}$ and  $\sigma^{i}$ are outputs of the encoding MLP, i.e. nonlinear functions of datapoint $x^{(i)}$ and variatonal parameters $\phi$.&lt;/li&gt;
+          &lt;li&gt;Then the resulting estimator is:
+  \begin{equation}
+  \mathcal{L}(\theta, \phi ; x^{(i)}) \simeq \frac{1}{2} \sum_{j=1}{J} ((log(\sigma_{j}^{(i)})^ 2) + (\mu_{j}^{(i)})^ 2) - (\sigma_{j}^{(i)})^ 2)) + \frac{1}{L} \sum_{l=1}^L p_{\theta}(x^{(i)} \mid z^{(i,l)})
+  \end{equation}&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The relational works section is pretty interesting because it shows just how novel this method is. There does seem to have been some work, called wake-sleep, on recognition for latent variable model for an approximation of the true posterior, but certainly it did not involve gradient descent. Besides that, related work is auto-encoders.
+   &lt;img src=&quot;/assets/images/kingma_fig_2.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Experiments.
+        &lt;ul&gt;
+          &lt;li&gt;MNIST
+            &lt;ul&gt;
+              &lt;li&gt;outperforms wake-sleep benchmark even with only 3 latent variables.&lt;/li&gt;
+              &lt;li&gt;lower likelihood than Frey face.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Frey Face
+            &lt;ul&gt;
+              &lt;li&gt;outperforms wake-sleep benchmark even with only 3 latent variables.&lt;/li&gt;
+              &lt;li&gt;much higher likelihood model&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Adding more latent variables never actually decreases evidence lower bound which is kinda crazy given they usee 200 latent variables.
+            &lt;ul&gt;
+              &lt;li&gt;Something that would be abosolutely impossible if using MCMC approximation.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Figure 3 shows an excellent result w.r.t. to scale. That is simply: using less latent variables they can use MCMC to approximate posterior but the effectiveness does not scale nearly as well with more training data. Showing scalability of the AEVB method is an excellent idea.
+  &lt;img src=&quot;/assets/images/kingma_fig_3.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Future work
+        &lt;blockquote&gt;
+          &lt;p&gt;Kingma and Welling 2013&lt;/p&gt;
+          &lt;blockquote&gt;
+            &lt;p&gt;there are plenty of future directions: (i) learning hierarchical generative architectures with deep neural networks (e.g. convolutional networks) used for the encoders and decoders, trained jointly with AEVB; (ii) time-series models (i.e. dynamic Bayesian networks); (iii) application of SGVB to the global parameters; (iv) supervised models with latent variables, useful for learning complicated noise distributions.&lt;/p&gt;
+          &lt;/blockquote&gt;
+        &lt;/blockquote&gt;
+        &lt;ul&gt;
+          &lt;li&gt;We like (ii)!&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Auto-Encoding Variational Bayes by Diederik P. Kingma and Max Welling</summary></entry><entry><title type="html">Review 38: Latent Factor Analysis via Dynamical Systems (LFADS)</title><link href="http://localhost:4000/reviews/review38/" rel="alternate" type="text/html" title="Review 38: Latent Factor Analysis via Dynamical Systems (LFADS)" /><published>2022-09-23T05:17:13-07:00</published><updated>2022-09-23T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review38</id><content type="html" xml:base="http://localhost:4000/reviews/review38/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/1608.06315.pdf&quot;&gt;LFADS - Latent Factor Analysis via Dynamical
+Systems&lt;/a&gt; by &lt;a href=&quot;https://scholar.google.com/citations?user=ebBgMSkAAAAJ&amp;amp;hl=en&quot;&gt;David Sussillo&lt;/a&gt; and &lt;a href=&quot;https://bme.gatech.edu/bme/faculty/Chethan-Pandarinath&quot;&gt;Chethan Pandarinath&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Sussillo, David, et al. “Lfads-latent factor analysis via dynamical systems.” arXiv preprint arXiv:1608.06315 (2016).
+ &lt;!-- -  &lt;img src=&quot;/assets/images/imagery5.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot;/&gt; --&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Notation : I don’t know how to use macro &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bm&lt;/code&gt; instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mathbf&lt;/code&gt; on this website so vector notation is going out of the window. That can be very confusing… but &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mathbf&lt;/code&gt; is clunky.&lt;/li&gt;
+  &lt;li&gt;Introduction
+    &lt;ul&gt;
+      &lt;li&gt;peri-stimulus time histogram (PTSH) as the common approach to analyzing high dimensional spike train data.&lt;/li&gt;
+      &lt;li&gt;LFADS, or latent factor analysis via dynamical systems, takes a sequenetial perspective, as opposed to input -&amp;gt; feedforward -&amp;gt; output), but also models  external inputs.&lt;/li&gt;
+      &lt;li&gt;Goal of inferring smooth dynamics of single trial from neural population data.&lt;/li&gt;
+      &lt;li&gt;Also provides:
+        &lt;ul&gt;
+          &lt;li&gt;a set of low-rank latent factors&lt;/li&gt;
+          &lt;li&gt;initial conditions&lt;/li&gt;
+          &lt;li&gt;and infers inputs.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;“LFADS is designed to infer such inputs on the basis of the recorded data alone.”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;LFADS Model
+    &lt;ul&gt;
+      &lt;li&gt;Uses a variational autoencoder (VAE) to model data $x$ and it’s relationship latent variables $z$ using prior $p(z)$ and conditional $p(x \mid z)$ . Naturally need to train approximation $q(z \mid x)$ of true posterior $p(z \mid x)$ using $\frac{p(x \mid z)p(z)}{p(x)}$.&lt;/li&gt;
+      &lt;li&gt;$\hat{z}$ is a sample from $q$ which can be seen as an encoded version of data $x$ and the true posterior $p(x \mid x)$ can be seen as the decoder.
+        &lt;ul&gt;
+          &lt;li&gt;See previous review for more details on VAE and KL divergence as a method for normalization.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Notation:
+        &lt;ul&gt;
+          &lt;li&gt;$v = W(u)$ is an affine transformation from $u$ to $v$.&lt;/li&gt;
+          &lt;li&gt;RNN update is $state_t = RNN(state_{t-1}, input_t)$.&lt;/li&gt;
+          &lt;li&gt;Data is $x_{1:t}$ spike trains from D neurons and auxilliary set of observed variables $a_{1:t}$.&lt;/li&gt;
+          &lt;li&gt;Assuming $x_{1:t}$  are sampled from Poisson process  with rates $r_{1:t}$. Latent factors are $f_{1:t}$.&lt;/li&gt;
+          &lt;li&gt;Inferred input to network $u_{1:t}$
+            &lt;ul&gt;
+              &lt;li&gt;$ z = {g_0,u_{1:t}}$&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;LFADS generator / decoder
+        &lt;ul&gt;
+          &lt;li&gt;rates are determined as $r_{1:t} = W^{\text{rate}}(exp(f_{1:t}))$.&lt;/li&gt;
+          &lt;li&gt;start by sampling intitial state $\tilde{g_0}$ from prior $p(g_0)$ then:&lt;/li&gt;
+        &lt;/ul&gt;
+
+\[\begin{aligned} 
+  \hat{u} \sim P(u) \hspace{20pt} \tiny{\textit{sample input}} \\ 
+  &amp;amp;g_t = RNN^{gen}(g_{t-1}, \hat{u})  \hspace{20pt} \tiny{\textit{generate next hidden state}} \\ 
+  &amp;amp;f_t = W^{fac}g_t \hspace{20pt} \tiny{\textit{affine transform to factors}} \\
+  &amp;amp;r_t = exp(W^{rate}(f_t)) \hspace{20pt} \tiny{\textit{infer rate from factors}} \\
+  &amp;amp;x_t \sim Poisson(x_t \mid r_t) \hspace{20pt} \tiny{\textit{sample spike outpts / decode}}
+  \end{aligned}\]
+      &lt;/li&gt;
+      &lt;li&gt;LFADS encoder
+        &lt;ul&gt;
+          &lt;li&gt;both $g_0$ and $u_t$ are diagonal gaussians with mean and var.&lt;/li&gt;
+          &lt;li&gt;$Q(g_{0} \mid x, a)$ with mean and var in terms of $E$:
+  \(\begin{aligned}
+  &amp;amp;\mu^{g_0} = W^{\mu_{g_0}}(E)
+  &amp;amp;\sigma^{g_0} = exp(\frac{1}{2}W^{\sigma^{g_0}}(E))
+  \end{aligned}\)
+            &lt;ul&gt;
+              &lt;li&gt;So far this is my weakest point of understanding: it seems like E is a forwards/backwards trajectory and that distribution Q is defined by an affine transformation to that state.
+                &lt;ul&gt;
+                  &lt;li&gt;This is where I think Neural ODE and Latent ODE have application since the affine transformation is not a principled way to from positions $E$ to distribution $q$.&lt;/li&gt;
+                  &lt;li&gt;Same thing with the controller.&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;E $[e_1^{b}, e_{T}^{f}]$ is obtained through forward $e_{t}^{b}$ and backward $e_{t}^{f}$ RNN passes.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Then $u_t$ is defined in a similar way, (but also include a RNN controller?), and different trainable parameters. Thus giving $\tilde{E}_t$. Notice that it is no longer a pair of ending states of backward/forwards pass but a continuous trajectory over time $t$.
+            &lt;ul&gt;
+              &lt;li&gt;Previously we generated $g_0$ as an initial condition.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;$\tilde{E}_t$ and latent factor $f_t$ then pass through controller :
+  \(c_t = RNN^{conn}(c_{t-1}, [\tilde{E}_t, f_{t-1}])\).&lt;/li&gt;
+          &lt;li&gt;Finally inferred input $\hat{u}_t$ is drawn from a distribution parameterized by an affine transformation of the controller network state $c_t$ defined in the bullet above.
+  \(\begin{aligned}
+  &amp;amp;\hat{u}_t \sim Q(u_t \mid \mu_t^u, \sigma_t^u) \\
+  &amp;amp;\mu_t^u = W^{\mu^u} c_t \\ 
+  &amp;amp;\sigma_t^u = exp(\frac{1}{2} W^{\sigma^u} c_t)
+   \end{aligned}\)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Ok now lets put the whole thing together in one set of eq.
+   \(\begin{align}
+  &amp;amp;c_t = RNN^{conn}(c_{t-1}, [ \tilde{E}_t,f_{t-1} ]) \hspace{20pt} \tiny{\textit{get controller state from RNN}} \\
+  &amp;amp;\mu_t^u = W^{\mu^u} c_t  \hspace{20pt} \tiny{\textit{affine transformation to controller state for  } \mu_t^u}\\ 
+  &amp;amp;\sigma_t^u = exp(\frac{1}{2} W^{\sigma^u} c_t) \hspace{20pt} \tiny{\textit{affine transformation to controller state for } \sigma_t^u} \\ 
+  &amp;amp;\hat{u}_t \sim Q(u_t \mid \mu_t^u, \sigma_t^u) \hspace{20pt} \tiny{\textit{sample input}} \\
+  &amp;amp;g_t = RNN^{gen}(g_{t-1}, \hat{u})  \hspace{20pt} \tiny{\textit{generate next hidden state}} \\ 
+  &amp;amp;f_t = W^{fac}g_t \hspace{20pt} \tiny{\textit{affine transform to factors}} \\
+  &amp;amp;r_t = exp(W^{rate}(f_t)) \hspace{20pt} \tiny{\textit{infer rate from factors}} \\
+  &amp;amp;x_t \sim Poisson(x_t \mid r_t) \hspace{20pt} \tiny{\textit{sample spike outpts / decode}}
+  \end{align}\)&lt;/li&gt;
+      &lt;li&gt;technically this isn’t the whole thing, just the generative process since encoder isn’t parameterized here.&lt;/li&gt;
+      &lt;li&gt;just figured out how to left align these equations on this website and it’s so satisfying. Previously they were center aligned.
+ &lt;img src=&quot;/assets/images/LFADS_fig_2.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Loss function
+    &lt;ul&gt;
+      &lt;li&gt;$ log P(x_{1:T}) \geq \mathcal{L} = \mathcal{L}^x - \mathcal{L}^{kl} $&lt;/li&gt;
+      &lt;li&gt;$\mathcal{L}^{kl} $ is two KL divergence terms.
+        &lt;ul&gt;
+          &lt;li&gt;one on the approximated posterior distribution of the inputs $u_t$ .&lt;/li&gt;
+          &lt;li&gt;and one on the starting point state $g_0$ .&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;$\mathcal{L}^x = \sum_{t=1}^{T} log(\text{Poisson}(x_t \mid r_t)$.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Previous work
+    &lt;ul&gt;
+      &lt;li&gt;Kalman filters, VRAE (recurrent VAE).&lt;/li&gt;
+      &lt;li&gt;Generalized Linear Model with Poisson Process.&lt;/li&gt;
+      &lt;li&gt;Gaussian Process Factor Analysis.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Results
+    &lt;ul&gt;
+      &lt;li&gt;Experiments include:
+        &lt;ul&gt;
+          &lt;li&gt;Lorenz system
+            &lt;ul&gt;
+              &lt;li&gt;LFADS latents do the best in reconstruction of 3 dimensional state space $y_1,y_2, y_3$&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Inferring dynamics of chaotic RNN&lt;/li&gt;
+          &lt;li&gt;Inferring inputs of chaotic RNN
+            &lt;ul&gt;
+              &lt;li&gt;Trials with $\gamma$ controlling how chaotic activity is.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Next directions
+    &lt;blockquote&gt;
+      &lt;p&gt;Sussilo 2016&lt;/p&gt;
+      &lt;blockquote&gt;
+        &lt;p&gt;There are some obvious extensions and future directions to explore. First, an emissions model relevant to calcium imaging would be extremely useful for inferring neural firing rate dynamics underlying calcium signals. Second, in this contribution we implemented LFADS as a “smoother”, in Kalman filter language, that cannot run in real time. It would be interesting to adapt LFADS as a “filter” that could. Third, the LFADS generator could clearly be strengthed by stacking recurrent layers or adding a feed-forward deep net before the emissions distribution at each time step. Another extension would be to learn the dimensions of the inferred input and temporal factors automatically, instead of having them specified as predetermined hyper-parameters (e.g. nuclear norm minimization on the respective matrices). Finally, we can imagine an LFADS-type algorithm that leans more towards the feed-forward side of computation, but still has some recurrence. An application would be, for example, to explain short-term effects in visual processing. In this setting, the information transfer along the temporal dimension could be limited while expanding the information flow in the feed-forward direction.&lt;/p&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">LFADS - Latent Factor Analysis via Dynamical Systems by David Sussillo and Chethan Pandarinath</summary></entry><entry><title type="html">Review 36: Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks</title><link href="http://localhost:4000/reviews/review36/" rel="alternate" type="text/html" title="Review 36: Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks" /><published>2022-07-13T05:17:13-07:00</published><updated>2022-07-13T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review36</id><content type="html" xml:base="http://localhost:4000/reviews/review36/">&lt;p&gt;&lt;a href=&quot;https://direct.mit.edu/neco/article-abstract/25/3/626/7854/Opening-the-Black-Box-Low-Dimensional-Dynamics-in&quot;&gt;Opening the Black Box: Low-Dimensional Dynamics
 in High-Dimensional Recurrent Neural Networks&lt;/a&gt; by &lt;a href=&quot;https://scholar.google.com/citations?user=ebBgMSkAAAAJ&amp;amp;hl=en&quot;&gt;David Sussillo&lt;/a&gt; and &lt;a href=&quot;https://scholar.google.com/citations?user=6BrZ2isAAAAJ&amp;amp;hl=en&quot;&gt;Omri Barak&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Sussillo, David, and Omri Barak. “Opening the black box: low-dimensional dynamics in high-dimensional recurrent neural networks.” Neural computation 25.3 (2013): 626-649.
@@ -23,22 +435,24 @@ in High-Dimensional Recurrent Neural Networks&lt;/a&gt; by &lt;a href=&quot;http
   &lt;li&gt;Linear approximations
     &lt;ul&gt;
       &lt;li&gt;a system of diff. eqs.: $ \dot{x} = F(x) $ and trying to find points, $ x^{*} $ such that $ | F(x^{*}) \partial x | \geq F(x^{*}) $ and $ | F(x^{*}) \partial x | \geq  | \frac{1}{2}  \partial x  F’‘(x^{*}) \partial x | $.&lt;/li&gt;
-      &lt;li&gt;The way I understand this is that peturbations induce a linear rate of change in the value of the system and the rate of change in the system.&lt;/li&gt;
-      &lt;li&gt;speed, or kinetic energy of the systm is : $ q(x) = \frac{1}{2}|F(x)|^2  $, which is useful becuase it is a scalar that can be optimized,  q = 0 only at fixed points, and gradient and hessian of q are amenable to finding minumum values that are not fixed points (so they are saddle points?).
+      &lt;li&gt;The way I understand this is that perturbations induce a linear rate of change in the value of the system and the rate of change in the system.&lt;/li&gt;
+      &lt;li&gt;Speed, or kinetic energy, of the system is : $ q(x) = \frac{1}{2}|F(x)|^2  $, which is useful because it is a scalar that can be optimized,  q = 0 only at fixed points, and gradient and hessian of q are amenable to finding minimum values that are not fixed points (so they are saddle points?).
         &lt;ul&gt;
-          &lt;li&gt;don’t fully understand how the conditions for minmimum are derived but moving on for now.&lt;/li&gt;
+          &lt;li&gt;don’t fully understand how the conditions for minimum are derived but moving on for now.&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;2 - d example:
         &lt;ul&gt;
           &lt;li&gt;defined as dynamical system:
   \begin{equation}
-  \dot(x_1) = (1 - x_1^2)x_2
-  \dot(x_2) = x_1 / 2 - x_2
+  \dot{x_1} = (1 - x_1^2)x_2
+  \end{equation}
+  \begin{equation}
+  \dot{x_2} = x_1 / 2 - x_2
   \end{equation}&lt;/li&gt;
           &lt;li&gt;The system has three fixed points: a saddle at (0, 0) and two attractors at (1, 1/2) and (−1, −1/2).&lt;/li&gt;
           &lt;li&gt;Here is the figure used to describe this dynamical system. I find it useful because it shows how differnt ICs (inital conditions) can converge to different fixed points and does a decent job of showing the difference between saddle and fixed point.
-  &lt;!-- &lt;img src=&quot;/assets/images/sussillo_2013_fig1.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot;/&gt;  --&gt;&lt;/li&gt;
+  &lt;img src=&quot;/assets/images/sussillo_2013_fig1.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;RNN formulation
@@ -63,8 +477,8 @@ in High-Dimensional Recurrent Neural Networks&lt;/a&gt; by &lt;a href=&quot;http
           &lt;li&gt;Still, I need to give best description of the system so we’ll go ahead.&lt;/li&gt;
           &lt;li&gt;$2^3 = 8$ possible memories. Random impulses hit each bit and either confirm the sign (because it matched +1,-1) or flip sign from +1 to -1.&lt;/li&gt;
           &lt;li&gt;modeled with echostate RNN trained using FORCE (Sussillo &amp;amp; Abbot 2007) and trained using random init. weights and 600 different starting points (ICs). Fixed point finder resulted in 26 distinct fixed points and then they analyze these w/ linear stabiility anaylsis described above.&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;important&lt;/strong&gt; there are 8 attractors for every memory state. 
-  &lt;!-- -  &lt;img src=&quot;/assets/images/sussillo_2013_fig3.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot;/&gt;  --&gt;
+          &lt;li&gt;&lt;strong&gt;important&lt;/strong&gt; there are 8 attractors for every memory state.&lt;/li&gt;
+          &lt;li&gt;&lt;img src=&quot;/assets/images/sussillo_2013_fig3.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;
             &lt;blockquote&gt;
               &lt;p&gt;Sussillo and Barak 2013&lt;/p&gt;
               &lt;blockquote&gt;
@@ -81,9 +495,9 @@ in High-Dimensional Recurrent Neural Networks&lt;/a&gt; by &lt;a href=&quot;http
         &lt;ul&gt;
           &lt;li&gt;Network that produces a target sine wave for a given frequency from 1-51 frequency values.&lt;/li&gt;
           &lt;li&gt;linearized system had only two unstable dimensions.&lt;/li&gt;
-          &lt;li&gt;Is it a surprising result that there is a fixed point corresponding to the 51 freq. values? Obviously we know some of them sill result in regions of interest, but is the 1-1 correspondence implied by the task or not?
+          &lt;li&gt;Is it a surprising result that there is a fixed point corresponding to the 51 freq. values? Obviously we know some of them still result in regions of interest, but is the 1-1 correspondence implied by the task or not?
             &lt;ul&gt;
-              &lt;li&gt;These regions are rigoursly verified by norm of linear term agreeing with conditions (idk the eq. # above, but it’s the ones under “linear approximations” section).&lt;/li&gt;
+              &lt;li&gt;These regions are rigorously verified by norm of linear term agreeing with conditions (idk the eq. # above, but it’s the ones under “linear approximations” section).&lt;/li&gt;
               &lt;li&gt;So I guess that is not necessarily implied by the fixed point analysis.&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
@@ -93,11 +507,11 @@ in High-Dimensional Recurrent Neural Networks&lt;/a&gt; by &lt;a href=&quot;http
         &lt;ul&gt;
           &lt;li&gt;saddle points found by $q$ (“linear approximations” section) also provide insight system because linear term is dominating even if zero order of taylor expansion != 0. They term these points ghost points (or slow points) and state that even if they are not mediating transitions directly like fixed points, they are influencing the tracjectory of the system as shown below.
             &lt;ul&gt;
-              &lt;li&gt;I thought zero-order term was linear? And first or second order might not = 0.
-  &lt;!-- -  &lt;img src=&quot;/assets/images/sussillo_2013_fig5.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot;/&gt;  --&gt;&lt;/li&gt;
+              &lt;li&gt;I thought zero-order term was linear? And first or second order might not = 0.&lt;/li&gt;
+              &lt;li&gt;&lt;img src=&quot;/assets/images/sussillo_2013_fig5.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
-          &lt;li&gt;paper includes some examples and formalizaiton of linear dymamics around this point.&lt;/li&gt;
+          &lt;li&gt;paper includes some examples and formalizaiton of linear dynamics around this point.&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;Approximate plane attractor
@@ -105,8 +519,8 @@ in High-Dimensional Recurrent Neural Networks&lt;/a&gt; by &lt;a href=&quot;http
           &lt;li&gt;This example further demonstrates the utility of finding saddle points using $q$. Because this is a summary I won’t explain the approximate plane attractor in too much detail.&lt;/li&gt;
           &lt;li&gt;The gist is that it is a 2 point moving average task which means two values need to be stored in memory.&lt;/li&gt;
           &lt;li&gt;100dim. RNN slow points ($q \leq 1e-4$) actually created a two dimensional manifold.&lt;/li&gt;
-          &lt;li&gt;“Ablation study” so to speak done by replace slow points with  linear time-varying dynamical system (LTVDS) with very low mean squared error on transition states.&lt;/li&gt;
-          &lt;li&gt;finally, they show the method is robust to peturbations in RNN and doesn’t rely on a finely tuned RNN.
+          &lt;li&gt;“Ablation study” so to speak done by replacing slow points with linear time-varying dynamical system (LTVDS) with very low mean squared error on transition states.&lt;/li&gt;
+          &lt;li&gt;finally, they show the method is robust to perturbations in RNN and doesn’t rely on a finely tuned RNN.
             &lt;ul&gt;
               &lt;li&gt;This is important to show (something a reviewer might have asked for), but I will not cover it here.&lt;/li&gt;
             &lt;/ul&gt;
@@ -707,196 +1121,4 @@ eg; brain-controlled cursor movement, keyboards + typing, remote-controlled devi
       &lt;li&gt;While the advent of these areas of development is notable, I wonder if we see sustained progress in these domains or if new features can be added that will enable increasing recording sites in other ways.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Eavesdropping on the Brain With 10,000 Electrodes by Barun Dutta</summary></entry><entry><title type="html">Review 29: Emergence of Coordinated Neural Dynamics Underlies Neuroprosthetic Learning and Skillful Control</title><link href="http://localhost:4000/reviews/review29/" rel="alternate" type="text/html" title="Review 29: Emergence of Coordinated Neural Dynamics Underlies Neuroprosthetic Learning and Skillful Control" /><published>2022-05-28T05:16:13-07:00</published><updated>2022-05-28T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review29</id><content type="html" xml:base="http://localhost:4000/reviews/review29/">&lt;p&gt;&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0896627317300405&quot;&gt;Emergence of Coordinated Neural Dynamics Underlies Neuroprosthetic Learning and Skillful Control&lt;/a&gt; by &lt;a href=&quot;https://www.actingbrain.com/vivek-athalye&quot;&gt;Vivek Athalye&lt;/a&gt; and &lt;a href=&quot;https://www2.eecs.berkeley.edu/Faculty/Homepages/carmena.html&quot;&gt;Jose Carmena&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Athalye, Vivek R., et al. “Emergence of coordinated neural dynamics underlies neuroprosthetic learning and skillful control.” Neuron 93.4 (2017): 955-970.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Pretty cool that this article is OA.&lt;/li&gt;
-  &lt;li&gt;This work demonstrates how variance decreases in M1 neuronal population during skillful acquistion using brain machine interface (BMI).&lt;/li&gt;
-  &lt;li&gt;Intro
-    &lt;ul&gt;
-      &lt;li&gt;The fact that movement variability decreases across trials during point and click task suggests that there is some population of neurons generating the activity behind stable control.&lt;/li&gt;
-      &lt;li&gt;So they try to identify some of these neurons using a BMI recording device attached to around 15 neurons and use mathematical transforms to get low dimensional representation of neural trajectories.&lt;/li&gt;
-      &lt;li&gt;Novel task so subjects must start by exploring the action space. But eventually their performance on the task improves. How does this happen?&lt;/li&gt;
-      &lt;li&gt;There are three perspectives introduced:
-        &lt;ol&gt;
-          &lt;li&gt;Independent neuron learning: controller inputs come directly from each neuron.&lt;/li&gt;
-          &lt;li&gt;Constrained network learning: controller inputs come from sets of neurons.&lt;/li&gt;
-          &lt;li&gt;Flexible network learning: controller inputs comes from a mix of direct activation and set activation.&lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Matrix factor analysis will help disambiguate between these approaches.&lt;/li&gt;
-      &lt;li&gt;Experiment parameters:
-        &lt;ul&gt;
-          &lt;li&gt;Variability time scale is ~ 1 second.&lt;/li&gt;
-          &lt;li&gt;Decoder time scale is 100 ms.&lt;/li&gt;
-          &lt;li&gt;Center out BMI reaching task.&lt;/li&gt;
-          &lt;li&gt;Decoder gives upper limb movements to xy cursor position on a screen.
-Signal-specific readout space drives activity.
-            &lt;ul&gt;
-              &lt;li&gt;signal alignment – 0 being subspaces match and 1 being they are orthogonal between epochs.&lt;/li&gt;
-              &lt;li&gt;amount of valid signals – how many readout signals actually have valid positions.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Results
-    &lt;ul&gt;
-      &lt;li&gt;Authors propose variance changes in control happen between neuron private variance and neuron shared variance.&lt;/li&gt;
-      &lt;li&gt;And that these can be composed into two covariance factors and that firing rate be the mean.&lt;/li&gt;
-      &lt;li&gt;Then we will have $x = \mathcal{N}(\mu, \Sigma^{total} = \Sigma^{shared} + \Sigma^{private})$&lt;/li&gt;
-      &lt;li&gt;There is a visualization of the evolution of cursor trajectory which was striking.&lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Success rate, % of correct answers increase over trials and the project (workspace position) begins to become increasingly similar to a converged upon representation.
-  &lt;img src=&quot;/assets/images/skillful_fig1.png&quot; alt=&quot;bci schematic&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;
-  &lt;img src=&quot;/assets/images/skillful_legend1.png&quot; alt=&quot;bci schematic&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;I’m interested in specifically how they generate this low-dimensional representation. I guess they are probably using PCA and this is how they can calculate orthogonality etc. There are a lot of dimensional reduction methods though. I didn’t check the STAR methods.&lt;/li&gt;
-      &lt;li&gt;Private variance: diagonal terms. within neuron variance of spike train.&lt;/li&gt;
-      &lt;li&gt;Shared variance: off-diagonal covariance that represents the pairwise similarity between binned spike trains.&lt;/li&gt;
-      &lt;li&gt;Shared variance increasingly drives movement across trials.&lt;/li&gt;
-      &lt;li&gt;Main shared variance begins to align as epochs increase and success rate increases. This suggests that alignment of shared variance in neuron firing rates drives consolidated learning.&lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Private variance also aligns and drives cursor movement but more so in the earlier trials.
-  &lt;img src=&quot;/assets/images/skillful_fig2.png&quot; alt=&quot;bci schematic&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;
-  &lt;img src=&quot;/assets/images/skillful_legend2.png&quot; alt=&quot;bci schematic&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;As such, the authors suggest that the private variance serves an early exploratory role and the shared variance had more contribution on skillful control in support of flexible network learning hypothesis.&lt;/li&gt;
-      &lt;li&gt;Main shared space aligns with readout space making shared variance more effective in producing skillful movements.&lt;/li&gt;
-      &lt;li&gt;Magnitude growth and re-alignemnt both increase for main shared variance over epochs.
-        &lt;ul&gt;
-          &lt;li&gt;re-alignment is the distance between successive subspsaces (I think?).&lt;/li&gt;
-          &lt;li&gt;Magnitude growth seems like it’s just the magnitude of the shared variance or the magnitude of the readout variance.
-  &lt;img src=&quot;/assets/images/skillful3.png&quot; alt=&quot;bci schematic&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Discussion
-    &lt;ul&gt;
-      &lt;li&gt;Neuroprosthetic learning studies provide intriguing evidence that the brain can solve the credit assignment problem by specifically adapting neurons that contribute to the global error signal provided by the prosthetic cursor.&lt;/li&gt;
-      &lt;li&gt;I’m not so surprised that the magnitude of the shared signal norm increases across trials because the BCI reward feedback is likely to introduce some change in the scale of a variance measure.&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;blockquote&gt;
-      &lt;p&gt;Athalye et al. 2017&lt;/p&gt;
-      &lt;blockquote&gt;
-        &lt;p&gt;We hypothesize that the population finds this solution by selecting particular shared inputs that produce goal-achieving activity within a characteristic manifold.&lt;/p&gt;
-      &lt;/blockquote&gt;
-    &lt;/blockquote&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;BMI manifold emerged that contained consolidated neural trajectories for skillful control.&lt;/li&gt;
-      &lt;li&gt;I &lt;strong&gt;really&lt;/strong&gt; like this final quote for a few future reasearch question:
-        &lt;blockquote&gt;
-          &lt;p&gt;Athalye et al. 2017&lt;/p&gt;
-          &lt;blockquote&gt;
-            &lt;p&gt;Future decoders might benefit from more detailed models of neural population dynamics and how they change with learning. Indeed, a recent algorithmic approach yielded significant performance improvement by modeling neural population dynamics underlying natural movements to decode the subject’s intent while moving freely (Kao et al., 2015). Perhaps neural learning can help to generalize this approach to immobile patients, as we found coordinated neural dynamics can be consolidated over training in the absence of overt movement. Given our findings that main shared variance achieves better performance than total activity in simulations (Figures S6B–S6D), a performance-motivated extension would be to design a decoder that is able to denoise neural observations based on learned neural dynamics (Shenoy and Carmena, 2014).&lt;/p&gt;
-          &lt;/blockquote&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-      &lt;li&gt;In my opinion, each sentence here can be taken apart and used to brainstorm future research directions that are related. There is an interesting web of interesting connections here.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Emergence of Coordinated Neural Dynamics Underlies Neuroprosthetic Learning and Skillful Control by Vivek Athalye and Jose Carmena</summary></entry><entry><title type="html">Review 28: Four ethical priorities for neurotechnologies and AI</title><link href="http://localhost:4000/reviews/review28/" rel="alternate" type="text/html" title="Review 28: Four ethical priorities for neurotechnologies and AI" /><published>2022-05-14T05:16:13-07:00</published><updated>2022-05-14T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review28</id><content type="html" xml:base="http://localhost:4000/reviews/review28/">&lt;p&gt;&lt;a href=&quot;https://www.nature.com/articles/551159a&quot;&gt;Four ethical priorities for neurotechnologies and AI
-&lt;/a&gt; by &lt;a href=&quot;https://scholar.google.com/citations?user=G0WcJagAAAAJ&quot;&gt;Rafael Yuste&lt;/a&gt; and &lt;a href=&quot;https://phil.washington.edu/people/sara-goering&quot;&gt;Sara Goering&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Yuste, Rafael, et al. “Four ethical priorities for neurotechnologies and AI.” Nature 551.7679 (2017): 159-163.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;While full integration of neurotechnology into human life may take decades, it is critical to think about the ethical applications now.&lt;/li&gt;
-  &lt;li&gt;The morningside group is comprised of neurotech companies, academic labs, and intl. brain projects.&lt;/li&gt;
-  &lt;li&gt;The existing ethics guidlines, such as Declariation of Helsinki in 1964, Belmont report, and Asilomar AI report, don’t cover many of the issues that are raised by BCI technology.&lt;/li&gt;
-  &lt;li&gt;This is a very cool tidbit:
-    &lt;blockquote&gt;
-      &lt;p&gt;(Yuste &amp;amp; Goering 2017)&lt;/p&gt;
-      &lt;blockquote&gt;
-        &lt;p&gt;Meanwhile, researchers at Duke University in Durham, North Carolina, have shown that three monkeys with electrode implants can operate as a ‘brain net’ to move an avatar arm collaboratively.&lt;/p&gt;
-      &lt;/blockquote&gt;
-    &lt;/blockquote&gt;
-
-    &lt;p&gt;&lt;a href=&quot;https://www.nature.com/articles/srep10767&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;This BrainNet paper is one I am really interested in reading.&lt;/li&gt;
-  &lt;li&gt;DARPA Neural Engineering Project that aims to implant 1 million electrodes and selectively stimulates up to 100k neurons. The University of Freiburg in Germany is using EEG signals to decode motor planning activity to control robots.&lt;/li&gt;
-  &lt;li&gt;The four ethical priorities:
-    &lt;ul&gt;
-      &lt;li&gt;Privacy and consent: This concern has been pervasive throughout all types of recent technological advancements. There are many researchers working on what makes a system secure, but keeping data secure has proven to be a comparably large challenge as well. Often times data breaches that would occur in neurotech may use external data to draw connections that might allow them to identify individuals based on neural activity. Furthermore, many potential exploitative practices can extend from the centralization of neural data. The authors pose multiple mitigation strategies, but I really strongly agree with the strategy of not allowing the centralized storage of human neural data from BMI devices. While this may limit how devices can be developed, for now, it seems like a central safeguard from potentially disastrous data breaches.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Agency / Identity: This concern caught me off guard because I hadn’t considered it much at all until I read this. Simply put, BMI devices can blue the line of how much agency they can attribute to certain actions. In this way, BMI devices can interfere with someone’s sense of identity in a negative way. I also found the potential mitigation strategies here less satisfying, although I don’t have any better ideas. I am in support for drafting a constitution of “neurorights” but I don’t see how this would help those with issues in BMI affected identity. Better yet would be a fast safeguard in each device to immediately shut off its functioning if needed. The reason I advocate for this is that the user should have complete autonomy over when they use the device and when it is inactive. This does open the device up to hacking. Also this kind of on/off switch might not be possible due to negative consequences from terminating the tight feedback loop between device and person. Regardless, I generally advocate that BMI functionality should be treated more like glasses and less like a pacemaker so that users will never feel completely trapped with the BMI.&lt;/li&gt;
-  &lt;li&gt;Augmentation: This is a very futuristic concern, but also one that should be considered now. At this point, the weaponization and militaristic augmentation of BMI devices are not major concerns. Though in the future they may be. To steer BMI devices on the right path, the authors argue for the establishment of a neurotechnology geneva convention style agreement about what research and applications can be ethically conducted using BMI devices.&lt;/li&gt;
-  &lt;li&gt;Bias: Just like ML systems nowadays are biased by negative aspects of their data, such as hate speech in text datasets or lack of representation in image datasets, BMI devices can further perpetuate societal inequalities. To prevent this, it is necessary to open source data, algorithms, user research groups, and design. Through the proper channels, civil liberties and nonprofit auditors should be able to inspect the scientific practices of companies or groups doing neural engineering. Representation of diverse needs and circumstances should be considered in thorough research feature testing, quality testing, and design. Recently, there have been many failures in preventing biased models and disinformation on major technology platforms, so the future for this will be challenging.&lt;/li&gt;
-  &lt;li&gt;Moving forward:
-    &lt;ul&gt;
-      &lt;li&gt;This kind of review provides great directions for moving forward; including widespread adoption of a Hippocratic oath for neuro engineers and ethical discussion sections for labs. While training certainly helps move employees and individuals in the right direction, in my opinion, the field would benefit from the following: (1) Some kind of agency responsible for oversight of responsible use of BMI devices. (2) Forums / conferences / journals for neuroethics. (3) Some kind of open sourced / democratized code for precedents.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Four ethical priorities for neurotechnologies and AI by Rafael Yuste and Sara Goering</summary></entry><entry><title type="html">Review 27: Parsing learning in networks using brain–machine interfaces</title><link href="http://localhost:4000/reviews/review27/" rel="alternate" type="text/html" title="Review 27: Parsing learning in networks using brain–machine interfaces" /><published>2022-05-14T05:16:13-07:00</published><updated>2022-05-14T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review27</id><content type="html" xml:base="http://localhost:4000/reviews/review27/">&lt;p&gt;&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0959438817301642?casa_token=mBc7NGX5SMoAAAAA:_u-U4AxlrusxSveU-DitDvaDjvUhYixFrO7ZuZs4B0iIa6Dy0xmDc6Za4MZYRqBFf8E7IiwcVOQ&quot;&gt;Parsing learning in networks using brain-machine
-interfaces&lt;/a&gt; by &lt;a href=&quot;https://people.ece.uw.edu/orsborn_amy/&quot;&gt;Amy Orsborn&lt;/a&gt; and &lt;a href=&quot;https://as.nyu.edu/content/nyu-as/as/faculty/bijan-pesaran.html&quot;&gt;Bijan Pesaran&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Orsborn, Amy L., and Bijan Pesaran. “Parsing learning in networks using brain-machine interfaces.” Current opinion in neurobiology 46 (2017): 76-83.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Introduction
-    &lt;ul&gt;
-      &lt;li&gt;Motor BMIs: repurpose neural activity to control the movement of a device.
-        &lt;ul&gt;
-          &lt;li&gt;Give the brain a new functionality that the brain can adapt to use.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;BMIs also allow us to study the mechanisms of learning for neuroscience.&lt;/li&gt;
-      &lt;li&gt;Yet, while there is work showing how BMIs can enable learning, the above point about the underlying neural mechanisms is still mostly unknown.&lt;/li&gt;
-      &lt;li&gt;These BCI papers all have really great figure 1s.
-  &lt;img src=&quot;/assets/images/r27_fig1.png&quot; alt=&quot;bci schematic&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;
-        &lt;ul&gt;
-          &lt;li&gt;This figure presents three different perspectives on closed-loop Motor BCI systems.
-            &lt;ul&gt;
-              &lt;li&gt;A: This is the main BCI closed-loop and very similar to the previous review.&lt;/li&gt;
-              &lt;li&gt;B: Is interesting because it shows the affector/effector dynamics. It is also interesting because it shows that some nodes from the network should send a signal to the actuator while some nodes indirectly signal by not signaling. Finally, it shows that some external reward drives closed-loop BCI learning – which is important because this shows the progression of closed-loop BCI device is dependent on the perceived reward system in the brain.
-                &lt;ul&gt;
-                  &lt;li&gt;External reward normally just processed through vision. If you control a cursor on a screen successfully you will see that.&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;C: Shows what points can use learning feedback and what learning/error signal they require to improve. BCI closed-loop system can be improved in strategy/selection of motor plans and in the “internal” model… which I take to mean the decoder.
-                &lt;ul&gt;
-                  &lt;li&gt;As I start to become more specific in my focus on BCI, this kind of distinction can help inform future reading/research directions.&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Interesting point I did not know:
-        &lt;blockquote&gt;
-          &lt;p&gt;Orsborn et al. 2017&lt;/p&gt;
-          &lt;blockquote&gt;
-            &lt;p&gt;“visual information is highly dominant over proprioceptive information” &lt;a href=&quot;https://www.science.org/doi/10.1126/science.143.3606.594&quot;&gt;44&lt;/a&gt;&lt;/p&gt;
-          &lt;/blockquote&gt;
-        &lt;/blockquote&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;I guess this is probably really context-dependent though.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Combining command nodes for BMI in a different way allows researchers to investigate the relationship between BMI learning and natural learning.&lt;/li&gt;
-      &lt;li&gt;Figure 2
-        &lt;ul&gt;
-          &lt;li&gt;Feedback rate and control rate increases both increase success rate for in &lt;a href=&quot;https://www.nature.com/articles/ncomms13825&quot;&gt;Shanechi et al.&lt;/a&gt;.&lt;/li&gt;
-          &lt;li&gt;BMIs can investigate sites of learning around probes. For example, optogenetic stimulation near electrode recording sites can help study neural mechanisms of feedback learning.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;The conclusion is very concise so I’ll add this final part here.
-        &lt;blockquote&gt;
-          &lt;p&gt;Orsborn et al. 2017&lt;/p&gt;
-          &lt;blockquote&gt;
-            &lt;p&gt;Since BMIs tap into our brain’s innate ability to learn, understanding learning in BMIs will ultimately advance clinical applications of this technology. In the search for effective treatments, we may find that interfaces that harness learning can improve the patient experience compared with those which simply accommodate learning.&lt;/p&gt;
-          &lt;/blockquote&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Parsing learning in networks using brain-machine interfaces by Amy Orsborn and Bijan Pesaran</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Eavesdropping on the Brain With 10,000 Electrodes by Barun Dutta</summary></entry></feed>

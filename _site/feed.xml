@@ -1,4 +1,95 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-09-27T06:14:41-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 38: Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations</title><link href="http://localhost:4000/reviews/review39/" rel="alternate" type="text/html" title="Review 38: Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations" /><published>2022-09-24T05:17:13-07:00</published><updated>2022-09-24T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review39</id><content type="html" xml:base="http://localhost:4000/reviews/review39/">&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v139/kim21h/kim21h.pdf&quot;&gt;Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations&lt;/a&gt; by &lt;a href=&quot;https://timkimd.github.io/&quot;&gt;Timothy Doyeon Kim&lt;/a&gt; and &lt;a href=&quot;http://brodylab.org/&quot;&gt;Carlos D. Brody&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-10-05T16:03:01-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alexander Ladd</title><subtitle>An amazing website.</subtitle><author><name>Alexander Ladd</name><email>zladd@berkeley.edu</email></author><entry><title type="html">Review 41: Neural Ordinary Differential Equations</title><link href="http://localhost:4000/reviews/review41/" rel="alternate" type="text/html" title="Review 41: Neural Ordinary Differential Equations" /><published>2022-10-02T05:17:13-07:00</published><updated>2022-10-02T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review41</id><content type="html" xml:base="http://localhost:4000/reviews/review41/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/1806.07366.pdf&quot;&gt;Neural Ordinary Differential Equations&lt;/a&gt; by &lt;a href=&quot;https://www.cs.toronto.edu/~rtqichen/&quot;&gt;Ricky T. Q. Chen&lt;/a&gt; and &lt;a href=&quot;http://www.cs.toronto.edu/~duvenaud/&quot;&gt;David Duvenaud&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Chen, Ricky TQ, et al. “Neural ordinary differential equations.” Advances in neural information processing systems 31 (2018
+ &lt;!-- -  &lt;img src=&quot;/assets/images/imagery5.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot;/&gt; --&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Introduction
+    &lt;ul&gt;
+      &lt;li&gt;Models such as resnets, normalizing flows, or RNN decoders update a hidden state using $h_{t+1} = h_t + f(h_t, \theta_t)$.&lt;/li&gt;
+      &lt;li&gt;In the limit of adding more layers and taking smaller steps in $t=1…T$ we can parameterize the dynamics for the hidden layer using ODE:
+  \(\frac{dh(t)}{dt} = f(h_t,t, \theta_t)\)&lt;/li&gt;
+      &lt;li&gt;Then starting from input $h(0)$ we can use ODE to solve $h(T)$.&lt;/li&gt;
+      &lt;li&gt;Benefits
+        &lt;ul&gt;
+          &lt;li&gt;No backprop required for ODE solver using methods from Neural ODE paper.&lt;/li&gt;
+          &lt;li&gt;Adapative computation for ODE solver.&lt;/li&gt;
+          &lt;li&gt;&lt;em&gt;Scalable and Invertible Normalizing Flows&lt;/em&gt;.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Continuous Timeseries models&lt;/strong&gt;.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Reverse mode autodiff of ODE solutions
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Adjoint sensitivity&lt;/strong&gt;: treat ODE solver as black-box and compute gradients by solving a second ODE backwards in time.&lt;/li&gt;
+      &lt;li&gt;$L(z(t_1)) = L(z(t_0) + \int_{t_0}^{t_1}f(z(t),t,\theta))dt = L(ODESolve(z(t_0),f, t_0, t_1,\theta))$&lt;/li&gt;
+      &lt;li&gt;To optimize L, we need to track gradients w.r.t $\theta$
+        &lt;ul&gt;
+          &lt;li&gt;To do that we track gradient of loss w.r.t to hidden state, also known as the &lt;strong&gt;adjoint&lt;/strong&gt;  $\frac{\partial L }{\partial z(t)}$ as well as the dynamics of that ODE given by the instantaneous chain rule:
+  \(\frac{d a(t)}{dt} = -a(t)^T frac{\partial (f(z(t),t, \theta))  }{\partial z}\)  which can be solved at an intial state by solving an ODE, and the adjoint, backwards.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Neural Ordinary Differential Equations by Ricky T. Q. Chen and David Duvenaud</summary></entry><entry><title type="html">Review 40: Context-dependent Computation by Recurrent Dynamics in Prefrontal Cortex</title><link href="http://localhost:4000/reviews/review40/" rel="alternate" type="text/html" title="Review 40: Context-dependent Computation by Recurrent Dynamics in Prefrontal Cortex" /><published>2022-09-24T05:17:13-07:00</published><updated>2022-09-24T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review40</id><content type="html" xml:base="http://localhost:4000/reviews/review40/">&lt;p&gt;&lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4121670/pdf/nihms530595.pdf&quot;&gt;Context-dependent Computation by Recurrent Dynamics in Prefrontal Cortex&lt;/a&gt; by &lt;a href=&quot;https://scholar.google.ch/citations?user=2hu9WYkAAAAJ&amp;amp;hl=en&quot;&gt;Valerio Mante&lt;/a&gt; and &lt;a href=&quot;https://scholar.google.ch/citations?hl=en&amp;amp;user=ESrxVR8AAAAJ&quot;&gt;William T. Newsome&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Mante, Valerio, et al. “Context-dependent computation by recurrent dynamics in prefrontal cortex.” nature 503.7474 (2013): 78-84.
+ &lt;!-- -  &lt;img src=&quot;/assets/images/imagery5.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot;/&gt; --&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;TODO: read this again..understood maybe 30%&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sorry this does not include the figures&lt;/strong&gt;. I strongly recommend looking at the linked paper above and using those figures while reading / understanding this text. It heavily relies on the figures to represent multi-dimensional trajectory.&lt;/li&gt;
+  &lt;li&gt;Introduction
+    &lt;ul&gt;
+      &lt;li&gt;Behavioral context switching through gating of attention.&lt;/li&gt;
+      &lt;li&gt;Prefrontal cortex (PFC) top down modulation of neural activity in early sensory areas via modulation of firing rate / response synchrony.&lt;/li&gt;
+      &lt;li&gt;Macaque monkey perceptual discrimination of direction or colored random dot display cue.&lt;/li&gt;
+      &lt;li&gt;Selection in PFC happens after integration of sensory input.&lt;/li&gt;
+      &lt;li&gt;Late selection mechnaisnm because the representations are not seperabble until that point and this is demonstrated in RNN trained on this task.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Results
+    &lt;ul&gt;
+      &lt;li&gt;Figure 1 covered below.&lt;/li&gt;
+      &lt;li&gt;Monkeys saccade to random dot stimulus based on motion-context or color-context. Context triggered by different fixation cues (top right of Fig 1).&lt;/li&gt;
+      &lt;li&gt;Color coherence led the  targets to right choice with sigmoidal curve.&lt;/li&gt;
+      &lt;li&gt;Motion coherence in random dots as liner relationship with correct target chioce.&lt;/li&gt;
+      &lt;li&gt;Thus “the choices of the monkeys depended strongly on the direction of motion of the dots (Fig. 1c), while depending only weakly on color in the same trials (Fig. 1d),” (Mante 2013).&lt;/li&gt;
+      &lt;li&gt;The opposite pattern held in the color context.&lt;/li&gt;
+      &lt;li&gt;Study population responses as a trajectory in state space instead of studying single unit responses.&lt;/li&gt;
+      &lt;li&gt;PCA to 12 dimensions and then linear regression to define the four orthogonal, task-related axes of choice, motion, color, and context. Then project PCA onto these four axes.
+        &lt;ul&gt;
+          &lt;li&gt;Interested in how this works so I’ll fill in details from the methods here later.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The resulting projected trajectories show different arcs toward ending state. One dot selection resulted in a downwards arc and the other resulted in an upwards args. The strength of the evidence resulted in different magnitude of arc in trajectory.&lt;/li&gt;
+      &lt;li&gt;When dots offset, arcs return to origin.&lt;/li&gt;
+      &lt;li&gt;Relation betwen top row and bottom row in Fig. 2 shows that context did not change trajectories. But “the responses during the motion and color contexts occupy different parts of state space, and the corresponding trajectories are well separated along the axis of context,” (Mante 2013).&lt;/li&gt;
+      &lt;li&gt;Because magnitude of input has strong impact on deflection but (contextually) no impact on behavior, is suggests non-relevant information is processed in PFC and that early selection and integration of info does not happen.
+        &lt;ul&gt;
+          &lt;li&gt;Monkey F shows different results.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;“the selective integration of the motion input in monkeys A and F, and of the color input in monkey A, must rely on a mechanism for which the very same input into PFC leads to movement along a fixed axis of choice in one context but not another,” (Mante 2013).&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: now notes switch to discussing RNN model.&lt;/li&gt;
+      &lt;li&gt;RNN network model recieved color/motion/context input.&lt;/li&gt;
+      &lt;li&gt;For RNN model, as inputs are integrated the population response moves along the choice axis.&lt;/li&gt;
+      &lt;li&gt;Mommentary motion and color push the traj. away from the choice axis and toward respective axes.&lt;/li&gt;
+      &lt;li&gt;“the direction of the axes of choice, motion, and color are largely invariant with context, as are the strength of the motion and color inputs, since these are not gated before entering the network”.&lt;/li&gt;
+      &lt;li&gt;“the trajectories during motion and color contexts are separated along the axis of context.”&lt;/li&gt;
+      &lt;li&gt;Fixed point analysis of the model (see review 38), shows fixed points that form two seperate lines over the choice axis. These paths are sperated in axis of context.&lt;/li&gt;
+      &lt;li&gt;“Second, the responses around each fixed point are approximately stable only along a single dimension pointing towards the neighboring fixed points (red lines), while responses along any other dimension rapidly collapse back to the fixed points,”(Mante 2013).&lt;/li&gt;
+      &lt;li&gt;“The integration of the relevant evidence is thus implemented in the model as movement along an approximate line attractor. The model population response, however, does not move strictly along the line attractor.”&lt;/li&gt;
+      &lt;li&gt;“Both the motion and color inputs (i.e. the corresponding pulses) have substantial projections onto the line attractor (Fig. 6a) but, crucially, the size of these projections does not predict the extent to which each input will be integrated,”.&lt;/li&gt;
+      &lt;li&gt;“The selection of the inputs instead relies on context-dependent relaxation of the network dynamics after the end of the pulse, which reverses movement along the line attractor caused by the irrelevant pulse (Fig. 6a, top right and bottom left) and enhances the effects of the relevant pulse (Fig. 6a, top left and bottom right). These relaxation dynamics, while counterintuitive, nevertheless follow a very simple rule. For a given context, the relaxation always occurs on a path that is orthogonal to a specific direction in state space, which we call the ‘selection vector’ (Fig. 6b), “&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Discussion
+    &lt;ul&gt;
+      &lt;li&gt;Stable traj. show different perpective to results where single neuron varies a lot depending on sensory input.&lt;/li&gt;
+      &lt;li&gt;Function of PFC may be to take a mixture of sensory inputs and send them into seperable representations.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Context-dependent Computation by Recurrent Dynamics in Prefrontal Cortex by Valerio Mante and William T. Newsome</summary></entry><entry><title type="html">Review 39: Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations</title><link href="http://localhost:4000/reviews/review39/" rel="alternate" type="text/html" title="Review 39: Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations" /><published>2022-09-24T05:17:13-07:00</published><updated>2022-09-24T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review39</id><content type="html" xml:base="http://localhost:4000/reviews/review39/">&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v139/kim21h/kim21h.pdf&quot;&gt;Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations&lt;/a&gt; by &lt;a href=&quot;https://timkimd.github.io/&quot;&gt;Timothy Doyeon Kim&lt;/a&gt; and &lt;a href=&quot;http://brodylab.org/&quot;&gt;Carlos D. Brody&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Kim, Timothy D., et al. “Inferring latent dynamics underlying neural population activity via neural differential equations.” International Conference on Machine Learning. PMLR, 2021.
  &lt;!-- -  &lt;img src=&quot;/assets/images/imagery5.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot;/&gt; --&gt;&lt;/p&gt;
@@ -130,134 +221,116 @@
       &lt;li&gt;Final point about hyperparm optimization.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations by Timothy Doyeon Kim and Carlos D. Brody</summary></entry><entry><title type="html">Review 37: Auto-Encoding Variational Bayes</title><link href="http://localhost:4000/reviews/review37/" rel="alternate" type="text/html" title="Review 37: Auto-Encoding Variational Bayes" /><published>2022-09-23T05:17:13-07:00</published><updated>2022-09-23T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review37</id><content type="html" xml:base="http://localhost:4000/reviews/review37/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/1312.6114.pdf&quot;&gt;Auto-Encoding Variational Bayes&lt;/a&gt; by &lt;a href=&quot;http://dpkingma.com/&quot;&gt;Diederik P. Kingma&lt;/a&gt; and &lt;a href=&quot;https://staff.fnwi.uva.nl/m.welling/&quot;&gt;Max Welling&lt;/a&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations by Timothy Doyeon Kim and Carlos D. Brody</summary></entry><entry><title type="html">Review 42: Inferring single-trial neural population dynamics using sequential auto-encoders</title><link href="http://localhost:4000/reviews/review42/" rel="alternate" type="text/html" title="Review 42: Inferring single-trial neural population dynamics using sequential auto-encoders" /><published>2022-09-24T05:17:13-07:00</published><updated>2022-09-24T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review42</id><content type="html" xml:base="http://localhost:4000/reviews/review42/">&lt;p&gt;&lt;a href=&quot;https://www.nature.com/articles/s41592-018-0109-9&quot;&gt;Inferring single-trial neural population dynamics using sequential auto-encoders&lt;/a&gt; by &lt;a href=&quot;https://bme.gatech.edu/bme/faculty/Chethan-Pandarinath&quot;&gt;Chethan Pandarinath&lt;/a&gt; and &lt;a href=&quot;https://scholar.google.com/citations?user=ebBgMSkAAAAJ&amp;amp;hl=en&quot;&gt;David Sussillo&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Kingma, Diederik P., and Max Welling. “Auto-encoding variational bayes.” arXiv preprint arXiv:1312.6114 (2013).
- &lt;!-- -  &lt;img src=&quot;/assets/images/imagery5.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot;/&gt; --&gt;&lt;/p&gt;
+&lt;p&gt;Pandarinath, Chethan, et al. “Inferring single-trial neural population dynamics using sequential auto-encoders.” Nature methods 15.10 (2018): 805-815.&lt;/p&gt;
 
+&lt;p&gt;&lt;!-- -  &lt;img src=&quot;/assets/images/imagery5.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot;/&gt; --&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Notation : I don’t know how to use macro &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bm&lt;/code&gt; instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mathbf&lt;/code&gt; on this website so vector notation is going out of the window. That can be very confusing… but &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mathbf&lt;/code&gt; is clunky.&lt;/li&gt;
   &lt;li&gt;Introduction
     &lt;ul&gt;
-      &lt;li&gt;They show how a simple reparamterization of the variational lower bound yields a simple differntiable unbiased estimator of the lower bound in SGVB (stochastic gradient variational bayes).&lt;/li&gt;
-      &lt;li&gt;The approximate posterior inference model can be used for representation, denoising, recgoniztion, visualization etc. and they call it Variational auto-encoder.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Methods
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;img src=&quot;/assets/images/kingma_fig_1.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Problem setting
+      &lt;li&gt;Recovering population dynamics for a single trial is challenging so people often use averaged dynamics (eg; avg. firing rate) to evaluate latent models.&lt;/li&gt;
+      &lt;li&gt;Again, LFADS models the dynamical system $\dot{x}(t) = F(x(t), u(t))$ where $u(t)$ is an optional input and $x(t)$ is spiking data at some time.&lt;/li&gt;
+      &lt;li&gt;This formulation as a dynamical systems relies of four key assumptions:
         &lt;ul&gt;
-          &lt;li&gt;Consider dataset  $ X = { [x^{(i)}] }^N_{i=1} $ consisting of N iid samples of some contininous or discrete variable $x$.&lt;/li&gt;
-          &lt;li&gt;Data is generated by some by some process represented by latent variable $z$ with prior $z \sim p_{\theta^*}(z)$ and likelihood $x \sim p_{\theta^*}(x \mid z)$. Where distribution $\theta^*$ and latent R.V. $z$ are unknown.&lt;/li&gt;
-          &lt;li&gt;Paper does not make several assumptions resulting in a setting characterized by:
-            &lt;ol&gt;
-              &lt;li&gt;Intractability: Assume we cannot explictly compute the integral of the marginal likelihood $p_{\theta}(x)= \int p_{\theta}(x \mid z) p_{\theta}(z) dz$.&lt;/li&gt;
-              &lt;li&gt;Dataset is too large to sample solutions to MAP using Monte Carlo EM.&lt;/li&gt;
-            &lt;/ol&gt;
-          &lt;/li&gt;
-          &lt;li&gt;So they propose a solution to 3 real world problems in this setting.
-            &lt;ol&gt;
-              &lt;li&gt;Efficient maximum likelihood (ML) of maximum a posteriori (MAP) of parameters of  $\theta$&lt;/li&gt;
-              &lt;li&gt;Inference on latent variable $z$ given $x$ and estimated parameters of $\theta$.&lt;/li&gt;
-              &lt;li&gt;Efficient approximate marginal inference of the variable $x$.&lt;/li&gt;
-            &lt;/ol&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Introduce a “recognition model” or appromximation of the true posterior $p_{\theta}(z \mid x)$ as $q_{\theta}(z \mid x)$.&lt;/li&gt;
+          &lt;li&gt;underlying dynamics are being recorded.&lt;/li&gt;
+          &lt;li&gt;trial specific conditions that reflect the state of the neural population at a specific point in time.&lt;/li&gt;
+          &lt;li&gt;effects of exogenous areas in the brain from unepexpected sensory or context changes during task.&lt;/li&gt;
+          &lt;li&gt;spiking variablity according to a Poisson distribution.&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;Variational Bound
+      &lt;li&gt;To understand more about LFADS, read review 38.&lt;/li&gt;
+      &lt;li&gt;In this paper they apply LFADS rhesus macaque M1 (motor) and PMd (dorsal premotor), as well as human M1, showing that:
         &lt;ul&gt;
-          &lt;li&gt;The likelihood of a given sample is 
-  \(log p_{\theta}(x^{(i)}) = KL(q_{\theta}(z \mid x^{(i}) || p_{\theta}(z \mid x^{(i)}) + \mathcal{L}(\theta, \phi ; x^{(i)})\) for $ i = 1 … N$ datapoints.&lt;/li&gt;
-          &lt;li&gt;Then we can replace $ \mathcal{L}(\theta, \phi ; x^{(i)}) $ with \(\mathbb{E}_{ q^{\phi}(z \mid x) } [- log q_{ \theta }(z \mid x) + log p_{\theta}(z, x)]\)
+          &lt;li&gt;LFADS recovers previously studied rotational dynamics.&lt;/li&gt;
+          &lt;li&gt;Rates extracted by LFADS estimate behavioral variables more accurately than other techniques.&lt;/li&gt;
+          &lt;li&gt;Learned dynamical system is predictive of behavioral conditions it was not trained to model.&lt;/li&gt;
+          &lt;li&gt;Infer inputs to neural circuit by analyzing data from an arm reaching task involving a mid-trial peterbuation and by testing whether it can uncover high-frequency oscillations in the rates associated with local field potentials (LFPs).&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Results
+        &lt;ul&gt;
+          &lt;li&gt;Supp. info contains some interesting info Lorenz attractor, chaotic RNN, chaotic RNN w/ pulse inputs etc.)&lt;/li&gt;
+          &lt;li&gt;Benchmark methods: Gaussian Process Factor Analysis (GPFA), variational latent Gaussian Proces (vlGP),  Poisson feed-forward neural network linear dynamical system (PfLDS).&lt;/li&gt;
+          &lt;li&gt;Validation of LFADS using complex reaching tsak.
             &lt;ul&gt;
-              &lt;li&gt;How does this derivation work for the variational lower bound?&lt;/li&gt;
+              &lt;li&gt;202 neurons recorded, 2300 trials of striaght and curved reaches.&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
-          &lt;li&gt;Then the final equation we get for the variatonal lower bound is: 
- \begin{equation}
-   log p_{\theta}(x^{(i)}) = KL(q_{\theta}(z \mid x^{(i}) || p_{\theta}(z \mid x^{(i)}) + \ \mathbb{E}_{q^{\phi}(z \mid x)}  [- log q_{ \theta }(z \mid x) + log p_{\theta}(z, x)]]
-  \end{equation}&lt;/li&gt;
-          &lt;li&gt;Gradient w.r.t. to $\phi$ the recognition model parameters is tricky to compute because you’d have to use naive monte carlo gradient estimator.&lt;/li&gt;
+          &lt;li&gt;Fig. 1 is fairly straightforward - just shows LFADS pipeline and that after stimulus onset latent factors firing rate seems to change (not sure if it increases or decreases) for different factors.&lt;/li&gt;
+          &lt;li&gt;LFADS inferred rates reproduce patterns of correlations across time (Supp. Data 2) and across Neurons (via cross correleogram in Supp. Data 3).&lt;/li&gt;
+          &lt;li&gt;$R^2$ correlation of .9 in inferring hand velocities from LFADS, compared to $.66,.69$ and $.34$ using smoothing spike trains , GPFA, and binning spike trains respectively.&lt;/li&gt;
+          &lt;li&gt;Generalized Linear Model (GLM) to relate held out neuron firing data to inferred firing rates.&lt;/li&gt;
         &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;The SGVB estimator and the AEVB algorithm
+
+        &lt;p&gt;&lt;img src=&quot;/assets/images/inferring_trial_fig_2.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/p&gt;
         &lt;ul&gt;
-          &lt;li&gt;This is the good part now. They reparameterize $\tilde{z} = q_{\phi}(z \mid x)$ using a differentiable equation $  g_{\phi}(\epsilon, x)$ ! where $\epsilon$ is a random noise variable. So:
-  \(\tilde{z} = g_{\phi}(\epsilon, x) \ \text{with} \  \epsilon \sim P(\epsilon)\)&lt;/li&gt;
-          &lt;li&gt;Then we can replace $q_{phi}(z \mid x)$ in equation 1 with function $g_{\phi}(\epsilon, x)$. Except now the monte carlo estimate of expectation is conditioned on $p(\epsilon)$ now, because that is the underlying distribution.&lt;/li&gt;
-          &lt;li&gt;Now we using stochastic variational estimate: $\tilde{\mathcal{L}}^A(\theta, \phi ; x^{(i)}) $&lt;/li&gt;
-          &lt;li&gt;Thus we finally get to the form of the Stochastic Gradient Variational Bayes (SGVB) estimator:
-  \begin{equation}
-  \tilde{\mathcal{L}}^A(\theta, \phi ; x^{(i)}) = \frac{1}{L} \sum_{l=1}^L log_{p_{\theta}} (x^{(i)}, z^{(i,l)}) - log_{p_{\theta}}(z^{(i,l)} \mid x^{(i)})
-  \end{equation} where $z^{(i,l)} = g(\epsilon^{i,l},x^{(i)}) $ and $\epsilon^{l} \sim p(\epsilon)$ .&lt;/li&gt;
-          &lt;li&gt;Then there is the regularized version of SGVB which uses KL divergence to ground the variational distribution $q_{\theta}$ with a prior distribution. This has the form:
-  \begin{equation}
-  \tilde{\mathcal{L}}^A(\theta, \phi ; x^{(i)}) =  KL(q_{\theta}(z \mid x^{(i}) || p_{\theta}(z \mid x^{(i)}) +  \ \frac{1}{L} \sum_{l=1}^L log_{p_{\theta}} (x^{(i)}, z^{(i,l)}) - log_{p_{\theta}}(z^{(i,l)} \mid x^{(i)})
-  \end{equation}.&lt;/li&gt;
-          &lt;li&gt;The next part of this paper describes how to do minibatch updates using an optimizer like SGD / ADAM because we can now take gradients w.r.t to $\theta$ and $\phi$.&lt;/li&gt;
-          &lt;li&gt;In equation 3 the first term serves as a regularizer and the second term serves as a reconstruction loss as it produces a generative model of datapoint $x^{(i)}$ given $z^{(i,l)}$ .&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;The reparameterization trick
-        &lt;ul&gt;
-          &lt;li&gt;If $z$ is a continuous r.v. sampled from $q_{\phi}$(z \mid x)$, then they express $z$ in terms of a deterministic variable $z = g(\epsilon, x)$ with an indpendent marginal $p(\phi)$.&lt;/li&gt;
-          &lt;li&gt;Then they provide a proof for why monte carlo estimate of expectation is differentiable w.r.t. $\phi$.&lt;/li&gt;
-          &lt;li&gt;But still, the trick is hard to understand intuitively since changing the parameters of $q_{\phi}$ doesn’t change the indpendent marginal $p(\epsilon)$ which is some noise.&lt;/li&gt;
-          &lt;li&gt;On that note, the rest of this section goes on to describe the reasonable choices for  $p(\epsilon)$.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Variatonal AutoEncoder
-        &lt;ul&gt;
-          &lt;li&gt;Start by assuming variational approximate posterior is multivariate gaussian s.t.: $ log q_{\phi}( z \mid x^{(i)}) = \mathcal{N}(z; \mu^{(i)}, \sigma^{2(i)} I)$ where the mean and s.d. of the approximate posterior, $\mu^{(i)}$ and  $\sigma^{i}$ are outputs of the encoding MLP, i.e. nonlinear functions of datapoint $x^{(i)}$ and variatonal parameters $\phi$.&lt;/li&gt;
-          &lt;li&gt;Then the resulting estimator is:
-  \begin{equation}
-  \mathcal{L}(\theta, \phi ; x^{(i)}) \simeq \frac{1}{2} \sum_{j=1}{J} ((log(\sigma_{j}^{(i)})^ 2) + (\mu_{j}^{(i)})^ 2) - (\sigma_{j}^{(i)})^ 2)) + \frac{1}{L} \sum_{l=1}^L p_{\theta}(x^{(i)} \mid z^{(i,l)})
-  \end{equation}&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;The relational works section is pretty interesting because it shows just how novel this method is. There does seem to have been some work, called wake-sleep, on recognition for latent variable model for an approximation of the true posterior, but certainly it did not involve gradient descent. Besides that, related work is auto-encoders.
-   &lt;img src=&quot;/assets/images/kingma_fig_2.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
-      &lt;li&gt;Experiments.
-        &lt;ul&gt;
-          &lt;li&gt;MNIST
+          &lt;li&gt;Figure 2 Simplified Caption
             &lt;ul&gt;
-              &lt;li&gt;outperforms wake-sleep benchmark even with only 3 latent variables.&lt;/li&gt;
-              &lt;li&gt;lower likelihood than Frey face.&lt;/li&gt;
+              &lt;li&gt;A: Monkey reach trajectories.&lt;/li&gt;
+              &lt;li&gt;B: Top: Smoothed firing rate (avg. over trials on left and single trial right) middle: LFADS inferred. Bottom: GPFA inferred.&lt;/li&gt;
+              &lt;li&gt;C: tSNE of intial states $z_0$ by reach path.&lt;/li&gt;
+              &lt;li&gt;D: colored traj - decoded reach kinematics and black - reach kinematics for a condition.&lt;/li&gt;
+              &lt;li&gt;E: $R^2$ variance explained in decoded velocities for different methods.&lt;/li&gt;
+              &lt;li&gt;F: Log Likelihood (LL) per spike.&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
-          &lt;li&gt;Frey Face
-            &lt;ul&gt;
-              &lt;li&gt;outperforms wake-sleep benchmark even with only 3 latent variables.&lt;/li&gt;
-              &lt;li&gt;much higher likelihood model&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Adding more latent variables never actually decreases evidence lower bound which is kinda crazy given they usee 200 latent variables.
-            &lt;ul&gt;
-              &lt;li&gt;Something that would be abosolutely impossible if using MCMC approximation.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Figure 3 shows an excellent result w.r.t. to scale. That is simply: using less latent variables they can use MCMC to approximate posterior but the effectiveness does not scale nearly as well with more training data. Showing scalability of the AEVB method is an excellent idea.
-  &lt;img src=&quot;/assets/images/kingma_fig_3.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;Future work
-        &lt;blockquote&gt;
-          &lt;p&gt;Kingma and Welling 2013&lt;/p&gt;
-          &lt;blockquote&gt;
-            &lt;p&gt;there are plenty of future directions: (i) learning hierarchical generative architectures with deep neural networks (e.g. convolutional networks) used for the encoders and decoders, trained jointly with AEVB; (ii) time-series models (i.e. dynamic Bayesian networks); (iii) application of SGVB to the global parameters; (iv) supervised models with latent variables, useful for learning complicated noise distributions.&lt;/p&gt;
-          &lt;/blockquote&gt;
-        &lt;/blockquote&gt;
+      &lt;li&gt;Uncovering rotational dynamics in M1
         &lt;ul&gt;
-          &lt;li&gt;We like (ii)!&lt;/li&gt;
+          &lt;li&gt;Can LFADS recover rotational dynamics that happen in pre -&amp;gt;  peri-movement activity in monkeys and humans?&lt;/li&gt;
+          &lt;li&gt;Not only is the answer yes on averaged responses. But by using jPCA on LFADS inferred rates, we see the first case of inferred rotational dyanmics for a single trial.&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;p&gt;&lt;img src=&quot;/assets/images/inferring_trial_fig_3.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Figure 3 Simplified Caption
+            &lt;ul&gt;
+              &lt;li&gt;A/C: Conditioned averaged reaching trajectories projected onto jPCA components.&lt;/li&gt;
+              &lt;li&gt;B/D: Single trial reaching trajectories projected onto jPCA components.&lt;/li&gt;
+              &lt;li&gt;E/G: Same as A/C but inferred by LFADS.&lt;/li&gt;
+              &lt;li&gt;F/H: Same as B/D but inferred by LFADS.&lt;/li&gt;
+              &lt;li&gt;I: reach generalization task using same starting state $z_0$ and different reach kinematics.&lt;/li&gt;
+              &lt;li&gt;J: Held out averaged reaching proj onto jPCA.&lt;/li&gt;
+              &lt;li&gt;K: Held out / Held in correspondance in jPCA components.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Figure 3 panel K as proof that LFADS dynamics can generalize to novel conditions given that there are related datasets with the right # of trials etc.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Stitching together data from multiple sessions
+        &lt;ul&gt;
+          &lt;li&gt;The summary of this is that by attaching session-based weights to the input and output layers of LFADS, the same dynamical system can model purpotedly different populations of neurons performing the same task.&lt;/li&gt;
+          &lt;li&gt;Stiched LFADS gets $r^2$ correlation of .76 while other baselines are &amp;lt; .2 and single trial LFADS is &amp;lt; .5.&lt;/li&gt;
+          &lt;li&gt;Trajectories were highly similar for different reach directions regardless of recording session, indicating that LFADS found a generator capable of describing all datasets with a consistent set of factors.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Inferring inputs to a neural circuit&lt;/strong&gt;.
+        &lt;ul&gt;
+          &lt;li&gt;Adapt LFADS to model a non-autonomous system which is critical to accomodate unmeasured inputs, such as changes in contextual inputs, sensory inputs, or changes in task.&lt;/li&gt;
+          &lt;li&gt;With an accurate model it should be possible to identify when (or what) exogenous changes are ocurring.&lt;/li&gt;
+          &lt;li&gt;Monkey moves cursor in predictable pattern for 75% and unpredictable for 25% of the trials. Unpredictable = cursor position is peturbed and monkey must adapt in the task for the new position.&lt;/li&gt;
+          &lt;li&gt;LFADS inferred different input patterns for right- and left-shift perturbed trials and for unperturbed trials (5D).&lt;/li&gt;
+          &lt;li&gt;tSNE shows trials cluster based on peturbation / non-peturbation identity.&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;p&gt;&lt;img src=&quot;/assets/images/inferring_trial_fig_5.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Figure 5 abbreviated caption:
+            &lt;ul&gt;
+              &lt;li&gt;A: $u_t$ or inferred inputs are produced by a controlller that defines a distribution over $u_t$, which is random normal Gaussian. The controller requires the previous latent (grey feedback arrow) factors as well as the intial state.&lt;/li&gt;
+              &lt;li&gt;B: Schmatic of cursor jump tasks. Upward / downward targets and peturbed trails are shown in orange.&lt;/li&gt;
+              &lt;li&gt;C: spiking activity during trials.&lt;/li&gt;
+              &lt;li&gt;D: Peturbations shown in latent factors are clear and homogenous across upward / downward trials (red=peturb right, blue=peturb left).&lt;/li&gt;
+              &lt;li&gt;E. tSNE of peturbation types. Again red = right, blue = left.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Auto-Encoding Variational Bayes by Diederik P. Kingma and Max Welling</summary></entry><entry><title type="html">Review 38: Latent Factor Analysis via Dynamical Systems (LFADS)</title><link href="http://localhost:4000/reviews/review38/" rel="alternate" type="text/html" title="Review 38: Latent Factor Analysis via Dynamical Systems (LFADS)" /><published>2022-09-23T05:17:13-07:00</published><updated>2022-09-23T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review38</id><content type="html" xml:base="http://localhost:4000/reviews/review38/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/1608.06315.pdf&quot;&gt;LFADS - Latent Factor Analysis via Dynamical
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Inferring single-trial neural population dynamics using sequential auto-encoders by Chethan Pandarinath and David Sussillo</summary></entry><entry><title type="html">Review 38: Latent Factor Analysis via Dynamical Systems (LFADS)</title><link href="http://localhost:4000/reviews/review38/" rel="alternate" type="text/html" title="Review 38: Latent Factor Analysis via Dynamical Systems (LFADS)" /><published>2022-09-23T05:17:13-07:00</published><updated>2022-09-23T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review38</id><content type="html" xml:base="http://localhost:4000/reviews/review38/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/1608.06315.pdf&quot;&gt;LFADS - Latent Factor Analysis via Dynamical
 Systems&lt;/a&gt; by &lt;a href=&quot;https://scholar.google.com/citations?user=ebBgMSkAAAAJ&amp;amp;hl=en&quot;&gt;David Sussillo&lt;/a&gt; and &lt;a href=&quot;https://bme.gatech.edu/bme/faculty/Chethan-Pandarinath&quot;&gt;Chethan Pandarinath&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Sussillo, David, et al. “Lfads-latent factor analysis via dynamical systems.” arXiv preprint arXiv:1608.06315 (2016).
@@ -410,7 +483,134 @@ Systems&lt;/a&gt; by &lt;a href=&quot;https://scholar.google.com/citations?user=
       &lt;/blockquote&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">LFADS - Latent Factor Analysis via Dynamical Systems by David Sussillo and Chethan Pandarinath</summary></entry><entry><title type="html">Review 36: Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks</title><link href="http://localhost:4000/reviews/review36/" rel="alternate" type="text/html" title="Review 36: Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks" /><published>2022-07-13T05:17:13-07:00</published><updated>2022-07-13T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review36</id><content type="html" xml:base="http://localhost:4000/reviews/review36/">&lt;p&gt;&lt;a href=&quot;https://direct.mit.edu/neco/article-abstract/25/3/626/7854/Opening-the-Black-Box-Low-Dimensional-Dynamics-in&quot;&gt;Opening the Black Box: Low-Dimensional Dynamics
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">LFADS - Latent Factor Analysis via Dynamical Systems by David Sussillo and Chethan Pandarinath</summary></entry><entry><title type="html">Review 37: Auto-Encoding Variational Bayes</title><link href="http://localhost:4000/reviews/review37/" rel="alternate" type="text/html" title="Review 37: Auto-Encoding Variational Bayes" /><published>2022-09-23T05:17:13-07:00</published><updated>2022-09-23T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review37</id><content type="html" xml:base="http://localhost:4000/reviews/review37/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/1312.6114.pdf&quot;&gt;Auto-Encoding Variational Bayes&lt;/a&gt; by &lt;a href=&quot;http://dpkingma.com/&quot;&gt;Diederik P. Kingma&lt;/a&gt; and &lt;a href=&quot;https://staff.fnwi.uva.nl/m.welling/&quot;&gt;Max Welling&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Kingma, Diederik P., and Max Welling. “Auto-encoding variational bayes.” arXiv preprint arXiv:1312.6114 (2013).
+ &lt;!-- -  &lt;img src=&quot;/assets/images/imagery5.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot;/&gt; --&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Notation : I don’t know how to use macro &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\bm&lt;/code&gt; instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mathbf&lt;/code&gt; on this website so vector notation is going out of the window. That can be very confusing… but &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\mathbf&lt;/code&gt; is clunky.&lt;/li&gt;
+  &lt;li&gt;Introduction
+    &lt;ul&gt;
+      &lt;li&gt;They show how a simple reparamterization of the variational lower bound yields a simple differntiable unbiased estimator of the lower bound in SGVB (stochastic gradient variational bayes).&lt;/li&gt;
+      &lt;li&gt;The approximate posterior inference model can be used for representation, denoising, recgoniztion, visualization etc. and they call it Variational auto-encoder.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Methods
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;img src=&quot;/assets/images/kingma_fig_1.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Problem setting
+        &lt;ul&gt;
+          &lt;li&gt;Consider dataset  $ X = { [x^{(i)}] }^N_{i=1} $ consisting of N iid samples of some contininous or discrete variable $x$.&lt;/li&gt;
+          &lt;li&gt;Data is generated by some by some process represented by latent variable $z$ with prior $z \sim p_{\theta^*}(z)$ and likelihood $x \sim p_{\theta^*}(x \mid z)$. Where distribution $\theta^*$ and latent R.V. $z$ are unknown.&lt;/li&gt;
+          &lt;li&gt;Paper does not make several assumptions resulting in a setting characterized by:
+            &lt;ol&gt;
+              &lt;li&gt;Intractability: Assume we cannot explictly compute the integral of the marginal likelihood $p_{\theta}(x)= \int p_{\theta}(x \mid z) p_{\theta}(z) dz$.&lt;/li&gt;
+              &lt;li&gt;Dataset is too large to sample solutions to MAP using Monte Carlo EM.&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+          &lt;li&gt;So they propose a solution to 3 real world problems in this setting.
+            &lt;ol&gt;
+              &lt;li&gt;Efficient maximum likelihood (ML) of maximum a posteriori (MAP) of parameters of  $\theta$&lt;/li&gt;
+              &lt;li&gt;Inference on latent variable $z$ given $x$ and estimated parameters of $\theta$.&lt;/li&gt;
+              &lt;li&gt;Efficient approximate marginal inference of the variable $x$.&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Introduce a “recognition model” or appromximation of the true posterior $p_{\theta}(z \mid x)$ as $q_{\theta}(z \mid x)$.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Variational Bound
+        &lt;ul&gt;
+          &lt;li&gt;The likelihood of a given sample is 
+  \(log p_{\theta}(x^{(i)}) = KL(q_{\theta}(z \mid x^{(i}) || p_{\theta}(z \mid x^{(i)}) + \mathcal{L}(\theta, \phi ; x^{(i)})\) for $ i = 1 … N$ datapoints.&lt;/li&gt;
+          &lt;li&gt;Then we can replace $ \mathcal{L}(\theta, \phi ; x^{(i)}) $ with \(\mathbb{E}_{ q^{\phi}(z \mid x) } [- log q_{ \theta }(z \mid x) + log p_{\theta}(z, x)]\)
+            &lt;ul&gt;
+              &lt;li&gt;How does this derivation work for the variational lower bound?&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Then the final equation we get for the variatonal lower bound is: 
+ \begin{equation}
+   log p_{\theta}(x^{(i)}) = KL(q_{\theta}(z \mid x^{(i}) || p_{\theta}(z \mid x^{(i)}) + \ \mathbb{E}_{q^{\phi}(z \mid x)}  [- log q_{ \theta }(z \mid x) + log p_{\theta}(z, x)]]
+  \end{equation}&lt;/li&gt;
+          &lt;li&gt;Gradient w.r.t. to $\phi$ the recognition model parameters is tricky to compute because you’d have to use naive monte carlo gradient estimator.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The SGVB estimator and the AEVB algorithm
+        &lt;ul&gt;
+          &lt;li&gt;This is the good part now. They reparameterize $\tilde{z} = q_{\phi}(z \mid x)$ using a differentiable equation $  g_{\phi}(\epsilon, x)$ ! where $\epsilon$ is a random noise variable. So:
+  \(\tilde{z} = g_{\phi}(\epsilon, x) \ \text{with} \  \epsilon \sim P(\epsilon)\)&lt;/li&gt;
+          &lt;li&gt;Then we can replace $q_{phi}(z \mid x)$ in equation 1 with function $g_{\phi}(\epsilon, x)$. Except now the monte carlo estimate of expectation is conditioned on $p(\epsilon)$ now, because that is the underlying distribution.&lt;/li&gt;
+          &lt;li&gt;Now we using stochastic variational estimate: $\tilde{\mathcal{L}}^A(\theta, \phi ; x^{(i)}) $&lt;/li&gt;
+          &lt;li&gt;Thus we finally get to the form of the Stochastic Gradient Variational Bayes (SGVB) estimator:
+  \begin{equation}
+  \tilde{\mathcal{L}}^A(\theta, \phi ; x^{(i)}) = \frac{1}{L} \sum_{l=1}^L log_{p_{\theta}} (x^{(i)}, z^{(i,l)}) - log_{p_{\theta}}(z^{(i,l)} \mid x^{(i)})
+  \end{equation} where $z^{(i,l)} = g(\epsilon^{i,l},x^{(i)}) $ and $\epsilon^{l} \sim p(\epsilon)$ .&lt;/li&gt;
+          &lt;li&gt;Then there is the regularized version of SGVB which uses KL divergence to ground the variational distribution $q_{\theta}$ with a prior distribution. This has the form:
+  \begin{equation}
+  \tilde{\mathcal{L}}^A(\theta, \phi ; x^{(i)}) =  KL(q_{\theta}(z \mid x^{(i}) || p_{\theta}(z \mid x^{(i)}) +  \ \frac{1}{L} \sum_{l=1}^L log_{p_{\theta}} (x^{(i)}, z^{(i,l)}) - log_{p_{\theta}}(z^{(i,l)} \mid x^{(i)})
+  \end{equation}.&lt;/li&gt;
+          &lt;li&gt;The next part of this paper describes how to do minibatch updates using an optimizer like SGD / ADAM because we can now take gradients w.r.t to $\theta$ and $\phi$.&lt;/li&gt;
+          &lt;li&gt;In equation 3 the first term serves as a regularizer and the second term serves as a reconstruction loss as it produces a generative model of datapoint $x^{(i)}$ given $z^{(i,l)}$ .&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The reparameterization trick
+        &lt;ul&gt;
+          &lt;li&gt;If $z$ is a continuous r.v. sampled from $q_{\phi}$(z \mid x)$, then they express $z$ in terms of a deterministic variable $z = g(\epsilon, x)$ with an indpendent marginal $p(\phi)$.&lt;/li&gt;
+          &lt;li&gt;Then they provide a proof for why monte carlo estimate of expectation is differentiable w.r.t. $\phi$.&lt;/li&gt;
+          &lt;li&gt;But still, the trick is hard to understand intuitively since changing the parameters of $q_{\phi}$ doesn’t change the indpendent marginal $p(\epsilon)$ which is some noise.&lt;/li&gt;
+          &lt;li&gt;On that note, the rest of this section goes on to describe the reasonable choices for  $p(\epsilon)$.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Variatonal AutoEncoder
+        &lt;ul&gt;
+          &lt;li&gt;Start by assuming variational approximate posterior is multivariate gaussian s.t.: $ log q_{\phi}( z \mid x^{(i)}) = \mathcal{N}(z; \mu^{(i)}, \sigma^{2(i)} I)$ where the mean and s.d. of the approximate posterior, $\mu^{(i)}$ and  $\sigma^{i}$ are outputs of the encoding MLP, i.e. nonlinear functions of datapoint $x^{(i)}$ and variatonal parameters $\phi$.&lt;/li&gt;
+          &lt;li&gt;Then the resulting estimator is:
+  \begin{equation}
+  \mathcal{L}(\theta, \phi ; x^{(i)}) \simeq \frac{1}{2} \sum_{j=1}{J} ((log(\sigma_{j}^{(i)})^ 2) + (\mu_{j}^{(i)})^ 2) - (\sigma_{j}^{(i)})^ 2)) + \frac{1}{L} \sum_{l=1}^L p_{\theta}(x^{(i)} \mid z^{(i,l)})
+  \end{equation}&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The relational works section is pretty interesting because it shows just how novel this method is. There does seem to have been some work, called wake-sleep, on recognition for latent variable model for an approximation of the true posterior, but certainly it did not involve gradient descent. Besides that, related work is auto-encoders.
+   &lt;img src=&quot;/assets/images/kingma_fig_2.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Experiments.
+        &lt;ul&gt;
+          &lt;li&gt;MNIST
+            &lt;ul&gt;
+              &lt;li&gt;outperforms wake-sleep benchmark even with only 3 latent variables.&lt;/li&gt;
+              &lt;li&gt;lower likelihood than Frey face.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Frey Face
+            &lt;ul&gt;
+              &lt;li&gt;outperforms wake-sleep benchmark even with only 3 latent variables.&lt;/li&gt;
+              &lt;li&gt;much higher likelihood model&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Adding more latent variables never actually decreases evidence lower bound which is kinda crazy given they usee 200 latent variables.
+            &lt;ul&gt;
+              &lt;li&gt;Something that would be abosolutely impossible if using MCMC approximation.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Figure 3 shows an excellent result w.r.t. to scale. That is simply: using less latent variables they can use MCMC to approximate posterior but the effectiveness does not scale nearly as well with more training data. Showing scalability of the AEVB method is an excellent idea.
+  &lt;img src=&quot;/assets/images/kingma_fig_3.png&quot; alt=&quot;no alt&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Future work
+        &lt;blockquote&gt;
+          &lt;p&gt;Kingma and Welling 2013&lt;/p&gt;
+          &lt;blockquote&gt;
+            &lt;p&gt;there are plenty of future directions: (i) learning hierarchical generative architectures with deep neural networks (e.g. convolutional networks) used for the encoders and decoders, trained jointly with AEVB; (ii) time-series models (i.e. dynamic Bayesian networks); (iii) application of SGVB to the global parameters; (iv) supervised models with latent variables, useful for learning complicated noise distributions.&lt;/p&gt;
+          &lt;/blockquote&gt;
+        &lt;/blockquote&gt;
+        &lt;ul&gt;
+          &lt;li&gt;We like (ii)!&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Auto-Encoding Variational Bayes by Diederik P. Kingma and Max Welling</summary></entry><entry><title type="html">Review 36: Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks</title><link href="http://localhost:4000/reviews/review36/" rel="alternate" type="text/html" title="Review 36: Opening the Black Box: Low-Dimensional Dynamics in High-Dimensional Recurrent Neural Networks" /><published>2022-07-13T05:17:13-07:00</published><updated>2022-07-13T05:17:13-07:00</updated><id>http://localhost:4000/reviews/review36</id><content type="html" xml:base="http://localhost:4000/reviews/review36/">&lt;p&gt;&lt;a href=&quot;https://direct.mit.edu/neco/article-abstract/25/3/626/7854/Opening-the-Black-Box-Low-Dimensional-Dynamics-in&quot;&gt;Opening the Black Box: Low-Dimensional Dynamics
 in High-Dimensional Recurrent Neural Networks&lt;/a&gt; by &lt;a href=&quot;https://scholar.google.com/citations?user=ebBgMSkAAAAJ&amp;amp;hl=en&quot;&gt;David Sussillo&lt;/a&gt; and &lt;a href=&quot;https://scholar.google.com/citations?user=6BrZ2isAAAAJ&amp;amp;hl=en&quot;&gt;Omri Barak&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Sussillo, David, and Omri Barak. “Opening the black box: low-dimensional dynamics in high-dimensional recurrent neural networks.” Neural computation 25.3 (2013): 626-649.
@@ -808,317 +1008,4 @@ in High-Dimensional Recurrent Neural Networks&lt;/a&gt; by &lt;a href=&quot;http
       &lt;li&gt;Neuropixels does not allow stimulation.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">High-density Single-unit Human Cortical Recordings Using the Neuropixels Probe by Jason Chung and Edward F. Chang</summary></entry><entry><title type="html">Review 32: Living Science: Maintaining the Joy of Discovery</title><link href="http://localhost:4000/reviews/review32/" rel="alternate" type="text/html" title="Review 32: Living Science: Maintaining the Joy of Discovery" /><published>2022-07-08T05:16:13-07:00</published><updated>2022-07-08T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review32</id><content type="html" xml:base="http://localhost:4000/reviews/review32/">&lt;p&gt;&lt;a href=&quot;https://elifesciences.org/articles/80711&quot;&gt;Living Science: Maintaining the Joy of Discovery&lt;/a&gt; by &lt;a href=&quot;https://www.brandeis.edu/biology/faculty/marder-eve.html&quot;&gt;Eve Marder&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Marder, Eve. “Living Science: Maintaining the joy of discovery.” Elife 11 (2022): e80711.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;DISCLAIMER: these are my reading notes, not my personal opinion&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Marder 2022&lt;/p&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;Changes in science over the past 50 years have reduced the chances of trainees experiencing the joy of discovery.&lt;/p&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Writing starts out with using “you get out what you put in” as the hook but then cites increasing authorship, price, time, and complexity behind important breakthroughs as the reason young scientists may not be able to engage with science the same way she did.&lt;/li&gt;
-  &lt;li&gt;The longer turnaround time for analysis and having others analyze your data can damper the joy of discovery.&lt;/li&gt;
-  &lt;li&gt;Suggests doing data analysis contemporaneously with generating data.&lt;/li&gt;
-  &lt;li&gt;Massive amount of literature available and differing SEO policies on gScholar make orienting oneself if the literature challenging.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Marder 2022&lt;/p&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;Oftentimes, I finally understood the potential significance of a piece of work while writing the paper.&lt;/p&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Large-scale collaboration can separate the student from the actual piece of work. Doesn’t always work this way.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Takeaways
-    &lt;ul&gt;
-      &lt;li&gt;You get out what you put in.&lt;/li&gt;
-      &lt;li&gt;gScholar SEO biases search results. Needs to be a better way of orienting oneself in the field.&lt;/li&gt;
-      &lt;li&gt;Read / write more.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;My opinion:
-    &lt;ul&gt;
-      &lt;li&gt;I picked this writing up after I saw &lt;a href=&quot;https://twitter.com/drugmonkeyblog/status/1544559316140584961&quot;&gt;this tweet&lt;/a&gt; calling it a “handwringer”.&lt;/li&gt;
-      &lt;li&gt;Upon reflection, I don’t find anything here that concerning.&lt;/li&gt;
-      &lt;li&gt;Firstly, I don’t agree with the premise that there isn’t as much low-hanging fruit as there used to be. The low-hanging fruit isn’t the same anymore in terms of conducting very basic science and running a simple and quick analysis of the data; it has changed. With the advent of repositories of open data sets and open-source statistical tools / other tools for data analysis, the low-hanging fruit has just shifted to an entirely different format.
-        &lt;ul&gt;
-          &lt;li&gt;This is mildly concerning for young researchers who hate stats and don’t have any coding experience but at the end of the day, the reason these methods are prominent is that they provide the most efficient interface with science. Undoubtedly, there is an aspect of gatekeeping here. But what other alternative is there? Removing the systems that perpetuate this is atavistic.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Secondly, the point about contemporaneous analysis is a really good one. I just don’t see why analysis should ever take days or weeks to turn around, that’s just ineffective design.
-        &lt;ul&gt;
-          &lt;li&gt;I realized this &lt;em&gt;very&lt;/em&gt; recently but IMO you should never find yourself just sitting around waiting for analysis to complete.&lt;/li&gt;
-          &lt;li&gt;In my own experience, every time I am sitting around waiting for the analysis to complete there is always a simpler way to break either the data or the analysis into parts and analyze each component very quickly. I argue that learning to break complex analyses into small chunks that can be turned around and verified quickly is an essential skill. It also makes this point a non-factor if you are good enough at it.&lt;/li&gt;
-          &lt;li&gt;I’ve yet to see a single analysis not amenable to this treatment in some way.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Third, the point about SEO optimization and the pitfalls of modern literature search is &lt;strong&gt;absolutely valid&lt;/strong&gt;. But mitigating this is just not that hard. There are a million ways to do so:
-        &lt;ul&gt;
-          &lt;li&gt;Collaborative annotated citations&lt;/li&gt;
-          &lt;li&gt;Keyword hacking on gScholar&lt;/li&gt;
-          &lt;li&gt;Follow citation trails&lt;/li&gt;
-          &lt;li&gt;Follow author trails&lt;/li&gt;
-          &lt;li&gt;Articles with over 1k citations are categorically prominent works in the field&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;However, on the point about not feeling like an expert because of the overwhelming amount of papers available: this is the big fish small pond problem. When there are only a few journals you &lt;em&gt;feel&lt;/em&gt; like an expert and you &lt;em&gt;feel&lt;/em&gt; like you are engaging with your field but the actual engagement is much less than you perceive. On the other hand, in the new age, you never feel like an expert but you are much more informed than you feel. If you can’t enjoy science without feeling like an expert by dwarfing the literature available then you bite your nose to spite your face. The information hose (the internet) is just going to keep blasting and it is empirically a good thing. New experts just understand how to distill the deluge of papers, like &lt;a href=&quot;https://arxiv-sanity-lite.com/&quot;&gt;arxiv sanity&lt;/a&gt; or online journal clubs.&lt;/li&gt;
-      &lt;li&gt;Finally I wholeheartedly agree with the point about appreciating the impact of the work through writing and I think that oppurtunity is now more accessible than ever!
-        &lt;ul&gt;
-          &lt;li&gt;Writing small articles for arxiv&lt;/li&gt;
-          &lt;li&gt;Writing blog posts (like this!)&lt;/li&gt;
-          &lt;li&gt;Tweetprints&lt;/li&gt;
-          &lt;li&gt;Posting your work on your website&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;So in conclusion:
-        &lt;ul&gt;
-          &lt;li&gt;I feel that finding the joy in science isn’t &lt;em&gt;harder&lt;/em&gt; per say it’s just different.&lt;/li&gt;
-          &lt;li&gt;But the lead message of this paper is still poignant: &lt;strong&gt;you get out what you put in&lt;/strong&gt;.
-            &lt;ul&gt;
-              &lt;li&gt;If you let the deluge of papers stop you from reading then you are worse off.&lt;/li&gt;
-              &lt;li&gt;If you let the big project you are working on prevent you from releasing your own conference workshop paper for example then yes you are being restricted from writing.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;It’s not easy because in my opinion there are some worse pitfalls for young scientists but they are broader concerns for young professionals in general.&lt;/li&gt;
-          &lt;li&gt;But I believe that research has not become overall less or more fulfilling. The opportunity is always just a few small steps away. We just need to get out of our own way first.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Living Science: Maintaining the Joy of Discovery by Eve Marder</summary></entry><entry><title type="html">Review 31: Noninvasive Brain–Machine Interfaces for Robotic Devices</title><link href="http://localhost:4000/reviews/review31/" rel="alternate" type="text/html" title="Review 31: Noninvasive Brain–Machine Interfaces for Robotic Devices" /><published>2022-06-11T05:16:13-07:00</published><updated>2022-06-11T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review31</id><content type="html" xml:base="http://localhost:4000/reviews/review31/">&lt;p&gt;&lt;a href=&quot;https://spectrum.ieee.org/brain-implant&quot;&gt;Noninvasive Brain–Machine Interfaces for Robotic Devices&lt;/a&gt; by &lt;a href=&quot;https://scholar.google.com/citations?user=U2N9FlcAAAAJ&amp;amp;hl=en&quot;&gt;Luca Toning&lt;/a&gt; and &lt;a href=&quot;https://www.ece.utexas.edu/people/faculty/jose-del-r-millan&quot;&gt;José del R. Millán&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Tonin, Luca, and José del R. Millán. “Noninvasive brain–machine interfaces for robotic devices.” Annual Review of Control, Robotics, and Autonomous Systems 4 (2021): 191-214.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;First this from the abstract: “. We found that BMIs are used mostly to drive devices for navigation (e.g., telepresence mobile robots), with BMI paradigms based mainly on exogenous stimulation, and the majority of brain-actuated robots adopt a discrete control strategy,”.&lt;/li&gt;
-  &lt;li&gt;Introduction
-    &lt;ul&gt;
-      &lt;li&gt;Main focus of brain-machine interfaces, or BMIs, is to restore motor functions for those with damaged pathways or motor dysfunction.
-eg; brain-controlled cursor movement, keyboards + typing, remote-controlled devices.&lt;/li&gt;
-      &lt;li&gt;Not just a plug and play engineering problem, we should think about how to generate effective control signals as well.&lt;/li&gt;
-      &lt;li&gt;Paper roadmap: introduce closed-loop system -&amp;gt; turn to main modalities of interaction/control -&amp;gt; provide an overview of 86 works over the past 15 years -&amp;gt; lay out challenges and future directions.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;The Closed Loop of a Brain-Machine Interface: A Mutual Learning Interaction
-    &lt;ul&gt;
-      &lt;li&gt;Here is a high level description of Fig 1.
-        &lt;ul&gt;
-          &lt;li&gt;Brain activity is elicited and recorded.
-            &lt;ul&gt;
-              &lt;li&gt;Endogenous: user voluntarily engages activity in some mental task.&lt;/li&gt;
-              &lt;li&gt;Exogenous: user is presented stimuli and correlates of brain activity are measured during this task.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Features are extracted.&lt;/li&gt;
-          &lt;li&gt;Control.
-            &lt;ul&gt;
-              &lt;li&gt;This block in the flow is complicated. Suffice it to say that this part is a signal handed to a robotic device.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Online feedback.
-            &lt;ul&gt;
-              &lt;li&gt;User &lt;em&gt;sees&lt;/em&gt; behavior and deems it rewarding / not rewarding.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Rinse and Repeat.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Two key considerations for this loop to work:
-        &lt;blockquote&gt;
-          &lt;p&gt;Toning 2021&lt;/p&gt;
-          &lt;blockquote&gt;
-            &lt;p&gt;Two concepts therefore become essential in the design of the BMI closed loop: a fast response by the robot to the user’s intention, in order to allow fine and reactive control over the device (Section 4), and a bidirectional interaction between the robot and BMI, in order to trigger and exploit the robot intelligence and thus support the user in performing complex actions (Section 5).&lt;/p&gt;
-          &lt;/blockquote&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Ultimately this seems like communication bandwidth between the human/animal (affector) and the controlled device (effector).&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Invasive and Noninvasive Acquisition Techniques
-    &lt;ul&gt;
-      &lt;li&gt;Noninvasive BMIs can access either electrocorticogram signals (EEG) or hemodynamic activity (bloodflow) like seen in fMRIs.
-        &lt;ul&gt;
-          &lt;li&gt;EEG has an advantage temporally but fMRI has an advantage spatially.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Signal Processing and Feature Extraction
-    &lt;ul&gt;
-      &lt;li&gt;Lots of filtering happens in non-invasive BCI so that we can increase signal to noise ratio.
-        &lt;ul&gt;
-          &lt;li&gt;Filter DC component.&lt;/li&gt;
-          &lt;li&gt;Spatial filters.&lt;/li&gt;
-          &lt;li&gt;Low dimensional reductions of data.&lt;/li&gt;
-          &lt;li&gt;Hilbert transform, FFT transform, wavelet decomposition.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Feature Selection and Classification Algorithms
-    &lt;ul&gt;
-      &lt;li&gt;16 channels with 4-48hz resolution result in 340+ features to potentially consider.&lt;/li&gt;
-      &lt;li&gt;During calibration channels that are discriminative or particularly relevant to functional neural correlates are selected in feature selection.&lt;/li&gt;
-      &lt;li&gt;After online/control phase, the decoder is then used for offline discriminant classification.
-        &lt;ul&gt;
-          &lt;li&gt;SVM, Gaussian +/ kernel models.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Human-In-The-Loop: Interaction Modalities in Brain-Machine Interfaces
-    &lt;ul&gt;
-      &lt;li&gt;Exogenous paradigms
-        &lt;ul&gt;
-          &lt;li&gt;Steady-state evoked potential (SSEP) based BMIs: present several visual stimuli to target (like a flashing light) and the user can guide control by fixing their eyes on a specific target, which corresponds to an action in a remote-controlled robotic device.&lt;/li&gt;
-          &lt;li&gt;P300 signals are evoked after some anomalistic pattern is observed. It’s hard to see how users picking out infrequent patterns or letters can lead to goal-directed control of a robotic arm. I’d have to look into the Farwell–Donchin spellers task.&lt;/li&gt;
-          &lt;li&gt;Error-related signals can be used to increase robustness for BMI applications.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Endogenous Paradigms
-        &lt;ul&gt;
-          &lt;li&gt;Event-related localized changes in frequency, or an increment or decrement in EEG.
-            &lt;ul&gt;
-              &lt;li&gt;$\mu$ and $\beta$ bands of activity specifically related to motor imagination.&lt;/li&gt;
-              &lt;li&gt;Event-related synchronization or desynchronization.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Task-specific modulation is represented as a marker on a screen, which is important because the capacity for the user to receive continuous feedback about cursor position.&lt;/li&gt;
-          &lt;li&gt;Figure 2 quick jot.
-            &lt;ul&gt;
-              &lt;li&gt;Surprisingly, relative fisher scores for features were very stable over different frequencies.&lt;/li&gt;
-              &lt;li&gt;Also 12hz ($\mu$ band) was particularly identifiable.&lt;/li&gt;
-              &lt;li&gt;Quadratic boundary used for foot movement v.s. hand movement discrimination.
-                &lt;ul&gt;
-                  &lt;li&gt;This is also surprising as the feature representation is projected to a $\mathbb{R}^2$ subspace which is very compact. Yet a basic quadratic discrimator works!&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;Signal trajectory needs to converge past boundary to be classified. In one trajectory, neither hand nor foot is detected.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Control strategies
-    &lt;ul&gt;
-      &lt;li&gt;BMI control is often combined with a corresponding control strategy from the stimulated device.&lt;/li&gt;
-      &lt;li&gt;While most systems use discrete control in continuous v.s. discrete control, there is the potential for both.
-        &lt;ul&gt;
-          &lt;li&gt;Discrete is slower and has lower bandwidth.&lt;/li&gt;
-          &lt;li&gt;Continuous control is interesting but not as studied.
-            &lt;ul&gt;
-              &lt;li&gt;One of the interesting apps is as a continuous driving signal. The other app is the stabilization of discrete commands.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;EEG patterns are non-stationary.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Robot in the Loop: Sharing the Intelligence
-    &lt;ul&gt;
-      &lt;li&gt;Since many tasks (eg; robotic arm) reaching with non-invasive (and invasive?) BMI is pretty difficult, the devices are often equipped with (or learn) fine level control and stabilization.&lt;/li&gt;
-      &lt;li&gt;Two approaches to machine autonomous control: 1. user looks at a spot and the machine takes responsibility for guiding it there using whatever control sequences it pleases or 2. user can offer more granular directions, like turning a wheelchair using a finite state machine (Iturrate et al. (52) qtd. in Toning 2021).
-        &lt;ul&gt;
-          &lt;li&gt;I am looking forward to hearing what the challenges for 2 are where. There seems to be a bottleneck in terms of how much bandwidth there is for control, just like in the case of continuous decoding.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Sequential control passed between human and robotic arm during grasping task. Human uses menu-based assistance to guide arm and then uses BMI to complete grasping action.&lt;/li&gt;
-      &lt;li&gt;Shared control ultimately seems like a nice future direction since humans can have higher-level control and robot can have lower-level control.&lt;/li&gt;
-      &lt;li&gt;Subversion of explicit BMI signaling using detection of error-related signals in BMI.
-        &lt;ul&gt;
-          &lt;li&gt;An error-based override allows the robot to re-interpret the signal.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Current Applications
-    &lt;ul&gt;
-      &lt;li&gt;Devices, Interaction Modalities, and Control Strategies
-        &lt;ul&gt;
-          &lt;li&gt;Here the authors give a nice breakdown of mobile control studies: “ brain-controlled mobile robots for telepresence are the type that is most common in the literature (Figure 4a), representing 38.4% of the reviewed studies, followed by powered wheelchairs (22.1%), robotic arms (19.8%), lower limb and upper limb exoskeletons (9.3% and 7.0%, respectively), and quadcopters (3.5%).” (Toning 2021).&lt;/li&gt;
-          &lt;li&gt;See figure:
-   &lt;img src=&quot;/assets/images/tonin1.png&quot; alt=&quot;bmi overview&quot; width=&quot;500&quot; align=&quot;center&quot; /&gt;&lt;/li&gt;
-          &lt;li&gt;Brain-controlled robotic arms are studied in several different studies.&lt;/li&gt;
-          &lt;li&gt;Surprisingly only 16.3% of studies included participants that had motor defecits.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Open Challenges and Future Directions
-    &lt;ul&gt;
-      &lt;li&gt;Integration between BMI and robots is in early days. Normally, the robot is just seen as an actuator.&lt;/li&gt;
-      &lt;li&gt;Overcoming commitment to exogenous systems and developing endogenous and self-paced systems has more deploy-ability but comes with challenges for calibration and user mental capacity to focus on this kind of control.&lt;/li&gt;
-      &lt;li&gt;The biggest challenge is that most studies are not conducted in coordination with the end-users.
-        &lt;ul&gt;
-          &lt;li&gt;Which biases the design of the device and calibration/training strategies.&lt;/li&gt;
-          &lt;li&gt;A lot of the time, training phases can take weeks.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Applications in navigation and manipulation may not be the most prioritized use case for the end-user. It would be best to coordinate with patients whom BMI researchers aim to help in order to re-contextualize what their priorities are in order to get better alignment.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Noninvasive Brain–Machine Interfaces for Robotic Devices by Luca Toning and José del R. Millán</summary></entry><entry><title type="html">Review 30: Eavesdropping on the Brain With 10,000 Electrodes</title><link href="http://localhost:4000/reviews/review30/" rel="alternate" type="text/html" title="Review 30: Eavesdropping on the Brain With 10,000 Electrodes" /><published>2022-06-05T05:16:13-07:00</published><updated>2022-06-05T05:16:13-07:00</updated><id>http://localhost:4000/reviews/review30</id><content type="html" xml:base="http://localhost:4000/reviews/review30/">&lt;p&gt;&lt;a href=&quot;https://spectrum.ieee.org/brain-implant&quot;&gt;Eavesdropping on the Brain With 10,000 Electrodes&lt;/a&gt; by &lt;a href=&quot;https://www.imecitf.com/2021/health/speakers/barun-dutta-chief-scientist-sts-imec&quot;&gt;Barun Dutta&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Dutta, Barun. “Eavesdropping on the Brain With 10,000 Electrodes.” IEEE Spectrum (2022)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;This is interesting because this article is released by Barun Dutta, one of the principal investigators of the neuropixels devices.&lt;/li&gt;
-  &lt;li&gt;The hook begins with the infamous brain-computer metaphor.
-    &lt;ul&gt;
-      &lt;li&gt;This “brain is a computer” comparison is tired, but this hook works well anyway because it points to the really astounding fact that the brain only requires 20 watts of power.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;The introduction sets the stage for introducing &lt;a href=&quot;https://www.imec-int.com/en&quot;&gt;Imec&lt;/a&gt; importance of large-scale recordings of individual neurons and a freely moving animal. This company does some really awesome things with nano and digital technologies.&lt;/li&gt;
-  &lt;li&gt;The name “neuropixels” is explained as a field potential recording system that relies on signal processing, kind of like a camera.&lt;/li&gt;
-  &lt;li&gt;We also see that neuropixels aims to tackle some of the issues located physically deeper in the brain.&lt;/li&gt;
-  &lt;li&gt;Neuropixels 1.0 has a single shank and 1000 electrodes.&lt;/li&gt;
-  &lt;li&gt;Neuropixels 2.0 has four shanks with 1280 electrodes.&lt;/li&gt;
-  &lt;li&gt;With 3.0 they claim they are moving along an exponential growth curve for BCI recording.&lt;/li&gt;
-  &lt;li&gt;It is encouraging to see Imec’s efforts in materials sciences in CMOS fabrication.
-    &lt;ul&gt;
-      &lt;li&gt;low impedance electro-ceramic shanks sound more durable and much less likely to have electrical discharge.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;I find this quote surprising:
-    &lt;blockquote&gt;
-      &lt;p&gt;Dutta (2022)&lt;/p&gt;
-      &lt;blockquote&gt;
-        &lt;p&gt;“the thousandfold difference in elasticity between CMOS shanks and brain tissue”&lt;/p&gt;
-      &lt;/blockquote&gt;
-    &lt;/blockquote&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;because I had no idea that even the most flexible shanks are still this level of magnitude more rigid than brain tissue. This  highlights the importance of these efforts in materials sciences and electrical engineering.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;2D readouts help power stabilization algorithm that allows the long-term tracking of specific neurons.&lt;/li&gt;
-  &lt;li&gt;The new neuropixels device also features a smaller head-stage.&lt;/li&gt;
-  &lt;li&gt;30 kilohertz sampling rate is very high. I wonder if anyone makes the argument that a higher sampling rate could ever be needed. I think at this resolution one could even analyze fast activating channel dynamics.&lt;/li&gt;
-  &lt;li&gt;The “pixel” or neuron recording count is predicted to leap 50,000 - 100,000 neurons.
-    &lt;ul&gt;
-      &lt;li&gt;Big if true.&lt;/li&gt;
-      &lt;li&gt;Neuropixels 1 has 1000 recording sites and then Neuropixels 2 has 6000 recording sites, so a projection of 50k is bold.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Overall, the pace of development is astounding but in my opinion “Moore’s law” is a mischaracterization. Here’s why:
-    &lt;ul&gt;
-      &lt;li&gt;So far we’ve observed one cycle and there was a 6x increase in recording sites, which is technically in line with the trend. However, this characterization of exponential growth would need to be sustained over multiple cycles… I think it is just too early to call.&lt;/li&gt;
-      &lt;li&gt;Also, 1.0 and 2.0 don’t have that much of a difference in recording fidelity. 2.0 gets the increase in recording sites using more shanks and better tracking algorithms.&lt;/li&gt;
-      &lt;li&gt;While the advent of these areas of development is notable, I wonder if we see sustained progress in these domains or if new features can be added that will enable increasing recording sites in other ways.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">Eavesdropping on the Brain With 10,000 Electrodes by Barun Dutta</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>xander</name></author><category term="reviews" /><summary type="html">High-density Single-unit Human Cortical Recordings Using the Neuropixels Probe by Jason Chung and Edward F. Chang</summary></entry></feed>

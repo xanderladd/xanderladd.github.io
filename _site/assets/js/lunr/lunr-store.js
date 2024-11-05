@@ -233,9 +233,27 @@ var store = [{
         "url": "/reviews/review38/",
         "teaser": "/assets/images/trees.jpeg"
       },{
-        "title": "Review 38: Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations",
+        "title": "Review 39: Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations",
         "excerpt":"Inferring Latent Dynamics Underlying Neural Population Activity via Neural Differential Equations by Timothy Doyeon Kim and Carlos D. Brody Kim, Timothy D., et al. “Inferring latent dynamics underlying neural population activity via neural differential equations.” International Conference on Machine Learning. PMLR, 2021. Notation : I don’t know how to use...","categories": ["reviews"],
         "tags": [],
         "url": "/reviews/review39/",
+        "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 40: Context-dependent Computation by Recurrent Dynamics in Prefrontal Cortex",
+        "excerpt":"Context-dependent Computation by Recurrent Dynamics in Prefrontal Cortex by Valerio Mante and William T. Newsome Mante, Valerio, et al. “Context-dependent computation by recurrent dynamics in prefrontal cortex.” nature 503.7474 (2013): 78-84. TODO: read this again..understood maybe 30% Sorry this does not include the figures. I strongly recommend looking at the...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review40/",
+        "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 42: Inferring single-trial neural population dynamics using sequential auto-encoders",
+        "excerpt":"Inferring single-trial neural population dynamics using sequential auto-encoders by Chethan Pandarinath and David Sussillo Pandarinath, Chethan, et al. “Inferring single-trial neural population dynamics using sequential auto-encoders.” Nature methods 15.10 (2018): 805-815. Introduction Recovering population dynamics for a single trial is challenging so people often use averaged dynamics (eg; avg. firing...","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review42/",
+        "teaser": "/assets/images/trees.jpeg"
+      },{
+        "title": "Review 41: Neural Ordinary Differential Equations",
+        "excerpt":"Neural Ordinary Differential Equations by Ricky T. Q. Chen and David Duvenaud Chen, Ricky TQ, et al. “Neural ordinary differential equations.” Advances in neural information processing systems 31 (2018 Introduction Models such as resnets, normalizing flows, or RNN decoders update a hidden state using $h_{t+1} = h_t + f(h_t, \\theta_t)$....","categories": ["reviews"],
+        "tags": [],
+        "url": "/reviews/review41/",
         "teaser": "/assets/images/trees.jpeg"
       }]

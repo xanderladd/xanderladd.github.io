@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 author_profile: true
-permalink: /research/mr_gnode
+permalink: /research/mrgnode
 layout: base
 ---
 

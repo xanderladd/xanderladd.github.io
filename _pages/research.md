@@ -30,3 +30,6 @@ Here, I share a litte bit about what I've done for research at
  - [Multitask Learning for Cancer Drug Discovery](./MTL4C) 
  - Publication link: [End-to-End Framework for Imputation and State Discovery in Longitudinal Energy Data](https://dl.acm.org/doi/abs/10.1145/3447555.3466588)
  
+
+ ## Grad School
+ - Preprint: [Data-driven Modeling of Multi-Region Communication Dynamics using Gated Neural ODEs](./mrgnode) 

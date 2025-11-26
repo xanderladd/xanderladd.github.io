@@ -12,4 +12,4 @@ layout: base
 
 
 Data-driven Modeling of Multi-Region Communication Dynamics using Gated Neural ODEs
-<object data="../assets/images/MR_GNODE_final.pdf" width="1000" height="1000" type='application/pdf'></object>
+<object data="../assets/images/MR_GNODE_final_named.pdf" width="1000" height="1000" type='application/pdf'></object>
